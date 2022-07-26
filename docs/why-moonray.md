@@ -1,15 +1,10 @@
 # Why Moonray?
 
-Moonray is a fast and lean MCRT-based renderer.  Here are some facts:
-
--   Moonray is the culmination of conversations with developers and
-    examinations of courses and papers from other studios with regards
-    to improvements in raytracing.
--   It is built from the \"ground-up\" with as little add-ons and
-    plugins at its base to slow down the renderer.
--   It is tailored to use Intel\'s Embree\'s processors to their full
+Moonray is a fast and lean MCRT-based renderer.  It is the culmination of conversations with developers and examinations of courses and papers from other studios with an eye toward making improvements in raytracing. Some highlights:
+-   Built from the \"ground-up\" with as little add-ons and plugins at its base to slow down the renderer.
+-   Tailored to use Intel\'s Embree\'s processors to their full
     extant.
--   It empowers raas_gui for high interactive performance feedback;
+-   Empowers raas_gui for high interactive performance feedback;
     great fluidity using IRP.
 -   Geometry is loaded up front.  Geometry culled on demand slows down
     the renderer.  Textures are accessed when needed and not loaded up
@@ -19,7 +14,6 @@ Moonray is a fast and lean MCRT-based renderer.  Here are some facts:
     multiple cameras; regions, etc.)
 
 There is much on the roadmap for future development:
-
 -   Volume Rendering
 -   Deep Image Support
 -   Denoiser
