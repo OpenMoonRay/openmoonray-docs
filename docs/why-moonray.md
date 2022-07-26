@@ -9,8 +9,8 @@ Moonray is a fast and lean MCRT-based renderer.  It is the culmination of conve
 -   Geometry is loaded up front. (Geometry culled on demand slows down
     the renderer.) However, textures are accessed when needed &#8212; they are not loaded up
     front.
--   Prune geometry tools in development to make smart decisions about
-    what geometry to carry through the render, (e.g: based on ray hits;
+-   Prune geometry tools make smart decisions about
+    what geometry to carry through the render (e.g: based on ray hits;
     multiple cameras; regions, etc.)
 
 There is much on the roadmap for future development:
