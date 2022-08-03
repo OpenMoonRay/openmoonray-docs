@@ -21,3 +21,7 @@
 * Use `monospace` for references to code.
 
   > One-dimensional and two-dimensional samples are stored in contiguous arrays (`std::vector`).
+
+* Capitalize file extensions.
+
+  > Amorphous Volume is a volume shader specifically handling VDB files. 

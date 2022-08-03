@@ -1,4 +1,4 @@
-# Adding pre-computed samples points to MoonRay
+## Adding pre-computed samples points to MoonRay
 
 Sample points should be floating-point values in \[0, 1). A value of 1
 is an input error. Which sampling methods and which points are being
@@ -25,7 +25,7 @@ stored per sequence in progressive order. For example,
 for a two-dimensional integrator sequence, the first point of
 sequence two has array indices `4096 \* 1 + 0` and `4096 \* 1 + 1`.
 
-# Testing ASCII point files
+## Testing ASCII point files
 
 The ASCII file format is whitespace-separated floating-point values in
 \[0, 1). ASCII should only be used for testing. In
@@ -33,7 +33,7 @@ The ASCII file format is whitespace-separated floating-point values in
 `containerFromFile`, which will create any of the containers listed
 above.
 
-# Adding binary point files
+## Adding binary point files
 
 To move points into a release, they must be converted to binary,
 compiled into ELF format, and linked into MoonRay. The point-generation suite has a program that will do the conversion from ACII
