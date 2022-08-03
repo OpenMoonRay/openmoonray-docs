@@ -1,9 +1,5 @@
-# **Introduction**
-
 Amorphous Volume is a volume shader specifically handling vdb file with
-metadata embedded through our in-house GPU volume previewer Amorphous.
-
-The metadata informs renderer which voxel grid to load from vdb file,
+metadata embedded through our in-house GPU volume previewer Amorphous. The metadata informs renderer which voxel grid to load from vdb file,
 and what kind of remapping function to use to remap grid value to final
 volume coefficient.
 
