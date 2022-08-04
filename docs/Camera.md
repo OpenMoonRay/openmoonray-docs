@@ -16,75 +16,270 @@
 
 > near
 
-+---------------------------------------------+------------------------+
-| > **Name:**                                 | > near                 |
-+=============================================+========================+
-| > **Type:**                                 | > *float*              |
-+---------------------------------------------+------------------------+
-| > **Default:**                              | > 1.0                  |
-+---------------------------------------------+------------------------+
+<table>
+<colgroup>
+<col style="width: 65%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><blockquote>
+<p><strong>Name:</strong></p>
+</blockquote></th>
+<th><blockquote>
+<p>near</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><blockquote>
+<p><strong>Type:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p><em>float</em></p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p><strong>Default:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p>1.0</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
 > far
 
-+--------------------------------------+-------------------------------+
-| > **Name:**                          | > f ar                        |
-+======================================+===============================+
-| > **Type:**                          | > *float*                     |
-+--------------------------------------+-------------------------------+
-| > **Default:**                       | > 10000.0                     |
-+--------------------------------------+-------------------------------+
+<table>
+<colgroup>
+<col style="width: 55%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><blockquote>
+<p><strong>Name:</strong></p>
+</blockquote></th>
+<th><blockquote>
+<p>f ar</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><blockquote>
+<p><strong>Type:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p><em>float</em></p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p><strong>Default:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p>10000.0</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
 > mb
 
-+---------------------------------------------+------------------------+
-| > **Name:**                                 | > mb                   |
-+=============================================+========================+
-| > **Type:**                                 | > *bool*               |
-+---------------------------------------------+------------------------+
-| > **Default:**                              | > f alse               |
-+---------------------------------------------+------------------------+
+<table>
+<colgroup>
+<col style="width: 64%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><blockquote>
+<p><strong>Name:</strong></p>
+</blockquote></th>
+<th><blockquote>
+<p>mb</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><blockquote>
+<p><strong>Type:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p><em>bool</em></p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p><strong>Default:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p>f alse</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
 > mb shutter open
 
-+---------------------------+------------------------------------------+
-| > **Name:**               | > mb_shutter_open                        |
-+===========================+==========================================+
-| > **Type:**               | > *float*                                |
-+---------------------------+------------------------------------------+
-| > **Default:**            | > -0.25                                  |
-+---------------------------+------------------------------------------+
+<table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><blockquote>
+<p><strong>Name:</strong></p>
+</blockquote></th>
+<th><blockquote>
+<p>mb_shutter_open</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><blockquote>
+<p><strong>Type:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p><em>float</em></p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p><strong>Default:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p>-0.25</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
 > mb shutter close
 
-+---------------------------+------------------------------------------+
-| > **Name:**               | > mb_shutter_close                       |
-+===========================+==========================================+
-| > **Type:**               | > *float*                                |
-+---------------------------+------------------------------------------+
-| > **Default:**            | > 0.25                                   |
-+---------------------------+------------------------------------------+
+<table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><blockquote>
+<p><strong>Name:</strong></p>
+</blockquote></th>
+<th><blockquote>
+<p>mb_shutter_close</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><blockquote>
+<p><strong>Type:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p><em>float</em></p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p><strong>Default:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p>0.25</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
 > mb shutter bias
 
-+----------------------------+-----------------------------------------+
-| > **Name:**                | > mb_shutter_bias                       |
-+============================+=========================================+
-| > **Type:**                | > *float*                               |
-+----------------------------+-----------------------------------------+
-| > **Default:**             | > 0.0f                                  |
-+----------------------------+-----------------------------------------+
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><blockquote>
+<p><strong>Name:</strong></p>
+</blockquote></th>
+<th><blockquote>
+<p>mb_shutter_bias</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><blockquote>
+<p><strong>Type:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p><em>float</em></p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p><strong>Default:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p>0.0f</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
 > pixel sample map
 
-+----------------------+-----------------------------------------------+
-| > **Name:**          | > pixel_sample_map                            |
-+======================+===============================================+
-| > **Type:**          | > *string*                                    |
-+----------------------+-----------------------------------------------+
-| > **Default:**       | > \"\"                                        |
-+----------------------+-----------------------------------------------+
-| > **Comment:**       | > f ile path to a gray scale image            |
-+----------------------+-----------------------------------------------+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><blockquote>
+<p><strong>Name:</strong></p>
+</blockquote></th>
+<th><blockquote>
+<p>pixel_sample_map</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><blockquote>
+<p><strong>Type:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p><em>string</em></p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p><strong>Default:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p>""</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p><strong>Comment:</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p>f ile path to a gray scale image</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
 ### Pixel Sample Map Usage
 
@@ -96,22 +291,22 @@
 
 ##### Example:
 
-> Grimmel\'s white hair is quite noisy
+> Grimmel's white hair is quite noisy
 >
-> SceneVariables { \[\"pixel samples\"\] = 4
+> SceneVariables { \["pixel samples"\] = 4
 >
 > }
 >
-> PerspectiveCamera { \[\"pixel sample map\"\] = \"\"
+> PerspectiveCamera { \["pixel sample map"\] = ""
 >
 > }
 >
 > All pixels hav e 16 samples
 >
-> ![](media/image1.jpeg){width="7.017077865266842in" height="3.9375in"}
+> <img src="media/image1.jpeg" style="width:7.01708in;height:3.9375in" />
 >
-> ![](media/image2.jpeg){width="7.0in" height="3.9375in"}We can mask it
-> with this image
+> <img src="media/image2.jpeg" style="width:7in;height:3.9375in" />We
+> can mask it with this image
 >
 > The white pixels = 1, and the grey pixels = 0.25.
 >
@@ -119,14 +314,14 @@
 >
 > SceneVariables {
 >
-> \[\"pixel samples\"\] = 8
+> \["pixel samples"\] = 8
 >
 > }
 >
-> PerspectiveCamera { \[\"pixel sample map\"\] = \"hair_mask.png\"
+> PerspectiveCamera { \["pixel sample map"\] = "hair_mask.png"
 >
 > }
 >
-> ![](media/image3.jpeg){width="6.999998906386701in"
-> height="3.9375in"}And this dev otes more pixel samples to the hair!
-> The hair region has 64 samples, and ev ery where else had 16 samples.
+> <img src="media/image3.jpeg" style="width:7in;height:3.9375in" />And
+> this dev otes more pixel samples to the hair! The hair region has 64
+> samples, and ev ery where else had 16 samples.
