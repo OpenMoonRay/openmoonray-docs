@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to the GitHub Pages site for \"manhattan\"
 
 You can use the [editor on GitHub](https://github.com/dreamworksanimation/manhattan/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
