@@ -51,7 +51,7 @@ previous method of color grading and the new method using OCIO. 
 
 | **Without OCIO**                                                        | **With OCIO**                                                          |
 |-------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <img src="OpenColorIO+in+Moonray_gui_files/image1.tmp" style="width:2.22917in;height:2.15625in" /> | <img src="OpenColorIO+in+Moonray_gui_files/image2.tmp" style="width:2.6875in;height:2.46875in" /> |
+| <img src="OpenColorIO+in+Moonray_gui_files/image1.png" style="width:2.22917in;height:2.15625in" /> | <img src="OpenColorIO+in+Moonray_gui_files/image2.png" style="width:2.6875in;height:2.46875in" /> |
 
 -   Debug modes RGB_NORMALIZED and NUM_SAMPLES use the non-OCIO code
     path
