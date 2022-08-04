@@ -1,60 +1,52 @@
 # Metadata
 
-> Introduction
->
-> Attributes
->
-> name ty pe v alue
->
-> Example f or .rdla
+-   [Introduction](#Metadata-Introduction)
 
-### Introduction
+-   [Attributes](#Metadata-Attributes)
 
-> Metadata is a list of attributes, their ty pes, and their v alues. It
-> is of ten used to specif y arbitr ary image header data.
+    -   [name](#Metadata-name)
 
-### Attributes
+    -   [type](#Metadata-type)
 
-> name
+    -   [value](#Metadata-value)
 
-+-------------------------------------------+--------------------------+
-| > **Name:**                               | > name                   |
-+===========================================+==========================+
-| > **Type:**                               | > *string*               |
-+-------------------------------------------+--------------------------+
-| > **Default:**                            | > \"\"                   |
-+-------------------------------------------+--------------------------+
+-   [Example for .rdla](#Metadata-Examplefor.rdla)
 
-> type
+ 
 
-+-------------------------------------------+--------------------------+
-| > **Name:**                               | > ty pe                  |
-+===========================================+==========================+
-| > **Type:**                               | > *string*               |
-+-------------------------------------------+--------------------------+
-| > **Default:**                            | > \"\"                   |
-+-------------------------------------------+--------------------------+
+# Introduction
 
-> value
+Metadata is a list of attributes, their types, and their values. It is
+often used to specify arbitrary image header data.
 
-+-------------------------------------------+--------------------------+
-| > **Name:**                               | > v alue                 |
-+===========================================+==========================+
-| > **Type:**                               | > *string*               |
-+-------------------------------------------+--------------------------+
-| > **Default:**                            | > \"\"                   |
-+-------------------------------------------+--------------------------+
+# Attributes
 
-### Example for .rdla
+## name
 
-> Metadata(\"/Scene/exrheader\") {
->
-> {\"a_color_render_transform\", \"int\", \"27\"},
->
-> {\"a_format\", \"int\", \"77\"},
->
-> {\"a_res\", \"float\", \"1.0\"},
->
-> {\"uuid\", \"string\", \"9f42ed44-e509-11e7-9902-9457a5ef7e3e\"},
->
-> }
+| **Name:**    | name     |
+|--------------|----------|
+| **Type:**    | *string* |
+| **Default:** | ""       |
+
+## type
+
+| **Name:**    | type     |
+|--------------|----------|
+| **Type:**    | *string* |
+| **Default:** | ""       |
+
+## value
+
+| **Name:**    | value    |
+|--------------|----------|
+| **Type:**    | *string* |
+| **Default:** | ""       |
+
+# Example for .rdla
+
+Metadata("/Scene/exrheader") {  
+{"a_color_render_transform", "int", "27"},  
+{"a_format", "int", "77"},  
+{"a_res", "float", "1.0"},  
+{"uuid", "string", "9f42ed44-e509-11e7-9902-9457a5ef7e3e"},  
+}

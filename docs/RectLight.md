@@ -1,89 +1,86 @@
 # RectLight
 
-> Introduction Attributes
->
-> common attributes normalized width height clear radius
+-   [Introduction](#RectLight-Introduction)
 
-### Introduction
+-   [Attributes](#RectLight-Attributes)
 
-> ![](media/image1.jpeg){width="5.201926946631671in"
-> height="2.925in"}RectLight is a light in the shape of a rectangle.
+-   [common attributes](#RectLight-commonattributes)
 
-### Attributes
+-   [normalized](#RectLight-normalized)
 
-> common attributes
->
-> All of the common light attributes apply :
-> [Light#Attributes](http://mydw.dreamworks.net/display/RENDER/Light#Light-Attributes)
-> In addition, RectLight supports the f ollowing specialized attributes:
->
-> normalized
+-   [width](#RectLight-width)
 
-+-----------+----------------------------------------------------------+
-| >         | > normalized                                             |
-| **Name:** |                                                          |
-+===========+==========================================================+
-| >         | > *bool*                                                 |
-| **Type:** |                                                          |
-+-----------+----------------------------------------------------------+
-| > **D     | > true                                                   |
-| efault:** |                                                          |
-+-----------+----------------------------------------------------------+
-| > **C     | > When this v alue is set to true, the size of the light |
-| omment:** | > can be changed without                                 |
-|           | >                                                        |
-|           | > altering the total amount of energy cast into the      |
-|           | > scene.                                                 |
-|           | >                                                        |
-|           | > In technical terms, non-normalized lights interpret    |
-|           | > their radiance v alue as -is, whereas normalized       |
-|           | > lights interpret this v alue as the f lux.             |
-+-----------+----------------------------------------------------------+
+-   [height](#RectLight-height)
 
-> width
+-   [clear radius](#RectLight-clearradius)
 
-+--------------------------------------------+-------------------------+
-| > **Name:**                                | > width                 |
-+============================================+=========================+
-| > **Type:**                                | > *float*               |
-+--------------------------------------------+-------------------------+
-| > **Default:**                             | > 1.0                   |
-+--------------------------------------------+-------------------------+
+# Introduction
 
-> height
+RectLight is a light in the shape of a rectangle. 
 
-+------------------------------------------+---------------------------+
-| > **Name:**                              | > height                  |
-+==========================================+===========================+
-| > **Type:**                              | > *float*                 |
-+------------------------------------------+---------------------------+
-| > **Default:**                           | > 1.0                     |
-+------------------------------------------+---------------------------+
+<img src="media/image1.tmp" style="width:4.875in;height:2.73958in" />
 
-> clear radius
+# Attributes
 
-+-----+----------------------------------------------------------------+
-| >   | > clear_radius                                                 |
-| **N |                                                                |
-| ame |                                                                |
-| :** |                                                                |
-+=====+================================================================+
-| >   | > f loat                                                       |
-| **T |                                                                |
-| ype |                                                                |
-| :** |                                                                |
-+-----+----------------------------------------------------------------+
-| >   | > 0.0                                                          |
-| **D |                                                                |
-| efa |                                                                |
-| ult |                                                                |
-| :** |                                                                |
-+-----+----------------------------------------------------------------+
-| >   | > Shadows less than this distance f rom the light are ignored  |
-| **C | > (disabled if \<= 0.0). For more inf o, please see the user   |
-| omm | > documentation f or clear radius.                             |
-| ent |                                                                |
-| :** |                                                                |
-+-----+----------------------------------------------------------------+
+## common attributes
 
-> Drop here!
+All of the common light attributes
+apply:  [Light#Attributes](file:///G:\\display\\RENDER\\Light#Light-Attributes) In
+addition, RectLight supports the following specialized attributes:
+
+## normalized
+
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Name:</strong></th>
+<th>normalized</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Type:</strong></td>
+<td><em>bool</em></td>
+</tr>
+<tr class="even">
+<td><strong>Default:</strong></td>
+<td>true</td>
+</tr>
+<tr class="odd">
+<td><strong>Comment:</strong></td>
+<td><p>When this value is set to true, the size of the light can be
+changed without<br />
+altering the total amount of energy cast into the scene.</p>
+<p>In technical terms, non-normalized lights interpret their radiance
+value as-is,<br />
+whereas normalized lights interpret this value as the flux.</p></td>
+</tr>
+</tbody>
+</table>
+
+## width
+
+| **Name:**    | width   |
+|--------------|---------|
+| **Type:**    | *float* |
+| **Default:** | 1.0     |
+
+## height
+
+| **Name:**    | height  |
+|--------------|---------|
+| **Type:**    | *float* |
+| **Default:** | 1.0     |
+
+## clear radius
+
+| **Name:**    | clear_radius                                                                                                                                                                                                                           |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Type:**    | float                                                                                                                                                                                                                                  |
+| **Default:** | 0.0                                                                                                                                                                                                                                    |
+| **Comment:** | Shadows less than this distance from the light are ignored (disabled if \<= 0.0). For more info, please see the [user documentation for clear radius](http://mydw.dreamworks.net/display/RENDER/Clear+Radius+and+Max+Shadow+Distance). |
+
