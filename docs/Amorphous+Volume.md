@@ -27,7 +27,7 @@ left to right:
 
 Rgb(0.01, 0.01, 0.01) Rgb(0.1, 0.1, 0.1) Rgb(1, 1, 1)
 
-[image](media/image1.tmp){width="4.876388888888889in"
+![image](media/image1.tmp){width="4.876388888888889in"
 height="1.6236111111111111in"}
 
 ### **color mult**
@@ -40,7 +40,7 @@ left to right:
 
 Rgb(1, 0.2, 0.2) Rgb(0.2, 1, 0.2) Rgb(0.2, 0.2, 1)
 
- ![](media/image2.tmp){width="4.876388888888889in"
+![image](media/image2.tmp){width="4.876388888888889in"
 height="1.6166666666666667in"}
 
 ### **incandescene gain mult**
@@ -56,13 +56,11 @@ Rgb(1, 0.1, 0.1) Rgb(0.1, 1, 0.1) Rgb(0.1, 0.1, 1)
 ![](media/image3.tmp){width="4.876388888888889in"
 height="1.6166666666666667in"}
 
- 
-
 left to right:
 
 Rgb(0.1, 0.1, 0.1) Rgb(1, 1, 1) Rgb(10, 10, 10)
 
-![](media/image4.tmp){width="4.876388888888889in"
+![image](media/image4.tmp){width="4.876388888888889in"
 height="1.6166666666666667in"}
 
 ## **anisotropy**
