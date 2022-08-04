@@ -1,29 +1,28 @@
 # EnvLight
 
-> Introduction
->
-> Attributes common attributes sample upper hemisphere only
+- [Introduction](#EnvLight-Introduction)
+- [Attributes](#EnvLight-Attributes)
+- [common attributes](#EnvLight-commonattributes)
+- [sample upper hemisphere only](#EnvLight-sampleupperhemisphereonly)
 
-### Introduction
+# Introduction
 
-> ![](media/image1.jpeg){width="5.204148075240595in"
-> height="2.925in"}Env ironment Light is a hemispherical or spherical
-> light that surrounds the entire scene.
+Environment Light is a hemispherical or spherical light that surrounds
+the entire scene.
 
-### Attributes
+<img src="media/image1.tmp" style="width:4.875in;height:2.73958in" />
 
-> common attributes
->
-> All of the common light attributes apply :
-> [Light#Attributes](http://mydw.dreamworks.net/display/RENDER/Light#Light-Attributes)
-> In addition, Env Light supports the f ollowing specialized attributes:
->
-> sample upper hemisphere only
+# Attributes
 
-+------------------+---------------------------------------------------+
-| > **Name:**      | > sample_upper_hemisphere_only                    |
-+==================+===================================================+
-| > **Type:**      | > *bool*                                          |
-+------------------+---------------------------------------------------+
-| > **Default:**   | > f alse                                          |
-+------------------+---------------------------------------------------+
+## common attributes
+
+All of the common light attributes
+apply:  [Light#Attributes](file:///G:\display\RENDER\Light#Light-Attributes) In
+addition, EnvLight supports the following specialized attributes:
+
+## sample upper hemisphere only
+
+| **Name:**    | sample_upper_hemisphere_only |
+|--------------|------------------------------|
+| **Type:**    | *bool*                       |
+| **Default:** | false                        |

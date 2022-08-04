@@ -1,115 +1,70 @@
 # DiskLight
+-    [Introduction](#DiskLight-Introduction)
+-   [Attributes](#DiskLight-Attributes) 
+-    [common attributes](#DiskLight-commonattributes)
+-    [normalized](#DiskLight-normalized)
+-   [radius](#DiskLight-radius)
+-  [clear radius](#DiskLight-clearradius)
 
-> Introduction Attributes
->
-> common attributes normalized radius clear
->
-> radius
+# Introduction
 
-### Introduction
+DiskLight is a light in the shape of a disk. 
 
-> DiskLight is a light in the shape of a disk.
->
-> ![](media/image1.jpeg){width="5.2170220909886265in" height="2.925in"}
+<img src="media/image1.tmp" style="width:4.875in;height:2.73958in" />
 
-### Attributes
+# Attributes
 
-> common attributes
->
-> All of the common light attributes apply :
-> [Light#Attributes](http://mydw.dreamworks.net/display/RENDER/Light#Light-Attributes)
-> In addition, DiskLight supports the f ollowing specialized attributes:
->
-> normalized
+## common attributes
 
-+-----------+----------------------------------------------------------+
-| >         | > normalized                                             |
-| **Name:** |                                                          |
-+===========+==========================================================+
-| >         | > *bool*                                                 |
-| **Type:** |                                                          |
-+-----------+----------------------------------------------------------+
-| > **D     | > true                                                   |
-| efault:** |                                                          |
-+-----------+----------------------------------------------------------+
-| > **C     | > When this v alue is set to true, the size of the light |
-| omment:** | > can be changed without                                 |
-|           | >                                                        |
-|           | > altering the total amount of energy cast into the      |
-|           | > scene.                                                 |
-|           | >                                                        |
-|           | > In technical terms, non-normalized lights interpret    |
-|           | > their radiance v alue as-is, whereas normalized lights |
-|           | > interpret this v alue as the f lux.                    |
-+-----------+----------------------------------------------------------+
+All of the common light attributes
+apply:  [Light#Attributes](file:///G:\display\RENDER\Light#Light-Attributes) In
+addition, DiskLight supports the following specialized attributes:
 
-> radius
+## normalized
 
-+------------------------------------------+---------------------------+
-| > **Name:**                              | > radius                  |
-+==========================================+===========================+
-| > **Type:**                              | > *float*                 |
-+------------------------------------------+---------------------------+
-| > **Default:**                           | > 1.0                     |
-+------------------------------------------+---------------------------+
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Name:</strong></th>
+<th>normalized</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Type:</strong></td>
+<td><em>bool</em></td>
+</tr>
+<tr class="even">
+<td><strong>Default:</strong></td>
+<td>true</td>
+</tr>
+<tr class="odd">
+<td><strong>Comment:</strong></td>
+<td><p>When this value is set to true, the size of the light can be
+changed without<br />
+altering the total amount of energy cast into the scene.</p>
+<p>In technical terms, non-normalized lights interpret their radiance
+value as-is,<br />
+whereas normalized lights interpret this value as the flux.</p></td>
+</tr>
+</tbody>
+</table>
 
-> clear radius
+## radius
 
-+-----+----------------------------------------------------------------+
-| >   | > clear_radius                                                 |
-| **N |                                                                |
-| ame |                                                                |
-| :** |                                                                |
-+=====+================================================================+
-| >   | > f loat                                                       |
-| **T |                                                                |
-| ype |                                                                |
-| :** |                                                                |
-+-----+----------------------------------------------------------------+
-| >   | > 0.0                                                          |
-| **D |                                                                |
-| efa |                                                                |
-| ult |                                                                |
-| :** |                                                                |
-+-----+----------------------------------------------------------------+
-| #   | > Shadows less than this distance f rom t he light are ignored |
-|  En | > (disabled if \<= 0.0). For more inf o, please see the user   |
-| vLi | > documentation f or clear                                     |
-| ght | >                                                              |
-|     | > radius.                                                      |
-| >   |                                                                |
-| **C |                                                                |
-| omm |                                                                |
-| ent |                                                                |
-| :** |                                                                |
-+-----+----------------------------------------------------------------+
+| **Name:**    | radius  |
+|--------------|---------|
+| **Type:**    | *float* |
+| **Default:** | 1.0     |
 
-> Drop here!
->
-> Introduction
->
-> Attributes common attributes sample upper hemisphere only
+## clear radius
 
-### Introduction
-
-> ![](media/image2.jpeg){width="5.204148075240595in"
-> height="2.925in"}Env ironment Light is a hemispherical or spherical
-> light that surrounds the entire scene.
-
-### Attributes
-
-> common attributes
->
-> All of the common light attributes apply :
-> [Light#Attributes](http://mydw.dreamworks.net/display/RENDER/Light#Light-Attributes)
-> In addition, Env Light supports the f ollowing specialized attributes:
->
-> sample upper hemisphere only
-
-+------------------+---------------------------------------------------+
-| > **Name:**      | > sample_upper_hemisphere_only                    |
-+==================+===================================================+
-| > **Type:**      | > *bool*                                          |
-+------------------+---------------------------------------------------+
-| > **Default:**   | > f alse                                          |
-+------------------+---------------------------------------------------+
+| **Name:**    | clear_radius                                                                                                                                                                                                                           |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Type:**    | float                                                                                                                                                                                                                                  |
+| **Default:** | 0.0                                                                                                                                                                                                                                    |
+| **Comment:** | Shadows less than this distance from the light are ignored (disabled if \<= 0.0). For more info, please see the [user documentation for clear radius](http://mydw.dreamworks.net/display/RENDER/Clear+Radius+and+Max+Shadow+Distance). |

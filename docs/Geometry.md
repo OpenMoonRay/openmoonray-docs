@@ -1,63 +1,31 @@
 # Geometry
 
-### Attributes
+## Attributes
 
-> ray epsilon
+### ray epsilon
 
-+------+---------------------------------------------------------------+
-| > *  | > ray \_epsilon                                               |
-| *Nam |                                                               |
-| e:** |                                                               |
-+======+===============================================================+
-| > *  | > *Float*                                                     |
-| *Typ |                                                               |
-| e:** |                                                               |
-+------+---------------------------------------------------------------+
-| >    | > 0.0                                                         |
-| **De |                                                               |
-| faul |                                                               |
-| t:** |                                                               |
-+------+---------------------------------------------------------------+
-| >    | > When a secondary ray is f ired, any thing within this       |
-| **Co | > distance of theintersection point will be ignored. Inst     |
-| mmen | > ead, it is considered part of the                           |
-| t:** | >                                                             |
-|      | > current intersection\'s geometry . If zero, an              |
-|      | > automatically calculated epsilon will be used .             |
-+------+---------------------------------------------------------------+
+| **Name:**    | ray_epsilon                                                                                                                                                                                                                                |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Type:**    | *Float*                                                                                                                                                                                                                                    |
+| **Default:** | 0.0                                                                                                                                                                                                                                        |
+| **Comment:** | When a secondary ray is fired, anything within this distance of the intersection point will be ignored. Instead, it is considered part of the current intersection's geometry. If zero, an automatically calculated  epsilon will be used. |
 
-> Example: A box hov ering ov er a ref lectiv e plane. The shadow and
-> the ref lection of the box is v isible on the plane. The ray \_espilon
-> of the plane is changing.
+Example: A box hovering over a reflective plane. The shadow and the
+reflection of the box is visible on the plane. The ray_espilon of the
+plane is changing.
 
-![](media/image1.jpeg){width="4.166666666666667in"
-height="4.166666666666667in"}
+<img src="media/image1.tmp" style="width:4.16667in;height:4.16667in" />
 
-> shadow ray epsilon
+## shadow ray epsilon
 
-+------+---------------------------------------------------------------+
-| > *  | > shadow_ray \_epsilon                                        |
-| *Nam |                                                               |
-| e:** |                                                               |
-+======+===============================================================+
-| > *  | > *Float*                                                     |
-| *Typ |                                                               |
-| e:** |                                                               |
-+------+---------------------------------------------------------------+
-| >    | > 0.0                                                         |
-| **De |                                                               |
-| faul |                                                               |
-| t:** |                                                               |
-+------+---------------------------------------------------------------+
-| >    | > When a shadow ray is f ired, any thing within this distance |
-| **Co | > of theintersection point will be ignored. If this v alue is |
-| mmen | > less than \"ray \_epsilon\" , t                             |
-| t:** | >                                                             |
-|      | > hen it has no additional ef f ect.                          |
-+------+---------------------------------------------------------------+
+| **Name:**    | shadow_ray_epsilon                                                                                                                                                               |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Type:**    | *Float*                                                                                                                                                                          |
+| **Default:** | 0.0                                                                                                                                                                              |
+| **Comment:** | When a shadow ray is fired, anything within this distance of the intersection point will be ignored. If this value is less than "ray_epsilon", then it has no additional effect. |
 
-> Example: A box hov ering ov er a ref lectiv e plane. The shadow and
-> the ref lection of the box is v isible on the plane. The shadow_ray
-> \_espilon of the plane is changing.
->
-> ![](media/image2.jpeg){width="4.1345089676290465in" height="4.125in"}
+Example: A box hovering over a reflective plane. The shadow and the
+reflection of the box is visible on the plane. The shadow_ray_espilon of
+the plane is changing.
+
+<img src="media/image2.tmp" style="width:4.16667in;height:4.16667in" />
