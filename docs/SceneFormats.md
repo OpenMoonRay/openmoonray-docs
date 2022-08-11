@@ -123,7 +123,7 @@ The most general form of a layer entry specifies a geometry object, part name, m
 
 ```lua
 sphere1 = SphereGeometry("/scene/sphere1")
-sphere2 = SphereGeometry("/scene/sphere1")
+sphere2 = SphereGeometry("/scene/sphere2")
 sphere1_mat = BaseMaterial("/scene/sphere1/mat")
 sphere2_mat = BaseMaterial("/scene/sphere2/mat")
 lights = LightSet("/scene/lights")
@@ -151,6 +151,17 @@ The `CheckerboardMap` will be evaluated per sample during shading, and the resul
 
 Each class implementation can decide how to combine the evaluated map value and the attribute's base value : it is not required that the class multiply one by the other, although that is usually the case.
 
+### Motion Blur
+
+Motion blur requires two attribute values to be set : one for the start time and one for the end. In RDLA the `blur` function is used:
+
+```lua
+Camera("/Scene/rendering/camera") {
+ ["node xform"] = blur(
+   translate(-1.0, 0.3, 12) * rotate(-30, 1, 0, 0) * rotate(0, 0, 0, 1),
+   translate(0.0, 0.3, 12) * rotate(-30, 1, 0, 0) * rotate(0, 0, 0, 1)),
+}
+```
 ### Scene Variables
 
 The scene variables object contains overall settings for the render. It can be accessed through the global variable `SceneVariables`. This is how to set scene variables in an RDLA file:
