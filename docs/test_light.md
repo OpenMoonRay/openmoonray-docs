@@ -7,11 +7,11 @@ Lorem ipsum is the simplest light type supported by Moonray. 
 
 ## Common attributes
 
-Lorem ipsum
+Felis eget velit aliquet sagittis id consectetur. A arcu cursus vitae congue mauris rhoncus aenean vel.
 
 ## normalized
 
-| Name:    | normalized                                                                                                                                                                                                                                                                        |
+| Name:    | normalized      |
 |----------|-----------------|
 | Type:    | bool            |
 | Default: | true            |
