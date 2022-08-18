@@ -16,7 +16,7 @@
 
   Sampling methods and points being used are specified in **moonray/lib/rendering/pbr/sampler/SamplingPreprocess.h**.
 
-* Use _italics_ for emphasis and term definitions (term to be followed by the definition _in parentheses_).
+* Use _italics_ for emphasis and _term definitions_ (term followed by the definition _in parentheses_).
 
 * Use `monospace` for references to code and code blocks.
 
