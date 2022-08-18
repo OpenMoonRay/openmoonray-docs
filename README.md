@@ -1,6 +1,7 @@
 **manhattan repo**
 
 # Guidelines for Content Contributors
+[Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 ## Style Rules
 ### Headings
