@@ -2,6 +2,7 @@
 
 # Guidelines for Content Contributors
 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+<a href="https://www.markdownguide.org/cheat-sheet" target="_blank" rel="noopener">Markdown Cheat Sheet</a>
 
 ## Style Rules
 ### Headings
