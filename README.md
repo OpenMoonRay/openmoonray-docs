@@ -14,7 +14,7 @@
 
 * Use **bold** for file names and file paths.
 
-  Sampling methods and points being used are specified in **moonray/lib/rendering/pbr/sampler/SamplingPreprocess.h**.
+  > Sampling methods and points being used are specified in **moonray/lib/rendering/pbr/sampler/SamplingPreprocess.h**.
 
 * Use _italics_ for emphasis and _term definitions_ (term followed by the definition _in parentheses_).
 
@@ -22,6 +22,7 @@
 
   > One-dimensional and two-dimensional samples are stored in contiguous arrays (`std::vector`).
 
-* Capitalize file extensions.
+* Capitalize file extensions and keyboard keys.
 
-  > Amorphous Volume is a volume shader specifically handling VDB files. 
+  > * Amorphous Volume is a volume shader specifically handling VDB files. 
+  > * Press the ENTER key.
