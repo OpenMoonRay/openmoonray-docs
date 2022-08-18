@@ -8,8 +8,6 @@
   
   > **Adding pre-computed samples points to MoonRay**
 
-* Use only &lt;h2> as the top-level heading (`## Heading Name` in Markdown).
-
 * Use *present tense* whenever possible. 
 
   > This function ~~will create~~ **creates** any of the containers listed above.
@@ -20,7 +18,7 @@
 
 * Use _italics_ for emphasis and term definitions (term to be followed by the definition _in parentheses_).
 
-* Use `monospace` for references to code.
+* Use `monospace` for references to code and code blocks.
 
   > One-dimensional and two-dimensional samples are stored in contiguous arrays (`std::vector`).
 
