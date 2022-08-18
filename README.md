@@ -6,7 +6,7 @@
 ### Headings
 * Use _down-style capitalization_ (aka "sentence case") for headings. 
   
-  > **Adding pre-computed samples points to MoonRay**
+  > <pre>## Adding pre-computed samples points to MoonRay</pre>
 
 * Use *present tense* whenever possible. 
 
