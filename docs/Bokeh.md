@@ -56,8 +56,7 @@ provide an angle at which the polygon will be rotated counterclockwise.
 With the number of sides, as you approach infinity, it will converge to
 a circle. Common real camera blade configurations range between 6 and 9
 blades, which is suggested for a realistic effect. The angle control can
-take any number from 0 to infinity but once you exceed 180 degrees,
-it\'s unnecessary.
+take any number from 0 to 180 degrees.
 
 **Mode** | **Polygon**
 ---------- | ----------
