@@ -11,7 +11,7 @@ Felis eget velit aliquet sagittis id consectetur. A arcu cursus vitae congue mau
 
 ## normalized
 
-| Name:    | normalized      |
+| Name    | normalized      |
 |----------|-----------------|
 | Type:    | bool            |
 | Default: | true            |
@@ -19,15 +19,15 @@ Felis eget velit aliquet sagittis id consectetur. A arcu cursus vitae congue mau
 
 ## radius
 
-| **Name:**    | radius  |
+| **Name**    | radius  |
 |--------------|---------|
 | **Type:**    | *float* |
 | **Default:** | 1.0     |
 
 ## clear radius
 
-| **Name:**    | clear_radius                                                                                                                                                                                                                           |
+| **Name**    | clear_radius                                                                                                                                                                                                                           |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Type:**    | float       |
-| **Default:** | 0.0   |
+| **Type**    | float       |
+| **Default** | 0.0   |
 | **Comment:** | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. |
