@@ -15,6 +15,8 @@ last_modified_at: 2021-08-04T20:34:59
 
 Felis eget velit aliquet sagittis id consectetur. A arcu cursus vitae congue mauris rhoncus aenean vel.
 
+![](../images/SD_ior_wedge.gif).
+
 ## <!-- attribute_name -->normalized
 
 <!-- Optional explanation/description here -->
