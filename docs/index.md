@@ -9,6 +9,8 @@ Lorem ipsum is the simplest light type supported by Moonray. 
 
 Felis eget velit aliquet sagittis id consectetur. A arcu cursus vitae congue mauris rhoncus aenean vel.
 
+![](../images/SD_ior_wedge.gif)
+
 ## normalized
 
 | Name:    | normalized      |
