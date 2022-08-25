@@ -8,6 +8,15 @@ Markdown is a lightweight markup language used to add basic formatting to plaint
 Jekyll uses Liquid templates and Markdown files to produce a complete, static website ready to be served by a web server. Jekyll has been adopted by GitHub Pages, a feature that enables us to host a website straight from our GitHub repository.
 
 ## Contributing Philosophy
+We have begun migrating pages from DA's Confluence solution and converting them to Markdown files. Also, we have provided a _content template_ Markdown file to use as a starting point.
+
+**To begin contributing content:**
+1. Open the [content template](docs/_content_template.md) file. 
+1. Do one of the following:
+    * Open a migrated topic's MD file and begin selectively copy/pasting content from the topic into the template.
+    * Begin writing new content in the appropriate sections of the template file.
+1. Save the template file as a new MD file in the appropriate subfolder.
+
 When contributing content, don't worry about how the output will appear &#8212; the technology is handling that part! Rather, focus on writing _excellent content_. For help with Markdown sysntax, see [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 
 ## Content Structure
@@ -29,18 +38,19 @@ Grammatical tactics to improve clarity.
 
 ### Typography
 Visual cues indicating the type of information.
-* Use **bold** for file names and file paths.
 
+**Tip:** Anytime you consider "using quotation marks," do the following instead:
+
+* Use **bold** for file names and file paths.
   >Sampling methods and points being used are specified in **moonray/lib/rendering/pbr/sampler/SamplingPreprocess.h**.
 
-* Use _italics_ for emphasis and _term definitions_ (term followed by the definition _in parentheses_).
-  > The two primary file formats _RDLA_ (readable text format) and _RDLB_ (binary format).
+* Use _italics_ for emphasis and _term definitions_ (term followed by the definition, usually _in parentheses_).
+    > The two primary file formats: _RDLA_ (readable text format) and _RDLB_ (binary format).
 
 * Use `monospace` for references to code and for code blocks.
-
   > One-dimensional and two-dimensional samples are stored in contiguous arrays (`std::vector`).
 
-  ```Lua
+  ```Lua // <-- This sets MD's syntax-highlighting scheme
   BaseMaterial("/scene/sphere/base") {
     ["ior"] = 1.0,
     ["diffuse color"] = Rgb(0.8, 0.8, 0.2)
