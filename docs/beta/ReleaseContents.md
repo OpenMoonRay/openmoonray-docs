@@ -9,7 +9,8 @@ Basic use is as follows:
 moonray -in scene.rdla -out render.exr
 ```
 
-The input scene can be be RDLA (text : `.rdla`) or RDLB (binary : `.rdlb`) format.
+The input scene can be be RDLA (text : `.rdla`) or RDLB (binary : `.rdlb`) format. You can use `-in` multiple times to provide multiple scene files : they are merged into a single scene and can be any mix of RDLA and RDLB. Each input file can add new objects and modify (i.e. override) attributes defined in the earlier files. It can be useful to create an RDLA file holding smaller objects that you can edit manually, and an RDLB containing large geometry objects that would be difficult to handle in a text editor.
+
 Multiple image formats are supported for the rendered image, including EXR, TIFF and JPEG.
 
 To show the full set of command line options, run:
@@ -19,6 +20,8 @@ moonray --help
 ```
 
 `moonray_gui` is a Qt application that displays the framebuffer while rendering. The command line options are very similar to those for `moonray`. `moonray_gui` has hotkeys to alter the display mode, move the camera around, and various other useful things. You can display a menu of the hotkeys by pressing 'H'.
+
+`moonray_gui` monitors the input scene files while it is running : if a file changes, it automatically reloads the data and restarts the render.
 
 ## Moonray Scene Object Plugins
 
