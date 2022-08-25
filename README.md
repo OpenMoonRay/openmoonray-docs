@@ -46,7 +46,7 @@ Grammatical tactics to improve clarity.
 
 * Use *second person* (you/me) to address the reader directly.
 
-  >~~The reader~~ You can also read and write both formats from code using the `scene_rdl2` library.
+  >~~The reader~~ You can read and write both RDL formats from code using the `scene_rdl2` library.
 
 ### Typography
 Visual cues indicating the type of information.
