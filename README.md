@@ -1,8 +1,8 @@
 **OpenMoonRay** README
 
 # Handbook for Content Contributors
-<!-- Concept info -->
 
+<!-- Concept info -->
 ## Content Structure
 There are three kinds of topics:
 - _Concept_ topics present abstract concepts, descriptions, and examples, that explain the background and context of a subject.
