@@ -1,26 +1,28 @@
-**manhattan repo** README
+**OpenMoonRay** README
 
 # Guidelines for Content Contributors
+
+## Content Structure
+There are three kinds of topics:
+- _Concept_ topics present abstract concepts, descriptions, and examples, that explain the background and context of a subject.
+- _Task_ topics provide procedural information about how to do something, usually as a procedure consisting of steps.
+- _Reference_ topics provide detailed facts or specifications, usually in the form of a table or list.
+
+## Contributing Philosophy
+We have begun migrating pages from DreamWorks Animation's [Confluence spaces](http://mydw.dreamworks.net/display/RENDER/) and converting them to Markdown files. Also, we have provided a _content template_ Markdown file for you to use as a starting point.
+
 ## Markdown
 Markdown is a lightweight markup language used to add basic formatting to plaintext documents.
 
 ## Jekyll and Github Pages
 Jekyll uses Liquid templates and Markdown files to produce a complete, static website ready to be served by a web server. Jekyll has been adopted by GitHub Pages, a feature that enables us to host a website straight from our GitHub repository.
 
-## Contributing Philosophy
-We have begun migrating pages from DA's Confluence solution and converting them to Markdown files. Also, we have provided a _content template_ Markdown file to use as a starting point.
-
-## Content Structure
-There are three kinds of topics:
-- _Concept_ topics present concepts, descriptions, and examples, that explain the background and context of a subject.
-- _Task_ topics provide procedural information about how to do something, usually as a procedure consisting of steps.
-- _Reference_ topics provide detailed facts or specifications, usually in the form of a table or list.
-
 ## Tools
-Markdown files are plaintext, which means that you can use any IDE (like Visual Studio Code) or text editor (like Notepa&nbsp ;++)
+Markdown files are plaintext, which means that you can use any IDE (like Visual Studio Code) or text editor (like Notepad&nbsp;++). The tools often support Markdown using extensions that enable you to preview the output in real time as you write.
+- [Markdown editing with Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+- [MarkdownViewer++ Notepad++ plugin](https://superuser.com/questions/586177/how-to-use-markdown-in-notepad)
 
-[Markdown editing with Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
-
+## Process
 **To begin contributing content:**
 1. Open the [content template](docs/_content_template.md) file. 
 1. Do one of the following:
