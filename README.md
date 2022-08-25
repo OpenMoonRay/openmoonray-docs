@@ -10,6 +10,17 @@ Jekyll uses Liquid templates and Markdown files to produce a complete, static we
 ## Contributing Philosophy
 We have begun migrating pages from DA's Confluence solution and converting them to Markdown files. Also, we have provided a _content template_ Markdown file to use as a starting point.
 
+## Content Structure
+There are three kinds of topics:
+- _Concept_ topics present concepts, descriptions, and examples, that explain the background and context of a subject.
+- _Task_ topics provide procedural information about how to do something, usually as a procedure consisting of steps.
+- _Reference_ topics provide detailed facts or specifications, usually in the form of a table or list.
+
+## Tools
+Markdown files are plaintext, which means that you can use any IDE (like Visual Studio Code) or text editor (like Notepa&nbsp ;++)
+
+[Markdown editing with Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+
 **To begin contributing content:**
 1. Open the [content template](docs/_content_template.md) file. 
 1. Do one of the following:
@@ -17,13 +28,12 @@ We have begun migrating pages from DA's Confluence solution and converting them 
     * Begin writing new content in the appropriate sections of the template file.
 1. Save the template file as a new MD file in the appropriate subfolder.
 
-When contributing content, don't worry about how the output will appear &#8212; the technology is handling that part! Rather, focus on writing _excellent content_. For help with Markdown sysntax, see [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+When contributing content, don't focus on how the output will appear &#8212; the technology is handling that part! Rather, focus on writing _excellent content_. 
 
-## Content Structure
-There are three kinds of topics:
-- _Concept_ topics present concepts, descriptions, and examples, that explain the background and context of a subject.
-- _Task_ topics provide procedural information about how to do something, usually as a procedure consisting of steps.
-- _Reference_ topics provide detailed facts or specifications, usually in the form of a table or list.
+>**Tips:**<br>
+>For help with Markdown sysntax, see [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).<br>
+>Markdown should support using HTML tags. This is helpful to work around limitations of Markdown syntax. But this should be done rarely and usually not in service of formatting the output.<br>
+>View the Markdown source for this README file for more exposure to Markdown syntax.
 
 ## Style Rules
 ### Grammar
@@ -44,10 +54,10 @@ Visual cues indicating the type of information.
 * Use **bold** for file names and file paths.
   >Sampling methods and points being used are specified in **moonray/lib/rendering/pbr/sampler/SamplingPreprocess.h**.
 
-* Use _italics_ for emphasis and _term definitions_ (term followed by the definition, usually _in parentheses_).
+* Use _italics_ for emphasis and _term definitions_ (term followed by the definition, (usually _in parentheses_).
     > The two primary file formats: _RDLA_ (readable text format) and _RDLB_ (binary format).
 
-* Use `monospace` for references to code and for code blocks.
+* Use `monospace` for references to code and for fenced code blocks.
   > One-dimensional and two-dimensional samples are stored in contiguous arrays (`std::vector`).
 
   ```Lua // <-- This sets MD's syntax-highlighting scheme
