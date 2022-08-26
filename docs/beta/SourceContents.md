@@ -2,10 +2,10 @@
 
 The open source release contains the following pieces of technology:
 
-- the Moonray path-tracing renderer
-- the majority of the scene object classes (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
-- a Hydra plugin for Moonray: HdMoonray
-- the Arras execution and distribution framework, used to integrate Moonray into applications
+- Moonray path-tracing renderer
+- Most of the scene object classes (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
+- Hydra plugin for Moonray: HdMoonray
+- Arras execution and distribution framework, used to integrate Moonray into applications
 
 The source is contained in multiple Git repositories. The `openmoonray` repository contains the top-level CMake build files, and uses submodules to link in all the others. The zipped source release is the `openmoonray` repository with the submodules filled in.
 
@@ -24,18 +24,18 @@ Four Git repositories make up the main source of Moonray, providing the command 
 
 The `moonray` repository contains a basic set of of scene class plugins for use with Moonray. The `moonshine` repository contains an additional set of scene classes. 
 
-- **camera:** Bake DomeMaster3D Orthographic Perspective Spherical
-- **displacement:** Combine Normal Vector *Switch*
-- **display filter:** *Blend* *Constant* *Halftone* *Ramp* *Shadow* *Clamp*      *Convolution* *Image* *Remap* *TangentSpace* *Discretize* *Op* *RgbToFloat* *Toon*
-*ColorCorrect* *Dof* *Over* *RgbToHsv*
-- **geometry:** OpenVdb RdlCurve RdlInstancer RdlMesh RdlPoint *Box* *Sphere* *Template*
-- **light:** Cylinder Disk Distant Env Mesh Rect Sphere Spot
-- **light filter:** BarnDoor ColorRamp Cookie Intensity Vdb Combine Decay Rod
-- **map:** Attribute Debug List UsdPrimvarReader_float2 UsdPrimvarReader_point UsdUVTexture Checkerboard ExtraAov OpenVdb UsdPrimvarReader_float3 UsdPrimvarReader_vector Image UsdPrimvarReader_float UsdPrimvarReader_int     UsdTransform2d *AxisAngle* *ColorCorrectLegacy* *Directional* *LOD* *ProjectSpherical* *SwitchColor* *Blend* *ColorCorrect* *FloatToRgb* *Noise* *ProjectTriplanar* *SwitchFloat* *Clamp* *ColorCorrectNuke* *Gradient* *NoiseWorley* *ProjectTriplanarUdim* *Template* *ColorCorrectSaturation* *HairColorPresets* *NormalToRgb* *Ramp* *Toon* *ColorCorrectContrast* *ColorCorrectTMI* *HairColumn* *Op* *Random* *TransformNormal* *ColorCorrectGainOffset* *ConstantColor* *Hair*  *OpSqrt* *Remap* *TransformSpace* *ColorCorrectGamma* *ConstantScalar* *HsvToRgb* *ProjectCamera* *RgbToFloat* *UVTransform* *ColorCorrectHsv* *Curvature* *Layer*     *ProjectCylindrical* *RgbToHsv* *Wireframe* *ColorCorrectHueShift* *Deformation* *LcToRgb* *ProjectPlanar* *RgbToLab*
-- **normal map:** *Distort*  *ProjectCamera*  *ProjectTriplanar* *RgbToNormal* *UsdPrimvarReader_normal* *Combine* *Image* *ProjectPlanar*  *Random* *Switch*
-- **material:** Axf Base Measured RaySwitch Switch UsdPreviewSurface *DwaColorCorrect*  *DwaLayer*  *DwaRefractive* *DwaSwitch* *GlitterFlake* *HairDiffuse* *Toon* *HairToon* *DwaAdjust* *DwaEmissive*      *DwaMetal* *DwaSkin* *DwaTwoSided* *Hair* *HairLayer*
-*DwaBase* *DwaFabric* *DwaMix* *DwaSolidDielectric* *DwaVelvet* *HairColorCorrect* *MacroFlake*
-- **volume:** Base Cutout
+| Type | Classes |
+|------|---------|
+|**camera** | Bake DomeMaster3D Orthographic Perspective Spherical
+|**displacement**| Combine Normal Vector *Switch*
+|**display filter**| *Blend* *Constant* *Halftone* *Ramp* *Shadow* *Clamp*      *Convolution* *Image* *Remap* *TangentSpace* *Discretize* *Op* *RgbToFloat* *Toon* *ColorCorrect* *Dof* *Over* *RgbToHsv*
+|**geometry**| OpenVdb RdlCurve RdlInstancer RdlMesh RdlPoint *Box* *Sphere* *Template*
+|**light**| Cylinder Disk Distant Env Mesh Rect Sphere Spot
+|**light filter**| BarnDoor ColorRamp Cookie Intensity Vdb Combine Decay Rod
+|**map**| Attribute Debug List UsdPrimvarReader_float2 UsdPrimvarReader_point UsdUVTexture Checkerboard ExtraAov OpenVdb UsdPrimvarReader_float3 UsdPrimvarReader_vector Image UsdPrimvarReader_float UsdPrimvarReader_int     UsdTransform2d *AxisAngle* *ColorCorrectLegacy* *Directional* *LOD* *ProjectSpherical* *SwitchColor* *Blend* *ColorCorrect* *FloatToRgb* *Noise* *ProjectTriplanar* *SwitchFloat* *Clamp* *ColorCorrectNuke* *Gradient* *NoiseWorley* *ProjectTriplanarUdim* *Template* *ColorCorrectSaturation* *HairColorPresets* *NormalToRgb* *Ramp* *Toon* *ColorCorrectContrast* *ColorCorrectTMI* *HairColumn* *Op* *Random* *TransformNormal* *ColorCorrectGainOffset* *ConstantColor* *Hair*  *OpSqrt* *Remap* *TransformSpace* *ColorCorrectGamma* *ConstantScalar* *HsvToRgb* *ProjectCamera* *RgbToFloat* *UVTransform* *ColorCorrectHsv* *Curvature* *Layer*     *ProjectCylindrical* *RgbToHsv* *Wireframe* *ColorCorrectHueShift* *Deformation* *LcToRgb* *ProjectPlanar* *RgbToLab*
+|**normal map**| *Distort*  *ProjectCamera*  *ProjectTriplanar* *RgbToNormal* *UsdPrimvarReader_normal* *Combine* *Image* *ProjectPlanar*  *Random* *Switch*
+|**material**| Axf Base Measured RaySwitch Switch UsdPreviewSurface *DwaColorCorrect*  *DwaLayer*  *DwaRefractive* *DwaSwitch* *GlitterFlake* *HairDiffuse* *Toon* *HairToon* *DwaAdjust* *DwaEmissive*      *DwaMetal* *DwaSkin* *DwaTwoSided* *Hair* *HairLayer* *DwaBase* *DwaFabric* *DwaMix* *DwaSolidDielectric* *DwaVelvet* *HairColorCorrect* *MacroFlake*
+|**volume**| Base Cutout
 
 Names in *italics* are in the moonshine repository.
 
@@ -43,19 +43,20 @@ The `moonshine_usd` repository contains two geometry classes : Usd and UsdInstan
 
 ## HdMoonray hydra plugin
 
-The `hdMoonray` repository contains the Moonray Hydra render delegate plugin and several "adapter" plugins for usdimaging. The adapter plugins are needed to work around missing support in earlier versions of usdimaging, and should no longer be necessary as Hydra evolves.
+The `hdMoonray` repository contains the Moonray Hydra render delegate plugin and several *adapter* plugins for the USD scene delegate. The adapter plugins are needed to work around missing support in earlier versions of the USD scene delegate, and should no longer be necessary as Hydra evolves.
 
-The Moonray material and map shader classes need to be registered with the USD SDR library to use Moonray material networks. This is done with two plugins in `moonrayNdrPlugins`. These plugins read JSON descriptions of the shaders from `MOONRAY_CLASS_PATH`. Before using HdMoonray the JSON description file must be generated using the `rdl2_json_exporter` program.
+The Moonray material and map shader classes need to be registered with the USD SDR library to use Moonray material networks. This is done with two plugins in `moonrayNdrPlugins`. These plugins read JSON descriptions of the shaders from `MOONRAY_CLASS_PATH`. 
+The JSON files are not built by the Moonray *cmake* system : you will need to generate them using the `rdl2_json_exporter` program before using HdMoonray for the first time.
 
 HdMoonray requires Arras to build and run.
 
-There are more instructions on how to configure and use HdMoonray in **hydra/README.md**
+There are more instructions on how to configure and use HdMoonray in the Hydra plugin README file (**hydra/README.md**).
 
 ## Arras
 
 Arras allows applications to use the Moonray renderer running in one or more separate processes. Arras itself is not specific to Moonray, and can be used to run other programs.
 
-The `arras4_core` repository contains C++ interfaces and implementations of the central Arras components. It contains everything needed to create and run Arras components in "local" mode (i.e. in a single process on the same machine as the client).
+The `arras4_core` repository contains C++ interfaces and implementations of the central Arras components. It contains everything needed to create and run Arras components in *local mode* (in a single process on the same machine as the client).
 
 `moonray_arras` (under the **moonray** top-level directory) contains the Moonray-specific Arras components:
 - `mcrt_messages` defines the Arras messages used to communicate between client and render processes.

@@ -9,7 +9,7 @@ Basic use is as follows:
 moonray -in scene.rdla -out render.exr
 ```
 
-The input scene can be be RDLA (text : `.rdla`) or RDLB (binary : `.rdlb`) format. You can use `-in` multiple times to provide multiple scene files : they are merged into a single scene and can be any mix of RDLA and RDLB. Each input file can add new objects and modify (i.e. override) attributes defined in the earlier files. It can be useful to create an RDLA file holding smaller objects that you can edit manually, and an RDLB containing large geometry objects that would be difficult to handle in a text editor.
+The input scene can be be RDLA (text : `.rdla`) or RDLB (binary : `.rdlb`) format. You can use `-in` multiple times to provide multiple scene files : they are merged into a single scene and can be any mix of RDLA and RDLB. Each input file can both add new objects and modify objects defined in the earlier files. It can be useful to create an RDLA file holding smaller objects that you can edit manually, and an RDLB containing large geometry objects that would be difficult to handle in a text editor.
 
 Multiple image formats are supported for the rendered image, including EXR, TIFF and JPEG.
 
@@ -25,15 +25,15 @@ moonray --help
 
 ## Moonray Scene Object Plugins
 
-Apart from a few built-in classes, Moonray scene objects are implemented as ".so" shared libraries that Moonray loads at runtime. These libraries are kept under the **rdl2dso** directory in the release. Make sure the environment variable `RDL2_DSO_PATH` is set to the path of this directory in the release before running Moonray. **rdl2dso.proxy** contains special versions of the plugins that can read and write scene objects from RDLA and RDLB formats, but cannot actually render them. These proxy ".so" files are used when you want to manipulate scene files without linking to the Moonray renderer itself.
+Apart from a few built-in classes, Moonray scene objects are implemented as shared libraries (***filename*.so**) that Moonray loads at runtime. These libraries are kept under the **rdl2dso** directory in the release. Make sure the environment variable `RDL2_DSO_PATH` is set to the path of this directory in the release before running Moonray. **rdl2dso.proxy** contains special versions of the plugins that can read and write scene objects from RDLA and RDLB formats, but cannot actually render them. These proxy SO files are used when you want to manipulate scene files without linking to the Moonray renderer itself.
 
 ## Moonray Hydra Plugin
 
 `HdMoonray` is the Moonray plugin to Hydra. It actually consists of several separate plugins:
  
  - `hdMoonray.so` is the Hydra Render Delegate for Moonray
- - `hdMoonrayAdapters.so` contains several "adapters" for the Hydra USD Scene Delegate, needed to support Geometry Lights and Light Filters
- - `moonrayShaderDiscovery.so` and `moonrayShaderParser.so` are plugins to the "Shader Definition Registry" (SDR), required to use Moonray shaders from Hydra.
+ - `hdMoonrayAdapters.so` contains several *adapter* classes that extend the Hydra USD Scene Delegate with support for Geometry Lights and Light Filters
+ - `moonrayShaderDiscovery.so` and `moonrayShaderParser.so` are plugins to the *Shader Definition Registry* (SDR). They enable Hydra to correctly process Moonray shader networks in USD data.
 
  **Readme.md** in the **hydra** directory of the source tree has some information on how to set up HdMoonray.
 
@@ -43,9 +43,15 @@ Apart from a few built-in classes, Moonray scene objects are implemented as ".so
 
 ## RDL2 Utilities
 
-`RDL2` is the scene format used by Moonray : scene files are either in RDLA (text : `.rdla`) or RDLB (binary : `.rdlb`) format. There are several utilities in the release **bin** directory. Generally these require the environment variable `RDL2_DSO_PATH` to be set to point to the scene object `.so`s : at least the proxy versions are required to read and write RDL2 files.
+`RDL2` is the scene format used by Moonray : scene files are either in RDLA (text : `.rdla`) or RDLB (binary : `.rdlb`) format. There are several utilities in the release **bin** directory. Generally these require the environment variable `RDL2_DSO_PATH` to be set to point to the scene object SO files -- at least the proxy versions are needed to read and write RDL2 files.
 
-`rdl2_convert` converts between RDLA and RDLB format: `rdl2_convert <inputfile> <outputfile>`. The format of each file is determined by the extension (`.rdla` or `.rdlb`). Converting from one RDLA file to another will produce an output in "canonical" form : i.e. without any procedural scripting elements. Converting one RDLB file to another is unlikely to have any useful effect.
+`rdl2_convert` converts between RDLA and RDLB format :
+
+```bash
+rdl2_convert <inputfile> <outputfile>
+```
+
+ The format of each file is determined by the extension (`.rdla` or `.rdlb`). Converting from one RDLA file to another will produce an output in a *canonical* form  (removing any non-trivial Lua scripting). 
 
 `rdl2_print` has two functions :
 
@@ -58,11 +64,8 @@ Apart from a few built-in classes, Moonray scene objects are implemented as ".so
 
 ## Arras
 
-Arras clients link against the core Arras libraries in *lib64*. When running in "local" mode (one Moonray render process running on the same machine), the Arras runtime (`execComp`) and Moonray/Arras library (`libmcrt_computation_progmcrt.so`) are used automatically.
+Arras clients link with the core Arras libraries in **lib64**. When running in *local mode* (just one Moonray render process running on the same machine as the client), the Arras runtime (`execComp`) and Moonray/Arras library (`libmcrt_computation_progmcrt.so`) are used automatically.
 
-Using Arras in distributed mode requires an Arras node process (`arras4_node`) to be started on every render node, and the Arras service (`minicoord`) to be running on a single machine.
+In distributed mode (multiple render processes running on multiple machines), Arras requires a *node* process (`arras4_node`) to be started on each machine. The Arras *coordinator* service (`minicoord`) runs on a single machine somewhere on the network, managing the individual nodes and sessions.
 
 `arras_render` is a Qt application similar to `moonray_gui` that uses Arras to perform the render.
-
-
-
