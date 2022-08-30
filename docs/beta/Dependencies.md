@@ -28,7 +28,7 @@ These are the third-party libraries and tools that Moonray and Arras depend on.
 |USD             | 21.8       | https://github.com/PixarAnimationStudios/USD
 |Qt              | 5.12       |
 
-**Lua** must be build with the -fPIC option : e.g. *make linux MYCFLAGS=-fPIC*
+**Lua** must be built with the -fPIC option : e.g. *make linux MYCFLAGS=-fPIC*
 
 **Microhttpd** and **Curl** are only needed when building or using Arras. Arras also needs **OpenSSL**.
 
