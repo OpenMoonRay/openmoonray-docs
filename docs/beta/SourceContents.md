@@ -65,7 +65,7 @@ The `arras4_core` repository contains C++ interfaces and implementations of the 
 
 The **arras/distributed** directory holds the components needed to run distributed Arras renders:
 - `arras4_node` runs on every render node
-- a single instance of `minicoord` is run as a service to allocated and manage render nodes
+- a single instance of `minicoord` is run as a service to allocate and manage render nodes
 
 `arras_render` is a GUI tool to execute Arras renders, and provides an example of Arras integration.
 
