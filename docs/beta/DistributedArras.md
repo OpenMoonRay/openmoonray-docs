@@ -11,7 +11,7 @@ The OpenMoonray release contains the Node implementation we use at DWA, called *
 
 ### Coordinator
 
-The first step in setting up distributed Arras is to start minicoord running on a network machine. This can be one of the pool machines or completely separate. Minicoord requires the python packages `tornado-5` and `requests-2`, so these must be installed somewhere that Python can find them. It doesn't depend on any other commands or libraries in OpenMoonray. The main file is `run.py` : the service runs in the background with a python interpreter in the foreground to inspect the service's current state :
+The first step in setting up distributed Arras is to start minicoord running on a network machine. This can be one of the pool machines or completely separate. Minicoord requires the python packages `tornado-5` and `requests-2`, so these must be installed somewhere that Python can find them. Minicoord doesn't have any dependencies on the rest of openmoonray, so it can be run outside of a build/release container. The main file is `run.py` : the service runs in the background with a python interpreter in the foreground to inspect the service's current state :
 
 ```bash
 python -i run.py
