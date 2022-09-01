@@ -25,3 +25,11 @@ The Moonray Hydra plugin, HdMoonray, uses Arras as its primary means of communic
 ## Moonray Arras Client Plugins
 
 You can integrate interactive Moonray rendering into an application using an Arras client plugin. If the application supports Hydra, the easiest way to do this is to use the HdMoonray Hydra plugin. You can also write a new client plugin that does not require Hydra, using the Arras client API.
+
+## Local and distributed modes
+
+In **local mode** Arras starts a single render process on the same machine as the client. This provides the benefits of isolation from the the main client application, but doesn't support remote or multi-machine rendering. The code to start a local mode session is in the Arras client library, so you don't need any additional services or setup to use local mode.
+
+In **distributed mode**, Arras uses a service called **Coordinator** to manage a *pool* of render machines. Coordinator allocates machines in the pool as the client requests them, based on the remaining CPU and memory resources on each machine. As well as a running Coordinator service, distributed mode requires a service called **Node** running on each machine in the pool.
+
+The client plugin code required to use local mode and distributed mode is essentially the same. When requesting a new Arras session, the client provides the URL of a Coordinator service that it wants to use. If it uses the string "local:" in place of an actual Coordinator endpoint, Arras automatically uses local mode. 

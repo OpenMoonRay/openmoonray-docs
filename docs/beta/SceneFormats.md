@@ -129,8 +129,8 @@ sphere2_mat = BaseMaterial("/scene/sphere2/mat")
 lights = LightSet("/scene/lights")
   
 layer = Layer("/scene/layer") {
-    {sphere1, "", base1, lights},
-    {sphere2, "", base2, lights}
+    {sphere1, "", sphere1_mat, lights},
+    {sphere2, "", sphere2_mat, lights}
 }
 ```
 
