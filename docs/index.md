@@ -1,4 +1,4 @@
-# Lorem ipsum - randy wuz here
+# Lorem ipsum
 Lorem ipsum is the simplest light type supported by Moonray. 
 
 # Attributes
