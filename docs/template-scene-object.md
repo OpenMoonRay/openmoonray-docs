@@ -8,14 +8,14 @@ Description of shader goes here
 
 <!-- Next, create a section for class name with the major headline "Class Name" -->
 
-# Class Name
+## Class Name
 
 <!-- Next, create a section for object attributes with the major headline "Attributes" -->
 
-# Attributes
+## List of Attributes
 
 <!-- Add a sub-headline for a specific attribute -->
-## Common attributes
+### Common attributes
 
 <!-- describe the attribute -->
 Felis eget velit aliquet sagittis id consectetur. A arcu cursus vitae congue mauris rhoncus aenean vel.
@@ -24,7 +24,7 @@ Felis eget velit aliquet sagittis id consectetur. A arcu cursus vitae congue mau
 
 ![](images/sd-ior-wedge.gif)
 
-## normalized
+### normalized
 
 <!-- list parameters for the attribute -->
 
@@ -34,14 +34,14 @@ Felis eget velit aliquet sagittis id consectetur. A arcu cursus vitae congue mau
 | Default: | true            |
 | Comment: | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida dictum fusce ut placerat orci. |
 
-## radius
+### radius
 
 | **Name**    | radius  |
 |--------------|---------|
 | **Type:**    | *float* |
 | **Default:** | 1.0     |
 
-## clear radius
+### clear radius
 
 | **Name**    | clear_radius                                                                                                                                                                                                                           |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
