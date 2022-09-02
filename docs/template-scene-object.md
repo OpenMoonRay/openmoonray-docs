@@ -2,8 +2,14 @@
      always include name of the scene object in the headline below 
 
      Consider grouping related attributes into their own sections
+
+     Consider using rdl_print on the scene object to get the info on the attributes to include on the page
+
+     Be consistent as to whether you list the default of attributes.  
 -->
-     
+
+<!-- How do we create a 'standardized note' in a page? -->
+
 # Name of Scene Object
 
 <!-- Add a description of the Scene Object
