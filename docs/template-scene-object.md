@@ -17,16 +17,17 @@ Description of shader goes here
 
 ## List of Attributes
 
-<!-- Add a sub-headline for a specific attribute -->
-#### Common attributes
+<!-- Add a sub-headline for a group of related attributes -->
+#### Grouped attributes
 
-<!-- describe the attribute -->
-Felis eget velit aliquet sagittis id consectetur. A arcu cursus vitae congue mauris rhoncus aenean vel.
+<!-- describe the group of related attributes -->
+E.g. these attributes control the diffuse behavior of this shader
 
 <!-- You can display an image by adding ! and wrapping the alt text in [ ]. Then wrap the link for the image in parentheses (). -->
 
 ![](images/sd-ior-wedge.gif)
 
+<!-- Add a sub-headline for a specific attribute -->
 #### normalized
 
 <!-- list parameters for the attribute -->
