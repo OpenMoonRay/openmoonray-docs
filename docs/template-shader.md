@@ -1,12 +1,16 @@
-<!-- This template is for shaders
-     always include name of shader in the headline below -->
+<!-- This template is for scene objects in general (lights, materials, cameras, render outputs, display filters, maps geometry)
+     always include name of the scene object in the headline below -->
      
-# Name of Shader
+# Name of Scene Object
 
-<!-- Add a description of the shader
+<!-- Add a description of the Scene Object
 Description of shader goes here
 
-<!-- Next, create a section for shader attributes with the major headline "Attributes" -->
+<!-- Next, create a section for class name with the major headline "Class Name" -->
+
+# Class Name
+
+<!-- Next, create a section for object attributes with the major headline "Attributes" -->
 
 # Attributes
 
@@ -18,7 +22,7 @@ Felis eget velit aliquet sagittis id consectetur. A arcu cursus vitae congue mau
 
 <!-- You can display an image by adding ! and wrapping the alt text in [ ]. Then wrap the link for the image in parentheses (). -->
 
-![](../images/SD_ior_wedge.gif)
+![](images/sd-ior-wedge.gif)
 
 ## normalized
 
