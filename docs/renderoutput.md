@@ -1,7 +1,3 @@
----
-xxxxxX
----
-
 # RenderOutput
 
 ## Introduction
