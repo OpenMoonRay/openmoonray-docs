@@ -1,9 +1,9 @@
-This template is for various potentially useful snippets
+## This template is for various, potentially useful snippets
 
 <!-- To create a 'standardized note' in a page -->
 <!-- add example note here -->
 
-To create a code snippet with C++ style formatting 
+##### To create a code snippet with C++ style formatting 
 
 ~~~ c++ 
 // In the following problems, you can use the following single precision
@@ -17,7 +17,7 @@ public:
 };
 ~~~
 
-To create a code snippet with Python style formatting
+##### To create a code snippet with Python style formatting
 
 ~~~ python
 # a comment
@@ -28,13 +28,13 @@ def get_or_create_user(session, model, **kwargs):
 	return instance
 ~~~
 
-To create a snippet of command line text 
+##### To create a snippet of command line text 
 
 <div class="terminal" markdown="1">
 `$ sudo apt-get update`
 </div>
 
-To split a list into side-by-side columns
+##### To split a list into side-by-side columns
 
 <div class="thi-columns" markdown="1">
 - item 1
@@ -45,28 +45,26 @@ To split a list into side-by-side columns
 - item 6
 </div>
 
-To Display a math block, wrap in "$"
+##### To Display a math block, wrap in "$"
 
 $x^n + y^n = z^n$
 
- To display a notification / warning box
+##### To display a notification / warning box
  
 {% include warning.html content="Warning's content" %}
 
-To display an information box
+##### To display an information box
 
 {% include tip.html content="Info's content" %}
 
- To display an image add ! and wrap the alt text in [ ]. Then wrap the link for the image in parentheses ()
-
-![](images/sd-ior-wedge.gif)
-
-<!-- To add a table -->
-
-<!-- list parameters for the attribute -->
+##### To add a table
 
 | Name    | normalized      |
 |----------|-----------------|
 | Type:    | bool            |
 | Default: | true            |
 | Comment: | Set to 0, 1 or null
+
+##### To display an image add ! and wrap the alt text in [ ]. Then wrap the link for the image in parentheses ()
+
+![](images/sd-ior-wedge.gif)
