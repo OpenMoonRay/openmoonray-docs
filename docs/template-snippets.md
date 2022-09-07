@@ -1,5 +1,4 @@
 ---
-layout: pages
 title: Template snippets
 ---
 
