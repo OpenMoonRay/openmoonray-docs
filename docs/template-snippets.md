@@ -1,3 +1,8 @@
+---
+layout: pages
+title: Template snippets
+---
+
 ## This template is for various, potentially useful snippets
 
 <!-- To create a 'standardized note' in a page -->
