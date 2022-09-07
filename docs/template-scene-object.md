@@ -1,3 +1,8 @@
+---
+layout: pages
+title: Template for scene objects
+---
+
 <!-- This template is for scene objects in general (lights, materials, cameras, render outputs, display filters, maps geometry)
      always include name of the scene object in the headline below 
 
