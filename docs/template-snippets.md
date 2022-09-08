@@ -1,10 +1,9 @@
 ---
 title: Template snippets
 
-# the include file sets a base date for when we release MoonRay at first launch.  
-# when updating this file post-MoonRay launch update the last-modified-date to the format YYYY-MM-DD 00:00:00 +0000
-# e.g. 2025-02-14 00:00:00 +0000
-last-modified-date: {% include last-modified-date.html %} 
+# only uncomment and use last-modified date post-first launch of MoonRay
+# format is YYYY-MM-DD 00:00:00 +0000, e.g. 2025-02-14 00:00:00 +0000
+# last-modified-date: 
 ---
 
 ## This template is for various, potentially useful snippets
