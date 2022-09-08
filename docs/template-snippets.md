@@ -13,15 +13,13 @@ last-modified-date: 2025-02-14 00:00:00 +0000
 ##### To create a code snippet with C++ style formatting 
 
 ~~~ c++ 
-// In the following problems, you can use the following single precision
-// vector type. Fill in any methods or operators that you need.
-class Vec3f
+bool
+intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
+                const Vec3f &sphereLoc, float sphereRadius,
+                Vec3f *hitPoint)
 {
-public:
-    float x, y, z;
-
-    // TODO: Add needed Vec3f methods here
-};
+    // TODO: write this function
+}
 ~~~
 
 ##### To create a code snippet with Python style formatting
