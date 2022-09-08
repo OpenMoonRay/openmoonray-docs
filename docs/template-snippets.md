@@ -1,9 +1,7 @@
 ---
 title: Template snippets
-maths: 1  # add this if you want to use mathematical expressions
 
-# only uncomment and use last-modified date post-first launch of MoonRay
-# format is YYYY-MM-DD 00:00:00 +0000, e.g. 2025-02-14 00:00:00 +0000
+# format is YYYY-MM-DD 00:00:00 +0000
 last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 
