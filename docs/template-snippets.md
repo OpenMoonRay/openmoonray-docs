@@ -12,7 +12,7 @@ last-modified-date: 2025-02-14 00:00:00 +0000
 
 ##### To create a code snippet with C++ style formatting 
 
-~~~ c++ 
+{% highlight cpp %}
 bool
 intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
                 const Vec3f &sphereLoc, float sphereRadius,
@@ -20,7 +20,7 @@ intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
 {
     // TODO: write this function
 }
-~~~
+{% endhighlight %}
 
 ##### To create a code snippet with Python style formatting
 
