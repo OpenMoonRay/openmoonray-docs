@@ -1,5 +1,5 @@
 {% if page.last-modified-date %}
-  Page last modified on: {{ page.last-modified-date | date: '%-d %B %Y' }}
+  Page <a target="_blank" href="{{ site.github.repository_url }}/blob/main/{{ page.path }}">last modified</a> on: {{ page.last-modified-date | date: '%-d %B %Y' }}
 {% else %}
-  Page last modified on: 25 December 2022
+  Page <a target="_blank" href="{{ site.github.repository_url }}/blob/main/{{ page.path }}">last modified</a> on: 25 December 2022
 {% endif %}
