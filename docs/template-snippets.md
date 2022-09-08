@@ -35,11 +35,11 @@ def get_or_create_user(session, model, **kwargs):
 
 
 ##### To create a snippet of shell text 
-
+{% raw %}
 {% highlight bash %}
 $ moonray_gui -in scene.rdla -in scene.rdlb -out scene.exr
 {% endhighlight %}
-
+{% endraw %}
 
 ##### To create a keyboard key
 
