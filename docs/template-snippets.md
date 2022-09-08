@@ -38,7 +38,7 @@ def get_or_create_user(session, model, **kwargs):
 
 ##### To create a snippet of shell text 
 
-{% highlight shell %}
+{% highlight zenburn %}
 $ moonray_gui -in scene.rdla -in scene.rdlb -out scene.exr
 {% endhighlight %}
 
