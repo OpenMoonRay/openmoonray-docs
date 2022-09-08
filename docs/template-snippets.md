@@ -37,16 +37,19 @@ def get_or_create_user(session, model, **kwargs):
 	return instance
 ~~~
 
+<!--
 ##### To create a snippet of command line text 
 
 <div class="terminal" markdown="1">
 `$ sudo apt-get update`
 </div>
+-->
 
 ##### To create a keyboard key
 
 Insert a keyboard key like this <kbd>Ctrl</kbd> + <kbd>B</kbd>, just use `<kbd>Ctrl</kbd>`.
 
+<!--
 ##### To split a list into side-by-side columns
 
 <div class="thi-columns" markdown="1">
@@ -57,11 +60,13 @@ Insert a keyboard key like this <kbd>Ctrl</kbd> + <kbd>B</kbd>, just use `<kbd>C
 - item 5
 - item 6
 </div>
+-->
 
 ##### To Display a math block, wrap in "$"
 
 $x^n + y^n = z^n$
 
+<!-- 
 ##### To display a notification / warning box
  
 {% include warning.html content="Warning's content" %}
@@ -69,6 +74,7 @@ $x^n + y^n = z^n$
 ##### To display an information box
 
 {% include tip.html content="Info's content" %}
+-->
 
 ##### To add a table
 
