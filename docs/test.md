@@ -4,11 +4,14 @@ Randy testing
 ##### To create a code snippet with C++ style formatting 
 
 ~~~ c++
-bool
-intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
-                const Vec3f &sphereLoc, float sphereRadius,
-                Vec3f *hitPoint)
+void
+debugPrintThreadID(const char *contextString)
 {
-    // TODO: write this function
+    if (!contextString) contextString = "-- Thread ID = ";
+    pid_t tid = syscall(SYS_gettid);
+
+    // This printing is thread safe.
+    std::printf("%s%d\n", contextString, tid);
+    std::fflush(stdout);
 }
 ~~~
