@@ -35,13 +35,13 @@ def get_or_create_user(session, model, **kwargs):
 	return instance
 ~~~
 
-<!--
-##### To create a snippet of command line text 
 
-<div class="terminal" markdown="1">
-`$ sudo apt-get update`
-</div>
--->
+##### To create a snippet of shell text 
+
+{% highlight shell %}
+$ moonray_gui -in scene.rdla -in scene.rdlb -out scene.exr
+{% endhighlight %}
+
 
 ##### To create a keyboard key
 
