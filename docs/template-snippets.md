@@ -43,6 +43,10 @@ def get_or_create_user(session, model, **kwargs):
 `$ sudo apt-get update`
 </div>
 
+##### To create a keyboard key
+
+Insert a keyboard key like this <kbd>Ctrl</kbd> + <kbd>B</kbd>, just use `<kbd>Ctrl</kbd>`.
+
 ##### To split a list into side-by-side columns
 
 <div class="thi-columns" markdown="1">
