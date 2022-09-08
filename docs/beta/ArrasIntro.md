@@ -1,3 +1,10 @@
+---
+title: What is Arras?
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 ## What is Arras?
 
 The core of Arras is a system for communicating between processes using messages. It is used to split a program into multiple components, each running in its own process. Some of the reasons you might want to do this are:
