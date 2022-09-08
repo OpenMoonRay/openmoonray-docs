@@ -1,3 +1,9 @@
+---
+title: Moonray Scene Formats
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
 # Moonray Scene Formats
 
 Moonray uses a proprietary scene description format called RDL2. There are two primary file formats for RDL2:
