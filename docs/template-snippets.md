@@ -24,14 +24,14 @@ intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
 
 ##### To create a code snippet with Python style formatting
 
-{% highlight python %}
+~~~ python
 # a comment
 import datetime
 
 def get_or_create_user(session, model, **kwargs):
     instance = session.query(model).filter_by(twitter_user_id=kwargs["twitter_user_id"]).first()
 	return instance
-{% endhighlight %}
+~~~
 
 
 ##### To create a snippet of shell text 
