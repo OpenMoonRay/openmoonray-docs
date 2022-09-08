@@ -1,6 +1,5 @@
 ---
 title: Template snippets
-date: {% raw %}{{ page.date | date: "%d" | plus:'0' }} {{ page.date | date: "%B %Y" }}{% endraw %}
 ---
 
 ## This template is for various, potentially useful snippets
