@@ -1,5 +1,6 @@
 ---
 title: Template snippets
+last-modified-date: 2022-09-7 00:00:00 +0000
 ---
 
 ## This template is for various, potentially useful snippets
