@@ -1,5 +1,7 @@
 ---
 title: Template for scene objects
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 
 <!-- This template is for scene objects in general (lights, materials, cameras, render outputs, display filters, maps geometry)
