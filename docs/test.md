@@ -3,7 +3,6 @@ Randy testing
 
 ##### To create a code snippet with C++ style formatting 
 
-<small>
 ~~~ c++
 void
 debugPrintThreadID(const char *contextString)
@@ -16,8 +15,7 @@ debugPrintThreadID(const char *contextString)
     std::fflush(stdout);
 }
 ~~~
-</small>
-<small>
+
 ~~~ c++
 // This function round a floating point number to a certain lowest significant bit from the right
 // Rounding is away from zero
@@ -31,4 +29,4 @@ finline float roundFloat(const float in, const uint8_t lsb)
     *outInt &= ((unsigned int)(-1))<<lsb;
     return out;
 }
-</small>
+
