@@ -1,5 +1,5 @@
 {% if page.last-modified-date %}
-  Page last modified on: {{page.last-modified-date }}
+  Page last modified on: {{ page.last-modified-date | date: '%-d %B %Y' }}
 {% else %}
-  Page last modified on: 2022-12-25 00:00:00 +0000
+  Page last modified on: 25 December 2022
 {% endif %}
