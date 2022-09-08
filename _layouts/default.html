@@ -19,7 +19,7 @@
 
         <!-- <p>{{ site.description | default: site.github.project_tagline }}</p> -->
 
-        <p>Last modified on: {{ page.last-modified-date | date: '%-d %B %Y' }}
+        <p>{% include last-modified-date.html %}
         <p><a target="_blank" href="{{ site.github.repository_url }}/blob/main/{{ page.path }}">Edit this page</a>
       </header>
       
