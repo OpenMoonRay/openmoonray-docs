@@ -1,5 +1,4 @@
 @import "fonts";
-@import "rouge-github";
 @import "native";
 
 randy {
@@ -72,12 +71,14 @@ blockquote {
   font-style:italic;
 }
 
-code, pre {
+code {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color:#333;
+  color:#bbbbbb;
 }
 
 pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color:#333
   padding:8px 15px;
   background: #f8f8f8;
   border-radius:5px;
