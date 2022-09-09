@@ -51,7 +51,7 @@ $ "moonray_gui" -in scene.rdla -in scene.rdlb -out scene.exr
 
 
 ``` shell
-[user&#64;linuxbox imx-bootlets-src-10.05.02]$ make CROSS_COMPILE=arm-none-eabi-  clean
+[user@linuxbox imx-bootlets-src-10.05.02]$ make CROSS_COMPILE=arm-none-eabi-  clean
 rm -rf *.sb
 rm -f sd_mmc_bootstream.raw
 rm -f linux_prep/board/*.o
