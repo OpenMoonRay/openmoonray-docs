@@ -1,7 +1,7 @@
 ---
 title: Randy test
 # uncomment if you want MathJax formatting available
-# maths: 1
+maths: 1
 ---
 
 
