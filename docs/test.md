@@ -10,7 +10,7 @@ Randy testing
 
 ##### To create a code snippet with C++ style formatting 
 
-~~~ c++
+``` c++
 void
 debugPrintThreadID(const char *contextString)
 {
@@ -21,7 +21,7 @@ debugPrintThreadID(const char *contextString)
     std::printf("%s%d\n", contextString, tid);
     std::fflush(stdout);
 }
-~~~
+```
 
 ``` c++
 // This function round a floating point number to a certain lowest significant bit from the right
