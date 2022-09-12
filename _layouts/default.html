@@ -17,8 +17,9 @@
         <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="MoonRay" /></a>
 
         <p>{% include last-modified-date.html %}</p>
-        <p>
-        {% include toc.html html=content %}
+        <p>{% include toc.html html=content %}</p>
+        <p>{% site.pages}</p>
+        <p>test</p>
       </header>
       <section>
         
