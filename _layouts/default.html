@@ -16,14 +16,14 @@
       <header>
         <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="MoonRay" /></a>
 
-        <!-- <p>{{ site.description | default: site.github.project_tagline }}</p> -->
         <p>{% include last-modified-date.html %}</p>
       </header>
+      
+      {% include toc.html html=content %}
       
       <section>
         
       {{ content }}
-      {% include toc.html html=content %}
 
       </section>
       <footer>
