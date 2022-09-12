@@ -10,3 +10,11 @@ defaults:
       type: "pages" 
     values:
       layout: "default"
+collections_dir: docs
+collections:
+  light_filters:
+    output: true
+    order:
+      -Barn-Door-Light-Filter.md
+      -Cookie-Light-Filter.md
+      -Decay-Light-Filter.md
