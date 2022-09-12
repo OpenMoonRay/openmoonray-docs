@@ -18,9 +18,9 @@
 
         <p>{% include last-modified-date.html %}</p>
       </header>
-      
-      {% include toc.html html=content %}
-      
+      <header>
+        {% include toc.html html=content %}
+      </header>
       <section>
         
       {{ content }}
