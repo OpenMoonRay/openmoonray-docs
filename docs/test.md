@@ -126,6 +126,6 @@ curl: (6) Could not resolve host: ...
 <ul>
 {% assign pages = site.pages | where_exp: "item", "item.title" %}
 {% for page in pages %}
-    <li>title: {{page.title}}</li>
+    <li>title: {{page.title}} | name:  {{page.name}} | dir:  {{page.dir}} | url: {{page.url}}</li>
 {% endfor %}
 </ul>
