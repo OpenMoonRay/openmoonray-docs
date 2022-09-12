@@ -128,4 +128,4 @@ curl: (6) Could not resolve host: ...
 {% for page in pages %}
     <li>title: {{page.title}}</li>
 {% endfor %}
-</li>
+</ul>
