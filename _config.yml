@@ -1,6 +1,8 @@
 logo: /assets/images/logo.png
 description: Documentation
 theme: jekyll-theme-minimal
+baseurl: /manhattan
+url: http://dreamworksanimation.github.io/
 defaults:
   -
     scope:
