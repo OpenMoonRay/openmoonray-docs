@@ -123,3 +123,9 @@ $ curl -H <span class="s2">"Factory: hangar"\
        ...
 curl: (6) Could not resolve host: ...
 ```
+<ul>
+{% assign pages = site.pages | where_exp: "item", "item.title" %}
+{% for page in pages %}
+    <li>title: {{page.title}}</li>
+{% endfor %}
+</li>
