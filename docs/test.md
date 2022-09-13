@@ -126,21 +126,12 @@ curl: (6) Could not resolve host: ...
 ```
 
 <ul>
-{% assign light_filters = site.light-filters %}
-{% for light_filter in light_filters %}
-  <li>{{ light_filter.title }} | url:  {{ light_filter.url }}</li>
+{% assign light-filters = site.light-filters %}
+{% for light-filter in light-filters %}
+    <li><a href="{{site.baseurl}}{{light-filter.url}}">{{ light-filter.title }}</a></li>
 {% endfor %}
 </ul>
-<p>test
 
-    {% for collection in site.collections %}
-  <h2>Items from {{ collection.label }}</h2>
-  <ul>
-    {% for item in site[collection.label] %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endfor %}
     
     
 <ul>
