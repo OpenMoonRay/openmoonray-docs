@@ -14,6 +14,7 @@ collections_dir: docs
 collections:
   light-filters:
     output: true
+    permalink: docs/:collection/:name
     order:
       - Barn-Door-Light-Filter.md
       - Cookie-Light-Filter.md
