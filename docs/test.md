@@ -133,6 +133,16 @@ curl: (6) Could not resolve host: ...
 </ul>
 <p>test
 
+    {% for collection in site.collections %}
+  <h2>Items from {{ collection.label }}</h2>
+  <ul>
+    {% for item in site[collection.label] %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+    
+    
 <ul>
 {% assign pages = site.pages | where_exp: "item", "item.title" %}
 {% for page in pages %}
