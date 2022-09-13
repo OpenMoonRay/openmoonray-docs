@@ -15,6 +15,6 @@ collections:
   light-filters:
     output: true
     order:
-      -Barn-Door-Light-Filter.md
-      -Cookie-Light-Filter.md
-      -Decay-Light-Filter.md
+      - Barn-Door-Light-Filter.md
+      - Cookie-Light-Filter.md
+      - Decay-Light-Filter.md
