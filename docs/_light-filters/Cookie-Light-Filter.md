@@ -1,3 +1,7 @@
+---
+title: Cookie Light Filter
+---
+
 # Cookie Light Filter
 
 Why the name? Cookie is a nickname for Cucoloris. A device used in live
