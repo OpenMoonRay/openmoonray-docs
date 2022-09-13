@@ -122,10 +122,18 @@ $ curl -H <span class="s2">"Factory: hangar"\
        --data '{"account": {"name&":"Test Account"}}'\
        ...
 curl: (6) Could not resolve host: ...
+
 ```
+
+<ul>
+{% for light_filter in site.light_filters %}
+  <li>{{ light_filter.title }} | url:  {{ light_filter.url }}</li>
+{% endfor %}
+</ul>
+<p>
 <ul>
 {% assign pages = site.pages | where_exp: "item", "item.title" %}
 {% for page in pages %}
-    <li>title: <a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a> | collection:  {{page.collection}} | tags:  {{page.tags}} </li>
+  <li>title: <a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a> | collection:  {{page.collection}} | tags:  {{page.tags}} </li>
 {% endfor %}
 </ul>
