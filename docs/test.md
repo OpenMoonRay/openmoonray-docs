@@ -126,12 +126,11 @@ curl: (6) Could not resolve host: ...
 ```
 
 <ul>
-{% assign light_filters = site.light_filters | where_exp: "item", "item.title" %}
-{% for light_filter in light_filters %}
+{% for light_filter in site.light_filters %}
   <li>{{ light_filter.title }} | url:  {{ light_filter.url }}</li>
 {% endfor %}
 </ul>
-<p>
+<p>test
 <ul>
 {% assign pages = site.pages | where_exp: "item", "item.title" %}
 {% for page in pages %}
