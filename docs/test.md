@@ -125,13 +125,6 @@ curl: (6) Could not resolve host: ...
 
 ```
 
-<ul>
-{% assign light-filters = site.light-filters %}
-{% for light-filter in light-filters %}
-    <li><a href="{{site.baseurl}}{{light-filter.url}}">{{ light-filter.title }}</a></li>
-{% endfor %}
-</ul>
-
     
     
 <ul>
