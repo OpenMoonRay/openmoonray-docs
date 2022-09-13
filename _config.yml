@@ -12,7 +12,7 @@ defaults:
       layout: "default"
 collections_dir: docs
 collections:
-  light_filters:
+  light-filters:
     output: true
     order:
       -Barn-Door-Light-Filter.md
