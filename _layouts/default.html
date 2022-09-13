@@ -19,7 +19,12 @@
         <p>{% include last-modified-date.html %}</p>
         <p>On this page</p>
         <p>{% include toc.html html=content %}</p>
-        
+       <ul>
+        {% assign light-filters = site.light-filters %}
+        {% for light-filter in light-filters %}
+        <li><a href="{{site.baseurl}}{{light-filter.url}}">{{ light-filter.title }}</a></li>
+        {% endfor %}
+        </ul>  
       </header>
       <section>
         
