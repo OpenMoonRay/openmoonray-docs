@@ -9,6 +9,11 @@ collections:
   light-filters:
     permalink: docs/:collection/:name
     output: true
+    order:
+      -Decay-Light-Filter.md
+      -Cookie-Light-Filter.md
+      -Barn-Door-Light-Filter.md
+
   lights:
     permalink: docs/:collection/:name
     output: true
