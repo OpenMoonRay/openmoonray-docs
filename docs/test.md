@@ -132,6 +132,12 @@ curl: (6) Could not resolve host: ...
 {% endfor %}
 </ul>
 <p>test
+    {% for item in site.light_filters %}
+  <h2>{{ item.title }}</h2>
+  <p>{{ item.description }}</p>
+  <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+{% endfor %}
+<p>test2
 <ul>
 {% assign pages = site.pages | where_exp: "item", "item.title" %}
 {% for page in pages %}
