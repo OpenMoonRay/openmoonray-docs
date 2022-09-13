@@ -1,5 +1,5 @@
 ---
-#title Barn Door Light Filter
+title: Barn Door Light Filter
 ---
 
 # Barn Door Light Filter
