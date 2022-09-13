@@ -9,6 +9,9 @@ collections:
   light-filters:
     permalink: docs/:collection/:name
     output: true
+  lights:
+    permalink: docs/:collection/:name
+    output: true
     
 defaults:
   -
