@@ -22,7 +22,7 @@ Available languages : `python`, `c++`, `c++`, `latex`, `html`, `css`, `javascrip
 
 Wrap the block like so,
 
-{% raw% }
+{% raw %}
 ~~~ c++
 bool
 intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
