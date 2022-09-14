@@ -22,7 +22,9 @@ Available languages : python, c, c++, latex, shell, etc.
 
 Wrap the block like so,
 
+
 \~~~ c++
+<pre>
 bool
 intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
                 const Vec3f &sphereLoc, float sphereRadius,
@@ -30,7 +32,9 @@ intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
 {
     // TODO: write this function
 }
+</pre>
 \~~~
+
 
 To get this block
 
