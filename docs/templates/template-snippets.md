@@ -1,6 +1,9 @@
 ---
 title: Template snippets
 
+# uncomment if you want MathJax formatting available
+maths: 1
+
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
@@ -80,4 +83,4 @@ $x^n + y^n = z^n$
 
 ##### To display an image add ! and wrap the alt text in [ ]. Then wrap the link for the image in parentheses ()
 
-![](images/sd-ior-wedge.gif)
+![](../images/sd-ior-wedge.gif)
