@@ -17,11 +17,10 @@ maths: 1
 
 You can insert any block of code you want with a syntax highlight effect like below
 
-Available languages : `python`, `c`, `c++`, `latex`, `html`, `css`, `javascript`, `shell`, etc. 
+Available languages : python, c, c++, latex, shell, etc. 
 
 
 Wrap the block like so,
-
 
 ~~~ {% raw %} c++
 bool
