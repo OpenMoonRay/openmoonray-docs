@@ -8,9 +8,9 @@ Documentation for class DistantLight
 
 ---
 
-## <p style="color:blue;">Map attributes</p>
+## Map attributes</p>
 
-## contrast
+### contrast
 
 **Rgb** 
 
@@ -25,7 +25,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-## gain
+### gain
 
 **Rgb** 
 
@@ -40,7 +40,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-## gamma
+### gamma
 
 **Rgb** 
 
@@ -55,7 +55,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-## offset
+### offset
 
 **Rgb** 
 
@@ -70,7 +70,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-## saturation
+### saturation
 
 **Rgb** 
 
@@ -85,7 +85,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-## temperature
+### temperature
 
 **Vec3f** 
 
@@ -100,7 +100,7 @@ color temperature using Nuke-like T/M/E settings
 
 
 
-## texture
+### texture
 
 **String** *filename*
 
@@ -115,7 +115,7 @@ filename that points to a texture (formats: .exr, .tif, .jpg, etc.)
 
 
 
-## texture_border_color
+### texture_border_color
 
 **Rgb** 
 
@@ -130,7 +130,7 @@ RGB value used when a texture lookup occurs outside the texture
 
 
 
-## texture_coverage
+### texture_coverage
 
 **Vec2f** 
 
@@ -145,7 +145,7 @@ Scales in (u,v)
 
 
 
-## texture_mirror_u
+### texture_mirror_u
 
 **Bool** 
 
@@ -160,7 +160,7 @@ true => mirror in u, false => repeat in u
 
 
 
-## texture_mirror_v
+### texture_mirror_v
 
 **Bool** 
 
@@ -175,7 +175,7 @@ true => mirror in v, false => repeat in v
 
 
 
-## texture_reps_u
+### texture_reps_u
 
 **Float** 
 
@@ -190,7 +190,7 @@ Number of times texture repeats in u over the scaled texture space
 
 
 
-## texture_reps_v
+### texture_reps_v
 
 **Float** 
 
@@ -205,7 +205,7 @@ Number of times texture repeats in v over the scaled texture space
 
 
 
-## texture_rotation
+### texture_rotation
 
 **Float** 
 
@@ -220,7 +220,7 @@ Clockwise rotation angle in degrees
 
 
 
-## texture_translation
+### texture_translation
 
 **Vec2f** 
 
@@ -239,9 +239,9 @@ Translations in (u,v) expressed as fractions of the unscaled texture space
 
 ---
 
-## <p style="color:blue;">Properties attributes</p>
+## Properties attributes</p>
 
-## angular_extent
+### angular_extent
 
 **Float** 
 
@@ -256,7 +256,7 @@ Default value : 0.52999997139
 
 
 
-## color
+### color
 
 **Rgb** 
 
@@ -271,7 +271,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-## exposure
+### exposure
 
 **Float** 
 
@@ -286,7 +286,7 @@ Default value : 0.0
 
 
 
-## intensity
+### intensity
 
 **Float** 
 
@@ -301,7 +301,7 @@ Default value : 1.0
 
 
 
-## label
+### label
 
 **String** 
 
@@ -316,7 +316,7 @@ label used in light aov expressions
 
 
 
-## max_shadow_distance
+### max_shadow_distance
 
 **Float** 
 
@@ -331,7 +331,7 @@ Default value : 0.0
 
 
 
-## mb
+### mb
 
 **Bool** 
 
@@ -346,7 +346,7 @@ Does light motion affect motion-blur?
 
 
 
-## normalized
+### normalized
 
 **Bool** 
 
@@ -361,7 +361,7 @@ Default value : True
 
 
 
-## on
+### on
 
 **Bool** 
 
@@ -376,7 +376,7 @@ Default value : True
 
 
 
-## presence_shadows
+### presence_shadows
 
 **Int** *enum*
 
@@ -397,7 +397,7 @@ Default value : True
 
 
 
-## ray_termination
+### ray_termination
 
 **Bool** 
 
@@ -412,7 +412,7 @@ Is light used for ray termination color? Ray termination color is used for filli
 
 
 
-## texture_filter
+### texture_filter
 
 **Int** *enum*
 
@@ -435,7 +435,7 @@ Is light used for ray termination color? Ray termination color is used for filli
 
 
 
-## visible_in_camera
+### visible_in_camera
 
 **Int** *enum*
 
@@ -460,9 +460,9 @@ Is light used for ray termination color? Ray termination color is used for filli
 
 ---
 
-## <p style="color:blue;">Visibility Flags attributes</p>
+## Visibility Flags attributes</p>
 
-## visible_diffuse_reflection
+### visible_diffuse_reflection
 
 **Bool** 
 
@@ -477,7 +477,7 @@ whether the light is visible in diffuse reflection
 
 
 
-## visible_diffuse_transmission
+### visible_diffuse_transmission
 
 **Bool** 
 
@@ -492,7 +492,7 @@ whether the light is visible in diffuse transmission
 
 
 
-## visible_glossy_reflection
+### visible_glossy_reflection
 
 **Bool** 
 
@@ -507,7 +507,7 @@ whether the light is visible in glossy reflection.
 
 
 
-## visible_glossy_transmission
+### visible_glossy_transmission
 
 **Bool** 
 
@@ -522,7 +522,7 @@ whether the light is visible in glossy transmission (refraction).
 
 
 
-## visible_mirror_reflection
+### visible_mirror_reflection
 
 **Bool** 
 
@@ -537,7 +537,7 @@ whether the light is visible in miror reflection.
 
 
 
-## visible_mirror_transmission
+### visible_mirror_transmission
 
 **Bool** 
 
@@ -556,9 +556,9 @@ whether the light is visible in miror transmission (refraction).
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## General attributes</p>
 
-## light_filters
+### light_filters
 
 **Object Vector** 
 
@@ -573,7 +573,7 @@ Default value : []
 
 
 
-## node_xform
+### node_xform
 
 **Mat4d** *blurrable*
 
