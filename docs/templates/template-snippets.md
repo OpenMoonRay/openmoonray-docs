@@ -17,13 +17,13 @@ maths: 1
 
 You can insert any block of code you want with a syntax highlight effect like below
 
-Available languages : `python`, `c++`, `c++`, `latex`, `html`, `css`, `javascript`, `shell`, etc. 
+Available languages : `python`, `c`, `c++`, `latex`, `html`, `css`, `javascript`, `shell`, etc. 
 
 
 Wrap the block like so,
 
-{% raw %}
-~~~ c++
+
+~~~ {% raw %} c++
 bool
 intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
                 const Vec3f &sphereLoc, float sphereRadius,
@@ -31,8 +31,9 @@ intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
 {
     // TODO: write this function
 }
-~~~
-{% endraw %}
+{% endraw %} ~~~
+
+To get this block
 
 ~~~ c++
 bool
@@ -46,6 +47,7 @@ intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
 
 
 ##### A snippet of shell text 
+
 ~~~ shell
 $ moonray_gui -in scene.rdla -in scene.rdlb -out scene.exr
 ~~~
