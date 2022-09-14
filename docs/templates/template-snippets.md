@@ -13,7 +13,26 @@ maths: 1
 <!-- To create a 'standardized note' in a page -->
 <!-- add example note here -->
 
-##### To create a code snippet with C++ style formatting 
+##### Syntax highlighting
+
+You can insert any block of code you want with a syntax highlight effect like below
+
+Available languages : `python`, `c++`, `c++`, `latex`, `html`, `css`, `javascript`, `shell`, etc. 
+
+
+Wrap the block like so,
+
+{% raw% }
+~~~ c++
+bool
+intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
+                const Vec3f &sphereLoc, float sphereRadius,
+                Vec3f *hitPoint)
+{
+    // TODO: write this function
+}
+~~~
+{% endraw %}
 
 ~~~ c++
 bool
@@ -25,53 +44,23 @@ intersectSphere(const Vec3f &rayOrigin, const Vec3f &rayDir,
 }
 ~~~
 
-##### To create a code snippet with Python style formatting
 
-~~~ python
-# a comment
-import datetime
-
-def get_or_create_user(session, model, **kwargs):
-    instance = session.query(model).filter_by(twitter_user_id=kwargs["twitter_user_id"]).first()
-	return instance
-~~~
-
-
-##### To create a snippet of shell text 
+##### A snippet of shell text 
 ~~~ shell
 $ moonray_gui -in scene.rdla -in scene.rdlb -out scene.exr
 ~~~
 
-##### To create a keyboard key
+##### A keyboard key
 
 Insert a keyboard key like this <kbd>Ctrl</kbd> + <kbd>B</kbd>, just use `<kbd>Ctrl</kbd>`.
 
-<!--
-##### To split a list into side-by-side columns
 
-<div class="thi-columns" markdown="1">
-- item 1
-- item 2
-- item 3
-- item 4
-- item 5
-- item 6
-</div>
--->
-
-##### To Display a math block, wrap in "$"
+##### To display a math block, wrap in "$"
 
 $x^n + y^n = z^n$
 
-<!-- 
-##### To display a notification / warning box
- 
-{% include warning.html content="Warning's content" %}
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
-##### To display an information box
-
-{% include tip.html content="Info's content" %}
--->
 
 ##### To add a table
 
