@@ -47,7 +47,7 @@ Grammatical tactics to improve clarity.
 
   >This function ~~will create~~ creates any of the containers listed above.
 
-* Use *second person* (you/me) to address the reader directly.
+* Use *second person* (*you*) to address the reader directly.
 
   >~~The reader~~ You can read and write both RDL formats from code using the `scene_rdl2` library.
 
