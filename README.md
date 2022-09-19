@@ -24,7 +24,10 @@ Markdown files are plaintext, which means that you can use any IDE (like Visual 
 
 ## Process
 **To begin contributing content:**
-1. Open the [content template](docs/_content_template.md) file. 
+1. Open one of the following content template files:
+    * [Content template](docs\templates\template-content.md)
+    * [Screen object template](docs\templates\template-scene-object.md)
+    * [Snippets template](docs\templates\template-snippets.md)
 1. Do one of the following:
     * Open a migrated topic's MD file and begin selectively copy/pasting content from the topic into the template.
     * Begin writing new content in the appropriate sections of the template file.
