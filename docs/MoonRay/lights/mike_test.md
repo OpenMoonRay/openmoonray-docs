@@ -6,11 +6,27 @@ maths: 1
 
 # Lights in MoonRay
 
+Lights in MoonRay are not treated as solid objects, but rather as abstract entities that inject light into the scene. (Note that it is possible to assign an emissive material to a geoemtry object as another way to illuminate a scene. However, we are not referring to that kind of setup when we talk about lights.)
+
+There are 8 types of light supported in MoonRay:
+* CylinderLight
+* DiskLight
+* DistantLight
+* EnvLight
+* MeshLight
+* RectLight
+* SphereLight
+* SpotLight
+
+
+
 This bit gives you an overview of lights in MoonRay.
 
-It talks about the 8 current light types and how some of them are local and some at infinity(ish).
-It tells you about the settings that are shared by all light types.
-It talks about the light sampling scheme.
+It talks about the 8 current light types and how some of them are local and some at infinity(ish). It tells you about the settings that are shared by all light types. It talks about the light sampling scheme.
+
+Other topics it discusses are LightSets, ShadowSets, LightFilters, ShadowReceiverSets, texture attributes on lights, and other topics.
+
+
 
 ##### To create a code snippet with C++ style formatting 
 
