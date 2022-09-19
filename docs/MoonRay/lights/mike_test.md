@@ -1,12 +1,16 @@
 ---
-title: Mike test
+title: Lights in MoonRay
 # uncomment if you want MathJax formatting available
 maths: 1
 ---
 
+# Lights in MoonRay
 
-Mike testing
+This bit gives you an overview of lights in MoonRay.
 
+It talks about the 8 current light types and how some of them are local and some at infinity(ish).
+It tells you about the settings that are shared by all light types.
+It talks about the light sampling scheme.
 
 ##### To create a code snippet with C++ style formatting 
 
