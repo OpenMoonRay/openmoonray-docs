@@ -1,8 +1,13 @@
 ---
-title: "{variable_here}"
-date: 2020-01-01
-last_modified_at: 2021-08-04T20:34:59
+title: Template snippets
+
+# uncomment if you want MathJax formatting available
+maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
+
 <!-- To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.  -->
 
 # <Overview_or_introduction>
