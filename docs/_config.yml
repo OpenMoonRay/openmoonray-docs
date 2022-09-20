@@ -1,13 +1,13 @@
 logo: /assets/images/logo.png
 description: Documentation
 theme: jekyll-theme-minimal
-baseurl: /manhattan
+baseurl: /manhattan/docs
 url: http://dreamworksanimation.github.io/
-collections_dir: docs
+collections_dir: /
 
 collections:
   light-filters:
-    permalink: docs/:collection/:name
+    permalink: /:collection/:name
     output: true
     order:
       -Decay-Light-Filter.md
@@ -15,7 +15,7 @@ collections:
       -Barn-Door-Light-Filter.md
 
   lights:
-    permalink: docs/:collection/:name
+    permalink: /:collection/:name
     output: true
     
 defaults:

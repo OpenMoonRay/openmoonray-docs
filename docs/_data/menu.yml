@@ -1,71 +1,58 @@
 title: Documentation
 toc:
   - item: Beta
-    url: /docs/beta/
+    url: /beta/
     subitems:
         - item: Arras Intro
-          url: /docs/ArrasIntro
+          url: /beta/ArrasIntro
+        - item: Dependencies
+          url: /beta/Dependencies
+        - item: Distributed Arras
+          url: /beta/DistributedArras
+        - item: ReleaseContents
+          url: /beta/ReleaseContents
+        - item: Scene Formats
+          url: /beta/SceneFormats
+        - item: SourceContents
+          url: /beta/SourceContents
   - item: Overview
-    url: /docs/overview/
+    url: /overview/
     subitems:
       - item: Community
-        url: /foo/bar/thing1.html
       - item: What's included
-        url: /baz/mip/thing2.html
       - item: Beginner's Guide
-        url: /baz/mip/thing2.html
-  - item: Arras
   - item: Building/Installation
     subitems:
       - item: Building
-        url: /piece1.html
   - item: Moonray
     subitems:
       - item: Execution modes
-        url: /foo/bar/thing1.html
       - item: Renderer Settings
-        url: /foo/bar/thing1.html
       - item: Geometry
-        url: /foo/bar/thing1.html
       - item: Displacement
-        url: /foo/bar/thing1.html
       - item: Materials
-        url: /foo/bar/thing1.html
         subitems:
           - item: DwaBaseMaterial
-            url: /Piece1.html
           - item: DwaMetalMaterial
-            url: /Piece1.html
       - item: Maps
-        url: /foo/bar/thing1.html
       - item: Lights
-        url: /foo/bar/thing1.html
       - item: LightFilters
-        url: /foo/bar/thing1.html
       - item: DisplayFilters
-        url: /foo/bar/thing1.html
       - item: RenderOutputs
-        url: /foo/bar/thing1.html
       - item: Cameras
-        url: /foo/bar/thing1.html
       - item: Volumes
-        url: /foo/bar/thing1.html
       - item: Cmd-line Options
-        url: /foo/bar/thing1.html
+  - item: Arras
   - item: Devloper's Guide
     subitems:
       - item: Thing 1
-        url: /foo/bar/thing1.html
   - item: Release Notes
     subitems:
       - item: Thing 1
-        url: /foo/bar/thing1.html
   - item: Examples
     subitems:
       - item: Thing 1
-        url: /foo/bar/thing1.html
   - item: Legal/Licensing
     subitems:
       - item: Thing 1
-        url: /foo/bar/thing1.html
 

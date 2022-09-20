@@ -32,22 +32,25 @@
           {{ site.data.menu.title }}
           </h2>
           <ul class="site-nav-tree">
-            {% assign entries1 = site.data.menu.toc | sort: 'title' %}
+            {% assign entries1 = site.data.menu.toc %}
             {% for e1 in entries1 %}
-              {% assign summary = e1.item %}
               <li>
                 <details closed>
                   {% if e1.url %}
-                    <summary><a href={{ site.baseurl }}{{ e1.url }}>{{ summary }}</a></summary>
+                    <summary><a href={{ site.baseurl }}{{ e1.url }}>{{ e1.item }}</a></summary>
                   {% else %}
-                    <summary>{{ summary }}</summary>
+                    <summary>{{ e1.item }}</summary>
                   {% endif %}
                   {% assign entries2 = e1.subitems %}
                   {% if entries2 %}
                     <ul>
                       {% for e2 in entries2 %}
                         <li>
-                          {{ e2.item }}
+                          {% if e2.url %}
+                            <summary><a href={{ site.baseurl }}{{ e2.url }}>{{ e2.item }}</a></summary>
+                          {% else %}
+                            <summary>{{ e2.item }}</summary>
+                          {% endif %}
                         </li>
                       {% endfor %}
                     </ul>
