@@ -23,9 +23,40 @@
         <ul>
           {% assign light-filters = site.light-filters %}
           {% for light-filter in light-filters %}
-          <li><a href="{{site.baseurl}}{{light-filter.url}}">{{ light-filter.title }}</a></li>
+            <li><a href="{{site.baseurl}}{{light-filter.url}}">{{ light-filter.title }}</a></li>
           {% endfor %}
         </ul>  
+        </p>
+        {% if site.data.menu %}
+          <h2>
+          {{ site.data.menu.title }}
+          </h2>
+          <ul class="site-nav-tree">
+            {% assign entries1 = site.data.menu.toc | sort: 'title' %}
+            {% for e1 in entries1 %}
+              {% assign summary = e1.item %}
+              <li>
+                <details closed>
+                  {% if e1.url %}
+                    <summary><a href={{ site.baseurl }}{{ e1.url }}>{{ summary }}</a></summary>
+                  {% else %}
+                    <summary>{{ summary }}</summary>
+                  {% endif %}
+                  {% assign entries2 = e1.subitems %}
+                  {% if entries2 %}
+                    <ul>
+                      {% for e2 in entries2 %}
+                        <li>
+                          {{ e2.item }}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </details>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </header>
       <section>
         
