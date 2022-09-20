@@ -4,17 +4,17 @@ toc:
     url: /beta/
     subitems:
         - item: Arras Intro
-          url: /beta/ArrasIntro
+          url: /beta/arras-intro
         - item: Dependencies
-          url: /beta/Dependencies
+          url: /beta/dependencies
         - item: Distributed Arras
-          url: /beta/DistributedArras
+          url: /beta/distributed-arras
         - item: ReleaseContents
-          url: /beta/ReleaseContents
+          url: /beta/release-contents
         - item: Scene Formats
-          url: /beta/SceneFormats
+          url: /beta/scene-formats
         - item: SourceContents
-          url: /beta/SourceContents
+          url: /beta/source-contents
   - item: Overview
     url: /overview/
     subitems:
