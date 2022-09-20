@@ -18,13 +18,21 @@ There are 8 types of light supported in MoonRay:
 * SphereLight
 * SpotLight
 
+(TO-DO: turn each of the types into a link once the pages are there.)
 
+2 of the light types - DistantLight and EnvLight - are treated as having their illuminating surface at infinity. The remaining 6 types are considered local lights in the sense that their 3D positions are determined by spatial coordites (for instance, a SphereLight is positioned by setting its *center* attribute).
 
-This bit gives you an overview of lights in MoonRay.
+This section talks about the settings that are shared by all light types.
 
-It talks about the 8 current light types and how some of them are local and some at infinity(ish). It tells you about the settings that are shared by all light types. It talks about the light sampling scheme.
+This section talks about how MoonRay samples the lights in the scene, in the context of MoonRay's 2 sampling mechamisms.
 
-Other topics it discusses are LightSets, ShadowSets, LightFilters, ShadowReceiverSets, texture attributes on lights, and other topics.
+Here are some related things that this section also needs to talk about:
+* LightSets
+* ShadowSets
+* LightFilters
+* ShadowReceiverSets
+* texture attributes on lights
+* loads of other topics.
 
 
 
