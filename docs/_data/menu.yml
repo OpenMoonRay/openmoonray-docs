@@ -9,11 +9,11 @@ toc:
           url: /beta/dependencies
         - item: Distributed Arras
           url: /beta/distributed-arras
-        - item: ReleaseContents
+        - item: Release Contents
           url: /beta/release-contents
         - item: Scene Formats
           url: /beta/scene-formats
-        - item: SourceContents
+        - item: Source Contents
           url: /beta/source-contents
   - item: Overview
     url: /overview/

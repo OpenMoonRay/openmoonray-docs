@@ -32,15 +32,22 @@
           {{ site.data.menu.title }}
           </h2>
           <ul class="site-nav-tree">
+            <!-- Tree Level 1 -->
             {% assign entries1 = site.data.menu.toc %}
             {% for e1 in entries1 %}
               <li>
-                <details closed>
+                {% if page.url == e1.url %}
+                  <details open>
+                {% else %}
+                  <details closed>
+                {% endif %}
                   {% if e1.url %}
                     <summary><a href={{ site.baseurl }}{{ e1.url }}>{{ e1.item }}</a></summary>
                   {% else %}
                     <summary>{{ e1.item }}</summary>
                   {% endif %}
+
+                  <!-- Tree Level 2 -->
                   {% assign entries2 = e1.subitems %}
                   {% if entries2 %}
                     <ul>
@@ -55,6 +62,7 @@
                       {% endfor %}
                     </ul>
                   {% endif %}
+
                 </details>
               </li>
             {% endfor %}
