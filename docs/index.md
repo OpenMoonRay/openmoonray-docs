@@ -2,12 +2,12 @@
 ---
 Home
 
-[Beta](/manhattan/docs/beta/)  
-[Overview](/manhattan/docs/overview/)  
-[Building/Installation](/manhattan/docs/installation/)  
-[MoonRay](/manhattan/docs/moonray/)  
-[Arras](/manhattan/docs/arras/)  
-[Developer's Guide](/manhattan/docs/developer-guide)  
-[Release Notes](/manhattan/docs/release-notes/)  
-[Examples](/manhattan/docs/examples/)  
-[Legal/Licensing](/manhattan/docs/legal-licensing)  
+[Beta](/manhattan/beta/)  
+[Overview](/manhattan/overview/)  
+[Building/Installation](/manhattan/installation/)  
+[MoonRay](/manhattan/moonray/)  
+[Arras](/manhattan/arras/)  
+[Developer's Guide](/manhattan/developer-guide)  
+[Release Notes](/manhattan/release-notes/)  
+[Examples](/manhattan/examples/)  
+[Legal/Licensing](/manhattan/legal-licensing)  
