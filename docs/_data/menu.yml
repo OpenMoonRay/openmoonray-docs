@@ -1,22 +1,22 @@
 title: Documentation
 toc:
   - item: Beta
-    url: /beta/
+    path: /beta/
     subitems:
         - item: Arras Intro
-          url: /beta/arras-intro
+          path: /beta/arras-intro
         - item: Dependencies
-          url: /beta/dependencies
+          path: /beta/dependencies
         - item: Distributed Arras
-          url: /beta/distributed-arras
+          path: /beta/distributed-arras
         - item: Release Contents
-          url: /beta/release-contents
+          path: /beta/release-contents
         - item: Scene Formats
-          url: /beta/scene-formats
+          path: /beta/scene-formats
         - item: Source Contents
-          url: /beta/source-contents
+          path: /beta/source-contents
   - item: Overview
-    url: /overview/
+    path: /overview/
     subitems:
       - item: Community
       - item: What's included
