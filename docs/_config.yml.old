@@ -1,0 +1,30 @@
+logo: /assets/images/logo.png
+description: Documentation
+theme: jekyll-theme-minimal
+source: /docs/
+baseurl: /manhattan/docs
+url: http://dreamworksanimation.github.io/
+BASE_PATH : http://dreamworksanimation.github.io/manhattan/docs
+collections_dir: /
+
+collections:
+  light-filters:
+    permalink: /:collection/:name
+    output: true
+    order:
+      -Decay-Light-Filter.md
+      -Cookie-Light-Filter.md
+      -Barn-Door-Light-Filter.md
+
+  lights:
+    permalink: /:collection/:name
+    output: true
+    
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" 
+    values:
+      layout: "default"
+      
