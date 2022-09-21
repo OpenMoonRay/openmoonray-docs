@@ -17,6 +17,7 @@
         <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="MoonRay" /></a>
 
         <p>{% include last-modified-date.html %}</p>
+        <!-- REMOVE THIS FOR NOW
         <p>On this page</p>
         <p>{% include toc.html html=content %}</p>
         <p>Site Nav
@@ -27,22 +28,27 @@
           {% endfor %}
         </ul>  
         </p>
+        -->
         {% if site.data.menu %}
           <h2>
           {{ site.data.menu.title }}
           </h2>
           <ul class="site-nav-tree">
             <!-- Tree Level 1 -->
+            {% if page.url contains "/beta/" %}
+                FOO
+            {% endif %}
+
             {% assign entries1 = site.data.menu.toc %}
             {% for e1 in entries1 %}
               <li>
-                {% if page.url == e1.url %}
+                {% if page.url contains e1.path %}
                   <details open>
                 {% else %}
                   <details closed>
                 {% endif %}
-                  {% if e1.url %}
-                    <summary><a href={{ site.baseurl }}{{ e1.url }}>{{ e1.item }}</a></summary>
+                  {% if e1.path %}
+                    <summary><a href={{ site.baseurl }}{{ e1.path }}>{{ e1.item }}</a></summary>
                   {% else %}
                     <summary>{{ e1.item }}</summary>
                   {% endif %}
@@ -53,8 +59,8 @@
                     <ul>
                       {% for e2 in entries2 %}
                         <li>
-                          {% if e2.url %}
-                            <summary><a href={{ site.baseurl }}{{ e2.url }}>{{ e2.item }}</a></summary>
+                          {% if e2.path %}
+                            <summary><a href={{ site.baseurl }}{{ e2.path }}>{{ e2.item }}</a></summary>
                           {% else %}
                             <summary>{{ e2.item }}</summary>
                           {% endif %}
