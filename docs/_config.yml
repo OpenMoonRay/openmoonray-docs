@@ -3,7 +3,7 @@ description: Documentation
 theme: jekyll-theme-minimal
 baseurl: /manhattan
 url: http://dreamworksanimation.github.io/
-BASE_PATH : http://dreamworksanimation.github.io/manhattan/docs
+BASE_PATH : http://dreamworksanimation.github.io/manhattan
 collections_dir: /
 
 collections:
