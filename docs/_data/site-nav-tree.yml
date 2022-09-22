@@ -77,4 +77,5 @@ toc:
       - item: BakeCamera
         path: /examples/bake-camera
   - item: Legal/Licensing
+    path: /license
 
