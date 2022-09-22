@@ -77,6 +77,4 @@ toc:
       - item: BakeCamera
         path: /examples/bake-camera
   - item: Legal/Licensing
-    subitems:
-      - item: Thing 1
 

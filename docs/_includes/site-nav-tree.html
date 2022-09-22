@@ -1,12 +1,14 @@
-{% if site.data.menu %}
-<h2>
-  {{ site.data.menu.title }}
-</h2>
+{% if site.data.site-nav-tree %}
+<h3>
+  {{ site.data.site-nav-tree.title }}
+</h3>
   <nav>
-    <!-- Tree Level 1 -->
+    <!-- Level 1 -->
     <ul class="site-nav-tree">
-      {% assign entries1 = site.data.menu.toc %}
+      {% assign entries1 = site.data.site-nav-tree.toc %}
       {% for e1 in entries1 %}
+        {% if e1.subitems %}
+        {% endif %}
         <li>
           {% if page.url contains e1.path %}
             <details open>
@@ -19,7 +21,7 @@
               <summary>{{ e1.item }}</summary>
             {% endif %}
 
-            <!-- Tree Level 2 -->
+            <!-- Level 2 -->
             {% assign entries2 = e1.subitems %}
             {% if entries2 %}
               <ul>
