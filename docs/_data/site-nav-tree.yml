@@ -44,11 +44,7 @@ toc:
       - item: Cmd-line Options
   - item: Arras
   - item: Developer's Guide
-    subitems:
-      - item: Thing 1
   - item: Release Notes
-    subitems:
-      - item: Thing 1
   - item: Examples
     path: /examples/
     subitems:

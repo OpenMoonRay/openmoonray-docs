@@ -17,6 +17,7 @@
   padding-left : 0;
 }
 
+/* hierarchy lines are broken after removal of <ul> block around <li>
 .site-nav-tree ul li{
   border-left : 2px solid #ddd;
 }
@@ -36,6 +37,7 @@
   border       : solid #ddd;
   border-width : 0 0 2px 2px;
 }
+*/
 
 .site-nav-tree summary{
   display : block;
