@@ -7,38 +7,48 @@
     <ul class="site-nav-tree">
       {% assign entries1 = site.data.site-nav-tree.toc %}
       {% for e1 in entries1 %}
-        {% if e1.subitems %}
-        {% endif %}
-        <li>
-          {% if page.url contains e1.path %}
-            <details open>
-          {% else %}
-            <details closed>
-          {% endif %}
+        {% unless e1.subitems %}
+          <!-- leaf node -->
+          <li>
             {% if e1.path %}
-              <summary><a href={{ site.baseurl }}{{ e1.path }}>{{ e1.item }}</a></summary>
+              <a href={{ site.baseurl }}{{ e1.path }}>{{ e1.item }}</a>
             {% else %}
-              <summary>{{ e1.item }}</summary>
+              {{ e1.item }}
             {% endif %}
-
-            <!-- Level 2 -->
-            {% assign entries2 = e1.subitems %}
-            {% if entries2 %}
-              <ul>
-                {% for e2 in entries2 %}
-                  <li>
-                    {% if e2.path %}
-                      <summary><a href={{ site.baseurl }}{{ e2.path }}>{{ e2.item }}</a></summary>
-                    {% else %}
-                      <summary>{{ e2.item }}</summary>
-                    {% endif %}
-                  </li>
-                {% endfor %}
-              </ul>
+          </li>
+        {% else %}
+          <!-- has subitems -->
+          <li>
+            {% if page.url contains e1.path %}
+              <details open>
+            {% else %}
+              <details closed>
             {% endif %}
-
-          </details>
-        </li>
+              {% if e1.path %}
+                <summary><a href={{ site.baseurl }}{{ e1.path }}>{{ e1.item }}</a></summary>
+              {% else %}
+                <summary>{{ e1.item }}</summary>
+              {% endif %}
+  
+              <!-- Level 2 -->
+              {% assign entries2 = e1.subitems %}
+              {% if entries2 %}
+                <ul>
+                  {% for e2 in entries2 %}
+                    <li>
+                      {% if e2.path %}
+                        <summary><a href={{ site.baseurl }}{{ e2.path }}>{{ e2.item }}</a></summary>
+                      {% else %}
+                        <summary>{{ e2.item }}</summary>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+  
+            </details>
+          </li>
+        {% endunless %}
       {% endfor %}
     </ul>
   </nav>
