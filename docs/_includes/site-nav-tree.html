@@ -1,0 +1,44 @@
+{% if site.data.menu %}
+<h2>
+  {{ site.data.menu.title }}
+</h2>
+  <nav>
+    <!-- Tree Level 1 -->
+    <ul class="site-nav-tree">
+      {% assign entries1 = site.data.menu.toc %}
+      {% for e1 in entries1 %}
+        <li>
+          {% if page.url contains e1.path %}
+            <details open>
+          {% else %}
+            <details closed>
+          {% endif %}
+            {% if e1.path %}
+              <summary><a href={{ site.baseurl }}{{ e1.path }}>{{ e1.item }}</a></summary>
+            {% else %}
+              <summary>{{ e1.item }}</summary>
+            {% endif %}
+
+            <!-- Tree Level 2 -->
+            {% assign entries2 = e1.subitems %}
+            {% if entries2 %}
+              <ul>
+                {% for e2 in entries2 %}
+                  <li>
+                    {% if e2.path %}
+                      <summary><a href={{ site.baseurl }}{{ e2.path }}>{{ e2.item }}</a></summary>
+                    {% else %}
+                      <summary>{{ e2.item }}</summary>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+
+          </details>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}
+
