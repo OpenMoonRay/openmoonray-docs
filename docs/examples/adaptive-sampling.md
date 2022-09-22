@@ -1,3 +1,5 @@
+---
+---
 # Adaptive Sampling
 
 As of version 4.26, Moonray supports adaptive sampling.

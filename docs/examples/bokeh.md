@@ -1,3 +1,5 @@
+---
+---
 ## Introduction
 
 *Bokeh* refers to set of aesthetic qualities of out-of-focus portions of
