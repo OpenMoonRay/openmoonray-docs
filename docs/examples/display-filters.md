@@ -1,3 +1,5 @@
+---
+---
 # Display Filters
 
 Display Filters are essentially compositing nodes that can be piped into

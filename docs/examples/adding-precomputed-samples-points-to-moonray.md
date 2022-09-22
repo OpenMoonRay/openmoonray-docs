@@ -1,3 +1,5 @@
+---
+---
 ## Adding pre-computed samples points to MoonRay
 
 Sample points should be floating-point values in \[0, 1). A value of 1

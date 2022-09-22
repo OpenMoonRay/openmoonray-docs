@@ -43,15 +43,39 @@ toc:
       - item: Volumes
       - item: Cmd-line Options
   - item: Arras
-  - item: Devloper's Guide
+  - item: Developer's Guide
     subitems:
       - item: Thing 1
   - item: Release Notes
     subitems:
       - item: Thing 1
   - item: Examples
+    path: /examples/
     subitems:
-      - item: Thing 1
+      - item: Why Moonray
+        path: /examples/why-moonray
+      - item: Display Filters
+        path: /examples/display-filters
+      - item: Render Output
+        path: /examples/renderoutput
+      - item: ExtraAov Workflow and Case Studies
+        path: /examples/extra-aov-workflow-and-case-studies
+      - item: Camera
+        path: /examples/camera
+      - item: Adaptive Sampling
+        path: /examples/adaptive-sampling
+      - item: Bokeh
+        path: /examples/bokeh
+      - item: Meta Data
+        path: /examples/metadata
+      - item: OpenColorIO in moonray_gui
+        path: /examples/cpencolor-io-in-Moonray-gui
+      - item: Adding Precomputed Samples Points To MoonRay
+        path: /examples/adding-precomputed-samples-points-to-moonray
+      - item: Amorphous Volume
+        path: /examples/amorphous-volume
+      - item: BakeCamera
+        path: /examples/bake-camera
   - item: Legal/Licensing
     subitems:
       - item: Thing 1
