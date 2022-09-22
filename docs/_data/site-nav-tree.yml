@@ -44,11 +44,7 @@ toc:
       - item: Cmd-line Options
   - item: Arras
   - item: Developer's Guide
-    subitems:
-      - item: Thing 1
   - item: Release Notes
-    subitems:
-      - item: Thing 1
   - item: Examples
     path: /examples/
     subitems:
@@ -77,6 +73,5 @@ toc:
       - item: BakeCamera
         path: /examples/bake-camera
   - item: Legal/Licensing
-    subitems:
-      - item: Thing 1
+    path: /license
 

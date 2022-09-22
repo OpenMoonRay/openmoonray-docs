@@ -1,8 +1,9 @@
 /* borrowed from https://iamkate.com/code/tree-views/ */
 
 .site-nav-tree{
-  --spacing : 1.5rem;
-  --radius  : 10px;
+  --spacing     : 1.5rem;
+  --radius      : 10px;
+  --icon_color   : #999999;
 }
 
 .site-nav-tree li{
@@ -16,6 +17,7 @@
   padding-left : 0;
 }
 
+/* hierarchy lines are broken after removal of <ul> block around <li>
 .site-nav-tree ul li{
   border-left : 2px solid #ddd;
 }
@@ -35,6 +37,7 @@
   border       : solid #ddd;
   border-width : 0 0 2px 2px;
 }
+*/
 
 .site-nav-tree summary{
   display : block;
@@ -64,12 +67,12 @@
   width         : calc(2 * var(--radius));
   height        : calc(2 * var(--radius));
   border-radius : 50%;
-  background    : #ddd;
+  background    : var(--icon_color);
 }
 .site-nav-tree summary::before{
   content     : '+';
   z-index     : 1;
-  background  : #696;
+  background  : var(--icon_color);
   color       : #fff;
   line-height : calc(2 * var(--radius) - 2px);
   text-align  : center;
