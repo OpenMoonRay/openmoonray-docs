@@ -1,3 +1,13 @@
+---
+title: SceneVariables
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # SceneVariables
 
 ****
@@ -337,7 +347,7 @@ Specify port number for debug console. If you set -1 (=default), all debug conso
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02f50>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957ff50>
 
 
 
@@ -352,7 +362,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02f50>
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02938>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957f938>
 
 
 
@@ -382,7 +392,7 @@ Default value :
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02b90>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fb90>
 
 
 
@@ -1003,7 +1013,7 @@ Attempt to soften hard shadow terminator boundaries due to shading/geometric nor
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02b18>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fb18>
 
 
 
@@ -1048,7 +1058,7 @@ Default value : 1920
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02a28>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fa28>
 
 
 
@@ -1078,7 +1088,7 @@ Default value : 1.0
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299ab6050>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b9535050>
 
 
 
@@ -1231,7 +1241,7 @@ Metadata that is passed directly to the exr header. Format: {"name", "type", "va
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02cf8>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fcf8>
 
 
 

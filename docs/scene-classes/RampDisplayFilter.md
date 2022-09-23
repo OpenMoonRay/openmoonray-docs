@@ -1,3 +1,13 @@
+---
+title: RampDisplayFilter
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # RampDisplayFilter
 
 ****
@@ -66,7 +76,7 @@ List of colors on the ramp
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02cf8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fcf8>
 
 
 
@@ -81,7 +91,7 @@ None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-R
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02c08>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fc08>
 
 
 

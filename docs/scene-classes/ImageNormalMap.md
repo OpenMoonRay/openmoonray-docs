@@ -1,3 +1,13 @@
+---
+title: ImageNormalMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # ImageNormalMap
 
 **SHADER**
@@ -105,7 +115,7 @@ udim maximum v value
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02cf8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fcf8>
 
 
 

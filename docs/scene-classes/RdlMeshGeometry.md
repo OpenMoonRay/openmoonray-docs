@@ -1,3 +1,13 @@
+---
+title: RdlMeshGeometry
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # RdlMeshGeometry
 
 **GEOMETRY NODE**
@@ -60,7 +70,7 @@ Number of time samples generated along each curve when using curved motion blur
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02a28>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fa28>
 
 
 
@@ -210,7 +220,7 @@ When set to "left-handed", normals are generated using the left-handed rule. Thi
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02b18>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fb18>
 
 
 
@@ -225,7 +235,7 @@ The number of faces belonging to the part with corresponding index in 'part list
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02c08>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fc08>
 
 
 
@@ -463,7 +473,7 @@ Boundary interpolation: Corners, Edges or None
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299aba140>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b9539140>
 
 
 
@@ -478,7 +488,7 @@ List of indices for each corner vertex with an assigned sharpness.
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299aba1b8>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b95391b8>
 
 
 
@@ -493,7 +503,7 @@ Sharpness value for each corner vertex.
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299aba230>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b9539230>
 
 
 
@@ -508,7 +518,7 @@ List of vertex index pairs for each crease edge with an assigned sharpness.
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299aba2a8>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b95392a8>
 
 
 
@@ -674,7 +684,7 @@ If the mesh is in motion, the second motion step is stored in this attribute
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299aba578>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b9539578>
 
 
 

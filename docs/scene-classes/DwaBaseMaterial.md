@@ -1,3 +1,13 @@
+---
+title: DwaBaseMaterial
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # DwaBaseMaterial
 
 **ROOTSHADER MATERIAL SHADER DWABASELAYERABLE**
@@ -1149,7 +1159,7 @@ flip interpolation around the hue wheel to counter-clockwise direction
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299abb0c8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b95380c8>
 
 
 
@@ -1166,7 +1176,7 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299abb140>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b9538140>
 
 
 

@@ -1,3 +1,13 @@
+---
+title: RodLightFilter
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # RodLightFilter
 
 **LIGHTFILTER**
@@ -150,7 +160,7 @@ radius by which to expand the base box into a rounded box
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02c08>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fc08>
 
 
 
@@ -165,7 +175,7 @@ input distance for ramp control
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02b18>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fb18>
 
 
 
@@ -180,7 +190,7 @@ interpolation types for ramp control
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02a28>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fa28>
 
 
 
