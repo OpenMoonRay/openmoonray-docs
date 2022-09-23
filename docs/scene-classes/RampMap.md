@@ -1,3 +1,13 @@
+---
+title: RampMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # RampMap
 
 **MAP SHADER**
@@ -100,7 +110,7 @@ List of colors on the ramp
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02f50>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957ff50>
 
 
 
@@ -117,7 +127,7 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02938>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957f938>
 
 
 

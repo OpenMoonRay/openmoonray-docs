@@ -1,3 +1,13 @@
+---
+title: VdbLightFilter
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # VdbLightFilter
 
 **LIGHTFILTER**
@@ -109,7 +119,7 @@ Default value : 0.0
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02f50>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957ff50>
 
 
 
@@ -124,7 +134,7 @@ Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02f50>
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02938>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957f938>
 
 
 
@@ -169,7 +179,7 @@ Default value : 0.0
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02b90>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fb90>
 
 
 

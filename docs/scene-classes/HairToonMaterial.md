@@ -1,3 +1,13 @@
+---
+title: HairToonMaterial
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # HairToonMaterial
 
 **ROOTSHADER MATERIAL SHADER**
@@ -324,7 +334,7 @@ The overall intensity of the specular response
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02b18>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fb18>
 
 
 
@@ -360,7 +370,7 @@ sets the normalized distribution function for specular
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02a28>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fa28>
 
 
 
@@ -465,7 +475,7 @@ when checked, use input_U and V. otherwise use geometry dPds/t
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02f50>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957ff50>
 
 
 
@@ -621,7 +631,7 @@ The overall intensity of the specular response
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02938>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957f938>
 
 
 
@@ -657,7 +667,7 @@ sets the normalized distribution function for specular
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02b90>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fb90>
 
 
 
@@ -762,7 +772,7 @@ when checked, use input_U and V. otherwise use geometry dPds/t
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02cf8>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fcf8>
 
 
 
@@ -918,7 +928,7 @@ The overall intensity of the specular response
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299abc050>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b9538050>
 
 
 
@@ -954,7 +964,7 @@ sets the normalized distribution function for specular
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299abc0c8>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b95380c8>
 
 
 
@@ -1059,7 +1069,7 @@ when checked, use input_U and V. otherwise use geometry dPds/t
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299abc140>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b9538140>
 
 
 

@@ -1,3 +1,13 @@
+---
+title: DwaToonMaterial
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # DwaToonMaterial
 
 **ROOTSHADER MATERIAL SHADER DWABASELAYERABLE**
@@ -486,7 +496,7 @@ Extends the last ramp color to unlit portions. IMPORTANT: Only works in conjucti
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02cf8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fcf8>
 
 
 
@@ -503,7 +513,7 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299ab9488>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b9546488>
 
 
 
@@ -1590,7 +1600,7 @@ flip interpolation around the hue wheel to counter-clockwise direction
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299ab9398>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b9546398>
 
 
 
@@ -1607,7 +1617,7 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299ab9410>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b9546410>
 
 
 
@@ -2044,7 +2054,7 @@ The overall intensity of the toon specular response
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299ab9500>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b9546500>
 
 
 
@@ -2061,7 +2071,7 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299ab9578>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b9546578>
 
 
 
@@ -2136,7 +2146,7 @@ when checked, use input_U and V. otherwise use geometry dPds/t
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299ab95f0>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b95465f0>
 
 
 

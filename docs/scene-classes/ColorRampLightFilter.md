@@ -1,3 +1,13 @@
+---
+title: ColorRampLightFilter
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # ColorRampLightFilter
 
 **LIGHTFILTER**
@@ -60,7 +70,7 @@ Default value : 1.0
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02a28>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fa28>
 
 
 
@@ -105,7 +115,7 @@ Default value : 1.0
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02f50>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957ff50>
 
 
 

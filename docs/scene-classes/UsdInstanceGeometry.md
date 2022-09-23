@@ -1,3 +1,13 @@
+---
+title: UsdInstanceGeometry
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # UsdInstanceGeometry
 
 **GEOMETRY NODE**
@@ -30,7 +40,7 @@ Number of time samples generated along each curve when using curved motion blur
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02938>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957f938>
 
 
 
