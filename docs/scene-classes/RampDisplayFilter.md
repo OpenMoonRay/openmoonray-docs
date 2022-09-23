@@ -1,0 +1,169 @@
+# RampDisplayFilter
+
+****
+
+Documentation for class RampDisplayFilter
+
+
+
+---
+
+## <p style="color:blue;">Advanced attributes</p>
+
+## invert_mask
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+invert value of mask
+
+
+
+
+## mix
+
+**Float** 
+
+
+Default value : 1.0
+
+
+
+
+blend between output and input
+
+
+
+
+
+
+---
+
+## <p style="color:blue;">Ramp Knot attributes</p>
+
+## colors
+
+**RgbVector** 
+
+
+Default value : [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
+
+
+
+
+List of colors on the ramp
+
+
+
+
+## interpolations
+
+**IntVector** 
+
+
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe299b02cf8>
+
+
+
+
+None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5
+
+
+
+
+## positions
+
+**FloatVector** 
+
+
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe299b02c08>
+
+
+
+
+Color ramp
+
+
+
+
+
+
+---
+
+## <p style="color:blue;">Ramp properties attributes</p>
+
+## input
+
+**67141632** 
+
+
+Default value : None
+
+
+
+
+input to the input ramp
+
+
+
+
+## ramp_type
+
+**Int** *enum*
+
+
+
+- v_ramp = 0 (default)
+
+- u_ramp = 1
+
+- diagonal_ramp = 2
+
+- radial_ramp = 3
+
+- circular_ramp = 4
+
+- box_ramp = 5
+
+- uxv_ramp = 6
+
+- four_corner_ramp = 7
+
+- input_ramp = 8
+
+
+
+
+
+<p style="color:red;">Documentation for the attribute <b>ramp_type</b> needs to be written</p>
+
+
+
+
+
+
+---
+
+## <p style="color:blue;">General attributes</p>
+
+## mask
+
+**67141632** 
+
+
+Default value : None
+
+
+
+
+<p style="color:red;">Documentation for the attribute <b>mask</b> needs to be written</p>
+
+
+
+
+

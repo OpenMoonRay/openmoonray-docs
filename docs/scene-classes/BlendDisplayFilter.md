@@ -1,0 +1,128 @@
+# BlendDisplayFilter
+
+****
+
+Documentation for class BlendDisplayFilter
+
+
+
+---
+
+## <p style="color:blue;">Advanced attributes</p>
+
+## invert_mask
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+invert value of mask
+
+
+
+
+## mix
+
+**Float** 
+
+
+Default value : 1.0
+
+
+
+
+blend between output and input
+
+
+
+
+
+
+---
+
+## <p style="color:blue;">General attributes</p>
+
+## blendAmt
+
+**Float** 
+
+
+Default value : 0.5
+
+
+
+
+float determining amount of blend
+
+
+
+
+## blendType
+
+**Int** *enum*
+
+
+
+- linear = 0 (default)
+
+- cubic = 1
+
+
+
+
+
+<p style="color:red;">Documentation for the attribute <b>blendType</b> needs to be written</p>
+
+
+
+
+## input1
+
+**67141632** 
+
+
+Default value : None
+
+
+
+
+first operand
+
+
+
+
+## input2
+
+**67141632** 
+
+
+Default value : None
+
+
+
+
+second operand
+
+
+
+
+## mask
+
+**67141632** 
+
+
+Default value : None
+
+
+
+
+<p style="color:red;">Documentation for the attribute <b>mask</b> needs to be written</p>
+
+
+
+
+
