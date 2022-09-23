@@ -82,3 +82,9 @@
   content : '−';
 }
 
+nav.site-nav-tree-scroll {
+  height: 24rem;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding: 1rem;
+}
