@@ -25,23 +25,390 @@ toc:
     subitems:
       - item: Building
   - item: Moonray
+    path: /moonray
     subitems:
-      - item: Execution modes
-      - item: Renderer Settings
-      - item: Geometry
-      - item: Displacement
-      - item: Materials
-        subitems:
-          - item: DwaBaseMaterial
-          - item: DwaMetalMaterial
-      - item: Maps
-      - item: Lights
-      - item: LightFilters
-      - item: DisplayFilters
-      - item: RenderOutputs
       - item: Cameras
+        path: /moonray/cameras/
+        subitems:
+          - item: BakeCamera
+            path: /moonray/cameras/BakeCamera
+          - item: DomeMaster3DCamera
+            path: /moonray/cameras/DomeMaster3DCamera
+          - item: OrthographicCamera
+            path: /moonray/cameras/OrthographicCamera
+          - item: PerspectiveCamera
+            path: /moonray/cameras/PerspectiveCamera
+          - item: SphericalCamera
+            path: /moonray/cameras/SphericalCamera
+      - item: Displacement
+        path: /moonray/displacement
+        subitems:
+          - item: CombineDisplacement
+            path: /moonray/displacement/CombineDisplacement
+          - item: NormalDisplacement
+            path: /moonray/displacement/NormalDisplacement
+          - item: SwitchDisplacement
+            path: /moonray/displacement/SwitchDisplacement
+          - item: VectorDisplacement
+            path: /moonray/displacement/VectorDisplacement
+      - item: Geometry
+        path: /moonray/geometry
+        subitems:
+          - item: RdlCurveGeometry
+            path: /moonray/geometry/RdlCurveGeometry
+          - item: RdlPointGeometry
+            path: /moonray/geometry/RdlPointGeometry
+          - item: GeometrySet
+            path: /moonray/geometry/GeometrySet
+          - item: RdlInstancerGeometry
+            path: /moonray/geometry/RdlInstancerGeometry
+          - item: UsdGeometry
+            path: /moonray/geometry/UsdGeometry
+          - item: SphereGeometry
+            path: /moonray/geometry/SphereGeometry
+          - item: RdlMeshGeometry
+            path: /moonray/geometry/RdlMeshGeometry
+          - item: VdbGeometry
+            path: /moonray/geometry/VdbGeometry
+          - item: BoxGeometry
+            path: /moonray/geometry/BoxGeometry
+          - item: UsdInstanceGeometry
+            path: /moonray/geometry/UsdInstanceGeometry
+      - item: Joint
+        path: /moonray/joint
+      - item: Materials
+        path: /moonray/materials
+        subitems:
+          - item: AxfMaterial
+            path: /moonray/materials/AxfMaterial
+          - item: BaseMaterial
+            path: /moonray/materials/BaseMaterial
+          - item: DwaAdjustMaterial
+            path: /moonray/materials/DwaAdjustMaterial
+          - item: DwaBaseMaterial
+            path: /moonray/materials/DwaBaseMaterial
+          - item: DwaColorCorrectMaterial
+            path: /moonray/materials/DwaColorCorrectMaterial
+          - item: DwaEmissiveMaterial
+            path: /moonray/materials/DwaEmissiveMaterial
+          - item: DwaFabricMaterial
+            path: /moonray/materials/DwaFabricMaterial
+          - item: DwaLayerMaterial
+            path: /moonray/materials/DwaLayerMaterial
+          - item: DwaMetalMaterial
+            path: /moonray/materials/DwaMetalMaterial
+          - item: DwaMixMaterial
+            path: /moonray/materials/DwaMixMaterial
+          - item: DwaRefractiveMaterial
+            path: /moonray/materials/DwaRefractiveMaterial
+          - item: DwaSkinMaterial
+            path: /moonray/materials/DwaSkinMaterial
+          - item: DwaSolidDielectricMaterial
+            path: /moonray/materials/DwaSolidDielectricMaterial
+          - item: DwaSwitchMaterial
+            path: /moonray/materials/DwaSwitchMaterial
+          - item: DwaToonMaterial
+            path: /moonray/materials/DwaToonMaterial
+          - item: DwaTwoSidedMaterial
+            path: /moonray/materials/DwaTwoSidedMaterial
+          - item: DwaVelvetMaterial_v2
+            path: /moonray/materials/DwaVelvetMaterial_v2
+          - item: GlitterFlakeMaterial_v2
+            path: /moonray/materials/GlitterFlakeMaterial_v2
+          - item: HairColorCorrectMaterial
+            path: /moonray/materials/HairColorCorrectMaterial
+          - item: HairDiffuseMaterial
+            path: /moonray/materials/HairDiffuseMaterial
+          - item: HairLayerMaterial
+            path: /moonray/materials/HairLayerMaterial
+          - item: HairMaterial_v3
+            path: /moonray/materials/HairMaterial_v3
+          - item: HairToonMaterial
+            path: /moonray/materials/HairToonMaterial
+          - item: MacroFlakeMaterial
+            path: /moonray/materials/MacroFlakeMaterial
+          - item: MeasuredMaterial
+            path: /moonray/materials/MeasuredMaterial
+          - item: RaySwitchMaterial
+            path: /moonray/materials/RaySwitchMaterial
+          - item: SwitchMaterial
+            path: /moonray/materials/SwitchMaterial
+          - item: UsdPreviewSurface
+            path: /moonray/materials/UsdPreviewSurface
+      - item: Maps
+        path: /moonray/maps
+        subitems:
+          - item: AttributeMap
+            path: /moonray/maps/AttributeMap
+          - item: AxisAngleMap
+            path: /moonray/maps/AxisAngleMap
+          - item: BlendMap
+            path: /moonray/maps/BlendMap
+          - item: CheckerboardMap
+            path: /moonray/maps/CheckerboardMap
+          - item: ClampMap
+            path: /moonray/maps/ClampMap
+          - item: ColorCorrectContrastMap
+            path: /moonray/maps/ColorCorrectContrastMap
+          - item: ColorCorrectGainOffsetMap
+            path: /moonray/maps/ColorCorrectGainOffsetMap
+          - item: ColorCorrectGammaMap
+            path: /moonray/maps/ColorCorrectGammaMap
+          - item: ColorCorrectHsvMap
+            path: /moonray/maps/ColorCorrectHsvMap
+          - item: ColorCorrectHueShiftMap
+            path: /moonray/maps/ColorCorrectHueShiftMap
+          - item: ColorCorrectLegacyMap
+            path: /moonray/maps/ColorCorrectLegacyMap
+          - item: ColorCorrectMap
+            path: /moonray/maps/ColorCorrectMap
+          - item: ColorCorrectNukeMap
+            path: /moonray/maps/ColorCorrectNukeMap
+          - item: ColorCorrectSaturationMap
+            path: /moonray/maps/ColorCorrectSaturationMap
+          - item: ColorCorrectTMIMap
+            path: /moonray/maps/ColorCorrectTMIMap
+          - item: ConstantColorMap
+            path: /moonray/maps/ConstantColorMap
+          - item: ConstantScalarMap
+            path: /moonray/maps/ConstantScalarMap
+          - item: CurvatureMap
+            path: /moonray/maps/CurvatureMap
+          - item: DebugMap
+            path: /moonray/maps/DebugMap
+          - item: DeformationMap
+            path: /moonray/maps/DeformationMap
+          - item: DirectionalMap
+            path: /moonray/maps/DirectionalMap
+          - item: ExtraAovMap
+            path: /moonray/maps/ExtraAovMap
+          - item: FloatToRgbMap
+            path: /moonray/maps/FloatToRgbMap
+          - item: GradientMap
+            path: /moonray/maps/GradientMap
+          - item: HairColorPresetsMap
+            path: /moonray/maps/HairColorPresetsMap
+          - item: HairColumnMap
+            path: /moonray/maps/HairColumnMap
+          - item: HairMap
+            path: /moonray/maps/HairMap
+          - item: HsvToRgbMap
+            path: /moonray/maps/HsvToRgbMap
+          - item: ImageMap
+            path: /moonray/maps/ImageMap
+          - item: LODMap
+            path: /moonray/maps/LODMap
+          - item: LayerMap
+            path: /moonray/maps/LayerMap
+          - item: LcToRgbMap
+            path: /moonray/maps/LcToRgbMap
+          - item: ListMap
+            path: /moonray/maps/ListMap
+          - item: NoiseMap
+            path: /moonray/maps/NoiseMap
+          - item: NoiseMap_v2
+            path: /moonray/maps/NoiseMap_v2
+          - item: NoiseWorleyMap
+            path: /moonray/maps/NoiseWorleyMap
+          - item: NoiseWorleyMap_v2
+            path: /moonray/maps/NoiseWorleyMap_v2
+          - item: NormalToRgbMap
+            path: /moonray/maps/NormalToRgbMap
+          - item: OpMap
+            path: /moonray/maps/OpMap
+          - item: OpenVdbMap
+            path: /moonray/maps/OpenVdbMap
+          - item: OpenVdbMap_v2
+            path: /moonray/maps/OpenVdbMap_v2
+          - item: ProjectCameraMap
+            path: /moonray/maps/ProjectCameraMap
+          - item: ProjectCameraMap_v2
+            path: /moonray/maps/ProjectCameraMap_v2
+          - item: ProjectCylindricalMap
+            path: /moonray/maps/ProjectCylindricalMap
+          - item: ProjectPlanarMap
+            path: /moonray/maps/ProjectPlanarMap
+          - item: ProjectSphericalMap
+            path: /moonray/maps/ProjectSphericalMap
+          - item: ProjectTriplanarMap
+            path: /moonray/maps/ProjectTriplanarMap
+          - item: ProjectTriplanarMap_v2
+            path: /moonray/maps/ProjectTriplanarMap_v2
+          - item: ProjectTriplanarUdimMap
+            path: /moonray/maps/ProjectTriplanarUdimMap
+          - item: RampMap
+            path: /moonray/maps/RampMap
+          - item: RandomMap
+            path: /moonray/maps/RandomMap
+          - item: RemapMap
+            path: /moonray/maps/RemapMap
+          - item: RgbToFloatMap
+            path: /moonray/maps/RgbToFloatMap
+          - item: RgbToHsvMap
+            path: /moonray/maps/RgbToHsvMap
+          - item: RgbToLabMap
+            path: /moonray/maps/RgbToLabMap
+          - item: SwitchColorMap
+            path: /moonray/maps/SwitchColorMap
+          - item: SwitchFloatMap
+            path: /moonray/maps/SwitchFloatMap
+          - item: ToonMap
+            path: /moonray/maps/ToonMap
+          - item: TransformSpaceMap
+            path: /moonray/maps/TransformSpaceMap
+          - item: UVTransformMap
+            path: /moonray/maps/UVTransformMap
+          - item: UsdPrimvarReader_float
+            path: /moonray/maps/UsdPrimvarReader_float
+          - item: UsdPrimvarReader_float2
+            path: /moonray/maps/UsdPrimvarReader_float2
+          - item: UsdPrimvarReader_float3
+            path: /moonray/maps/UsdPrimvarReader_float3
+          - item: UsdPrimvarReader_int
+            path: /moonray/maps/UsdPrimvarReader_int
+          - item: UsdPrimvarReader_normal
+            path: /moonray/maps/UsdPrimvarReader_normal
+          - item: UsdPrimvarReader_point
+            path: /moonray/maps/UsdPrimvarReader_point
+          - item: UsdPrimvarReader_vector
+            path: /moonray/maps/UsdPrimvarReader_vector
+          - item: UsdTransform2d
+            path: /moonray/maps/UsdTransform2d
+          - item: UsdUVTexture
+            path: /moonray/maps/UsdUVTexture
+          - item: WireframeMap
+            path: /moonray/maps/WireframeMap
+      - item: Meta Data
+        path: /moonray/meta-data
+      - item: Normal Maps
+        path: /moonray/normal-maps
+        subitems:
+          - item: CombineNormalMap
+            path: /moonray/normal-maps/CombineNormalMap
+          - item: DistortNormalMap
+            path: /moonray/normal-maps/DistortNormalMap
+          - item: ImageNormalMap
+            path: /moonray/normal-maps/ImageNormalMap
+          - item: ProjectCameraNormalMap
+            path: /moonray/normal-maps/ProjectCameraNormalMap
+          - item: ProjectPlanarNormalMap
+            path: /moonray/normal-maps/ProjectPlanarNormalMap
+          - item: ProjectTriplanarNormalMap
+            path: /moonray/normal-maps/ProjectTriplanarNormalMap
+          - item: ProjectTriplanarNormalMap_v2
+            path: /moonray/normal-maps/ProjectTriplanarNormalMap_v2
+          - item: RandomNormalMap
+            path: /moonray/normal-maps/RandomNormalMap
+          - item: RgbToNormalMap
+            path: /moonray/normal-maps/RgbToNormalMap
+          - item: SwitchNormalMap
+            path: /moonray/normal-maps/SwitchNormalMap
+          - item: TransformNormalMap
+            path: /moonray/normal-maps/TransformNormalMap
+      - item: Layer
+        path: /moonray/Layer
+      - item: Lights
+        path: /moonray/lights
+        subitems:
+          - item: BarnDoorLightFilter
+            path: /moonray/lights/BarnDoorLightFilter
+          - item: ColorRampLightFilter
+            path: /moonray/lights/ColorRampLightFilter
+          - item: CombineLightFilter
+            path: /moonray/lights/CombineLightFilter
+          - item: CookieLightFilter
+            path: /moonray/lights/CookieLightFilter
+          - item: CylinderLight
+            path: /moonray/lights/CylinderLight
+          - item: DecayLightFilter
+            path: /moonray/lights/DecayLightFilter
+          - item: DiskLight
+            path: /moonray/lights/DiskLight
+          - item: DistantLight
+            path: /moonray/lights/DistantLight
+          - item: EnvLight
+            path: /moonray/lights/EnvLight
+          - item: IntensityLightFilter
+            path: /moonray/lights/IntensityLightFilter
+          - item: LightFilterSet
+            path: /moonray/lights/LightFilterSet
+          - item: LightSet
+            path: /moonray/lights/LightSet
+          - item: MeshLight
+            path: /moonray/lights/MeshLight
+          - item: RectLight
+            path: /moonray/lights/RectLight
+          - item: RodLightFilter
+            path: /moonray/lights/RodLightFilter
+          - item: SphereLight
+            path: /moonray/lights/SphereLight
+          - item: SpotLight
+            path: /moonray/lights/SpotLight
+          - item: VdbLightFilter
+            path: /moonray/lights/VdbLightFilter
+      - item: Light Filters
+      - item: Display Filters
+        path: /moonray/display-filters/
+        subitems:
+          - item: BlendDisplayFilter
+            path: /moonray/display-filters/BlendDisplayFilter
+          - item: ClampDisplayFilter
+            path: /moonray/display-filters/ClampDisplayFilter
+          - item: ColorCorrectDisplayFilter
+            path: /moonray/display-filters/ColorCorrectDisplayFilter
+          - item: ConstantDisplayFilter
+            path: /moonray/display-filters/ConstantDisplayFilter
+          - item: ConvolutionDisplayFilter
+            path: /moonray/display-filters/ConvolutionDisplayFilter
+          - item: DiscretizeDisplayFilter
+            path: /moonray/display-filters/DiscretizeDisplayFilter
+          - item: DofDisplayFilter
+            path: /moonray/display-filters/DofDisplayFilter
+          - item: HalftoneDisplayFilter
+            path: /moonray/display-filters/HalftoneDisplayFilter
+          - item: ImageDisplayFilter
+            path: /moonray/display-filters/ImageDisplayFilter
+          - item: OpDisplayFilter
+            path: /moonray/display-filters/OpDisplayFilter
+          - item: OverDisplayFilter
+            path: /moonray/display-filters/OverDisplayFilter
+          - item: RampDisplayFilter
+            path: /moonray/display-filters/RampDisplayFilter
+          - item: RemapDisplayFilter
+            path: /moonray/display-filters/RemapDisplayFilter
+          - item: RgbToFloatDisplayFilter
+            path: /moonray/display-filters/RgbToFloatDisplayFilter
+          - item: RgbToHsvDisplayFilter
+            path: /moonray/display-filters/RgbToHsvDisplayFilter
+          - item: ShadowDisplayFilter
+            path: /moonray/display-filters/ShadowDisplayFilter
+          - item: TangentSpaceDisplayFilter
+            path: /moonray/display-filters/TangentSpaceDisplayFilter
+          - item: ToonDisplayFilter
+            path: /moonray/display-filters/ToonDisplayFilter
+      - item: Render Output
+        path: /moonray/render-output
+      - item: Shadow Set
+        path: /moonray/shadow-set
+      - item: Shadow Receiver Set
+        path: /moonray/shadow-receiver-set
+      - item: Trace Set
+        path: /moonray/trace-set
+      - item: User Data
+        path: /moonray/user-data
       - item: Volumes
+        path: /moonray/volumes
+        subitems:
+          - item: BaseVolume
+            path: /moonray/volumes/BaseVolume
+          - item: CutoutVolume
+            path: /moonray/volumes/CutoutVolume
+          - item: VdbVolume
+            path: /moonray/volumes/VdbVolume
       - item: Cmd-line Options
+        path: /moonray/cmd-line-options
+      - item: Execution modes
+        path: /moonray/execution-modes
   - item: Arras
   - item: Developer's Guide
   - item: Release Notes
@@ -62,7 +429,7 @@ toc:
         path: /examples/adaptive-sampling
       - item: Bokeh
         path: /examples/bokeh
-      - item: Meta Data
+      - item: Metadata
         path: /examples/metadata
       - item: OpenColorIO in moonray_gui
         path: /examples/cpencolor-io-in-Moonray-gui
