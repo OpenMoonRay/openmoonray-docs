@@ -18,7 +18,7 @@ There are 8 types of light supported in MoonRay:
 * [SphereLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/Light.md)
 * [SpotLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/Light.md)
 
-Two of the light types - DistantLight and EnvLight - are treated as having their illuminating surface at infinity. The remaining six types are considered local lights in the sense that their 3D positions are determined by spatial coordites (for instance, a SphereLight is positioned by setting its *center* attribute).
+Two of the light types - DistantLight and EnvLight - are treated as having their illuminating surface at infinity. The remaining six types are considered local lights in the sense that their 3D positions are determined by spatial coordinates (for instance, a SphereLight is positioned by setting its *center* attribute).
 
 Many attributes are shared by all light types. The full set of shared attributes can be found in the documetation for each individual light, but basic examples include:
 * node_xform - the light's transformation matrix
