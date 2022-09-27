@@ -51,84 +51,117 @@ toc:
             path: /moonray/displacement/SwitchDisplacement
           - item: VectorDisplacement
             path: /moonray/displacement/VectorDisplacement
+      - item: Display Filters
+        path: /moonray/display-filters/
+        subitems:
+          - item: BlendDisplayFilter
+            path: /moonray/display-filters/BlendDisplayFilter
+          - item: ClampDisplayFilter
+            path: /moonray/display-filters/ClampDisplayFilter
+          - item: ColorCorrectDisplayFilter
+            path: /moonray/display-filters/ColorCorrectDisplayFilter
+          - item: ConstantDisplayFilter
+            path: /moonray/display-filters/ConstantDisplayFilter
+          - item: ConvolutionDisplayFilter
+            path: /moonray/display-filters/ConvolutionDisplayFilter
+          - item: DiscretizeDisplayFilter
+            path: /moonray/display-filters/DiscretizeDisplayFilter
+          - item: DofDisplayFilter
+            path: /moonray/display-filters/DofDisplayFilter
+          - item: HalftoneDisplayFilter
+            path: /moonray/display-filters/HalftoneDisplayFilter
+          - item: ImageDisplayFilter
+            path: /moonray/display-filters/ImageDisplayFilter
+          - item: OpDisplayFilter
+            path: /moonray/display-filters/OpDisplayFilter
+          - item: OverDisplayFilter
+            path: /moonray/display-filters/OverDisplayFilter
+          - item: RampDisplayFilter
+            path: /moonray/display-filters/RampDisplayFilter
+          - item: RemapDisplayFilter
+            path: /moonray/display-filters/RemapDisplayFilter
+          - item: RgbToFloatDisplayFilter
+            path: /moonray/display-filters/RgbToFloatDisplayFilter
+          - item: RgbToHsvDisplayFilter
+            path: /moonray/display-filters/RgbToHsvDisplayFilter
+          - item: ShadowDisplayFilter
+            path: /moonray/display-filters/ShadowDisplayFilter
+          - item: TangentSpaceDisplayFilter
+            path: /moonray/display-filters/TangentSpaceDisplayFilter
+          - item: ToonDisplayFilter
+            path: /moonray/display-filters/ToonDisplayFilter
       - item: Geometry
         path: /moonray/geometry
         subitems:
-          - item: RdlCurveGeometry
-            path: /moonray/geometry/RdlCurveGeometry
-          - item: RdlPointGeometry
-            path: /moonray/geometry/RdlPointGeometry
-          - item: GeometrySet
-            path: /moonray/geometry/GeometrySet
-          - item: RdlInstancerGeometry
-            path: /moonray/geometry/RdlInstancerGeometry
-          - item: UsdGeometry
-            path: /moonray/geometry/UsdGeometry
-          - item: SphereGeometry
-            path: /moonray/geometry/SphereGeometry
-          - item: RdlMeshGeometry
-            path: /moonray/geometry/RdlMeshGeometry
-          - item: VdbGeometry
-            path: /moonray/geometry/VdbGeometry
           - item: BoxGeometry
             path: /moonray/geometry/BoxGeometry
+          - item: RdlCurveGeometry
+            path: /moonray/geometry/RdlCurveGeometry
+          - item: RdlInstancerGeometry
+            path: /moonray/geometry/RdlInstancerGeometry
+          - item: RdlMeshGeometry
+            path: /moonray/geometry/RdlMeshGeometry
+          - item: RdlPointGeometry
+            path: /moonray/geometry/RdlPointGeometry
+          - item: SphereGeometry
+            path: /moonray/geometry/SphereGeometry
+          - item: UsdGeometry
+            path: /moonray/geometry/UsdGeometry
           - item: UsdInstanceGeometry
             path: /moonray/geometry/UsdInstanceGeometry
+          - item: VdbGeometry
+            path: /moonray/geometry/VdbGeometry
       - item: Joint
         path: /moonray/joint
       - item: Materials
         path: /moonray/materials
         subitems:
-          - item: AxfMaterial
-            path: /moonray/materials/AxfMaterial
-          - item: BaseMaterial
-            path: /moonray/materials/BaseMaterial
-          - item: DwaAdjustMaterial
-            path: /moonray/materials/DwaAdjustMaterial
-          - item: DwaBaseMaterial
-            path: /moonray/materials/DwaBaseMaterial
-          - item: DwaColorCorrectMaterial
-            path: /moonray/materials/DwaColorCorrectMaterial
-          - item: DwaEmissiveMaterial
-            path: /moonray/materials/DwaEmissiveMaterial
-          - item: DwaFabricMaterial
-            path: /moonray/materials/DwaFabricMaterial
-          - item: DwaLayerMaterial
-            path: /moonray/materials/DwaLayerMaterial
-          - item: DwaMetalMaterial
-            path: /moonray/materials/DwaMetalMaterial
-          - item: DwaMixMaterial
-            path: /moonray/materials/DwaMixMaterial
-          - item: DwaRefractiveMaterial
-            path: /moonray/materials/DwaRefractiveMaterial
-          - item: DwaSkinMaterial
-            path: /moonray/materials/DwaSkinMaterial
-          - item: DwaSolidDielectricMaterial
-            path: /moonray/materials/DwaSolidDielectricMaterial
-          - item: DwaSwitchMaterial
-            path: /moonray/materials/DwaSwitchMaterial
-          - item: DwaToonMaterial
-            path: /moonray/materials/DwaToonMaterial
-          - item: DwaTwoSidedMaterial
-            path: /moonray/materials/DwaTwoSidedMaterial
-          - item: DwaVelvetMaterial_v2
-            path: /moonray/materials/DwaVelvetMaterial_v2
-          - item: GlitterFlakeMaterial_v2
-            path: /moonray/materials/GlitterFlakeMaterial_v2
-          - item: HairColorCorrectMaterial
-            path: /moonray/materials/HairColorCorrectMaterial
-          - item: HairDiffuseMaterial
-            path: /moonray/materials/HairDiffuseMaterial
-          - item: HairLayerMaterial
-            path: /moonray/materials/HairLayerMaterial
-          - item: HairMaterial_v3
-            path: /moonray/materials/HairMaterial_v3
-          - item: HairToonMaterial
-            path: /moonray/materials/HairToonMaterial
-          - item: MacroFlakeMaterial
-            path: /moonray/materials/MacroFlakeMaterial
-          - item: MeasuredMaterial
-            path: /moonray/materials/MeasuredMaterial
+          - item: Dwa Materials
+            path: /moonray/materials/dwa
+            subitems:
+              - item: DwaAdjustMaterial
+                path: /moonray/materials/dwa/DwaAdjustMaterial
+              - item: DwaBaseMaterial
+                path: /moonray/materials/dwa/DwaBaseMaterial
+              - item: DwaColorCorrectMaterial
+                path: /moonray/materials/dwa/DwaColorCorrectMaterial
+              - item: DwaEmissiveMaterial
+                path: /moonray/materials/dwa/DwaEmissiveMaterial
+              - item: DwaFabricMaterial
+                path: /moonray/materials/dwa/DwaFabricMaterial
+              - item: DwaLayerMaterial
+                path: /moonray/materials/dwa/DwaLayerMaterial
+              - item: DwaMetalMaterial
+                path: /moonray/materials/dwa/DwaMetalMaterial
+              - item: DwaMixMaterial
+                path: /moonray/materials/dwa/DwaMixMaterial
+              - item: DwaRefractiveMaterial
+                path: /moonray/materials/dwa/DwaRefractiveMaterial
+              - item: DwaSkinMaterial
+                path: /moonray/materials/dwa/DwaSkinMaterial
+              - item: DwaSolidDielectricMaterial
+                path: /moonray/materials/dwa/DwaSolidDielectricMaterial
+              - item: DwaSwitchMaterial
+                path: /moonray/materials/dwa/DwaSwitchMaterial
+              - item: DwaToonMaterial
+                path: /moonray/materials/dwa/DwaToonMaterial
+              - item: DwaTwoSidedMaterial
+                path: /moonray/materials/dwa/DwaTwoSidedMaterial
+              - item: DwaVelvetMaterial_v2
+                path: /moonray/materials/dwa/DwaVelvetMaterial_v2
+          - item: Hair Materials
+            path: /moonray/materials/hair
+            subitems:
+              - item: HairColorCorrectMaterial
+                path: /moonray/materials/hair/HairColorCorrectMaterial
+              - item: HairDiffuseMaterial
+                path: /moonray/materials/hair/HairDiffuseMaterial
+              - item: HairLayerMaterial
+                path: /moonray/materials/hair/HairLayerMaterial
+              - item: HairMaterial_v3
+                path: /moonray/materials/hair/HairMaterial_v3
+              - item: HairToonMaterial
+                path: /moonray/materials/hair/HairToonMaterial
           - item: RaySwitchMaterial
             path: /moonray/materials/RaySwitchMaterial
           - item: SwitchMaterial
@@ -196,14 +229,14 @@ toc:
             path: /moonray/maps/HsvToRgbMap
           - item: ImageMap
             path: /moonray/maps/ImageMap
-          - item: LODMap
-            path: /moonray/maps/LODMap
           - item: LayerMap
             path: /moonray/maps/LayerMap
           - item: LcToRgbMap
             path: /moonray/maps/LcToRgbMap
           - item: ListMap
             path: /moonray/maps/ListMap
+          - item: LODMap
+            path: /moonray/maps/LODMap
           - item: NoiseMap
             path: /moonray/maps/NoiseMap
           - item: NoiseMap_v2
@@ -214,12 +247,12 @@ toc:
             path: /moonray/maps/NoiseWorleyMap_v2
           - item: NormalToRgbMap
             path: /moonray/maps/NormalToRgbMap
-          - item: OpMap
-            path: /moonray/maps/OpMap
           - item: OpenVdbMap
             path: /moonray/maps/OpenVdbMap
           - item: OpenVdbMap_v2
             path: /moonray/maps/OpenVdbMap_v2
+          - item: OpMap
+            path: /moonray/maps/OpMap
           - item: ProjectCameraMap
             path: /moonray/maps/ProjectCameraMap
           - item: ProjectCameraMap_v2
@@ -256,8 +289,6 @@ toc:
             path: /moonray/maps/ToonMap
           - item: TransformSpaceMap
             path: /moonray/maps/TransformSpaceMap
-          - item: UVTransformMap
-            path: /moonray/maps/UVTransformMap
           - item: UsdPrimvarReader_float
             path: /moonray/maps/UsdPrimvarReader_float
           - item: UsdPrimvarReader_float2
@@ -276,6 +307,8 @@ toc:
             path: /moonray/maps/UsdTransform2d
           - item: UsdUVTexture
             path: /moonray/maps/UsdUVTexture
+          - item: UVTransformMap
+            path: /moonray/maps/UVTransformMap
           - item: WireframeMap
             path: /moonray/maps/WireframeMap
       - item: Meta Data
@@ -347,45 +380,6 @@ toc:
           - item: VdbLightFilter
             path: /moonray/lights/VdbLightFilter
       - item: Light Filters
-      - item: Display Filters
-        path: /moonray/display-filters/
-        subitems:
-          - item: BlendDisplayFilter
-            path: /moonray/display-filters/BlendDisplayFilter
-          - item: ClampDisplayFilter
-            path: /moonray/display-filters/ClampDisplayFilter
-          - item: ColorCorrectDisplayFilter
-            path: /moonray/display-filters/ColorCorrectDisplayFilter
-          - item: ConstantDisplayFilter
-            path: /moonray/display-filters/ConstantDisplayFilter
-          - item: ConvolutionDisplayFilter
-            path: /moonray/display-filters/ConvolutionDisplayFilter
-          - item: DiscretizeDisplayFilter
-            path: /moonray/display-filters/DiscretizeDisplayFilter
-          - item: DofDisplayFilter
-            path: /moonray/display-filters/DofDisplayFilter
-          - item: HalftoneDisplayFilter
-            path: /moonray/display-filters/HalftoneDisplayFilter
-          - item: ImageDisplayFilter
-            path: /moonray/display-filters/ImageDisplayFilter
-          - item: OpDisplayFilter
-            path: /moonray/display-filters/OpDisplayFilter
-          - item: OverDisplayFilter
-            path: /moonray/display-filters/OverDisplayFilter
-          - item: RampDisplayFilter
-            path: /moonray/display-filters/RampDisplayFilter
-          - item: RemapDisplayFilter
-            path: /moonray/display-filters/RemapDisplayFilter
-          - item: RgbToFloatDisplayFilter
-            path: /moonray/display-filters/RgbToFloatDisplayFilter
-          - item: RgbToHsvDisplayFilter
-            path: /moonray/display-filters/RgbToHsvDisplayFilter
-          - item: ShadowDisplayFilter
-            path: /moonray/display-filters/ShadowDisplayFilter
-          - item: TangentSpaceDisplayFilter
-            path: /moonray/display-filters/TangentSpaceDisplayFilter
-          - item: ToonDisplayFilter
-            path: /moonray/display-filters/ToonDisplayFilter
       - item: Render Output
         path: /moonray/render-output
       - item: Shadow Set
