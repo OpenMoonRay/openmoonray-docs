@@ -115,7 +115,7 @@ udim maximum v value
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fcf8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 

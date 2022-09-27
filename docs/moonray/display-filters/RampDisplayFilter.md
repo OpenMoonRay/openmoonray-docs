@@ -76,7 +76,7 @@ List of colors on the ramp
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fcf8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -91,7 +91,7 @@ None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-R
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fc08>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 

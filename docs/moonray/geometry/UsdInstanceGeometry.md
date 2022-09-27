@@ -40,7 +40,7 @@ Number of time samples generated along each curve when using curved motion blur
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957f938>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
