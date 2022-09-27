@@ -70,7 +70,7 @@ Number of time samples generated along each curve when using curved motion blur
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635b90>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -220,7 +220,7 @@ When set to "left-handed", normals are generated using the left-handed rule. Thi
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635c80>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -235,7 +235,7 @@ The number of faces belonging to the part with corresponding index in 'part list
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635d70>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -473,7 +473,7 @@ Boundary interpolation: Corners, Edges or None
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e6664c2a8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -488,7 +488,7 @@ List of indices for each corner vertex with an assigned sharpness.
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e6664c320>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -503,7 +503,7 @@ Sharpness value for each corner vertex.
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e6664c398>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -518,7 +518,7 @@ List of vertex index pairs for each crease edge with an assigned sharpness.
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e6664c410>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -684,7 +684,7 @@ If the mesh is in motion, the second motion step is stored in this attribute
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e6664c6e0>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 

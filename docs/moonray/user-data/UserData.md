@@ -115,7 +115,7 @@ key name for float type user data
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e6664c1b8>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -130,7 +130,7 @@ float type user data values for motion step 0
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e6664c140>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -160,7 +160,7 @@ key name for integer type user data
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e6664c230>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 

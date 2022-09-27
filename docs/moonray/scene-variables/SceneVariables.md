@@ -347,7 +347,7 @@ Specify port number for debug console. If you set -1 (=default), all debug conso
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635aa0>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -362,7 +362,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635aa0>
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635d70>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -392,7 +392,7 @@ Default value :
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635cf8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -1013,7 +1013,7 @@ Attempt to soften hard shadow terminator boundaries due to shading/geometric nor
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635c80>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -1058,7 +1058,7 @@ Default value : 1920
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e6664c1b8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -1088,7 +1088,7 @@ Default value : 1.0
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e6664c140>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -1241,7 +1241,7 @@ Metadata that is passed directly to the exr header. Format: {"name", "type", "va
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e66635b90>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 

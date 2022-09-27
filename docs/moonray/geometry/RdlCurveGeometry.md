@@ -116,7 +116,7 @@ Number of time samples generated along each curve when using curved motion blur
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635b90>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -202,7 +202,7 @@ Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ]
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635aa0>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -274,7 +274,7 @@ Vector of UserData.Each key/value pair will be added as a primitive attribute of
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e66635e60>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 

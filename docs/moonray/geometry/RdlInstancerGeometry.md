@@ -25,7 +25,7 @@ Documentation for class RdlInstancerGeometry
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635c80>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -189,7 +189,7 @@ When a secondary ray is fired, anything within this distance of the intersection
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635aa0>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 

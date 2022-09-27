@@ -334,7 +334,7 @@ The overall intensity of the specular response
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635c80>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -370,7 +370,7 @@ sets the normalized distribution function for specular
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e66635b90>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -475,7 +475,7 @@ when checked, use input_U and V. otherwise use geometry dPds/t
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e66635aa0>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -631,7 +631,7 @@ The overall intensity of the specular response
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e66635d70>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -667,7 +667,7 @@ sets the normalized distribution function for specular
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e66635cf8>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -772,7 +772,7 @@ when checked, use input_U and V. otherwise use geometry dPds/t
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e6664c230>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -928,7 +928,7 @@ The overall intensity of the specular response
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f9e6664c2a8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -964,7 +964,7 @@ sets the normalized distribution function for specular
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e6664c320>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -1069,7 +1069,7 @@ when checked, use input_U and V. otherwise use geometry dPds/t
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f9e6664c398>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
