@@ -160,7 +160,7 @@ radius by which to expand the base box into a rounded box
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fc08>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -175,7 +175,7 @@ input distance for ramp control
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957fb18>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -190,7 +190,7 @@ interpolation types for ramp control
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fa28>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 

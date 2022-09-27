@@ -1,5 +1,5 @@
 ---
-title: DwaSkinMaterial
+title: DwaBaseMaterial
 
 # uncomment if you want MathJax formatting available
 # maths: 1
@@ -8,11 +8,11 @@ title: DwaSkinMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 
-# DwaSkinMaterial
+# DwaBaseMaterial
 
 **ROOTSHADER MATERIAL SHADER DWABASELAYERABLE**
 
-Documentation for class DwaSkinMaterial
+Documentation for class DwaBaseMaterial
 
 
 
@@ -46,6 +46,181 @@ Default value : None
 
 
 Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.
+
+
+
+
+
+
+---
+
+## <p style="color:blue;">Clearcoat attributes</p>
+
+## clearcoat
+
+**Float** *bindable*
+
+
+Default value : 1.0
+
+
+
+
+enables/disables clearcoat (binary 0|1 for plausibility)
+
+
+
+
+## clearcoat_attenuation_color
+
+**Rgb** *bindable*
+
+
+Default value : [ 0.5, 0.5, 0.5 ]
+
+
+
+
+the attenuation color of the clearcoat when 'cleacoat thickness' > 0
+
+
+
+
+## clearcoat_bending
+
+**Bool** 
+
+
+Default value : True
+
+
+
+
+(advanced, recommended ON) bends rays based on the clearcoat-refractive-index before evaluating the lobes under clearcoat
+
+
+
+
+## clearcoat_model
+
+**Int** *enum*
+
+
+
+- Beckmann = 0
+
+- GGX = 1 (default)
+
+
+
+
+
+sets the normalized distribution function for clearcoat.  GGX is currently isotropic only
+
+
+
+
+## clearcoat_normal_dial
+
+**Float** *bindable*
+
+
+Default value : 1.0
+
+
+
+
+controls the amount of infuence of the alternate clearcoat normal
+
+
+
+
+## clearcoat_refractive_index
+
+**Float** 
+
+
+Default value : 1.5
+
+
+
+
+defines the Fresnel behavior
+
+
+
+
+## clearcoat_roughness
+
+**Float** *bindable*
+
+
+Default value : 0.10000000149
+
+
+
+
+the roughness of the clearcoat lobe
+
+
+
+
+## clearcoat_thickness
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+the thickness of the virtual clearcoat layer. Values > 0 enable absorption
+
+
+
+
+## independent_clearcoat_normal
+
+**33554432** 
+
+
+Default value : None
+
+
+
+
+specifies an independent shading normal (normal map) for the clearcoat lobe
+
+
+
+
+## show_clearcoat
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+enables/disables clearcoat
+
+
+
+
+## use_independent_clearcoat_normal
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+specifies whether the clearcoat lobe should use an independent normal
 
 
 
@@ -984,7 +1159,7 @@ flip interpolation around the hue wheel to counter-clockwise direction
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b95320c8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -1001,7 +1176,7 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b9532140>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -1071,136 +1246,6 @@ Default value : 1.0
 
 
 Controls how much the color spectrum is repeated
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Moisture attributes</p>
-
-## independent_moisture_normal
-
-**33554432** 
-
-
-Default value : None
-
-
-
-
-specifies an independent shading normal (normal map) for the Moisture lobe
-
-
-
-
-## moisture_mask
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-bind map here, higher values for oily zones
-
-
-
-
-## moisture_model
-
-**Int** *enum*
-
-
-
-- Beckmann = 0
-
-- GGX = 1 (default)
-
-
-
-
-
-sets the normalized distribution function for the moisture specular.  GGX is currently isotropic only
-
-
-
-
-## moisture_normal_dial
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-controls the amount of influence of the alternate Moisture normal
-
-
-
-
-## moisture_refractive_index
-
-**Float** 
-
-
-Default value : 1.5
-
-
-
-
-defines the Fresnel behavior of moisture, and all underlying skin layers
-
-
-
-
-## moisture_roughness
-
-**Float** *bindable*
-
-
-Default value : 0.25
-
-
-
-
-roughness of moisture; binding a map here should rarely be necessary
-
-
-
-
-## show_moisture
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-enables/disables moisture reflections
-
-
-
-
-## use_independent_moisture_normal
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-specifies whether the moisture lobe should use an independent normal
 
 
 
@@ -1302,6 +1347,51 @@ controls the shape of the primary reflection
 
 
 
+## metallic
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+enables/disables metallic model (binary 0|1 for plausibility)
+
+
+
+
+## metallic_color
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+the overall reflection color, defines Fresnel behavior
+
+
+
+
+## metallic_edge_color
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+the reflection color at grazing angles, defines Fresnel behavior
+
+
+
+
 ## refractive_index
 
 **Float** 
@@ -1377,6 +1467,147 @@ enables/disables specular reflections
 
 
 sets the normalized distribution function for specular.  GGX is currently isotropic only
+
+
+
+
+
+
+---
+
+## <p style="color:blue;">Transmission attributes</p>
+
+## dispersion_abbe_number
+
+**Float** 
+
+
+Default value : 34.0
+
+
+
+
+The amount of dispersion/chromatic-aberration via refractions. Lower this number to increase the effect. A value of 0 turns off dispersion. Around [25-80] makes sense for realistic glass. Lower values may look better on gemstones.
+
+
+
+
+## independent_transmission_refractive_index
+
+**Float** 
+
+
+Default value : 1.5
+
+
+
+
+defines a separate IOR for the bending of light with transmission
+
+
+
+
+## independent_transmission_roughness
+
+**Float** *bindable*
+
+
+Default value : 0.5
+
+
+
+
+separate roughness for transmission
+
+
+
+
+## show_transmission
+
+**Bool** 
+
+
+Default value : True
+
+
+
+
+enables/disables refractive solid model
+
+
+
+
+## transmission
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+enables/disables refractive solid model (binary 0|1 for plausibility)
+
+
+
+
+## transmission_color
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+the desired color of transmitted light
+
+
+
+
+## use_dispersion
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+use dispersion effects in transmission
+
+
+
+
+## use_independent_transmission_refractive_index
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+use a separate IOR for transmission
+
+
+
+
+## use_independent_transmission_roughness
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+use a separate roughness for transmission
 
 
 

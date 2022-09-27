@@ -1,5 +1,5 @@
 ---
-title: DwaMetalMaterial
+title: DwaSolidDielectricMaterial
 
 # uncomment if you want MathJax formatting available
 # maths: 1
@@ -8,11 +8,11 @@ title: DwaMetalMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 
-# DwaMetalMaterial
+# DwaSolidDielectricMaterial
 
 **ROOTSHADER MATERIAL SHADER DWABASELAYERABLE**
 
-Documentation for class DwaMetalMaterial
+Documentation for class DwaSolidDielectricMaterial
 
 
 
@@ -31,6 +31,21 @@ Default value : 1.0
 
 
 enables/disables specular reflections (binary 0|1 for plausibility)
+
+
+
+
+## sss_trace_set
+
+**Traceset** 
+
+
+Default value : None
+
+
+
+
+Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.
 
 
 
@@ -257,6 +272,187 @@ Default value : False
 
 
 enables proper shading of infinitely thin geometry such as paper or leaves.
+
+
+
+
+
+
+---
+
+## <p style="color:blue;">Diffuse attributes</p>
+
+## albedo
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+the overall surface color as seen from a distance (ie. diffuse color)
+
+
+
+
+## bssrdf
+
+**Int** *enum*
+
+
+
+- normalized diffusion = 0 (default)
+
+- dipole = 1
+
+- random walk = 2
+
+
+
+
+
+0 for NormalizedDiffuse, 1 for Dipole, 2 for random walk
+
+
+
+
+## diffuse_roughness
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Roughness of the diffuse shading.  If the value is zero a Lambertian model is used.  If it's above zero the Oren Nayar model is used.   Not compatible with subsurface scattering.
+
+
+
+
+## diffuse_transmission
+
+**Float** *bindable*
+
+
+Default value : 1.0
+
+
+
+
+multiplier on the amount of light that is transmitted through the surface.
+
+
+
+
+## diffuse_transmission_blending_behavior
+
+**Int** *enum*
+
+
+
+- RGB = 0
+
+- Monochromatic = 1 (default)
+
+
+
+
+
+Controls how diffuse transmission color attenuates diffuse reflection
+
+
+
+
+## diffuse_transmission_color
+
+**Rgb** *bindable*
+
+
+Default value : [ 0, 0, 0 ]
+
+
+
+
+the color/amount of light that is transmitted through the surface.
+
+
+
+
+## enable_sss_input_normal
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+enables sampling the normal map for sss samples. More accurate but potentially expensive
+
+
+
+
+## resolve_self_intersections
+
+**Bool** 
+
+
+Default value : True
+
+
+
+
+tries to resolve self-intersecting geometry automatically by only evaluating 'exiting' intersections for subsurface evaluations
+
+
+
+
+## scattering_color
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+the subsurface scattering 'falloff' color
+
+
+
+
+## scattering_radius
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+the distance the light scatters beneath the surface. When 0 surface diffuse (lambertian or toon) is used
+
+
+
+
+## show_diffuse
+
+**Bool** 
+
+
+Default value : True
+
+
+
+
+enables/disables diffuse reflectance
 
 
 
@@ -963,7 +1159,7 @@ flip interpolation around the hue wheel to counter-clockwise direction
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b95360c8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -980,7 +1176,7 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b9536140>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -1151,32 +1347,17 @@ controls the shape of the primary reflection
 
 
 
-## metallic_color
+## refractive_index
 
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
+**Float** 
 
 
-
-
-the overall reflection color, defines Fresnel behavior
+Default value : 1.5
 
 
 
 
-## metallic_edge_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-the reflection color at grazing angles, defines Fresnel behavior
+defines the Fresnel behavior, (affects reflection and refraction)
 
 
 

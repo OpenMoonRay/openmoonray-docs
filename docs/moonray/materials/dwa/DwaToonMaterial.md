@@ -1,5 +1,5 @@
 ---
-title: DwaBaseMaterial
+title: DwaToonMaterial
 
 # uncomment if you want MathJax formatting available
 # maths: 1
@@ -8,17 +8,32 @@ title: DwaBaseMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 
-# DwaBaseMaterial
+# DwaToonMaterial
 
 **ROOTSHADER MATERIAL SHADER DWABASELAYERABLE**
 
-Documentation for class DwaBaseMaterial
+Documentation for class DwaToonMaterial
 
 
 
 ---
 
 ## <p style="color:blue;">Advanced attributes</p>
+
+## prevent_light_culling
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+WARNING: Experimental and must be used with max_depth: 0 and only for non-photoreal looks. Prevents culling of lights so surfaces can be lit purely with respect to the shading normal irrespective of geometry
+
+
+
 
 ## specular
 
@@ -318,6 +333,70 @@ the overall surface color as seen from a distance (ie. diffuse color)
 
 
 
+## colors
+
+**RgbVector** 
+
+
+Default value : [[ 1, 1, 1 ], [ 0.75, 0.75, 0.75 ], [ 0.25, 0.25, 0.25 ], [ 0, 0, 0 ]]
+
+
+
+
+List of colors on the ramp
+
+
+
+
+## diffuse_flatness
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Flattens out the diffuse response by bending the normal towards the light direction
+
+
+
+
+## diffuse_flatness_falloff
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Fades out flatness with respect to light direction
+
+
+
+
+## diffuse_model
+
+**Int** *enum*
+
+
+
+- oren-nayar = 0 (default)
+
+- ramp = 1
+
+
+
+
+
+The method used to render the diffuse response.
+
+
+
+
 ## diffuse_roughness
 
 **Float** *bindable*
@@ -397,6 +476,353 @@ enables sampling the normal map for sss samples. More accurate but potentially e
 
 
 
+## extend_ramp
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+Extends the last ramp color to unlit portions. IMPORTANT: Only works in conjuction with prevent_light_culling ON and visible_shadows OFF
+
+
+
+
+## interpolations
+
+**IntVector** 
+
+
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+
+
+
+
+None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+
+			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
+
+
+
+
+## positions
+
+**FloatVector** 
+
+
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
+
+
+
+
+ramp positions, maximum 10 allowed
+
+
+
+
+## ramp_color_multiplier0
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+Bindable multiplier on the ramp color
+
+
+
+
+## ramp_color_multiplier1
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+Bindable multiplier on the ramp color
+
+
+
+
+## ramp_color_multiplier2
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+Bindable multiplier on the ramp color
+
+
+
+
+## ramp_color_multiplier3
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+Bindable multiplier on the ramp color
+
+
+
+
+## ramp_color_multiplier4
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+Bindable multiplier on the ramp color
+
+
+
+
+## ramp_color_multiplier5
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+Bindable multiplier on the ramp color
+
+
+
+
+## ramp_color_multiplier6
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+Bindable multiplier on the ramp color
+
+
+
+
+## ramp_color_multiplier7
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+Bindable multiplier on the ramp color
+
+
+
+
+## ramp_color_multiplier8
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+Bindable multiplier on the ramp color
+
+
+
+
+## ramp_color_multiplier9
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+Bindable multiplier on the ramp color
+
+
+
+
+## ramp_position_offset0
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+
+
+
+
+## ramp_position_offset1
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+
+
+
+
+## ramp_position_offset2
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+
+
+
+
+## ramp_position_offset3
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+
+
+
+
+## ramp_position_offset4
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+
+
+
+
+## ramp_position_offset5
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+
+
+
+
+## ramp_position_offset6
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+
+
+
+
+## ramp_position_offset7
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+
+
+
+
+## ramp_position_offset8
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+
+
+
+
+## ramp_position_offset9
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+
+
+
+
 ## resolve_self_intersections
 
 **Bool** 
@@ -453,6 +879,21 @@ Default value : True
 
 
 enables/disables diffuse reflectance
+
+
+
+
+## terminator_shift
+
+**Float** *bindable*
+
+
+Default value : 0.0500000007451
+
+
+
+
+Controls how the diffuse ligthing falls off.  Values greater than 0.0 shift the falloff point closer to the light source and values less than 0.0 shift the falloff point further away
 
 
 
@@ -1159,7 +1600,7 @@ flip interpolation around the hue wheel to counter-clockwise direction
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b95380c8>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -1176,7 +1617,7 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b9538140>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -1402,7 +1843,7 @@ Default value : 1.5
 
 
 
-defines the Fresnel behavior, (affects reflection and refraction)
+defines the Fresnel behavior (affects only refraction when model is Toon)
 
 
 
@@ -1417,7 +1858,7 @@ Default value : 0.5
 
 
 
-the roughness of the surface (currently only affects reflection)
+the roughness of the surface
 
 
 
@@ -1462,11 +1903,255 @@ enables/disables specular reflections
 
 - GGX = 1 (default)
 
+- Toon = 2
+
 
 
 
 
 sets the normalized distribution function for specular.  GGX is currently isotropic only
+
+
+
+
+## toon_specular_enable_indirect_reflections
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+enables indirect GGX reflections for toon specular model
+
+
+
+
+## toon_specular_enable_input_normal
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+enables sampling the normal map for toon toon specular
+
+
+
+
+## toon_specular_indirect_reflections_intensity
+
+**Float** *bindable*
+
+
+Default value : 1.0
+
+
+
+
+the intensity for the indirect reflections of the toon specular model
+
+
+
+
+## toon_specular_indirect_reflections_roughness
+
+**Float** *bindable*
+
+
+Default value : 0.5
+
+
+
+
+the roughness for the indirect reflections of the toon specular model
+
+
+
+
+## toon_specular_input_U
+
+**Vec3f** *bindable*
+
+
+Default value : [ 0, 0, 0 ]
+
+
+
+
+input U / tangent for specular stretch
+
+
+
+
+## toon_specular_input_V
+
+**Vec3f** *bindable*
+
+
+Default value : [ 0, 0, 0 ]
+
+
+
+
+input V / bitangent for specular stretch
+
+
+
+
+## toon_specular_input_normal
+
+**33554432** 
+
+
+Default value : None
+
+
+
+
+specifies an alternate shading normal for toon toon specular
+
+
+
+
+## toon_specular_input_normal_dial
+
+**Float** *bindable*
+
+
+Default value : 1.0
+
+
+
+
+controls influence of input normal versus hair normal for toon toon specular
+
+
+
+
+## toon_specular_intensity
+
+**Float** *bindable*
+
+
+Default value : 1.0
+
+
+
+
+The overall intensity of the toon specular response
+
+
+
+
+## toon_specular_interpolations
+
+**IntVector** 
+
+
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+
+
+
+
+None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+
+			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
+
+
+
+
+## toon_specular_positions
+
+**FloatVector** 
+
+
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
+
+
+
+
+ramp positions, maximum 10 allowed
+
+
+
+
+## toon_specular_stretch_u
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Amount to stretch or compress the specular in the u direction 
+
+
+
+
+## toon_specular_stretch_v
+
+**Float** *bindable*
+
+
+Default value : 0.0
+
+
+
+
+Amount to stretch or compress the specular in the v direction 
+
+
+
+
+## toon_specular_tint
+
+**Rgb** *bindable*
+
+
+Default value : [ 1, 1, 1 ]
+
+
+
+
+<p style="color:red;">Documentation for the attribute <b>toon_specular_tint</b> needs to be written</p>
+
+
+
+
+## toon_specular_use_input_vectors_for_stretch
+
+**Bool** 
+
+
+Default value : False
+
+
+
+
+when checked, use input_U and V. otherwise use geometry dPds/t
+
+
+
+
+## toon_specular_values
+
+**FloatVector** 
+
+
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
+
+
+
+
+List of colors on the ramp
 
 
 

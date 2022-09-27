@@ -119,7 +119,7 @@ Default value : 0.0
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957ff50>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
@@ -134,7 +134,7 @@ Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957ff50>
 **IntVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at 0x7fe3b957f938>
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
@@ -179,7 +179,7 @@ Default value : 0.0
 **FloatVector** 
 
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7fe3b957fb90>
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
