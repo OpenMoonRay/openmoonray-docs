@@ -18,7 +18,7 @@ title: Dwa Family of Materials
 
 These materials are energy-conserving, except the **DwaToonMaterial** which can be forced to not be energy conserving for non-photoreal looks. The rest of the materials make it very easy to create realistic, well-behaved looks, and it is difficult to create looks that behave poorly or that do not look physically plausible.
 
-It is best to feed the materials with physically-inspired values in order to best leverage the underlying models and benefits of energy conservation. When it is important that a particular attribute be fed a physical value it is noted in the tables below with the (plus) icon and physical guidelines are provided.
+It is best to feed the materials with physically-inspired values in order to best leverage the underlying models and benefits of energy conservation.
 
 Under the hood, the **Dwa** family of materials are all built from the same core material. This helps provide consistency in terms of behavior and user interface across all materials. It also allows for the ability to layer any of the materials, regardless of which model, over any other material using a mask to control coverage. Specifically, layering is achieved through parameter blending.
 
