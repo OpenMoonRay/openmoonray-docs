@@ -16,31 +16,31 @@ title: CombineDisplacement
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>bound_padding</h2>
+<h3>bound_padding</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.
 
 
-<h2>input_1</h2>
+<h3>input_1</h3>
 <b>Displacement</b>  
 
-Default value : None  
+default: None
 
 Displacement object 1
 
 
-<h2>input_2</h2>
+<h3>input_2</h3>
 <b>Displacement</b>  
 
-Default value : None  
+default: None
 
 Displacement object 2
 
 
-<h2>operation</h2>
+<h3>operation</h3>
 <b>Int</b>  *enum*
 
 - add = 0 (default)
@@ -53,18 +53,18 @@ Displacement object 2
 <p class="scene-class-attr-missing">Documentation for the attribute <b>operation</b> needs to be written</p>
 
 
-<h2>scale_1</h2>
+<h3>scale_1</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 Scale of input 1
 
 
-<h2>scale_2</h2>
+<h3>scale_2</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 Scale of input 2
 

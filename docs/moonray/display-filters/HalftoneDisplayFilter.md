@@ -16,18 +16,18 @@ title: HalftoneDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-<h2>invert_mask</h2>
+<h3>invert_mask</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 invert value of mask
 
 
-<h2>mix</h2>
+<h3>mix</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 blend between output and input
 
@@ -38,50 +38,50 @@ blend between output and input
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>filter_width</h2>
+<h3>filter_width</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 The width in pixels of the antialiasing
 
 
-<h2>grayscale</h2>
+<h3>grayscale</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 Ignore color information, render as grayscale
 
 
-<h2>input</h2>
+<h3>input</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 RenderOutput to be represented in halftone
 
 
-<h2>invert</h2>
+<h3>invert</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 Whether the dots should be black (normal) or white/color (inverted)
 
 
-<h2>mask</h2>
+<h3>mask</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-<h2>size</h2>
+<h3>size</h3>
 <b>Int</b>  
 
-Default value : 5  
+default: 5
 
 The size in pixels of the halftone dots
 

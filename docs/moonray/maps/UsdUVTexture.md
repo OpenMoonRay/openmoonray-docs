@@ -16,39 +16,39 @@ title: UsdUVTexture
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>bias</h2>
+<h3>bias</h3>
 <b>Rgb</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 Bias to be applied to all components of the texture.  output = textureValue * scale + bias
 
 
-<h2>fallback</h2>
+<h3>fallback</h3>
 <b>Rgb</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 Fallback value used when texture can not be read.
 
 
-<h2>file</h2>
+<h3>file</h3>
 <b>String</b>  *filename*
 
-Default value :   
+default: 
 
 Path to the texture
 
 
-<h2>scale</h2>
+<h3>scale</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 Scale to be applied to all components of the texture.  output = textureValue * scale + bias
 
 
-<h2>sourceColorSpace</h2>
+<h3>sourceColorSpace</h3>
 <b>Int</b>  *enum*
 
 - raw = 0
@@ -61,39 +61,39 @@ Scale to be applied to all components of the texture.  output = textureValue * s
 Flag indicating the color space in which the source texture is encoded.
 
 
-<h2>st</h2>
+<h3>st</h3>
 <b>Vec2f</b>  *bindable*
 
-Default value : [ 1, 1 ]  
+default: [ 1, 1 ]
 
 Texture coordinate to use to fetch this texture.
 
 
-<h2>udim_files</h2>
+<h3>udim_files</h3>
 <b>StringVector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>udim_files</b> needs to be written</p>
 
 
-<h2>udim_max_v</h2>
+<h3>udim_max_v</h3>
 <b>Int</b>  
 
-Default value : 10  
+default: 10
 
 udim maximum v value
 
 
-<h2>udim_values</h2>
+<h3>udim_values</h3>
 <b>IntVector</b>  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
+default: <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>udim_values</b> needs to be written</p>
 
 
-<h2>wrapS</h2>
+<h3>wrapS</h3>
 <b>Int</b>  *enum*
 
 - black = 0
@@ -110,7 +110,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 Wrap mode when reading this texture.
 
 
-<h2>wrapT</h2>
+<h3>wrapT</h3>
 <b>Int</b>  *enum*
 
 - black = 0

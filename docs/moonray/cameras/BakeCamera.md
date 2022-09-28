@@ -16,18 +16,18 @@ title: BakeCamera
 <details open>
 <summary class="scene-class-attr-group">Frustum attributes</summary>
 
-<h2>far</h2>
+<h3>far</h3>
 <b>Float</b>  
 
-Default value : 10000.0  
+default: 10000.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>far</b> needs to be written</p>
 
 
-<h2>near</h2>
+<h3>near</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>near</b> needs to be written</p>
 
@@ -38,26 +38,26 @@ Default value : 1.0
 <details open>
 <summary class="scene-class-attr-group">Motion Blur attributes</summary>
 
-<h2>mb_shutter_bias</h2>
+<h3>mb_shutter_bias</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
 
 
-<h2>mb_shutter_close</h2>
+<h3>mb_shutter_close</h3>
 <b>Float</b>  
 
-Default value : 0.25  
+default: 0.25
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
 
 
-<h2>mb_shutter_open</h2>
+<h3>mb_shutter_open</h3>
 <b>Float</b>  
 
-Default value : -0.25  
+default: -0.25
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
 
@@ -68,10 +68,10 @@ Default value : -0.25
 <details open>
 <summary class="scene-class-attr-group">Render Masks attributes</summary>
 
-<h2>pixel_sample_map</h2>
+<h3>pixel_sample_map</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
 
@@ -82,31 +82,31 @@ Default value :
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>bias</h2>
+<h3>bias</h3>
 <b>Float</b>  
 
-Default value : 0.00300000002608  
+default: 0.00300000002608
 
 Ray-tracing offset for primary ray origin
 
 
-<h2>geometry</h2>
+<h3>geometry</h3>
 <b>Geometry</b>  
 
-Default value : None  
+default: None
 
 The geometry object to bake
 
 
-<h2>map_factor</h2>
+<h3>map_factor</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 Increase or decrease the internal position map buffer resolution
 
 
-<h2>mode</h2>
+<h3>mode</h3>
 <b>Int</b>  *enum*
 
 - from camera to surface = 0
@@ -121,23 +121,23 @@ Increase or decrease the internal position map buffer resolution
 How to generate primary rays
 
 
-<h2>node_xform</h2>
+<h3>node_xform</h3>
 <b>Mat4d</b>  *blurrable*
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
+default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
-<h2>normal_map</h2>
+<h3>normal_map</h3>
 <b>String</b>  *filename*
 
-Default value :   
+default: 
 
 Use this option to supply your own normals that are used when computing ray directions.  Without this option, normals are computed from the geometry and do not take into account any material applied normal mapping.
 
 
-<h2>normal_map_space</h2>
+<h3>normal_map_space</h3>
 <b>Int</b>  *enum*
 
 - camera space = 0 (default)
@@ -148,26 +148,26 @@ Use this option to supply your own normals that are used when computing ray dire
 Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.
 
 
-<h2>udim</h2>
+<h3>udim</h3>
 <b>Int</b>  
 
-Default value : 1001  
+default: 1001
 
 Udim tile to bake
 
 
-<h2>use_relative_bias</h2>
+<h3>use_relative_bias</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 If true, bias is scaled based on position magnitude
 
 
-<h2>uv_attribute</h2>
+<h3>uv_attribute</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 Specifies a Vec2f primitive attribute to use as the uv coordinates.  If empty, the default uv for the mesh is used.  The uvs must provide a unique parameterization of the mesh, i.e. a given (u, v) can appear only once on the mesh being baked.
 

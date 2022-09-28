@@ -16,50 +16,50 @@ title: MeasuredMaterial
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
 
-<h2>diffuse</h2>
+<h3>diffuse</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse</b> needs to be written</p>
 
 
-<h2>diffuse_color</h2>
+<h3>diffuse_color</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_color</b> needs to be written</p>
 
 
-<h2>diffuse_factor</h2>
+<h3>diffuse_factor</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_factor</b> needs to be written</p>
 
 
-<h2>diffuse_filename</h2>
+<h3>diffuse_filename</h3>
 <b>String</b>  *filename*
 
-Default value :   
+default: 
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_filename</b> needs to be written</p>
 
 
-<h2>diffuse_hue_shift</h2>
+<h3>diffuse_hue_shift</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_hue_shift</b> needs to be written</p>
 
 
-<h2>diffuse_saturation</h2>
+<h3>diffuse_saturation</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_saturation</b> needs to be written</p>
 
@@ -70,50 +70,50 @@ Default value : 1.0
 <details open>
 <summary class="scene-class-attr-group">Specular attributes</summary>
 
-<h2>specular</h2>
+<h3>specular</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>specular</b> needs to be written</p>
 
 
-<h2>specular_color</h2>
+<h3>specular_color</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>specular_color</b> needs to be written</p>
 
 
-<h2>specular_factor</h2>
+<h3>specular_factor</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>specular_factor</b> needs to be written</p>
 
 
-<h2>specular_filename</h2>
+<h3>specular_filename</h3>
 <b>String</b>  *filename*
 
-Default value :   
+default: 
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>specular_filename</b> needs to be written</p>
 
 
-<h2>specular_hue_shift</h2>
+<h3>specular_hue_shift</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>specular_hue_shift</b> needs to be written</p>
 
 
-<h2>specular_saturation</h2>
+<h3>specular_saturation</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>specular_saturation</b> needs to be written</p>
 
@@ -124,66 +124,66 @@ Default value : 1.0
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>anisotropic_direction</h2>
+<h3>anisotropic_direction</h3>
 <b>Vec2f</b>  
 
-Default value : [ 1, 0 ]  
+default: [ 1, 0 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>anisotropic_direction</b> needs to be written</p>
 
 
-<h2>casts_caustics</h2>
+<h3>casts_caustics</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>casts_caustics</b> needs to be written</p>
 
 
-<h2>extra_aovs</h2>
+<h3>extra_aovs</h3>
 <b>Map</b>  
 
-Default value : None  
+default: None
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-<h2>input_normal</h2>
+<h3>input_normal</h3>
 <b>Vec3f</b>  *bindable*
 
-Default value : [ 0, 0, 1 ]  
+default: [ 0, 0, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal</b> needs to be written</p>
 
 
-<h2>input_normal_dial</h2>
+<h3>input_normal_dial</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal_dial</b> needs to be written</p>
 
 
-<h2>input_normal_space</h2>
+<h3>input_normal_space</h3>
 <b>Int</b>  
 
-Default value : 0  
+default: 0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal_space</b> needs to be written</p>
 
 
-<h2>label</h2>
+<h3>label</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 label used in material and light aovs
 
 
-<h2>priority</h2>
+<h3>priority</h3>
 <b>Int</b>  
 
-Default value : 0  
+default: 0
 
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 

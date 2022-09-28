@@ -16,66 +16,66 @@ title: ColorCorrectSaturationMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>input</h2>
+<h3>input</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 bind the input here
 
 
-<h2>mix</h2>
+<h3>mix</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 how much of the overall color correct to mix in
 
 
-<h2>on</h2>
+<h3>on</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 enables/disables all color correct operations
 
 
-<h2>saturation</h2>
+<h3>saturation</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 desaturates the input below 1.0 and adds saturation above 1.0
 
 
-<h2>saturation_b</h2>
+<h3>saturation_b</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 desaturates the blue channel input below 1.0 and adds saturation above 1.0
 
 
-<h2>saturation_g</h2>
+<h3>saturation_g</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 desaturates the green channel input below 1.0 and adds saturation above 1.0
 
 
-<h2>saturation_r</h2>
+<h3>saturation_r</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 desaturates the red channel input below 1.0 and adds saturation above 1.0
 
 
-<h2>use_per_channel_saturation</h2>
+<h3>use_per_channel_saturation</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 enables separate RGB controls for saturation
 

@@ -16,18 +16,18 @@ title: TraceSet
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>geometries</h2>
+<h3>geometries</h3>
 <b>SceneObjectIndexable</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 
 
-<h2>parts</h2>
+<h3>parts</h3>
 <b>StringVector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>parts</b> needs to be written</p>
 

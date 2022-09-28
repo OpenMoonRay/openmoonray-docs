@@ -16,31 +16,31 @@ title: RampMap
 <details open>
 <summary class="scene-class-attr-group">Additional properties attributes</summary>
 
-<h2>input_texture_coordinates</h2>
+<h3>input_texture_coordinates</h3>
 <b>Vec3f</b>  *bindable*
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 Bind custom UV coordinates
 
 
-<h2>uv_repeat</h2>
+<h3>uv_repeat</h3>
 <b>Vec2f</b>  
 
-Default value : [ 1, 1 ]  
+default: [ 1, 1 ]
 
 Number of times to repeat the ramp pattern
 
 
-<h2>uv_wave</h2>
+<h3>uv_wave</h3>
 <b>Vec2f</b>  
 
-Default value : [ 0, 0 ]  
+default: [ 0, 0 ]
 
 Creates waves which perturb the ramp pattern
 
 
-<h2>wrap_type</h2>
+<h3>wrap_type</h3>
 <b>Int</b>  *enum*
 
 - wrap = 0 (default)
@@ -57,28 +57,28 @@ Creates waves which perturb the ramp pattern
 <details open>
 <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
 
-<h2>colors</h2>
+<h3>colors</h3>
 <b>RgbVector</b>  
 
-Default value : [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]  
+default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
 
 List of colors on the ramp
 
 
-<h2>interpolations</h2>
+<h3>interpolations</h3>
 <b>IntVector</b>  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
+default: <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 
 			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
 
 
-<h2>positions</h2>
+<h3>positions</h3>
 <b>FloatVector</b>  
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
+default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 Color ramp
 
@@ -89,15 +89,15 @@ Color ramp
 <details open>
 <summary class="scene-class-attr-group">Ramp properties attributes</summary>
 
-<h2>camera</h2>
+<h3>camera</h3>
 <b>Camera</b>  
 
-Default value : None  
+default: None
 
 Camera used to define camera and screen space
 
 
-<h2>color_space</h2>
+<h3>color_space</h3>
 <b>Int</b>  *enum*
 
 - rgb = 0 (default)
@@ -110,23 +110,23 @@ Camera used to define camera and screen space
 Color space to perform interpolation in
 
 
-<h2>input</h2>
+<h3>input</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 Input signal for ramp, used when ramp type is set to input
 
 
-<h2>object</h2>
+<h3>object</h3>
 <b>Geometry</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>object</b> needs to be written</p>
 
 
-<h2>ramp_type</h2>
+<h3>ramp_type</h3>
 <b>Int</b>  *enum*
 
 - v = 0 (default)
@@ -151,7 +151,7 @@ Default value : None
 <p class="scene-class-attr-missing">Documentation for the attribute <b>ramp_type</b> needs to be written</p>
 
 
-<h2>space</h2>
+<h3>space</h3>
 <b>Int</b>  *enum*
 
 - render = 0 (default)
@@ -178,7 +178,7 @@ Only applies when 'texture coordinates' is set to 'default state coordinates'
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>texture_coordinates</h2>
+<h3>texture_coordinates</h3>
 <b>Int</b>  *enum*
 
 - default state coordinates = 0 (default)

@@ -16,10 +16,10 @@ title: DwaEmissiveMaterial
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
 
-<h2>presence</h2>
+<h3>presence</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).
 
@@ -30,18 +30,18 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
 
-<h2>emission</h2>
+<h3>emission</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 the energy emitted from this material
 
 
-<h2>show_emission</h2>
+<h3>show_emission</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 enables/disable emission
 
@@ -52,26 +52,26 @@ enables/disable emission
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>extra_aovs</h2>
+<h3>extra_aovs</h3>
 <b>Map</b>  
 
-Default value : None  
+default: None
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-<h2>label</h2>
+<h3>label</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 label used in material and light aovs
 
 
-<h2>priority</h2>
+<h3>priority</h3>
 <b>Int</b>  
 
-Default value : 0  
+default: 0
 
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 

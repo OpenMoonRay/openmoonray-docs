@@ -16,122 +16,122 @@ title: MeshLight
 <details open>
 <summary class="scene-class-attr-group">Map attributes</summary>
 
-<h2>contrast</h2>
+<h3>contrast</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
 
 
-<h2>gain</h2>
+<h3>gain</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>gain</b> needs to be written</p>
 
 
-<h2>gamma</h2>
+<h3>gamma</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>gamma</b> needs to be written</p>
 
 
-<h2>offset</h2>
+<h3>offset</h3>
 <b>Rgb</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
 
 
-<h2>saturation</h2>
+<h3>saturation</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
 
 
-<h2>temperature</h2>
+<h3>temperature</h3>
 <b>Vec3f</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 color temperature using Nuke-like T/M/E settings
 
 
-<h2>texture</h2>
+<h3>texture</h3>
 <b>String</b>  *filename*
 
-Default value :   
+default: 
 
 filename that points to a texture (formats: .exr, .tif, .jpg, etc.)
 
 
-<h2>texture_border_color</h2>
+<h3>texture_border_color</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 RGB value used when a texture lookup occurs outside the texture
 
 
-<h2>texture_coverage</h2>
+<h3>texture_coverage</h3>
 <b>Vec2f</b>  
 
-Default value : [ 1, 1 ]  
+default: [ 1, 1 ]
 
 Scales in (u,v)
 
 
-<h2>texture_mirror_u</h2>
+<h3>texture_mirror_u</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 true => mirror in u, false => repeat in u
 
 
-<h2>texture_mirror_v</h2>
+<h3>texture_mirror_v</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 true => mirror in v, false => repeat in v
 
 
-<h2>texture_reps_u</h2>
+<h3>texture_reps_u</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 Number of times texture repeats in u over the scaled texture space
 
 
-<h2>texture_reps_v</h2>
+<h3>texture_reps_v</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 Number of times texture repeats in v over the scaled texture space
 
 
-<h2>texture_rotation</h2>
+<h3>texture_rotation</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 Clockwise rotation angle in degrees
 
 
-<h2>texture_translation</h2>
+<h3>texture_translation</h3>
 <b>Vec2f</b>  
 
-Default value : [ 0, 0 ]  
+default: [ 0, 0 ]
 
 Translations in (u,v) expressed as fractions of the unscaled texture space
 
@@ -142,31 +142,31 @@ Translations in (u,v) expressed as fractions of the unscaled texture space
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-<h2>apply_scene_scale</h2>
+<h3>apply_scene_scale</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 apply scene scale variable when normalized
 
 
-<h2>clear_radius</h2>
+<h3>clear_radius</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 clear radius: shadows less than this distance from the light are ignored (disabled if <= 0.0)
 
 
-<h2>clear_radius_falloff_distance</h2>
+<h3>clear_radius_falloff_distance</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius
 
 
-<h2>clear_radius_interpolation_type</h2>
+<h3>clear_radius_interpolation_type</h3>
 <b>Int</b>  *enum*
 
 - linear = 0 (default)
@@ -181,95 +181,95 @@ clear radius falloff distance: distance over which the shadows fall off, where s
 clear radius interpolation: interpolation type to use for the clear radius shadow falloff
 
 
-<h2>color</h2>
+<h3>color</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>color</b> needs to be written</p>
 
 
-<h2>exposure</h2>
+<h3>exposure</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>exposure</b> needs to be written</p>
 
 
-<h2>geometry</h2>
+<h3>geometry</h3>
 <b>Geometry</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>geometry</b> needs to be written</p>
 
 
-<h2>intensity</h2>
+<h3>intensity</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>intensity</b> needs to be written</p>
 
 
-<h2>label</h2>
+<h3>label</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 label used in light aov expressions
 
 
-<h2>map_shader</h2>
+<h3>map_shader</h3>
 <b>Map</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>map_shader</b> needs to be written</p>
 
 
-<h2>max_shadow_distance</h2>
+<h3>max_shadow_distance</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_shadow_distance</b> needs to be written</p>
 
 
-<h2>mb</h2>
+<h3>mb</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 Does light motion affect motion-blur?
 
 
-<h2>normalized</h2>
+<h3>normalized</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>normalized</b> needs to be written</p>
 
 
-<h2>on</h2>
+<h3>on</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
-<h2>parts</h2>
+<h3>parts</h3>
 <b>StringVector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>parts</b> needs to be written</p>
 
 
-<h2>presence_shadows</h2>
+<h3>presence_shadows</h3>
 <b>Int</b>  *enum*
 
 - force off = 0
@@ -282,15 +282,15 @@ Default value : []
 <p class="scene-class-attr-missing">Documentation for the attribute <b>presence_shadows</b> needs to be written</p>
 
 
-<h2>ray_termination</h2>
+<h3>ray_termination</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.
 
 
-<h2>texture_filter</h2>
+<h3>texture_filter</h3>
 <b>Int</b>  *enum*
 
 - nearest neighbor = 0 (default)
@@ -305,7 +305,7 @@ Is light used for ray termination color? Ray termination color is used for filli
 <p class="scene-class-attr-missing">Documentation for the attribute <b>texture_filter</b> needs to be written</p>
 
 
-<h2>visible_in_camera</h2>
+<h3>visible_in_camera</h3>
 <b>Int</b>  *enum*
 
 - force off = 0
@@ -324,50 +324,50 @@ Is light used for ray termination color? Ray termination color is used for filli
 <details open>
 <summary class="scene-class-attr-group">Visibility Flags attributes</summary>
 
-<h2>visible_diffuse_reflection</h2>
+<h3>visible_diffuse_reflection</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 whether the light is visible in diffuse reflection
 
 
-<h2>visible_diffuse_transmission</h2>
+<h3>visible_diffuse_transmission</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 whether the light is visible in diffuse transmission
 
 
-<h2>visible_glossy_reflection</h2>
+<h3>visible_glossy_reflection</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 whether the light is visible in glossy reflection.
 
 
-<h2>visible_glossy_transmission</h2>
+<h3>visible_glossy_transmission</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 whether the light is visible in glossy transmission (refraction).
 
 
-<h2>visible_mirror_reflection</h2>
+<h3>visible_mirror_reflection</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 whether the light is visible in miror reflection.
 
 
-<h2>visible_mirror_transmission</h2>
+<h3>visible_mirror_transmission</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 whether the light is visible in miror transmission (refraction).
 
@@ -378,18 +378,18 @@ whether the light is visible in miror transmission (refraction).
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>light_filters</h2>
+<h3>light_filters</h3>
 <b>Object Vector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>light_filters</b> needs to be written</p>
 
 
-<h2>node_xform</h2>
+<h3>node_xform</h3>
 <b>Mat4d</b>  *blurrable*
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
+default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 

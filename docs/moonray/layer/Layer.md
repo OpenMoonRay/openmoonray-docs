@@ -16,74 +16,74 @@ title: Layer
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>displacements</h2>
+<h3>displacements</h3>
 <b>Displacement Vector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>displacements</b> needs to be written</p>
 
 
-<h2>geometries</h2>
+<h3>geometries</h3>
 <b>SceneObjectIndexable</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 
 
-<h2>lightfiltersets</h2>
+<h3>lightfiltersets</h3>
 <b>Lightfilterset Vector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lightfiltersets</b> needs to be written</p>
 
 
-<h2>lightsets</h2>
+<h3>lightsets</h3>
 <b>Lightset Vector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lightsets</b> needs to be written</p>
 
 
-<h2>parts</h2>
+<h3>parts</h3>
 <b>StringVector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>parts</b> needs to be written</p>
 
 
-<h2>shadowreceiversets</h2>
+<h3>shadowreceiversets</h3>
 <b>134217728 Vector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>shadowreceiversets</b> needs to be written</p>
 
 
-<h2>shadowsets</h2>
+<h3>shadowsets</h3>
 <b>16777216 Vector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>shadowsets</b> needs to be written</p>
 
 
-<h2>surface_shaders</h2>
+<h3>surface_shaders</h3>
 <b>Material Vector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>surface_shaders</b> needs to be written</p>
 
 
-<h2>volume_shaders</h2>
+<h3>volume_shaders</h3>
 <b>Volumeshader Vector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>volume_shaders</b> needs to be written</p>
 

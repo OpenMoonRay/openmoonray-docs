@@ -16,15 +16,15 @@ title: RgbToFloatMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>input</h2>
+<h3>input</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input</b> needs to be written</p>
 
 
-<h2>mode</h2>
+<h3>mode</h3>
 <b>Int</b>  *enum*
 
 - r = 0

@@ -16,74 +16,74 @@ title: RaySwitchMaterial
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>camera_ray_material</h2>
+<h3>camera_ray_material</h3>
 <b>Material</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>camera_ray_material</b> needs to be written</p>
 
 
-<h2>cutout_camera_rays</h2>
+<h3>cutout_camera_rays</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>cutout_camera_rays</b> needs to be written</p>
 
 
-<h2>default_material</h2>
+<h3>default_material</h3>
 <b>Material</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>default_material</b> needs to be written</p>
 
 
-<h2>extra_aovs</h2>
+<h3>extra_aovs</h3>
 <b>Map</b>  
 
-Default value : None  
+default: None
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-<h2>indirect_diffuse_ray_material</h2>
+<h3>indirect_diffuse_ray_material</h3>
 <b>Material</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_diffuse_ray_material</b> needs to be written</p>
 
 
-<h2>indirect_glossy_ray_material</h2>
+<h3>indirect_glossy_ray_material</h3>
 <b>Material</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_glossy_ray_material</b> needs to be written</p>
 
 
-<h2>indirect_mirror_ray_material</h2>
+<h3>indirect_mirror_ray_material</h3>
 <b>Material</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_mirror_ray_material</b> needs to be written</p>
 
 
-<h2>label</h2>
+<h3>label</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 label used in material and light aovs
 
 
-<h2>priority</h2>
+<h3>priority</h3>
 <b>Int</b>  
 
-Default value : 0  
+default: 0
 
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 

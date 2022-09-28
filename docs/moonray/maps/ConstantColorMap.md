@@ -16,10 +16,10 @@ title: ConstantColorMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>color_value</h2>
+<h3>color_value</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 constant color value
 

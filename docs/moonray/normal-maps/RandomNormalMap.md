@@ -16,18 +16,18 @@ title: RandomNormalMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>input</h2>
+<h3>input</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 the input color used as a base seed to generate the random value
 
 
-<h2>seed</h2>
+<h3>seed</h3>
 <b>Int</b>  
 
-Default value : 0  
+default: 0
 
 additional seed added to input for random number generator
 

@@ -16,23 +16,23 @@ title: RenderOutput
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>active</h2>
+<h3>active</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 true enables, false disables render output.
 
 
-<h2>camera</h2>
+<h3>camera</h3>
 <b>Camera</b>  
 
-Default value : None  
+default: None
 
 Camera to use for this output.  If not specified, defaults to the primary camera.
 
 
-<h2>channel_format</h2>
+<h3>channel_format</h3>
 <b>Int</b>  *enum*
 
 - float = 0
@@ -43,15 +43,15 @@ Camera to use for this output.  If not specified, defaults to the primary camera
 The pixel encoding (bit depth and type) of the output channel.
 
 
-<h2>channel_name</h2>
+<h3>channel_name</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 Name of the output channel.  In the case of an empty channel name a sensible default name is chosen.
 
 
-<h2>channel_suffix_mode</h2>
+<h3>channel_suffix_mode</h3>
 <b>Int</b>  *enum*
 
 - auto = 0 (default)
@@ -74,23 +74,23 @@ When processing multi-channel outputs, how should channel names be suffixed?
 	uvw  : .U, .V, .W
 
 
-<h2>checkpoint_file_name</h2>
+<h3>checkpoint_file_name</h3>
 <b>String</b>  
 
-Default value : checkpoint.exr  
+default: checkpoint.exr
 
 Name of checkpoint output file.
 
 
-<h2>checkpoint_multi_version_file_name</h2>
+<h3>checkpoint_multi_version_file_name</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 Name of checkpoint output file under checkpoint file overwrite=off condition.
 
 
-<h2>compression</h2>
+<h3>compression</h3>
 <b>Int</b>  *enum*
 
 - none = 0
@@ -117,23 +117,23 @@ Name of checkpoint output file under checkpoint file overwrite=off condition.
 Compression used for file (or file part in the multi-part case). All render outputs that target the same image must specify the same compression.
 
 
-<h2>cryptomatte_depth</h2>
+<h3>cryptomatte_depth</h3>
 <b>Int</b>  
 
-Default value : 6  
+default: 6
 
 Number of cryptomatte (id,coverage) data sets to output
 
 
-<h2>denoise</h2>
+<h3>denoise</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 Run optix denoiser before writing to disk
 
 
-<h2>denoiser_input</h2>
+<h3>denoiser_input</h3>
 <b>Int</b>  *enum*
 
 - not an input = 0 (default)
@@ -146,50 +146,50 @@ Run optix denoiser before writing to disk
 How to use this output as a denoiser input
 
 
-<h2>display_filter</h2>
+<h3>display_filter</h3>
 <b>67108864</b>  
 
-Default value : None  
+default: None
 
 If "result" is "display filter", this attribute refers to a display filter object which is used to compute the output pixel values.
 
 
-<h2>exr_dwa_compression_level</h2>
+<h3>exr_dwa_compression_level</h3>
 <b>Float</b>  
 
-Default value : 85.0  
+default: 85.0
 
 Compression level used for file with dwaa or dwab compression. All render outputs that target the same image must specify the same compression level.
 
 
-<h2>exr_header_attributes</h2>
+<h3>exr_header_attributes</h3>
 <b>Metadata</b>  
 
-Default value : None  
+default: None
 
 Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}
 
 
-<h2>file_name</h2>
+<h3>file_name</h3>
 <b>String</b>  
 
-Default value : scene.exr  
+default: scene.exr
 
 Name of destination file.
 
 
-<h2>file_part</h2>
+<h3>file_part</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 Name of sub-image if using a multi-part exr file.
 
 
-<h2>lpe</h2>
+<h3>lpe</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 This attribute specifies a light path expression to output. For details on light path expression syntax see:
 
@@ -222,10 +222,10 @@ This attribute specifies a light path expression to output. For details on light
 		'transmission' : C<TS>[DSG]+[<L.>O]
 
 
-<h2>material_aov</h2>
+<h3>material_aov</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 If "result" is "material aov", this attribute specifies a material aov expression to output.  The expression format is: 
 
@@ -314,7 +314,7 @@ If "result" is "material aov", this attribute specifies a material aov expressio
 		'spec'.MG.roughness : Roughness of all mirror and glossy lobes that have the 'spec' label
 
 
-<h2>math_filter</h2>
+<h3>math_filter</h3>
 <b>Int</b>  *enum*
 
 - average = 0 (default)
@@ -347,23 +347,23 @@ options include:
 	closest                   : use sample with minimum z-depth
 
 
-<h2>output_type</h2>
+<h3>output_type</h3>
 <b>String</b>  
 
-Default value : flat  
+default: flat
 
 Specifies the type of output.  Defaults to "flat", meaning a flat exr file.  "deep" will output a deep exr file.
 
 
-<h2>primitive_attribute</h2>
+<h3>primitive_attribute</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 If "result" is "primitive attribute", this attribute specifies the particular primitive attribute to output.  Default channel name is based on primitive attribute name and type.
 
 
-<h2>primitive_attribute_type</h2>
+<h3>primitive_attribute_type</h3>
 <b>Int</b>  *enum*
 
 - FLOAT = 0 (default)
@@ -378,15 +378,15 @@ If "result" is "primitive attribute", this attribute specifies the particular pr
 This attribute specifies the type of the attribute named with the "primitive attribute" setting.  This is required to uniquely specify the primitive attribute.
 
 
-<h2>reference_render_output</h2>
+<h3>reference_render_output</h3>
 <b>Renderoutput</b>  
 
-Default value : None  
+default: None
 
 If "result" is "variance aov", this attribute refers to another render output for which to calculate the pixel variance.
 
 
-<h2>result</h2>
+<h3>result</h3>
 <b>Int</b>  *enum*
 
 - beauty = 0 (default)
@@ -463,15 +463,15 @@ The result to output.  Available results:
 		"wireframe" - Render as wireframe
 
 
-<h2>resume_file_name</h2>
+<h3>resume_file_name</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 Name of input file for resume render start condition
 
 
-<h2>state_variable</h2>
+<h3>state_variable</h3>
 <b>Int</b>  *enum*
 
 - P = 0
@@ -530,10 +530,10 @@ If "result" is "state variable", this attribute specifies the particular state v
 	"motionvec" - 2D motion vector
 
 
-<h2>visibility_aov</h2>
+<h3>visibility_aov</h3>
 <b>String</b>  
 
-Default value : C[<T.><RS>]*[<R[DG]><TD>][LO]  
+default: C[<T.><RS>]*[<R[DG]><TD>][LO]
 
 If "result" is "visibility aov", this attribute specifies a light path expression that defines the set of all paths usedto compute the visibility ratio.
 

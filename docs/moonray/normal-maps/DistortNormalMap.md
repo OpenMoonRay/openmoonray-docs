@@ -16,15 +16,15 @@ title: DistortNormalMap
 <details open>
 <summary class="scene-class-attr-group">Space attributes</summary>
 
-<h2>input_texture_coordinates</h2>
+<h3>input_texture_coordinates</h3>
 <b>Vec3f</b>  *bindable*
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
 
 
-<h2>noise_space</h2>
+<h3>noise_space</h3>
 <b>Int</b>  *enum*
 
 - world = 2
@@ -51,74 +51,74 @@ The space to calculate the noise in
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>amplitude_U</h2>
+<h3>amplitude_U</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 controls amplitude of U distortion
 
 
-<h2>amplitude_V</h2>
+<h3>amplitude_V</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 controls amplitude of V distortion
 
 
-<h2>frequency_U</h2>
+<h3>frequency_U</h3>
 <b>Vec3f</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 controls noise frequency for U distortion
 
 
-<h2>frequency_V</h2>
+<h3>frequency_V</h3>
 <b>Vec3f</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 controls noise frequency for V distortion
 
 
-<h2>input_U</h2>
+<h3>input_U</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 input U / tangent for distortion
 
 
-<h2>input_V</h2>
+<h3>input_V</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 input V / bitangent for distortion
 
 
-<h2>input_normals</h2>
+<h3>input_normals</h3>
 <b>33554432</b>  
 
-Default value : None  
+default: None
 
 optional input to distort. if not connected, use geom normals
 
 
-<h2>seed</h2>
+<h3>seed</h3>
 <b>Int</b>  
 
-Default value : 0  
+default: 0
 
 the seed for the noise generation
 
 
-<h2>use_input_vectors</h2>
+<h3>use_input_vectors</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 when checked, use input_U and V. otherwise use geometry dPds/t
 

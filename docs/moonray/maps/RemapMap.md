@@ -16,58 +16,58 @@ title: RemapMap
 <details open>
 <summary class="scene-class-attr-group">Channel attributes</summary>
 
-<h2>clamp_max_RGB</h2>
+<h3>clamp_max_RGB</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 the maximum value output by this map when 'clamp' is enabled
 
 
-<h2>clamp_min_RGB</h2>
+<h3>clamp_min_RGB</h3>
 <b>Rgb</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 the minimum value output by this map when 'clamp' is enabled
 
 
-<h2>input_max_RGB</h2>
+<h3>input_max_RGB</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 the input value that will be remapped to the 'output max' value
 
 
-<h2>input_min_RGB</h2>
+<h3>input_min_RGB</h3>
 <b>Rgb</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 the input value that will be remapped to the 'output min' value
 
 
-<h2>midpoint_bias_RGB</h2>
+<h3>midpoint_bias_RGB</h3>
 <b>Rgb</b>  
 
-Default value : [ 0.5, 0.5, 0.5 ]  
+default: [ 0.5, 0.5, 0.5 ]
 
 biases the in-between values toward 'output min' or 'output max'. Default = 0.5
 
 
-<h2>output_max_RGB</h2>
+<h3>output_max_RGB</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 the value that 'input max' is remapped to
 
 
-<h2>output_min_RGB</h2>
+<h3>output_min_RGB</h3>
 <b>Rgb</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 the value that 'input min' is remapped to
 
@@ -78,87 +78,87 @@ the value that 'input min' is remapped to
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>clamp</h2>
+<h3>clamp</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.
 
 
-<h2>clamp_RGB</h2>
+<h3>clamp_RGB</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.
 
 
-<h2>clamp_max</h2>
+<h3>clamp_max</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 the maximum value output by this map when 'clamp' is enabled
 
 
-<h2>clamp_min</h2>
+<h3>clamp_min</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 the minimum value output by this map when 'clamp' is enabled
 
 
-<h2>input</h2>
+<h3>input</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 the input values to be remapped
 
 
-<h2>input_max</h2>
+<h3>input_max</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 the input value that will be remapped to the 'output max' value
 
 
-<h2>input_min</h2>
+<h3>input_min</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 the input value that will be remapped to the 'output min' value
 
 
-<h2>midpoint_bias</h2>
+<h3>midpoint_bias</h3>
 <b>Float</b>  
 
-Default value : 0.5  
+default: 0.5
 
 biases the in-between values toward 'output min' or 'output max'. Default = 0.5
 
 
-<h2>output_max</h2>
+<h3>output_max</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 the value that 'input max' is remapped to
 
 
-<h2>output_min</h2>
+<h3>output_min</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 the value that 'input min' is remapped to
 
 
-<h2>remap_method</h2>
+<h3>remap_method</h3>
 <b>Int</b>  *enum*
 
 - uniform = 0 (default)

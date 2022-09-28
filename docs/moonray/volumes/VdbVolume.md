@@ -16,34 +16,34 @@ title: VdbVolume
 <details open>
 <summary class="scene-class-attr-group">Optical Properties attributes</summary>
 
-<h2>anisotropy</h2>
+<h3>anisotropy</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.0  
+default: 0.0
 
 Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is. 0.0 is isotropic.
 
 
-<h2>color_mult</h2>
+<h3>color_mult</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 A multiplier further applied to the color.
 
 
-<h2>incandescence_gain_mult</h2>
+<h3>incandescence_gain_mult</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 A multiplier further applied to the incandescence gain.
 
 
-<h2>opacity_gain_mult</h2>
+<h3>opacity_gain_mult</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 A multiplier further applied to the opacity gain.
 
@@ -54,15 +54,15 @@ A multiplier further applied to the opacity gain.
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>bake_divisions</h2>
+<h3>bake_divisions</h3>
 <b>Int</b>  
 
-Default value : 100  
+default: 100
 
 Divide widest axis by this many divisions
 
 
-<h2>bake_resolution_mode</h2>
+<h3>bake_resolution_mode</h3>
 <b>Int</b>  *enum*
 
 - default = 0 (default)
@@ -81,26 +81,26 @@ Toggle method to specify grid resolution of baked density grid.
 		voxel size: specify voxel size.
 
 
-<h2>bake_voxel_size</h2>
+<h3>bake_voxel_size</h3>
 <b>Float</b>  
 
-Default value : 10.0  
+default: 10.0
 
 Size of voxel in world space
 
 
-<h2>label</h2>
+<h3>label</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 label used in light aovs
 
 
-<h2>surface_opacity_threshold</h2>
+<h3>surface_opacity_threshold</h3>
 <b>Float</b>  
 
-Default value : 0.5  
+default: 0.5
 
 Accumulated opacity that's considered the 'surface' for computing surface position and Z
 

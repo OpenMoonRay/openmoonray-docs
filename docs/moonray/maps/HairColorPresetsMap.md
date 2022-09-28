@@ -16,7 +16,7 @@ title: HairColorPresetsMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>color</h2>
+<h3>color</h3>
 <b>Int</b>  *enum*
 
 - black = 0 (default)

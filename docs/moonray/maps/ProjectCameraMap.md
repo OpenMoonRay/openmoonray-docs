@@ -16,74 +16,74 @@ title: ProjectCameraMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>black_outside_projection</h2>
+<h3>black_outside_projection</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 Toggles whether projections appear outside the 0-1 uv range of the projector
 
 
-<h2>project_on_back_faces</h2>
+<h3>project_on_back_faces</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 Toggles whether camera projections appear on back faces.
 
 
-<h2>projector</h2>
+<h3>projector</h3>
 <b>Camera</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>projector</b> needs to be written</p>
 
 
-<h2>use_custom_window_coordinates</h2>
+<h3>use_custom_window_coordinates</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 used to apply non-uniform scaling to projection
 
 
-<h2>use_reference_space</h2>
+<h3>use_reference_space</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 use reference space
 
 
-<h2>window_x_max</h2>
+<h3>window_x_max</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 maximum projected x coordinate
 
 
-<h2>window_x_min</h2>
+<h3>window_x_min</h3>
 <b>Float</b>  
 
-Default value : -1.0  
+default: -1.0
 
 minimum projected x coordinate
 
 
-<h2>window_y_max</h2>
+<h3>window_y_max</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 maximum projected y coordinate
 
 
-<h2>window_y_min</h2>
+<h3>window_y_min</h3>
 <b>Float</b>  
 
-Default value : -1.0  
+default: -1.0
 
 minimum projected y coordinate
 

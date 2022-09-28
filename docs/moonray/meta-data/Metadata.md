@@ -16,18 +16,18 @@ title: Metadata
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>name</h2>
+<h3>name</h3>
 <b>StringVector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>name</b> needs to be written</p>
 
 
-<h2>type</h2>
+<h3>type</h3>
 <b>StringVector</b>  
 
-Default value : []  
+default: []
 
 Allowed types for exr headers:
 
@@ -58,10 +58,10 @@ Allowed types for exr headers:
 			* v3f
 
 
-<h2>value</h2>
+<h3>value</h3>
 <b>StringVector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>value</b> needs to be written</p>
 

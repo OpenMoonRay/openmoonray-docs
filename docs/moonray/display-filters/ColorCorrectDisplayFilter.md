@@ -16,18 +16,18 @@ title: ColorCorrectDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-<h2>invert_mask</h2>
+<h3>invert_mask</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 invert value of mask
 
 
-<h2>mix</h2>
+<h3>mix</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 blend between output and input
 
@@ -38,66 +38,66 @@ blend between output and input
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>contrast</h2>
+<h3>contrast</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 Decrease contrast below 0.0 and increase contrast above 0.0
 
 
-<h2>exposure</h2>
+<h3>exposure</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 Adjusts the exposure, in fstops
 
 
-<h2>gamma</h2>
+<h3>gamma</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 Adjusts gamma of input
 
 
-<h2>input</h2>
+<h3>input</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 RenderOutput to color correct
 
 
-<h2>mask</h2>
+<h3>mask</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-<h2>multiply</h2>
+<h3>multiply</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 Multiplies input using specified color
 
 
-<h2>offset</h2>
+<h3>offset</h3>
 <b>Rgb</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 Add offset color to input
 
 
-<h2>saturation</h2>
+<h3>saturation</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 Desaturates input below 1.0 and adds saturation above 1.0
 

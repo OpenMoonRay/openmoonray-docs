@@ -16,7 +16,7 @@ title: ProjectTriplanarUdimMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>TRS_order</h2>
+<h3>TRS_order</h3>
 <b>Int</b>  *enum*
 
 - Scale Rot Trans = 0 (default)
@@ -35,15 +35,15 @@ title: ProjectTriplanarUdimMap
 Order in which to apply transformations
 
 
-<h2>projection_matrix</h2>
+<h3>projection_matrix</h3>
 <b>Mat4d</b>  
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
+default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
 the transform to use for projection
 
 
-<h2>projection_mode</h2>
+<h3>projection_mode</h3>
 <b>Int</b>  *enum*
 
 - projector = 0 (default)
@@ -56,23 +56,23 @@ the transform to use for projection
 Source parameters to use for projection transform
 
 
-<h2>projector</h2>
+<h3>projector</h3>
 <b>Node</b>  
 
-Default value : None  
+default: None
 
 the object whose transform to use for projection
 
 
-<h2>rotate</h2>
+<h3>rotate</h3>
 <b>Vec3d</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 Rotation of the projection transform
 
 
-<h2>rotation_order</h2>
+<h3>rotation_order</h3>
 <b>Int</b>  *enum*
 
 - xyz = 0 (default)
@@ -91,130 +91,130 @@ Rotation of the projection transform
 Order in which to apply rotation transformations
 
 
-<h2>scale</h2>
+<h3>scale</h3>
 <b>Vec3d</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 Scale of the projection transform
 
 
-<h2>translate</h2>
+<h3>translate</h3>
 <b>Vec3d</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 Tranlation of the projection transform
 
 
-<h2>use_correct_uv</h2>
+<h3>use_correct_uv</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 use correct uv orientation
 
 
-<h2>use_reference_space</h2>
+<h3>use_reference_space</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 use reference space
 
 
-<h2>x_offset</h2>
+<h3>x_offset</h3>
 <b>Vec2f</b>  
 
-Default value : [ 0, 0 ]  
+default: [ 0, 0 ]
 
 2D offset for x projected map
 
 
-<h2>x_rotation</h2>
+<h3>x_rotation</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 2D rotation for x projected map
 
 
-<h2>x_rotation_center</h2>
+<h3>x_rotation_center</h3>
 <b>Vec2f</b>  
 
-Default value : [ 0.5, 0.5 ]  
+default: [ 0.5, 0.5 ]
 
 2D rotation center for x projected map
 
 
-<h2>x_scale</h2>
+<h3>x_scale</h3>
 <b>Vec2f</b>  
 
-Default value : [ 1, 1 ]  
+default: [ 1, 1 ]
 
 2D scale for x projected map
 
 
-<h2>y_offset</h2>
+<h3>y_offset</h3>
 <b>Vec2f</b>  
 
-Default value : [ 0, 0 ]  
+default: [ 0, 0 ]
 
 2D offset for y projected map
 
 
-<h2>y_rotation</h2>
+<h3>y_rotation</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 2D rotation for y projected map
 
 
-<h2>y_rotation_center</h2>
+<h3>y_rotation_center</h3>
 <b>Vec2f</b>  
 
-Default value : [ 0.5, 0.5 ]  
+default: [ 0.5, 0.5 ]
 
 2D rotation center for y projected map
 
 
-<h2>y_scale</h2>
+<h3>y_scale</h3>
 <b>Vec2f</b>  
 
-Default value : [ 1, 1 ]  
+default: [ 1, 1 ]
 
 2D scale for y projected map
 
 
-<h2>z_offset</h2>
+<h3>z_offset</h3>
 <b>Vec2f</b>  
 
-Default value : [ 0, 0 ]  
+default: [ 0, 0 ]
 
 2D offset for z projected map
 
 
-<h2>z_rotation</h2>
+<h3>z_rotation</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 2D rotation for z projected map
 
 
-<h2>z_rotation_center</h2>
+<h3>z_rotation_center</h3>
 <b>Vec2f</b>  
 
-Default value : [ 0.5, 0.5 ]  
+default: [ 0.5, 0.5 ]
 
 2D rotation center for z projected map
 
 
-<h2>z_scale</h2>
+<h3>z_scale</h3>
 <b>Vec2f</b>  
 
-Default value : [ 1, 1 ]  
+default: [ 1, 1 ]
 
 2D scale for z projected map
 

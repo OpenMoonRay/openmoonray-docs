@@ -16,15 +16,15 @@ title: CombineLightFilter
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>light_filters</h2>
+<h3>light_filters</h3>
 <b>Object Vector</b>  
 
-Default value : []  
+default: []
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>light_filters</b> needs to be written</p>
 
 
-<h2>mode</h2>
+<h3>mode</h3>
 <b>Int</b>  *enum*
 
 - multiply = 0 (default)
@@ -41,10 +41,10 @@ Default value : []
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mode</b> needs to be written</p>
 
 
-<h2>on</h2>
+<h3>on</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 

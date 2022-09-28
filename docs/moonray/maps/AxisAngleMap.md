@@ -16,15 +16,15 @@ title: AxisAngleMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>angle</h2>
+<h3>angle</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.0  
+default: 0.0
 
 the angle of rotation in degrees
 
 
-<h2>axis_space</h2>
+<h3>axis_space</h3>
 <b>Int</b>  *enum*
 
 - world = 2 (default)
@@ -35,7 +35,7 @@ the angle of rotation in degrees
 the space of the axis to rotate about
 
 
-<h2>input_space</h2>
+<h3>input_space</h3>
 <b>Int</b>  *enum*
 
 - render = 0 (default)
@@ -52,15 +52,15 @@ the space of the axis to rotate about
 the space to transform from
 
 
-<h2>input_vector</h2>
+<h3>input_vector</h3>
 <b>Vec3f</b>  *bindable*
 
-Default value : [ 0, 0, 1 ]  
+default: [ 0, 0, 1 ]
 
 input vector to be rotated
 
 
-<h2>output_space</h2>
+<h3>output_space</h3>
 <b>Int</b>  *enum*
 
 - render = 0 (default)
@@ -77,10 +77,10 @@ input vector to be rotated
 the space to transform the resulting vector to
 
 
-<h2>rotation_axis</h2>
+<h3>rotation_axis</h3>
 <b>Vec3f</b>  *bindable*
 
-Default value : [ 0, 1, 0 ]  
+default: [ 0, 1, 0 ]
 
 axis to be rotated around
 

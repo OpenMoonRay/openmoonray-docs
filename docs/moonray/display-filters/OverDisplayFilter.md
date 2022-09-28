@@ -16,42 +16,42 @@ title: OverDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>alpha</h2>
+<h3>alpha</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 alpha for over operation
 
 
-<h2>input_bottom</h2>
+<h3>input_bottom</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 RenderOutput on bottom
 
 
-<h2>input_top</h2>
+<h3>input_top</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 RenderOutput on top
 
 
-<h2>invert_alpha</h2>
+<h3>invert_alpha</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 invert value of alpha
 
 
-<h2>mix</h2>
+<h3>mix</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 blend between output and input
 

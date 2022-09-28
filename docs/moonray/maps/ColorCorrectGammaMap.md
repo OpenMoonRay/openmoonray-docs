@@ -16,66 +16,66 @@ title: ColorCorrectGammaMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>gamma</h2>
+<h3>gamma</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 raises the input to the specified exponents
 
 
-<h2>gamma_b</h2>
+<h3>gamma_b</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 raises the blue channel to the specified exponents
 
 
-<h2>gamma_g</h2>
+<h3>gamma_g</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 raises the green channel to the specified exponents
 
 
-<h2>gamma_r</h2>
+<h3>gamma_r</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 raises the red channel to the specified exponents
 
 
-<h2>input</h2>
+<h3>input</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 bind the input here
 
 
-<h2>mix</h2>
+<h3>mix</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 how much of the overall color correct to mix in
 
 
-<h2>on</h2>
+<h3>on</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 enables/disables all color correct operations
 
 
-<h2>use_per_channel_gamma</h2>
+<h3>use_per_channel_gamma</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 enables separate RGB controls for gamma
 

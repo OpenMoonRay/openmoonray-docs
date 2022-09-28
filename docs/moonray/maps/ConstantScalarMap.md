@@ -16,10 +16,10 @@ title: ConstantScalarMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>scalar_value</h2>
+<h3>scalar_value</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 constant scalar value
 

@@ -16,42 +16,42 @@ title: HairMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>base_color</h2>
+<h3>base_color</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>base_color</b> needs to be written</p>
 
 
-<h2>bias</h2>
+<h3>bias</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.5  
+default: 0.5
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>bias</b> needs to be written</p>
 
 
-<h2>column_uv_color</h2>
+<h3>column_uv_color</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 Bound image map must have a HairColumnUvMap bound to its input texture coordinates.
 
 
-<h2>gain</h2>
+<h3>gain</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.5  
+default: 0.5
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>gain</b> needs to be written</p>
 
 
-<h2>tip_color</h2>
+<h3>tip_color</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>tip_color</b> needs to be written</p>
 

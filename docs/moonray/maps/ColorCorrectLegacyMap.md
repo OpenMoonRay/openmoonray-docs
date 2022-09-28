@@ -16,63 +16,63 @@ title: ColorCorrectLegacyMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>brightness</h2>
+<h3>brightness</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>brightness</b> needs to be written</p>
 
 
-<h2>clamp</h2>
+<h3>clamp</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>clamp</b> needs to be written</p>
 
 
-<h2>contrast</h2>
+<h3>contrast</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
 
 
-<h2>hue</h2>
+<h3>hue</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>hue</b> needs to be written</p>
 
 
-<h2>input</h2>
+<h3>input</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input</b> needs to be written</p>
 
 
-<h2>invert</h2>
+<h3>invert</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
 
 
-<h2>mask</h2>
+<h3>mask</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-<h2>monochrome</h2>
+<h3>monochrome</h3>
 <b>Int</b>  *enum*
 
 - off = 0 (default)
@@ -95,26 +95,26 @@ Default value : 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>monochrome</b> needs to be written</p>
 
 
-<h2>multiplier</h2>
+<h3>multiplier</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>multiplier</b> needs to be written</p>
 
 
-<h2>on</h2>
+<h3>on</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
-<h2>saturation</h2>
+<h3>saturation</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
 

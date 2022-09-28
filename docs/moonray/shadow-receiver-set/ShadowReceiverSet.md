@@ -16,10 +16,10 @@ title: ShadowReceiverSet
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-<h2>complement</h2>
+<h3>complement</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>complement</b> needs to be written</p>
 
@@ -30,10 +30,10 @@ Default value : False
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>geometries</h2>
+<h3>geometries</h3>
 <b>SceneObjectIndexable</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 

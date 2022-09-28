@@ -16,63 +16,63 @@ title: ColorRampLightFilter
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-<h2>begin_distance</h2>
+<h3>begin_distance</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>begin_distance</b> needs to be written</p>
 
 
-<h2>colors</h2>
+<h3>colors</h3>
 <b>RgbVector</b>  
 
-Default value : [[ 1, 1, 1 ], [ 0, 0, 0 ]]  
+default: [[ 1, 1, 1 ], [ 0, 0, 0 ]]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>colors</b> needs to be written</p>
 
 
-<h2>density</h2>
+<h3>density</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>density</b> needs to be written</p>
 
 
-<h2>distances</h2>
+<h3>distances</h3>
 <b>FloatVector</b>  
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
+default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>distances</b> needs to be written</p>
 
 
-<h2>end_distance</h2>
+<h3>end_distance</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>end_distance</b> needs to be written</p>
 
 
-<h2>intensity</h2>
+<h3>intensity</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>intensity</b> needs to be written</p>
 
 
-<h2>interpolation_types</h2>
+<h3>interpolation_types</h3>
 <b>IntVector</b>  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
+default: <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>interpolation_types</b> needs to be written</p>
 
 
-<h2>mode</h2>
+<h3>mode</h3>
 <b>Int</b>  *enum*
 
 - radial = 0 (default)
@@ -83,15 +83,15 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mode</b> needs to be written</p>
 
 
-<h2>node_xform</h2>
+<h3>node_xform</h3>
 <b>Mat4d</b>  *blurrable*
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
+default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
-<h2>wrap_mode</h2>
+<h3>wrap_mode</h3>
 <b>Int</b>  *enum*
 
 - extend = 0 (default)
@@ -108,18 +108,18 @@ For directional filter mode where filter uses distance along -Z axis.  Extend: f
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>on</h2>
+<h3>on</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
-<h2>use_xform</h2>
+<h3>use_xform</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>use_xform</b> needs to be written</p>
 

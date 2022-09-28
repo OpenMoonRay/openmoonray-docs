@@ -16,18 +16,18 @@ title: ImageDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-<h2>invert_mask</h2>
+<h3>invert_mask</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 invert value of mask
 
 
-<h2>mix</h2>
+<h3>mix</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 blend between output and input
 
@@ -38,7 +38,7 @@ blend between output and input
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>display_type</h2>
+<h3>display_type</h3>
 <b>Int</b>  *enum*
 
 - stretch = 0 (default)
@@ -57,26 +57,26 @@ blend between output and input
 <p class="scene-class-attr-missing">Documentation for the attribute <b>display_type</b> needs to be written</p>
 
 
-<h2>image_path</h2>
+<h3>image_path</h3>
 <b>String</b>  *filename*
 
-Default value :   
+default: 
 
 file path to the .exr we want to fit to the plane
 
 
-<h2>input</h2>
+<h3>input</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 Input buffer
 
 
-<h2>mask</h2>
+<h3>mask</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 

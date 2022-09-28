@@ -16,15 +16,15 @@ title: ProjectCameraMap_v2
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>alpha_only</h2>
+<h3>alpha_only</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 When enabled, the alpha channel is returned instead of RGB
 
 
-<h2>aspect_ratio_source</h2>
+<h3>aspect_ratio_source</h3>
 <b>Int</b>  *enum*
 
 - from texture = 0 (default)
@@ -35,23 +35,23 @@ When enabled, the alpha channel is returned instead of RGB
 Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio
 
 
-<h2>black_outside_projection</h2>
+<h3>black_outside_projection</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 Toggles whether projections appear outside the 0-1 uv range of the projector
 
 
-<h2>custom_aspect_ratio</h2>
+<h3>custom_aspect_ratio</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 a custom aspect ratio for the projected texture
 
 
-<h2>gamma</h2>
+<h3>gamma</h3>
 <b>Int</b>  *enum*
 
 - off = 0
@@ -64,42 +64,42 @@ a custom aspect ratio for the projected texture
 Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images
 
 
-<h2>project_on_back_faces</h2>
+<h3>project_on_back_faces</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 Toggles whether camera projections appear on back faces.
 
 
-<h2>projector</h2>
+<h3>projector</h3>
 <b>Camera</b>  
 
-Default value : None  
+default: None
 
 the camera to project from
 
 
-<h2>texture</h2>
+<h3>texture</h3>
 <b>String</b>  *filename*
 
-Default value :   
+default: 
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-<h2>unpremultiply</h2>
+<h3>unpremultiply</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 When enabled, the rgb channels are divided by the alpha channel (where non-zero)
 
 
-<h2>use_reference_space</h2>
+<h3>use_reference_space</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 use reference space
 

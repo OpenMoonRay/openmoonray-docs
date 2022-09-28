@@ -16,66 +16,66 @@ title: ColorCorrectContrastMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>contrast</h2>
+<h3>contrast</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.0  
+default: 0.0
 
 negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance
 
 
-<h2>contrast_b</h2>
+<h3>contrast_b</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.0  
+default: 0.0
 
 negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the blue channel
 
 
-<h2>contrast_g</h2>
+<h3>contrast_g</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.0  
+default: 0.0
 
 negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the green channel
 
 
-<h2>contrast_r</h2>
+<h3>contrast_r</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.0  
+default: 0.0
 
 negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the red channel
 
 
-<h2>input</h2>
+<h3>input</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 bind the input here
 
 
-<h2>mix</h2>
+<h3>mix</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 how much of the overall color correct to mix in
 
 
-<h2>on</h2>
+<h3>on</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 enables/disables all color correct operations
 
 
-<h2>use_per_channel_contrast</h2>
+<h3>use_per_channel_contrast</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 enables separate RGB controls for contrast
 

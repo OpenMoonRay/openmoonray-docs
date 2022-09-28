@@ -16,34 +16,34 @@ title: IntensityLightFilter
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-<h2>color</h2>
+<h3>color</h3>
 <b>Rgb</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>color</b> needs to be written</p>
 
 
-<h2>exposure</h2>
+<h3>exposure</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>exposure</b> needs to be written</p>
 
 
-<h2>intensity</h2>
+<h3>intensity</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>intensity</b> needs to be written</p>
 
 
-<h2>invert</h2>
+<h3>invert</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
 
@@ -54,10 +54,10 @@ Default value : False
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>on</h2>
+<h3>on</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 

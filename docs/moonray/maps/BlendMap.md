@@ -16,15 +16,15 @@ title: BlendMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>blend_amount</h2>
+<h3>blend_amount</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.5  
+default: 0.5
 
 The amount to blend between color A (0) and color B (1)
 
 
-<h2>blend_type</h2>
+<h3>blend_type</h3>
 <b>Int</b>  *enum*
 
 - linear = 0 (default)
@@ -35,34 +35,34 @@ The amount to blend between color A (0) and color B (1)
 The type of blending algorithm
 
 
-<h2>color_A</h2>
+<h3>color_A</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 The color you get if blend amount is 0
 
 
-<h2>color_B</h2>
+<h3>color_B</h3>
 <b>Rgb</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 The color you get if blend amount is 1
 
 
-<h2>threshold_max</h2>
+<h3>threshold_max</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 If the blend amount is greater than this amount, it will choose color B (1)
 
 
-<h2>threshold_min</h2>
+<h3>threshold_min</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.0  
+default: 0.0
 
 If the blend amount is less than or equal to this amount, it will choose color A (0)
 

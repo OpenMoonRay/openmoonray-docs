@@ -16,26 +16,26 @@ title: DwaColorCorrectMaterial
 <details open>
 <summary class="scene-class-attr-group">Hue/Sat/Gain attributes</summary>
 
-<h2>gain</h2>
+<h3>gain</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 multiplies the input channels by the specified value
 
 
-<h2>hue_shift</h2>
+<h3>hue_shift</h3>
 <b>Float</b>  *bindable*
 
-Default value : 0.0  
+default: 0.0
 
 shifts the hue of the input (spectrum range is 0-1)
 
 
-<h2>saturation</h2>
+<h3>saturation</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 desaturates the input below 1.0 and adds saturation above 1.0
 
@@ -46,18 +46,18 @@ desaturates the input below 1.0 and adds saturation above 1.0
 <details open>
 <summary class="scene-class-attr-group">TMI attributes</summary>
 
-<h2>TMI</h2>
+<h3>TMI</h3>
 <b>Rgb</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy 
 
 
-<h2>TMI_enabled</h2>
+<h3>TMI_enabled</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 enables the TMI parameters
 
@@ -68,50 +68,50 @@ enables the TMI parameters
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>extra_aovs</h2>
+<h3>extra_aovs</h3>
 <b>Map</b>  
 
-Default value : None  
+default: None
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-<h2>input_material</h2>
+<h3>input_material</h3>
 <b>Dwabaselayerable</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_material</b> needs to be written</p>
 
 
-<h2>label</h2>
+<h3>label</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 label used in material and light aovs
 
 
-<h2>mix</h2>
+<h3>mix</h3>
 <b>Float</b>  *bindable*
 
-Default value : 1.0  
+default: 1.0
 
 how much of the overall color correct to mix in
 
 
-<h2>on</h2>
+<h3>on</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 Enable/disable all color corrections
 
 
-<h2>priority</h2>
+<h3>priority</h3>
 <b>Int</b>  
 
-Default value : 0  
+default: 0
 
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 

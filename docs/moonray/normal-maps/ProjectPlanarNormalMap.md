@@ -16,7 +16,7 @@ title: ProjectPlanarNormalMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>TRS_order</h2>
+<h3>TRS_order</h3>
 <b>Int</b>  *enum*
 
 - Scale Rot Trans = 0 (default)
@@ -35,7 +35,7 @@ title: ProjectPlanarNormalMap
 Order in which to apply transformations
 
 
-<h2>normal_encoding</h2>
+<h3>normal_encoding</h3>
 <b>Int</b>  *enum*
 
 - [0,1] = 0 (default)
@@ -46,15 +46,15 @@ Order in which to apply transformations
 Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]
 
 
-<h2>projection_matrix</h2>
+<h3>projection_matrix</h3>
 <b>Mat4d</b>  
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
+default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
 the transform to use for projection
 
 
-<h2>projection_mode</h2>
+<h3>projection_mode</h3>
 <b>Int</b>  *enum*
 
 - projector = 0 (default)
@@ -67,23 +67,23 @@ the transform to use for projection
 Source parameters to use for projection transform
 
 
-<h2>projector</h2>
+<h3>projector</h3>
 <b>Node</b>  
 
-Default value : None  
+default: None
 
 the object whose transform to use for projection
 
 
-<h2>rotate</h2>
+<h3>rotate</h3>
 <b>Vec3d</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 Rotation of the projection transform
 
 
-<h2>rotation_order</h2>
+<h3>rotation_order</h3>
 <b>Int</b>  *enum*
 
 - xyz = 0 (default)
@@ -102,42 +102,42 @@ Rotation of the projection transform
 Order in which to apply rotation transformations
 
 
-<h2>scale</h2>
+<h3>scale</h3>
 <b>Vec3d</b>  
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 Scale of the projection transform
 
 
-<h2>texture</h2>
+<h3>texture</h3>
 <b>String</b>  *filename*
 
-Default value :   
+default: 
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-<h2>translate</h2>
+<h3>translate</h3>
 <b>Vec3d</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 Tranlation of the projection transform
 
 
-<h2>use_reference_space</h2>
+<h3>use_reference_space</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 use reference space
 
 
-<h2>wrap_around</h2>
+<h3>wrap_around</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 Controls whether to repeat (true) or clamp (false) the texture
 

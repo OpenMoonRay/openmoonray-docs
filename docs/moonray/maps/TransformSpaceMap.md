@@ -16,23 +16,23 @@ title: TransformSpaceMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>camera</h2>
+<h3>camera</h3>
 <b>Camera</b>  
 
-Default value : None  
+default: None
 
 an alternate camera to use when transforming to/from 'camera' space
 
 
-<h2>concatenate_instance_level_transforms</h2>
+<h3>concatenate_instance_level_transforms</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 When true, instance level transforms below the specified one are concatenated otherwise only the selected level's transform is used
 
 
-<h2>from_space</h2>
+<h3>from_space</h3>
 <b>Int</b>  *enum*
 
 - render = 0 (default)
@@ -63,15 +63,15 @@ When true, instance level transforms below the specified one are concatenated ot
 the space to transform from
 
 
-<h2>input</h2>
+<h3>input</h3>
 <b>Vec3f</b>  *bindable*
 
-Default value : [ 1, 1, 1 ]  
+default: [ 1, 1, 1 ]
 
 the input value to transform
 
 
-<h2>input_type</h2>
+<h3>input_type</h3>
 <b>Int</b>  *enum*
 
 - point = 0
@@ -84,15 +84,15 @@ the input value to transform
 the type of input value provided
 
 
-<h2>object</h2>
+<h3>object</h3>
 <b>Geometry</b>  
 
-Default value : None  
+default: None
 
 an alternate object to use when transforming to/from 'object' space
 
 
-<h2>to_space</h2>
+<h3>to_space</h3>
 <b>Int</b>  *enum*
 
 - render = 0
@@ -123,42 +123,42 @@ an alternate object to use when transforming to/from 'object' space
 the space to transform to
 
 
-<h2>use_custom_window_coordinates</h2>
+<h3>use_custom_window_coordinates</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 used to apply non-uniform scaling to projection
 
 
-<h2>window_x_max</h2>
+<h3>window_x_max</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 maximum projected x coordinate
 
 
-<h2>window_x_min</h2>
+<h3>window_x_min</h3>
 <b>Float</b>  
 
-Default value : -1.0  
+default: -1.0
 
 minimum projected x coordinate
 
 
-<h2>window_y_max</h2>
+<h3>window_y_max</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 maximum projected y coordinate
 
 
-<h2>window_y_min</h2>
+<h3>window_y_min</h3>
 <b>Float</b>  
 
-Default value : -1.0  
+default: -1.0
 
 minimum projected y coordinate
 

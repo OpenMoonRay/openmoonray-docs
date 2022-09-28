@@ -16,47 +16,47 @@ title: UVTransformMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>offset</h2>
+<h3>offset</h3>
 <b>Vec2f</b>  
 
-Default value : [ 0, 0 ]  
+default: [ 0, 0 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
 
 
-<h2>rotation_angle</h2>
+<h3>rotation_angle</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 Rotation in degrees
 
 
-<h2>rotation_axis</h2>
+<h3>rotation_axis</h3>
 <b>Vec3f</b>  
 
-Default value : [ 0, 0, 1 ]  
+default: [ 0, 0, 1 ]
 
 Axis in which to rotate (only for 3D spaces)
 
 
-<h2>rotation_center</h2>
+<h3>rotation_center</h3>
 <b>Vec2f</b>  
 
-Default value : [ 0.5, 0.5 ]  
+default: [ 0.5, 0.5 ]
 
 UV coordinate around which to rotate
 
 
-<h2>scale</h2>
+<h3>scale</h3>
 <b>Vec2f</b>  
 
-Default value : [ 1, 1 ]  
+default: [ 1, 1 ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
 
 
-<h2>space</h2>
+<h3>space</h3>
 <b>Int</b>  *enum*
 
 - render = 0

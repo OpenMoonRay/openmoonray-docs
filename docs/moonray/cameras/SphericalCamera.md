@@ -16,18 +16,18 @@ title: SphericalCamera
 <details open>
 <summary class="scene-class-attr-group">Frustum attributes</summary>
 
-<h2>far</h2>
+<h3>far</h3>
 <b>Float</b>  
 
-Default value : 10000.0  
+default: 10000.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>far</b> needs to be written</p>
 
 
-<h2>near</h2>
+<h3>near</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>near</b> needs to be written</p>
 
@@ -38,26 +38,26 @@ Default value : 1.0
 <details open>
 <summary class="scene-class-attr-group">Motion Blur attributes</summary>
 
-<h2>mb_shutter_bias</h2>
+<h3>mb_shutter_bias</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
 
 
-<h2>mb_shutter_close</h2>
+<h3>mb_shutter_close</h3>
 <b>Float</b>  
 
-Default value : 0.25  
+default: 0.25
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
 
 
-<h2>mb_shutter_open</h2>
+<h3>mb_shutter_open</h3>
 <b>Float</b>  
 
-Default value : -0.25  
+default: -0.25
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
 
@@ -68,10 +68,10 @@ Default value : -0.25
 <details open>
 <summary class="scene-class-attr-group">Render Masks attributes</summary>
 
-<h2>pixel_sample_map</h2>
+<h3>pixel_sample_map</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
 
@@ -82,10 +82,10 @@ Default value :
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>node_xform</h2>
+<h3>node_xform</h3>
 <b>Mat4d</b>  *blurrable*
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
+default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 

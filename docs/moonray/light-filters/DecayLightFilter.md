@@ -16,50 +16,50 @@ title: DecayLightFilter
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-<h2>falloff_far</h2>
+<h3>falloff_far</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>falloff_far</b> needs to be written</p>
 
 
-<h2>falloff_near</h2>
+<h3>falloff_near</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>falloff_near</b> needs to be written</p>
 
 
-<h2>far_end</h2>
+<h3>far_end</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>far_end</b> needs to be written</p>
 
 
-<h2>far_start</h2>
+<h3>far_start</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>far_start</b> needs to be written</p>
 
 
-<h2>near_end</h2>
+<h3>near_end</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>near_end</b> needs to be written</p>
 
 
-<h2>near_start</h2>
+<h3>near_start</h3>
 <b>Float</b>  
 
-Default value : 0.0  
+default: 0.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>near_start</b> needs to be written</p>
 
@@ -70,10 +70,10 @@ Default value : 0.0
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>on</h2>
+<h3>on</h3>
 <b>Bool</b>  
 
-Default value : True  
+default: True
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 

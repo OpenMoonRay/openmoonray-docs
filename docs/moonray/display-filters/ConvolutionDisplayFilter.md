@@ -16,18 +16,18 @@ title: ConvolutionDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-<h2>invert_mask</h2>
+<h3>invert_mask</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 invert value of mask
 
 
-<h2>mix</h2>
+<h3>mix</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 blend between output and input
 
@@ -38,31 +38,31 @@ blend between output and input
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>custom_kernel</h2>
+<h3>custom_kernel</h3>
 <b>FloatVector</b>  
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
+default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 a list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7)
 
 
-<h2>input</h2>
+<h3>input</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 RenderOutput to convolve
 
 
-<h2>kernel_size</h2>
+<h3>kernel_size</h3>
 <b>Int</b>  
 
-Default value : 5  
+default: 5
 
 size of kernel in pixels. Size must be odd. If using custom kernel, this attribute is ignored, and the size of the custom kernel is used instead
 
 
-<h2>kernel_type</h2>
+<h3>kernel_type</h3>
 <b>Int</b>  *enum*
 
 - gaussian = 0 (default)
@@ -75,10 +75,10 @@ size of kernel in pixels. Size must be odd. If using custom kernel, this attribu
 <p class="scene-class-attr-missing">Documentation for the attribute <b>kernel_type</b> needs to be written</p>
 
 
-<h2>mask</h2>
+<h3>mask</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 

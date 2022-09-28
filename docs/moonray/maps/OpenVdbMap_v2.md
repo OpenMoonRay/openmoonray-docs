@@ -16,10 +16,10 @@ title: OpenVdbMap_v2
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-<h2>show_active_field</h2>
+<h3>show_active_field</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 When enabled active/inactive field locations will be white/black, respectively
 
@@ -30,31 +30,31 @@ When enabled active/inactive field locations will be white/black, respectively
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>default_value</h2>
+<h3>default_value</h3>
 <b>Rgb</b>  
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 A default value to use when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found
 
 
-<h2>grid_name</h2>
+<h3>grid_name</h3>
 <b>String</b>  
 
-Default value :   
+default: 
 
 The name of the grid within the .vdb file from which to sample (hint: use openvdb_print to see contents of .vdb file). If no grid is specified, the first grid found in the .vdb will be used.  In cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])
 
 
-<h2>input_texture_coordinates</h2>
+<h3>input_texture_coordinates</h3>
 <b>Vec3f</b>  *bindable*
 
-Default value : [ 0, 0, 0 ]  
+default: [ 0, 0, 0 ]
 
 The world-space coordinate to use when 'texture coordinates' is set to 'input texture coordinates'
 
 
-<h2>interpolation</h2>
+<h3>interpolation</h3>
 <b>Int</b>  *enum*
 
 - point = 0
@@ -67,31 +67,31 @@ The world-space coordinate to use when 'texture coordinates' is set to 'input te
 The type of interpolation to use when sampling the vdb
 
 
-<h2>openvdb_geometry</h2>
+<h3>openvdb_geometry</h3>
 <b>Geometry Vector</b>  
 
-Default value : []  
+default: []
 
 The OpenVdbGeometry object(s) from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from OpenVdbGeometry'
 
 
-<h2>show_warnings</h2>
+<h3>show_warnings</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 Enables a warning message when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found
 
 
-<h2>texture</h2>
+<h3>texture</h3>
 <b>String</b>  *filename*
 
-Default value :   
+default: 
 
 
 
 
-<h2>texture_coordinates</h2>
+<h3>texture_coordinates</h3>
 <b>Int</b>  *enum*
 
 - position = 0 (default)
@@ -104,7 +104,7 @@ Default value :
 Which coordinate source to use for the texture lookup
 
 
-<h2>vdb_source</h2>
+<h3>vdb_source</h3>
 <b>Int</b>  *enum*
 
 - from texture = 0 (default)

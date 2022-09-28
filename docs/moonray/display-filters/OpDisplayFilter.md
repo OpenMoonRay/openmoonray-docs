@@ -16,18 +16,18 @@ title: OpDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-<h2>invert_mask</h2>
+<h3>invert_mask</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 invert value of mask
 
 
-<h2>mix</h2>
+<h3>mix</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 blend between output and input
 
@@ -38,31 +38,31 @@ blend between output and input
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>input1</h2>
+<h3>input1</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 first operand
 
 
-<h2>input2</h2>
+<h3>input2</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 second operand
 
 
-<h2>mask</h2>
+<h3>mask</h3>
 <b>67141632</b>  
 
-Default value : None  
+default: None
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-<h2>operation</h2>
+<h3>operation</h3>
 <b>Int</b>  *enum*
 
 - add = 0 (default)

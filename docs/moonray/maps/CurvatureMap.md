@@ -16,15 +16,15 @@ title: CurvatureMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-<h2>invert</h2>
+<h3>invert</h3>
 <b>Bool</b>  
 
-Default value : False  
+default: False
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
 
 
-<h2>mode</h2>
+<h3>mode</h3>
 <b>Int</b>  *enum*
 
 - convex = 0
@@ -39,18 +39,18 @@ Default value : False
 The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.
 
 
-<h2>power</h2>
+<h3>power</h3>
 <b>Float</b>  
 
-Default value : 0.5  
+default: 0.5
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>power</b> needs to be written</p>
 
 
-<h2>scale</h2>
+<h3>scale</h3>
 <b>Float</b>  
 
-Default value : 1.0  
+default: 1.0
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
 
