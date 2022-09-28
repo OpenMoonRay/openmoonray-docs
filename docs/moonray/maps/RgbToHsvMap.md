@@ -22,7 +22,7 @@ title: RgbToHsvMap
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
       
     
   </p>

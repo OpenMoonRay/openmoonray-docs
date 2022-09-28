@@ -22,7 +22,7 @@ title: ProjectCameraMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
       
     
     <h3>project_on_back_faces</h3>
@@ -31,7 +31,7 @@ title: ProjectCameraMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
       
     
     <h3>projector</h3>
@@ -49,7 +49,7 @@ title: ProjectCameraMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">used to apply non-uniform scaling to projection</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">used to apply non-uniform scaling to projection</p>
       
     
     <h3>use_reference_space</h3>
@@ -58,7 +58,7 @@ title: ProjectCameraMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
       
     
     <h3>window_x_max</h3>
@@ -67,7 +67,7 @@ title: ProjectCameraMap
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">maximum projected x coordinate</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">maximum projected x coordinate</p>
       
     
     <h3>window_x_min</h3>
@@ -76,7 +76,7 @@ title: ProjectCameraMap
       
         default: -1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">minimum projected x coordinate</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">minimum projected x coordinate</p>
       
     
     <h3>window_y_max</h3>
@@ -85,7 +85,7 @@ title: ProjectCameraMap
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">maximum projected y coordinate</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">maximum projected y coordinate</p>
       
     
     <h3>window_y_min</h3>
@@ -94,7 +94,7 @@ title: ProjectCameraMap
       
         default: -1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">minimum projected y coordinate</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">minimum projected y coordinate</p>
       
     
   </p>

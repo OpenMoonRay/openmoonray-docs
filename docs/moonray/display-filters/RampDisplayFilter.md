@@ -22,7 +22,7 @@ title: RampDisplayFilter
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
       
     
     <h3>mix</h3>
@@ -31,7 +31,7 @@ title: RampDisplayFilter
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: RampDisplayFilter
       
         default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
       
     
     <h3>interpolations</h3>
@@ -57,7 +57,7 @@ title: RampDisplayFilter
       
         default: <scene_rdl2.__scene_rdl2__.IntVector object at >
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5</p>
       
     
     <h3>positions</h3>
@@ -66,7 +66,7 @@ title: RampDisplayFilter
       
         default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Color ramp</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Color ramp</p>
       
     
   </p>
@@ -83,7 +83,7 @@ title: RampDisplayFilter
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">input to the input ramp</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">input to the input ramp</p>
       
     
     <h3>ramp_type</h3>

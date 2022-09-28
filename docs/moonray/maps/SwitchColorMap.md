@@ -22,7 +22,7 @@ title: SwitchColorMap
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">which of the 64 inputs (0 to 63) to use</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">which of the 64 inputs (0 to 63) to use</p>
       
     
     <h3>input0</h3>

@@ -22,7 +22,7 @@ title: TransformNormalMap
       
         default: [ 0, 0, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">input normal in either tangent or render space</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">input normal in either tangent or render space</p>
       
     
   </p>
@@ -39,7 +39,7 @@ title: TransformNormalMap
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">decode the input normal if it's in tangent space [0,1] -> [-1,1]</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">decode the input normal if it's in tangent space [0,1] -> [-1,1]</p>
       
     
     <h3>transform</h3>
@@ -51,7 +51,7 @@ title: TransformNormalMap
           | render to tangent = 1
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">transform to apply to the normals</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">transform to apply to the normals</p>
       
     
   </p>

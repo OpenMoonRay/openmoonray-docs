@@ -22,7 +22,7 @@ title: ConstantColorMap
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">constant color value</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">constant color value</p>
       
     
   </p>

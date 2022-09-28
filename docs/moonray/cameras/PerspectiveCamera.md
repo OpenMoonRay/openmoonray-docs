@@ -22,7 +22,7 @@ title: PerspectiveCamera
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Enable Bokeh. Requires DOF to be enabled.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Enable Bokeh. Requires DOF to be enabled.</p>
       
     
     <h3>bokeh_angle</h3>
@@ -31,7 +31,7 @@ title: PerspectiveCamera
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Angle of iris rotation</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Angle of iris rotation</p>
       
     
     <h3>bokeh_image</h3>
@@ -40,7 +40,7 @@ title: PerspectiveCamera
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Path to image file to be used for the iris</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Path to image file to be used for the iris</p>
       
     
     <h3>bokeh_sides</h3>
@@ -49,7 +49,7 @@ title: PerspectiveCamera
       
         default: 0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Number of sides of the iris. Specifying less than 3 sides will default to a disk.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of sides of the iris. Specifying less than 3 sides will default to a disk.</p>
       
     
     <h3>bokeh_weight_location</h3>
@@ -58,7 +58,7 @@ title: PerspectiveCamera
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Distance from the origin of Bokeh shape</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Distance from the origin of Bokeh shape</p>
       
     
     <h3>bokeh_weight_strength</h3>
@@ -67,7 +67,7 @@ title: PerspectiveCamera
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Controls the strength of weights as samples approach the weight location</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls the strength of weights as samples approach the weight location</p>
       
     
     <h3>dof</h3>
@@ -156,7 +156,7 @@ title: PerspectiveCamera
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">ratio of pixel size y / x</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">ratio of pixel size y / x</p>
       
     
     <h3>vertical_film_offset</h3>

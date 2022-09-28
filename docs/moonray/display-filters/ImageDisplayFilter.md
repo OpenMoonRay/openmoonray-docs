@@ -22,7 +22,7 @@ title: ImageDisplayFilter
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
       
     
     <h3>mix</h3>
@@ -31,7 +31,7 @@ title: ImageDisplayFilter
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
       
     
   </p>
@@ -68,7 +68,7 @@ title: ImageDisplayFilter
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">file path to the .exr we want to fit to the plane</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">file path to the .exr we want to fit to the plane</p>
       
     
     <h3>input</h3>
@@ -77,7 +77,7 @@ title: ImageDisplayFilter
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Input buffer</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Input buffer</p>
       
     
     <h3>mask</h3>

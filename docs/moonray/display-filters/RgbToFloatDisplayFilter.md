@@ -22,7 +22,7 @@ title: RgbToFloatDisplayFilter
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
       
     
     <h3>mix</h3>
@@ -31,7 +31,7 @@ title: RgbToFloatDisplayFilter
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: RgbToFloatDisplayFilter
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">image buffer</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">image buffer</p>
       
     
     <h3>mask</h3>
@@ -81,7 +81,7 @@ title: RgbToFloatDisplayFilter
           | luminance = 7
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">specify the method to convert RGB Color to float</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">specify the method to convert RGB Color to float</p>
       
     
   </p>

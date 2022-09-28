@@ -31,7 +31,7 @@ title: ImageNormalMap
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Rotation in degrees</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation in degrees</p>
       
     
     <h3>rotation_center</h3>
@@ -40,7 +40,7 @@ title: ImageNormalMap
       
         default: [ 0.5, 0.5 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">UV coordinate around which to rotate</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">UV coordinate around which to rotate</p>
       
     
     <h3>scale</h3>
@@ -67,7 +67,7 @@ title: ImageNormalMap
       
         default: 10
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">udim maximum v value</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">udim maximum v value</p>
       
     
     <h3>udim_values</h3>
@@ -93,7 +93,7 @@ title: ImageNormalMap
       
         default: [ 0, 0, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">default value to be used for missing udims when 'use_default_value_when_missing' is enabled</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">default value to be used for missing udims when 'use_default_value_when_missing' is enabled</p>
       
     
     <h3>input_texture_coordinates</h3>
@@ -114,7 +114,7 @@ title: ImageNormalMap
           | [-1,1] = 1
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Most normal maps are encoded [0,1]. Only certain rare floating point normal maps are encoded [-1,1]</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Most normal maps are encoded [0,1]. Only certain rare floating point normal maps are encoded [-1,1]</p>
       
     
     <h3>tangent_space_normal_texture</h3>
@@ -123,7 +123,7 @@ title: ImageNormalMap
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">filename that points to a tangent space normal texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a tangent space normal texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     
     <h3>texture_coordinates</h3>
@@ -144,7 +144,7 @@ title: ImageNormalMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Uses the 'default_value' for missing udims and does not report error</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Uses the 'default_value' for missing udims and does not report error</p>
       
     
     <h3>wrap_around</h3>
@@ -153,7 +153,7 @@ title: ImageNormalMap
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
       
     
   </p>

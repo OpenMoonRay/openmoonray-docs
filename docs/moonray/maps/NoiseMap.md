@@ -22,7 +22,7 @@ title: NoiseMap
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">If use 4D noise is on, this is the value for the 4th dimension</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If use 4D noise is on, this is the value for the 4th dimension</p>
       
     
     <h3>use_4D_noise</h3>
@@ -31,7 +31,7 @@ title: NoiseMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">If on, 4-dimensional noise is used instead of 3-dimensional</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If on, 4-dimensional noise is used instead of 3-dimensional</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: NoiseMap
       
         default: 0.5
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Bias the noise towards 0 or 1</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Bias the noise towards 0 or 1</p>
       
     
     <h3>gain</h3>
@@ -57,7 +57,7 @@ title: NoiseMap
       
         default: 0.5
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Apply gain to the noise</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Apply gain to the noise</p>
       
     
     <h3>invert</h3>
@@ -66,7 +66,7 @@ title: NoiseMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Invert the final pattern</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Invert the final pattern</p>
       
     
     <h3>smoothstep</h3>
@@ -75,7 +75,7 @@ title: NoiseMap
       
         default: [ 0, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">min/max values between which the smoothstep will interpolate</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">min/max values between which the smoothstep will interpolate</p>
       
     
     <h3>use_smoothstep</h3>
@@ -84,7 +84,7 @@ title: NoiseMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Put the noise value through a smoothstep function defined by min/max</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Put the noise value through a smoothstep function defined by min/max</p>
       
     
   </p>
@@ -101,7 +101,7 @@ title: NoiseMap
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Rate of advection for flow noise</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Rate of advection for flow noise</p>
       
     
     <h3>flow_angle</h3>
@@ -110,7 +110,7 @@ title: NoiseMap
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Angle of rotation for flow noise</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Angle of rotation for flow noise</p>
       
     
   </p>
@@ -127,7 +127,7 @@ title: NoiseMap
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">camera used to define camera and screen space</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">camera used to define camera and screen space</p>
       
     
     <h3>input_texture_coordinates</h3>
@@ -145,7 +145,7 @@ title: NoiseMap
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Directly connect object to use that object's space.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Directly connect object to use that object's space.</p>
       
     
     <h3>space</h3>
@@ -173,7 +173,7 @@ title: NoiseMap
           | hair_closest_surface_uv = 9
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The space to calculate the noise in</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The space to calculate the noise in</p>
       
     
   </p>
@@ -190,7 +190,7 @@ title: NoiseMap
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Rotates the noise in space based on the specified rotation order</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotates the noise in space based on the specified rotation order</p>
       
     
     <h3>rotation_order</h3>
@@ -210,7 +210,7 @@ title: NoiseMap
           | zyx = 5
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Order in which to apply the euler rotations</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply the euler rotations</p>
       
     
     <h3>scale</h3>
@@ -219,7 +219,7 @@ title: NoiseMap
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Vector to scale the noise non-proportionally</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Vector to scale the noise non-proportionally</p>
       
     
     <h3>transformation_order</h3>
@@ -239,7 +239,7 @@ title: NoiseMap
           | trs = 5
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Order in which to apply the translation, rotation, and frequency</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply the translation, rotation, and frequency</p>
       
     
     <h3>translation</h3>
@@ -248,7 +248,7 @@ title: NoiseMap
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Translation of the noise in space</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Translation of the noise in space</p>
       
     
   </p>
@@ -265,7 +265,7 @@ title: NoiseMap
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Intensity of the noise</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Intensity of the noise</p>
       
     
     <h3>color</h3>
@@ -274,7 +274,7 @@ title: NoiseMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Outputs RGB noise</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Outputs RGB noise</p>
       
     
     <h3>color_A</h3>
@@ -283,7 +283,7 @@ title: NoiseMap
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The color value at 0 noise</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The color value at 0 noise</p>
       
     
     <h3>color_B</h3>
@@ -292,7 +292,7 @@ title: NoiseMap
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The color value at 1 noise</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The color value at 1 noise</p>
       
     
     <h3>distortion</h3>
@@ -301,7 +301,7 @@ title: NoiseMap
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Warp input coordinate space with single noise level before looking up noise</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Warp input coordinate space with single noise level before looking up noise</p>
       
     
     <h3>distortion_noise_type</h3>
@@ -313,7 +313,7 @@ title: NoiseMap
           | perlin simplex = 1
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Type of noise to use for distortion.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Type of noise to use for distortion.</p>
       
     
     <h3>frequency_multiplier</h3>
@@ -322,7 +322,7 @@ title: NoiseMap
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Scalar multiplier for the frequency vector</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Scalar multiplier for the frequency vector</p>
       
     
     <h3>lacunarity</h3>
@@ -331,7 +331,7 @@ title: NoiseMap
       
         default: 2.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Multiplier on the noise frequency per level</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Multiplier on the noise frequency per level</p>
       
     
     <h3>max_level</h3>
@@ -340,7 +340,7 @@ title: NoiseMap
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Number of octaves of noise to add together for the final result</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of octaves of noise to add together for the final result</p>
       
     
     <h3>noise_type</h3>
@@ -352,7 +352,7 @@ title: NoiseMap
           | perlin simplex = 1
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Type of noise to use. Simplex grid activates Flow Noise Angle and Advection</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Type of noise to use. Simplex grid activates Flow Noise Angle and Advection</p>
       
     
     <h3>persistence</h3>
@@ -361,7 +361,7 @@ title: NoiseMap
       
         default: 0.5
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Multiplier on the noise amplitude per level</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Multiplier on the noise amplitude per level</p>
       
     
     <h3>seed</h3>
@@ -370,7 +370,7 @@ title: NoiseMap
       
         default: 0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The seed for the random number generator</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The seed for the random number generator</p>
       
     
   </p>

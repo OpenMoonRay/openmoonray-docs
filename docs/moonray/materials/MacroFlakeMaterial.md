@@ -22,7 +22,7 @@ title: MacroFlakeMaterial
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal in the tangent frame (normal map)</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal in the tangent frame (normal map)</p>
       
     
     <h3>input_normal_dial</h3>
@@ -31,7 +31,7 @@ title: MacroFlakeMaterial
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">controls the amount of influence of the alternate normal</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">controls the amount of influence of the alternate normal</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: MacroFlakeMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">the overall reflection color, defines Fresnel behavior</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the overall reflection color, defines Fresnel behavior</p>
       
     
     <h3>metallic_edge_color</h3>
@@ -57,7 +57,7 @@ title: MacroFlakeMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">the reflection color at grazing angles, defines Fresnel behavior</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the reflection color at grazing angles, defines Fresnel behavior</p>
       
     
     <h3>roughness</h3>
@@ -66,7 +66,7 @@ title: MacroFlakeMaterial
       
         default: 0.5
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">the roughness of the surface (currently only affects reflection)</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the roughness of the surface (currently only affects reflection)</p>
       
     
   </p>
@@ -83,7 +83,7 @@ title: MacroFlakeMaterial
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">background material</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">background material</p>
       
     
     <h3>diffuse_mode</h3>
@@ -95,7 +95,7 @@ title: MacroFlakeMaterial
           | add = 1 (default)
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Whether to block the diffuse lobe where the mask is applied</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Whether to block the diffuse lobe where the mask is applied</p>
       
     
     <h3>extra_aovs</h3>
@@ -104,7 +104,7 @@ title: MacroFlakeMaterial
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       
     
     <h3>fuzz_mode</h3>
@@ -116,7 +116,7 @@ title: MacroFlakeMaterial
           | add = 1
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Whether to block the fuzz lobe where the mask is applied</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Whether to block the fuzz lobe where the mask is applied</p>
       
     
     <h3>is_additive</h3>
@@ -125,7 +125,7 @@ title: MacroFlakeMaterial
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">When true, lobe does not block background material</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">When true, lobe does not block background material</p>
       
     
     <h3>label</h3>
@@ -134,7 +134,7 @@ title: MacroFlakeMaterial
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
       
     
     <h3>mask</h3>
@@ -143,7 +143,7 @@ title: MacroFlakeMaterial
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">foreground (metal) material weight</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">foreground (metal) material weight</p>
       
     
     <h3>priority</h3>
@@ -152,7 +152,7 @@ title: MacroFlakeMaterial
       
         default: 0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       
     
     <h3>specular_background_mode</h3>
@@ -164,7 +164,7 @@ title: MacroFlakeMaterial
           | add = 1 (default)
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Whether to block the underlying specular lobe where the mask is applied</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Whether to block the underlying specular lobe where the mask is applied</p>
       
     
   </p>

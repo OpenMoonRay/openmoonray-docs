@@ -31,7 +31,7 @@ title: UVTransformMap
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Rotation in degrees</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation in degrees</p>
       
     
     <h3>rotation_axis</h3>
@@ -40,7 +40,7 @@ title: UVTransformMap
       
         default: [ 0, 0, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Axis in which to rotate (only for 3D spaces)</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Axis in which to rotate (only for 3D spaces)</p>
       
     
     <h3>rotation_center</h3>
@@ -49,7 +49,7 @@ title: UVTransformMap
       
         default: [ 0.5, 0.5 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">UV coordinate around which to rotate</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">UV coordinate around which to rotate</p>
       
     
     <h3>scale</h3>

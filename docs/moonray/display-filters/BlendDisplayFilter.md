@@ -22,7 +22,7 @@ title: BlendDisplayFilter
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
       
     
     <h3>mix</h3>
@@ -31,7 +31,7 @@ title: BlendDisplayFilter
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: BlendDisplayFilter
       
         default: 0.5
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">float determining amount of blend</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">float determining amount of blend</p>
       
     
     <h3>blendType</h3>
@@ -69,7 +69,7 @@ title: BlendDisplayFilter
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">first operand</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">first operand</p>
       
     
     <h3>input2</h3>
@@ -78,7 +78,7 @@ title: BlendDisplayFilter
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">second operand</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">second operand</p>
       
     
     <h3>mask</h3>

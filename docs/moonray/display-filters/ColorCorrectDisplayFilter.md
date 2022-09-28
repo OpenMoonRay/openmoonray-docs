@@ -22,7 +22,7 @@ title: ColorCorrectDisplayFilter
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
       
     
     <h3>mix</h3>
@@ -31,7 +31,7 @@ title: ColorCorrectDisplayFilter
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: ColorCorrectDisplayFilter
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Decrease contrast below 0.0 and increase contrast above 0.0</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Decrease contrast below 0.0 and increase contrast above 0.0</p>
       
     
     <h3>exposure</h3>
@@ -57,7 +57,7 @@ title: ColorCorrectDisplayFilter
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Adjusts the exposure, in fstops</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Adjusts the exposure, in fstops</p>
       
     
     <h3>gamma</h3>
@@ -66,7 +66,7 @@ title: ColorCorrectDisplayFilter
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Adjusts gamma of input</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Adjusts gamma of input</p>
       
     
     <h3>input</h3>
@@ -75,7 +75,7 @@ title: ColorCorrectDisplayFilter
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">RenderOutput to color correct</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput to color correct</p>
       
     
     <h3>mask</h3>
@@ -93,7 +93,7 @@ title: ColorCorrectDisplayFilter
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Multiplies input using specified color</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Multiplies input using specified color</p>
       
     
     <h3>offset</h3>
@@ -102,7 +102,7 @@ title: ColorCorrectDisplayFilter
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Add offset color to input</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Add offset color to input</p>
       
     
     <h3>saturation</h3>
@@ -111,7 +111,7 @@ title: ColorCorrectDisplayFilter
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Desaturates input below 1.0 and adds saturation above 1.0</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Desaturates input below 1.0 and adds saturation above 1.0</p>
       
     
   </p>

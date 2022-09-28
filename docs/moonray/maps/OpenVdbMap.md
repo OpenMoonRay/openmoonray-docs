@@ -22,7 +22,7 @@ title: OpenVdbMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">When enabled active/inactive field locations will be white/black, respectively</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">When enabled active/inactive field locations will be white/black, respectively</p>
       
     
   </p>
@@ -39,7 +39,7 @@ title: OpenVdbMap
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">A default value to use when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">A default value to use when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
       
     
     <h3>grid_name</h3>
@@ -48,7 +48,7 @@ title: OpenVdbMap
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The name of the grid within the .vdb file from which to sample (hint: use openvdb_print to see contents of .vdb file). If no grid is specified, the first grid found in the .vdb will be used.  In cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The name of the grid within the .vdb file from which to sample (hint: use openvdb_print to see contents of .vdb file). If no grid is specified, the first grid found in the .vdb will be used.  In cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
       
     
     <h3>input_texture_coordinates</h3>
@@ -57,7 +57,7 @@ title: OpenVdbMap
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The world-space coordinate to use when 'texture coordinates' is set to 'input texture coordinates'</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The world-space coordinate to use when 'texture coordinates' is set to 'input texture coordinates'</p>
       
     
     <h3>interpolation</h3>
@@ -71,7 +71,7 @@ title: OpenVdbMap
           | quadratic = 2 (default)
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The type of interpolation to use when sampling the vdb</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The type of interpolation to use when sampling the vdb</p>
       
     
     <h3>openvdb_geometry</h3>
@@ -80,7 +80,7 @@ title: OpenVdbMap
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The OpenVdbGeometry object from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from OpenVdbGeometry'</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The OpenVdbGeometry object from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from OpenVdbGeometry'</p>
       
     
     <h3>show_warnings</h3>
@@ -89,7 +89,7 @@ title: OpenVdbMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Enables a warning message when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Enables a warning message when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
       
     
     <h3>texture</h3>
@@ -98,7 +98,7 @@ title: OpenVdbMap
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment"></p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment"></p>
       
     
     <h3>texture_coordinates</h3>
@@ -112,7 +112,7 @@ title: OpenVdbMap
           | input texture coordinates = 2
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Which coordinate source to use for the texture lookup</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Which coordinate source to use for the texture lookup</p>
       
     
     <h3>vdb_source</h3>
@@ -124,7 +124,7 @@ title: OpenVdbMap
           | from OpenVdbGeometry = 1
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Where to look for the vdb filename.  Choose 'from texture' to specify a .vdb filename directly via the 'texture' attribute.  Choose 'from OpenVdbGeometry' to use the .vdb filename and transform from an OpenVdbGeometry object in the scene using the 'openvdb geometry' attribute</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Where to look for the vdb filename.  Choose 'from texture' to specify a .vdb filename directly via the 'texture' attribute.  Choose 'from OpenVdbGeometry' to use the .vdb filename and transform from an OpenVdbGeometry object in the scene using the 'openvdb geometry' attribute</p>
       
     
   </p>

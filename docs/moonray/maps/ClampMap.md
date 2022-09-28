@@ -22,7 +22,7 @@ title: ClampMap
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
       
     
     <h3>clamp_max</h3>
@@ -31,7 +31,7 @@ title: ClampMap
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">the maximum value output by this map when 'clamp' is enabled</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the maximum value output by this map when 'clamp' is enabled</p>
       
     
     <h3>clamp_min</h3>
@@ -40,7 +40,7 @@ title: ClampMap
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">the minimum value output by this map when 'clamp' is enabled</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the minimum value output by this map when 'clamp' is enabled</p>
       
     
     <h3>input</h3>
@@ -49,7 +49,7 @@ title: ClampMap
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">the input values to be remapped</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the input values to be remapped</p>
       
     
   </p>

@@ -22,7 +22,7 @@ title: UsdGeometry
       
         default: 4
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Number of segments to split curve spans into</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of segments to split curve spans into</p>
       
     
   </p>
@@ -39,7 +39,7 @@ title: UsdGeometry
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
       
     
     <h3>base_width_factor</h3>
@@ -48,7 +48,7 @@ title: UsdGeometry
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Multiplier for the radius of the base of curves</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Multiplier for the radius of the base of curves</p>
       
     
     <h3>curved_motion_blur_sample_count</h3>
@@ -57,7 +57,7 @@ title: UsdGeometry
       
         default: 10
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Number of time samples generated along each curve when using curved motion blur</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of time samples generated along each curve when using curved motion blur</p>
       
     
     <h3>curves_subtype</h3>
@@ -69,7 +69,7 @@ title: UsdGeometry
           | round = 1
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Curves subtype is ray facing or round</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Curves subtype is ray facing or round</p>
       
     
     <h3>evaluation_frame</h3>
@@ -78,7 +78,7 @@ title: UsdGeometry
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">evaluate geometry at specified frame instead of SceneVariables frame
+        <p class="jekyll-theme-minimal scene-class-attr-comment">evaluate geometry at specified frame instead of SceneVariables frame
 
 </p>
       
@@ -89,7 +89,7 @@ title: UsdGeometry
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">label used in material aov expresssions</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material aov expresssions</p>
       
     
     <h3>mesh_resolution</h3>
@@ -98,7 +98,7 @@ title: UsdGeometry
       
         default: 2.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information</p>
       
     
     <h3>motion_blur_type</h3>
@@ -118,7 +118,7 @@ title: UsdGeometry
           | hermite = 4
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.
 
 "static" will treat the mesh as static.
 
@@ -150,7 +150,7 @@ title: UsdGeometry
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Ordered list of part names</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of part names</p>
       
     
     <h3>prim_path</h3>
@@ -159,7 +159,7 @@ title: UsdGeometry
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The geometry Prim to load from the USD Stage
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The geometry Prim to load from the USD Stage
 
 </p>
       
@@ -175,7 +175,7 @@ title: UsdGeometry
           | both motion steps = 2 (default)
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?
 
 	O : first motion step
 
@@ -190,7 +190,7 @@ title: UsdGeometry
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">A list of UserData to specify arbitrary primitive attributes</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">A list of UserData to specify arbitrary primitive attributes</p>
       
     
     <h3>radius_mult</h3>
@@ -199,7 +199,7 @@ title: UsdGeometry
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">radius multiplier for points and curves</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">radius multiplier for points and curves</p>
       
     
     <h3>ray_epsilon</h3>
@@ -208,7 +208,7 @@ title: UsdGeometry
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       
     
     <h3>references</h3>
@@ -217,7 +217,7 @@ title: UsdGeometry
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       
     
     <h3>reverse_normals</h3>
@@ -226,7 +226,7 @@ title: UsdGeometry
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">enable to reverse the normals in the geometry</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">enable to reverse the normals in the geometry</p>
       
     
     <h3>shadow_exclusion_mappings</h3>
@@ -235,7 +235,7 @@ title: UsdGeometry
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:
+        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:
 
 A is a list of names of parts to be mapped, or asterisk to map the whole geometry
 
@@ -248,7 +248,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
       
     
     <h3>shadow_receiver_label</h3>
@@ -257,7 +257,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       
     
     <h3>side_type</h3>
@@ -271,7 +271,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
           | use mesh sidedness = 2
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       
     
     <h3>smooth_normal</h3>
@@ -280,7 +280,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself</p>
       
     
     <h3>stage</h3>
@@ -289,7 +289,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">USD Stage to load
+        <p class="jekyll-theme-minimal scene-class-attr-comment">USD Stage to load
 
 </p>
       
@@ -300,7 +300,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">disable if the geometry will be updated between frames</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">disable if the geometry will be updated between frames</p>
       
     
     <h3>subd_type</h3>
@@ -314,7 +314,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
           | force subdivision mesh = 2
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">PolygonMesh/SubdivisionMesh prim type to create.
+        <p class="jekyll-theme-minimal scene-class-attr-comment">PolygonMesh/SubdivisionMesh prim type to create.
 
 "use mesh type" will use the type the Mesh prim specifies.
 
@@ -331,7 +331,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Multiplier for the radius of the tip of curves</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Multiplier for the radius of the tip of curves</p>
       
     
     <h3>use_evaluation_frame</h3>
@@ -340,7 +340,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">uses "evaluation frame" instead of SceneVariables frame
+        <p class="jekyll-theme-minimal scene-class-attr-comment">uses "evaluation frame" instead of SceneVariables frame
 
 </p>
       
@@ -351,7 +351,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">If the prim is an instance proxy, use the xform from the master Prim during geometry creation
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If the prim is an instance proxy, use the xform from the master Prim during geometry creation
 
 </p>
       
@@ -362,7 +362,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Include the xform from the Prim during geometry creation
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Include the xform from the Prim during geometry creation
 
 </p>
       
@@ -373,7 +373,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
       
     
     <h3>use_stage_cache</h3>
@@ -382,7 +382,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Load the entire stage and use StageCache to share it among all UsdGeometry objects.
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Load the entire stage and use StageCache to share it among all UsdGeometry objects.
 
 If this is false, load a stage masked to the prim path just for this UsdGeometry.
 
@@ -397,7 +397,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
       
     
     <h3>visible_diffuse_transmission</h3>
@@ -406,7 +406,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
       
     
     <h3>visible_glossy_reflection</h3>
@@ -415,7 +415,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
       
     
     <h3>visible_glossy_transmission</h3>
@@ -424,7 +424,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
       
     
     <h3>visible_in_camera</h3>
@@ -433,7 +433,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible to camera rays</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible to camera rays</p>
       
     
     <h3>visible_mirror_reflection</h3>
@@ -442,7 +442,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
       
     
     <h3>visible_mirror_transmission</h3>
@@ -451,7 +451,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
       
     
     <h3>visible_shadow</h3>
@@ -460,7 +460,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry casts shadows</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry casts shadows</p>
       
     
     <h3>visible_volume</h3>
@@ -469,7 +469,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
       
     
   </p>

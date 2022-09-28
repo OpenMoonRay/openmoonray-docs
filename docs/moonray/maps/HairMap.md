@@ -40,7 +40,7 @@ title: HairMap
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Bound image map must have a HairColumnUvMap bound to its input texture coordinates.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Bound image map must have a HairColumnUvMap bound to its input texture coordinates.</p>
       
     
     <h3>gain</h3>

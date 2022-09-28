@@ -22,7 +22,7 @@ title: HalftoneDisplayFilter
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
       
     
     <h3>mix</h3>
@@ -31,7 +31,7 @@ title: HalftoneDisplayFilter
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: HalftoneDisplayFilter
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The width in pixels of the antialiasing</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The width in pixels of the antialiasing</p>
       
     
     <h3>grayscale</h3>
@@ -57,7 +57,7 @@ title: HalftoneDisplayFilter
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Ignore color information, render as grayscale</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Ignore color information, render as grayscale</p>
       
     
     <h3>input</h3>
@@ -66,7 +66,7 @@ title: HalftoneDisplayFilter
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">RenderOutput to be represented in halftone</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput to be represented in halftone</p>
       
     
     <h3>invert</h3>
@@ -75,7 +75,7 @@ title: HalftoneDisplayFilter
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Whether the dots should be black (normal) or white/color (inverted)</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Whether the dots should be black (normal) or white/color (inverted)</p>
       
     
     <h3>mask</h3>
@@ -93,7 +93,7 @@ title: HalftoneDisplayFilter
       
         default: 5
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The size in pixels of the halftone dots</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The size in pixels of the halftone dots</p>
       
     
   </p>

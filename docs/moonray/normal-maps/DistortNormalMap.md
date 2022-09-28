@@ -44,7 +44,7 @@ title: DistortNormalMap
           | hair_closest_surface_uv = 9
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The space to calculate the noise in</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The space to calculate the noise in</p>
       
     
   </p>
@@ -61,7 +61,7 @@ title: DistortNormalMap
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">controls amplitude of U distortion</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">controls amplitude of U distortion</p>
       
     
     <h3>amplitude_V</h3>
@@ -70,7 +70,7 @@ title: DistortNormalMap
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">controls amplitude of V distortion</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">controls amplitude of V distortion</p>
       
     
     <h3>frequency_U</h3>
@@ -79,7 +79,7 @@ title: DistortNormalMap
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">controls noise frequency for U distortion</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">controls noise frequency for U distortion</p>
       
     
     <h3>frequency_V</h3>
@@ -88,7 +88,7 @@ title: DistortNormalMap
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">controls noise frequency for V distortion</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">controls noise frequency for V distortion</p>
       
     
     <h3>input_U</h3>
@@ -97,7 +97,7 @@ title: DistortNormalMap
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">input U / tangent for distortion</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">input U / tangent for distortion</p>
       
     
     <h3>input_V</h3>
@@ -106,7 +106,7 @@ title: DistortNormalMap
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">input V / bitangent for distortion</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">input V / bitangent for distortion</p>
       
     
     <h3>input_normals</h3>
@@ -115,7 +115,7 @@ title: DistortNormalMap
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">optional input to distort. if not connected, use geom normals</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">optional input to distort. if not connected, use geom normals</p>
       
     
     <h3>seed</h3>
@@ -124,7 +124,7 @@ title: DistortNormalMap
       
         default: 0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">the seed for the noise generation</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the seed for the noise generation</p>
       
     
     <h3>use_input_vectors</h3>
@@ -133,7 +133,7 @@ title: DistortNormalMap
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">when checked, use input_U and V. otherwise use geometry dPds/t</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, use input_U and V. otherwise use geometry dPds/t</p>
       
     
   </p>

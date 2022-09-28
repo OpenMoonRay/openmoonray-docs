@@ -22,7 +22,7 @@ title: HairColorCorrectMaterial
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">multiplies the input channels by the specified value</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the input channels by the specified value</p>
       
     
     <h3>hue_shift</h3>
@@ -31,7 +31,7 @@ title: HairColorCorrectMaterial
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">shifts the hue of the input (spectrum range is 0-1)</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">shifts the hue of the input (spectrum range is 0-1)</p>
       
     
     <h3>saturation</h3>
@@ -40,7 +40,7 @@ title: HairColorCorrectMaterial
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">desaturates the input below 1.0 and adds saturation above 1.0</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">desaturates the input below 1.0 and adds saturation above 1.0</p>
       
     
   </p>
@@ -57,7 +57,7 @@ title: HairColorCorrectMaterial
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       
     
     <h3>TMI_enabled</h3>
@@ -66,7 +66,7 @@ title: HairColorCorrectMaterial
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">enables the TMI parameters</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">enables the TMI parameters</p>
       
     
   </p>
@@ -83,7 +83,7 @@ title: HairColorCorrectMaterial
       
         default: None
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       
     
     <h3>input_hair_material</h3>
@@ -101,7 +101,7 @@ title: HairColorCorrectMaterial
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
       
     
     <h3>mix</h3>
@@ -110,7 +110,7 @@ title: HairColorCorrectMaterial
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
       
     
     <h3>on</h3>
@@ -119,7 +119,7 @@ title: HairColorCorrectMaterial
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Enable/disable all color corrections</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Enable/disable all color corrections</p>
       
     
     <h3>priority</h3>
@@ -128,7 +128,7 @@ title: HairColorCorrectMaterial
       
         default: 0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       
     
   </p>

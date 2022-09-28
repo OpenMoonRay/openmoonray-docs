@@ -22,7 +22,7 @@ title: RdlCurveGeometry
       
         default: 4
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Number of segments to split curve spans into</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of segments to split curve spans into</p>
       
     
   </p>
@@ -39,7 +39,7 @@ title: RdlCurveGeometry
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Optionally declare vertex accelerations for quadratic motion interpolation</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare vertex accelerations for quadratic motion interpolation</p>
       
     
     <h3>curve_subtype</h3>
@@ -51,7 +51,7 @@ title: RdlCurveGeometry
           | round = 1
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Curve subtype is ray facing or round</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Curve subtype is ray facing or round</p>
       
     
     <h3>curve_type</h3>
@@ -65,7 +65,7 @@ title: RdlCurveGeometry
           | bspline = 2
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Curve interpolation type is linear, bezier, or bspline</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Curve interpolation type is linear, bezier, or bspline</p>
       
     
     <h3>curved_motion_blur_sample_count</h3>
@@ -74,7 +74,7 @@ title: RdlCurveGeometry
       
         default: 10
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Number of time samples generated along each curve when using curved motion blur</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of time samples generated along each curve when using curved motion blur</p>
       
     
     <h3>curves_vertex_count</h3>
@@ -83,7 +83,7 @@ title: RdlCurveGeometry
       
         default: <scene_rdl2.__scene_rdl2__.IntVector object at >
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Ordered list of vertices per curve</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of vertices per curve</p>
       
     
     <h3>label</h3>
@@ -92,7 +92,7 @@ title: RdlCurveGeometry
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">label used in material aov expresssions</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material aov expresssions</p>
       
     
     <h3>motion_blur_type</h3>
@@ -112,7 +112,7 @@ title: RdlCurveGeometry
           | hermite = 4
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.
 
 "static" will treat the mesh as static.
 
@@ -144,7 +144,7 @@ title: RdlCurveGeometry
       
         default: <scene_rdl2.__scene_rdl2__.IntVector object at >
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Ordered list of part indices. </p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of part indices. </p>
       
     
     <h3>part_list</h3>
@@ -153,7 +153,7 @@ title: RdlCurveGeometry
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Ordered list of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
       
     
     <h3>primitive_attribute_frame</h3>
@@ -167,7 +167,7 @@ title: RdlCurveGeometry
           | both motion steps = 2 (default)
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?
 
 	O : first motion step
 
@@ -182,7 +182,7 @@ title: RdlCurveGeometry
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Vector of UserData.Each key/value pair will be added as a primitive attribute of the points.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Vector of UserData.Each key/value pair will be added as a primitive attribute of the points.</p>
       
     
     <h3>radius_list</h3>
@@ -191,7 +191,7 @@ title: RdlCurveGeometry
       
         default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Stores all radii</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Stores all radii</p>
       
     
     <h3>ray_epsilon</h3>
@@ -200,7 +200,7 @@ title: RdlCurveGeometry
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       
     
     <h3>references</h3>
@@ -209,7 +209,7 @@ title: RdlCurveGeometry
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       
     
     <h3>reverse_normals</h3>
@@ -218,7 +218,7 @@ title: RdlCurveGeometry
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">enable to reverse the normals in the geometry</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">enable to reverse the normals in the geometry</p>
       
     
     <h3>shadow_exclusion_mappings</h3>
@@ -227,7 +227,7 @@ title: RdlCurveGeometry
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:
+        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:
 
 A is a list of names of parts to be mapped, or asterisk to map the whole geometry
 
@@ -240,7 +240,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: 0.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
       
     
     <h3>shadow_receiver_label</h3>
@@ -249,7 +249,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       
     
     <h3>side_type</h3>
@@ -263,7 +263,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
           | use mesh sidedness = 2
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       
     
     <h3>static</h3>
@@ -272,7 +272,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">disable if the geometry will be updated between frames</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">disable if the geometry will be updated between frames</p>
       
     
     <h3>use_rotation_motion_blur</h3>
@@ -281,7 +281,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: False
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
       
     
     <h3>uv_list</h3>
@@ -290,7 +290,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">If the curves are using UVs, store them per-curve in this list</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If the curves are using UVs, store them per-curve in this list</p>
       
     
     <h3>velocity_list_0</h3>
@@ -299,7 +299,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Optionally declare vertex velocities instead of a second motion step'</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare vertex velocities instead of a second motion step'</p>
       
     
     <h3>velocity_list_1</h3>
@@ -308,7 +308,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
       
     
     <h3>velocity_scale</h3>
@@ -317,7 +317,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Adjust magnitude of velocity-based motion blur</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Adjust magnitude of velocity-based motion blur</p>
       
     
     <h3>vertex_list_0</h3>
@@ -326,7 +326,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Stores all vertices used by the points at motion step 0</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Stores all vertices used by the points at motion step 0</p>
       
     
     <h3>vertex_list_1</h3>
@@ -335,7 +335,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: []
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">If the curves are in motion, the second motion step is stored in this attribute</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If the curves are in motion, the second motion step is stored in this attribute</p>
       
     
     <h3>visible_diffuse_reflection</h3>
@@ -344,7 +344,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
       
     
     <h3>visible_diffuse_transmission</h3>
@@ -353,7 +353,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
       
     
     <h3>visible_glossy_reflection</h3>
@@ -362,7 +362,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
       
     
     <h3>visible_glossy_transmission</h3>
@@ -371,7 +371,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
       
     
     <h3>visible_in_camera</h3>
@@ -380,7 +380,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible to camera rays</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible to camera rays</p>
       
     
     <h3>visible_mirror_reflection</h3>
@@ -389,7 +389,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
       
     
     <h3>visible_mirror_transmission</h3>
@@ -398,7 +398,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
       
     
     <h3>visible_shadow</h3>
@@ -407,7 +407,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry casts shadows</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry casts shadows</p>
       
     
     <h3>visible_volume</h3>
@@ -416,7 +416,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
       
     
   </p>

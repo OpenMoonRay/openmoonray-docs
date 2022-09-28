@@ -22,7 +22,7 @@ title: UsdUVTexture
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Bias to be applied to all components of the texture.  output = textureValue * scale + bias</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Bias to be applied to all components of the texture.  output = textureValue * scale + bias</p>
       
     
     <h3>fallback</h3>
@@ -31,7 +31,7 @@ title: UsdUVTexture
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Fallback value used when texture can not be read.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Fallback value used when texture can not be read.</p>
       
     
     <h3>file</h3>
@@ -40,7 +40,7 @@ title: UsdUVTexture
       
         default: 
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Path to the texture</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Path to the texture</p>
       
     
     <h3>scale</h3>
@@ -49,7 +49,7 @@ title: UsdUVTexture
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Scale to be applied to all components of the texture.  output = textureValue * scale + bias</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Scale to be applied to all components of the texture.  output = textureValue * scale + bias</p>
       
     
     <h3>sourceColorSpace</h3>
@@ -63,7 +63,7 @@ title: UsdUVTexture
           | auto = 2 (default)
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Flag indicating the color space in which the source texture is encoded.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Flag indicating the color space in which the source texture is encoded.</p>
       
     
     <h3>st</h3>
@@ -72,7 +72,7 @@ title: UsdUVTexture
       
         default: [ 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Texture coordinate to use to fetch this texture.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Texture coordinate to use to fetch this texture.</p>
       
     
     <h3>udim_files</h3>
@@ -90,7 +90,7 @@ title: UsdUVTexture
       
         default: 10
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">udim maximum v value</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">udim maximum v value</p>
       
     
     <h3>udim_values</h3>
@@ -117,7 +117,7 @@ title: UsdUVTexture
           | useMetadata = 4 (default)
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Wrap mode when reading this texture.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Wrap mode when reading this texture.</p>
       
     
     <h3>wrapT</h3>
@@ -135,7 +135,7 @@ title: UsdUVTexture
           | useMetadata = 4 (default)
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Wrap mode when reading this texture.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Wrap mode when reading this texture.</p>
       
     
   </p>

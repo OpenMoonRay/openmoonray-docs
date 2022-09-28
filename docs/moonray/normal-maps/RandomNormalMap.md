@@ -22,7 +22,7 @@ title: RandomNormalMap
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">the input color used as a base seed to generate the random value</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the input color used as a base seed to generate the random value</p>
       
     
     <h3>seed</h3>
@@ -31,7 +31,7 @@ title: RandomNormalMap
       
         default: 0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">additional seed added to input for random number generator</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">additional seed added to input for random number generator</p>
       
     
   </p>

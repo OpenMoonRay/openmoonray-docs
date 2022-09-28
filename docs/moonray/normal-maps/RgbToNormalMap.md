@@ -22,7 +22,7 @@ title: RgbToNormalMap
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">Input color to convert to a normal map</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Input color to convert to a normal map</p>
       
     
   </p>

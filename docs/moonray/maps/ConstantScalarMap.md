@@ -22,7 +22,7 @@ title: ConstantScalarMap
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">constant scalar value</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">constant scalar value</p>
       
     
   </p>

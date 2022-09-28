@@ -46,7 +46,7 @@ title: RgbToFloatMap
           | luminance = 7
         
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">specify the method to convert RGB Color to float</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">specify the method to convert RGB Color to float</p>
       
     
   </p>

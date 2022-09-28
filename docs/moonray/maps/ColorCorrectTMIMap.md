@@ -22,7 +22,7 @@ title: ColorCorrectTMIMap
       
         default: [ 0, 0, 0 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       
     
     <h3>input</h3>
@@ -31,7 +31,7 @@ title: ColorCorrectTMIMap
       
         default: [ 1, 1, 1 ]
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
       
     
     <h3>mix</h3>
@@ -40,7 +40,7 @@ title: ColorCorrectTMIMap
       
         default: 1.0
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
       
     
     <h3>on</h3>
@@ -49,7 +49,7 @@ title: ColorCorrectTMIMap
       
         default: True
       
-        <p class=jekyll-theme-minimal scene-class-attr-comment">enables/disables all color correct operations</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables all color correct operations</p>
       
     
   </p>
