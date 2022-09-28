@@ -36,7 +36,7 @@ title: CombineNormalMap
     
     <h3>normal_map_1_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -45,7 +45,7 @@ title: CombineNormalMap
     
     <h3>normal_map_2_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

@@ -27,7 +27,7 @@ title: MeasuredMaterial
     
     <h3>diffuse_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -45,7 +45,7 @@ title: MeasuredMaterial
     
     <h3>diffuse_filename</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -54,7 +54,7 @@ title: MeasuredMaterial
     
     <h3>diffuse_hue_shift</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -63,7 +63,7 @@ title: MeasuredMaterial
     
     <h3>diffuse_saturation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -89,7 +89,7 @@ title: MeasuredMaterial
     
     <h3>specular_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -107,7 +107,7 @@ title: MeasuredMaterial
     
     <h3>specular_filename</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -116,7 +116,7 @@ title: MeasuredMaterial
     
     <h3>specular_hue_shift</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -125,7 +125,7 @@ title: MeasuredMaterial
     
     <h3>specular_saturation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -169,7 +169,7 @@ title: MeasuredMaterial
     
     <h3>input_normal</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 1 ]
     

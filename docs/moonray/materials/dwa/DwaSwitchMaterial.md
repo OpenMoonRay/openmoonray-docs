@@ -18,7 +18,7 @@ title: DwaSwitchMaterial
     
     <h3>fallback_bssrdf</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - normalized diffusion = 0 (default)
     

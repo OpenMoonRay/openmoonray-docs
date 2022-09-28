@@ -36,7 +36,7 @@ title: UsdUVTexture
     
     <h3>file</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -54,7 +54,7 @@ title: UsdUVTexture
     
     <h3>sourceColorSpace</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - raw = 0
     
@@ -68,7 +68,7 @@ title: UsdUVTexture
     
     <h3>st</h3>
     <b>Vec2f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1 ]
     
@@ -104,7 +104,7 @@ title: UsdUVTexture
     
     <h3>wrapS</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - black = 0
     
@@ -122,7 +122,7 @@ title: UsdUVTexture
     
     <h3>wrapT</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - black = 0
     

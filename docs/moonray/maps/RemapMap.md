@@ -125,7 +125,7 @@ title: RemapMap
     
     <h3>input</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -179,7 +179,7 @@ title: RemapMap
     
     <h3>remap_method</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - uniform = 0 (default)
     

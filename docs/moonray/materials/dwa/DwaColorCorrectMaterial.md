@@ -18,7 +18,7 @@ title: DwaColorCorrectMaterial
     
     <h3>gain</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -27,7 +27,7 @@ title: DwaColorCorrectMaterial
     
     <h3>hue_shift</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -36,7 +36,7 @@ title: DwaColorCorrectMaterial
     
     <h3>saturation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -106,7 +106,7 @@ title: DwaColorCorrectMaterial
     
     <h3>mix</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

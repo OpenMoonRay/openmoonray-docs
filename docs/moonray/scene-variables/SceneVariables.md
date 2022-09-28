@@ -124,7 +124,7 @@ title: SceneVariables
     
     <h3>checkpoint_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - time = 0 (default)
     
@@ -287,7 +287,7 @@ title: SceneVariables
     
     <h3>deep_format</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - openexr2.0 = 0
     
@@ -397,7 +397,7 @@ title: SceneVariables
     
     <h3>task_distribution_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - non-overlapped tile = 0
     
@@ -435,7 +435,7 @@ title: SceneVariables
     
     <h3>pixel_filter</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - box = 0
     
@@ -635,7 +635,7 @@ title: SceneVariables
     
     <h3>shadow_terminator_fix</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Off = 0 (default)
     
@@ -889,7 +889,7 @@ title: SceneVariables
     
     <h3>bsdf_sampler_strategy</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - multi-sample = 0 (default)
     
@@ -1100,7 +1100,7 @@ title: SceneVariables
     
     <h3>volume_overlap_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - sum = 0 (default)
     
@@ -1157,7 +1157,7 @@ title: SceneVariables
     
     <h3>batch_tile_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - top = 0
     
@@ -1181,7 +1181,7 @@ title: SceneVariables
     
     <h3>checkpoint_tile_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - top = 0
     
@@ -1232,7 +1232,7 @@ title: SceneVariables
     
     <h3>progressive_tile_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - top = 0
     
@@ -1256,7 +1256,7 @@ title: SceneVariables
     
     <h3>sampling_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - uniform = 0 (default)
     

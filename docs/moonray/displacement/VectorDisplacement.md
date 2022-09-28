@@ -36,7 +36,7 @@ title: VectorDisplacement
     
     <h3>source_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - tangent = 0 (default)
     
@@ -48,7 +48,7 @@ title: VectorDisplacement
     
     <h3>tangent_space_style</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - tnb = 0 (default)
     
@@ -60,7 +60,7 @@ title: VectorDisplacement
     
     <h3>vector</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     

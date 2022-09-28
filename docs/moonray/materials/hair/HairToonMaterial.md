@@ -18,7 +18,7 @@ title: HairToonMaterial
     
     <h3>back_hair_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -27,7 +27,7 @@ title: HairToonMaterial
     
     <h3>front_hair_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -62,7 +62,7 @@ title: HairToonMaterial
     
     <h3>presence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -79,7 +79,7 @@ title: HairToonMaterial
     
     <h3>hair_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -88,7 +88,7 @@ title: HairToonMaterial
     
     <h3>hair_diffuse</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -114,7 +114,7 @@ title: HairToonMaterial
     
     <h3>emission</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -158,7 +158,7 @@ title: HairToonMaterial
     
     <h3>specular_1_indirect_reflections_intensity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -167,7 +167,7 @@ title: HairToonMaterial
     
     <h3>specular_1_indirect_reflections_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -176,7 +176,7 @@ title: HairToonMaterial
     
     <h3>specular_1_input_U</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -185,7 +185,7 @@ title: HairToonMaterial
     
     <h3>specular_1_input_V</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -203,7 +203,7 @@ title: HairToonMaterial
     
     <h3>specular_1_input_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -212,7 +212,7 @@ title: HairToonMaterial
     
     <h3>specular_1_intensity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -232,7 +232,7 @@ title: HairToonMaterial
     
     <h3>specular_1_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Toon_Surface = 2 (default)
     
@@ -253,7 +253,7 @@ title: HairToonMaterial
     
     <h3>specular_1_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.899999976158
     
@@ -271,7 +271,7 @@ title: HairToonMaterial
     
     <h3>specular_1_stretch_u</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -280,7 +280,7 @@ title: HairToonMaterial
     
     <h3>specular_1_stretch_v</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -289,7 +289,7 @@ title: HairToonMaterial
     
     <h3>specular_1_tint</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -342,7 +342,7 @@ title: HairToonMaterial
     
     <h3>specular_2_indirect_reflections_intensity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -351,7 +351,7 @@ title: HairToonMaterial
     
     <h3>specular_2_indirect_reflections_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -360,7 +360,7 @@ title: HairToonMaterial
     
     <h3>specular_2_input_U</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -369,7 +369,7 @@ title: HairToonMaterial
     
     <h3>specular_2_input_V</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -387,7 +387,7 @@ title: HairToonMaterial
     
     <h3>specular_2_input_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -396,7 +396,7 @@ title: HairToonMaterial
     
     <h3>specular_2_intensity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -416,7 +416,7 @@ title: HairToonMaterial
     
     <h3>specular_2_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Toon_Surface = 2 (default)
     
@@ -437,7 +437,7 @@ title: HairToonMaterial
     
     <h3>specular_2_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.899999976158
     
@@ -455,7 +455,7 @@ title: HairToonMaterial
     
     <h3>specular_2_stretch_u</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -464,7 +464,7 @@ title: HairToonMaterial
     
     <h3>specular_2_stretch_v</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -473,7 +473,7 @@ title: HairToonMaterial
     
     <h3>specular_2_tint</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -526,7 +526,7 @@ title: HairToonMaterial
     
     <h3>specular_3_indirect_reflections_intensity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -535,7 +535,7 @@ title: HairToonMaterial
     
     <h3>specular_3_indirect_reflections_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -544,7 +544,7 @@ title: HairToonMaterial
     
     <h3>specular_3_input_U</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -553,7 +553,7 @@ title: HairToonMaterial
     
     <h3>specular_3_input_V</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -571,7 +571,7 @@ title: HairToonMaterial
     
     <h3>specular_3_input_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -580,7 +580,7 @@ title: HairToonMaterial
     
     <h3>specular_3_intensity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -600,7 +600,7 @@ title: HairToonMaterial
     
     <h3>specular_3_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Toon_Surface = 2 (default)
     
@@ -621,7 +621,7 @@ title: HairToonMaterial
     
     <h3>specular_3_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.899999976158
     
@@ -639,7 +639,7 @@ title: HairToonMaterial
     
     <h3>specular_3_stretch_u</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -648,7 +648,7 @@ title: HairToonMaterial
     
     <h3>specular_3_stretch_v</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -657,7 +657,7 @@ title: HairToonMaterial
     
     <h3>specular_3_tint</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -692,7 +692,7 @@ title: HairToonMaterial
     
     <h3>bssrdf</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - normalized diffusion = 0 (default)
     
@@ -722,7 +722,7 @@ title: HairToonMaterial
     
     <h3>input_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -731,7 +731,7 @@ title: HairToonMaterial
     
     <h3>scattering_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -740,7 +740,7 @@ title: HairToonMaterial
     
     <h3>scattering_radius</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -749,7 +749,7 @@ title: HairToonMaterial
     
     <h3>subsurface_blend</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

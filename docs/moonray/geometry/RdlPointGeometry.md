@@ -45,7 +45,7 @@ title: RdlPointGeometry
     
     <h3>motion_blur_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - best = -1 (default)
     
@@ -79,7 +79,7 @@ title: RdlPointGeometry
     
     <h3>node_xform</h3>
     <b>Mat4d</b>
-    <span class="emphasized">blurrable</span>
+    <i>blurrable</i>
     
     default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
     
@@ -106,7 +106,7 @@ title: RdlPointGeometry
     
     <h3>primitive_attribute_frame</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - first motion step = 0
     
@@ -202,7 +202,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
     
     <h3>side_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - force two-sided = 0 (default)
     

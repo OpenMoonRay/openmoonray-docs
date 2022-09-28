@@ -71,7 +71,7 @@ title: SpotLight
     
     <h3>angle_falloff_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - off = 0
     
@@ -160,7 +160,7 @@ title: SpotLight
     
     <h3>texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -276,7 +276,7 @@ title: SpotLight
     
     <h3>clear_radius_interpolation_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - linear = 0 (default)
     
@@ -364,7 +364,7 @@ title: SpotLight
     
     <h3>presence_shadows</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - force off = 0
     
@@ -387,7 +387,7 @@ title: SpotLight
     
     <h3>texture_filter</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - nearest neighbor = 0 (default)
     
@@ -403,7 +403,7 @@ title: SpotLight
     
     <h3>visible_in_camera</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - force off = 0
     
@@ -496,7 +496,7 @@ title: SpotLight
     
     <h3>node_xform</h3>
     <b>Mat4d</b>
-    <span class="emphasized">blurrable</span>
+    <i>blurrable</i>
     
     default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
     

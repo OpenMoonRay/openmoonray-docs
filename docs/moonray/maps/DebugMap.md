@@ -18,7 +18,7 @@ title: DebugMap
     
     <h3>input_normal_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - tangent = 0 (default)
     
@@ -47,7 +47,7 @@ title: DebugMap
     
     <h3>primitive_attribute_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - float = 0
     
@@ -80,7 +80,7 @@ title: DebugMap
     
     <h3>input_normal</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 1 ]
     
@@ -98,7 +98,7 @@ title: DebugMap
     
     <h3>map_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - position = 0 (default)
     

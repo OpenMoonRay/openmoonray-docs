@@ -27,7 +27,7 @@ title: ColorCorrectHsvMap
     
     <h3>hue_shift</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -36,7 +36,7 @@ title: ColorCorrectHsvMap
     
     <h3>input</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -63,7 +63,7 @@ title: ColorCorrectHsvMap
     
     <h3>saturation_factor</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -90,7 +90,7 @@ title: ColorCorrectHsvMap
     
     <h3>value_factor</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

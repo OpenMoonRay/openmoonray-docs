@@ -98,7 +98,7 @@ title: ImageNormalMap
     
     <h3>input_texture_coordinates</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -107,7 +107,7 @@ title: ImageNormalMap
     
     <h3>normal_encoding</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - [0,1] = 0 (default)
     
@@ -119,7 +119,7 @@ title: ImageNormalMap
     
     <h3>tangent_space_normal_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -128,7 +128,7 @@ title: ImageNormalMap
     
     <h3>texture_coordinates</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - texture = 0 (default)
     

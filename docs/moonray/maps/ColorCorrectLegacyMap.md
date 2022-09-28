@@ -54,7 +54,7 @@ title: ColorCorrectLegacyMap
     
     <h3>input</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -72,7 +72,7 @@ title: ColorCorrectLegacyMap
     
     <h3>mask</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -81,7 +81,7 @@ title: ColorCorrectLegacyMap
     
     <h3>monochrome</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - off = 0 (default)
     

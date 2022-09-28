@@ -105,7 +105,7 @@ title: DomeMaster3DCamera
     
     <h3>interocular_distance_map_file_name</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -132,7 +132,7 @@ title: DomeMaster3DCamera
     
     <h3>stereo_view</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - center view = 0 (default)
     
@@ -199,7 +199,7 @@ title: DomeMaster3DCamera
     
     <h3>node_xform</h3>
     <b>Mat4d</b>
-    <span class="emphasized">blurrable</span>
+    <i>blurrable</i>
     
     default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
     

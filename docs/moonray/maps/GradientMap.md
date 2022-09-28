@@ -89,7 +89,7 @@ title: GradientMap
     
     <h3>falloff_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - none = 0
     
@@ -117,7 +117,7 @@ title: GradientMap
     
     <h3>color_A</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -126,7 +126,7 @@ title: GradientMap
     
     <h3>color_B</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -153,7 +153,7 @@ title: GradientMap
     
     <h3>space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - render = 0 (default)
     

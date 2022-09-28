@@ -36,7 +36,7 @@ title: CheckerboardMap
     
     <h3>input_texture_coordinates</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -63,7 +63,7 @@ title: CheckerboardMap
     
     <h3>texture_coordinates</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - texture = 0 (default)
     

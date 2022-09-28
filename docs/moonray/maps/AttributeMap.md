@@ -27,7 +27,7 @@ title: AttributeMap
     
     <h3>primitive_attribute_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - float = 0
     
@@ -53,7 +53,7 @@ title: AttributeMap
     
     <h3>color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -62,7 +62,7 @@ title: AttributeMap
     
     <h3>default_value</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -71,7 +71,7 @@ title: AttributeMap
     
     <h3>map_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - primitive attribute = 0 (default)
     

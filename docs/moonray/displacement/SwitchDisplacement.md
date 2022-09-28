@@ -27,7 +27,7 @@ title: SwitchDisplacement
     
     <h3>choice</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     

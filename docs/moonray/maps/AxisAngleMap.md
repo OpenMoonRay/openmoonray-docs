@@ -18,7 +18,7 @@ title: AxisAngleMap
     
     <h3>angle</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -27,7 +27,7 @@ title: AxisAngleMap
     
     <h3>axis_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - world = 2 (default)
     
@@ -39,7 +39,7 @@ title: AxisAngleMap
     
     <h3>input_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - render = 0 (default)
     
@@ -57,7 +57,7 @@ title: AxisAngleMap
     
     <h3>input_vector</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 1 ]
     
@@ -66,7 +66,7 @@ title: AxisAngleMap
     
     <h3>output_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - render = 0 (default)
     
@@ -84,7 +84,7 @@ title: AxisAngleMap
     
     <h3>rotation_axis</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 1, 0 ]
     

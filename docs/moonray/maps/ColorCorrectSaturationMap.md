@@ -18,7 +18,7 @@ title: ColorCorrectSaturationMap
     
     <h3>input</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -27,7 +27,7 @@ title: ColorCorrectSaturationMap
     
     <h3>mix</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -45,7 +45,7 @@ title: ColorCorrectSaturationMap
     
     <h3>saturation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -54,7 +54,7 @@ title: ColorCorrectSaturationMap
     
     <h3>saturation_b</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -63,7 +63,7 @@ title: ColorCorrectSaturationMap
     
     <h3>saturation_g</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -72,7 +72,7 @@ title: ColorCorrectSaturationMap
     
     <h3>saturation_r</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

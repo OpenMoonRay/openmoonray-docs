@@ -18,7 +18,7 @@ title: DirectionalMap
     
     <h3>bias</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -27,7 +27,7 @@ title: DirectionalMap
     
     <h3>clamping_behavior</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - clamp = 0 (default)
     
@@ -39,7 +39,7 @@ title: DirectionalMap
     
     <h3>falloff_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - cosine = 0 (default)
     
@@ -51,7 +51,7 @@ title: DirectionalMap
     
     <h3>smoothstep_end</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.550000011921
     
@@ -60,7 +60,7 @@ title: DirectionalMap
     
     <h3>smoothstep_start</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.449999988079
     
@@ -95,7 +95,7 @@ title: DirectionalMap
     
     <h3>input_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -112,7 +112,7 @@ title: DirectionalMap
     
     <h3>color_a</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -121,7 +121,7 @@ title: DirectionalMap
     
     <h3>color_b</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -130,7 +130,7 @@ title: DirectionalMap
     
     <h3>custom_direction</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 1, 0 ]
     
@@ -148,7 +148,7 @@ title: DirectionalMap
     
     <h3>object_axis</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - +X axis = 0
     
@@ -168,7 +168,7 @@ title: DirectionalMap
     
     <h3>polarity</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - perpendicular = 0 (default)
     
@@ -180,7 +180,7 @@ title: DirectionalMap
     
     <h3>prime_direction</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - observer direction = 0 (default)
     

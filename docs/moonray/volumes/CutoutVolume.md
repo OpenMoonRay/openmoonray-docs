@@ -27,7 +27,7 @@ title: CutoutVolume
     
     <h3>bake_resolution_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - default = 0 (default)
     

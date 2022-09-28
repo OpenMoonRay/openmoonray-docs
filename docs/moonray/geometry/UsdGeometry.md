@@ -62,7 +62,7 @@ title: UsdGeometry
     
     <h3>curves_subtype</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - ray_facing = 0 (default)
     
@@ -103,7 +103,7 @@ title: UsdGeometry
     
     <h3>motion_blur_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - best = -1 (default)
     
@@ -137,7 +137,7 @@ title: UsdGeometry
     
     <h3>node_xform</h3>
     <b>Mat4d</b>
-    <span class="emphasized">blurrable</span>
+    <i>blurrable</i>
     
     default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
     
@@ -166,7 +166,7 @@ title: UsdGeometry
     
     <h3>primitive_attribute_frame</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - first motion step = 0
     
@@ -262,7 +262,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
     
     <h3>side_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - force two-sided = 0 (default)
     
@@ -285,7 +285,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
     
     <h3>stage</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -305,7 +305,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
     
     <h3>subd_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - use mesh type = 0 (default)
     

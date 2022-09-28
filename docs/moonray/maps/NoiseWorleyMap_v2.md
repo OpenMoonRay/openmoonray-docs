@@ -18,7 +18,7 @@ title: NoiseWorleyMap_v2
     
     <h3>bias</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -27,7 +27,7 @@ title: NoiseWorleyMap_v2
     
     <h3>gain</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -54,7 +54,7 @@ title: NoiseWorleyMap_v2
     
     <h3>remap</h3>
     <b>Vec2f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 1 ]
     
@@ -63,7 +63,7 @@ title: NoiseWorleyMap_v2
     
     <h3>smoothstep</h3>
     <b>Vec2f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 1 ]
     
@@ -89,7 +89,7 @@ title: NoiseWorleyMap_v2
     
     <h3>F1</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -98,7 +98,7 @@ title: NoiseWorleyMap_v2
     
     <h3>F2</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -107,7 +107,7 @@ title: NoiseWorleyMap_v2
     
     <h3>F3</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -116,7 +116,7 @@ title: NoiseWorleyMap_v2
     
     <h3>F4</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -125,7 +125,7 @@ title: NoiseWorleyMap_v2
     
     <h3>cell_id</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - f1 = 0 (default)
     
@@ -149,7 +149,7 @@ title: NoiseWorleyMap_v2
     
     <h3>distance_method</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - linear = 0 (default)
     
@@ -169,7 +169,7 @@ title: NoiseWorleyMap_v2
     
     <h3>minkowski_number</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 3.0
     
@@ -178,7 +178,7 @@ title: NoiseWorleyMap_v2
     
     <h3>output_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - distance = 0 (default)
     
@@ -213,7 +213,7 @@ title: NoiseWorleyMap_v2
     
     <h3>input_texture_coordinates</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -231,7 +231,7 @@ title: NoiseWorleyMap_v2
     
     <h3>space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - render = 0
     
@@ -267,7 +267,7 @@ title: NoiseWorleyMap_v2
     
     <h3>rotation</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -276,7 +276,7 @@ title: NoiseWorleyMap_v2
     
     <h3>rotation_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - xyz = 0 (default)
     
@@ -296,7 +296,7 @@ title: NoiseWorleyMap_v2
     
     <h3>scale</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -305,7 +305,7 @@ title: NoiseWorleyMap_v2
     
     <h3>transformation_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - srt = 0
     
@@ -325,7 +325,7 @@ title: NoiseWorleyMap_v2
     
     <h3>translation</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -342,7 +342,7 @@ title: NoiseWorleyMap_v2
     
     <h3>color_A</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -351,7 +351,7 @@ title: NoiseWorleyMap_v2
     
     <h3>color_B</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -360,7 +360,7 @@ title: NoiseWorleyMap_v2
     
     <h3>frequency</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -369,7 +369,7 @@ title: NoiseWorleyMap_v2
     
     <h3>jitter</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -378,7 +378,7 @@ title: NoiseWorleyMap_v2
     
     <h3>max_level</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

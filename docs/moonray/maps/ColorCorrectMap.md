@@ -18,7 +18,7 @@ title: ColorCorrectMap
     
     <h3>contrast_b</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -27,7 +27,7 @@ title: ColorCorrectMap
     
     <h3>contrast_g</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -36,7 +36,7 @@ title: ColorCorrectMap
     
     <h3>contrast_r</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -45,7 +45,7 @@ title: ColorCorrectMap
     
     <h3>gain_b</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -54,7 +54,7 @@ title: ColorCorrectMap
     
     <h3>gain_g</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -63,7 +63,7 @@ title: ColorCorrectMap
     
     <h3>gain_r</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -72,7 +72,7 @@ title: ColorCorrectMap
     
     <h3>gamma_b</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -81,7 +81,7 @@ title: ColorCorrectMap
     
     <h3>gamma_g</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -90,7 +90,7 @@ title: ColorCorrectMap
     
     <h3>gamma_r</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -99,7 +99,7 @@ title: ColorCorrectMap
     
     <h3>offset_b</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -108,7 +108,7 @@ title: ColorCorrectMap
     
     <h3>offset_g</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -117,7 +117,7 @@ title: ColorCorrectMap
     
     <h3>offset_r</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -126,7 +126,7 @@ title: ColorCorrectMap
     
     <h3>saturation_b</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -135,7 +135,7 @@ title: ColorCorrectMap
     
     <h3>saturation_g</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -144,7 +144,7 @@ title: ColorCorrectMap
     
     <h3>saturation_r</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -197,7 +197,7 @@ title: ColorCorrectMap
     
     <h3>TMI</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -242,7 +242,7 @@ title: ColorCorrectMap
     
     <h3>contrast</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -260,7 +260,7 @@ title: ColorCorrectMap
     
     <h3>gain</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -278,7 +278,7 @@ title: ColorCorrectMap
     
     <h3>gamma</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -296,7 +296,7 @@ title: ColorCorrectMap
     
     <h3>hue_shift</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -314,7 +314,7 @@ title: ColorCorrectMap
     
     <h3>input</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -323,7 +323,7 @@ title: ColorCorrectMap
     
     <h3>mix</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -332,7 +332,7 @@ title: ColorCorrectMap
     
     <h3>offset</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -350,7 +350,7 @@ title: ColorCorrectMap
     
     <h3>saturation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

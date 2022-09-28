@@ -27,7 +27,7 @@ title: ProjectCameraMap_v2
     
     <h3>aspect_ratio_source</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - from texture = 0 (default)
     
@@ -57,7 +57,7 @@ title: ProjectCameraMap_v2
     
     <h3>gamma</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - off = 0
     
@@ -89,7 +89,7 @@ title: ProjectCameraMap_v2
     
     <h3>texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     

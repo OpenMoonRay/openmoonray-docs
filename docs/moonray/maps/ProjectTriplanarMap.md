@@ -498,7 +498,7 @@ title: ProjectTriplanarMap
     
     <h3>TRS_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Scale Rot Trans = 0 (default)
     
@@ -518,7 +518,7 @@ title: ProjectTriplanarMap
     
     <h3>debug_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - none = 0 (default)
     
@@ -532,7 +532,7 @@ title: ProjectTriplanarMap
     
     <h3>gamma</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - off = 0
     
@@ -555,7 +555,7 @@ title: ProjectTriplanarMap
     
     <h3>negative_x_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -573,7 +573,7 @@ title: ProjectTriplanarMap
     
     <h3>negative_y_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -591,7 +591,7 @@ title: ProjectTriplanarMap
     
     <h3>negative_z_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -600,7 +600,7 @@ title: ProjectTriplanarMap
     
     <h3>number_of_textures</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - one = 1
     
@@ -623,7 +623,7 @@ title: ProjectTriplanarMap
     
     <h3>positive_x_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -641,7 +641,7 @@ title: ProjectTriplanarMap
     
     <h3>positive_y_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -659,7 +659,7 @@ title: ProjectTriplanarMap
     
     <h3>positive_z_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -677,7 +677,7 @@ title: ProjectTriplanarMap
     
     <h3>projection_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - projector = 0 (default)
     
@@ -745,7 +745,7 @@ title: ProjectTriplanarMap
     
     <h3>rotation_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - xyz = 0 (default)
     

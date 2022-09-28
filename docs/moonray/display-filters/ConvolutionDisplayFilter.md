@@ -71,7 +71,7 @@ title: ConvolutionDisplayFilter
     
     <h3>kernel_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - gaussian = 0 (default)
     

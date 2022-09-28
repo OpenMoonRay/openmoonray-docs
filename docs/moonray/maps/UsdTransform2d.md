@@ -18,7 +18,7 @@ title: UsdTransform2d
     
     <h3>in</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     

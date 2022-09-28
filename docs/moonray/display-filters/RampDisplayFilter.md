@@ -88,7 +88,7 @@ title: RampDisplayFilter
     
     <h3>ramp_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - v_ramp = 0 (default)
     

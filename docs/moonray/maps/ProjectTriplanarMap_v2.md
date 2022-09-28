@@ -498,7 +498,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>TRS_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Scale Rot Trans = 0 (default)
     
@@ -518,7 +518,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>gamma</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - off = 0
     
@@ -532,7 +532,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>input_normal</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -541,7 +541,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>input_position</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -550,7 +550,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>input_position_source</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - P/N = 0 (default)
     
@@ -573,7 +573,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>negative_x_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -591,7 +591,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>negative_y_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -609,7 +609,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>negative_z_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -618,7 +618,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>number_of_textures</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - one = 1
     
@@ -641,7 +641,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>positive_x_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -659,7 +659,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>positive_y_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -677,7 +677,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>positive_z_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -695,7 +695,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>projection_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - projector = 0 (default)
     
@@ -763,7 +763,7 @@ title: ProjectTriplanarMap_v2
     
     <h3>rotation_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - xyz = 0 (default)
     

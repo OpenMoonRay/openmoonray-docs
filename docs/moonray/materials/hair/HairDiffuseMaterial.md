@@ -18,7 +18,7 @@ title: HairDiffuseMaterial
     
     <h3>back_hair_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -27,7 +27,7 @@ title: HairDiffuseMaterial
     
     <h3>front_hair_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -71,7 +71,7 @@ title: HairDiffuseMaterial
     
     <h3>presence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -88,7 +88,7 @@ title: HairDiffuseMaterial
     
     <h3>emission</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -114,7 +114,7 @@ title: HairDiffuseMaterial
     
     <h3>bssrdf</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - normalized diffusion = 0 (default)
     
@@ -144,7 +144,7 @@ title: HairDiffuseMaterial
     
     <h3>input_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -153,7 +153,7 @@ title: HairDiffuseMaterial
     
     <h3>scattering_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -162,7 +162,7 @@ title: HairDiffuseMaterial
     
     <h3>scattering_radius</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -171,7 +171,7 @@ title: HairDiffuseMaterial
     
     <h3>subsurface_blend</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -197,7 +197,7 @@ title: HairDiffuseMaterial
     
     <h3>hair_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     

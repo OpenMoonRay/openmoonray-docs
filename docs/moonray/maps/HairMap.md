@@ -18,7 +18,7 @@ title: HairMap
     
     <h3>base_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -27,7 +27,7 @@ title: HairMap
     
     <h3>bias</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -36,7 +36,7 @@ title: HairMap
     
     <h3>column_uv_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -45,7 +45,7 @@ title: HairMap
     
     <h3>gain</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -54,7 +54,7 @@ title: HairMap
     
     <h3>tip_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     

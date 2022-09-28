@@ -18,7 +18,7 @@ title: ImageMap
     
     <h3>blur</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -27,7 +27,7 @@ title: ImageMap
     
     <h3>mip_bias</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -178,7 +178,7 @@ title: ImageMap
     
     <h3>gamma</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - off = 0
     
@@ -192,7 +192,7 @@ title: ImageMap
     
     <h3>input_texture_coordinates</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -237,7 +237,7 @@ title: ImageMap
     
     <h3>texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -246,7 +246,7 @@ title: ImageMap
     
     <h3>texture_coordinates</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - texture = 0 (default)
     

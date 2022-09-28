@@ -36,7 +36,7 @@ title: RenderOutput
     
     <h3>channel_format</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - float = 0
     
@@ -57,7 +57,7 @@ title: RenderOutput
     
     <h3>channel_suffix_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - auto = 0 (default)
     
@@ -99,7 +99,7 @@ title: RenderOutput
     
     <h3>compression</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - none = 0
     
@@ -145,7 +145,7 @@ title: RenderOutput
     
     <h3>denoiser_input</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - not an input = 0 (default)
     
@@ -334,7 +334,7 @@ title: RenderOutput
     
     <h3>math_filter</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - average = 0 (default)
     
@@ -386,7 +386,7 @@ options include:
     
     <h3>primitive_attribute_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - FLOAT = 0 (default)
     
@@ -411,7 +411,7 @@ options include:
     
     <h3>result</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - beauty = 0 (default)
     
@@ -498,7 +498,7 @@ options include:
     
     <h3>state_variable</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - P = 0
     

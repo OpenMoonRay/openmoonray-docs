@@ -27,7 +27,7 @@ title: DwaToonMaterial
     
     <h3>specular</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -53,7 +53,7 @@ title: DwaToonMaterial
     
     <h3>clearcoat</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -62,7 +62,7 @@ title: DwaToonMaterial
     
     <h3>clearcoat_attenuation_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0.5, 0.5, 0.5 ]
     
@@ -80,7 +80,7 @@ title: DwaToonMaterial
     
     <h3>clearcoat_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Beckmann = 0
     
@@ -92,7 +92,7 @@ title: DwaToonMaterial
     
     <h3>clearcoat_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -110,7 +110,7 @@ title: DwaToonMaterial
     
     <h3>clearcoat_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.10000000149
     
@@ -119,7 +119,7 @@ title: DwaToonMaterial
     
     <h3>clearcoat_thickness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -172,7 +172,7 @@ title: DwaToonMaterial
     
     <h3>presence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -198,7 +198,7 @@ title: DwaToonMaterial
     
     <h3>albedo</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -207,7 +207,7 @@ title: DwaToonMaterial
     
     <h3>bssrdf</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - normalized diffusion = 0 (default)
     
@@ -230,7 +230,7 @@ title: DwaToonMaterial
     
     <h3>diffuse_flatness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -239,7 +239,7 @@ title: DwaToonMaterial
     
     <h3>diffuse_flatness_falloff</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -248,7 +248,7 @@ title: DwaToonMaterial
     
     <h3>diffuse_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - oren-nayar = 0 (default)
     
@@ -260,7 +260,7 @@ title: DwaToonMaterial
     
     <h3>diffuse_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -269,7 +269,7 @@ title: DwaToonMaterial
     
     <h3>diffuse_transmission</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -278,7 +278,7 @@ title: DwaToonMaterial
     
     <h3>diffuse_transmission_blending_behavior</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - RGB = 0
     
@@ -290,7 +290,7 @@ title: DwaToonMaterial
     
     <h3>diffuse_transmission_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -337,7 +337,7 @@ title: DwaToonMaterial
     
     <h3>ramp_color_multiplier0</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -346,7 +346,7 @@ title: DwaToonMaterial
     
     <h3>ramp_color_multiplier1</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -355,7 +355,7 @@ title: DwaToonMaterial
     
     <h3>ramp_color_multiplier2</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -364,7 +364,7 @@ title: DwaToonMaterial
     
     <h3>ramp_color_multiplier3</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -373,7 +373,7 @@ title: DwaToonMaterial
     
     <h3>ramp_color_multiplier4</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -382,7 +382,7 @@ title: DwaToonMaterial
     
     <h3>ramp_color_multiplier5</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -391,7 +391,7 @@ title: DwaToonMaterial
     
     <h3>ramp_color_multiplier6</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -400,7 +400,7 @@ title: DwaToonMaterial
     
     <h3>ramp_color_multiplier7</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -409,7 +409,7 @@ title: DwaToonMaterial
     
     <h3>ramp_color_multiplier8</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -418,7 +418,7 @@ title: DwaToonMaterial
     
     <h3>ramp_color_multiplier9</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -427,7 +427,7 @@ title: DwaToonMaterial
     
     <h3>ramp_position_offset0</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -436,7 +436,7 @@ title: DwaToonMaterial
     
     <h3>ramp_position_offset1</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -445,7 +445,7 @@ title: DwaToonMaterial
     
     <h3>ramp_position_offset2</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -454,7 +454,7 @@ title: DwaToonMaterial
     
     <h3>ramp_position_offset3</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -463,7 +463,7 @@ title: DwaToonMaterial
     
     <h3>ramp_position_offset4</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -472,7 +472,7 @@ title: DwaToonMaterial
     
     <h3>ramp_position_offset5</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -481,7 +481,7 @@ title: DwaToonMaterial
     
     <h3>ramp_position_offset6</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -490,7 +490,7 @@ title: DwaToonMaterial
     
     <h3>ramp_position_offset7</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -499,7 +499,7 @@ title: DwaToonMaterial
     
     <h3>ramp_position_offset8</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -508,7 +508,7 @@ title: DwaToonMaterial
     
     <h3>ramp_position_offset9</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -526,7 +526,7 @@ title: DwaToonMaterial
     
     <h3>scattering_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -535,7 +535,7 @@ title: DwaToonMaterial
     
     <h3>scattering_radius</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -553,7 +553,7 @@ title: DwaToonMaterial
     
     <h3>terminator_shift</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0500000007451
     
@@ -570,7 +570,7 @@ title: DwaToonMaterial
     
     <h3>emission</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -596,7 +596,7 @@ title: DwaToonMaterial
     
     <h3>fuzz</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -605,7 +605,7 @@ title: DwaToonMaterial
     
     <h3>fuzz_albedo</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -623,7 +623,7 @@ title: DwaToonMaterial
     
     <h3>fuzz_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -632,7 +632,7 @@ title: DwaToonMaterial
     
     <h3>fuzz_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.25
     
@@ -667,7 +667,7 @@ title: DwaToonMaterial
     
     <h3>glitter</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -694,7 +694,7 @@ title: DwaToonMaterial
     
     <h3>glitter_color_A</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -703,7 +703,7 @@ title: DwaToonMaterial
     
     <h3>glitter_color_B</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -712,7 +712,7 @@ title: DwaToonMaterial
     
     <h3>glitter_color_hue_variation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -721,7 +721,7 @@ title: DwaToonMaterial
     
     <h3>glitter_color_saturation_variation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -730,7 +730,7 @@ title: DwaToonMaterial
     
     <h3>glitter_color_value_variation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -748,7 +748,7 @@ title: DwaToonMaterial
     
     <h3>glitter_debug_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - off = 0 (default)
     
@@ -768,7 +768,7 @@ title: DwaToonMaterial
     
     <h3>glitter_density</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -777,7 +777,7 @@ title: DwaToonMaterial
     
     <h3>glitter_jitter</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -786,7 +786,7 @@ title: DwaToonMaterial
     
     <h3>glitter_layering_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - physical = 0 (default)
     
@@ -834,7 +834,7 @@ title: DwaToonMaterial
     
     <h3>glitter_size_A</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -843,7 +843,7 @@ title: DwaToonMaterial
     
     <h3>glitter_size_B</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -852,7 +852,7 @@ title: DwaToonMaterial
     
     <h3>glitter_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - object = 4
     
@@ -864,7 +864,7 @@ title: DwaToonMaterial
     
     <h3>glitter_style_A_frequency</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -873,7 +873,7 @@ title: DwaToonMaterial
     
     <h3>glitter_style_B_frequency</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -882,7 +882,7 @@ title: DwaToonMaterial
     
     <h3>glitter_texture_A</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -891,7 +891,7 @@ title: DwaToonMaterial
     
     <h3>glitter_texture_B</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -926,7 +926,7 @@ title: DwaToonMaterial
     
     <h3>iridescence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -935,7 +935,7 @@ title: DwaToonMaterial
     
     <h3>iridescence_apply_to</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - primary specular = 0 (default)
     
@@ -947,7 +947,7 @@ title: DwaToonMaterial
     
     <h3>iridescence_at_0_incidence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -956,7 +956,7 @@ title: DwaToonMaterial
     
     <h3>iridescence_at_90_incidence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -965,7 +965,7 @@ title: DwaToonMaterial
     
     <h3>iridescence_color_control</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - use hue interpolation = 0 (default)
     
@@ -986,7 +986,7 @@ title: DwaToonMaterial
     
     <h3>iridescence_exponent</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -1024,7 +1024,7 @@ title: DwaToonMaterial
     
     <h3>iridescence_primary_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 0, 0 ]
     
@@ -1033,7 +1033,7 @@ title: DwaToonMaterial
     
     <h3>iridescence_ramp_interpolation_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - RGB = 0 (default)
     
@@ -1045,7 +1045,7 @@ title: DwaToonMaterial
     
     <h3>iridescence_secondary_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 0, 0 ]
     
@@ -1054,7 +1054,7 @@ title: DwaToonMaterial
     
     <h3>iridescence_thickness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -1080,7 +1080,7 @@ title: DwaToonMaterial
     
     <h3>input_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -1106,7 +1106,7 @@ title: DwaToonMaterial
     
     <h3>normal_AA_strategy</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - none = 0 (default)
     
@@ -1126,7 +1126,7 @@ title: DwaToonMaterial
     
     <h3>anisotropy</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -1135,7 +1135,7 @@ title: DwaToonMaterial
     
     <h3>metallic</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -1144,7 +1144,7 @@ title: DwaToonMaterial
     
     <h3>metallic_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -1153,7 +1153,7 @@ title: DwaToonMaterial
     
     <h3>metallic_edge_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -1171,7 +1171,7 @@ title: DwaToonMaterial
     
     <h3>roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -1180,7 +1180,7 @@ title: DwaToonMaterial
     
     <h3>shading_tangent</h3>
     <b>Vec2f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 0 ]
     
@@ -1198,7 +1198,7 @@ title: DwaToonMaterial
     
     <h3>specular_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Beckmann = 0
     
@@ -1230,7 +1230,7 @@ title: DwaToonMaterial
     
     <h3>toon_specular_indirect_reflections_intensity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -1239,7 +1239,7 @@ title: DwaToonMaterial
     
     <h3>toon_specular_indirect_reflections_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -1248,7 +1248,7 @@ title: DwaToonMaterial
     
     <h3>toon_specular_input_U</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -1257,7 +1257,7 @@ title: DwaToonMaterial
     
     <h3>toon_specular_input_V</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -1275,7 +1275,7 @@ title: DwaToonMaterial
     
     <h3>toon_specular_input_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -1284,7 +1284,7 @@ title: DwaToonMaterial
     
     <h3>toon_specular_intensity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -1313,7 +1313,7 @@ title: DwaToonMaterial
     
     <h3>toon_specular_stretch_u</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -1322,7 +1322,7 @@ title: DwaToonMaterial
     
     <h3>toon_specular_stretch_v</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -1331,7 +1331,7 @@ title: DwaToonMaterial
     
     <h3>toon_specular_tint</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -1384,7 +1384,7 @@ title: DwaToonMaterial
     
     <h3>independent_transmission_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -1402,7 +1402,7 @@ title: DwaToonMaterial
     
     <h3>transmission</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -1411,7 +1411,7 @@ title: DwaToonMaterial
     
     <h3>transmission_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     

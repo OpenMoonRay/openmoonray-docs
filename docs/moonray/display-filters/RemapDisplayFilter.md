@@ -214,7 +214,7 @@ title: RemapDisplayFilter
     
     <h3>remap_method</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - uniform = 0 (default)
     

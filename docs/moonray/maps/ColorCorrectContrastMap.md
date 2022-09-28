@@ -18,7 +18,7 @@ title: ColorCorrectContrastMap
     
     <h3>contrast</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -27,7 +27,7 @@ title: ColorCorrectContrastMap
     
     <h3>contrast_b</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -36,7 +36,7 @@ title: ColorCorrectContrastMap
     
     <h3>contrast_g</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -45,7 +45,7 @@ title: ColorCorrectContrastMap
     
     <h3>contrast_r</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -54,7 +54,7 @@ title: ColorCorrectContrastMap
     
     <h3>input</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -63,7 +63,7 @@ title: ColorCorrectContrastMap
     
     <h3>mix</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

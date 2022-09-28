@@ -18,7 +18,7 @@ title: DwaEmissiveMaterial
     
     <h3>presence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -35,7 +35,7 @@ title: DwaEmissiveMaterial
     
     <h3>emission</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     

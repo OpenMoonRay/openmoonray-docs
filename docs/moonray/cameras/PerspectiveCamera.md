@@ -125,7 +125,7 @@ title: PerspectiveCamera
     
     <h3>focal</h3>
     <b>Float</b>
-    <span class="emphasized">blurrable</span>
+    <i>blurrable</i>
     
     default: 30.0
     
@@ -248,7 +248,7 @@ title: PerspectiveCamera
     
     <h3>stereo_view</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - center view = 0 (default)
     
@@ -270,7 +270,7 @@ title: PerspectiveCamera
     
     <h3>node_xform</h3>
     <b>Mat4d</b>
-    <span class="emphasized">blurrable</span>
+    <i>blurrable</i>
     
     default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
     

@@ -18,7 +18,7 @@ title: ProjectCylindricalMap
     
     <h3>TRS_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Scale Rot Trans = 0 (default)
     
@@ -74,7 +74,7 @@ title: ProjectCylindricalMap
     
     <h3>projection_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - projector = 0 (default)
     
@@ -106,7 +106,7 @@ title: ProjectCylindricalMap
     
     <h3>rotation_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - xyz = 0 (default)
     

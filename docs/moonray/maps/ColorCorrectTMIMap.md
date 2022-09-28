@@ -18,7 +18,7 @@ title: ColorCorrectTMIMap
     
     <h3>TMI</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -27,7 +27,7 @@ title: ColorCorrectTMIMap
     
     <h3>input</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -36,7 +36,7 @@ title: ColorCorrectTMIMap
     
     <h3>mix</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

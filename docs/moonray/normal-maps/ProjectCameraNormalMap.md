@@ -18,7 +18,7 @@ title: ProjectCameraNormalMap
     
     <h3>aspect_ratio_source</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - from texture = 0 (default)
     
@@ -39,7 +39,7 @@ title: ProjectCameraNormalMap
     
     <h3>normal_encoding</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - [0,1] = 0 (default)
     
@@ -69,7 +69,7 @@ title: ProjectCameraNormalMap
     
     <h3>texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     

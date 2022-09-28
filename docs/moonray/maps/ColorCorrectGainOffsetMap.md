@@ -18,7 +18,7 @@ title: ColorCorrectGainOffsetMap
     
     <h3>gain</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -27,7 +27,7 @@ title: ColorCorrectGainOffsetMap
     
     <h3>gain_b</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -36,7 +36,7 @@ title: ColorCorrectGainOffsetMap
     
     <h3>gain_g</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -45,7 +45,7 @@ title: ColorCorrectGainOffsetMap
     
     <h3>gain_r</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -54,7 +54,7 @@ title: ColorCorrectGainOffsetMap
     
     <h3>input</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -63,7 +63,7 @@ title: ColorCorrectGainOffsetMap
     
     <h3>mix</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -72,7 +72,7 @@ title: ColorCorrectGainOffsetMap
     
     <h3>offset</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -81,7 +81,7 @@ title: ColorCorrectGainOffsetMap
     
     <h3>offset_b</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -90,7 +90,7 @@ title: ColorCorrectGainOffsetMap
     
     <h3>offset_g</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -99,7 +99,7 @@ title: ColorCorrectGainOffsetMap
     
     <h3>offset_r</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

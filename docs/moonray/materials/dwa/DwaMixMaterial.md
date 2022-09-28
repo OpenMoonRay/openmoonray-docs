@@ -18,7 +18,7 @@ title: DwaMixMaterial
     
     <h3>blend_color_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - RGB = 0 (default)
     
@@ -32,7 +32,7 @@ title: DwaMixMaterial
     
     <h3>fallback_bssrdf</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - normalized diffusion = 0 (default)
     
@@ -55,7 +55,7 @@ title: DwaMixMaterial
     
     <h3>fallback_outer_specular_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Beckmann = 0
     
@@ -67,7 +67,7 @@ title: DwaMixMaterial
     
     <h3>fallback_specular_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Beckmann = 0
     
@@ -88,7 +88,7 @@ title: DwaMixMaterial
     
     <h3>fallback_toon_specular_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Beckmann = 0
     
@@ -128,7 +128,7 @@ title: DwaMixMaterial
     
     <h3>fallback_glitter_debug_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - off = 0 (default)
     
@@ -148,7 +148,7 @@ title: DwaMixMaterial
     
     <h3>fallback_glitter_layering_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - physical = 0 (default)
     
@@ -178,7 +178,7 @@ title: DwaMixMaterial
     
     <h3>fallback_glitter_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - object = 4
     
@@ -199,7 +199,7 @@ title: DwaMixMaterial
     
     <h3>fallback_glitter_style_B_frequency</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -208,7 +208,7 @@ title: DwaMixMaterial
     
     <h3>fallback_glitter_texture_A</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -828,7 +828,7 @@ title: DwaMixMaterial
     
     <h3>mix</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -837,7 +837,7 @@ title: DwaMixMaterial
     
     <h3>mix_interpolation</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - linear = 0 (default)
     

@@ -45,7 +45,7 @@ title: CombineDisplacement
     
     <h3>operation</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - add = 0 (default)
     
@@ -59,7 +59,7 @@ title: CombineDisplacement
     
     <h3>scale_1</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -68,7 +68,7 @@ title: CombineDisplacement
     
     <h3>scale_2</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

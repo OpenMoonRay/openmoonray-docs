@@ -18,7 +18,7 @@ title: RampMap
     
     <h3>input_texture_coordinates</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -45,7 +45,7 @@ title: RampMap
     
     <h3>wrap_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - wrap = 0 (default)
     
@@ -111,7 +111,7 @@ title: RampMap
     
     <h3>color_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - rgb = 0 (default)
     
@@ -125,7 +125,7 @@ title: RampMap
     
     <h3>input</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -143,7 +143,7 @@ title: RampMap
     
     <h3>ramp_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - v = 0 (default)
     
@@ -169,7 +169,7 @@ title: RampMap
     
     <h3>space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - render = 0 (default)
     
@@ -199,7 +199,7 @@ title: RampMap
     
     <h3>texture_coordinates</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - default state coordinates = 0 (default)
     

@@ -27,7 +27,7 @@ title: AxfMaterial
     
     <h3>normal</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -36,7 +36,7 @@ title: AxfMaterial
     
     <h3>normal_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - tangent = 0 (default)
     
@@ -56,7 +56,7 @@ title: AxfMaterial
     
     <h3>alpha</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -65,7 +65,7 @@ title: AxfMaterial
     
     <h3>aniso_rotation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -83,7 +83,7 @@ title: AxfMaterial
     
     <h3>diffuse_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -101,7 +101,7 @@ title: AxfMaterial
     
     <h3>fresnel</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -128,7 +128,7 @@ title: AxfMaterial
     
     <h3>specular_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -137,7 +137,7 @@ title: AxfMaterial
     
     <h3>specular_lobe</h3>
     <b>Vec2f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1 ]
     

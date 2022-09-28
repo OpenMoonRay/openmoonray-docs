@@ -18,7 +18,7 @@ title: BlendMap
     
     <h3>blend_amount</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -27,7 +27,7 @@ title: BlendMap
     
     <h3>blend_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - linear = 0 (default)
     
@@ -39,7 +39,7 @@ title: BlendMap
     
     <h3>color_A</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -48,7 +48,7 @@ title: BlendMap
     
     <h3>color_B</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -57,7 +57,7 @@ title: BlendMap
     
     <h3>threshold_max</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -66,7 +66,7 @@ title: BlendMap
     
     <h3>threshold_min</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     

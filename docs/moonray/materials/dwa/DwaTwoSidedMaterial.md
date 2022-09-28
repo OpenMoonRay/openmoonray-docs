@@ -18,7 +18,7 @@ title: DwaTwoSidedMaterial
     
     <h3>fallback_bssrdf</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - normalized diffusion = 0 (default)
     
@@ -41,7 +41,7 @@ title: DwaTwoSidedMaterial
     
     <h3>fallback_outer_specular_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Beckmann = 0
     
@@ -53,7 +53,7 @@ title: DwaTwoSidedMaterial
     
     <h3>fallback_specular_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Beckmann = 0
     
@@ -65,7 +65,7 @@ title: DwaTwoSidedMaterial
     
     <h3>fallback_toon_specular_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Beckmann = 0
     

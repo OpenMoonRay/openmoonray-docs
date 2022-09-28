@@ -27,7 +27,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>debug_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - off = 0 (default)
     
@@ -56,7 +56,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>glitter_mask</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -82,7 +82,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_color_hue_variation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -91,7 +91,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_color_saturation_variation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -100,7 +100,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_color_value_variation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -109,7 +109,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_density</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -118,7 +118,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_jitter</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -145,7 +145,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_texture_1</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -163,7 +163,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_texture_2</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -198,7 +198,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>presence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -233,7 +233,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - object = 4
     
@@ -253,7 +253,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_color_A</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -271,7 +271,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_size_A</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -280,7 +280,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_style_A_frequency</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -297,7 +297,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_color_B</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -315,7 +315,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_size_B</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -324,7 +324,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>flake_style_B_frequency</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -341,7 +341,7 @@ title: GlitterFlakeMaterial_v2
     
     <h3>layering_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - physical = 0 (default)
     

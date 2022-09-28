@@ -18,7 +18,7 @@ title: FloatToRgbMap
     
     <h3>B</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -27,7 +27,7 @@ title: FloatToRgbMap
     
     <h3>G</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -36,7 +36,7 @@ title: FloatToRgbMap
     
     <h3>R</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

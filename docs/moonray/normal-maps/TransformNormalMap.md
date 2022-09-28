@@ -18,7 +18,7 @@ title: TransformNormalMap
     
     <h3>input_normal</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 1 ]
     
@@ -44,7 +44,7 @@ title: TransformNormalMap
     
     <h3>transform</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - tangent to render = 0 (default)
     

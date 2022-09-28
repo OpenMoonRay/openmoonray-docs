@@ -18,7 +18,7 @@ title: LcToRgbMap
     
     <h3>input_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -27,7 +27,7 @@ title: LcToRgbMap
     
     <h3>target_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 100, 0, 0 ]
     

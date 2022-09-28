@@ -18,7 +18,7 @@ title: UsdPreviewSurface
     
     <h3>clearcoat</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -27,7 +27,7 @@ title: UsdPreviewSurface
     
     <h3>clearcoatRoughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.00999999977648
     
@@ -36,7 +36,7 @@ title: UsdPreviewSurface
     
     <h3>diffuseColor</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0.18, 0.18, 0.18 ]
     
@@ -45,7 +45,7 @@ title: UsdPreviewSurface
     
     <h3>displacement</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -54,7 +54,7 @@ title: UsdPreviewSurface
     
     <h3>emissiveColor</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -72,7 +72,7 @@ title: UsdPreviewSurface
     
     <h3>ior</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.5
     
@@ -90,7 +90,7 @@ title: UsdPreviewSurface
     
     <h3>metallic</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -99,7 +99,7 @@ title: UsdPreviewSurface
     
     <h3>normal</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 1 ]
     
@@ -108,7 +108,7 @@ title: UsdPreviewSurface
     
     <h3>occlusion</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -117,7 +117,7 @@ title: UsdPreviewSurface
     
     <h3>opacity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -126,7 +126,7 @@ title: UsdPreviewSurface
     
     <h3>opacityThreshold</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -144,7 +144,7 @@ title: UsdPreviewSurface
     
     <h3>roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -153,7 +153,7 @@ title: UsdPreviewSurface
     
     <h3>specularColor</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -162,7 +162,7 @@ title: UsdPreviewSurface
     
     <h3>useSpecularWorkflow</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Metalness workflow = 0 (default)
     

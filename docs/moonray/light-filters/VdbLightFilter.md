@@ -18,7 +18,7 @@ title: VdbLightFilter
     
     <h3>blur_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - gaussian = 0 (default)
     
@@ -48,7 +48,7 @@ title: VdbLightFilter
     
     <h3>density_grid_name</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -138,7 +138,7 @@ title: VdbLightFilter
     
     <h3>vdb_interpolation_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - point = 0 (default)
     
@@ -152,7 +152,7 @@ title: VdbLightFilter
     
     <h3>vdb_map</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -169,7 +169,7 @@ title: VdbLightFilter
     
     <h3>node_xform</h3>
     <b>Mat4d</b>
-    <span class="emphasized">blurrable</span>
+    <i>blurrable</i>
     
     default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
     

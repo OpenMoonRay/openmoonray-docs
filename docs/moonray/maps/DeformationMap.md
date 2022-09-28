@@ -18,7 +18,7 @@ title: DeformationMap
     
     <h3>output_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - RGB = 0
     
@@ -51,7 +51,7 @@ title: DeformationMap
     
     <h3>warning_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     

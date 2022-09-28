@@ -62,7 +62,7 @@ title: DwaAdjustMaterial
     
     <h3>casts_caustics</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - unmodified = 0 (default)
     
@@ -103,7 +103,7 @@ title: DwaAdjustMaterial
     
     <h3>thin_geometry</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - unmodified = 0 (default)
     
@@ -125,7 +125,7 @@ title: DwaAdjustMaterial
     
     <h3>emission</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -134,7 +134,7 @@ title: DwaAdjustMaterial
     
     <h3>emission_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - off = 0 (default)
     
@@ -175,7 +175,7 @@ title: DwaAdjustMaterial
     
     <h3>mix</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

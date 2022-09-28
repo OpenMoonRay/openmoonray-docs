@@ -53,7 +53,7 @@ title: HairMaterial_v3
     
     <h3>presence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -70,7 +70,7 @@ title: HairMaterial_v3
     
     <h3>emission</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -96,7 +96,7 @@ title: HairMaterial_v3
     
     <h3>cuticle_layer_thickness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.10000000149
     
@@ -105,7 +105,7 @@ title: HairMaterial_v3
     
     <h3>fresnel_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - simple longitudinal = 0
     
@@ -136,7 +136,7 @@ title: HairMaterial_v3
     
     <h3>primary_specular_offset</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: -3.0
     
@@ -145,7 +145,7 @@ title: HairMaterial_v3
     
     <h3>primary_specular_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -154,7 +154,7 @@ title: HairMaterial_v3
     
     <h3>primary_specular_tint</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -180,7 +180,7 @@ title: HairMaterial_v3
     
     <h3>glint_eccentricity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.850000023842
     
@@ -189,7 +189,7 @@ title: HairMaterial_v3
     
     <h3>glint_max_twists</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 2.5
     
@@ -198,7 +198,7 @@ title: HairMaterial_v3
     
     <h3>glint_min_twists</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.5
     
@@ -207,7 +207,7 @@ title: HairMaterial_v3
     
     <h3>glint_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -216,7 +216,7 @@ title: HairMaterial_v3
     
     <h3>glint_saturation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -225,7 +225,7 @@ title: HairMaterial_v3
     
     <h3>independent_secondary_specular_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.40000000596
     
@@ -234,7 +234,7 @@ title: HairMaterial_v3
     
     <h3>secondary_specular_offset</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: -4.5
     
@@ -243,7 +243,7 @@ title: HairMaterial_v3
     
     <h3>secondary_specular_tint</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -287,7 +287,7 @@ title: HairMaterial_v3
     
     <h3>direct_transmission_saturation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -296,7 +296,7 @@ title: HairMaterial_v3
     
     <h3>independent_transmission_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.10000000149
     
@@ -314,7 +314,7 @@ title: HairMaterial_v3
     
     <h3>transmission_azimuthal_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -323,7 +323,7 @@ title: HairMaterial_v3
     
     <h3>transmission_offset</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: -1.5
     
@@ -332,7 +332,7 @@ title: HairMaterial_v3
     
     <h3>transmission_tint</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -367,7 +367,7 @@ title: HairMaterial_v3
     
     <h3>hair_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     

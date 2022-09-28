@@ -18,7 +18,7 @@ title: DwaRefractiveMaterial
     
     <h3>specular</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -35,7 +35,7 @@ title: DwaRefractiveMaterial
     
     <h3>clearcoat</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -44,7 +44,7 @@ title: DwaRefractiveMaterial
     
     <h3>clearcoat_attenuation_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0.5, 0.5, 0.5 ]
     
@@ -62,7 +62,7 @@ title: DwaRefractiveMaterial
     
     <h3>clearcoat_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Beckmann = 0
     
@@ -74,7 +74,7 @@ title: DwaRefractiveMaterial
     
     <h3>clearcoat_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -92,7 +92,7 @@ title: DwaRefractiveMaterial
     
     <h3>clearcoat_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.10000000149
     
@@ -101,7 +101,7 @@ title: DwaRefractiveMaterial
     
     <h3>clearcoat_thickness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -154,7 +154,7 @@ title: DwaRefractiveMaterial
     
     <h3>presence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -180,7 +180,7 @@ title: DwaRefractiveMaterial
     
     <h3>emission</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -206,7 +206,7 @@ title: DwaRefractiveMaterial
     
     <h3>fuzz</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -215,7 +215,7 @@ title: DwaRefractiveMaterial
     
     <h3>fuzz_albedo</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -233,7 +233,7 @@ title: DwaRefractiveMaterial
     
     <h3>fuzz_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -242,7 +242,7 @@ title: DwaRefractiveMaterial
     
     <h3>fuzz_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.25
     
@@ -277,7 +277,7 @@ title: DwaRefractiveMaterial
     
     <h3>iridescence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -286,7 +286,7 @@ title: DwaRefractiveMaterial
     
     <h3>iridescence_apply_to</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - primary specular = 0 (default)
     
@@ -298,7 +298,7 @@ title: DwaRefractiveMaterial
     
     <h3>iridescence_at_0_incidence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -307,7 +307,7 @@ title: DwaRefractiveMaterial
     
     <h3>iridescence_at_90_incidence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -316,7 +316,7 @@ title: DwaRefractiveMaterial
     
     <h3>iridescence_color_control</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - use hue interpolation = 0 (default)
     
@@ -337,7 +337,7 @@ title: DwaRefractiveMaterial
     
     <h3>iridescence_exponent</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -375,7 +375,7 @@ title: DwaRefractiveMaterial
     
     <h3>iridescence_primary_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 0, 0 ]
     
@@ -384,7 +384,7 @@ title: DwaRefractiveMaterial
     
     <h3>iridescence_ramp_interpolation_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - RGB = 0 (default)
     
@@ -396,7 +396,7 @@ title: DwaRefractiveMaterial
     
     <h3>iridescence_secondary_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 0, 0 ]
     
@@ -405,7 +405,7 @@ title: DwaRefractiveMaterial
     
     <h3>iridescence_thickness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -431,7 +431,7 @@ title: DwaRefractiveMaterial
     
     <h3>input_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -457,7 +457,7 @@ title: DwaRefractiveMaterial
     
     <h3>normal_AA_strategy</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - none = 0 (default)
     
@@ -477,7 +477,7 @@ title: DwaRefractiveMaterial
     
     <h3>anisotropy</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -495,7 +495,7 @@ title: DwaRefractiveMaterial
     
     <h3>roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -504,7 +504,7 @@ title: DwaRefractiveMaterial
     
     <h3>shading_tangent</h3>
     <b>Vec2f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 0 ]
     
@@ -522,7 +522,7 @@ title: DwaRefractiveMaterial
     
     <h3>specular_model</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Beckmann = 0
     
@@ -560,7 +560,7 @@ title: DwaRefractiveMaterial
     
     <h3>independent_transmission_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -578,7 +578,7 @@ title: DwaRefractiveMaterial
     
     <h3>transmission_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     

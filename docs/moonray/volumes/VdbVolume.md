@@ -18,7 +18,7 @@ title: VdbVolume
     
     <h3>anisotropy</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -27,7 +27,7 @@ title: VdbVolume
     
     <h3>color_mult</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -36,7 +36,7 @@ title: VdbVolume
     
     <h3>incandescence_gain_mult</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -45,7 +45,7 @@ title: VdbVolume
     
     <h3>opacity_gain_mult</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -71,7 +71,7 @@ title: VdbVolume
     
     <h3>bake_resolution_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - default = 0 (default)
     

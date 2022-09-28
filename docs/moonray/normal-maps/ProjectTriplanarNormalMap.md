@@ -498,7 +498,7 @@ title: ProjectTriplanarNormalMap
     
     <h3>TRS_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Scale Rot Trans = 0 (default)
     
@@ -527,7 +527,7 @@ title: ProjectTriplanarNormalMap
     
     <h3>negative_x_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -545,7 +545,7 @@ title: ProjectTriplanarNormalMap
     
     <h3>negative_y_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -563,7 +563,7 @@ title: ProjectTriplanarNormalMap
     
     <h3>negative_z_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -572,7 +572,7 @@ title: ProjectTriplanarNormalMap
     
     <h3>normal_encoding</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - [0,1] = 0 (default)
     
@@ -584,7 +584,7 @@ title: ProjectTriplanarNormalMap
     
     <h3>number_of_textures</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - one = 1
     
@@ -607,7 +607,7 @@ title: ProjectTriplanarNormalMap
     
     <h3>positive_x_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -625,7 +625,7 @@ title: ProjectTriplanarNormalMap
     
     <h3>positive_y_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -643,7 +643,7 @@ title: ProjectTriplanarNormalMap
     
     <h3>positive_z_texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -661,7 +661,7 @@ title: ProjectTriplanarNormalMap
     
     <h3>projection_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - projector = 0 (default)
     
@@ -729,7 +729,7 @@ title: ProjectTriplanarNormalMap
     
     <h3>rotation_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - xyz = 0 (default)
     

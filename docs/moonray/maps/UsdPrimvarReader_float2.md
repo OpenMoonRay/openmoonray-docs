@@ -18,7 +18,7 @@ title: UsdPrimvarReader_float2
     
     <h3>fallback</h3>
     <b>Vec2f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0 ]
     

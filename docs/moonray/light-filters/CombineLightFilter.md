@@ -27,7 +27,7 @@ title: CombineLightFilter
     
     <h3>mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - multiply = 0 (default)
     

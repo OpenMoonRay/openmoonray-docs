@@ -27,7 +27,7 @@ title: CurvatureMap
     
     <h3>mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - convex = 0
     

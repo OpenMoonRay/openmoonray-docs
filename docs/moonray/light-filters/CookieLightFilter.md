@@ -72,7 +72,7 @@ title: CookieLightFilter
     
     <h3>blur_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - gaussian = 0 (default)
     
@@ -102,7 +102,7 @@ title: CookieLightFilter
     
     <h3>outside_projection</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - black = 0 (default)
     
@@ -142,7 +142,7 @@ title: CookieLightFilter
     
     <h3>node_xform</h3>
     <b>Mat4d</b>
-    <span class="emphasized">blurrable</span>
+    <i>blurrable</i>
     
     default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
     
@@ -187,7 +187,7 @@ title: CookieLightFilter
     
     <h3>projector_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - perspective = 0 (default)
     

@@ -18,7 +18,7 @@ title: ProjectPlanarNormalMap
     
     <h3>TRS_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - Scale Rot Trans = 0 (default)
     
@@ -38,7 +38,7 @@ title: ProjectPlanarNormalMap
     
     <h3>normal_encoding</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - [0,1] = 0 (default)
     
@@ -59,7 +59,7 @@ title: ProjectPlanarNormalMap
     
     <h3>projection_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - projector = 0 (default)
     
@@ -91,7 +91,7 @@ title: ProjectPlanarNormalMap
     
     <h3>rotation_order</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - xyz = 0 (default)
     
@@ -120,7 +120,7 @@ title: ProjectPlanarNormalMap
     
     <h3>texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     

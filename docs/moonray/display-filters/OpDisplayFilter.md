@@ -71,7 +71,7 @@ title: OpDisplayFilter
     
     <h3>operation</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - add = 0 (default)
     

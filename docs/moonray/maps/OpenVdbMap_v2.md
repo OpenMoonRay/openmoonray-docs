@@ -53,7 +53,7 @@ title: OpenVdbMap_v2
     
     <h3>input_texture_coordinates</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -62,7 +62,7 @@ title: OpenVdbMap_v2
     
     <h3>interpolation</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - point = 0
     
@@ -94,7 +94,7 @@ title: OpenVdbMap_v2
     
     <h3>texture</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -103,7 +103,7 @@ title: OpenVdbMap_v2
     
     <h3>texture_coordinates</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - position = 0 (default)
     
@@ -117,7 +117,7 @@ title: OpenVdbMap_v2
     
     <h3>vdb_source</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - from texture = 0 (default)
     

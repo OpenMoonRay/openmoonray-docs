@@ -53,7 +53,7 @@ title: BlendDisplayFilter
     
     <h3>blendType</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - linear = 0 (default)
     

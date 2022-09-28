@@ -18,7 +18,7 @@ title: UsdPrimvarReader_vector
     
     <h3>fallback</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     

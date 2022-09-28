@@ -27,7 +27,7 @@ title: OpMap
     
     <h3>op1</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -36,7 +36,7 @@ title: OpMap
     
     <h3>op1_factor</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -45,7 +45,7 @@ title: OpMap
     
     <h3>op2</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -54,7 +54,7 @@ title: OpMap
     
     <h3>op2_factor</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -63,7 +63,7 @@ title: OpMap
     
     <h3>operation</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - add = 0 (default)
     

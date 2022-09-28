@@ -27,7 +27,7 @@ title: ToonDisplayFilter
     
     <h3>edge_detector</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - None = 0 (default)
     

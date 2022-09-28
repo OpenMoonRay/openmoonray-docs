@@ -18,7 +18,7 @@ title: HairLayerMaterial
     
     <h3>blend_color_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - RGB = 0 (default)
     
@@ -32,7 +32,7 @@ title: HairLayerMaterial
     
     <h3>fallback_bssrdf</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - normalized diffusion = 0 (default)
     
@@ -88,7 +88,7 @@ title: HairLayerMaterial
     
     <h3>mask</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

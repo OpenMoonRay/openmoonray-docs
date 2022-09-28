@@ -44,7 +44,7 @@ title: ImageDisplayFilter
     
     <h3>display_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - stretch = 0 (default)
     
@@ -64,7 +64,7 @@ title: ImageDisplayFilter
     
     <h3>image_path</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     

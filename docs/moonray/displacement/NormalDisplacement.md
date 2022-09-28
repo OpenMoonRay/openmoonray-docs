@@ -27,7 +27,7 @@ title: NormalDisplacement
     
     <h3>height</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -36,7 +36,7 @@ title: NormalDisplacement
     
     <h3>height_multiplier</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     

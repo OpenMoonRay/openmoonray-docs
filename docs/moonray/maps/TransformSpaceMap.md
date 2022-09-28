@@ -36,7 +36,7 @@ title: TransformSpaceMap
     
     <h3>from_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - render = 0 (default)
     
@@ -68,7 +68,7 @@ title: TransformSpaceMap
     
     <h3>input</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -77,7 +77,7 @@ title: TransformSpaceMap
     
     <h3>input_type</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - point = 0
     
@@ -100,7 +100,7 @@ title: TransformSpaceMap
     
     <h3>to_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - render = 0
     

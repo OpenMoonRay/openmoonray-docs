@@ -27,7 +27,7 @@ title: MacroFlakeMaterial
     
     <h3>input_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -44,7 +44,7 @@ title: MacroFlakeMaterial
     
     <h3>metallic_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -53,7 +53,7 @@ title: MacroFlakeMaterial
     
     <h3>metallic_edge_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -62,7 +62,7 @@ title: MacroFlakeMaterial
     
     <h3>roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -88,7 +88,7 @@ title: MacroFlakeMaterial
     
     <h3>diffuse_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - block = 0
     
@@ -109,7 +109,7 @@ title: MacroFlakeMaterial
     
     <h3>fuzz_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - block = 0 (default)
     
@@ -139,7 +139,7 @@ title: MacroFlakeMaterial
     
     <h3>mask</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -157,7 +157,7 @@ title: MacroFlakeMaterial
     
     <h3>specular_background_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - block = 0
     

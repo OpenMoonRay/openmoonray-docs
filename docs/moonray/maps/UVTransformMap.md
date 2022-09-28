@@ -63,7 +63,7 @@ title: UVTransformMap
     
     <h3>space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - render = 0
     

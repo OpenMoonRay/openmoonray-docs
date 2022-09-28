@@ -62,7 +62,7 @@ title: RgbToHsvDisplayFilter
     
     <h3>mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - rgb_to_hsv = 0 (default)
     

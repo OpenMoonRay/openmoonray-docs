@@ -18,7 +18,7 @@ title: HairColorPresetsMap
     
     <h3>color</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - black = 0 (default)
     

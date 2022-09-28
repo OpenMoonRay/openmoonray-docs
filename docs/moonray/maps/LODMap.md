@@ -18,7 +18,7 @@ title: LODMap
     
     <h3>far_value</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -27,7 +27,7 @@ title: LODMap
     
     <h3>mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - feature width = 0 (default)
     
@@ -39,7 +39,7 @@ title: LODMap
     
     <h3>near_value</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     

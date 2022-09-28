@@ -18,7 +18,7 @@ title: BaseVolume
     
     <h3>attenuation_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -27,7 +27,7 @@ title: BaseVolume
     
     <h3>attenuation_intensity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -44,7 +44,7 @@ title: BaseVolume
     
     <h3>emission_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -53,7 +53,7 @@ title: BaseVolume
     
     <h3>emission_intensity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -70,7 +70,7 @@ title: BaseVolume
     
     <h3>anisotropy</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -79,7 +79,7 @@ title: BaseVolume
     
     <h3>diffuse_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -105,7 +105,7 @@ title: BaseVolume
     
     <h3>bake_resolution_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - default = 0 (default)
     

@@ -27,7 +27,7 @@ title: BaseMaterial
     
     <h3>diffuse_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -62,7 +62,7 @@ title: BaseMaterial
     
     <h3>directional_diffuse_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -80,7 +80,7 @@ title: BaseMaterial
     
     <h3>directional_diffuse_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.5
     
@@ -106,7 +106,7 @@ title: BaseMaterial
     
     <h3>emission_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -141,7 +141,7 @@ title: BaseMaterial
     
     <h3>iridescence_at_0_incidence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -150,7 +150,7 @@ title: BaseMaterial
     
     <h3>iridescence_exponent</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -159,7 +159,7 @@ title: BaseMaterial
     
     <h3>iridescence_factor</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -195,7 +195,7 @@ title: BaseMaterial
     
     <h3>iridescence_thickness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -212,7 +212,7 @@ title: BaseMaterial
     
     <h3>input_normal_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - tangent = 0 (default)
     
@@ -241,7 +241,7 @@ title: BaseMaterial
     
     <h3>opacity_factor</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -258,7 +258,7 @@ title: BaseMaterial
     
     <h3>retroreflectivity</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -276,7 +276,7 @@ title: BaseMaterial
     
     <h3>specular_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -294,7 +294,7 @@ title: BaseMaterial
     
     <h3>specular_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.300000011921
     
@@ -320,7 +320,7 @@ title: BaseMaterial
     
     <h3>translucency_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -338,7 +338,7 @@ title: BaseMaterial
     
     <h3>translucency_falloff</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -347,7 +347,7 @@ title: BaseMaterial
     
     <h3>translucency_radius</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -373,7 +373,7 @@ title: BaseMaterial
     
     <h3>translucent_diffuse_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -408,7 +408,7 @@ title: BaseMaterial
     
     <h3>transmission_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -434,7 +434,7 @@ title: BaseMaterial
     
     <h3>anisotropic_direction</h3>
     <b>Vec2f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 0 ]
     
@@ -443,7 +443,7 @@ title: BaseMaterial
     
     <h3>anisotropy</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -470,7 +470,7 @@ title: BaseMaterial
     
     <h3>fresnel_factor</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -488,7 +488,7 @@ title: BaseMaterial
     
     <h3>input_normal</h3>
     <b>Vec3f</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 1 ]
     

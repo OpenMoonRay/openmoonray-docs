@@ -18,7 +18,7 @@ title: ToonMap
     
     <h3>crease_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 0, 0 ]
     
@@ -27,7 +27,7 @@ title: ToonMap
     
     <h3>crease_scale</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -36,7 +36,7 @@ title: ToonMap
     
     <h3>crease_threshold</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 45.0
     
@@ -45,7 +45,7 @@ title: ToonMap
     
     <h3>fill_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -54,7 +54,7 @@ title: ToonMap
     
     <h3>mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - outline = 0
     
@@ -68,7 +68,7 @@ title: ToonMap
     
     <h3>outline_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -77,7 +77,7 @@ title: ToonMap
     
     <h3>outline_scale</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -86,7 +86,7 @@ title: ToonMap
     
     <h3>outline_threshold</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     

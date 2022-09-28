@@ -27,7 +27,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>presence</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -53,7 +53,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>albedo</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -62,7 +62,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>diffuse_roughness</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -71,7 +71,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>diffuse_transmission</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -80,7 +80,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>diffuse_transmission_blending_behavior</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - RGB = 0
     
@@ -92,7 +92,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>diffuse_transmission_color</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 0, 0, 0 ]
     
@@ -118,7 +118,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>emission</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -144,7 +144,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>fuzz</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -153,7 +153,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>fuzz_albedo</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -162,7 +162,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>fuzz_coverage</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.25
     
@@ -180,7 +180,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>fuzz_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -215,7 +215,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -242,7 +242,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_color_A</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -251,7 +251,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_color_B</h3>
     <b>Rgb</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: [ 1, 1, 1 ]
     
@@ -260,7 +260,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_color_hue_variation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -269,7 +269,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_color_saturation_variation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -278,7 +278,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_color_value_variation</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -296,7 +296,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_debug_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - off = 0 (default)
     
@@ -316,7 +316,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_density</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -325,7 +325,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_jitter</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -334,7 +334,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_layering_mode</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - physical = 0 (default)
     
@@ -382,7 +382,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_size_A</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -391,7 +391,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_size_B</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -400,7 +400,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_space</h3>
     <b>Int</b>
-    <span class="emphasized">enum</span>
+    <i>enum</i>
     
     - object = 4
     
@@ -412,7 +412,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_style_A_frequency</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
@@ -421,7 +421,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_style_B_frequency</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 0.0
     
@@ -430,7 +430,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_texture_A</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -439,7 +439,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>glitter_texture_B</h3>
     <b>String</b>
-    <span class="emphasized">filename</span>
+    <i>filename</i>
     
     default: 
     
@@ -483,7 +483,7 @@ title: DwaVelvetMaterial_v2
     
     <h3>input_normal_dial</h3>
     <b>Float</b>
-    <span class="emphasized">bindable</span>
+    <i>bindable</i>
     
     default: 1.0
     
