@@ -20,56 +20,56 @@ title: RandomMap
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">the input color used as a base seed to generate the random value</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the input color used as a base seed to generate the random value</p>
+      
+    </p>
     
     <h3>monochrome</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">outputs the same color for all three channels</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">outputs the same color for all three channels</p>
+      
+    </p>
     
     <h3>output_max</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">the maximum output random value</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the maximum output random value</p>
+      
+    </p>
     
     <h3>output_min</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">the minimum output random value</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the minimum output random value</p>
+      
+    </p>
     
     <h3>seed</h3>
     <p>
       <b>Int</b>
       
-        
-          default: 0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">additional seed added to input for random number generator</p>
-        
-      </p>
+      
+        default: 0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">additional seed added to input for random number generator</p>
+      
+    </p>
     
   </p>
 </details>

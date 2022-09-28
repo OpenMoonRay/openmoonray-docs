@@ -20,100 +20,100 @@ title: OrthographicCamera
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Enable Bokeh. Requires DOF to be enabled.</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Enable Bokeh. Requires DOF to be enabled.</p>
+      
+    </p>
     
     <h3>bokeh_angle</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Angle of iris rotation</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Angle of iris rotation</p>
+      
+    </p>
     
     <h3>bokeh_image</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Path to image file to be used for the iris</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Path to image file to be used for the iris</p>
+      
+    </p>
     
     <h3>bokeh_sides</h3>
     <p>
       <b>Int</b>
       
-        
-          default: 0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Number of sides of the iris. Specifying less than 3 sides will default to a disk.</p>
-        
-      </p>
+      
+        default: 0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of sides of the iris. Specifying less than 3 sides will default to a disk.</p>
+      
+    </p>
     
     <h3>bokeh_weight_location</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Distance from the origin of Bokeh shape</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Distance from the origin of Bokeh shape</p>
+      
+    </p>
     
     <h3>bokeh_weight_strength</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls the strength of weights as samples approach the weight location</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls the strength of weights as samples approach the weight location</p>
+      
+    </p>
     
     <h3>dof</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>dof_aperture</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 8.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 8.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>dof_focus_distance</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>
@@ -127,67 +127,67 @@ title: OrthographicCamera
     <p>
       <b>Float</b>
       
-        
-          default: 10000.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 10000.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>film_width_aperture</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 24.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 24.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>horizontal_film_offset</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>near</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>pixel_aspect_ratio</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">ratio of pixel size y / x</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">ratio of pixel size y / x</p>
+      
+    </p>
     
     <h3>vertical_film_offset</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>
@@ -201,34 +201,34 @@ title: OrthographicCamera
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>mb_shutter_close</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.25
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 0.25
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>mb_shutter_open</h3>
     <p>
       <b>Float</b>
       
-        
-          default: -0.25
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: -0.25
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>
@@ -242,12 +242,12 @@ title: OrthographicCamera
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>
@@ -261,12 +261,12 @@ title: OrthographicCamera
     <p>
       <b>Mat4d</b>
       <i>blurrable</i>
-        
-          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>

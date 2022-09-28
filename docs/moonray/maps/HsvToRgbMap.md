@@ -20,12 +20,12 @@ title: HsvToRgbMap
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+      
+    </p>
     
   </p>
 </details>

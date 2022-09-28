@@ -20,17 +20,17 @@ title: DeformationMap
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | RGB = 0
         
-            | RGB = 0
-          
-            | deformation_S = 1
-          
-            | deformation_T = 2
-          
-            | deformation_avg = 3 (default)
-          
+          | deformation_S = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls output: 
+          | deformation_T = 2
+        
+          | deformation_avg = 3 (default)
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls output: 
 
 		    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space 
 
@@ -39,30 +39,30 @@ title: DeformationMap
 		    deformation_T - deformation along T 
 
 		    deformation_avg - average deformation from ref space</p>
-        
-      </p>
+      
+    </p>
     
     <h3>use_warning_color</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">If derivatives are missing or zero output the warning color erroring out</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If derivatives are missing or zero output the warning color erroring out</p>
+      
+    </p>
     
     <h3>warning_color</h3>
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Warning color to output when derivatives are missing or zero</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Warning color to output when derivatives are missing or zero</p>
+      
+    </p>
     
   </p>
 </details>

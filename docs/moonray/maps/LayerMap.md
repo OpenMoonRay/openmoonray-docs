@@ -20,76 +20,76 @@ title: LayerMap
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>input_B</h3>
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>mask</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>mode</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | off = 0
         
-            | off = 0
-          
-            | over = 1 (default)
-          
-            | add = 2
-          
-            | subtract = 3
-          
-            | multiply = 4
-          
-            | screen = 5
-          
-            | overlay = 6
-          
-            | overlay contrast = 7
-          
-            | darken = 8
-          
-            | lighten = 9
-          
-            | color dodge = 10
-          
-            | color burn = 11
-          
-            | hard light = 12
-          
-            | soft light = 13
-          
-            | difference = 14
-          
-            | exclusion = 15
-          
+          | over = 1 (default)
         
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+          | add = 2
         
-      </p>
+          | subtract = 3
+        
+          | multiply = 4
+        
+          | screen = 5
+        
+          | overlay = 6
+        
+          | overlay contrast = 7
+        
+          | darken = 8
+        
+          | lighten = 9
+        
+          | color dodge = 10
+        
+          | color burn = 11
+        
+          | hard light = 12
+        
+          | soft light = 13
+        
+          | difference = 14
+        
+          | exclusion = 15
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>

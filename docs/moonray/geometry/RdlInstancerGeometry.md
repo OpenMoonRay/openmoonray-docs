@@ -20,374 +20,374 @@ title: RdlInstancerGeometry
     <p>
       <b>IntVector</b>
       
-        
-          default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">A list of index values to hide / disable. For example, with 4 instances you can supply a list of 0, 2 to disable those instances. If an index in this list is out of range, it is ignored.</p>
-        
-      </p>
+      
+        default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">A list of index values to hide / disable. For example, with 4 instances you can supply a list of 0, 2 to disable those instances. If an index in this list is out of range, it is ignored.</p>
+      
+    </p>
     
     <h3>evaluation_frame</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Evaluate geometry at specified frame (relative) instead of SceneVariables frame.</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Evaluate geometry at specified frame (relative) instead of SceneVariables frame.</p>
+      
+    </p>
     
     <h3>instance_level</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | instance level 0 = 0 (default)
         
-            | instance level 0 = 0 (default)
-          
-            | instance level 1 = 1
-          
-            | instance level 2 = 2
-          
-            | instance level 3 = 3
-          
-            | instance level 4 = 4
-          
+          | instance level 1 = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Level of this instance.  This level can be referenced in TransformSpaceMap to allow for transforming data to/from the local space of each instance this instancer produces.</p>
+          | instance level 2 = 2
         
-      </p>
+          | instance level 3 = 3
+        
+          | instance level 4 = 4
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Level of this instance.  This level can be referenced in TransformSpaceMap to allow for transforming data to/from the local space of each instance this instancer produces.</p>
+      
+    </p>
     
     <h3>label</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material aov expresssions</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material aov expresssions</p>
+      
+    </p>
     
     <h3>method</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | xform attributes = 0 (default)
         
-            | xform attributes = 0 (default)
-          
-            | xform list = 2
-          
+          | xform list = 2
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Specify the source of xforms/refIndices for instancing. If set to "xform attributes", taking data from attributes "positions", "orientations", "scales", "velocities" and "refIndices". If set to "xform list", taking data from "xform list", "velocities" and "refIndices". </p>
-        
-      </p>
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Specify the source of xforms/refIndices for instancing. If set to "xform attributes", taking data from attributes "positions", "orientations", "scales", "velocities" and "refIndices". If set to "xform list", taking data from "xform list", "velocities" and "refIndices". </p>
+      
+    </p>
     
     <h3>node_xform</h3>
     <p>
       <b>Mat4d</b>
       <i>blurrable</i>
-        
-          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>orientations</h3>
     <p>
       <b>Vec4fVector</b>
       
-        
-          default: []
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">A list of quaternions that represent the per-instance orientation. The length should be either 0 or consistent with "positions".</p>
-        
-      </p>
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">A list of quaternions that represent the per-instance orientation. The length should be either 0 or consistent with "positions".</p>
+      
+    </p>
     
     <h3>positions</h3>
     <p>
       <b>Vec3fVector</b>
       
-        
-          default: []
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">A list of vec3 that represent the per-instance position.</p>
-        
-      </p>
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">A list of vec3 that represent the per-instance position.</p>
+      
+    </p>
     
     <h3>primitive_attributes</h3>
     <p>
       <b>Userdata Vector</b>
       
-        
-          default: []
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per -instance</p>
-        
-      </p>
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per -instance</p>
+      
+    </p>
     
     <h3>ray_epsilon</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
+      
+    </p>
     
     <h3>ref_indices</h3>
     <p>
       <b>IntVector</b>
       
-        
-          default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">A list of index values to specify entry of "reference" per instance. The length should be either 0 or consistent with "positions"|"xform_list". The index entry falls back to 0 when this attribute is empty or the value of entry is out of index range</p>
-        
-      </p>
+      
+        default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">A list of index values to specify entry of "reference" per instance. The length should be either 0 or consistent with "positions"|"xform_list". The index entry falls back to 0 when this attribute is empty or the value of entry is out of index range</p>
+      
+    </p>
     
     <h3>references</h3>
     <p>
       <b>Geometry Vector</b>
       
-        
-          default: []
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
-        
-      </p>
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
+      
+    </p>
     
     <h3>reverse_normals</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">enable to reverse the normals in the geometry</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">enable to reverse the normals in the geometry</p>
+      
+    </p>
     
     <h3>scales</h3>
     <p>
       <b>Vec3fVector</b>
       
-        
-          default: []
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">A list of vec3 that represet the per-instance velocity(motion blur). The length should be either 0 or consistent with "positions".</p>
-        
-      </p>
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">A list of vec3 that represet the per-instance velocity(motion blur). The length should be either 0 or consistent with "positions".</p>
+      
+    </p>
     
     <h3>shadow_exclusion_mappings</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:
 
 A is a list of names of parts to be mapped, or asterisk to map the whole geometry
 
 B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
-        
-      </p>
+      
+    </p>
     
     <h3>shadow_ray_epsilon</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
+      
+    </p>
     
     <h3>shadow_receiver_label</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
+      
+    </p>
     
     <h3>side_type</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | force two-sided = 0 (default)
         
-            | force two-sided = 0 (default)
-          
-            | force single-sided = 1
-          
-            | use mesh sidedness = 2
-          
+          | force single-sided = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
+          | use mesh sidedness = 2
         
-      </p>
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
+      
+    </p>
     
     <h3>static</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">disable if the geometry will be updated between frames</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">disable if the geometry will be updated between frames</p>
+      
+    </p>
     
     <h3>use_reference_attributes</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Use the geometry attributes of the reference (prototype) instead of the ones on the InstanceGeometry.   Currently only works for shadow_ray_epsilon</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Use the geometry attributes of the reference (prototype) instead of the ones on the InstanceGeometry.   Currently only works for shadow_ray_epsilon</p>
+      
+    </p>
     
     <h3>use_reference_xforms</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Transform the reference (prototype) geometry by it's node_xform parameter before applying the instance transform</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Transform the reference (prototype) geometry by it's node_xform parameter before applying the instance transform</p>
+      
+    </p>
     
     <h3>velocities</h3>
     <p>
       <b>Vec3fVector</b>
       
-        
-          default: []
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>visible_diffuse_reflection</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
+      
+    </p>
     
     <h3>visible_diffuse_transmission</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
+      
+    </p>
     
     <h3>visible_glossy_reflection</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
+      
+    </p>
     
     <h3>visible_glossy_transmission</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
+      
+    </p>
     
     <h3>visible_in_camera</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible to camera rays</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible to camera rays</p>
+      
+    </p>
     
     <h3>visible_mirror_reflection</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
+      
+    </p>
     
     <h3>visible_mirror_transmission</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
+      
+    </p>
     
     <h3>visible_shadow</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry casts shadows</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry casts shadows</p>
+      
+    </p>
     
     <h3>visible_volume</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
+      
+    </p>
     
     <h3>xform_list</h3>
     <p>
       <b>Mat4dVector</b>
       
-        
-          default: []
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">A list of xforms that represent the per-instance xform.</p>
-        
-      </p>
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">A list of xforms that represent the per-instance xform.</p>
+      
+    </p>
     
   </p>
 </details>

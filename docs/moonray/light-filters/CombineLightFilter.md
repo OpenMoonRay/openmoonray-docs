@@ -20,43 +20,43 @@ title: CombineLightFilter
     <p>
       <b>Object Vector</b>
       
-        
-          default: []
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>mode</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | multiply = 0 (default)
         
-            | multiply = 0 (default)
-          
-            | min = 1
-          
-            | max = 2
-          
-            | add = 3
-          
-            | subtract = 4
-          
+          | min = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+          | max = 2
         
-      </p>
+          | add = 3
+        
+          | subtract = 4
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>on</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>

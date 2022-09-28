@@ -20,145 +20,145 @@ title: UsdUVTexture
     <p>
       <b>Rgb</b>
       
-        
-          default: [ 0, 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Bias to be applied to all components of the texture.  output = textureValue * scale + bias</p>
-        
-      </p>
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Bias to be applied to all components of the texture.  output = textureValue * scale + bias</p>
+      
+    </p>
     
     <h3>fallback</h3>
     <p>
       <b>Rgb</b>
       
-        
-          default: [ 0, 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Fallback value used when texture can not be read.</p>
-        
-      </p>
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Fallback value used when texture can not be read.</p>
+      
+    </p>
     
     <h3>file</h3>
     <p>
       <b>String</b>
       <i>filename</i>
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Path to the texture</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Path to the texture</p>
+      
+    </p>
     
     <h3>scale</h3>
     <p>
       <b>Rgb</b>
       
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Scale to be applied to all components of the texture.  output = textureValue * scale + bias</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Scale to be applied to all components of the texture.  output = textureValue * scale + bias</p>
+      
+    </p>
     
     <h3>sourceColorSpace</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | raw = 0
         
-            | raw = 0
-          
-            | sRGB = 1
-          
-            | auto = 2 (default)
-          
+          | sRGB = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Flag indicating the color space in which the source texture is encoded.</p>
+          | auto = 2 (default)
         
-      </p>
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Flag indicating the color space in which the source texture is encoded.</p>
+      
+    </p>
     
     <h3>st</h3>
     <p>
       <b>Vec2f</b>
       <i>bindable</i>
-        
-          default: [ 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Texture coordinate to use to fetch this texture.</p>
-        
-      </p>
+      
+        default: [ 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Texture coordinate to use to fetch this texture.</p>
+      
+    </p>
     
     <h3>udim_files</h3>
     <p>
       <b>StringVector</b>
       
-        
-          default: []
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>udim_max_v</h3>
     <p>
       <b>Int</b>
       
-        
-          default: 10
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">udim maximum v value</p>
-        
-      </p>
+      
+        default: 10
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">udim maximum v value</p>
+      
+    </p>
     
     <h3>udim_values</h3>
     <p>
       <b>IntVector</b>
       
-        
-          default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>wrapS</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | black = 0
         
-            | black = 0
-          
-            | clamp = 1
-          
-            | repeat = 2
-          
-            | mirror = 3
-          
-            | useMetadata = 4 (default)
-          
+          | clamp = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Wrap mode when reading this texture.</p>
+          | repeat = 2
         
-      </p>
+          | mirror = 3
+        
+          | useMetadata = 4 (default)
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Wrap mode when reading this texture.</p>
+      
+    </p>
     
     <h3>wrapT</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | black = 0
         
-            | black = 0
-          
-            | clamp = 1
-          
-            | repeat = 2
-          
-            | mirror = 3
-          
-            | useMetadata = 4 (default)
-          
+          | clamp = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Wrap mode when reading this texture.</p>
+          | repeat = 2
         
-      </p>
+          | mirror = 3
+        
+          | useMetadata = 4 (default)
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Wrap mode when reading this texture.</p>
+      
+    </p>
     
   </p>
 </details>

@@ -20,64 +20,64 @@ title: RenderOutput
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">true enables, false disables render output.</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">true enables, false disables render output.</p>
+      
+    </p>
     
     <h3>camera</h3>
     <p>
       <b>Camera</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Camera to use for this output.  If not specified, defaults to the primary camera.</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Camera to use for this output.  If not specified, defaults to the primary camera.</p>
+      
+    </p>
     
     <h3>channel_format</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | float = 0
         
-            | float = 0
-          
-            | half = 1 (default)
-          
+          | half = 1 (default)
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">The pixel encoding (bit depth and type) of the output channel.</p>
-        
-      </p>
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The pixel encoding (bit depth and type) of the output channel.</p>
+      
+    </p>
     
     <h3>channel_name</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Name of the output channel.  In the case of an empty channel name a sensible default name is chosen.</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Name of the output channel.  In the case of an empty channel name a sensible default name is chosen.</p>
+      
+    </p>
     
     <h3>channel_suffix_mode</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | auto = 0 (default)
         
-            | auto = 0 (default)
-          
-            | rgb = 1
-          
-            | xyz = 2
-          
-            | uvw = 3
-          
+          | rgb = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">When processing multi-channel outputs, how should channel names be suffixed?
+          | xyz = 2
+        
+          | uvw = 3
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">When processing multi-channel outputs, how should channel names be suffixed?
 
 	auto : a best guess suffix is chosen based on the type of output
 
@@ -86,162 +86,162 @@ title: RenderOutput
 	xyz  : .X, .Y, .Z
 
 	uvw  : .U, .V, .W</p>
-        
-      </p>
+      
+    </p>
     
     <h3>checkpoint_file_name</h3>
     <p>
       <b>String</b>
       
-        
-          default: checkpoint.exr
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Name of checkpoint output file.</p>
-        
-      </p>
+      
+        default: checkpoint.exr
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Name of checkpoint output file.</p>
+      
+    </p>
     
     <h3>checkpoint_multi_version_file_name</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Name of checkpoint output file under checkpoint file overwrite=off condition.</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Name of checkpoint output file under checkpoint file overwrite=off condition.</p>
+      
+    </p>
     
     <h3>compression</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | none = 0
         
-            | none = 0
-          
-            | zip = 1 (default)
-          
-            | rle = 2
-          
-            | zips = 3
-          
-            | piz = 4
-          
-            | pxr24 = 5
-          
-            | b44 = 6
-          
-            | b44a = 7
-          
-            | dwaa = 8
-          
-            | dwab = 9
-          
+          | zip = 1 (default)
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Compression used for file (or file part in the multi-part case). All render outputs that target the same image must specify the same compression.</p>
+          | rle = 2
         
-      </p>
+          | zips = 3
+        
+          | piz = 4
+        
+          | pxr24 = 5
+        
+          | b44 = 6
+        
+          | b44a = 7
+        
+          | dwaa = 8
+        
+          | dwab = 9
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Compression used for file (or file part in the multi-part case). All render outputs that target the same image must specify the same compression.</p>
+      
+    </p>
     
     <h3>cryptomatte_depth</h3>
     <p>
       <b>Int</b>
       
-        
-          default: 6
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Number of cryptomatte (id,coverage) data sets to output</p>
-        
-      </p>
+      
+        default: 6
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of cryptomatte (id,coverage) data sets to output</p>
+      
+    </p>
     
     <h3>denoise</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Run optix denoiser before writing to disk</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Run optix denoiser before writing to disk</p>
+      
+    </p>
     
     <h3>denoiser_input</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | not an input = 0 (default)
         
-            | not an input = 0 (default)
-          
-            | as albedo = 1
-          
-            | as normal = 2
-          
+          | as albedo = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">How to use this output as a denoiser input</p>
+          | as normal = 2
         
-      </p>
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">How to use this output as a denoiser input</p>
+      
+    </p>
     
     <h3>display_filter</h3>
     <p>
       <b>67108864</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "display filter", this attribute refers to a display filter object which is used to compute the output pixel values.</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "display filter", this attribute refers to a display filter object which is used to compute the output pixel values.</p>
+      
+    </p>
     
     <h3>exr_dwa_compression_level</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 85.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Compression level used for file with dwaa or dwab compression. All render outputs that target the same image must specify the same compression level.</p>
-        
-      </p>
+      
+        default: 85.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Compression level used for file with dwaa or dwab compression. All render outputs that target the same image must specify the same compression level.</p>
+      
+    </p>
     
     <h3>exr_header_attributes</h3>
     <p>
       <b>Metadata</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}</p>
+      
+    </p>
     
     <h3>file_name</h3>
     <p>
       <b>String</b>
       
-        
-          default: scene.exr
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Name of destination file.</p>
-        
-      </p>
+      
+        default: scene.exr
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Name of destination file.</p>
+      
+    </p>
     
     <h3>file_part</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Name of sub-image if using a multi-part exr file.</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Name of sub-image if using a multi-part exr file.</p>
+      
+    </p>
     
     <h3>lpe</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">This attribute specifies a light path expression to output. For details on light path expression syntax see:
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">This attribute specifies a light path expression to output. For details on light path expression syntax see:
 
 		https://github.com/imageworks/OpenShadingLanguage/wiki/OSL-Light-Path-Expressions
 
@@ -270,17 +270,17 @@ title: RenderOutput
 		'translucent'  : C<TD>[DSG]+[<L.>O]
 
 		'transmission' : C<TS>[DSG]+[<L.>O]</p>
-        
-      </p>
+      
+    </p>
     
     <h3>material_aov</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "material aov", this attribute specifies a material aov expression to output.  The expression format is: 
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "material aov", this attribute specifies a material aov expression to output.  The expression format is: 
 
 	[('<GL>')+\.][('<ML>')+\.][('<LL>')+\.][(SS|R|T|D|G|M)+\.][fresnel\.]<property>. Where:
 
@@ -365,28 +365,28 @@ title: RenderOutput
 		R.albedo            : Total reflection albedo 
 
 		'spec'.MG.roughness : Roughness of all mirror and glossy lobes that have the 'spec' label</p>
-        
-      </p>
+      
+    </p>
     
     <h3>math_filter</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | average = 0 (default)
         
-            | average = 0 (default)
-          
-            | sum = 1
-          
-            | min = 2
-          
-            | max = 3
-          
-            | force_consistent_sampling = 4
-          
-            | closest = 5
-          
+          | sum = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">the math filter over the pixel.
+          | min = 2
+        
+          | max = 3
+        
+          | force_consistent_sampling = 4
+        
+          | closest = 5
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the math filter over the pixel.
 
 options include:
 
@@ -401,99 +401,99 @@ options include:
 	force_consistent_sampling : average of the first "min_adaptive_samples"
 
 	closest                   : use sample with minimum z-depth</p>
-        
-      </p>
+      
+    </p>
     
     <h3>output_type</h3>
     <p>
       <b>String</b>
       
-        
-          default: flat
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Specifies the type of output.  Defaults to "flat", meaning a flat exr file.  "deep" will output a deep exr file.</p>
-        
-      </p>
+      
+        default: flat
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Specifies the type of output.  Defaults to "flat", meaning a flat exr file.  "deep" will output a deep exr file.</p>
+      
+    </p>
     
     <h3>primitive_attribute</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "primitive attribute", this attribute specifies the particular primitive attribute to output.  Default channel name is based on primitive attribute name and type.</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "primitive attribute", this attribute specifies the particular primitive attribute to output.  Default channel name is based on primitive attribute name and type.</p>
+      
+    </p>
     
     <h3>primitive_attribute_type</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | FLOAT = 0 (default)
         
-            | FLOAT = 0 (default)
-          
-            | VEC2F = 1
-          
-            | VEC3F = 2
-          
-            | RGB = 3
-          
+          | VEC2F = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">This attribute specifies the type of the attribute named with the "primitive attribute" setting.  This is required to uniquely specify the primitive attribute.</p>
+          | VEC3F = 2
         
-      </p>
+          | RGB = 3
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">This attribute specifies the type of the attribute named with the "primitive attribute" setting.  This is required to uniquely specify the primitive attribute.</p>
+      
+    </p>
     
     <h3>reference_render_output</h3>
     <p>
       <b>Renderoutput</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "variance aov", this attribute refers to another render output for which to calculate the pixel variance.</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "variance aov", this attribute refers to another render output for which to calculate the pixel variance.</p>
+      
+    </p>
     
     <h3>result</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | beauty = 0 (default)
         
-            | beauty = 0 (default)
-          
-            | alpha = 1
-          
-            | depth = 2
-          
-            | state variable = 3
-          
-            | primitive attribute = 4
-          
-            | time per pixel = 5
-          
-            | wireframe = 6
-          
-            | material aov = 7
-          
-            | light aov = 8
-          
-            | visibility aov = 9
-          
-            | variance aov = 10
-          
-            | weight = 11
-          
-            | beauty aux = 12
-          
-            | cryptomatte = 13
-          
-            | alpha aux = 14
-          
-            | display filter = 15
-          
+          | alpha = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">The result to output.  Available results: 
+          | depth = 2
+        
+          | state variable = 3
+        
+          | primitive attribute = 4
+        
+          | time per pixel = 5
+        
+          | wireframe = 6
+        
+          | material aov = 7
+        
+          | light aov = 8
+        
+          | visibility aov = 9
+        
+          | variance aov = 10
+        
+          | weight = 11
+        
+          | beauty aux = 12
+        
+          | cryptomatte = 13
+        
+          | alpha aux = 14
+        
+          | display filter = 15
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The result to output.  Available results: 
 
 	general results:
 
@@ -532,53 +532,53 @@ options include:
 		"time per pixel" - Time per pixel heat map metric,
 
 		"wireframe" - Render as wireframe</p>
-        
-      </p>
+      
+    </p>
     
     <h3>resume_file_name</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Name of input file for resume render start condition</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Name of input file for resume render start condition</p>
+      
+    </p>
     
     <h3>state_variable</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | P = 0
         
-            | P = 0
-          
-            | Ng = 1
-          
-            | N = 2 (default)
-          
-            | St = 3
-          
-            | dPds = 4
-          
-            | dPdt = 5
-          
-            | dSdx = 6
-          
-            | dSdy = 7
-          
-            | dTdx = 8
-          
-            | dTdy = 9
-          
-            | Wp = 10
-          
-            | depth = 11
-          
-            | motionvec = 12
-          
+          | Ng = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "state variable", this attribute specifies the particular state variable result. 
+          | N = 2 (default)
+        
+          | St = 3
+        
+          | dPds = 4
+        
+          | dPdt = 5
+        
+          | dSdx = 6
+        
+          | dSdy = 7
+        
+          | dTdx = 8
+        
+          | dTdy = 9
+        
+          | Wp = 10
+        
+          | depth = 11
+        
+          | motionvec = 12
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "state variable", this attribute specifies the particular state variable result. 
 
 	"P" - position (P.X, P.Y, P.Z), 
 
@@ -605,19 +605,19 @@ options include:
 	"depth" - z distance from camera (Z), 
 
 	"motionvec" - 2D motion vector</p>
-        
-      </p>
+      
+    </p>
     
     <h3>visibility_aov</h3>
     <p>
       <b>String</b>
       
-        
-          default: C[<T.><RS>]*[<R[DG]><TD>][LO]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "visibility aov", this attribute specifies a light path expression that defines the set of all paths usedto compute the visibility ratio.</p>
-        
-      </p>
+      
+        default: C[<T.><RS>]*[<R[DG]><TD>][LO]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "visibility aov", this attribute specifies a light path expression that defines the set of all paths usedto compute the visibility ratio.</p>
+      
+    </p>
     
   </p>
 </details>

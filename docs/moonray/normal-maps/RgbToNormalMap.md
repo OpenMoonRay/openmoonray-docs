@@ -20,12 +20,12 @@ title: RgbToNormalMap
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Input color to convert to a normal map</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Input color to convert to a normal map</p>
+      
+    </p>
     
   </p>
 </details>

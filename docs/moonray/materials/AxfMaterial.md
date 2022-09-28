@@ -20,37 +20,37 @@ title: AxfMaterial
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the amount of influence of the alternate normal</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">controls the amount of influence of the alternate normal</p>
+      
+    </p>
     
     <h3>normal</h3>
     <p>
       <b>Vec3f</b>
       <i>bindable</i>
-        
-          default: [ 0, 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'Normal' texture here, the multiplier is ignored. The state's normal is used when no texture is bound.</p>
-        
-      </p>
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'Normal' texture here, the multiplier is ignored. The state's normal is used when no texture is bound.</p>
+      
+    </p>
     
     <h3>normal_space</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | tangent = 0 (default)
         
-            | tangent = 0 (default)
-          
-            | render = 1
-          
+          | render = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Specifies what space the normal is given in.  Usually this is tangent space for texture maps and render space for projections</p>
-        
-      </p>
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Specifies what space the normal is given in.  Usually this is tangent space for texture maps and render space for projections</p>
+      
+    </p>
     
   </p>
 </details>
@@ -64,111 +64,111 @@ title: AxfMaterial
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'Alpha' texture here</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'Alpha' texture here</p>
+      
+    </p>
     
     <h3>aniso_rotation</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'AnisoRotation' texture here</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'AnisoRotation' texture here</p>
+      
+    </p>
     
     <h3>casts_caustics</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">allows continuation of caustic light paths</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">allows continuation of caustic light paths</p>
+      
+    </p>
     
     <h3>diffuse_color</h3>
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'DiffuseColor' texture here</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'DiffuseColor' texture here</p>
+      
+    </p>
     
     <h3>extra_aovs</h3>
     <p>
       <b>Map</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+      
+    </p>
     
     <h3>fresnel</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'Fresnel' texture here</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'Fresnel' texture here</p>
+      
+    </p>
     
     <h3>label</h3>
     <p>
       <b>String</b>
       
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+      
+    </p>
     
     <h3>priority</h3>
     <p>
       <b>Int</b>
       
-        
-          default: 0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
-        
-      </p>
+      
+        default: 0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+      
+    </p>
     
     <h3>specular_color</h3>
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'SpecularColor' texture here</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'SpecularColor' texture here</p>
+      
+    </p>
     
     <h3>specular_lobe</h3>
     <p>
       <b>Vec2f</b>
       <i>bindable</i>
-        
-          default: [ 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'SpecularLobe' texture here</p>
-        
-      </p>
+      
+        default: [ 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the 'SpecularLobe' texture here</p>
+      
+    </p>
     
   </p>
 </details>

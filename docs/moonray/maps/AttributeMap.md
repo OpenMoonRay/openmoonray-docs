@@ -20,32 +20,32 @@ title: AttributeMap
     <p>
       <b>String</b>
       
-        
-          default: Cd
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
-        
-      </p>
+      
+        default: Cd
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
+      
+    </p>
     
     <h3>primitive_attribute_type</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | float = 0
         
-            | float = 0
-          
-            | vec2f = 1
-          
-            | vec3f = 2
-          
-            | rgb = 3 (default)
-          
-            | int = 4
-          
+          | vec2f = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
+          | vec3f = 2
         
-      </p>
+          | rgb = 3 (default)
+        
+          | int = 4
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
+      
+    </p>
     
   </p>
 </details>
@@ -59,80 +59,80 @@ title: AttributeMap
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">input color - preferably a connected map</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">input color - preferably a connected map</p>
+      
+    </p>
     
     <h3>default_value</h3>
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">default value to display when the requested attribute is not available</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">default value to display when the requested attribute is not available</p>
+      
+    </p>
     
     <h3>map_type</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | primitive attribute = 0 (default)
         
-            | primitive attribute = 0 (default)
-          
-            | position = 1
-          
-            | texture st = 2
-          
-            | shading normal = 3
-          
-            | geometric normal = 4
-          
-            | dpds = 5
-          
-            | dpdt = 6
-          
-            | dnds = 7
-          
-            | dndt = 8
-          
-            | map color = 9
-          
-            | hair surface P = 12
-          
-            | hair surface N = 13
-          
-            | hair surface st = 14
-          
-            | hair closest surface st = 15
-          
-            | id = 16
-          
-            | velocity = 17
-          
-            | acceleration = 18
-          
-            | motionvec = 19
-          
+          | position = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+          | texture st = 2
         
-      </p>
+          | shading normal = 3
+        
+          | geometric normal = 4
+        
+          | dpds = 5
+        
+          | dpdt = 6
+        
+          | dnds = 7
+        
+          | dndt = 8
+        
+          | map color = 9
+        
+          | hair surface P = 12
+        
+          | hair surface N = 13
+        
+          | hair surface st = 14
+        
+          | hair closest surface st = 15
+        
+          | id = 16
+        
+          | velocity = 17
+        
+          | acceleration = 18
+        
+          | motionvec = 19
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>warn_when_unavailable</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Whether or not to issue a warning when the requested attribute is unavailable</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Whether or not to issue a warning when the requested attribute is unavailable</p>
+      
+    </p>
     
   </p>
 </details>

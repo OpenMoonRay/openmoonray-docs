@@ -20,23 +20,23 @@ title: LcToRgbMap
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>target_color</h3>
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 100, 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Target color for remapping, in LAB colorspace</p>
-        
-      </p>
+      
+        default: [ 100, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Target color for remapping, in LAB colorspace</p>
+      
+    </p>
     
   </p>
 </details>

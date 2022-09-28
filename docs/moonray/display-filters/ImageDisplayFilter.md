@@ -20,23 +20,23 @@ title: ImageDisplayFilter
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+      
+    </p>
     
     <h3>mix</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+      
+    </p>
     
   </p>
 </details>
@@ -50,56 +50,56 @@ title: ImageDisplayFilter
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | stretch = 0 (default)
         
-            | stretch = 0 (default)
-          
-            | fit_horizontal = 1
-          
-            | fit_vertical = 2
-          
-            | fit_by_smallest_dimension = 3
-          
-            | fit_by_largest_dimension = 4
-          
-            | no_scale = 5
-          
+          | fit_horizontal = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+          | fit_vertical = 2
         
-      </p>
+          | fit_by_smallest_dimension = 3
+        
+          | fit_by_largest_dimension = 4
+        
+          | no_scale = 5
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>image_path</h3>
     <p>
       <b>String</b>
       <i>filename</i>
-        
-          default: 
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">file path to the .exr we want to fit to the plane</p>
-        
-      </p>
+      
+        default: 
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">file path to the .exr we want to fit to the plane</p>
+      
+    </p>
     
     <h3>input</h3>
     <p>
       <b>67141632</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Input buffer</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Input buffer</p>
+      
+    </p>
     
     <h3>mask</h3>
     <p>
       <b>67141632</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>

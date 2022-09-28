@@ -20,23 +20,23 @@ title: BlendDisplayFilter
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+      
+    </p>
     
     <h3>mix</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+      
+    </p>
     
   </p>
 </details>
@@ -50,59 +50,59 @@ title: BlendDisplayFilter
     <p>
       <b>Float</b>
       
-        
-          default: 0.5
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">float determining amount of blend</p>
-        
-      </p>
+      
+        default: 0.5
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">float determining amount of blend</p>
+      
+    </p>
     
     <h3>blendType</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | linear = 0 (default)
         
-            | linear = 0 (default)
-          
-            | cubic = 1
-          
+          | cubic = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>input1</h3>
     <p>
       <b>67141632</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">first operand</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">first operand</p>
+      
+    </p>
     
     <h3>input2</h3>
     <p>
       <b>67141632</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">second operand</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">second operand</p>
+      
+    </p>
     
     <h3>mask</h3>
     <p>
       <b>67141632</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>

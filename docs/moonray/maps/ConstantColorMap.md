@@ -20,12 +20,12 @@ title: ConstantColorMap
     <p>
       <b>Rgb</b>
       
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">constant color value</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">constant color value</p>
+      
+    </p>
     
   </p>
 </details>

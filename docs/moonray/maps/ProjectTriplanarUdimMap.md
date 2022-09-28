@@ -20,270 +20,270 @@ title: ProjectTriplanarUdimMap
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | Scale Rot Trans = 0 (default)
         
-            | Scale Rot Trans = 0 (default)
-          
-            | Scale Trans Rot = 1
-          
-            | Rot Scale Trans = 2
-          
-            | Rot Trans Scale = 3
-          
-            | Trans Scale Rot = 4
-          
-            | Trans Rot Scale = 5
-          
+          | Scale Trans Rot = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply transformations</p>
+          | Rot Scale Trans = 2
         
-      </p>
+          | Rot Trans Scale = 3
+        
+          | Trans Scale Rot = 4
+        
+          | Trans Rot Scale = 5
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply transformations</p>
+      
+    </p>
     
     <h3>projection_matrix</h3>
     <p>
       <b>Mat4d</b>
       
-        
-          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">the transform to use for projection</p>
-        
-      </p>
+      
+        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the transform to use for projection</p>
+      
+    </p>
     
     <h3>projection_mode</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | projector = 0 (default)
         
-            | projector = 0 (default)
-          
-            | projection_matrix = 1
-          
-            | TRS = 2
-          
+          | projection_matrix = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Source parameters to use for projection transform</p>
+          | TRS = 2
         
-      </p>
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Source parameters to use for projection transform</p>
+      
+    </p>
     
     <h3>projector</h3>
     <p>
       <b>Node</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">the object whose transform to use for projection</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the object whose transform to use for projection</p>
+      
+    </p>
     
     <h3>rotate</h3>
     <p>
       <b>Vec3d</b>
       
-        
-          default: [ 0, 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation of the projection transform</p>
-        
-      </p>
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation of the projection transform</p>
+      
+    </p>
     
     <h3>rotation_order</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | xyz = 0 (default)
         
-            | xyz = 0 (default)
-          
-            | xzy = 1
-          
-            | yxz = 2
-          
-            | yzx = 3
-          
-            | zxy = 4
-          
-            | zyx = 5
-          
+          | xzy = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply rotation transformations</p>
+          | yxz = 2
         
-      </p>
+          | yzx = 3
+        
+          | zxy = 4
+        
+          | zyx = 5
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply rotation transformations</p>
+      
+    </p>
     
     <h3>scale</h3>
     <p>
       <b>Vec3d</b>
       
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of the projection transform</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of the projection transform</p>
+      
+    </p>
     
     <h3>translate</h3>
     <p>
       <b>Vec3d</b>
       
-        
-          default: [ 0, 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Tranlation of the projection transform</p>
-        
-      </p>
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Tranlation of the projection transform</p>
+      
+    </p>
     
     <h3>use_correct_uv</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">use correct uv orientation</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">use correct uv orientation</p>
+      
+    </p>
     
     <h3>use_reference_space</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
+      
+    </p>
     
     <h3>x_offset</h3>
     <p>
       <b>Vec2f</b>
       
-        
-          default: [ 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset for x projected map</p>
-        
-      </p>
+      
+        default: [ 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset for x projected map</p>
+      
+    </p>
     
     <h3>x_rotation</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation for x projected map</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation for x projected map</p>
+      
+    </p>
     
     <h3>x_rotation_center</h3>
     <p>
       <b>Vec2f</b>
       
-        
-          default: [ 0.5, 0.5 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center for x projected map</p>
-        
-      </p>
+      
+        default: [ 0.5, 0.5 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center for x projected map</p>
+      
+    </p>
     
     <h3>x_scale</h3>
     <p>
       <b>Vec2f</b>
       
-        
-          default: [ 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale for x projected map</p>
-        
-      </p>
+      
+        default: [ 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale for x projected map</p>
+      
+    </p>
     
     <h3>y_offset</h3>
     <p>
       <b>Vec2f</b>
       
-        
-          default: [ 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset for y projected map</p>
-        
-      </p>
+      
+        default: [ 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset for y projected map</p>
+      
+    </p>
     
     <h3>y_rotation</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation for y projected map</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation for y projected map</p>
+      
+    </p>
     
     <h3>y_rotation_center</h3>
     <p>
       <b>Vec2f</b>
       
-        
-          default: [ 0.5, 0.5 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center for y projected map</p>
-        
-      </p>
+      
+        default: [ 0.5, 0.5 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center for y projected map</p>
+      
+    </p>
     
     <h3>y_scale</h3>
     <p>
       <b>Vec2f</b>
       
-        
-          default: [ 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale for y projected map</p>
-        
-      </p>
+      
+        default: [ 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale for y projected map</p>
+      
+    </p>
     
     <h3>z_offset</h3>
     <p>
       <b>Vec2f</b>
       
-        
-          default: [ 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset for z projected map</p>
-        
-      </p>
+      
+        default: [ 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset for z projected map</p>
+      
+    </p>
     
     <h3>z_rotation</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation for z projected map</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation for z projected map</p>
+      
+    </p>
     
     <h3>z_rotation_center</h3>
     <p>
       <b>Vec2f</b>
       
-        
-          default: [ 0.5, 0.5 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center for z projected map</p>
-        
-      </p>
+      
+        default: [ 0.5, 0.5 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center for z projected map</p>
+      
+    </p>
     
     <h3>z_scale</h3>
     <p>
       <b>Vec2f</b>
       
-        
-          default: [ 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale for z projected map</p>
-        
-      </p>
+      
+        default: [ 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale for z projected map</p>
+      
+    </p>
     
   </p>
 </details>
