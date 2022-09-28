@@ -17,40 +17,48 @@ title: HairToonMaterial
   <p>
     
     <h3>back_hair_color</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced only) hair color used for back-lit hair (transmission/forward reflectance)</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced only) hair color used for back-lit hair (transmission/forward reflectance)</p>
+        
+      </p>
     
     <h3>front_hair_color</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced only) hair color used for front-lit hair (backward reflectance)</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced only) hair color used for front-lit hair (backward reflectance)</p>
+        
+      </p>
     
     <h3>sss_trace_set</h3>
-    <b>Traceset</b>
-    
+    <p>
+      <b>Traceset</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
+        
+      </p>
     
     <h3>use_independent_front_and_back_hair_color</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced) use a separate hair color for front and back</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced) use a separate hair color for front and back</p>
+        
+      </p>
     
   </p>
 </details>
@@ -61,13 +69,15 @@ title: HairToonMaterial
   <p>
     
     <h3>presence</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
+        
+      </p>
     
   </p>
 </details>
@@ -78,31 +88,37 @@ title: HairToonMaterial
   <p>
     
     <h3>hair_color</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>hair_diffuse</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount of hair diffuse</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Amount of hair diffuse</p>
+        
+      </p>
     
     <h3>show_hair_diffuse</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Show the hair diffuse lobe</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Show the hair diffuse lobe</p>
+        
+      </p>
     
   </p>
 </details>
@@ -113,22 +129,26 @@ title: HairToonMaterial
   <p>
     
     <h3>emission</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the energy emitted from this material</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the energy emitted from this material</p>
+        
+      </p>
     
     <h3>show_emission</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disable emission</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disable emission</p>
+        
+      </p>
     
   </p>
 </details>
@@ -139,180 +159,218 @@ title: HairToonMaterial
   <p>
     
     <h3>specular_1_enable_indirect_reflections</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables indirect GGX reflections for toon specular model</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables indirect GGX reflections for toon specular model</p>
+        
+      </p>
     
     <h3>specular_1_enable_input_normal</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables sampling the normal map for toon specular 1</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables sampling the normal map for toon specular 1</p>
+        
+      </p>
     
     <h3>specular_1_indirect_reflections_intensity</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the intensity for the indirect reflections of the toon specular model</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the intensity for the indirect reflections of the toon specular model</p>
+        
+      </p>
     
     <h3>specular_1_indirect_reflections_roughness</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.5
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the roughness for the indirect reflections of the toon specular model</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the roughness for the indirect reflections of the toon specular model</p>
+        
+      </p>
     
     <h3>specular_1_input_U</h3>
-    <b>Vec3f</b>
-    <i>bindable</i>
-      
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input U / tangent for specular stretch</p>
-      
+    <p>
+      <b>Vec3f</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">input U / tangent for specular stretch</p>
+        
+      </p>
     
     <h3>specular_1_input_V</h3>
-    <b>Vec3f</b>
-    <i>bindable</i>
-      
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input V / bitangent for specular stretch</p>
-      
+    <p>
+      <b>Vec3f</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">input V / bitangent for specular stretch</p>
+        
+      </p>
     
     <h3>specular_1_input_normal</h3>
-    <b>33554432</b>
-    
+    <p>
+      <b>33554432</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal for toon specular 1</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal for toon specular 1</p>
+        
+      </p>
     
     <h3>specular_1_input_normal_dial</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls influence of input normal versus hair normal for toon specular 1</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls influence of input normal versus hair normal for toon specular 1</p>
+        
+      </p>
     
     <h3>specular_1_intensity</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The overall intensity of the specular response</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The overall intensity of the specular response</p>
+        
+      </p>
     
     <h3>specular_1_interpolations</h3>
-    <b>IntVector</b>
-    
+    <p>
+      <b>IntVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+        
+          default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 
 			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
-      
+        
+      </p>
     
     <h3>specular_1_model</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | Toon_Surface = 2 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | Toon_Hair = 3
+            | Toon_Surface = 2 (default)
+          
+            | Toon_Hair = 3
+          
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">sets the normalized distribution function for specular</p>
-      
+          <p class="jekyll-theme-minimal scene-class-attr-comment">sets the normalized distribution function for specular</p>
+        
+      </p>
     
     <h3>specular_1_positions</h3>
-    <b>FloatVector</b>
-    
+    <p>
+      <b>FloatVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">ramp positions, maximum 10 allowed</p>
-      
+        
+          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">ramp positions, maximum 10 allowed</p>
+        
+      </p>
     
     <h3>specular_1_roughness</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.899999976158
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.899999976158
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
+        
+      </p>
     
     <h3>specular_1_show</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Show first toon specular lobe</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Show first toon specular lobe</p>
+        
+      </p>
     
     <h3>specular_1_stretch_u</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the u direction </p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the u direction </p>
+        
+      </p>
     
     <h3>specular_1_stretch_v</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the v direction </p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the v direction </p>
+        
+      </p>
     
     <h3>specular_1_tint</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>specular_1_use_input_vectors_for_stretch</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, use input_U and V. otherwise use geometry dPds/t</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, use input_U and V. otherwise use geometry dPds/t</p>
+        
+      </p>
     
     <h3>specular_1_values</h3>
-    <b>FloatVector</b>
-    
+    <p>
+      <b>FloatVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
-      
+        
+          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
+        
+      </p>
     
   </p>
 </details>
@@ -323,180 +381,218 @@ title: HairToonMaterial
   <p>
     
     <h3>specular_2_enable_indirect_reflections</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables indirect GGX reflections for toon specular model</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables indirect GGX reflections for toon specular model</p>
+        
+      </p>
     
     <h3>specular_2_enable_input_normal</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables sampling the normal map for toon specular 2</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables sampling the normal map for toon specular 2</p>
+        
+      </p>
     
     <h3>specular_2_indirect_reflections_intensity</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the intensity for the indirect reflections of the toon specular model</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the intensity for the indirect reflections of the toon specular model</p>
+        
+      </p>
     
     <h3>specular_2_indirect_reflections_roughness</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.5
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the roughness for the indirect reflections of the toon specular model</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the roughness for the indirect reflections of the toon specular model</p>
+        
+      </p>
     
     <h3>specular_2_input_U</h3>
-    <b>Vec3f</b>
-    <i>bindable</i>
-      
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input U / tangent for specular stretch</p>
-      
+    <p>
+      <b>Vec3f</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">input U / tangent for specular stretch</p>
+        
+      </p>
     
     <h3>specular_2_input_V</h3>
-    <b>Vec3f</b>
-    <i>bindable</i>
-      
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input V / bitangent for specular stretch</p>
-      
+    <p>
+      <b>Vec3f</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">input V / bitangent for specular stretch</p>
+        
+      </p>
     
     <h3>specular_2_input_normal</h3>
-    <b>33554432</b>
-    
+    <p>
+      <b>33554432</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal for toon specular 2</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal for toon specular 2</p>
+        
+      </p>
     
     <h3>specular_2_input_normal_dial</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls influence of input normal versus hair normal for toon specular 2</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls influence of input normal versus hair normal for toon specular 2</p>
+        
+      </p>
     
     <h3>specular_2_intensity</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The overall intensity of the specular response</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The overall intensity of the specular response</p>
+        
+      </p>
     
     <h3>specular_2_interpolations</h3>
-    <b>IntVector</b>
-    
+    <p>
+      <b>IntVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+        
+          default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 
 			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
-      
+        
+      </p>
     
     <h3>specular_2_model</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | Toon_Surface = 2 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | Toon_Hair = 3
+            | Toon_Surface = 2 (default)
+          
+            | Toon_Hair = 3
+          
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">sets the normalized distribution function for specular</p>
-      
+          <p class="jekyll-theme-minimal scene-class-attr-comment">sets the normalized distribution function for specular</p>
+        
+      </p>
     
     <h3>specular_2_positions</h3>
-    <b>FloatVector</b>
-    
+    <p>
+      <b>FloatVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">ramp positions, maximum 10 allowed</p>
-      
+        
+          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">ramp positions, maximum 10 allowed</p>
+        
+      </p>
     
     <h3>specular_2_roughness</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.899999976158
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.899999976158
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
+        
+      </p>
     
     <h3>specular_2_show</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Show second toon specular lobe</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Show second toon specular lobe</p>
+        
+      </p>
     
     <h3>specular_2_stretch_u</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the u direction </p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the u direction </p>
+        
+      </p>
     
     <h3>specular_2_stretch_v</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the v direction </p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the v direction </p>
+        
+      </p>
     
     <h3>specular_2_tint</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>specular_2_use_input_vectors_for_stretch</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, use input_U and V. otherwise use geometry dPds/t</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, use input_U and V. otherwise use geometry dPds/t</p>
+        
+      </p>
     
     <h3>specular_2_values</h3>
-    <b>FloatVector</b>
-    
+    <p>
+      <b>FloatVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
-      
+        
+          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
+        
+      </p>
     
   </p>
 </details>
@@ -507,180 +603,218 @@ title: HairToonMaterial
   <p>
     
     <h3>specular_3_enable_indirect_reflections</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables indirect GGX reflections for toon specular model</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables indirect GGX reflections for toon specular model</p>
+        
+      </p>
     
     <h3>specular_3_enable_input_normal</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables sampling the normal map for toon specular 3</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables sampling the normal map for toon specular 3</p>
+        
+      </p>
     
     <h3>specular_3_indirect_reflections_intensity</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the intensity for the indirect reflections of the toon specular model</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the intensity for the indirect reflections of the toon specular model</p>
+        
+      </p>
     
     <h3>specular_3_indirect_reflections_roughness</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.5
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the roughness for the indirect reflections of the toon specular model</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the roughness for the indirect reflections of the toon specular model</p>
+        
+      </p>
     
     <h3>specular_3_input_U</h3>
-    <b>Vec3f</b>
-    <i>bindable</i>
-      
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input U / tangent for specular stretch</p>
-      
+    <p>
+      <b>Vec3f</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">input U / tangent for specular stretch</p>
+        
+      </p>
     
     <h3>specular_3_input_V</h3>
-    <b>Vec3f</b>
-    <i>bindable</i>
-      
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input V / bitangent for specular stretch</p>
-      
+    <p>
+      <b>Vec3f</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">input V / bitangent for specular stretch</p>
+        
+      </p>
     
     <h3>specular_3_input_normal</h3>
-    <b>33554432</b>
-    
+    <p>
+      <b>33554432</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal for toon specular 3</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal for toon specular 3</p>
+        
+      </p>
     
     <h3>specular_3_input_normal_dial</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls influence of input normal versus hair normal for toon specular 3</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls influence of input normal versus hair normal for toon specular 3</p>
+        
+      </p>
     
     <h3>specular_3_intensity</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The overall intensity of the specular response</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The overall intensity of the specular response</p>
+        
+      </p>
     
     <h3>specular_3_interpolations</h3>
-    <b>IntVector</b>
-    
+    <p>
+      <b>IntVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+        
+          default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 
 			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
-      
+        
+      </p>
     
     <h3>specular_3_model</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | Toon_Surface = 2 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | Toon_Hair = 3
+            | Toon_Surface = 2 (default)
+          
+            | Toon_Hair = 3
+          
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">sets the normalized distribution function for specular</p>
-      
+          <p class="jekyll-theme-minimal scene-class-attr-comment">sets the normalized distribution function for specular</p>
+        
+      </p>
     
     <h3>specular_3_positions</h3>
-    <b>FloatVector</b>
-    
+    <p>
+      <b>FloatVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">ramp positions, maximum 10 allowed</p>
-      
+        
+          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">ramp positions, maximum 10 allowed</p>
+        
+      </p>
     
     <h3>specular_3_roughness</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.899999976158
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.899999976158
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
+        
+      </p>
     
     <h3>specular_3_show</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Show third toon specular lobe</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Show third toon specular lobe</p>
+        
+      </p>
     
     <h3>specular_3_stretch_u</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the u direction </p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the u direction </p>
+        
+      </p>
     
     <h3>specular_3_stretch_v</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the v direction </p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to stretch or compress the specular in the v direction </p>
+        
+      </p>
     
     <h3>specular_3_tint</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>specular_3_use_input_vectors_for_stretch</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, use input_U and V. otherwise use geometry dPds/t</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, use input_U and V. otherwise use geometry dPds/t</p>
+        
+      </p>
     
     <h3>specular_3_values</h3>
-    <b>FloatVector</b>
-    
+    <p>
+      <b>FloatVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
-      
+        
+          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
+        
+      </p>
     
   </p>
 </details>
@@ -691,70 +825,84 @@ title: HairToonMaterial
   <p>
     
     <h3>bssrdf</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | normalized diffusion = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | dipole = 1
+            | normalized diffusion = 0 (default)
+          
+            | dipole = 1
+          
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.</p>
-      
+          <p class="jekyll-theme-minimal scene-class-attr-comment">0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.</p>
+        
+      </p>
     
     <h3>enable_sss_input_normal</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables sampling the normal map for sss samples. More accurate but potentially expensive</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables sampling the normal map for sss samples. More accurate but potentially expensive</p>
+        
+      </p>
     
     <h3>input_normal</h3>
-    <b>33554432</b>
-    
+    <p>
+      <b>33554432</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal (only for SSS lobe)</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal (only for SSS lobe)</p>
+        
+      </p>
     
     <h3>input_normal_dial</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls influence of input normal versus hair normal for SSS</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls influence of input normal versus hair normal for SSS</p>
+        
+      </p>
     
     <h3>scattering_color</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the subsurface scattering 'falloff' color</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the subsurface scattering 'falloff' color</p>
+        
+      </p>
     
     <h3>scattering_radius</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the distance the light scatters beneath the surface.  When 0 surface diffuse is used</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the distance the light scatters beneath the surface.  When 0 surface diffuse is used</p>
+        
+      </p>
     
     <h3>subsurface_blend</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">0 is fully hair diffuse, 1 is fully SSS. No effect if scattering radius is 0.</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">0 is fully hair diffuse, 1 is fully SSS. No effect if scattering radius is 0.</p>
+        
+      </p>
     
   </p>
 </details>
@@ -765,31 +913,37 @@ title: HairToonMaterial
   <p>
     
     <h3>extra_aovs</h3>
-    <b>Map</b>
-    
+    <p>
+      <b>Map</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        
+      </p>
     
     <h3>label</h3>
-    <b>String</b>
-    
+    <p>
+      <b>String</b>
       
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
-      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        
+      </p>
     
     <h3>priority</h3>
-    <b>Int</b>
-    
+    <p>
+      <b>Int</b>
       
-        default: 0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
-      
+        
+          default: 0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        
+      </p>
     
   </p>
 </details>

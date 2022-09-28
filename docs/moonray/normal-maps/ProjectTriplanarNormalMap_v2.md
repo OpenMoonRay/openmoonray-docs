@@ -17,76 +17,92 @@ title: ProjectTriplanarNormalMap_v2
   <p>
     
     <h3>negative_x_invert_s</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        
+      </p>
     
     <h3>negative_x_invert_t</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        
+      </p>
     
     <h3>negative_x_offset</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        
+      </p>
     
     <h3>negative_x_rotation</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        
+      </p>
     
     <h3>negative_x_rotation_center</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        
+      </p>
     
     <h3>negative_x_scale</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
-      
+        
+          default: [ 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        
+      </p>
     
     <h3>negative_x_swap_st</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        
+      </p>
     
     <h3>negative_x_wrap_around</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        
+      </p>
     
   </p>
 </details>
@@ -97,76 +113,92 @@ title: ProjectTriplanarNormalMap_v2
   <p>
     
     <h3>negative_y_invert_s</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        
+      </p>
     
     <h3>negative_y_invert_t</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        
+      </p>
     
     <h3>negative_y_offset</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        
+      </p>
     
     <h3>negative_y_rotation</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        
+      </p>
     
     <h3>negative_y_rotation_center</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        
+      </p>
     
     <h3>negative_y_scale</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
-      
+        
+          default: [ 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        
+      </p>
     
     <h3>negative_y_swap_st</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        
+      </p>
     
     <h3>negative_y_wrap_around</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        
+      </p>
     
   </p>
 </details>
@@ -177,76 +209,92 @@ title: ProjectTriplanarNormalMap_v2
   <p>
     
     <h3>negative_z_invert_s</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        
+      </p>
     
     <h3>negative_z_invert_t</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        
+      </p>
     
     <h3>negative_z_offset</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        
+      </p>
     
     <h3>negative_z_rotation</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        
+      </p>
     
     <h3>negative_z_rotation_center</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        
+      </p>
     
     <h3>negative_z_scale</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
-      
+        
+          default: [ 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        
+      </p>
     
     <h3>negative_z_swap_st</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        
+      </p>
     
     <h3>negative_z_wrap_around</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        
+      </p>
     
   </p>
 </details>
@@ -257,76 +305,92 @@ title: ProjectTriplanarNormalMap_v2
   <p>
     
     <h3>positive_x_invert_s</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        
+      </p>
     
     <h3>positive_x_invert_t</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        
+      </p>
     
     <h3>positive_x_offset</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        
+      </p>
     
     <h3>positive_x_rotation</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        
+      </p>
     
     <h3>positive_x_rotation_center</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        
+      </p>
     
     <h3>positive_x_scale</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
-      
+        
+          default: [ 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        
+      </p>
     
     <h3>positive_x_swap_st</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        
+      </p>
     
     <h3>positive_x_wrap_around</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        
+      </p>
     
   </p>
 </details>
@@ -337,76 +401,92 @@ title: ProjectTriplanarNormalMap_v2
   <p>
     
     <h3>positive_y_invert_s</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        
+      </p>
     
     <h3>positive_y_invert_t</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        
+      </p>
     
     <h3>positive_y_offset</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        
+      </p>
     
     <h3>positive_y_rotation</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        
+      </p>
     
     <h3>positive_y_rotation_center</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        
+      </p>
     
     <h3>positive_y_scale</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
-      
+        
+          default: [ 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        
+      </p>
     
     <h3>positive_y_swap_st</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        
+      </p>
     
     <h3>positive_y_wrap_around</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        
+      </p>
     
   </p>
 </details>
@@ -417,76 +497,92 @@ title: ProjectTriplanarNormalMap_v2
   <p>
     
     <h3>positive_z_invert_s</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        
+      </p>
     
     <h3>positive_z_invert_t</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        
+      </p>
     
     <h3>positive_z_offset</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        
+      </p>
     
     <h3>positive_z_rotation</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        
+      </p>
     
     <h3>positive_z_rotation_center</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
-      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        
+      </p>
     
     <h3>positive_z_scale</h3>
-    <b>Vec2f</b>
-    
+    <p>
+      <b>Vec2f</b>
       
-        default: [ 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
-      
+        
+          default: [ 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        
+      </p>
     
     <h3>positive_z_swap_st</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        
+      </p>
     
     <h3>positive_z_wrap_around</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        
+      </p>
     
   </p>
 </details>
@@ -497,314 +593,374 @@ title: ProjectTriplanarNormalMap_v2
   <p>
     
     <h3>TRS_order</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | Scale Rot Trans = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | Scale Trans Rot = 1
+            | Scale Rot Trans = 0 (default)
+          
+            | Scale Trans Rot = 1
+          
+            | Rot Scale Trans = 2
+          
+            | Rot Trans Scale = 3
+          
+            | Trans Scale Rot = 4
+          
+            | Trans Rot Scale = 5
+          
         
-          | Rot Scale Trans = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply transformations</p>
         
-          | Rot Trans Scale = 3
-        
-          | Trans Scale Rot = 4
-        
-          | Trans Rot Scale = 5
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply transformations</p>
-      
+      </p>
     
     <h3>input_normal</h3>
-    <b>Vec3f</b>
-    <i>bindable</i>
-      
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind normal data here</p>
-      
+    <p>
+      <b>Vec3f</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Bind normal data here</p>
+        
+      </p>
     
     <h3>input_position</h3>
-    <b>Vec3f</b>
-    <i>bindable</i>
-      
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind position data here</p>
-      
+    <p>
+      <b>Vec3f</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Bind position data here</p>
+        
+      </p>
     
     <h3>input_position_source</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | P/N = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | ref_P/ref_N = 1
+            | P/N = 0 (default)
+          
+            | ref_P/ref_N = 1
+          
+            | input_position/input_normal = 2
+          
         
-          | input_position/input_normal = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Input position to use</p>
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Input position to use</p>
-      
+      </p>
     
     <h3>negative_x_active</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        
+      </p>
     
     <h3>negative_x_texture</h3>
-    <b>String</b>
-    <i>filename</i>
-      
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      
+    <p>
+      <b>String</b>
+      <i>filename</i>
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        
+      </p>
     
     <h3>negative_y_active</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        
+      </p>
     
     <h3>negative_y_texture</h3>
-    <b>String</b>
-    <i>filename</i>
-      
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      
+    <p>
+      <b>String</b>
+      <i>filename</i>
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        
+      </p>
     
     <h3>negative_z_active</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        
+      </p>
     
     <h3>negative_z_texture</h3>
-    <b>String</b>
-    <i>filename</i>
-      
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      
+    <p>
+      <b>String</b>
+      <i>filename</i>
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        
+      </p>
     
     <h3>normal_encoding</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | [0,1] = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | [-1,1] = 1
+            | [0,1] = 0 (default)
+          
+            | [-1,1] = 1
+          
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
-      
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
+        
+      </p>
     
     <h3>number_of_textures</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | one = 1
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | three = 3 (default)
+            | one = 1
+          
+            | three = 3 (default)
+          
+            | six = 6
+          
         
-          | six = 6
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
-      
+      </p>
     
     <h3>positive_x_active</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        
+      </p>
     
     <h3>positive_x_texture</h3>
-    <b>String</b>
-    <i>filename</i>
-      
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      
+    <p>
+      <b>String</b>
+      <i>filename</i>
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        
+      </p>
     
     <h3>positive_y_active</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        
+      </p>
     
     <h3>positive_y_texture</h3>
-    <b>String</b>
-    <i>filename</i>
-      
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      
+    <p>
+      <b>String</b>
+      <i>filename</i>
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        
+      </p>
     
     <h3>positive_z_active</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        
+      </p>
     
     <h3>positive_z_texture</h3>
-    <b>String</b>
-    <i>filename</i>
-      
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      
+    <p>
+      <b>String</b>
+      <i>filename</i>
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        
+      </p>
     
     <h3>projection_matrix</h3>
-    <b>Mat4d</b>
-    
+    <p>
+      <b>Mat4d</b>
       
-        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the transform to use for projection</p>
-      
+        
+          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the transform to use for projection</p>
+        
+      </p>
     
     <h3>projection_mode</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | projector = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | projection_matrix = 1
+            | projector = 0 (default)
+          
+            | projection_matrix = 1
+          
+            | TRS = 2
+          
         
-          | TRS = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Source parameters to use for projection transform</p>
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Source parameters to use for projection transform</p>
-      
+      </p>
     
     <h3>projector</h3>
-    <b>Node</b>
-    
+    <p>
+      <b>Node</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the object whose transform to use for projection</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the object whose transform to use for projection</p>
+        
+      </p>
     
     <h3>random_seed</h3>
-    <b>Int</b>
-    
+    <p>
+      <b>Int</b>
       
-        default: 8241
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Seed for randomizing orientation, offset, and flip</p>
-      
+        
+          default: 8241
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Seed for randomizing orientation, offset, and flip</p>
+        
+      </p>
     
     <h3>randomize_flip</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rnd flipping in S or T for each active texture</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Rnd flipping in S or T for each active texture</p>
+        
+      </p>
     
     <h3>randomize_offset</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rnd offset in S or T for each active texture</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Rnd offset in S or T for each active texture</p>
+        
+      </p>
     
     <h3>randomize_rotation</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rnd 2d rotation of each active texture</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Rnd 2d rotation of each active texture</p>
+        
+      </p>
     
     <h3>rotate</h3>
-    <b>Vec3d</b>
-    
+    <p>
+      <b>Vec3d</b>
       
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation of the projection transform</p>
-      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation of the projection transform</p>
+        
+      </p>
     
     <h3>rotation_order</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | xyz = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | xzy = 1
+            | xyz = 0 (default)
+          
+            | xzy = 1
+          
+            | yxz = 2
+          
+            | yzx = 3
+          
+            | zxy = 4
+          
+            | zyx = 5
+          
         
-          | yxz = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply rotation transformations</p>
         
-          | yzx = 3
-        
-          | zxy = 4
-        
-          | zyx = 5
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply rotation transformations</p>
-      
+      </p>
     
     <h3>scale</h3>
-    <b>Vec3d</b>
-    
+    <p>
+      <b>Vec3d</b>
       
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of the projection transform</p>
-      
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of the projection transform</p>
+        
+      </p>
     
     <h3>transition_width</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.5
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls blending of per-axis projections.   Valid range is 0.0 (no blending) to 1.0 (max blending)</p>
-      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls blending of per-axis projections.   Valid range is 0.0 (no blending) to 1.0 (max blending)</p>
+        
+      </p>
     
     <h3>translate</h3>
-    <b>Vec3d</b>
-    
+    <p>
+      <b>Vec3d</b>
       
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Tranlation of the projection transform</p>
-      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Tranlation of the projection transform</p>
+        
+      </p>
     
   </p>
 </details>

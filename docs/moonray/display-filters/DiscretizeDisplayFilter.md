@@ -17,22 +17,26 @@ title: DiscretizeDisplayFilter
   <p>
     
     <h3>invert_mask</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        
+      </p>
     
     <h3>mix</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        
+      </p>
     
   </p>
 </details>
@@ -43,31 +47,37 @@ title: DiscretizeDisplayFilter
   <p>
     
     <h3>input</h3>
-    <b>67141632</b>
-    
+    <p>
+      <b>67141632</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Image buffer to discretize</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Image buffer to discretize</p>
+        
+      </p>
     
     <h3>mask</h3>
-    <b>67141632</b>
-    
+    <p>
+      <b>67141632</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>num_bins</h3>
-    <b>Int</b>
-    
+    <p>
+      <b>Int</b>
       
-        default: 8
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">number of discrete color bins</p>
-      
+        
+          default: 8
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">number of discrete color bins</p>
+        
+      </p>
     
   </p>
 </details>

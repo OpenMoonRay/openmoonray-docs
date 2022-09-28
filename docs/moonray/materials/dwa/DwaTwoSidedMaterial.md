@@ -17,74 +17,86 @@ title: DwaTwoSidedMaterial
   <p>
     
     <h3>fallback_bssrdf</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | normalized diffusion = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | dipole = 1
+            | normalized diffusion = 0 (default)
+          
+            | dipole = 1
+          
+            | random walk = 2
+          
         
-          | random walk = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">If the two materials disagree on the type of bssrdf, this type will be used instead.</p>
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If the two materials disagree on the type of bssrdf, this type will be used instead.</p>
-      
+      </p>
     
     <h3>fallback_clearcoat_use_bending</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of clearcoat use bending, this type will be used instead.</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of clearcoat use bending, this type will be used instead.</p>
+        
+      </p>
     
     <h3>fallback_outer_specular_model</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | Beckmann = 0
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | GGX = 1 (default)
+            | Beckmann = 0
+          
+            | GGX = 1 (default)
+          
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of outer specular model, this type will be used instead.</p>
-      
+          <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of outer specular model, this type will be used instead.</p>
+        
+      </p>
     
     <h3>fallback_specular_model</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | Beckmann = 0
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | GGX = 1 (default)
+            | Beckmann = 0
+          
+            | GGX = 1 (default)
+          
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of specular model, this type will be used instead.</p>
-      
+          <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of specular model, this type will be used instead.</p>
+        
+      </p>
     
     <h3>fallback_toon_specular_model</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | Beckmann = 0
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | GGX = 1 (default)
+            | Beckmann = 0
+          
+            | GGX = 1 (default)
+          
+            | Toon = 2
+          
         
-          | Toon = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of toon specular model, this type will be used instead.</p>
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of toon specular model, this type will be used instead.</p>
-      
+      </p>
     
     <h3>sss_trace_set</h3>
-    <b>Traceset</b>
-    
+    <p>
+      <b>Traceset</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">By default, only the geometry associated with this material contributes to subsurface. The DwaTwoSidedMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">By default, only the geometry associated with this material contributes to subsurface. The DwaTwoSidedMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
+        
+      </p>
     
   </p>
 </details>
@@ -95,49 +107,59 @@ title: DwaTwoSidedMaterial
   <p>
     
     <h3>back_material</h3>
-    <b>Dwabaselayerable</b>
-    
+    <p>
+      <b>Dwabaselayerable</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">material to use on back-facing surfaces</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">material to use on back-facing surfaces</p>
+        
+      </p>
     
     <h3>extra_aovs</h3>
-    <b>Map</b>
-    
+    <p>
+      <b>Map</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        
+      </p>
     
     <h3>front_material</h3>
-    <b>Dwabaselayerable</b>
-    
+    <p>
+      <b>Dwabaselayerable</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">material to use on front-facing surfaces</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">material to use on front-facing surfaces</p>
+        
+      </p>
     
     <h3>label</h3>
-    <b>String</b>
-    
+    <p>
+      <b>String</b>
       
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
-      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        
+      </p>
     
     <h3>priority</h3>
-    <b>Int</b>
-    
+    <p>
+      <b>Int</b>
       
-        default: 0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
-      
+        
+          default: 0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        
+      </p>
     
   </p>
 </details>

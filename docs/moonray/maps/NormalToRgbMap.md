@@ -17,13 +17,15 @@ title: NormalToRgbMap
   <p>
     
     <h3>input</h3>
-    <b>33554432</b>
-    
+    <p>
+      <b>33554432</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Input normal map to convert to a color</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Input normal map to convert to a color</p>
+        
+      </p>
     
   </p>
 </details>

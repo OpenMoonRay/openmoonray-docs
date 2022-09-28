@@ -17,22 +17,26 @@ title: RgbToFloatDisplayFilter
   <p>
     
     <h3>invert_mask</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        
+      </p>
     
     <h3>mix</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        
+      </p>
     
   </p>
 </details>
@@ -43,46 +47,52 @@ title: RgbToFloatDisplayFilter
   <p>
     
     <h3>input</h3>
-    <b>67141632</b>
-    
+    <p>
+      <b>67141632</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">image buffer</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">image buffer</p>
+        
+      </p>
     
     <h3>mask</h3>
-    <b>67141632</b>
-    
+    <p>
+      <b>67141632</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>mode</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | r = 0
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | g = 1
+            | r = 0
+          
+            | g = 1
+          
+            | b = 2
+          
+            | min = 3
+          
+            | max = 4
+          
+            | average = 5 (default)
+          
+            | sum = 6
+          
+            | luminance = 7
+          
         
-          | b = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specify the method to convert RGB Color to float</p>
         
-          | min = 3
-        
-          | max = 4
-        
-          | average = 5 (default)
-        
-          | sum = 6
-        
-          | luminance = 7
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specify the method to convert RGB Color to float</p>
-      
+      </p>
     
   </p>
 </details>

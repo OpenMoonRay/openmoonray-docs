@@ -17,598 +17,730 @@ title: SwitchDisplacement
   <p>
     
     <h3>bound_padding</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
+        
+      </p>
     
     <h3>choice</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in [0,63]</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in [0,63]</p>
+        
+      </p>
     
     <h3>displacement0</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement1</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement10</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement11</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement12</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement13</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement14</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement15</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement16</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement17</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement18</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement19</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement2</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement20</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement21</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement22</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement23</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement24</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement25</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement26</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement27</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement28</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement29</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement3</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement30</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement31</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement32</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement33</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement34</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement35</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement36</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement37</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement38</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement39</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement4</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement40</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement41</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement42</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement43</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement44</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement45</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement46</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement47</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement48</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement49</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement5</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement50</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement51</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement52</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement53</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement54</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement55</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement56</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement57</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement58</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement59</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement6</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement60</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement61</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement62</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement63</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement7</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement8</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>displacement9</h3>
-    <b>Displacement</b>
-    
+    <p>
+      <b>Displacement</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
   </p>
 </details>

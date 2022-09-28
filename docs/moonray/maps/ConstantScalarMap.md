@@ -17,13 +17,15 @@ title: ConstantScalarMap
   <p>
     
     <h3>scalar_value</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">constant scalar value</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">constant scalar value</p>
+        
+      </p>
     
   </p>
 </details>

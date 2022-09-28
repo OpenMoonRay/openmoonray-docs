@@ -17,13 +17,15 @@ title: ConstantColorMap
   <p>
     
     <h3>color_value</h3>
-    <b>Rgb</b>
-    
+    <p>
+      <b>Rgb</b>
       
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">constant color value</p>
-      
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">constant color value</p>
+        
+      </p>
     
   </p>
 </details>

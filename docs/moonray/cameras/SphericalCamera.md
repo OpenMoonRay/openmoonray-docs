@@ -17,22 +17,26 @@ title: SphericalCamera
   <p>
     
     <h3>far</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 10000.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 10000.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>near</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
   </p>
 </details>
@@ -43,31 +47,37 @@ title: SphericalCamera
   <p>
     
     <h3>mb_shutter_bias</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>mb_shutter_close</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.25
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 0.25
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>mb_shutter_open</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: -0.25
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: -0.25
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
   </p>
 </details>
@@ -78,13 +88,15 @@ title: SphericalCamera
   <p>
     
     <h3>pixel_sample_map</h3>
-    <b>String</b>
-    
+    <p>
+      <b>String</b>
       
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
   </p>
 </details>
@@ -95,13 +107,15 @@ title: SphericalCamera
   <p>
     
     <h3>node_xform</h3>
-    <b>Mat4d</b>
-    <i>blurrable</i>
-      
-        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Mat4d</b>
+      <i>blurrable</i>
+        
+          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
   </p>
 </details>

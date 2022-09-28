@@ -17,49 +17,59 @@ title: HairMap
   <p>
     
     <h3>base_color</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>bias</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.5
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>column_uv_color</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bound image map must have a HairColumnUvMap bound to its input texture coordinates.</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Bound image map must have a HairColumnUvMap bound to its input texture coordinates.</p>
+        
+      </p>
     
     <h3>gain</h3>
-    <b>Float</b>
-    <i>bindable</i>
-      
-        default: 0.5
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>tip_color</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
   </p>
 </details>

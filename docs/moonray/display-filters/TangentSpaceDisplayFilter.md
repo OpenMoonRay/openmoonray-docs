@@ -17,22 +17,26 @@ title: TangentSpaceDisplayFilter
   <p>
     
     <h3>invert_mask</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        
+      </p>
     
     <h3>mix</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        
+      </p>
     
   </p>
 </details>
@@ -43,49 +47,59 @@ title: TangentSpaceDisplayFilter
   <p>
     
     <h3>N</h3>
-    <b>67141632</b>
-    
+    <p>
+      <b>67141632</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Connect a RenderOutput with State N AOV here. Used to construct tangent space.</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Connect a RenderOutput with State N AOV here. Used to construct tangent space.</p>
+        
+      </p>
     
     <h3>dPds</h3>
-    <b>67141632</b>
-    
+    <p>
+      <b>67141632</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Connect a RenderOutput with State dPds AOV here. Used to construct tangent space.</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Connect a RenderOutput with State dPds AOV here. Used to construct tangent space.</p>
+        
+      </p>
     
     <h3>input</h3>
-    <b>67141632</b>
-    
+    <p>
+      <b>67141632</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">data to transform into tangent space</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">data to transform into tangent space</p>
+        
+      </p>
     
     <h3>mask</h3>
-    <b>67141632</b>
-    
+    <p>
+      <b>67141632</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>normal_map_output</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">when on, encodes the output to clamped [0, 1] in the same manner as a normal map</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">when on, encodes the output to clamped [0, 1] in the same manner as a normal map</p>
+        
+      </p>
     
   </p>
 </details>

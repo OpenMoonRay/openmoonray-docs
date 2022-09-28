@@ -17,13 +17,15 @@ title: HsvToRgbMap
   <p>
     
     <h3>input</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+        
+      </p>
     
   </p>
 </details>

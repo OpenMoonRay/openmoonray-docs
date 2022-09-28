@@ -17,120 +17,144 @@ title: CookieLightFilter
   <p>
     
     <h3>blur_far_distance</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>blur_far_value</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>blur_mid_value</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>blur_midpoint</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.5
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>blur_near_distance</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>blur_near_value</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>blur_type</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | gaussian = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | circular = 1
+            | gaussian = 0 (default)
+          
+            | circular = 1
+          
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>density</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>invert</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>outside_projection</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | black = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | white = 1
+            | black = 0 (default)
+          
+            | white = 1
+          
+            | default = 2
+          
         
-          | default = 2
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      </p>
     
     <h3>projector</h3>
-    <b>Camera</b>
-    
+    <p>
+      <b>Camera</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>texture_map</h3>
-    <b>Map</b>
-    
+    <p>
+      <b>Map</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
   </p>
 </details>
@@ -141,61 +165,73 @@ title: CookieLightFilter
   <p>
     
     <h3>node_xform</h3>
-    <b>Mat4d</b>
-    <i>blurrable</i>
-      
-        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Mat4d</b>
+      <i>blurrable</i>
+        
+          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>on</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>projector_film_width_aperture</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 24.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 24.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>projector_focal</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 30.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 30.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>projector_pixel_aspect_ratio</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>projector_type</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | perspective = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | orthographic = 1
+            | perspective = 0 (default)
+          
+            | orthographic = 1
+          
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
   </p>
 </details>

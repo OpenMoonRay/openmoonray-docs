@@ -17,13 +17,15 @@ title: LightFilterSet
   <p>
     
     <h3>lightfilters</h3>
-    <b>Lightfilter Vector</b>
-    
+    <p>
+      <b>Lightfilter Vector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
   </p>
 </details>

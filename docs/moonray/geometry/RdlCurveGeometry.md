@@ -17,13 +17,15 @@ title: RdlCurveGeometry
   <p>
     
     <h3>tessellation_rate</h3>
-    <b>Int</b>
-    
+    <p>
+      <b>Int</b>
       
-        default: 4
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of segments to split curve spans into</p>
-      
+        
+          default: 4
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Number of segments to split curve spans into</p>
+        
+      </p>
     
   </p>
 </details>
@@ -34,85 +36,98 @@ title: RdlCurveGeometry
   <p>
     
     <h3>accleration_list</h3>
-    <b>Vec3fVector</b>
-    
+    <p>
+      <b>Vec3fVector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare vertex accelerations for quadratic motion interpolation</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare vertex accelerations for quadratic motion interpolation</p>
+        
+      </p>
     
     <h3>curve_subtype</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | ray_facing = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | round = 1
+            | ray_facing = 0 (default)
+          
+            | round = 1
+          
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Curve subtype is ray facing or round</p>
-      
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Curve subtype is ray facing or round</p>
+        
+      </p>
     
     <h3>curve_type</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | linear = 0
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | bezier = 1 (default)
+            | linear = 0
+          
+            | bezier = 1 (default)
+          
+            | bspline = 2
+          
         
-          | bspline = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Curve interpolation type is linear, bezier, or bspline</p>
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Curve interpolation type is linear, bezier, or bspline</p>
-      
+      </p>
     
     <h3>curved_motion_blur_sample_count</h3>
-    <b>Int</b>
-    
+    <p>
+      <b>Int</b>
       
-        default: 10
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of time samples generated along each curve when using curved motion blur</p>
-      
+        
+          default: 10
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Number of time samples generated along each curve when using curved motion blur</p>
+        
+      </p>
     
     <h3>curves_vertex_count</h3>
-    <b>IntVector</b>
-    
+    <p>
+      <b>IntVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of vertices per curve</p>
-      
+        
+          default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of vertices per curve</p>
+        
+      </p>
     
     <h3>label</h3>
-    <b>String</b>
-    
+    <p>
+      <b>String</b>
       
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material aov expresssions</p>
-      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material aov expresssions</p>
+        
+      </p>
     
     <h3>motion_blur_type</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | best = -1 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | static = 0
+            | best = -1 (default)
+          
+            | static = 0
+          
+            | velocity = 1
+          
+            | frame delta = 2
+          
+            | acceleration = 3
+          
+            | hermite = 4
+          
         
-          | velocity = 1
-        
-          | frame delta = 2
-        
-          | acceleration = 3
-        
-          | hermite = 4
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.
 
 "static" will treat the mesh as static.
 
@@ -127,297 +142,358 @@ title: RdlCurveGeometry
 "best" will use choose the method which provides the highest quality given the available data.
 
 </p>
-      
+        
+      </p>
     
     <h3>node_xform</h3>
-    <b>Mat4d</b>
-    <i>blurrable</i>
-      
-        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Mat4d</b>
+      <i>blurrable</i>
+        
+          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>part_indices</h3>
-    <b>IntVector</b>
-    
+    <p>
+      <b>IntVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of part indices. </p>
-      
+        
+          default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of part indices. </p>
+        
+      </p>
     
     <h3>part_list</h3>
-    <b>StringVector</b>
-    
+    <p>
+      <b>StringVector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
+        
+      </p>
     
     <h3>primitive_attribute_frame</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | first motion step = 0
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | second motion step = 1
+            | first motion step = 0
+          
+            | second motion step = 1
+          
+            | both motion steps = 2 (default)
+          
         
-          | both motion steps = 2 (default)
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?
 
 	O : first motion step
 
 	1 : second motion step
 
 	2 : both motion steps</p>
-      
+        
+      </p>
     
     <h3>primitive_attributes</h3>
-    <b>Object Vector</b>
-    
+    <p>
+      <b>Object Vector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Vector of UserData.Each key/value pair will be added as a primitive attribute of the points.</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Vector of UserData.Each key/value pair will be added as a primitive attribute of the points.</p>
+        
+      </p>
     
     <h3>radius_list</h3>
-    <b>FloatVector</b>
-    
+    <p>
+      <b>FloatVector</b>
       
-        default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Stores all radii</p>
-      
+        
+          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Stores all radii</p>
+        
+      </p>
     
     <h3>ray_epsilon</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
+        
+      </p>
     
     <h3>references</h3>
-    <b>Geometry Vector</b>
-    
+    <p>
+      <b>Geometry Vector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
+        
+      </p>
     
     <h3>reverse_normals</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enable to reverse the normals in the geometry</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enable to reverse the normals in the geometry</p>
+        
+      </p>
     
     <h3>shadow_exclusion_mappings</h3>
-    <b>String</b>
-    
+    <p>
+      <b>String</b>
       
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:
 
 A is a list of names of parts to be mapped, or asterisk to map the whole geometry
 
 B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
-      
+        
+      </p>
     
     <h3>shadow_ray_epsilon</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
-      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
+        
+      </p>
     
     <h3>shadow_receiver_label</h3>
-    <b>String</b>
-    
+    <p>
+      <b>String</b>
       
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
-      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
+        
+      </p>
     
     <h3>side_type</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | force two-sided = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | force single-sided = 1
+            | force two-sided = 0 (default)
+          
+            | force single-sided = 1
+          
+            | use mesh sidedness = 2
+          
         
-          | use mesh sidedness = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
-      
+      </p>
     
     <h3>static</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">disable if the geometry will be updated between frames</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">disable if the geometry will be updated between frames</p>
+        
+      </p>
     
     <h3>use_rotation_motion_blur</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
+        
+      </p>
     
     <h3>uv_list</h3>
-    <b>Vec2fVector</b>
-    
+    <p>
+      <b>Vec2fVector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If the curves are using UVs, store them per-curve in this list</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">If the curves are using UVs, store them per-curve in this list</p>
+        
+      </p>
     
     <h3>velocity_list_0</h3>
-    <b>Vec3fVector</b>
-    
+    <p>
+      <b>Vec3fVector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare vertex velocities instead of a second motion step'</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare vertex velocities instead of a second motion step'</p>
+        
+      </p>
     
     <h3>velocity_list_1</h3>
-    <b>Vec3fVector</b>
-    
+    <p>
+      <b>Vec3fVector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
+        
+      </p>
     
     <h3>velocity_scale</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Adjust magnitude of velocity-based motion blur</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Adjust magnitude of velocity-based motion blur</p>
+        
+      </p>
     
     <h3>vertex_list_0</h3>
-    <b>Vec3fVector</b>
-    
+    <p>
+      <b>Vec3fVector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Stores all vertices used by the points at motion step 0</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Stores all vertices used by the points at motion step 0</p>
+        
+      </p>
     
     <h3>vertex_list_1</h3>
-    <b>Vec3fVector</b>
-    
+    <p>
+      <b>Vec3fVector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If the curves are in motion, the second motion step is stored in this attribute</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">If the curves are in motion, the second motion step is stored in this attribute</p>
+        
+      </p>
     
     <h3>visible_diffuse_reflection</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
+        
+      </p>
     
     <h3>visible_diffuse_transmission</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
+        
+      </p>
     
     <h3>visible_glossy_reflection</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
+        
+      </p>
     
     <h3>visible_glossy_transmission</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
+        
+      </p>
     
     <h3>visible_in_camera</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible to camera rays</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible to camera rays</p>
+        
+      </p>
     
     <h3>visible_mirror_reflection</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
+        
+      </p>
     
     <h3>visible_mirror_transmission</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
+        
+      </p>
     
     <h3>visible_shadow</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry casts shadows</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry casts shadows</p>
+        
+      </p>
     
     <h3>visible_volume</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
+        
+      </p>
     
   </p>
 </details>

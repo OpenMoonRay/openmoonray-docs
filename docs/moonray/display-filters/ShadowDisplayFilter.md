@@ -17,40 +17,48 @@ title: ShadowDisplayFilter
   <p>
     
     <h3>density</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.</p>
+        
+      </p>
     
     <h3>occluded</h3>
-    <b>67141632</b>
-    
+    <p>
+      <b>67141632</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Image Buffer representing the occluded image</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Image Buffer representing the occluded image</p>
+        
+      </p>
     
     <h3>shadow_color</h3>
-    <b>Rgb</b>
-    
+    <p>
+      <b>Rgb</b>
       
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">color of the shadow</p>
-      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">color of the shadow</p>
+        
+      </p>
     
     <h3>unoccluded</h3>
-    <b>67141632</b>
-    
+    <p>
+      <b>67141632</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Image Buffer representing the unoccluded image</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Image Buffer representing the unoccluded image</p>
+        
+      </p>
     
   </p>
 </details>

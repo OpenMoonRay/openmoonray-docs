@@ -17,85 +17,103 @@ title: Layer
   <p>
     
     <h3>displacements</h3>
-    <b>Displacement Vector</b>
-    
+    <p>
+      <b>Displacement Vector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>geometries</h3>
-    <b>SceneObjectIndexable</b>
-    
+    <p>
+      <b>SceneObjectIndexable</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>lightfiltersets</h3>
-    <b>Lightfilterset Vector</b>
-    
+    <p>
+      <b>Lightfilterset Vector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>lightsets</h3>
-    <b>Lightset Vector</b>
-    
+    <p>
+      <b>Lightset Vector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>parts</h3>
-    <b>StringVector</b>
-    
+    <p>
+      <b>StringVector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>shadowreceiversets</h3>
-    <b>134217728 Vector</b>
-    
+    <p>
+      <b>134217728 Vector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>shadowsets</h3>
-    <b>16777216 Vector</b>
-    
+    <p>
+      <b>16777216 Vector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>surface_shaders</h3>
-    <b>Material Vector</b>
-    
+    <p>
+      <b>Material Vector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>volume_shaders</h3>
-    <b>Volumeshader Vector</b>
-    
+    <p>
+      <b>Volumeshader Vector</b>
       
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
   </p>
 </details>

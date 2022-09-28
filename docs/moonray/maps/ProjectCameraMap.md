@@ -17,85 +17,103 @@ title: ProjectCameraMap
   <p>
     
     <h3>black_outside_projection</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
+        
+      </p>
     
     <h3>project_on_back_faces</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
+        
+      </p>
     
     <h3>projector</h3>
-    <b>Camera</b>
-    
+    <p>
+      <b>Camera</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>use_custom_window_coordinates</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">used to apply non-uniform scaling to projection</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">used to apply non-uniform scaling to projection</p>
+        
+      </p>
     
     <h3>use_reference_space</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
+        
+      </p>
     
     <h3>window_x_max</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">maximum projected x coordinate</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">maximum projected x coordinate</p>
+        
+      </p>
     
     <h3>window_x_min</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: -1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">minimum projected x coordinate</p>
-      
+        
+          default: -1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">minimum projected x coordinate</p>
+        
+      </p>
     
     <h3>window_y_max</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">maximum projected y coordinate</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">maximum projected y coordinate</p>
+        
+      </p>
     
     <h3>window_y_min</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: -1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">minimum projected y coordinate</p>
-      
+        
+          default: -1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">minimum projected y coordinate</p>
+        
+      </p>
     
   </p>
 </details>

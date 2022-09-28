@@ -17,31 +17,37 @@ title: UsdPrimvarReader_float2
   <p>
     
     <h3>fallback</h3>
-    <b>Vec2f</b>
-    <i>bindable</i>
-      
-        default: [ 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">fallback value to be returned if geometry fetch failed.</p>
-      
+    <p>
+      <b>Vec2f</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">fallback value to be returned if geometry fetch failed.</p>
+        
+      </p>
     
     <h3>varname</h3>
-    <b>String</b>
-    
+    <p>
+      <b>String</b>
       
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Name of the primvar to be read from the mesh</p>
-      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Name of the primvar to be read from the mesh</p>
+        
+      </p>
     
     <h3>warn_when_unavailable</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Whether or not to issue a warning when the requested attribute is unavailable</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Whether or not to issue a warning when the requested attribute is unavailable</p>
+        
+      </p>
     
   </p>
 </details>

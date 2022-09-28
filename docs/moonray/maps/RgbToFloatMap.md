@@ -17,37 +17,41 @@ title: RgbToFloatMap
   <p>
     
     <h3>input</h3>
-    <b>Rgb</b>
-    <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>mode</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | r = 0
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | g = 1
+            | r = 0
+          
+            | g = 1
+          
+            | b = 2
+          
+            | min = 3
+          
+            | max = 4
+          
+            | average = 5 (default)
+          
+            | sum = 6
+          
+            | luminance = 7
+          
         
-          | b = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specify the method to convert RGB Color to float</p>
         
-          | min = 3
-        
-          | max = 4
-        
-          | average = 5 (default)
-        
-          | sum = 6
-        
-          | luminance = 7
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specify the method to convert RGB Color to float</p>
-      
+      </p>
     
   </p>
 </details>

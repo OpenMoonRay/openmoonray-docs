@@ -17,47 +17,55 @@ title: CurvatureMap
   <p>
     
     <h3>invert</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>mode</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | convex = 0
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | concave = 1
+            | convex = 0
+          
+            | concave = 1
+          
+            | composite = 2
+          
+            | all = 3 (default)
+          
         
-          | composite = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
         
-          | all = 3 (default)
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
-      
+      </p>
     
     <h3>power</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 0.5
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
     <h3>scale</h3>
-    <b>Float</b>
-    
+    <p>
+      <b>Float</b>
       
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
     
   </p>
 </details>

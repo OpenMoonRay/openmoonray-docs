@@ -17,130 +17,152 @@ title: ProjectPlanarMap
   <p>
     
     <h3>TRS_order</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | Scale Rot Trans = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | Scale Trans Rot = 1
+            | Scale Rot Trans = 0 (default)
+          
+            | Scale Trans Rot = 1
+          
+            | Rot Scale Trans = 2
+          
+            | Rot Trans Scale = 3
+          
+            | Trans Scale Rot = 4
+          
+            | Trans Rot Scale = 5
+          
         
-          | Rot Scale Trans = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply transformations</p>
         
-          | Rot Trans Scale = 3
-        
-          | Trans Scale Rot = 4
-        
-          | Trans Rot Scale = 5
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply transformations</p>
-      
+      </p>
     
     <h3>black_outside_projection</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
+        
+      </p>
     
     <h3>project_on_back_faces</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear on back faces relative to projector</p>
-      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear on back faces relative to projector</p>
+        
+      </p>
     
     <h3>projection_matrix</h3>
-    <b>Mat4d</b>
-    
+    <p>
+      <b>Mat4d</b>
       
-        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the transform to use for projection</p>
-      
+        
+          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the transform to use for projection</p>
+        
+      </p>
     
     <h3>projection_mode</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | projector = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | projection_matrix = 1
+            | projector = 0 (default)
+          
+            | projection_matrix = 1
+          
+            | TRS = 2
+          
         
-          | TRS = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Source parameters to use for projection transform</p>
         
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Source parameters to use for projection transform</p>
-      
+      </p>
     
     <h3>projector</h3>
-    <b>Node</b>
-    
+    <p>
+      <b>Node</b>
       
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the object whose transform to use for projection</p>
-      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the object whose transform to use for projection</p>
+        
+      </p>
     
     <h3>rotate</h3>
-    <b>Vec3d</b>
-    
+    <p>
+      <b>Vec3d</b>
       
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation of the projection transform</p>
-      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation of the projection transform</p>
+        
+      </p>
     
     <h3>rotation_order</h3>
-    <b>Int</b>
-    <i>enum</i>
-      
-          | xyz = 0 (default)
+    <p>
+      <b>Int</b>
+      <i>enum</i>
         
-          | xzy = 1
+            | xyz = 0 (default)
+          
+            | xzy = 1
+          
+            | yxz = 2
+          
+            | yzx = 3
+          
+            | zxy = 4
+          
+            | zyx = 5
+          
         
-          | yxz = 2
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply rotation transformations</p>
         
-          | yzx = 3
-        
-          | zxy = 4
-        
-          | zyx = 5
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply rotation transformations</p>
-      
+      </p>
     
     <h3>scale</h3>
-    <b>Vec3d</b>
-    
+    <p>
+      <b>Vec3d</b>
       
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of the projection transform</p>
-      
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of the projection transform</p>
+        
+      </p>
     
     <h3>translate</h3>
-    <b>Vec3d</b>
-    
+    <p>
+      <b>Vec3d</b>
       
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Tranlation of the projection transform</p>
-      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Tranlation of the projection transform</p>
+        
+      </p>
     
     <h3>use_reference_space</h3>
-    <b>Bool</b>
-    
+    <p>
+      <b>Bool</b>
       
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
-      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
+        
+      </p>
     
   </p>
 </details>
