@@ -21,7 +21,7 @@ title: OpDisplayFilter
   
   default: False
   
-  invert value of mask
+  <p>invert value of mask<\p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: OpDisplayFilter
   
   default: 1.0
   
-  blend between output and input
+  <p>blend between output and input<\p>
   
   
   </p>
@@ -45,7 +45,7 @@ title: OpDisplayFilter
   
   default: None
   
-  first operand
+  <p>first operand<\p>
   
   
   <h3>input2</h3>
@@ -53,7 +53,7 @@ title: OpDisplayFilter
   
   default: None
   
-  second operand
+  <p>second operand<\p>
   
   
   <h3>mask</h3>

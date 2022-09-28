@@ -21,7 +21,7 @@ title: AttributeMap
   
   default: Cd
   
-  the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'
+  <p>the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'<\p>
   
   
   <h3>primitive_attribute_type</h3>
@@ -38,7 +38,7 @@ title: AttributeMap
   - int = 4
   
   
-  the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'
+  <p>the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'<\p>
   
   
   </p>
@@ -54,7 +54,7 @@ title: AttributeMap
   
   default: [ 1, 1, 1 ]
   
-  input color - preferably a connected map
+  <p>input color - preferably a connected map<\p>
   
   
   <h3>default_value</h3>
@@ -62,7 +62,7 @@ title: AttributeMap
   
   default: [ 1, 1, 1 ]
   
-  default value to display when the requested attribute is not available
+  <p>default value to display when the requested attribute is not available<\p>
   
   
   <h3>map_type</h3>
@@ -113,7 +113,7 @@ title: AttributeMap
   
   default: False
   
-  Whether or not to issue a warning when the requested attribute is unavailable
+  <p>Whether or not to issue a warning when the requested attribute is unavailable<\p>
   
   
   </p>

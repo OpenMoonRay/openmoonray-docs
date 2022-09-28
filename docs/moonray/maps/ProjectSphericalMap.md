@@ -32,7 +32,7 @@ title: ProjectSphericalMap
   - Trans Rot Scale = 5
   
   
-  Order in which to apply transformations
+  <p>Order in which to apply transformations<\p>
   
   
   <h3>projection_matrix</h3>
@@ -40,7 +40,7 @@ title: ProjectSphericalMap
   
   default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
   
-  the transform to use for projection
+  <p>the transform to use for projection<\p>
   
   
   <h3>projection_mode</h3>
@@ -53,7 +53,7 @@ title: ProjectSphericalMap
   - TRS = 2
   
   
-  Source parameters to use for projection transform
+  <p>Source parameters to use for projection transform<\p>
   
   
   <h3>projector</h3>
@@ -61,7 +61,7 @@ title: ProjectSphericalMap
   
   default: None
   
-  the object whose transform to use for projection
+  <p>the object whose transform to use for projection<\p>
   
   
   <h3>rotate</h3>
@@ -69,7 +69,7 @@ title: ProjectSphericalMap
   
   default: [ 0, 0, 0 ]
   
-  Rotation of the projection transform
+  <p>Rotation of the projection transform<\p>
   
   
   <h3>rotation_order</h3>
@@ -88,7 +88,7 @@ title: ProjectSphericalMap
   - zyx = 5
   
   
-  Order in which to apply rotation transformations
+  <p>Order in which to apply rotation transformations<\p>
   
   
   <h3>scale</h3>
@@ -96,7 +96,7 @@ title: ProjectSphericalMap
   
   default: [ 1, 1, 1 ]
   
-  Scale of the projection transform
+  <p>Scale of the projection transform<\p>
   
   
   <h3>translate</h3>
@@ -104,7 +104,7 @@ title: ProjectSphericalMap
   
   default: [ 0, 0, 0 ]
   
-  Tranlation of the projection transform
+  <p>Tranlation of the projection transform<\p>
   
   
   <h3>use_reference_space</h3>
@@ -112,7 +112,7 @@ title: ProjectSphericalMap
   
   default: False
   
-  use reference space
+  <p>use reference space<\p>
   
   
   </p>

@@ -21,7 +21,7 @@ title: RgbToHsvMap
   
   default: [ 1, 1, 1 ]
   
-  bind the input here
+  <p>bind the input here<\p>
   
   
   </p>

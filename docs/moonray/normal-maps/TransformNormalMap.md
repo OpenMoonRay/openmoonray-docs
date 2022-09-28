@@ -21,7 +21,7 @@ title: TransformNormalMap
   
   default: [ 0, 0, 1 ]
   
-  input normal in either tangent or render space
+  <p>input normal in either tangent or render space<\p>
   
   
   </p>
@@ -37,7 +37,7 @@ title: TransformNormalMap
   
   default: True
   
-  decode the input normal if it's in tangent space [0,1] -> [-1,1]
+  <p>decode the input normal if it's in tangent space [0,1] -> [-1,1]<\p>
   
   
   <h3>transform</h3>
@@ -48,7 +48,7 @@ title: TransformNormalMap
   - render to tangent = 1
   
   
-  transform to apply to the normals
+  <p>transform to apply to the normals<\p>
   
   
   </p>

@@ -21,7 +21,7 @@ title: UsdGeometry
   
   default: 4
   
-  Number of segments to split curve spans into
+  <p>Number of segments to split curve spans into<\p>
   
   
   </p>
@@ -37,7 +37,7 @@ title: UsdGeometry
   
   default: 0.0
   
-  the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.
+  <p>the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.<\p>
   
   
   <h3>base_width_factor</h3>
@@ -45,7 +45,7 @@ title: UsdGeometry
   
   default: 1.0
   
-  Multiplier for the radius of the base of curves
+  <p>Multiplier for the radius of the base of curves<\p>
   
   
   <h3>curved_motion_blur_sample_count</h3>
@@ -53,7 +53,7 @@ title: UsdGeometry
   
   default: 10
   
-  Number of time samples generated along each curve when using curved motion blur
+  <p>Number of time samples generated along each curve when using curved motion blur<\p>
   
   
   <h3>curves_subtype</h3>
@@ -64,7 +64,7 @@ title: UsdGeometry
   - round = 1
   
   
-  Curves subtype is ray facing or round
+  <p>Curves subtype is ray facing or round<\p>
   
   
   <h3>evaluation_frame</h3>
@@ -72,9 +72,9 @@ title: UsdGeometry
   
   default: 1.0
   
-  evaluate geometry at specified frame instead of SceneVariables frame
+  <p>evaluate geometry at specified frame instead of SceneVariables frame
 
-
+<\p>
   
   
   <h3>label</h3>
@@ -82,7 +82,7 @@ title: UsdGeometry
   
   default: 
   
-  label used in material aov expresssions
+  <p>label used in material aov expresssions<\p>
   
   
   <h3>mesh_resolution</h3>
@@ -90,7 +90,7 @@ title: UsdGeometry
   
   default: 2.0
   
-  The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information
+  <p>The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information<\p>
   
   
   <h3>motion_blur_type</h3>
@@ -109,7 +109,7 @@ title: UsdGeometry
   - hermite = 4
   
   
-  Motion blur type for PolygonMesh/Points/Curves in alembic file.
+  <p>Motion blur type for PolygonMesh/Points/Curves in alembic file.
 
 "static" will treat the mesh as static.
 
@@ -123,7 +123,7 @@ title: UsdGeometry
 
 "best" will use choose the method which provides the highest quality given the available data.
 
-
+<\p>
   
   
   <h3>node_xform</h3>
@@ -139,7 +139,7 @@ title: UsdGeometry
   
   default: []
   
-  Ordered list of part names
+  <p>Ordered list of part names<\p>
   
   
   <h3>prim_path</h3>
@@ -147,9 +147,9 @@ title: UsdGeometry
   
   default: 
   
-  The geometry Prim to load from the USD Stage
+  <p>The geometry Prim to load from the USD Stage
 
-
+<\p>
   
   
   <h3>primitive_attribute_frame</h3>
@@ -162,13 +162,13 @@ title: UsdGeometry
   - both motion steps = 2 (default)
   
   
-  Which frame(s) do we take the primitive attributes from?
+  <p>Which frame(s) do we take the primitive attributes from?
 
 	O : first motion step
 
 	1 : second motion step
 
-	2 : both motion steps
+	2 : both motion steps<\p>
   
   
   <h3>primitive_attributes</h3>
@@ -176,7 +176,7 @@ title: UsdGeometry
   
   default: []
   
-  A list of UserData to specify arbitrary primitive attributes
+  <p>A list of UserData to specify arbitrary primitive attributes<\p>
   
   
   <h3>radius_mult</h3>
@@ -184,7 +184,7 @@ title: UsdGeometry
   
   default: 1.0
   
-  radius multiplier for points and curves
+  <p>radius multiplier for points and curves<\p>
   
   
   <h3>ray_epsilon</h3>
@@ -192,7 +192,7 @@ title: UsdGeometry
   
   default: 0.0
   
-  When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.
+  <p>When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.<\p>
   
   
   <h3>references</h3>
@@ -200,7 +200,7 @@ title: UsdGeometry
   
   default: []
   
-  list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.
+  <p>list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.<\p>
   
   
   <h3>reverse_normals</h3>
@@ -208,7 +208,7 @@ title: UsdGeometry
   
   default: False
   
-  enable to reverse the normals in the geometry
+  <p>enable to reverse the normals in the geometry<\p>
   
   
   <h3>shadow_exclusion_mappings</h3>
@@ -216,11 +216,11 @@ title: UsdGeometry
   
   default: 
   
-  List of mappings of the form A:B where:
+  <p>List of mappings of the form A:B where:
 
 A is a list of names of parts to be mapped, or asterisk to map the whole geometry
 
-B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.
+B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.<\p>
   
   
   <h3>shadow_ray_epsilon</h3>
@@ -228,7 +228,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: 0.0
   
-  When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.
+  <p>When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.<\p>
   
   
   <h3>shadow_receiver_label</h3>
@@ -236,7 +236,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: 
   
-  Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.
+  <p>Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.<\p>
   
   
   <h3>side_type</h3>
@@ -249,7 +249,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   - use mesh sidedness = 2
   
   
-  set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction
+  <p>set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction<\p>
   
   
   <h3>smooth_normal</h3>
@@ -257,7 +257,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself
+  <p>generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself<\p>
   
   
   <h3>stage</h3>
@@ -265,9 +265,9 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: 
   
-  USD Stage to load
+  <p>USD Stage to load
 
-
+<\p>
   
   
   <h3>static</h3>
@@ -275,7 +275,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  disable if the geometry will be updated between frames
+  <p>disable if the geometry will be updated between frames<\p>
   
   
   <h3>subd_type</h3>
@@ -288,7 +288,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   - force subdivision mesh = 2
   
   
-  PolygonMesh/SubdivisionMesh prim type to create.
+  <p>PolygonMesh/SubdivisionMesh prim type to create.
 
 "use mesh type" will use the type the Mesh prim specifies.
 
@@ -296,7 +296,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
 
 "force subdivision mesh" will always resolve to SubdivisionMesh.
 
-
+<\p>
   
   
   <h3>tip_width_factor</h3>
@@ -304,7 +304,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: 1.0
   
-  Multiplier for the radius of the tip of curves
+  <p>Multiplier for the radius of the tip of curves<\p>
   
   
   <h3>use_evaluation_frame</h3>
@@ -312,9 +312,9 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: False
   
-  uses "evaluation frame" instead of SceneVariables frame
+  <p>uses "evaluation frame" instead of SceneVariables frame
 
-
+<\p>
   
   
   <h3>use_master_xform</h3>
@@ -322,9 +322,9 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: False
   
-  If the prim is an instance proxy, use the xform from the master Prim during geometry creation
+  <p>If the prim is an instance proxy, use the xform from the master Prim during geometry creation
 
-
+<\p>
   
   
   <h3>use_prim_xform</h3>
@@ -332,9 +332,9 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  Include the xform from the Prim during geometry creation
+  <p>Include the xform from the Prim during geometry creation
 
-
+<\p>
   
   
   <h3>use_rotation_motion_blur</h3>
@@ -342,7 +342,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: False
   
-  if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation
+  <p>if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation<\p>
   
   
   <h3>use_stage_cache</h3>
@@ -350,13 +350,13 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: False
   
-  Load the entire stage and use StageCache to share it among all UsdGeometry objects.
+  <p>Load the entire stage and use StageCache to share it among all UsdGeometry objects.
 
 If this is false, load a stage masked to the prim path just for this UsdGeometry.
 
 For large stages with thousands of unique assets, it is faster to enable the stage cache
 
-
+<\p>
   
   
   <h3>visible_diffuse_reflection</h3>
@@ -364,7 +364,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
   
   default: True
   
-  whether the geometry is visible in diffuse reflection
+  <p>whether the geometry is visible in diffuse reflection<\p>
   
   
   <h3>visible_diffuse_transmission</h3>
@@ -372,7 +372,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
   
   default: True
   
-  whether the geometry is visible in diffuse transmission
+  <p>whether the geometry is visible in diffuse transmission<\p>
   
   
   <h3>visible_glossy_reflection</h3>
@@ -380,7 +380,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
   
   default: True
   
-  whether the geometry is visible in glossy reflection.
+  <p>whether the geometry is visible in glossy reflection.<\p>
   
   
   <h3>visible_glossy_transmission</h3>
@@ -388,7 +388,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
   
   default: True
   
-  whether the geometry is visible in glossy transmission (refraction).
+  <p>whether the geometry is visible in glossy transmission (refraction).<\p>
   
   
   <h3>visible_in_camera</h3>
@@ -396,7 +396,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
   
   default: True
   
-  whether the geometry is visible to camera rays
+  <p>whether the geometry is visible to camera rays<\p>
   
   
   <h3>visible_mirror_reflection</h3>
@@ -404,7 +404,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
   
   default: True
   
-  whether the geometry is visible in miror reflection.
+  <p>whether the geometry is visible in miror reflection.<\p>
   
   
   <h3>visible_mirror_transmission</h3>
@@ -412,7 +412,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
   
   default: True
   
-  whether the geometry is visible in miror transmission (refraction).
+  <p>whether the geometry is visible in miror transmission (refraction).<\p>
   
   
   <h3>visible_shadow</h3>
@@ -420,7 +420,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
   
   default: True
   
-  whether the geometry casts shadows
+  <p>whether the geometry casts shadows<\p>
   
   
   <h3>visible_volume</h3>
@@ -428,7 +428,7 @@ For large stages with thousands of unique assets, it is faster to enable the sta
   
   default: True
   
-  whether the geometry is visible in indirect volume rays
+  <p>whether the geometry is visible in indirect volume rays<\p>
   
   
   </p>

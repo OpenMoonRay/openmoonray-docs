@@ -21,7 +21,7 @@ title: RandomNormalMap
   
   default: [ 1, 1, 1 ]
   
-  the input color used as a base seed to generate the random value
+  <p>the input color used as a base seed to generate the random value<\p>
   
   
   <h3>seed</h3>
@@ -29,7 +29,7 @@ title: RandomNormalMap
   
   default: 0
   
-  additional seed added to input for random number generator
+  <p>additional seed added to input for random number generator<\p>
   
   
   </p>

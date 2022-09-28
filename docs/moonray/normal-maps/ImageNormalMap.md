@@ -29,7 +29,7 @@ title: ImageNormalMap
   
   default: 0.0
   
-  Rotation in degrees
+  <p>Rotation in degrees<\p>
   
   
   <h3>rotation_center</h3>
@@ -37,7 +37,7 @@ title: ImageNormalMap
   
   default: [ 0.5, 0.5 ]
   
-  UV coordinate around which to rotate
+  <p>UV coordinate around which to rotate<\p>
   
   
   <h3>scale</h3>
@@ -61,7 +61,7 @@ title: ImageNormalMap
   
   default: 10
   
-  udim maximum v value
+  <p>udim maximum v value<\p>
   
   
   <h3>udim_values</h3>
@@ -85,7 +85,7 @@ title: ImageNormalMap
   
   default: [ 0, 0, 1 ]
   
-  default value to be used for missing udims when 'use_default_value_when_missing' is enabled
+  <p>default value to be used for missing udims when 'use_default_value_when_missing' is enabled<\p>
   
   
   <h3>input_texture_coordinates</h3>
@@ -104,7 +104,7 @@ title: ImageNormalMap
   - [-1,1] = 1
   
   
-  Most normal maps are encoded [0,1]. Only certain rare floating point normal maps are encoded [-1,1]
+  <p>Most normal maps are encoded [0,1]. Only certain rare floating point normal maps are encoded [-1,1]<\p>
   
   
   <h3>tangent_space_normal_texture</h3>
@@ -112,7 +112,7 @@ title: ImageNormalMap
   
   default: 
   
-  filename that points to a tangent space normal texture .exr or .tx file (must be mip-mapped and tiled with maketx).
+  <p>filename that points to a tangent space normal texture .exr or .tx file (must be mip-mapped and tiled with maketx).<\p>
   
   
   <h3>texture_coordinates</h3>
@@ -131,7 +131,7 @@ title: ImageNormalMap
   
   default: False
   
-  Uses the 'default_value' for missing udims and does not report error
+  <p>Uses the 'default_value' for missing udims and does not report error<\p>
   
   
   <h3>wrap_around</h3>
@@ -139,7 +139,7 @@ title: ImageNormalMap
   
   default: True
   
-  Controls whether to repeat (true) or clamp (false) the texture
+  <p>Controls whether to repeat (true) or clamp (false) the texture<\p>
   
   
   </p>

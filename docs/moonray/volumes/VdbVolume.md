@@ -21,7 +21,7 @@ title: VdbVolume
   
   default: 0.0
   
-  Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is. 0.0 is isotropic.
+  <p>Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is. 0.0 is isotropic.<\p>
   
   
   <h3>color_mult</h3>
@@ -29,7 +29,7 @@ title: VdbVolume
   
   default: [ 1, 1, 1 ]
   
-  A multiplier further applied to the color.
+  <p>A multiplier further applied to the color.<\p>
   
   
   <h3>incandescence_gain_mult</h3>
@@ -37,7 +37,7 @@ title: VdbVolume
   
   default: [ 1, 1, 1 ]
   
-  A multiplier further applied to the incandescence gain.
+  <p>A multiplier further applied to the incandescence gain.<\p>
   
   
   <h3>opacity_gain_mult</h3>
@@ -45,7 +45,7 @@ title: VdbVolume
   
   default: [ 1, 1, 1 ]
   
-  A multiplier further applied to the opacity gain.
+  <p>A multiplier further applied to the opacity gain.<\p>
   
   
   </p>
@@ -61,7 +61,7 @@ title: VdbVolume
   
   default: 100
   
-  Divide widest axis by this many divisions
+  <p>Divide widest axis by this many divisions<\p>
   
   
   <h3>bake_resolution_mode</h3>
@@ -74,13 +74,13 @@ title: VdbVolume
   - voxel size = 2
   
   
-  Toggle method to specify grid resolution of baked density grid.
+  <p>Toggle method to specify grid resolution of baked density grid.
 
 		default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions
 
 		divisions: specify number of divisions.
 
-		voxel size: specify voxel size.
+		voxel size: specify voxel size.<\p>
   
   
   <h3>bake_voxel_size</h3>
@@ -88,7 +88,7 @@ title: VdbVolume
   
   default: 10.0
   
-  Size of voxel in world space
+  <p>Size of voxel in world space<\p>
   
   
   <h3>label</h3>
@@ -96,7 +96,7 @@ title: VdbVolume
   
   default: 
   
-  label used in light aovs
+  <p>label used in light aovs<\p>
   
   
   <h3>surface_opacity_threshold</h3>
@@ -104,7 +104,7 @@ title: VdbVolume
   
   default: 0.5
   
-  Accumulated opacity that's considered the 'surface' for computing surface position and Z
+  <p>Accumulated opacity that's considered the 'surface' for computing surface position and Z<\p>
   
   
   </p>

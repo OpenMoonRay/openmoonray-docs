@@ -21,7 +21,7 @@ title: ToonDisplayFilter
   
   default: [ 0, 0, 0 ]
   
-  Adds an ambient light to the cel shading
+  <p>Adds an ambient light to the cel shading<\p>
   
   
   <h3>edge_detector</h3>
@@ -44,7 +44,7 @@ title: ToonDisplayFilter
   
   default: 0.00999999977648
   
-  The threshold for the depth-based ink outline
+  <p>The threshold for the depth-based ink outline<\p>
   
   
   <h3>ink_normal_scale</h3>
@@ -52,7 +52,7 @@ title: ToonDisplayFilter
   
   default: 0.00999999977648
   
-  Increase for a more pronounced normal-based ink outline
+  <p>Increase for a more pronounced normal-based ink outline<\p>
   
   
   <h3>ink_normal_threshold</h3>
@@ -60,7 +60,7 @@ title: ToonDisplayFilter
   
   default: 0.00999999977648
   
-  The threshold for the normal-based ink outline
+  <p>The threshold for the normal-based ink outline<\p>
   
   
   <h3>input_albedo</h3>
@@ -68,7 +68,7 @@ title: ToonDisplayFilter
   
   default: None
   
-  RenderOutput that represents diffuse albedo material aov
+  <p>RenderOutput that represents diffuse albedo material aov<\p>
   
   
   <h3>input_depth</h3>
@@ -76,7 +76,7 @@ title: ToonDisplayFilter
   
   default: None
   
-  RenderOutput with 'depth' result
+  <p>RenderOutput with 'depth' result<\p>
   
   
   <h3>input_diffuse</h3>
@@ -84,7 +84,7 @@ title: ToonDisplayFilter
   
   default: None
   
-  RenderOutput that represents diffuse reflection LPE
+  <p>RenderOutput that represents diffuse reflection LPE<\p>
   
   
   <h3>input_glossy</h3>
@@ -92,7 +92,7 @@ title: ToonDisplayFilter
   
   default: None
   
-  RenderOutput that represents glossy reflection LPE
+  <p>RenderOutput that represents glossy reflection LPE<\p>
   
   
   <h3>input_normal</h3>
@@ -100,7 +100,7 @@ title: ToonDisplayFilter
   
   default: None
   
-  RenderOutput with 'normal' result
+  <p>RenderOutput with 'normal' result<\p>
   
   
   <h3>num_cels</h3>
@@ -108,7 +108,7 @@ title: ToonDisplayFilter
   
   default: 2
   
-  Sets number of toon cels in diffuse shading
+  <p>Sets number of toon cels in diffuse shading<\p>
   
   
   </p>

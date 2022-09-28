@@ -21,7 +21,7 @@ title: UsdTransform2d
   
   default: [ 1, 1, 1 ]
   
-  This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.
+  <p>This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.<\p>
   
   
   <h3>rotation</h3>
@@ -29,7 +29,7 @@ title: UsdTransform2d
   
   default: 0.0
   
-  Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.
+  <p>Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.<\p>
   
   
   <h3>scale</h3>
@@ -37,7 +37,7 @@ title: UsdTransform2d
   
   default: [ 1, 1 ]
   
-  Scale around the origin to be applied to all components of the data.
+  <p>Scale around the origin to be applied to all components of the data.<\p>
   
   
   <h3>translation</h3>
@@ -45,7 +45,7 @@ title: UsdTransform2d
   
   default: [ 0, 0 ]
   
-  Translation to be applied to all components of the data.
+  <p>Translation to be applied to all components of the data.<\p>
   
   
   </p>

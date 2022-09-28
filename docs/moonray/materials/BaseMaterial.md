@@ -133,7 +133,7 @@ title: BaseMaterial
   
   default: 1.0
   
-  Iridescence effect at 0 degree viewing angle
+  <p>Iridescence effect at 0 degree viewing angle<\p>
   
   
   <h3>iridescence_exponent</h3>
@@ -141,7 +141,7 @@ title: BaseMaterial
   
   default: 1.0
   
-  Tightens or broadens the distribution of colors
+  <p>Tightens or broadens the distribution of colors<\p>
   
   
   <h3>iridescence_factor</h3>
@@ -149,7 +149,7 @@ title: BaseMaterial
   
   default: 1.0
   
-  overall multiplier on effect of iridescence
+  <p>overall multiplier on effect of iridescence<\p>
   
   
   <h3>iridescence_flip_hue_direction</h3>
@@ -165,7 +165,7 @@ title: BaseMaterial
   
   default: [ 1, 0, 0 ]
   
-  First color to interpolate from around the hue wheel
+  <p>First color to interpolate from around the hue wheel<\p>
   
   
   <h3>iridescence_secondary_color</h3>
@@ -173,7 +173,7 @@ title: BaseMaterial
   
   default: [ 1, 0, 0 ]
   
-  Second color to interpolate to around the hue wheel
+  <p>Second color to interpolate to around the hue wheel<\p>
   
   
   <h3>iridescence_thickness</h3>
@@ -181,7 +181,7 @@ title: BaseMaterial
   
   default: 1.0
   
-  Controls how much the color spectrum is repeated
+  <p>Controls how much the color spectrum is repeated<\p>
   
   
   </p>
@@ -200,7 +200,7 @@ title: BaseMaterial
   - render = 1
   
   
-  Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections
+  <p>Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections<\p>
   
   
   </p>
@@ -424,7 +424,7 @@ title: BaseMaterial
   
   default: None
   
-  Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
+  <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result<\p>
   
   
   <h3>fresnel_factor</h3>
@@ -440,7 +440,7 @@ title: BaseMaterial
   
   default: 1.0
   
-  affects transmission and translucency
+  <p>affects transmission and translucency<\p>
   
   
   <h3>input_normal</h3>
@@ -464,7 +464,7 @@ title: BaseMaterial
   
   default: 
   
-  label used in material and light aovs
+  <p>label used in material and light aovs<\p>
   
   
   <h3>priority</h3>
@@ -472,7 +472,7 @@ title: BaseMaterial
   
   default: 0
   
-  The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
+  <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.<\p>
   
   
   <h3>use_fresnel</h3>

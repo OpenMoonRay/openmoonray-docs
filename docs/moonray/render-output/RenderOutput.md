@@ -21,7 +21,7 @@ title: RenderOutput
   
   default: True
   
-  true enables, false disables render output.
+  <p>true enables, false disables render output.<\p>
   
   
   <h3>camera</h3>
@@ -29,7 +29,7 @@ title: RenderOutput
   
   default: None
   
-  Camera to use for this output.  If not specified, defaults to the primary camera.
+  <p>Camera to use for this output.  If not specified, defaults to the primary camera.<\p>
   
   
   <h3>channel_format</h3>
@@ -40,7 +40,7 @@ title: RenderOutput
   - half = 1 (default)
   
   
-  The pixel encoding (bit depth and type) of the output channel.
+  <p>The pixel encoding (bit depth and type) of the output channel.<\p>
   
   
   <h3>channel_name</h3>
@@ -48,7 +48,7 @@ title: RenderOutput
   
   default: 
   
-  Name of the output channel.  In the case of an empty channel name a sensible default name is chosen.
+  <p>Name of the output channel.  In the case of an empty channel name a sensible default name is chosen.<\p>
   
   
   <h3>channel_suffix_mode</h3>
@@ -63,7 +63,7 @@ title: RenderOutput
   - uvw = 3
   
   
-  When processing multi-channel outputs, how should channel names be suffixed?
+  <p>When processing multi-channel outputs, how should channel names be suffixed?
 
 	auto : a best guess suffix is chosen based on the type of output
 
@@ -71,7 +71,7 @@ title: RenderOutput
 
 	xyz  : .X, .Y, .Z
 
-	uvw  : .U, .V, .W
+	uvw  : .U, .V, .W<\p>
   
   
   <h3>checkpoint_file_name</h3>
@@ -79,7 +79,7 @@ title: RenderOutput
   
   default: checkpoint.exr
   
-  Name of checkpoint output file.
+  <p>Name of checkpoint output file.<\p>
   
   
   <h3>checkpoint_multi_version_file_name</h3>
@@ -87,7 +87,7 @@ title: RenderOutput
   
   default: 
   
-  Name of checkpoint output file under checkpoint file overwrite=off condition.
+  <p>Name of checkpoint output file under checkpoint file overwrite=off condition.<\p>
   
   
   <h3>compression</h3>
@@ -114,7 +114,7 @@ title: RenderOutput
   - dwab = 9
   
   
-  Compression used for file (or file part in the multi-part case). All render outputs that target the same image must specify the same compression.
+  <p>Compression used for file (or file part in the multi-part case). All render outputs that target the same image must specify the same compression.<\p>
   
   
   <h3>cryptomatte_depth</h3>
@@ -122,7 +122,7 @@ title: RenderOutput
   
   default: 6
   
-  Number of cryptomatte (id,coverage) data sets to output
+  <p>Number of cryptomatte (id,coverage) data sets to output<\p>
   
   
   <h3>denoise</h3>
@@ -130,7 +130,7 @@ title: RenderOutput
   
   default: False
   
-  Run optix denoiser before writing to disk
+  <p>Run optix denoiser before writing to disk<\p>
   
   
   <h3>denoiser_input</h3>
@@ -143,7 +143,7 @@ title: RenderOutput
   - as normal = 2
   
   
-  How to use this output as a denoiser input
+  <p>How to use this output as a denoiser input<\p>
   
   
   <h3>display_filter</h3>
@@ -151,7 +151,7 @@ title: RenderOutput
   
   default: None
   
-  If "result" is "display filter", this attribute refers to a display filter object which is used to compute the output pixel values.
+  <p>If "result" is "display filter", this attribute refers to a display filter object which is used to compute the output pixel values.<\p>
   
   
   <h3>exr_dwa_compression_level</h3>
@@ -159,7 +159,7 @@ title: RenderOutput
   
   default: 85.0
   
-  Compression level used for file with dwaa or dwab compression. All render outputs that target the same image must specify the same compression level.
+  <p>Compression level used for file with dwaa or dwab compression. All render outputs that target the same image must specify the same compression level.<\p>
   
   
   <h3>exr_header_attributes</h3>
@@ -167,7 +167,7 @@ title: RenderOutput
   
   default: None
   
-  Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}
+  <p>Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}<\p>
   
   
   <h3>file_name</h3>
@@ -175,7 +175,7 @@ title: RenderOutput
   
   default: scene.exr
   
-  Name of destination file.
+  <p>Name of destination file.<\p>
   
   
   <h3>file_part</h3>
@@ -183,7 +183,7 @@ title: RenderOutput
   
   default: 
   
-  Name of sub-image if using a multi-part exr file.
+  <p>Name of sub-image if using a multi-part exr file.<\p>
   
   
   <h3>lpe</h3>
@@ -191,7 +191,7 @@ title: RenderOutput
   
   default: 
   
-  This attribute specifies a light path expression to output. For details on light path expression syntax see:
+  <p>This attribute specifies a light path expression to output. For details on light path expression syntax see:
 
 		https://github.com/imageworks/OpenShadingLanguage/wiki/OSL-Light-Path-Expressions
 
@@ -219,7 +219,7 @@ title: RenderOutput
 
 		'translucent'  : C<TD>[DSG]+[<L.>O]
 
-		'transmission' : C<TS>[DSG]+[<L.>O]
+		'transmission' : C<TS>[DSG]+[<L.>O]<\p>
   
   
   <h3>material_aov</h3>
@@ -227,7 +227,7 @@ title: RenderOutput
   
   default: 
   
-  If "result" is "material aov", this attribute specifies a material aov expression to output.  The expression format is: 
+  <p>If "result" is "material aov", this attribute specifies a material aov expression to output.  The expression format is: 
 
 	[('<GL>')+\.][('<ML>')+\.][('<LL>')+\.][(SS|R|T|D|G|M)+\.][fresnel\.]<property>. Where:
 
@@ -311,7 +311,7 @@ title: RenderOutput
 
 		R.albedo            : Total reflection albedo 
 
-		'spec'.MG.roughness : Roughness of all mirror and glossy lobes that have the 'spec' label
+		'spec'.MG.roughness : Roughness of all mirror and glossy lobes that have the 'spec' label<\p>
   
   
   <h3>math_filter</h3>
@@ -330,7 +330,7 @@ title: RenderOutput
   - closest = 5
   
   
-  the math filter over the pixel.
+  <p>the math filter over the pixel.
 
 options include:
 
@@ -344,7 +344,7 @@ options include:
 
 	force_consistent_sampling : average of the first "min_adaptive_samples"
 
-	closest                   : use sample with minimum z-depth
+	closest                   : use sample with minimum z-depth<\p>
   
   
   <h3>output_type</h3>
@@ -352,7 +352,7 @@ options include:
   
   default: flat
   
-  Specifies the type of output.  Defaults to "flat", meaning a flat exr file.  "deep" will output a deep exr file.
+  <p>Specifies the type of output.  Defaults to "flat", meaning a flat exr file.  "deep" will output a deep exr file.<\p>
   
   
   <h3>primitive_attribute</h3>
@@ -360,7 +360,7 @@ options include:
   
   default: 
   
-  If "result" is "primitive attribute", this attribute specifies the particular primitive attribute to output.  Default channel name is based on primitive attribute name and type.
+  <p>If "result" is "primitive attribute", this attribute specifies the particular primitive attribute to output.  Default channel name is based on primitive attribute name and type.<\p>
   
   
   <h3>primitive_attribute_type</h3>
@@ -375,7 +375,7 @@ options include:
   - RGB = 3
   
   
-  This attribute specifies the type of the attribute named with the "primitive attribute" setting.  This is required to uniquely specify the primitive attribute.
+  <p>This attribute specifies the type of the attribute named with the "primitive attribute" setting.  This is required to uniquely specify the primitive attribute.<\p>
   
   
   <h3>reference_render_output</h3>
@@ -383,7 +383,7 @@ options include:
   
   default: None
   
-  If "result" is "variance aov", this attribute refers to another render output for which to calculate the pixel variance.
+  <p>If "result" is "variance aov", this attribute refers to another render output for which to calculate the pixel variance.<\p>
   
   
   <h3>result</h3>
@@ -422,7 +422,7 @@ options include:
   - display filter = 15
   
   
-  The result to output.  Available results: 
+  <p>The result to output.  Available results: 
 
 	general results:
 
@@ -460,7 +460,7 @@ options include:
 
 		"time per pixel" - Time per pixel heat map metric,
 
-		"wireframe" - Render as wireframe
+		"wireframe" - Render as wireframe<\p>
   
   
   <h3>resume_file_name</h3>
@@ -468,7 +468,7 @@ options include:
   
   default: 
   
-  Name of input file for resume render start condition
+  <p>Name of input file for resume render start condition<\p>
   
   
   <h3>state_variable</h3>
@@ -501,7 +501,7 @@ options include:
   - motionvec = 12
   
   
-  If "result" is "state variable", this attribute specifies the particular state variable result. 
+  <p>If "result" is "state variable", this attribute specifies the particular state variable result. 
 
 	"P" - position (P.X, P.Y, P.Z), 
 
@@ -527,7 +527,7 @@ options include:
 
 	"depth" - z distance from camera (Z), 
 
-	"motionvec" - 2D motion vector
+	"motionvec" - 2D motion vector<\p>
   
   
   <h3>visibility_aov</h3>
@@ -535,7 +535,7 @@ options include:
   
   default: C[<T.><RS>]*[<R[DG]><TD>][LO]
   
-  If "result" is "visibility aov", this attribute specifies a light path expression that defines the set of all paths usedto compute the visibility ratio.
+  <p>If "result" is "visibility aov", this attribute specifies a light path expression that defines the set of all paths usedto compute the visibility ratio.<\p>
   
   
   </p>

@@ -21,7 +21,7 @@ title: DwaToonMaterial
   
   default: False
   
-  WARNING: Experimental and must be used with max_depth: 0 and only for non-photoreal looks. Prevents culling of lights so surfaces can be lit purely with respect to the shading normal irrespective of geometry
+  <p>WARNING: Experimental and must be used with max_depth: 0 and only for non-photoreal looks. Prevents culling of lights so surfaces can be lit purely with respect to the shading normal irrespective of geometry<\p>
   
   
   <h3>specular</h3>
@@ -29,7 +29,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  enables/disables specular reflections (binary 0|1 for plausibility)
+  <p>enables/disables specular reflections (binary 0|1 for plausibility)<\p>
   
   
   <h3>sss_trace_set</h3>
@@ -37,7 +37,7 @@ title: DwaToonMaterial
   
   default: None
   
-  Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.
+  <p>Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.<\p>
   
   
   </p>
@@ -53,7 +53,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  enables/disables clearcoat (binary 0|1 for plausibility)
+  <p>enables/disables clearcoat (binary 0|1 for plausibility)<\p>
   
   
   <h3>clearcoat_attenuation_color</h3>
@@ -61,7 +61,7 @@ title: DwaToonMaterial
   
   default: [ 0.5, 0.5, 0.5 ]
   
-  the attenuation color of the clearcoat when 'cleacoat thickness' > 0
+  <p>the attenuation color of the clearcoat when 'cleacoat thickness' > 0<\p>
   
   
   <h3>clearcoat_bending</h3>
@@ -69,7 +69,7 @@ title: DwaToonMaterial
   
   default: True
   
-  (advanced, recommended ON) bends rays based on the clearcoat-refractive-index before evaluating the lobes under clearcoat
+  <p>(advanced, recommended ON) bends rays based on the clearcoat-refractive-index before evaluating the lobes under clearcoat<\p>
   
   
   <h3>clearcoat_model</h3>
@@ -80,7 +80,7 @@ title: DwaToonMaterial
   - GGX = 1 (default)
   
   
-  sets the normalized distribution function for clearcoat.  GGX is currently isotropic only
+  <p>sets the normalized distribution function for clearcoat.  GGX is currently isotropic only<\p>
   
   
   <h3>clearcoat_normal_dial</h3>
@@ -88,7 +88,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  controls the amount of infuence of the alternate clearcoat normal
+  <p>controls the amount of infuence of the alternate clearcoat normal<\p>
   
   
   <h3>clearcoat_refractive_index</h3>
@@ -96,7 +96,7 @@ title: DwaToonMaterial
   
   default: 1.5
   
-  defines the Fresnel behavior
+  <p>defines the Fresnel behavior<\p>
   
   
   <h3>clearcoat_roughness</h3>
@@ -104,7 +104,7 @@ title: DwaToonMaterial
   
   default: 0.10000000149
   
-  the roughness of the clearcoat lobe
+  <p>the roughness of the clearcoat lobe<\p>
   
   
   <h3>clearcoat_thickness</h3>
@@ -112,7 +112,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  the thickness of the virtual clearcoat layer. Values > 0 enable absorption
+  <p>the thickness of the virtual clearcoat layer. Values > 0 enable absorption<\p>
   
   
   <h3>independent_clearcoat_normal</h3>
@@ -120,7 +120,7 @@ title: DwaToonMaterial
   
   default: None
   
-  specifies an independent shading normal (normal map) for the clearcoat lobe
+  <p>specifies an independent shading normal (normal map) for the clearcoat lobe<\p>
   
   
   <h3>show_clearcoat</h3>
@@ -128,7 +128,7 @@ title: DwaToonMaterial
   
   default: False
   
-  enables/disables clearcoat
+  <p>enables/disables clearcoat<\p>
   
   
   <h3>use_independent_clearcoat_normal</h3>
@@ -136,7 +136,7 @@ title: DwaToonMaterial
   
   default: False
   
-  specifies whether the clearcoat lobe should use an independent normal
+  <p>specifies whether the clearcoat lobe should use an independent normal<\p>
   
   
   </p>
@@ -152,7 +152,7 @@ title: DwaToonMaterial
   
   default: False
   
-  allows continuation of caustic light paths.
+  <p>allows continuation of caustic light paths.<\p>
   
   
   <h3>presence</h3>
@@ -160,7 +160,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).
+  <p>controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).<\p>
   
   
   <h3>thin_geometry</h3>
@@ -168,7 +168,7 @@ title: DwaToonMaterial
   
   default: False
   
-  enables proper shading of infinitely thin geometry such as paper or leaves.
+  <p>enables proper shading of infinitely thin geometry such as paper or leaves.<\p>
   
   
   </p>
@@ -184,7 +184,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  the overall surface color as seen from a distance (ie. diffuse color)
+  <p>the overall surface color as seen from a distance (ie. diffuse color)<\p>
   
   
   <h3>bssrdf</h3>
@@ -197,7 +197,7 @@ title: DwaToonMaterial
   - random walk = 2
   
   
-  0 for NormalizedDiffuse, 1 for Dipole, 2 for random walk
+  <p>0 for NormalizedDiffuse, 1 for Dipole, 2 for random walk<\p>
   
   
   <h3>colors</h3>
@@ -205,7 +205,7 @@ title: DwaToonMaterial
   
   default: [[ 1, 1, 1 ], [ 0.75, 0.75, 0.75 ], [ 0.25, 0.25, 0.25 ], [ 0, 0, 0 ]]
   
-  List of colors on the ramp
+  <p>List of colors on the ramp<\p>
   
   
   <h3>diffuse_flatness</h3>
@@ -213,7 +213,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Flattens out the diffuse response by bending the normal towards the light direction
+  <p>Flattens out the diffuse response by bending the normal towards the light direction<\p>
   
   
   <h3>diffuse_flatness_falloff</h3>
@@ -221,7 +221,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Fades out flatness with respect to light direction
+  <p>Fades out flatness with respect to light direction<\p>
   
   
   <h3>diffuse_model</h3>
@@ -232,7 +232,7 @@ title: DwaToonMaterial
   - ramp = 1
   
   
-  The method used to render the diffuse response.
+  <p>The method used to render the diffuse response.<\p>
   
   
   <h3>diffuse_roughness</h3>
@@ -240,7 +240,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Roughness of the diffuse shading.  If the value is zero a Lambertian model is used.  If it's above zero the Oren Nayar model is used.   Not compatible with subsurface scattering.
+  <p>Roughness of the diffuse shading.  If the value is zero a Lambertian model is used.  If it's above zero the Oren Nayar model is used.   Not compatible with subsurface scattering.<\p>
   
   
   <h3>diffuse_transmission</h3>
@@ -248,7 +248,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  multiplier on the amount of light that is transmitted through the surface.
+  <p>multiplier on the amount of light that is transmitted through the surface.<\p>
   
   
   <h3>diffuse_transmission_blending_behavior</h3>
@@ -259,7 +259,7 @@ title: DwaToonMaterial
   - Monochromatic = 1 (default)
   
   
-  Controls how diffuse transmission color attenuates diffuse reflection
+  <p>Controls how diffuse transmission color attenuates diffuse reflection<\p>
   
   
   <h3>diffuse_transmission_color</h3>
@@ -267,7 +267,7 @@ title: DwaToonMaterial
   
   default: [ 0, 0, 0 ]
   
-  the color/amount of light that is transmitted through the surface.
+  <p>the color/amount of light that is transmitted through the surface.<\p>
   
   
   <h3>enable_sss_input_normal</h3>
@@ -275,7 +275,7 @@ title: DwaToonMaterial
   
   default: False
   
-  enables sampling the normal map for sss samples. More accurate but potentially expensive
+  <p>enables sampling the normal map for sss samples. More accurate but potentially expensive<\p>
   
   
   <h3>extend_ramp</h3>
@@ -283,7 +283,7 @@ title: DwaToonMaterial
   
   default: False
   
-  Extends the last ramp color to unlit portions. IMPORTANT: Only works in conjuction with prevent_light_culling ON and visible_shadows OFF
+  <p>Extends the last ramp color to unlit portions. IMPORTANT: Only works in conjuction with prevent_light_culling ON and visible_shadows OFF<\p>
   
   
   <h3>interpolations</h3>
@@ -291,9 +291,9 @@ title: DwaToonMaterial
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+  <p>None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 
-			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
+			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6<\p>
   
   
   <h3>positions</h3>
@@ -301,7 +301,7 @@ title: DwaToonMaterial
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  ramp positions, maximum 10 allowed
+  <p>ramp positions, maximum 10 allowed<\p>
   
   
   <h3>ramp_color_multiplier0</h3>
@@ -309,7 +309,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  Bindable multiplier on the ramp color
+  <p>Bindable multiplier on the ramp color<\p>
   
   
   <h3>ramp_color_multiplier1</h3>
@@ -317,7 +317,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  Bindable multiplier on the ramp color
+  <p>Bindable multiplier on the ramp color<\p>
   
   
   <h3>ramp_color_multiplier2</h3>
@@ -325,7 +325,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  Bindable multiplier on the ramp color
+  <p>Bindable multiplier on the ramp color<\p>
   
   
   <h3>ramp_color_multiplier3</h3>
@@ -333,7 +333,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  Bindable multiplier on the ramp color
+  <p>Bindable multiplier on the ramp color<\p>
   
   
   <h3>ramp_color_multiplier4</h3>
@@ -341,7 +341,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  Bindable multiplier on the ramp color
+  <p>Bindable multiplier on the ramp color<\p>
   
   
   <h3>ramp_color_multiplier5</h3>
@@ -349,7 +349,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  Bindable multiplier on the ramp color
+  <p>Bindable multiplier on the ramp color<\p>
   
   
   <h3>ramp_color_multiplier6</h3>
@@ -357,7 +357,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  Bindable multiplier on the ramp color
+  <p>Bindable multiplier on the ramp color<\p>
   
   
   <h3>ramp_color_multiplier7</h3>
@@ -365,7 +365,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  Bindable multiplier on the ramp color
+  <p>Bindable multiplier on the ramp color<\p>
   
   
   <h3>ramp_color_multiplier8</h3>
@@ -373,7 +373,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  Bindable multiplier on the ramp color
+  <p>Bindable multiplier on the ramp color<\p>
   
   
   <h3>ramp_color_multiplier9</h3>
@@ -381,7 +381,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  Bindable multiplier on the ramp color
+  <p>Bindable multiplier on the ramp color<\p>
   
   
   <h3>ramp_position_offset0</h3>
@@ -389,7 +389,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+  <p>Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds<\p>
   
   
   <h3>ramp_position_offset1</h3>
@@ -397,7 +397,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+  <p>Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds<\p>
   
   
   <h3>ramp_position_offset2</h3>
@@ -405,7 +405,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+  <p>Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds<\p>
   
   
   <h3>ramp_position_offset3</h3>
@@ -413,7 +413,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+  <p>Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds<\p>
   
   
   <h3>ramp_position_offset4</h3>
@@ -421,7 +421,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+  <p>Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds<\p>
   
   
   <h3>ramp_position_offset5</h3>
@@ -429,7 +429,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+  <p>Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds<\p>
   
   
   <h3>ramp_position_offset6</h3>
@@ -437,7 +437,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+  <p>Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds<\p>
   
   
   <h3>ramp_position_offset7</h3>
@@ -445,7 +445,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+  <p>Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds<\p>
   
   
   <h3>ramp_position_offset8</h3>
@@ -453,7 +453,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+  <p>Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds<\p>
   
   
   <h3>ramp_position_offset9</h3>
@@ -461,7 +461,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds
+  <p>Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds<\p>
   
   
   <h3>resolve_self_intersections</h3>
@@ -469,7 +469,7 @@ title: DwaToonMaterial
   
   default: True
   
-  tries to resolve self-intersecting geometry automatically by only evaluating 'exiting' intersections for subsurface evaluations
+  <p>tries to resolve self-intersecting geometry automatically by only evaluating 'exiting' intersections for subsurface evaluations<\p>
   
   
   <h3>scattering_color</h3>
@@ -477,7 +477,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  the subsurface scattering 'falloff' color
+  <p>the subsurface scattering 'falloff' color<\p>
   
   
   <h3>scattering_radius</h3>
@@ -485,7 +485,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  the distance the light scatters beneath the surface. When 0 surface diffuse (lambertian or toon) is used
+  <p>the distance the light scatters beneath the surface. When 0 surface diffuse (lambertian or toon) is used<\p>
   
   
   <h3>show_diffuse</h3>
@@ -493,7 +493,7 @@ title: DwaToonMaterial
   
   default: True
   
-  enables/disables diffuse reflectance
+  <p>enables/disables diffuse reflectance<\p>
   
   
   <h3>terminator_shift</h3>
@@ -501,7 +501,7 @@ title: DwaToonMaterial
   
   default: 0.0500000007451
   
-  Controls how the diffuse ligthing falls off.  Values greater than 0.0 shift the falloff point closer to the light source and values less than 0.0 shift the falloff point further away
+  <p>Controls how the diffuse ligthing falls off.  Values greater than 0.0 shift the falloff point closer to the light source and values less than 0.0 shift the falloff point further away<\p>
   
   
   </p>
@@ -517,7 +517,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  the energy emitted from this material
+  <p>the energy emitted from this material<\p>
   
   
   <h3>show_emission</h3>
@@ -525,7 +525,7 @@ title: DwaToonMaterial
   
   default: False
   
-  enables/disable emission
+  <p>enables/disable emission<\p>
   
   
   </p>
@@ -541,7 +541,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  fuzz mask
+  <p>fuzz mask<\p>
   
   
   <h3>fuzz_albedo</h3>
@@ -549,7 +549,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  Color of the fuzz highlights.
+  <p>Color of the fuzz highlights.<\p>
   
   
   <h3>fuzz_normal</h3>
@@ -557,7 +557,7 @@ title: DwaToonMaterial
   
   default: None
   
-  specifies an independent shading normal (normal map) for the fuzz lobe
+  <p>specifies an independent shading normal (normal map) for the fuzz lobe<\p>
   
   
   <h3>fuzz_normal_dial</h3>
@@ -565,7 +565,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  controls the amount of infuence of the alternate fuzz normal
+  <p>controls the amount of infuence of the alternate fuzz normal<\p>
   
   
   <h3>fuzz_roughness</h3>
@@ -573,7 +573,7 @@ title: DwaToonMaterial
   
   default: 0.25
   
-  Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage
+  <p>Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage<\p>
   
   
   <h3>show_fuzz</h3>
@@ -581,7 +581,7 @@ title: DwaToonMaterial
   
   default: False
   
-  Enables/disables fuzz lobe
+  <p>Enables/disables fuzz lobe<\p>
   
   
   <h3>use_absorbing_fuzz_fibers</h3>
@@ -589,7 +589,7 @@ title: DwaToonMaterial
   
   default: False
   
-  Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.
+  <p>Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.<\p>
   
   
   </p>
@@ -605,7 +605,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  enables/disables glitter model (binary 0|1 for plausibility)
+  <p>enables/disables glitter model (binary 0|1 for plausibility)<\p>
   
   
   <h3>glitter_LOD_quality</h3>
@@ -613,7 +613,7 @@ title: DwaToonMaterial
   
   default: 0.5
   
-  controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier
+  <p>controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier<\p>
   
   
   <h3>glitter_approximate_for_secondary_rays</h3>
@@ -621,7 +621,7 @@ title: DwaToonMaterial
   
   default: True
   
-  use an approximation to shade glitter for non-mirror secondary rays
+  <p>use an approximation to shade glitter for non-mirror secondary rays<\p>
   
   
   <h3>glitter_color_A</h3>
@@ -629,7 +629,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  base flake color (use physical metallic color values)
+  <p>base flake color (use physical metallic color values)<\p>
   
   
   <h3>glitter_color_B</h3>
@@ -637,7 +637,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  base flake color (use physical metallic color values)
+  <p>base flake color (use physical metallic color values)<\p>
   
   
   <h3>glitter_color_hue_variation</h3>
@@ -645,7 +645,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  introduce hue variation in flake color centered at the base flake color's hue on the hue wheel
+  <p>introduce hue variation in flake color centered at the base flake color's hue on the hue wheel<\p>
   
   
   <h3>glitter_color_saturation_variation</h3>
@@ -653,7 +653,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  introduce saturation variation in flake color centered at the base flake color's saturation
+  <p>introduce saturation variation in flake color centered at the base flake color's saturation<\p>
   
   
   <h3>glitter_color_value_variation</h3>
@@ -661,7 +661,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  introduce value variation in flake color centered at the base flake color's value
+  <p>introduce value variation in flake color centered at the base flake color's value<\p>
   
   
   <h3>glitter_compensate_reference_space_deformation</h3>
@@ -669,7 +669,7 @@ title: DwaToonMaterial
   
   default: True
   
-  (In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc
+  <p>(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc<\p>
   
   
   <h3>glitter_debug_mode</h3>
@@ -688,7 +688,7 @@ title: DwaToonMaterial
   - radius = 5
   
   
-  developer debug visualization modes
+  <p>developer debug visualization modes<\p>
   
   
   <h3>glitter_density</h3>
@@ -696,7 +696,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  controls the number of flakes per unit length; larger density packs more flakes into same space
+  <p>controls the number of flakes per unit length; larger density packs more flakes into same space<\p>
   
   
   <h3>glitter_jitter</h3>
@@ -704,7 +704,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  Controls how much the flakes are randomly offset from a regular grid
+  <p>Controls how much the flakes are randomly offset from a regular grid<\p>
   
   
   <h3>glitter_layering_mode</h3>
@@ -715,7 +715,7 @@ title: DwaToonMaterial
   - additive = 1
   
   
-  layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)
+  <p>layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)<\p>
   
   
   <h3>glitter_randomness</h3>
@@ -723,7 +723,7 @@ title: DwaToonMaterial
   
   default: 0.5
   
-  randomness of flake orientation
+  <p>randomness of flake orientation<\p>
   
   
   <h3>glitter_roughness_A</h3>
@@ -731,7 +731,7 @@ title: DwaToonMaterial
   
   default: 0.140000000596
   
-  specular roughness of individual flakes (0 makes flakes mirror-like)
+  <p>specular roughness of individual flakes (0 makes flakes mirror-like)<\p>
   
   
   <h3>glitter_roughness_B</h3>
@@ -739,7 +739,7 @@ title: DwaToonMaterial
   
   default: 0.140000000596
   
-  specular roughness of individual flakes (0 makes flakes mirror-like)
+  <p>specular roughness of individual flakes (0 makes flakes mirror-like)<\p>
   
   
   <h3>glitter_seed</h3>
@@ -747,7 +747,7 @@ title: DwaToonMaterial
   
   default: 0
   
-  The seed for the glitter random number generator
+  <p>The seed for the glitter random number generator<\p>
   
   
   <h3>glitter_size_A</h3>
@@ -755,7 +755,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface
+  <p>size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface<\p>
   
   
   <h3>glitter_size_B</h3>
@@ -763,7 +763,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface
+  <p>size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface<\p>
   
   
   <h3>glitter_space</h3>
@@ -774,7 +774,7 @@ title: DwaToonMaterial
   - reference = 5 (default)
   
   
-  The space to calculate the worley noise in, defaults to reference space
+  <p>The space to calculate the worley noise in, defaults to reference space<\p>
   
   
   <h3>glitter_style_A_frequency</h3>
@@ -782,7 +782,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  0 implies none of this style, 1 implies all the flakes will get this style
+  <p>0 implies none of this style, 1 implies all the flakes will get this style<\p>
   
   
   <h3>glitter_style_B_frequency</h3>
@@ -790,7 +790,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  0 implies none of this style, 1 implies all the flakes will get this style
+  <p>0 implies none of this style, 1 implies all the flakes will get this style<\p>
   
   
   <h3>glitter_texture_A</h3>
@@ -798,7 +798,7 @@ title: DwaToonMaterial
   
   default: 
   
-  filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
+  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).<\p>
   
   
   <h3>glitter_texture_B</h3>
@@ -806,7 +806,7 @@ title: DwaToonMaterial
   
   default: 
   
-  filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
+  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).<\p>
   
   
   <h3>glitter_texture_orientation_randomness</h3>
@@ -814,7 +814,7 @@ title: DwaToonMaterial
   
   default: 0.15000000596
   
-  randomly orient each texture
+  <p>randomly orient each texture<\p>
   
   
   <h3>show_glitter</h3>
@@ -822,7 +822,7 @@ title: DwaToonMaterial
   
   default: False
   
-  Enables/disables glitter lobes
+  <p>Enables/disables glitter lobes<\p>
   
   
   </p>
@@ -838,7 +838,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  controls the strength of the iridescence effect
+  <p>controls the strength of the iridescence effect<\p>
   
   
   <h3>iridescence_apply_to</h3>
@@ -849,7 +849,7 @@ title: DwaToonMaterial
   - clearcoat/moisture specular = 1
   
   
-  Apply iridescence to primary specular lobe or clearcoat/moisture lobe
+  <p>Apply iridescence to primary specular lobe or clearcoat/moisture lobe<\p>
   
   
   <h3>iridescence_at_0_incidence</h3>
@@ -857,7 +857,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  Iridescence effect at 0 degree viewing angle
+  <p>Iridescence effect at 0 degree viewing angle<\p>
   
   
   <h3>iridescence_at_90_incidence</h3>
@@ -865,7 +865,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  Iridescence effect at 90 degree viewing angle
+  <p>Iridescence effect at 90 degree viewing angle<\p>
   
   
   <h3>iridescence_color_control</h3>
@@ -876,7 +876,7 @@ title: DwaToonMaterial
   - use ramp = 1
   
   
-  use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp
+  <p>use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp<\p>
   
   
   <h3>iridescence_colors</h3>
@@ -884,7 +884,7 @@ title: DwaToonMaterial
   
   default: [[ 1, 0, 0 ], [ 1, 1, 0 ], [ 0, 1, 0 ], [ 0, 1, 1 ], [ 0, 0, 1 ], [ 1, 0, 1 ], [ 1, 0, 0 ]]
   
-  List of colors on the ramp
+  <p>List of colors on the ramp<\p>
   
   
   <h3>iridescence_exponent</h3>
@@ -892,7 +892,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  Tightens or broadens the distribution of colors
+  <p>Tightens or broadens the distribution of colors<\p>
   
   
   <h3>iridescence_flip_hue_direction</h3>
@@ -900,7 +900,7 @@ title: DwaToonMaterial
   
   default: False
   
-  flip interpolation around the hue wheel to counter-clockwise direction
+  <p>flip interpolation around the hue wheel to counter-clockwise direction<\p>
   
   
   <h3>iridescence_interpolations</h3>
@@ -908,9 +908,9 @@ title: DwaToonMaterial
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+  <p>None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 
-			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
+			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6<\p>
   
   
   <h3>iridescence_positions</h3>
@@ -918,7 +918,7 @@ title: DwaToonMaterial
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  ramp positions
+  <p>ramp positions<\p>
   
   
   <h3>iridescence_primary_color</h3>
@@ -926,7 +926,7 @@ title: DwaToonMaterial
   
   default: [ 1, 0, 0 ]
   
-  First color to interpolate from around the hue wheel
+  <p>First color to interpolate from around the hue wheel<\p>
   
   
   <h3>iridescence_ramp_interpolation_mode</h3>
@@ -937,7 +937,7 @@ title: DwaToonMaterial
   - HSV = 1
   
   
-  RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation
+  <p>RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation<\p>
   
   
   <h3>iridescence_secondary_color</h3>
@@ -945,7 +945,7 @@ title: DwaToonMaterial
   
   default: [ 1, 0, 0 ]
   
-  Second color to interpolate to around the hue wheel
+  <p>Second color to interpolate to around the hue wheel<\p>
   
   
   <h3>iridescence_thickness</h3>
@@ -953,7 +953,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  Controls how much the color spectrum is repeated
+  <p>Controls how much the color spectrum is repeated<\p>
   
   
   </p>
@@ -969,7 +969,7 @@ title: DwaToonMaterial
   
   default: None
   
-  specifies an alternate shading normal in the tangent frame (normal map)
+  <p>specifies an alternate shading normal in the tangent frame (normal map)<\p>
   
   
   <h3>input_normal_dial</h3>
@@ -977,7 +977,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  controls the amount of influence of the alternate normal
+  <p>controls the amount of influence of the alternate normal<\p>
   
   
   </p>
@@ -993,7 +993,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  Controls the amount roughness compensation from the normal map AA strategy.
+  <p>Controls the amount roughness compensation from the normal map AA strategy.<\p>
   
   
   <h3>normal_AA_strategy</h3>
@@ -1004,7 +1004,7 @@ title: DwaToonMaterial
   - toksvig = 1
   
   
-  Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.
+  <p>Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.<\p>
   
   
   </p>
@@ -1020,7 +1020,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  controls the shape of the primary reflection
+  <p>controls the shape of the primary reflection<\p>
   
   
   <h3>metallic</h3>
@@ -1028,7 +1028,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  enables/disables metallic model (binary 0|1 for plausibility)
+  <p>enables/disables metallic model (binary 0|1 for plausibility)<\p>
   
   
   <h3>metallic_color</h3>
@@ -1036,7 +1036,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  the overall reflection color, defines Fresnel behavior
+  <p>the overall reflection color, defines Fresnel behavior<\p>
   
   
   <h3>metallic_edge_color</h3>
@@ -1044,7 +1044,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  the reflection color at grazing angles, defines Fresnel behavior
+  <p>the reflection color at grazing angles, defines Fresnel behavior<\p>
   
   
   <h3>refractive_index</h3>
@@ -1052,7 +1052,7 @@ title: DwaToonMaterial
   
   default: 1.5
   
-  defines the Fresnel behavior (affects only refraction when model is Toon)
+  <p>defines the Fresnel behavior (affects only refraction when model is Toon)<\p>
   
   
   <h3>roughness</h3>
@@ -1060,7 +1060,7 @@ title: DwaToonMaterial
   
   default: 0.5
   
-  the roughness of the surface
+  <p>the roughness of the surface<\p>
   
   
   <h3>shading_tangent</h3>
@@ -1068,7 +1068,7 @@ title: DwaToonMaterial
   
   default: [ 1, 0 ]
   
-  controls the orientation of anistropy
+  <p>controls the orientation of anistropy<\p>
   
   
   <h3>show_specular</h3>
@@ -1076,7 +1076,7 @@ title: DwaToonMaterial
   
   default: True
   
-  enables/disables specular reflections
+  <p>enables/disables specular reflections<\p>
   
   
   <h3>specular_model</h3>
@@ -1089,7 +1089,7 @@ title: DwaToonMaterial
   - Toon = 2
   
   
-  sets the normalized distribution function for specular.  GGX is currently isotropic only
+  <p>sets the normalized distribution function for specular.  GGX is currently isotropic only<\p>
   
   
   <h3>toon_specular_enable_indirect_reflections</h3>
@@ -1097,7 +1097,7 @@ title: DwaToonMaterial
   
   default: False
   
-  enables indirect GGX reflections for toon specular model
+  <p>enables indirect GGX reflections for toon specular model<\p>
   
   
   <h3>toon_specular_enable_input_normal</h3>
@@ -1105,7 +1105,7 @@ title: DwaToonMaterial
   
   default: False
   
-  enables sampling the normal map for toon toon specular
+  <p>enables sampling the normal map for toon toon specular<\p>
   
   
   <h3>toon_specular_indirect_reflections_intensity</h3>
@@ -1113,7 +1113,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  the intensity for the indirect reflections of the toon specular model
+  <p>the intensity for the indirect reflections of the toon specular model<\p>
   
   
   <h3>toon_specular_indirect_reflections_roughness</h3>
@@ -1121,7 +1121,7 @@ title: DwaToonMaterial
   
   default: 0.5
   
-  the roughness for the indirect reflections of the toon specular model
+  <p>the roughness for the indirect reflections of the toon specular model<\p>
   
   
   <h3>toon_specular_input_U</h3>
@@ -1129,7 +1129,7 @@ title: DwaToonMaterial
   
   default: [ 0, 0, 0 ]
   
-  input U / tangent for specular stretch
+  <p>input U / tangent for specular stretch<\p>
   
   
   <h3>toon_specular_input_V</h3>
@@ -1137,7 +1137,7 @@ title: DwaToonMaterial
   
   default: [ 0, 0, 0 ]
   
-  input V / bitangent for specular stretch
+  <p>input V / bitangent for specular stretch<\p>
   
   
   <h3>toon_specular_input_normal</h3>
@@ -1145,7 +1145,7 @@ title: DwaToonMaterial
   
   default: None
   
-  specifies an alternate shading normal for toon toon specular
+  <p>specifies an alternate shading normal for toon toon specular<\p>
   
   
   <h3>toon_specular_input_normal_dial</h3>
@@ -1153,7 +1153,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  controls influence of input normal versus hair normal for toon toon specular
+  <p>controls influence of input normal versus hair normal for toon toon specular<\p>
   
   
   <h3>toon_specular_intensity</h3>
@@ -1161,7 +1161,7 @@ title: DwaToonMaterial
   
   default: 1.0
   
-  The overall intensity of the toon specular response
+  <p>The overall intensity of the toon specular response<\p>
   
   
   <h3>toon_specular_interpolations</h3>
@@ -1169,9 +1169,9 @@ title: DwaToonMaterial
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+  <p>None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 
-			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
+			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6<\p>
   
   
   <h3>toon_specular_positions</h3>
@@ -1179,7 +1179,7 @@ title: DwaToonMaterial
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  ramp positions, maximum 10 allowed
+  <p>ramp positions, maximum 10 allowed<\p>
   
   
   <h3>toon_specular_stretch_u</h3>
@@ -1187,7 +1187,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Amount to stretch or compress the specular in the u direction 
+  <p>Amount to stretch or compress the specular in the u direction <\p>
   
   
   <h3>toon_specular_stretch_v</h3>
@@ -1195,7 +1195,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  Amount to stretch or compress the specular in the v direction 
+  <p>Amount to stretch or compress the specular in the v direction <\p>
   
   
   <h3>toon_specular_tint</h3>
@@ -1211,7 +1211,7 @@ title: DwaToonMaterial
   
   default: False
   
-  when checked, use input_U and V. otherwise use geometry dPds/t
+  <p>when checked, use input_U and V. otherwise use geometry dPds/t<\p>
   
   
   <h3>toon_specular_values</h3>
@@ -1219,7 +1219,7 @@ title: DwaToonMaterial
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  List of colors on the ramp
+  <p>List of colors on the ramp<\p>
   
   
   </p>
@@ -1235,7 +1235,7 @@ title: DwaToonMaterial
   
   default: 34.0
   
-  The amount of dispersion/chromatic-aberration via refractions. Lower this number to increase the effect. A value of 0 turns off dispersion. Around [25-80] makes sense for realistic glass. Lower values may look better on gemstones.
+  <p>The amount of dispersion/chromatic-aberration via refractions. Lower this number to increase the effect. A value of 0 turns off dispersion. Around [25-80] makes sense for realistic glass. Lower values may look better on gemstones.<\p>
   
   
   <h3>independent_transmission_refractive_index</h3>
@@ -1243,7 +1243,7 @@ title: DwaToonMaterial
   
   default: 1.5
   
-  defines a separate IOR for the bending of light with transmission
+  <p>defines a separate IOR for the bending of light with transmission<\p>
   
   
   <h3>independent_transmission_roughness</h3>
@@ -1251,7 +1251,7 @@ title: DwaToonMaterial
   
   default: 0.5
   
-  separate roughness for transmission
+  <p>separate roughness for transmission<\p>
   
   
   <h3>show_transmission</h3>
@@ -1259,7 +1259,7 @@ title: DwaToonMaterial
   
   default: True
   
-  enables/disables refractive solid model
+  <p>enables/disables refractive solid model<\p>
   
   
   <h3>transmission</h3>
@@ -1267,7 +1267,7 @@ title: DwaToonMaterial
   
   default: 0.0
   
-  enables/disables refractive solid model (binary 0|1 for plausibility)
+  <p>enables/disables refractive solid model (binary 0|1 for plausibility)<\p>
   
   
   <h3>transmission_color</h3>
@@ -1275,7 +1275,7 @@ title: DwaToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  the desired color of transmitted light
+  <p>the desired color of transmitted light<\p>
   
   
   <h3>use_dispersion</h3>
@@ -1283,7 +1283,7 @@ title: DwaToonMaterial
   
   default: False
   
-  use dispersion effects in transmission
+  <p>use dispersion effects in transmission<\p>
   
   
   <h3>use_independent_transmission_refractive_index</h3>
@@ -1291,7 +1291,7 @@ title: DwaToonMaterial
   
   default: False
   
-  use a separate IOR for transmission
+  <p>use a separate IOR for transmission<\p>
   
   
   <h3>use_independent_transmission_roughness</h3>
@@ -1299,7 +1299,7 @@ title: DwaToonMaterial
   
   default: False
   
-  use a separate roughness for transmission
+  <p>use a separate roughness for transmission<\p>
   
   
   </p>
@@ -1315,7 +1315,7 @@ title: DwaToonMaterial
   
   default: None
   
-  Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
+  <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result<\p>
   
   
   <h3>label</h3>
@@ -1323,7 +1323,7 @@ title: DwaToonMaterial
   
   default: 
   
-  label used in material and light aovs
+  <p>label used in material and light aovs<\p>
   
   
   <h3>priority</h3>
@@ -1331,7 +1331,7 @@ title: DwaToonMaterial
   
   default: 0
   
-  The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
+  <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.<\p>
   
   
   </p>

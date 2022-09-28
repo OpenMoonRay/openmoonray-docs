@@ -21,7 +21,7 @@ title: ShadowDisplayFilter
   
   default: 1.0
   
-  Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.
+  <p>Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.<\p>
   
   
   <h3>occluded</h3>
@@ -29,7 +29,7 @@ title: ShadowDisplayFilter
   
   default: None
   
-  Image Buffer representing the occluded image
+  <p>Image Buffer representing the occluded image<\p>
   
   
   <h3>shadow_color</h3>
@@ -37,7 +37,7 @@ title: ShadowDisplayFilter
   
   default: [ 0, 0, 0 ]
   
-  color of the shadow
+  <p>color of the shadow<\p>
   
   
   <h3>unoccluded</h3>
@@ -45,7 +45,7 @@ title: ShadowDisplayFilter
   
   default: None
   
-  Image Buffer representing the unoccluded image
+  <p>Image Buffer representing the unoccluded image<\p>
   
   
   </p>

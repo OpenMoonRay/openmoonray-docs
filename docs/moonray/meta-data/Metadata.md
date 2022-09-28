@@ -29,7 +29,7 @@ title: Metadata
   
   default: []
   
-  Allowed types for exr headers:
+  <p>Allowed types for exr headers:
 
 			* box2i
 
@@ -55,7 +55,7 @@ title: Metadata
 
 			* v3i
 
-			* v3f
+			* v3f<\p>
   
   
   <h3>value</h3>

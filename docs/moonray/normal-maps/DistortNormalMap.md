@@ -42,7 +42,7 @@ title: DistortNormalMap
   - hair_closest_surface_uv = 9
   
   
-  The space to calculate the noise in
+  <p>The space to calculate the noise in<\p>
   
   
   </p>
@@ -58,7 +58,7 @@ title: DistortNormalMap
   
   default: 1.0
   
-  controls amplitude of U distortion
+  <p>controls amplitude of U distortion<\p>
   
   
   <h3>amplitude_V</h3>
@@ -66,7 +66,7 @@ title: DistortNormalMap
   
   default: 1.0
   
-  controls amplitude of V distortion
+  <p>controls amplitude of V distortion<\p>
   
   
   <h3>frequency_U</h3>
@@ -74,7 +74,7 @@ title: DistortNormalMap
   
   default: [ 1, 1, 1 ]
   
-  controls noise frequency for U distortion
+  <p>controls noise frequency for U distortion<\p>
   
   
   <h3>frequency_V</h3>
@@ -82,7 +82,7 @@ title: DistortNormalMap
   
   default: [ 1, 1, 1 ]
   
-  controls noise frequency for V distortion
+  <p>controls noise frequency for V distortion<\p>
   
   
   <h3>input_U</h3>
@@ -90,7 +90,7 @@ title: DistortNormalMap
   
   default: [ 0, 0, 0 ]
   
-  input U / tangent for distortion
+  <p>input U / tangent for distortion<\p>
   
   
   <h3>input_V</h3>
@@ -98,7 +98,7 @@ title: DistortNormalMap
   
   default: [ 0, 0, 0 ]
   
-  input V / bitangent for distortion
+  <p>input V / bitangent for distortion<\p>
   
   
   <h3>input_normals</h3>
@@ -106,7 +106,7 @@ title: DistortNormalMap
   
   default: None
   
-  optional input to distort. if not connected, use geom normals
+  <p>optional input to distort. if not connected, use geom normals<\p>
   
   
   <h3>seed</h3>
@@ -114,7 +114,7 @@ title: DistortNormalMap
   
   default: 0
   
-  the seed for the noise generation
+  <p>the seed for the noise generation<\p>
   
   
   <h3>use_input_vectors</h3>
@@ -122,7 +122,7 @@ title: DistortNormalMap
   
   default: False
   
-  when checked, use input_U and V. otherwise use geometry dPds/t
+  <p>when checked, use input_U and V. otherwise use geometry dPds/t<\p>
   
   
   </p>

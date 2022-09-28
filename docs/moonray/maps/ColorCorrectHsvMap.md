@@ -21,7 +21,7 @@ title: ColorCorrectHsvMap
   
   default: False
   
-  clamps output to [0,1] range
+  <p>clamps output to [0,1] range<\p>
   
   
   <h3>hue_shift</h3>
@@ -29,7 +29,7 @@ title: ColorCorrectHsvMap
   
   default: 0.0
   
-  shifts the hue of the input (360 rolls over back to 0)
+  <p>shifts the hue of the input (360 rolls over back to 0)<\p>
   
   
   <h3>input</h3>
@@ -37,7 +37,7 @@ title: ColorCorrectHsvMap
   
   default: [ 1, 1, 1 ]
   
-  input color
+  <p>input color<\p>
   
   
   <h3>on</h3>
@@ -45,7 +45,7 @@ title: ColorCorrectHsvMap
   
   default: True
   
-  all attributes on/off
+  <p>all attributes on/off<\p>
   
   
   <h3>saturation_contrast</h3>
@@ -53,7 +53,7 @@ title: ColorCorrectHsvMap
   
   default: 0.0
   
-  modifies the contrast of the input's saturation (-1, 1)
+  <p>modifies the contrast of the input's saturation (-1, 1)<\p>
   
   
   <h3>saturation_factor</h3>
@@ -61,7 +61,7 @@ title: ColorCorrectHsvMap
   
   default: 1.0
   
-  multiplies the saturation of the input
+  <p>multiplies the saturation of the input<\p>
   
   
   <h3>saturation_shift</h3>
@@ -69,7 +69,7 @@ title: ColorCorrectHsvMap
   
   default: 0.0
   
-  shifts the saturation of the input (-1, 1)
+  <p>shifts the saturation of the input (-1, 1)<\p>
   
   
   <h3>value_contrast</h3>
@@ -77,7 +77,7 @@ title: ColorCorrectHsvMap
   
   default: 0.0
   
-  modifies the contrast of the input's value (-1, 1)
+  <p>modifies the contrast of the input's value (-1, 1)<\p>
   
   
   <h3>value_factor</h3>
@@ -85,7 +85,7 @@ title: ColorCorrectHsvMap
   
   default: 1.0
   
-  multiplies the value of the input
+  <p>multiplies the value of the input<\p>
   
   
   <h3>value_shift</h3>
@@ -93,7 +93,7 @@ title: ColorCorrectHsvMap
   
   default: 0.0
   
-  shifts the value of the input (-1, 1)
+  <p>shifts the value of the input (-1, 1)<\p>
   
   
   </p>

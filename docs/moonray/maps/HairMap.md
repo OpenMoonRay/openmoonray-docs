@@ -37,7 +37,7 @@ title: HairMap
   
   default: [ 1, 1, 1 ]
   
-  Bound image map must have a HairColumnUvMap bound to its input texture coordinates.
+  <p>Bound image map must have a HairColumnUvMap bound to its input texture coordinates.<\p>
   
   
   <h3>gain</h3>

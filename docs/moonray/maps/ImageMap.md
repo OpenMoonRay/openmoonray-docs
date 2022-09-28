@@ -21,7 +21,7 @@ title: ImageMap
   
   default: 0.0
   
-  This parameter is deprecated, do not use!   Number of pixels to blur the image
+  <p>This parameter is deprecated, do not use!   Number of pixels to blur the image<\p>
   
   
   <h3>mip_bias</h3>
@@ -29,7 +29,7 @@ title: ImageMap
   
   default: 0.0
   
-  Amount to scale derivatives which controls mipmap selection
+  <p>Amount to scale derivatives which controls mipmap selection<\p>
   
   
   <h3>num_blur_samples</h3>
@@ -37,7 +37,7 @@ title: ImageMap
   
   default: 3
   
-  This parameter is deprecated, do not use!  Number of internal samples for blur.   Higher values increase quality
+  <p>This parameter is deprecated, do not use!  Number of internal samples for blur.   Higher values increase quality<\p>
   
   
   </p>
@@ -53,7 +53,7 @@ title: ImageMap
   
   default: [ 0, 0, 0 ]
   
-  T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy 
+  <p>T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy <\p>
   
   
   <h3>TMI_control_enabled</h3>
@@ -149,7 +149,7 @@ title: ImageMap
   
   default: False
   
-  If true, the alpha channel of the texture will be placed in the rgb channels.  If the texture has no alpha channel, 1.0 is used, and the resulting texture lookup is then always white.
+  <p>If true, the alpha channel of the texture will be placed in the rgb channels.  If the texture has no alpha channel, 1.0 is used, and the resulting texture lookup is then always white.<\p>
   
   
   <h3>default_color</h3>
@@ -157,7 +157,7 @@ title: ImageMap
   
   default: [ 0, 1, 0 ]
   
-  default color to be used for missing udims when 'use default color when missing' is enabled
+  <p>default color to be used for missing udims when 'use default color when missing' is enabled<\p>
   
   
   <h3>gamma</h3>
@@ -194,7 +194,7 @@ title: ImageMap
   
   default: 0.0
   
-  Rotation in degrees
+  <p>Rotation in degrees<\p>
   
   
   <h3>rotation_center</h3>
@@ -202,7 +202,7 @@ title: ImageMap
   
   default: [ 0.5, 0.5 ]
   
-  UV coordinate around which to rotate
+  <p>UV coordinate around which to rotate<\p>
   
   
   <h3>scale</h3>
@@ -218,7 +218,7 @@ title: ImageMap
   
   default: 
   
-  filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx). If filename contains '<UDIM>', udim index substitution is performed on filename.  In the UDIM case, 'scale', 'offset', and 'wrap around' are ignored.
+  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx). If filename contains '<UDIM>', udim index substitution is performed on filename.  In the UDIM case, 'scale', 'offset', and 'wrap around' are ignored.<\p>
   
   
   <h3>texture_coordinates</h3>
@@ -249,7 +249,7 @@ title: ImageMap
   
   default: 10
   
-  udim maximum v value
+  <p>udim maximum v value<\p>
   
   
   <h3>udim_values</h3>
@@ -265,7 +265,7 @@ title: ImageMap
   
   default: False
   
-  Uses the 'default color' for missing udims and does not report error
+  <p>Uses the 'default color' for missing udims and does not report error<\p>
   
   
   <h3>wrap_around</h3>

@@ -24,7 +24,7 @@ title: ProjectCameraNormalMap
   - custom = 1
   
   
-  Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio
+  <p>Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio<\p>
   
   
   <h3>custom_aspect_ratio</h3>
@@ -32,7 +32,7 @@ title: ProjectCameraNormalMap
   
   default: 1.0
   
-  a custom aspect ratio for the projected texture
+  <p>a custom aspect ratio for the projected texture<\p>
   
   
   <h3>normal_encoding</h3>
@@ -43,7 +43,7 @@ title: ProjectCameraNormalMap
   - [-1,1] = 1
   
   
-  Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]
+  <p>Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]<\p>
   
   
   <h3>project_on_back_faces</h3>
@@ -51,7 +51,7 @@ title: ProjectCameraNormalMap
   
   default: False
   
-  Toggles whether camera projections appear on back faces.
+  <p>Toggles whether camera projections appear on back faces.<\p>
   
   
   <h3>projector</h3>
@@ -59,7 +59,7 @@ title: ProjectCameraNormalMap
   
   default: None
   
-  the camera to project from
+  <p>the camera to project from<\p>
   
   
   <h3>texture</h3>
@@ -67,7 +67,7 @@ title: ProjectCameraNormalMap
   
   default: 
   
-  filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
+  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).<\p>
   
   
   <h3>use_reference_space</h3>
@@ -75,7 +75,7 @@ title: ProjectCameraNormalMap
   
   default: False
   
-  use reference space
+  <p>use reference space<\p>
   
   
   </p>

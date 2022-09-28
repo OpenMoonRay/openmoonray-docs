@@ -21,7 +21,7 @@ title: HalftoneDisplayFilter
   
   default: False
   
-  invert value of mask
+  <p>invert value of mask<\p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: HalftoneDisplayFilter
   
   default: 1.0
   
-  blend between output and input
+  <p>blend between output and input<\p>
   
   
   </p>
@@ -45,7 +45,7 @@ title: HalftoneDisplayFilter
   
   default: 1.0
   
-  The width in pixels of the antialiasing
+  <p>The width in pixels of the antialiasing<\p>
   
   
   <h3>grayscale</h3>
@@ -53,7 +53,7 @@ title: HalftoneDisplayFilter
   
   default: False
   
-  Ignore color information, render as grayscale
+  <p>Ignore color information, render as grayscale<\p>
   
   
   <h3>input</h3>
@@ -61,7 +61,7 @@ title: HalftoneDisplayFilter
   
   default: None
   
-  RenderOutput to be represented in halftone
+  <p>RenderOutput to be represented in halftone<\p>
   
   
   <h3>invert</h3>
@@ -69,7 +69,7 @@ title: HalftoneDisplayFilter
   
   default: False
   
-  Whether the dots should be black (normal) or white/color (inverted)
+  <p>Whether the dots should be black (normal) or white/color (inverted)<\p>
   
   
   <h3>mask</h3>
@@ -85,7 +85,7 @@ title: HalftoneDisplayFilter
   
   default: 5
   
-  The size in pixels of the halftone dots
+  <p>The size in pixels of the halftone dots<\p>
   
   
   </p>

@@ -21,7 +21,7 @@ title: RampMap
   
   default: [ 0, 0, 0 ]
   
-  Bind custom UV coordinates
+  <p>Bind custom UV coordinates<\p>
   
   
   <h3>uv_repeat</h3>
@@ -29,7 +29,7 @@ title: RampMap
   
   default: [ 1, 1 ]
   
-  Number of times to repeat the ramp pattern
+  <p>Number of times to repeat the ramp pattern<\p>
   
   
   <h3>uv_wave</h3>
@@ -37,7 +37,7 @@ title: RampMap
   
   default: [ 0, 0 ]
   
-  Creates waves which perturb the ramp pattern
+  <p>Creates waves which perturb the ramp pattern<\p>
   
   
   <h3>wrap_type</h3>
@@ -64,7 +64,7 @@ title: RampMap
   
   default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
   
-  List of colors on the ramp
+  <p>List of colors on the ramp<\p>
   
   
   <h3>interpolations</h3>
@@ -72,9 +72,9 @@ title: RampMap
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+  <p>None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 
-			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
+			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6<\p>
   
   
   <h3>positions</h3>
@@ -82,7 +82,7 @@ title: RampMap
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  Color ramp
+  <p>Color ramp<\p>
   
   
   </p>
@@ -98,7 +98,7 @@ title: RampMap
   
   default: None
   
-  Camera used to define camera and screen space
+  <p>Camera used to define camera and screen space<\p>
   
   
   <h3>color_space</h3>
@@ -111,7 +111,7 @@ title: RampMap
   - hsl = 2
   
   
-  Color space to perform interpolation in
+  <p>Color space to perform interpolation in<\p>
   
   
   <h3>input</h3>
@@ -119,7 +119,7 @@ title: RampMap
   
   default: 1.0
   
-  Input signal for ramp, used when ramp type is set to input
+  <p>Input signal for ramp, used when ramp type is set to input<\p>
   
   
   <h3>object</h3>
@@ -173,7 +173,7 @@ title: RampMap
   - texture = 6
   
   
-  Only applies when 'texture coordinates' is set to 'default state coordinates'
+  <p>Only applies when 'texture coordinates' is set to 'default state coordinates'<\p>
   
   
   </p>

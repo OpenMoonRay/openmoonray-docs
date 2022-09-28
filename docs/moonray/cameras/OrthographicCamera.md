@@ -21,7 +21,7 @@ title: OrthographicCamera
   
   default: False
   
-  Enable Bokeh. Requires DOF to be enabled.
+  <p>Enable Bokeh. Requires DOF to be enabled.<\p>
   
   
   <h3>bokeh_angle</h3>
@@ -29,7 +29,7 @@ title: OrthographicCamera
   
   default: 0.0
   
-  Angle of iris rotation
+  <p>Angle of iris rotation<\p>
   
   
   <h3>bokeh_image</h3>
@@ -37,7 +37,7 @@ title: OrthographicCamera
   
   default: 
   
-  Path to image file to be used for the iris
+  <p>Path to image file to be used for the iris<\p>
   
   
   <h3>bokeh_sides</h3>
@@ -45,7 +45,7 @@ title: OrthographicCamera
   
   default: 0
   
-  Number of sides of the iris. Specifying less than 3 sides will default to a disk.
+  <p>Number of sides of the iris. Specifying less than 3 sides will default to a disk.<\p>
   
   
   <h3>bokeh_weight_location</h3>
@@ -53,7 +53,7 @@ title: OrthographicCamera
   
   default: 0.0
   
-  Distance from the origin of Bokeh shape
+  <p>Distance from the origin of Bokeh shape<\p>
   
   
   <h3>bokeh_weight_strength</h3>
@@ -61,7 +61,7 @@ title: OrthographicCamera
   
   default: 0.0
   
-  Controls the strength of weights as samples approach the weight location
+  <p>Controls the strength of weights as samples approach the weight location<\p>
   
   
   <h3>dof</h3>
@@ -133,7 +133,7 @@ title: OrthographicCamera
   
   default: 1.0
   
-  ratio of pixel size y / x
+  <p>ratio of pixel size y / x<\p>
   
   
   <h3>vertical_film_offset</h3>

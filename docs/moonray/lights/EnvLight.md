@@ -69,7 +69,7 @@ title: EnvLight
   
   default: [ 0, 0, 0 ]
   
-  color temperature using Nuke-like T/M/E settings
+  <p>color temperature using Nuke-like T/M/E settings<\p>
   
   
   <h3>texture</h3>
@@ -77,7 +77,7 @@ title: EnvLight
   
   default: 
   
-  filename that points to a texture (formats: .exr, .tif, .jpg, etc.)
+  <p>filename that points to a texture (formats: .exr, .tif, .jpg, etc.)<\p>
   
   
   <h3>texture_border_color</h3>
@@ -85,7 +85,7 @@ title: EnvLight
   
   default: [ 1, 1, 1 ]
   
-  RGB value used when a texture lookup occurs outside the texture
+  <p>RGB value used when a texture lookup occurs outside the texture<\p>
   
   
   <h3>texture_coverage</h3>
@@ -93,7 +93,7 @@ title: EnvLight
   
   default: [ 1, 1 ]
   
-  Scales in (u,v)
+  <p>Scales in (u,v)<\p>
   
   
   <h3>texture_mirror_u</h3>
@@ -101,7 +101,7 @@ title: EnvLight
   
   default: False
   
-  true => mirror in u, false => repeat in u
+  <p>true => mirror in u, false => repeat in u<\p>
   
   
   <h3>texture_mirror_v</h3>
@@ -109,7 +109,7 @@ title: EnvLight
   
   default: False
   
-  true => mirror in v, false => repeat in v
+  <p>true => mirror in v, false => repeat in v<\p>
   
   
   <h3>texture_reps_u</h3>
@@ -117,7 +117,7 @@ title: EnvLight
   
   default: 1.0
   
-  Number of times texture repeats in u over the scaled texture space
+  <p>Number of times texture repeats in u over the scaled texture space<\p>
   
   
   <h3>texture_reps_v</h3>
@@ -125,7 +125,7 @@ title: EnvLight
   
   default: 1.0
   
-  Number of times texture repeats in v over the scaled texture space
+  <p>Number of times texture repeats in v over the scaled texture space<\p>
   
   
   <h3>texture_rotation</h3>
@@ -133,7 +133,7 @@ title: EnvLight
   
   default: 0.0
   
-  Clockwise rotation angle in degrees
+  <p>Clockwise rotation angle in degrees<\p>
   
   
   <h3>texture_translation</h3>
@@ -141,7 +141,7 @@ title: EnvLight
   
   default: [ 0, 0 ]
   
-  Translations in (u,v) expressed as fractions of the unscaled texture space
+  <p>Translations in (u,v) expressed as fractions of the unscaled texture space<\p>
   
   
   </p>
@@ -181,7 +181,7 @@ title: EnvLight
   
   default: 
   
-  label used in light aov expressions
+  <p>label used in light aov expressions<\p>
   
   
   <h3>max_shadow_distance</h3>
@@ -197,7 +197,7 @@ title: EnvLight
   
   default: False
   
-  Does light motion affect motion-blur?
+  <p>Does light motion affect motion-blur?<\p>
   
   
   <h3>on</h3>
@@ -226,7 +226,7 @@ title: EnvLight
   
   default: False
   
-  Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.
+  <p>Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.<\p>
   
   
   <h3>texture_filter</h3>
@@ -270,7 +270,7 @@ title: EnvLight
   
   default: True
   
-  whether the light is visible in diffuse reflection
+  <p>whether the light is visible in diffuse reflection<\p>
   
   
   <h3>visible_diffuse_transmission</h3>
@@ -278,7 +278,7 @@ title: EnvLight
   
   default: True
   
-  whether the light is visible in diffuse transmission
+  <p>whether the light is visible in diffuse transmission<\p>
   
   
   <h3>visible_glossy_reflection</h3>
@@ -286,7 +286,7 @@ title: EnvLight
   
   default: True
   
-  whether the light is visible in glossy reflection.
+  <p>whether the light is visible in glossy reflection.<\p>
   
   
   <h3>visible_glossy_transmission</h3>
@@ -294,7 +294,7 @@ title: EnvLight
   
   default: True
   
-  whether the light is visible in glossy transmission (refraction).
+  <p>whether the light is visible in glossy transmission (refraction).<\p>
   
   
   <h3>visible_mirror_reflection</h3>
@@ -302,7 +302,7 @@ title: EnvLight
   
   default: True
   
-  whether the light is visible in miror reflection.
+  <p>whether the light is visible in miror reflection.<\p>
   
   
   <h3>visible_mirror_transmission</h3>
@@ -310,7 +310,7 @@ title: EnvLight
   
   default: True
   
-  whether the light is visible in miror transmission (refraction).
+  <p>whether the light is visible in miror transmission (refraction).<\p>
   
   
   </p>

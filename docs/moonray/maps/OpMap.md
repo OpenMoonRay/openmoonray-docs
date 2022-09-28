@@ -21,7 +21,7 @@ title: OpMap
   
   default: False
   
-  if on, the result is clamped to 0 - 1
+  <p>if on, the result is clamped to 0 - 1<\p>
   
   
   <h3>op1</h3>
@@ -29,7 +29,7 @@ title: OpMap
   
   default: [ 1, 1, 1 ]
   
-  the first operand
+  <p>the first operand<\p>
   
   
   <h3>op1_factor</h3>
@@ -37,7 +37,7 @@ title: OpMap
   
   default: 1.0
   
-  a scalar multiplier on op1
+  <p>a scalar multiplier on op1<\p>
   
   
   <h3>op2</h3>
@@ -45,7 +45,7 @@ title: OpMap
   
   default: [ 1, 1, 1 ]
   
-  the second operand
+  <p>the second operand<\p>
   
   
   <h3>op2_factor</h3>
@@ -53,7 +53,7 @@ title: OpMap
   
   default: 1.0
   
-  a scalar multiplier on op2
+  <p>a scalar multiplier on op2<\p>
   
   
   <h3>operation</h3>

@@ -21,7 +21,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  enables/disables specular reflections (binary 0|1 for plausibility)
+  <p>enables/disables specular reflections (binary 0|1 for plausibility)<\p>
   
   
   </p>
@@ -37,7 +37,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  enables/disables clearcoat (binary 0|1 for plausibility)
+  <p>enables/disables clearcoat (binary 0|1 for plausibility)<\p>
   
   
   <h3>clearcoat_attenuation_color</h3>
@@ -45,7 +45,7 @@ title: DwaRefractiveMaterial
   
   default: [ 0.5, 0.5, 0.5 ]
   
-  the attenuation color of the clearcoat when 'cleacoat thickness' > 0
+  <p>the attenuation color of the clearcoat when 'cleacoat thickness' > 0<\p>
   
   
   <h3>clearcoat_bending</h3>
@@ -53,7 +53,7 @@ title: DwaRefractiveMaterial
   
   default: True
   
-  (advanced, recommended ON) bends rays based on the clearcoat-refractive-index before evaluating the lobes under clearcoat
+  <p>(advanced, recommended ON) bends rays based on the clearcoat-refractive-index before evaluating the lobes under clearcoat<\p>
   
   
   <h3>clearcoat_model</h3>
@@ -64,7 +64,7 @@ title: DwaRefractiveMaterial
   - GGX = 1 (default)
   
   
-  sets the normalized distribution function for clearcoat.  GGX is currently isotropic only
+  <p>sets the normalized distribution function for clearcoat.  GGX is currently isotropic only<\p>
   
   
   <h3>clearcoat_normal_dial</h3>
@@ -72,7 +72,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  controls the amount of infuence of the alternate clearcoat normal
+  <p>controls the amount of infuence of the alternate clearcoat normal<\p>
   
   
   <h3>clearcoat_refractive_index</h3>
@@ -80,7 +80,7 @@ title: DwaRefractiveMaterial
   
   default: 1.5
   
-  defines the Fresnel behavior
+  <p>defines the Fresnel behavior<\p>
   
   
   <h3>clearcoat_roughness</h3>
@@ -88,7 +88,7 @@ title: DwaRefractiveMaterial
   
   default: 0.10000000149
   
-  the roughness of the clearcoat lobe
+  <p>the roughness of the clearcoat lobe<\p>
   
   
   <h3>clearcoat_thickness</h3>
@@ -96,7 +96,7 @@ title: DwaRefractiveMaterial
   
   default: 0.0
   
-  the thickness of the virtual clearcoat layer. Values > 0 enable absorption
+  <p>the thickness of the virtual clearcoat layer. Values > 0 enable absorption<\p>
   
   
   <h3>independent_clearcoat_normal</h3>
@@ -104,7 +104,7 @@ title: DwaRefractiveMaterial
   
   default: None
   
-  specifies an independent shading normal (normal map) for the clearcoat lobe
+  <p>specifies an independent shading normal (normal map) for the clearcoat lobe<\p>
   
   
   <h3>show_clearcoat</h3>
@@ -112,7 +112,7 @@ title: DwaRefractiveMaterial
   
   default: False
   
-  enables/disables clearcoat
+  <p>enables/disables clearcoat<\p>
   
   
   <h3>use_independent_clearcoat_normal</h3>
@@ -120,7 +120,7 @@ title: DwaRefractiveMaterial
   
   default: False
   
-  specifies whether the clearcoat lobe should use an independent normal
+  <p>specifies whether the clearcoat lobe should use an independent normal<\p>
   
   
   </p>
@@ -136,7 +136,7 @@ title: DwaRefractiveMaterial
   
   default: False
   
-  allows continuation of caustic light paths.
+  <p>allows continuation of caustic light paths.<\p>
   
   
   <h3>presence</h3>
@@ -144,7 +144,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).
+  <p>controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).<\p>
   
   
   <h3>thin_geometry</h3>
@@ -152,7 +152,7 @@ title: DwaRefractiveMaterial
   
   default: False
   
-  enables proper shading of infinitely thin geometry such as paper or leaves.
+  <p>enables proper shading of infinitely thin geometry such as paper or leaves.<\p>
   
   
   </p>
@@ -168,7 +168,7 @@ title: DwaRefractiveMaterial
   
   default: [ 1, 1, 1 ]
   
-  the energy emitted from this material
+  <p>the energy emitted from this material<\p>
   
   
   <h3>show_emission</h3>
@@ -176,7 +176,7 @@ title: DwaRefractiveMaterial
   
   default: False
   
-  enables/disable emission
+  <p>enables/disable emission<\p>
   
   
   </p>
@@ -192,7 +192,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  fuzz mask
+  <p>fuzz mask<\p>
   
   
   <h3>fuzz_albedo</h3>
@@ -200,7 +200,7 @@ title: DwaRefractiveMaterial
   
   default: [ 1, 1, 1 ]
   
-  Color of the fuzz highlights.
+  <p>Color of the fuzz highlights.<\p>
   
   
   <h3>fuzz_normal</h3>
@@ -208,7 +208,7 @@ title: DwaRefractiveMaterial
   
   default: None
   
-  specifies an independent shading normal (normal map) for the fuzz lobe
+  <p>specifies an independent shading normal (normal map) for the fuzz lobe<\p>
   
   
   <h3>fuzz_normal_dial</h3>
@@ -216,7 +216,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  controls the amount of infuence of the alternate fuzz normal
+  <p>controls the amount of infuence of the alternate fuzz normal<\p>
   
   
   <h3>fuzz_roughness</h3>
@@ -224,7 +224,7 @@ title: DwaRefractiveMaterial
   
   default: 0.25
   
-  Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage
+  <p>Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage<\p>
   
   
   <h3>show_fuzz</h3>
@@ -232,7 +232,7 @@ title: DwaRefractiveMaterial
   
   default: False
   
-  Enables/disables fuzz lobe
+  <p>Enables/disables fuzz lobe<\p>
   
   
   <h3>use_absorbing_fuzz_fibers</h3>
@@ -240,7 +240,7 @@ title: DwaRefractiveMaterial
   
   default: False
   
-  Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.
+  <p>Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.<\p>
   
   
   </p>
@@ -256,7 +256,7 @@ title: DwaRefractiveMaterial
   
   default: 0.0
   
-  controls the strength of the iridescence effect
+  <p>controls the strength of the iridescence effect<\p>
   
   
   <h3>iridescence_apply_to</h3>
@@ -267,7 +267,7 @@ title: DwaRefractiveMaterial
   - clearcoat/moisture specular = 1
   
   
-  Apply iridescence to primary specular lobe or clearcoat/moisture lobe
+  <p>Apply iridescence to primary specular lobe or clearcoat/moisture lobe<\p>
   
   
   <h3>iridescence_at_0_incidence</h3>
@@ -275,7 +275,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  Iridescence effect at 0 degree viewing angle
+  <p>Iridescence effect at 0 degree viewing angle<\p>
   
   
   <h3>iridescence_at_90_incidence</h3>
@@ -283,7 +283,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  Iridescence effect at 90 degree viewing angle
+  <p>Iridescence effect at 90 degree viewing angle<\p>
   
   
   <h3>iridescence_color_control</h3>
@@ -294,7 +294,7 @@ title: DwaRefractiveMaterial
   - use ramp = 1
   
   
-  use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp
+  <p>use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp<\p>
   
   
   <h3>iridescence_colors</h3>
@@ -302,7 +302,7 @@ title: DwaRefractiveMaterial
   
   default: [[ 1, 0, 0 ], [ 1, 1, 0 ], [ 0, 1, 0 ], [ 0, 1, 1 ], [ 0, 0, 1 ], [ 1, 0, 1 ], [ 1, 0, 0 ]]
   
-  List of colors on the ramp
+  <p>List of colors on the ramp<\p>
   
   
   <h3>iridescence_exponent</h3>
@@ -310,7 +310,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  Tightens or broadens the distribution of colors
+  <p>Tightens or broadens the distribution of colors<\p>
   
   
   <h3>iridescence_flip_hue_direction</h3>
@@ -318,7 +318,7 @@ title: DwaRefractiveMaterial
   
   default: False
   
-  flip interpolation around the hue wheel to counter-clockwise direction
+  <p>flip interpolation around the hue wheel to counter-clockwise direction<\p>
   
   
   <h3>iridescence_interpolations</h3>
@@ -326,9 +326,9 @@ title: DwaRefractiveMaterial
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+  <p>None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 
-			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
+			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6<\p>
   
   
   <h3>iridescence_positions</h3>
@@ -336,7 +336,7 @@ title: DwaRefractiveMaterial
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  ramp positions
+  <p>ramp positions<\p>
   
   
   <h3>iridescence_primary_color</h3>
@@ -344,7 +344,7 @@ title: DwaRefractiveMaterial
   
   default: [ 1, 0, 0 ]
   
-  First color to interpolate from around the hue wheel
+  <p>First color to interpolate from around the hue wheel<\p>
   
   
   <h3>iridescence_ramp_interpolation_mode</h3>
@@ -355,7 +355,7 @@ title: DwaRefractiveMaterial
   - HSV = 1
   
   
-  RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation
+  <p>RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation<\p>
   
   
   <h3>iridescence_secondary_color</h3>
@@ -363,7 +363,7 @@ title: DwaRefractiveMaterial
   
   default: [ 1, 0, 0 ]
   
-  Second color to interpolate to around the hue wheel
+  <p>Second color to interpolate to around the hue wheel<\p>
   
   
   <h3>iridescence_thickness</h3>
@@ -371,7 +371,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  Controls how much the color spectrum is repeated
+  <p>Controls how much the color spectrum is repeated<\p>
   
   
   </p>
@@ -387,7 +387,7 @@ title: DwaRefractiveMaterial
   
   default: None
   
-  specifies an alternate shading normal in the tangent frame (normal map)
+  <p>specifies an alternate shading normal in the tangent frame (normal map)<\p>
   
   
   <h3>input_normal_dial</h3>
@@ -395,7 +395,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  controls the amount of influence of the alternate normal
+  <p>controls the amount of influence of the alternate normal<\p>
   
   
   </p>
@@ -411,7 +411,7 @@ title: DwaRefractiveMaterial
   
   default: 1.0
   
-  Controls the amount roughness compensation from the normal map AA strategy.
+  <p>Controls the amount roughness compensation from the normal map AA strategy.<\p>
   
   
   <h3>normal_AA_strategy</h3>
@@ -422,7 +422,7 @@ title: DwaRefractiveMaterial
   - toksvig = 1
   
   
-  Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.
+  <p>Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.<\p>
   
   
   </p>
@@ -438,7 +438,7 @@ title: DwaRefractiveMaterial
   
   default: 0.0
   
-  controls the shape of the primary reflection
+  <p>controls the shape of the primary reflection<\p>
   
   
   <h3>refractive_index</h3>
@@ -446,7 +446,7 @@ title: DwaRefractiveMaterial
   
   default: 1.5
   
-  defines the Fresnel behavior, (affects reflection and refraction)
+  <p>defines the Fresnel behavior, (affects reflection and refraction)<\p>
   
   
   <h3>roughness</h3>
@@ -454,7 +454,7 @@ title: DwaRefractiveMaterial
   
   default: 0.5
   
-  the roughness of the surface (currently only affects reflection)
+  <p>the roughness of the surface (currently only affects reflection)<\p>
   
   
   <h3>shading_tangent</h3>
@@ -462,7 +462,7 @@ title: DwaRefractiveMaterial
   
   default: [ 1, 0 ]
   
-  controls the orientation of anistropy
+  <p>controls the orientation of anistropy<\p>
   
   
   <h3>show_specular</h3>
@@ -470,7 +470,7 @@ title: DwaRefractiveMaterial
   
   default: True
   
-  enables/disables specular reflections
+  <p>enables/disables specular reflections<\p>
   
   
   <h3>specular_model</h3>
@@ -481,7 +481,7 @@ title: DwaRefractiveMaterial
   - GGX = 1 (default)
   
   
-  sets the normalized distribution function for specular.  GGX is currently isotropic only
+  <p>sets the normalized distribution function for specular.  GGX is currently isotropic only<\p>
   
   
   </p>
@@ -497,7 +497,7 @@ title: DwaRefractiveMaterial
   
   default: 34.0
   
-  The amount of dispersion/chromatic-aberration via refractions. Lower this number to increase the effect. A value of 0 turns off dispersion. Around [25-80] makes sense for realistic glass. Lower values may look better on gemstones.
+  <p>The amount of dispersion/chromatic-aberration via refractions. Lower this number to increase the effect. A value of 0 turns off dispersion. Around [25-80] makes sense for realistic glass. Lower values may look better on gemstones.<\p>
   
   
   <h3>independent_transmission_refractive_index</h3>
@@ -505,7 +505,7 @@ title: DwaRefractiveMaterial
   
   default: 1.5
   
-  defines a separate IOR for the bending of light with transmission
+  <p>defines a separate IOR for the bending of light with transmission<\p>
   
   
   <h3>independent_transmission_roughness</h3>
@@ -513,7 +513,7 @@ title: DwaRefractiveMaterial
   
   default: 0.5
   
-  separate roughness for transmission
+  <p>separate roughness for transmission<\p>
   
   
   <h3>show_transmission</h3>
@@ -521,7 +521,7 @@ title: DwaRefractiveMaterial
   
   default: True
   
-  enables/disables refractive solid model
+  <p>enables/disables refractive solid model<\p>
   
   
   <h3>transmission_color</h3>
@@ -529,7 +529,7 @@ title: DwaRefractiveMaterial
   
   default: [ 1, 1, 1 ]
   
-  the desired color of transmitted light
+  <p>the desired color of transmitted light<\p>
   
   
   <h3>use_dispersion</h3>
@@ -537,7 +537,7 @@ title: DwaRefractiveMaterial
   
   default: False
   
-  use dispersion effects in transmission
+  <p>use dispersion effects in transmission<\p>
   
   
   <h3>use_independent_transmission_refractive_index</h3>
@@ -545,7 +545,7 @@ title: DwaRefractiveMaterial
   
   default: False
   
-  use a separate IOR for transmission
+  <p>use a separate IOR for transmission<\p>
   
   
   <h3>use_independent_transmission_roughness</h3>
@@ -553,7 +553,7 @@ title: DwaRefractiveMaterial
   
   default: False
   
-  use a separate roughness for transmission
+  <p>use a separate roughness for transmission<\p>
   
   
   </p>
@@ -569,7 +569,7 @@ title: DwaRefractiveMaterial
   
   default: None
   
-  Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
+  <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result<\p>
   
   
   <h3>label</h3>
@@ -577,7 +577,7 @@ title: DwaRefractiveMaterial
   
   default: 
   
-  label used in material and light aovs
+  <p>label used in material and light aovs<\p>
   
   
   <h3>priority</h3>
@@ -585,7 +585,7 @@ title: DwaRefractiveMaterial
   
   default: 0
   
-  The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
+  <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.<\p>
   
   
   </p>

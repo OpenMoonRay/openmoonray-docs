@@ -21,7 +21,7 @@ title: RandomMap
   
   default: [ 1, 1, 1 ]
   
-  the input color used as a base seed to generate the random value
+  <p>the input color used as a base seed to generate the random value<\p>
   
   
   <h3>monochrome</h3>
@@ -29,7 +29,7 @@ title: RandomMap
   
   default: True
   
-  outputs the same color for all three channels
+  <p>outputs the same color for all three channels<\p>
   
   
   <h3>output_max</h3>
@@ -37,7 +37,7 @@ title: RandomMap
   
   default: 1.0
   
-  the maximum output random value
+  <p>the maximum output random value<\p>
   
   
   <h3>output_min</h3>
@@ -45,7 +45,7 @@ title: RandomMap
   
   default: 0.0
   
-  the minimum output random value
+  <p>the minimum output random value<\p>
   
   
   <h3>seed</h3>
@@ -53,7 +53,7 @@ title: RandomMap
   
   default: 0
   
-  additional seed added to input for random number generator
+  <p>additional seed added to input for random number generator<\p>
   
   
   </p>

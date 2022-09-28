@@ -21,7 +21,7 @@ title: ColorCorrectGainOffsetMap
   
   default: 1.0
   
-  multiplies the input channels by the specified values
+  <p>multiplies the input channels by the specified values<\p>
   
   
   <h3>gain_b</h3>
@@ -29,7 +29,7 @@ title: ColorCorrectGainOffsetMap
   
   default: 1.0
   
-  multiplies the blue channel by the specified values
+  <p>multiplies the blue channel by the specified values<\p>
   
   
   <h3>gain_g</h3>
@@ -37,7 +37,7 @@ title: ColorCorrectGainOffsetMap
   
   default: 1.0
   
-  multiplies the green channel by the specified values
+  <p>multiplies the green channel by the specified values<\p>
   
   
   <h3>gain_r</h3>
@@ -45,7 +45,7 @@ title: ColorCorrectGainOffsetMap
   
   default: 1.0
   
-  multiplies the red channel by the specified values
+  <p>multiplies the red channel by the specified values<\p>
   
   
   <h3>input</h3>
@@ -53,7 +53,7 @@ title: ColorCorrectGainOffsetMap
   
   default: [ 1, 1, 1 ]
   
-  bind the input here
+  <p>bind the input here<\p>
   
   
   <h3>mix</h3>
@@ -61,7 +61,7 @@ title: ColorCorrectGainOffsetMap
   
   default: 1.0
   
-  how much of the overall color correct to mix in
+  <p>how much of the overall color correct to mix in<\p>
   
   
   <h3>offset</h3>
@@ -69,7 +69,7 @@ title: ColorCorrectGainOffsetMap
   
   default: 0.0
   
-  adds the specified values to the input
+  <p>adds the specified values to the input<\p>
   
   
   <h3>offset_b</h3>
@@ -77,7 +77,7 @@ title: ColorCorrectGainOffsetMap
   
   default: 1.0
   
-  adds the specified values to the blue channel
+  <p>adds the specified values to the blue channel<\p>
   
   
   <h3>offset_g</h3>
@@ -85,7 +85,7 @@ title: ColorCorrectGainOffsetMap
   
   default: 1.0
   
-  adds the specified values to the green channel
+  <p>adds the specified values to the green channel<\p>
   
   
   <h3>offset_r</h3>
@@ -93,7 +93,7 @@ title: ColorCorrectGainOffsetMap
   
   default: 1.0
   
-  adds the specified values to the red channel
+  <p>adds the specified values to the red channel<\p>
   
   
   <h3>on</h3>
@@ -101,7 +101,7 @@ title: ColorCorrectGainOffsetMap
   
   default: True
   
-  enables/disables all color correct operations
+  <p>enables/disables all color correct operations<\p>
   
   
   <h3>use_per_channel_gain_offset</h3>
@@ -109,7 +109,7 @@ title: ColorCorrectGainOffsetMap
   
   default: False
   
-  enables separate RGB controls for gain and offset
+  <p>enables separate RGB controls for gain and offset<\p>
   
   
   </p>

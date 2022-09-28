@@ -21,7 +21,7 @@ title: ClampMap
   
   default: True
   
-  enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.
+  <p>enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.<\p>
   
   
   <h3>clamp_max</h3>
@@ -29,7 +29,7 @@ title: ClampMap
   
   default: 1.0
   
-  the maximum value output by this map when 'clamp' is enabled
+  <p>the maximum value output by this map when 'clamp' is enabled<\p>
   
   
   <h3>clamp_min</h3>
@@ -37,7 +37,7 @@ title: ClampMap
   
   default: 0.0
   
-  the minimum value output by this map when 'clamp' is enabled
+  <p>the minimum value output by this map when 'clamp' is enabled<\p>
   
   
   <h3>input</h3>
@@ -45,7 +45,7 @@ title: ClampMap
   
   default: [ 1, 1, 1 ]
   
-  the input values to be remapped
+  <p>the input values to be remapped<\p>
   
   
   </p>

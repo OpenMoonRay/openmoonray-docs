@@ -21,7 +21,7 @@ title: ConvolutionDisplayFilter
   
   default: False
   
-  invert value of mask
+  <p>invert value of mask<\p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: ConvolutionDisplayFilter
   
   default: 1.0
   
-  blend between output and input
+  <p>blend between output and input<\p>
   
   
   </p>
@@ -45,7 +45,7 @@ title: ConvolutionDisplayFilter
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  a list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7)
+  <p>a list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7)<\p>
   
   
   <h3>input</h3>
@@ -53,7 +53,7 @@ title: ConvolutionDisplayFilter
   
   default: None
   
-  RenderOutput to convolve
+  <p>RenderOutput to convolve<\p>
   
   
   <h3>kernel_size</h3>
@@ -61,7 +61,7 @@ title: ConvolutionDisplayFilter
   
   default: 5
   
-  size of kernel in pixels. Size must be odd. If using custom kernel, this attribute is ignored, and the size of the custom kernel is used instead
+  <p>size of kernel in pixels. Size must be odd. If using custom kernel, this attribute is ignored, and the size of the custom kernel is used instead<\p>
   
   
   <h3>kernel_type</h3>

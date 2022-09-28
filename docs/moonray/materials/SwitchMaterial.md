@@ -21,7 +21,7 @@ title: SwitchMaterial
   
   default: 0
   
-  which of the 64 inputs (0 to 63) to use
+  <p>which of the 64 inputs (0 to 63) to use<\p>
   
   
   <h3>extra_aovs</h3>
@@ -29,7 +29,7 @@ title: SwitchMaterial
   
   default: None
   
-  Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
+  <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result<\p>
   
   
   <h3>label</h3>
@@ -37,7 +37,7 @@ title: SwitchMaterial
   
   default: 
   
-  label used in material and light aovs
+  <p>label used in material and light aovs<\p>
   
   
   <h3>material0</h3>
@@ -557,7 +557,7 @@ title: SwitchMaterial
   
   default: 0
   
-  The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
+  <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.<\p>
   
   
   </p>

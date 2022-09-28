@@ -21,7 +21,7 @@ title: CutoutVolume
   
   default: 100
   
-  Divide widest axis by this many divisions
+  <p>Divide widest axis by this many divisions<\p>
   
   
   <h3>bake_resolution_mode</h3>
@@ -34,13 +34,13 @@ title: CutoutVolume
   - voxel size = 2
   
   
-  Toggle method to specify grid resolution of baked density grid.
+  <p>Toggle method to specify grid resolution of baked density grid.
 
 		default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions
 
 		divisions: specify number of divisions.
 
-		voxel size: specify voxel size.
+		voxel size: specify voxel size.<\p>
   
   
   <h3>bake_voxel_size</h3>
@@ -48,7 +48,7 @@ title: CutoutVolume
   
   default: 10.0
   
-  Size of voxel in world space
+  <p>Size of voxel in world space<\p>
   
   
   <h3>indirect_volume</h3>
@@ -64,7 +64,7 @@ title: CutoutVolume
   
   default: 
   
-  label used in light aovs
+  <p>label used in light aovs<\p>
   
   
   <h3>surface_opacity_threshold</h3>
@@ -72,7 +72,7 @@ title: CutoutVolume
   
   default: 0.5
   
-  Accumulated opacity that's considered the 'surface' for computing surface position and Z
+  <p>Accumulated opacity that's considered the 'surface' for computing surface position and Z<\p>
   
   
   </p>

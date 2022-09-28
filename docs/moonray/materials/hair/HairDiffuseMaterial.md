@@ -21,7 +21,7 @@ title: HairDiffuseMaterial
   
   default: [ 1, 1, 1 ]
   
-  (advanced only) hair color used for back-lit hair (transmission/forward reflectance)
+  <p>(advanced only) hair color used for back-lit hair (transmission/forward reflectance)<\p>
   
   
   <h3>front_hair_color</h3>
@@ -29,7 +29,7 @@ title: HairDiffuseMaterial
   
   default: [ 1, 1, 1 ]
   
-  (advanced only) hair color used for front-lit hair (backward reflectance)
+  <p>(advanced only) hair color used for front-lit hair (backward reflectance)<\p>
   
   
   <h3>sss_trace_set</h3>
@@ -37,7 +37,7 @@ title: HairDiffuseMaterial
   
   default: None
   
-  Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.
+  <p>Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.<\p>
   
   
   <h3>use_independent_front_and_back_hair_color</h3>
@@ -45,7 +45,7 @@ title: HairDiffuseMaterial
   
   default: False
   
-  (advanced) use a separate hair color for front and back
+  <p>(advanced) use a separate hair color for front and back<\p>
   
   
   </p>
@@ -61,7 +61,7 @@ title: HairDiffuseMaterial
   
   default: False
   
-  allows continuation of caustic light paths.
+  <p>allows continuation of caustic light paths.<\p>
   
   
   <h3>presence</h3>
@@ -69,7 +69,7 @@ title: HairDiffuseMaterial
   
   default: 1.0
   
-  controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).
+  <p>controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).<\p>
   
   
   </p>
@@ -85,7 +85,7 @@ title: HairDiffuseMaterial
   
   default: [ 1, 1, 1 ]
   
-  the energy emitted from this material
+  <p>the energy emitted from this material<\p>
   
   
   <h3>show_emission</h3>
@@ -93,7 +93,7 @@ title: HairDiffuseMaterial
   
   default: False
   
-  enables/disable emission
+  <p>enables/disable emission<\p>
   
   
   </p>
@@ -112,7 +112,7 @@ title: HairDiffuseMaterial
   - dipole = 1
   
   
-  0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.
+  <p>0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.<\p>
   
   
   <h3>enable_sss_input_normal</h3>
@@ -120,7 +120,7 @@ title: HairDiffuseMaterial
   
   default: False
   
-  enables sampling the normal map for sss samples. More accurate but potentially expensive
+  <p>enables sampling the normal map for sss samples. More accurate but potentially expensive<\p>
   
   
   <h3>input_normal</h3>
@@ -128,7 +128,7 @@ title: HairDiffuseMaterial
   
   default: None
   
-  specifies an alternate shading normal (only for SSS lobe)
+  <p>specifies an alternate shading normal (only for SSS lobe)<\p>
   
   
   <h3>input_normal_dial</h3>
@@ -136,7 +136,7 @@ title: HairDiffuseMaterial
   
   default: 1.0
   
-  controls influence of input normal versus hair normal for SSS
+  <p>controls influence of input normal versus hair normal for SSS<\p>
   
   
   <h3>scattering_color</h3>
@@ -144,7 +144,7 @@ title: HairDiffuseMaterial
   
   default: [ 1, 1, 1 ]
   
-  the subsurface scattering 'falloff' color
+  <p>the subsurface scattering 'falloff' color<\p>
   
   
   <h3>scattering_radius</h3>
@@ -152,7 +152,7 @@ title: HairDiffuseMaterial
   
   default: 0.0
   
-  the distance the light scatters beneath the surface.  When 0 surface diffuse is used
+  <p>the distance the light scatters beneath the surface.  When 0 surface diffuse is used<\p>
   
   
   <h3>subsurface_blend</h3>
@@ -160,7 +160,7 @@ title: HairDiffuseMaterial
   
   default: 1.0
   
-  0 is fully hair diffuse, 1 is fully SSS. No effect if scattering radius is 0.
+  <p>0 is fully hair diffuse, 1 is fully SSS. No effect if scattering radius is 0.<\p>
   
   
   </p>
@@ -176,7 +176,7 @@ title: HairDiffuseMaterial
   
   default: None
   
-  Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
+  <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result<\p>
   
   
   <h3>hair_color</h3>
@@ -192,7 +192,7 @@ title: HairDiffuseMaterial
   
   default: 
   
-  label used in material and light aovs
+  <p>label used in material and light aovs<\p>
   
   
   <h3>priority</h3>
@@ -200,7 +200,7 @@ title: HairDiffuseMaterial
   
   default: 0
   
-  The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
+  <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.<\p>
   
   
   </p>

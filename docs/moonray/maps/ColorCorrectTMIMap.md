@@ -21,7 +21,7 @@ title: ColorCorrectTMIMap
   
   default: [ 0, 0, 0 ]
   
-  T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy 
+  <p>T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy <\p>
   
   
   <h3>input</h3>
@@ -29,7 +29,7 @@ title: ColorCorrectTMIMap
   
   default: [ 1, 1, 1 ]
   
-  bind the input here
+  <p>bind the input here<\p>
   
   
   <h3>mix</h3>
@@ -37,7 +37,7 @@ title: ColorCorrectTMIMap
   
   default: 1.0
   
-  how much of the overall color correct to mix in
+  <p>how much of the overall color correct to mix in<\p>
   
   
   <h3>on</h3>
@@ -45,7 +45,7 @@ title: ColorCorrectTMIMap
   
   default: True
   
-  enables/disables all color correct operations
+  <p>enables/disables all color correct operations<\p>
   
   
   </p>

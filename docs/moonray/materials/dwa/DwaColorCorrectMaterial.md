@@ -21,7 +21,7 @@ title: DwaColorCorrectMaterial
   
   default: 1.0
   
-  multiplies the input channels by the specified value
+  <p>multiplies the input channels by the specified value<\p>
   
   
   <h3>hue_shift</h3>
@@ -29,7 +29,7 @@ title: DwaColorCorrectMaterial
   
   default: 0.0
   
-  shifts the hue of the input (spectrum range is 0-1)
+  <p>shifts the hue of the input (spectrum range is 0-1)<\p>
   
   
   <h3>saturation</h3>
@@ -37,7 +37,7 @@ title: DwaColorCorrectMaterial
   
   default: 1.0
   
-  desaturates the input below 1.0 and adds saturation above 1.0
+  <p>desaturates the input below 1.0 and adds saturation above 1.0<\p>
   
   
   </p>
@@ -53,7 +53,7 @@ title: DwaColorCorrectMaterial
   
   default: [ 0, 0, 0 ]
   
-  T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy 
+  <p>T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy <\p>
   
   
   <h3>TMI_enabled</h3>
@@ -61,7 +61,7 @@ title: DwaColorCorrectMaterial
   
   default: False
   
-  enables the TMI parameters
+  <p>enables the TMI parameters<\p>
   
   
   </p>
@@ -77,7 +77,7 @@ title: DwaColorCorrectMaterial
   
   default: None
   
-  Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
+  <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result<\p>
   
   
   <h3>input_material</h3>
@@ -93,7 +93,7 @@ title: DwaColorCorrectMaterial
   
   default: 
   
-  label used in material and light aovs
+  <p>label used in material and light aovs<\p>
   
   
   <h3>mix</h3>
@@ -101,7 +101,7 @@ title: DwaColorCorrectMaterial
   
   default: 1.0
   
-  how much of the overall color correct to mix in
+  <p>how much of the overall color correct to mix in<\p>
   
   
   <h3>on</h3>
@@ -109,7 +109,7 @@ title: DwaColorCorrectMaterial
   
   default: True
   
-  Enable/disable all color corrections
+  <p>Enable/disable all color corrections<\p>
   
   
   <h3>priority</h3>
@@ -117,7 +117,7 @@ title: DwaColorCorrectMaterial
   
   default: 0
   
-  The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
+  <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.<\p>
   
   
   </p>

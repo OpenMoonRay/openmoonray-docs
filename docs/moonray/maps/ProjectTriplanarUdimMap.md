@@ -32,7 +32,7 @@ title: ProjectTriplanarUdimMap
   - Trans Rot Scale = 5
   
   
-  Order in which to apply transformations
+  <p>Order in which to apply transformations<\p>
   
   
   <h3>projection_matrix</h3>
@@ -40,7 +40,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
   
-  the transform to use for projection
+  <p>the transform to use for projection<\p>
   
   
   <h3>projection_mode</h3>
@@ -53,7 +53,7 @@ title: ProjectTriplanarUdimMap
   - TRS = 2
   
   
-  Source parameters to use for projection transform
+  <p>Source parameters to use for projection transform<\p>
   
   
   <h3>projector</h3>
@@ -61,7 +61,7 @@ title: ProjectTriplanarUdimMap
   
   default: None
   
-  the object whose transform to use for projection
+  <p>the object whose transform to use for projection<\p>
   
   
   <h3>rotate</h3>
@@ -69,7 +69,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 0, 0, 0 ]
   
-  Rotation of the projection transform
+  <p>Rotation of the projection transform<\p>
   
   
   <h3>rotation_order</h3>
@@ -88,7 +88,7 @@ title: ProjectTriplanarUdimMap
   - zyx = 5
   
   
-  Order in which to apply rotation transformations
+  <p>Order in which to apply rotation transformations<\p>
   
   
   <h3>scale</h3>
@@ -96,7 +96,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 1, 1, 1 ]
   
-  Scale of the projection transform
+  <p>Scale of the projection transform<\p>
   
   
   <h3>translate</h3>
@@ -104,7 +104,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 0, 0, 0 ]
   
-  Tranlation of the projection transform
+  <p>Tranlation of the projection transform<\p>
   
   
   <h3>use_correct_uv</h3>
@@ -112,7 +112,7 @@ title: ProjectTriplanarUdimMap
   
   default: False
   
-  use correct uv orientation
+  <p>use correct uv orientation<\p>
   
   
   <h3>use_reference_space</h3>
@@ -120,7 +120,7 @@ title: ProjectTriplanarUdimMap
   
   default: False
   
-  use reference space
+  <p>use reference space<\p>
   
   
   <h3>x_offset</h3>
@@ -128,7 +128,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 0, 0 ]
   
-  2D offset for x projected map
+  <p>2D offset for x projected map<\p>
   
   
   <h3>x_rotation</h3>
@@ -136,7 +136,7 @@ title: ProjectTriplanarUdimMap
   
   default: 0.0
   
-  2D rotation for x projected map
+  <p>2D rotation for x projected map<\p>
   
   
   <h3>x_rotation_center</h3>
@@ -144,7 +144,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 0.5, 0.5 ]
   
-  2D rotation center for x projected map
+  <p>2D rotation center for x projected map<\p>
   
   
   <h3>x_scale</h3>
@@ -152,7 +152,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 1, 1 ]
   
-  2D scale for x projected map
+  <p>2D scale for x projected map<\p>
   
   
   <h3>y_offset</h3>
@@ -160,7 +160,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 0, 0 ]
   
-  2D offset for y projected map
+  <p>2D offset for y projected map<\p>
   
   
   <h3>y_rotation</h3>
@@ -168,7 +168,7 @@ title: ProjectTriplanarUdimMap
   
   default: 0.0
   
-  2D rotation for y projected map
+  <p>2D rotation for y projected map<\p>
   
   
   <h3>y_rotation_center</h3>
@@ -176,7 +176,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 0.5, 0.5 ]
   
-  2D rotation center for y projected map
+  <p>2D rotation center for y projected map<\p>
   
   
   <h3>y_scale</h3>
@@ -184,7 +184,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 1, 1 ]
   
-  2D scale for y projected map
+  <p>2D scale for y projected map<\p>
   
   
   <h3>z_offset</h3>
@@ -192,7 +192,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 0, 0 ]
   
-  2D offset for z projected map
+  <p>2D offset for z projected map<\p>
   
   
   <h3>z_rotation</h3>
@@ -200,7 +200,7 @@ title: ProjectTriplanarUdimMap
   
   default: 0.0
   
-  2D rotation for z projected map
+  <p>2D rotation for z projected map<\p>
   
   
   <h3>z_rotation_center</h3>
@@ -208,7 +208,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 0.5, 0.5 ]
   
-  2D rotation center for z projected map
+  <p>2D rotation center for z projected map<\p>
   
   
   <h3>z_scale</h3>
@@ -216,7 +216,7 @@ title: ProjectTriplanarUdimMap
   
   default: [ 1, 1 ]
   
-  2D scale for z projected map
+  <p>2D scale for z projected map<\p>
   
   
   </p>

@@ -21,7 +21,7 @@ title: ColorCorrectDisplayFilter
   
   default: False
   
-  invert value of mask
+  <p>invert value of mask<\p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: ColorCorrectDisplayFilter
   
   default: 1.0
   
-  blend between output and input
+  <p>blend between output and input<\p>
   
   
   </p>
@@ -45,7 +45,7 @@ title: ColorCorrectDisplayFilter
   
   default: 0.0
   
-  Decrease contrast below 0.0 and increase contrast above 0.0
+  <p>Decrease contrast below 0.0 and increase contrast above 0.0<\p>
   
   
   <h3>exposure</h3>
@@ -53,7 +53,7 @@ title: ColorCorrectDisplayFilter
   
   default: 0.0
   
-  Adjusts the exposure, in fstops
+  <p>Adjusts the exposure, in fstops<\p>
   
   
   <h3>gamma</h3>
@@ -61,7 +61,7 @@ title: ColorCorrectDisplayFilter
   
   default: 1.0
   
-  Adjusts gamma of input
+  <p>Adjusts gamma of input<\p>
   
   
   <h3>input</h3>
@@ -69,7 +69,7 @@ title: ColorCorrectDisplayFilter
   
   default: None
   
-  RenderOutput to color correct
+  <p>RenderOutput to color correct<\p>
   
   
   <h3>mask</h3>
@@ -85,7 +85,7 @@ title: ColorCorrectDisplayFilter
   
   default: [ 1, 1, 1 ]
   
-  Multiplies input using specified color
+  <p>Multiplies input using specified color<\p>
   
   
   <h3>offset</h3>
@@ -93,7 +93,7 @@ title: ColorCorrectDisplayFilter
   
   default: [ 0, 0, 0 ]
   
-  Add offset color to input
+  <p>Add offset color to input<\p>
   
   
   <h3>saturation</h3>
@@ -101,7 +101,7 @@ title: ColorCorrectDisplayFilter
   
   default: 1.0
   
-  Desaturates input below 1.0 and adds saturation above 1.0
+  <p>Desaturates input below 1.0 and adds saturation above 1.0<\p>
   
   
   </p>

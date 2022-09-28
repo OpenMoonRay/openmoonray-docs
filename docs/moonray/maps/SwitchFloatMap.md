@@ -21,7 +21,7 @@ title: SwitchFloatMap
   
   default: 0.0
   
-  which of the 64 inputs (0 to 63) to use
+  <p>which of the 64 inputs (0 to 63) to use<\p>
   
   
   <h3>input0</h3>

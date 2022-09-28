@@ -37,7 +37,7 @@ title: CheckerboardMap
   
   default: [ 0, 0, 0 ]
   
-  bind a shader that outputs UV coordinates (such as a projection shader) here
+  <p>bind a shader that outputs UV coordinates (such as a projection shader) here<\p>
   
   
   <h3>num_u_tiles</h3>
@@ -45,7 +45,7 @@ title: CheckerboardMap
   
   default: 8
   
-  number of checkerboard squares in the U direction
+  <p>number of checkerboard squares in the U direction<\p>
   
   
   <h3>num_v_tiles</h3>
@@ -53,7 +53,7 @@ title: CheckerboardMap
   
   default: 8
   
-  number of checkerboard squares in the V direction
+  <p>number of checkerboard squares in the V direction<\p>
   
   
   <h3>texture_coordinates</h3>
@@ -64,7 +64,7 @@ title: CheckerboardMap
   - input texture coordinates = 1
   
   
-  switches between the model's uv coordinates or the input texture coordinates
+  <p>switches between the model's uv coordinates or the input texture coordinates<\p>
   
   
   </p>

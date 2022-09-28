@@ -21,7 +21,7 @@ title: RgbToHsvDisplayFilter
   
   default: False
   
-  invert value of mask
+  <p>invert value of mask<\p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: RgbToHsvDisplayFilter
   
   default: 1.0
   
-  blend between output and input
+  <p>blend between output and input<\p>
   
   
   </p>
@@ -45,7 +45,7 @@ title: RgbToHsvDisplayFilter
   
   default: None
   
-  image buffer
+  <p>image buffer<\p>
   
   
   <h3>mask</h3>
@@ -64,7 +64,7 @@ title: RgbToHsvDisplayFilter
   - hsv_to_rgb = 1
   
   
-  specify whether you are converting rgb->hsv or hsv->rgb
+  <p>specify whether you are converting rgb->hsv or hsv->rgb<\p>
   
   
   </p>

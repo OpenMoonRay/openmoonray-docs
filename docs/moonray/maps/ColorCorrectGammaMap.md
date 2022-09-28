@@ -21,7 +21,7 @@ title: ColorCorrectGammaMap
   
   default: 1.0
   
-  raises the input to the specified exponents
+  <p>raises the input to the specified exponents<\p>
   
   
   <h3>gamma_b</h3>
@@ -29,7 +29,7 @@ title: ColorCorrectGammaMap
   
   default: 1.0
   
-  raises the blue channel to the specified exponents
+  <p>raises the blue channel to the specified exponents<\p>
   
   
   <h3>gamma_g</h3>
@@ -37,7 +37,7 @@ title: ColorCorrectGammaMap
   
   default: 1.0
   
-  raises the green channel to the specified exponents
+  <p>raises the green channel to the specified exponents<\p>
   
   
   <h3>gamma_r</h3>
@@ -45,7 +45,7 @@ title: ColorCorrectGammaMap
   
   default: 1.0
   
-  raises the red channel to the specified exponents
+  <p>raises the red channel to the specified exponents<\p>
   
   
   <h3>input</h3>
@@ -53,7 +53,7 @@ title: ColorCorrectGammaMap
   
   default: [ 1, 1, 1 ]
   
-  bind the input here
+  <p>bind the input here<\p>
   
   
   <h3>mix</h3>
@@ -61,7 +61,7 @@ title: ColorCorrectGammaMap
   
   default: 1.0
   
-  how much of the overall color correct to mix in
+  <p>how much of the overall color correct to mix in<\p>
   
   
   <h3>on</h3>
@@ -69,7 +69,7 @@ title: ColorCorrectGammaMap
   
   default: True
   
-  enables/disables all color correct operations
+  <p>enables/disables all color correct operations<\p>
   
   
   <h3>use_per_channel_gamma</h3>
@@ -77,7 +77,7 @@ title: ColorCorrectGammaMap
   
   default: False
   
-  enables separate RGB controls for gamma
+  <p>enables separate RGB controls for gamma<\p>
   
   
   </p>

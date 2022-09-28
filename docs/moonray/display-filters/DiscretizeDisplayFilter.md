@@ -21,7 +21,7 @@ title: DiscretizeDisplayFilter
   
   default: False
   
-  invert value of mask
+  <p>invert value of mask<\p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: DiscretizeDisplayFilter
   
   default: 1.0
   
-  blend between output and input
+  <p>blend between output and input<\p>
   
   
   </p>
@@ -45,7 +45,7 @@ title: DiscretizeDisplayFilter
   
   default: None
   
-  Image buffer to discretize
+  <p>Image buffer to discretize<\p>
   
   
   <h3>mask</h3>
@@ -61,7 +61,7 @@ title: DiscretizeDisplayFilter
   
   default: 8
   
-  number of discrete color bins
+  <p>number of discrete color bins<\p>
   
   
   </p>
