@@ -10,21 +10,22 @@ title: AttributeMap
 
 # AttributeMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Primitive Attribute attributes</summary>
 
-## primitive_attribute_name
-**String** 
+## primitive_attribute_name  
+**String**  
 
-Default value : Cd
+Default value : Cd  
 
 the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'
 
 
-## primitive_attribute_type
-**Int** *enum*
+## primitive_attribute_type  
+**Int**  *enum*
 
 - float = 0
 
@@ -42,29 +43,28 @@ the type of primitive attribute to display when attribute 'map type' is set to '
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## color
-**Rgb** *bindable*
+## color  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 input color - preferably a connected map
 
 
-## default_value
-**Rgb** *bindable*
+## default_value  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 default value to display when the requested attribute is not available
 
 
-## map_type
-**Int** *enum*
+## map_type  
+**Int**  *enum*
 
 - primitive attribute = 0 (default)
 
@@ -106,10 +106,10 @@ default value to display when the requested attribute is not available
 <p class="scene-class-attr-missing">Documentation for the attribute <b>map_type</b> needs to be written</p>
 
 
-## warn_when_unavailable
-**Bool** 
+## warn_when_unavailable  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 Whether or not to issue a warning when the requested attribute is unavailable
 

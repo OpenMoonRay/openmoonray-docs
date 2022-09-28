@@ -10,79 +10,80 @@ title: Layer
 
 # Layer
 **LAYER TRACESET**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## displacements
-**Displacement Vector** 
+## displacements  
+**Displacement Vector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>displacements</b> needs to be written</p>
 
 
-## geometries
-**SceneObjectIndexable** 
+## geometries  
+**SceneObjectIndexable**  
 
-Default value : None
+Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 
 
-## lightfiltersets
-**Lightfilterset Vector** 
+## lightfiltersets  
+**Lightfilterset Vector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lightfiltersets</b> needs to be written</p>
 
 
-## lightsets
-**Lightset Vector** 
+## lightsets  
+**Lightset Vector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lightsets</b> needs to be written</p>
 
 
-## parts
-**StringVector** 
+## parts  
+**StringVector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>parts</b> needs to be written</p>
 
 
-## shadowreceiversets
-**134217728 Vector** 
+## shadowreceiversets  
+**134217728 Vector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>shadowreceiversets</b> needs to be written</p>
 
 
-## shadowsets
-**16777216 Vector** 
+## shadowsets  
+**16777216 Vector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>shadowsets</b> needs to be written</p>
 
 
-## surface_shaders
-**Material Vector** 
+## surface_shaders  
+**Material Vector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>surface_shaders</b> needs to be written</p>
 
 
-## volume_shaders
-**Volumeshader Vector** 
+## volume_shaders  
+**Volumeshader Vector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>volume_shaders</b> needs to be written</p>
 

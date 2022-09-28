@@ -10,76 +10,76 @@ title: GradientMap
 
 # GradientMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Additional properties attributes</summary>
 
-## symmetric
-**Bool** 
+## symmetric  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 Color A blends into Color B and then back into Color A from the start to the end point
 
 
-## symmetric_center
-**Float** 
+## symmetric_center  
+**Float**  
 
-Default value : 0.5
+Default value : 0.5  
 
 Shifts the center of the symmetric falloff
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">Falloff properties attributes</summary>
 
-## falloff_bias
-**Float** 
+## falloff_bias  
+**Float**  
 
-Default value : 0.5
+Default value : 0.5  
 
 Compresses the blending towards the start or end color
 
 
-## falloff_end
-**Float** 
+## falloff_end  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 Shifts where the falloff ends
 
 
-## falloff_end_intensity
-**Float** 
+## falloff_end_intensity  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 Adjust the intensity of the end color
 
 
-## falloff_exponent
-**Float** 
+## falloff_exponent  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 Adjusts rate of blending
 
 
-## falloff_start
-**Float** 
+## falloff_start  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 Shifts where the falloff starts
 
 
-## falloff_type
-**Int** *enum*
+## falloff_type  
+**Int**  *enum*
 
 - none = 0
 
@@ -99,45 +99,44 @@ Falloff blend mode
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">Gradient properties attributes</summary>
 
-## color_A
-**Rgb** *bindable*
+## color_A  
+**Rgb**  *bindable*
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 Start color
 
 
-## color_B
-**Rgb** *bindable*
+## color_B  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 End color
 
 
-## end
-**Vec3f** 
+## end  
+**Vec3f**  
 
-Default value : [ 0, 1, 0 ]
+Default value : [ 0, 1, 0 ]  
 
 End position in the chosen space
 
 
-## object
-**Geometry** 
+## object  
+**Geometry**  
 
-Default value : None
+Default value : None  
 
 Use the provided object's transformation space (only used if object space is also specified)
 
 
-## space
-**Int** *enum*
+## space  
+**Int**  *enum*
 
 - render = 0 (default)
 
@@ -157,10 +156,10 @@ Use the provided object's transformation space (only used if object space is als
 The transformation space in which to perform the blending
 
 
-## start
-**Vec3f** 
+## start  
+**Vec3f**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 Start position in the chosen space
 

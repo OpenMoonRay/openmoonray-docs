@@ -10,75 +10,74 @@ title: MacroFlakeMaterial
 
 # MacroFlakeMaterial
 **ROOTSHADER MATERIAL SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
 
-## input_normal
-**33554432** 
+## input_normal  
+**33554432**  
 
-Default value : None
+Default value : None  
 
 specifies an alternate shading normal in the tangent frame (normal map)
 
 
-## input_normal_dial
-**Float** *bindable*
+## input_normal_dial  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 controls the amount of influence of the alternate normal
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">Specular attributes</summary>
 
-## metallic_color
-**Rgb** *bindable*
+## metallic_color  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 the overall reflection color, defines Fresnel behavior
 
 
-## metallic_edge_color
-**Rgb** *bindable*
+## metallic_edge_color  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 the reflection color at grazing angles, defines Fresnel behavior
 
 
-## roughness
-**Float** *bindable*
+## roughness  
+**Float**  *bindable*
 
-Default value : 0.5
+Default value : 0.5  
 
 the roughness of the surface (currently only affects reflection)
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## background_material
-**Material** 
+## background_material  
+**Material**  
 
-Default value : None
+Default value : None  
 
 background material
 
 
-## diffuse_mode
-**Int** *enum*
+## diffuse_mode  
+**Int**  *enum*
 
 - block = 0
 
@@ -88,16 +87,16 @@ background material
 Whether to block the diffuse lobe where the mask is applied
 
 
-## extra_aovs
-**Map** 
+## extra_aovs  
+**Map**  
 
-Default value : None
+Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## fuzz_mode
-**Int** *enum*
+## fuzz_mode  
+**Int**  *enum*
 
 - block = 0 (default)
 
@@ -107,40 +106,40 @@ Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that
 Whether to block the fuzz lobe where the mask is applied
 
 
-## is_additive
-**Bool** 
+## is_additive  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 When true, lobe does not block background material
 
 
-## label
-**String** 
+## label  
+**String**  
 
-Default value : 
+Default value :   
 
 label used in material and light aovs
 
 
-## mask
-**Float** *bindable*
+## mask  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 foreground (metal) material weight
 
 
-## priority
-**Int** 
+## priority  
+**Int**  
 
-Default value : 0
+Default value : 0  
 
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 
 
-## specular_background_mode
-**Int** *enum*
+## specular_background_mode  
+**Int**  *enum*
 
 - block = 0
 

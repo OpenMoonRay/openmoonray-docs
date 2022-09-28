@@ -10,13 +10,14 @@ title: ProjectTriplanarUdimMap
 
 # ProjectTriplanarUdimMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## TRS_order
-**Int** *enum*
+## TRS_order  
+**Int**  *enum*
 
 - Scale Rot Trans = 0 (default)
 
@@ -34,16 +35,16 @@ title: ProjectTriplanarUdimMap
 Order in which to apply transformations
 
 
-## projection_matrix
-**Mat4d** 
+## projection_matrix  
+**Mat4d**  
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 the transform to use for projection
 
 
-## projection_mode
-**Int** *enum*
+## projection_mode  
+**Int**  *enum*
 
 - projector = 0 (default)
 
@@ -55,24 +56,24 @@ the transform to use for projection
 Source parameters to use for projection transform
 
 
-## projector
-**Node** 
+## projector  
+**Node**  
 
-Default value : None
+Default value : None  
 
 the object whose transform to use for projection
 
 
-## rotate
-**Vec3d** 
+## rotate  
+**Vec3d**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 Rotation of the projection transform
 
 
-## rotation_order
-**Int** *enum*
+## rotation_order  
+**Int**  *enum*
 
 - xyz = 0 (default)
 
@@ -90,130 +91,130 @@ Rotation of the projection transform
 Order in which to apply rotation transformations
 
 
-## scale
-**Vec3d** 
+## scale  
+**Vec3d**  
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 Scale of the projection transform
 
 
-## translate
-**Vec3d** 
+## translate  
+**Vec3d**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 Tranlation of the projection transform
 
 
-## use_correct_uv
-**Bool** 
+## use_correct_uv  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 use correct uv orientation
 
 
-## use_reference_space
-**Bool** 
+## use_reference_space  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 use reference space
 
 
-## x_offset
-**Vec2f** 
+## x_offset  
+**Vec2f**  
 
-Default value : [ 0, 0 ]
+Default value : [ 0, 0 ]  
 
 2D offset for x projected map
 
 
-## x_rotation
-**Float** 
+## x_rotation  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 2D rotation for x projected map
 
 
-## x_rotation_center
-**Vec2f** 
+## x_rotation_center  
+**Vec2f**  
 
-Default value : [ 0.5, 0.5 ]
+Default value : [ 0.5, 0.5 ]  
 
 2D rotation center for x projected map
 
 
-## x_scale
-**Vec2f** 
+## x_scale  
+**Vec2f**  
 
-Default value : [ 1, 1 ]
+Default value : [ 1, 1 ]  
 
 2D scale for x projected map
 
 
-## y_offset
-**Vec2f** 
+## y_offset  
+**Vec2f**  
 
-Default value : [ 0, 0 ]
+Default value : [ 0, 0 ]  
 
 2D offset for y projected map
 
 
-## y_rotation
-**Float** 
+## y_rotation  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 2D rotation for y projected map
 
 
-## y_rotation_center
-**Vec2f** 
+## y_rotation_center  
+**Vec2f**  
 
-Default value : [ 0.5, 0.5 ]
+Default value : [ 0.5, 0.5 ]  
 
 2D rotation center for y projected map
 
 
-## y_scale
-**Vec2f** 
+## y_scale  
+**Vec2f**  
 
-Default value : [ 1, 1 ]
+Default value : [ 1, 1 ]  
 
 2D scale for y projected map
 
 
-## z_offset
-**Vec2f** 
+## z_offset  
+**Vec2f**  
 
-Default value : [ 0, 0 ]
+Default value : [ 0, 0 ]  
 
 2D offset for z projected map
 
 
-## z_rotation
-**Float** 
+## z_rotation  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 2D rotation for z projected map
 
 
-## z_rotation_center
-**Vec2f** 
+## z_rotation_center  
+**Vec2f**  
 
-Default value : [ 0.5, 0.5 ]
+Default value : [ 0.5, 0.5 ]  
 
 2D rotation center for z projected map
 
 
-## z_scale
-**Vec2f** 
+## z_scale  
+**Vec2f**  
 
-Default value : [ 1, 1 ]
+Default value : [ 1, 1 ]  
 
 2D scale for z projected map
 

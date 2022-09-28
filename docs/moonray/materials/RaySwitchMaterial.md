@@ -10,79 +10,80 @@ title: RaySwitchMaterial
 
 # RaySwitchMaterial
 **ROOTSHADER MATERIAL SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## camera_ray_material
-**Material** 
+## camera_ray_material  
+**Material**  
 
-Default value : None
+Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>camera_ray_material</b> needs to be written</p>
 
 
-## cutout_camera_rays
-**Bool** 
+## cutout_camera_rays  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>cutout_camera_rays</b> needs to be written</p>
 
 
-## default_material
-**Material** 
+## default_material  
+**Material**  
 
-Default value : None
+Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>default_material</b> needs to be written</p>
 
 
-## extra_aovs
-**Map** 
+## extra_aovs  
+**Map**  
 
-Default value : None
+Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## indirect_diffuse_ray_material
-**Material** 
+## indirect_diffuse_ray_material  
+**Material**  
 
-Default value : None
+Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_diffuse_ray_material</b> needs to be written</p>
 
 
-## indirect_glossy_ray_material
-**Material** 
+## indirect_glossy_ray_material  
+**Material**  
 
-Default value : None
+Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_glossy_ray_material</b> needs to be written</p>
 
 
-## indirect_mirror_ray_material
-**Material** 
+## indirect_mirror_ray_material  
+**Material**  
 
-Default value : None
+Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_mirror_ray_material</b> needs to be written</p>
 
 
-## label
-**String** 
+## label  
+**String**  
 
-Default value : 
+Default value :   
 
 label used in material and light aovs
 
 
-## priority
-**Int** 
+## priority  
+**Int**  
 
-Default value : 0
+Default value : 0  
 
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 

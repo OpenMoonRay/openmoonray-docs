@@ -10,31 +10,32 @@ title: FloatToRgbMap
 
 # FloatToRgbMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## B
-**Float** *bindable*
+## B  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>B</b> needs to be written</p>
 
 
-## G
-**Float** *bindable*
+## G  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>G</b> needs to be written</p>
 
 
-## R
-**Float** *bindable*
+## R  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>R</b> needs to be written</p>
 

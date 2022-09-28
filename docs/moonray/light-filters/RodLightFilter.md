@@ -10,126 +10,126 @@ title: RodLightFilter
 
 # RodLightFilter
 **LIGHTFILTER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-## color
-**Rgb** 
+## color  
+**Rgb**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 filter color. Scales the light within the volume. For each color channel, 0=full shadow, 1=no shadow
 
 
-## density
-**Float** 
+## density  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 fades the filter effect. 0=no effect (like having no filter), 1=full effect
 
 
-## depth
-**Float** 
+## depth  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 depth of the base box (before radius and edge)
 
 
-## edge
-**Float** 
+## edge  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 size of transition zone from the rounded box to the outside
 
 
-## height
-**Float** 
+## height  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 height of the base box (before radius and edge)
 
 
-## intensity
-**Float** 
+## intensity  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 scalar for multiplying the color. 0=black 1=color
 
 
-## invert
-**Bool** 
+## invert  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 swap application of filter from inside the volume to outside
 
 
-## node_xform
-**Mat4d** *blurrable*
+## node_xform  
+**Mat4d**  *blurrable*
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 transform of the filter
 
 
-## radius
-**Float** 
+## radius  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 radius by which to expand the base box into a rounded box
 
 
-## ramp_in_distances
-**FloatVector** 
+## ramp_in_distances  
+**FloatVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 input distance for ramp control
 
 
-## ramp_interpolation_types
-**IntVector** 
+## ramp_interpolation_types  
+**IntVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 interpolation types for ramp control
 
 
-## ramp_out_distances
-**FloatVector** 
+## ramp_out_distances  
+**FloatVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 remapped distances for ramp control
 
 
-## width
-**Float** 
+## width  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 width of the base box (before radius and edge)
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## on
-**Bool** 
+## on  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 

@@ -10,156 +10,156 @@ title: RemapMap
 
 # RemapMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Channel attributes</summary>
 
-## clamp_max_RGB
-**Rgb** 
+## clamp_max_RGB  
+**Rgb**  
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 the maximum value output by this map when 'clamp' is enabled
 
 
-## clamp_min_RGB
-**Rgb** 
+## clamp_min_RGB  
+**Rgb**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 the minimum value output by this map when 'clamp' is enabled
 
 
-## input_max_RGB
-**Rgb** 
+## input_max_RGB  
+**Rgb**  
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 the input value that will be remapped to the 'output max' value
 
 
-## input_min_RGB
-**Rgb** 
+## input_min_RGB  
+**Rgb**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 the input value that will be remapped to the 'output min' value
 
 
-## midpoint_bias_RGB
-**Rgb** 
+## midpoint_bias_RGB  
+**Rgb**  
 
-Default value : [ 0.5, 0.5, 0.5 ]
+Default value : [ 0.5, 0.5, 0.5 ]  
 
 biases the in-between values toward 'output min' or 'output max'. Default = 0.5
 
 
-## output_max_RGB
-**Rgb** 
+## output_max_RGB  
+**Rgb**  
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 the value that 'input max' is remapped to
 
 
-## output_min_RGB
-**Rgb** 
+## output_min_RGB  
+**Rgb**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 the value that 'input min' is remapped to
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## clamp
-**Bool** 
+## clamp  
+**Bool**  
 
-Default value : True
-
-enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.
-
-
-## clamp_RGB
-**Bool** 
-
-Default value : True
+Default value : True  
 
 enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.
 
 
-## clamp_max
-**Float** 
+## clamp_RGB  
+**Bool**  
 
-Default value : 1.0
+Default value : True  
+
+enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.
+
+
+## clamp_max  
+**Float**  
+
+Default value : 1.0  
 
 the maximum value output by this map when 'clamp' is enabled
 
 
-## clamp_min
-**Float** 
+## clamp_min  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 the minimum value output by this map when 'clamp' is enabled
 
 
-## input
-**Rgb** *bindable*
+## input  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 the input values to be remapped
 
 
-## input_max
-**Float** 
+## input_max  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 the input value that will be remapped to the 'output max' value
 
 
-## input_min
-**Float** 
+## input_min  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 the input value that will be remapped to the 'output min' value
 
 
-## midpoint_bias
-**Float** 
+## midpoint_bias  
+**Float**  
 
-Default value : 0.5
+Default value : 0.5  
 
 biases the in-between values toward 'output min' or 'output max'. Default = 0.5
 
 
-## output_max
-**Float** 
+## output_max  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 the value that 'input max' is remapped to
 
 
-## output_min
-**Float** 
+## output_min  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 the value that 'input min' is remapped to
 
 
-## remap_method
-**Int** *enum*
+## remap_method  
+**Int**  *enum*
 
 - uniform = 0 (default)
 

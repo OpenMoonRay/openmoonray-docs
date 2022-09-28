@@ -10,15 +10,16 @@ title: RgbToNormalMap
 
 # RgbToNormalMap
 **SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## input
-**Rgb** *bindable*
+## input  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 Input color to convert to a normal map
 

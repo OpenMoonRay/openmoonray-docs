@@ -10,13 +10,14 @@ title: ProjectSphericalMap
 
 # ProjectSphericalMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## TRS_order
-**Int** *enum*
+## TRS_order  
+**Int**  *enum*
 
 - Scale Rot Trans = 0 (default)
 
@@ -34,16 +35,16 @@ title: ProjectSphericalMap
 Order in which to apply transformations
 
 
-## projection_matrix
-**Mat4d** 
+## projection_matrix  
+**Mat4d**  
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 the transform to use for projection
 
 
-## projection_mode
-**Int** *enum*
+## projection_mode  
+**Int**  *enum*
 
 - projector = 0 (default)
 
@@ -55,24 +56,24 @@ the transform to use for projection
 Source parameters to use for projection transform
 
 
-## projector
-**Node** 
+## projector  
+**Node**  
 
-Default value : None
+Default value : None  
 
 the object whose transform to use for projection
 
 
-## rotate
-**Vec3d** 
+## rotate  
+**Vec3d**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 Rotation of the projection transform
 
 
-## rotation_order
-**Int** *enum*
+## rotation_order  
+**Int**  *enum*
 
 - xyz = 0 (default)
 
@@ -90,26 +91,26 @@ Rotation of the projection transform
 Order in which to apply rotation transformations
 
 
-## scale
-**Vec3d** 
+## scale  
+**Vec3d**  
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 Scale of the projection transform
 
 
-## translate
-**Vec3d** 
+## translate  
+**Vec3d**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 Tranlation of the projection transform
 
 
-## use_reference_space
-**Bool** 
+## use_reference_space  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 use reference space
 

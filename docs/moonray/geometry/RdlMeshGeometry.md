@@ -10,69 +10,70 @@ title: RdlMeshGeometry
 
 # RdlMeshGeometry
 **GEOMETRY NODE**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## accleration_list
-**Vec3fVector** 
+## accleration_list  
+**Vec3fVector**  
 
-Default value : []
+Default value : []  
 
 Optionally declare vertex accelerations for quadratic motion interpolation
 
 
-## adaptive_error
-**Float** 
+## adaptive_error  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.
 
 
-## curved_motion_blur_sample_count
-**Int** 
+## curved_motion_blur_sample_count  
+**Int**  
 
-Default value : 10
+Default value : 10  
 
 Number of time samples generated along each curve when using curved motion blur
 
 
-## face_vertex_count
-**IntVector** 
+## face_vertex_count  
+**IntVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 Ordered list of vertices per face, used in conjection with vertices by index to construct the mesh
 
 
-## is_subd
-**Bool** 
+## is_subd  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 If true, a SubdivisionMesh primitive will be created - PolygonMesh otherwise
 
 
-## label
-**String** 
+## label  
+**String**  
 
-Default value : 
+Default value :   
 
 label used in material aov expresssions
 
 
-## mesh_resolution
-**Float** 
+## mesh_resolution  
+**Float**  
 
-Default value : 2.0
+Default value : 2.0  
 
 The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information
 
 
-## motion_blur_type
-**Int** *enum*
+## motion_blur_type  
+**Int**  *enum*
 
 - best = -1 (default)
 
@@ -104,24 +105,24 @@ Motion blur type for PolygonMesh/Points/Curves in alembic file.
 
 
 
-## node_xform
-**Mat4d** *blurrable*
+## node_xform  
+**Mat4d**  *blurrable*
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
-## normal_list
-**Vec3fVector** 
+## normal_list  
+**Vec3fVector**  
 
-Default value : []
+Default value : []  
 
  If the mesh is using normals, store them per-face-vertex in this list
 
 
-## orientation
-**Int** *enum*
+## orientation  
+**Int**  *enum*
 
 - right-handed = 0 (default)
 
@@ -131,32 +132,32 @@ Default value : []
 When set to "left-handed", normals are generated using the left-handed rule. This reverses the direction of generated normals, and which side of surfaces is considered the front, without affecting supplied normals.
 
 
-## part_face_count_list
-**IntVector** 
+## part_face_count_list  
+**IntVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 The number of faces belonging to the part with corresponding index in 'part list'.
 
 
-## part_face_indices
-**IntVector** 
+## part_face_indices  
+**IntVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 Ordered list of face indices. No index should have a value greater than the size of 'face vertex count'
 
 
-## part_list
-**StringVector** 
+## part_list  
+**StringVector**  
 
-Default value : []
+Default value : []  
 
 Ordered list of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials
 
 
-## primitive_attribute_frame
-**Int** *enum*
+## primitive_attribute_frame  
+**Int**  *enum*
 
 - first motion step = 0
 
@@ -174,42 +175,42 @@ Which frame(s) do we take the primitive attributes from?
 	2 : both motion steps
 
 
-## primitive_attributes
-**Object Vector** 
+## primitive_attributes  
+**Object Vector**  
 
-Default value : []
+Default value : []  
 
 Vector of UserData.Each key/value pair will be added as a primitive attribute of the mesh.
 
 
-## ray_epsilon
-**Float** 
+## ray_epsilon  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.
 
 
-## references
-**Geometry Vector** 
+## references  
+**Geometry Vector**  
 
-Default value : []
+Default value : []  
 
 list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.
 
 
-## reverse_normals
-**Bool** 
+## reverse_normals  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 enable to reverse the normals in the geometry
 
 
-## shadow_exclusion_mappings
-**String** 
+## shadow_exclusion_mappings  
+**String**  
 
-Default value : 
+Default value :   
 
 List of mappings of the form A:B where:
 
@@ -218,24 +219,24 @@ A is a list of names of parts to be mapped, or asterisk to map the whole geometr
 B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.
 
 
-## shadow_ray_epsilon
-**Float** 
+## shadow_ray_epsilon  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.
 
 
-## shadow_receiver_label
-**String** 
+## shadow_receiver_label  
+**String**  
 
-Default value : 
+Default value :   
 
 Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.
 
 
-## side_type
-**Int** *enum*
+## side_type  
+**Int**  *enum*
 
 - force two-sided = 0 (default)
 
@@ -247,24 +248,24 @@ Label used to associate Geometry objects into sets. Then, using the ["shadow_exc
 set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction
 
 
-## smooth_normal
-**Bool** 
+## smooth_normal  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself
 
 
-## static
-**Bool** 
+## static  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 disable if the geometry will be updated between frames
 
 
-## subd_boundary
-**Int** *enum*
+## subd_boundary  
+**Int**  *enum*
 
 - none = 0
 
@@ -276,40 +277,40 @@ disable if the geometry will be updated between frames
 Boundary interpolation: Corners, Edges or None
 
 
-## subd_corner_indices
-**IntVector** 
+## subd_corner_indices  
+**IntVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 List of indices for each corner vertex with an assigned sharpness.
 
 
-## subd_corner_sharpnesses
-**FloatVector** 
+## subd_corner_sharpnesses  
+**FloatVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 Sharpness value for each corner vertex.
 
 
-## subd_crease_indices
-**IntVector** 
+## subd_crease_indices  
+**IntVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 List of vertex index pairs for each crease edge with an assigned sharpness.
 
 
-## subd_crease_sharpnesses
-**FloatVector** 
+## subd_crease_sharpnesses  
+**FloatVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 Sharpness value for each crease edge.
 
 
-## subd_fvar_linear
-**Int** *enum*
+## subd_fvar_linear  
+**Int**  *enum*
 
 - none = 0
 
@@ -327,8 +328,8 @@ Sharpness value for each crease edge.
 Face-varying linear interpolation: None, Corners Only, Corners Plus 1 or Plus 2 (RenderMan), Boundaries, or All
 
 
-## subd_scheme
-**Int** *enum*
+## subd_scheme  
+**Int**  *enum*
 
 - bilinear = 0
 
@@ -338,138 +339,138 @@ Face-varying linear interpolation: None, Corners Only, Corners Plus 1 or Plus 2 
 CatClark or Bilinear
 
 
-## use_rotation_motion_blur
-**Bool** 
+## use_rotation_motion_blur  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation
 
 
-## uv_list
-**Vec2fVector** 
+## uv_list  
+**Vec2fVector**  
 
-Default value : []
+Default value : []  
 
 If the mesh is using UVs, store them per-face-vertex in this list
 
 
-## velocity_list_0
-**Vec3fVector** 
+## velocity_list_0  
+**Vec3fVector**  
 
-Default value : []
+Default value : []  
 
 Optionally declare vertex velocities instead of a second motion step'
 
 
-## velocity_list_1
-**Vec3fVector** 
+## velocity_list_1  
+**Vec3fVector**  
 
-Default value : []
+Default value : []  
 
 Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation
 
 
-## velocity_scale
-**Float** 
+## velocity_scale  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 Adjust magnitude of velocity-based motion blur
 
 
-## vertex_list_0
-**Vec3fVector** 
+## vertex_list_0  
+**Vec3fVector**  
 
-Default value : []
+Default value : []  
 
 Stores all vertices used by the mesh at motion step 0
 
 
-## vertex_list_1
-**Vec3fVector** 
+## vertex_list_1  
+**Vec3fVector**  
 
-Default value : []
+Default value : []  
 
 If the mesh is in motion, the second motion step is stored in this attribute
 
 
-## vertices_by_index
-**IntVector** 
+## vertices_by_index  
+**IntVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 Ordered list of vertex indices used to construct the mesh using the vertex list
 
 
-## visible_diffuse_reflection
-**Bool** 
+## visible_diffuse_reflection  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 whether the geometry is visible in diffuse reflection
 
 
-## visible_diffuse_transmission
-**Bool** 
+## visible_diffuse_transmission  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 whether the geometry is visible in diffuse transmission
 
 
-## visible_glossy_reflection
-**Bool** 
+## visible_glossy_reflection  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 whether the geometry is visible in glossy reflection.
 
 
-## visible_glossy_transmission
-**Bool** 
+## visible_glossy_transmission  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 whether the geometry is visible in glossy transmission (refraction).
 
 
-## visible_in_camera
-**Bool** 
+## visible_in_camera  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 whether the geometry is visible to camera rays
 
 
-## visible_mirror_reflection
-**Bool** 
+## visible_mirror_reflection  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 whether the geometry is visible in miror reflection.
 
 
-## visible_mirror_transmission
-**Bool** 
+## visible_mirror_transmission  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 whether the geometry is visible in miror transmission (refraction).
 
 
-## visible_shadow
-**Bool** 
+## visible_shadow  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 whether the geometry casts shadows
 
 
-## visible_volume
-**Bool** 
+## visible_volume  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 whether the geometry is visible in indirect volume rays
 

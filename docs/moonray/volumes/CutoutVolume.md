@@ -10,21 +10,22 @@ title: CutoutVolume
 
 # CutoutVolume
 **ROOTSHADER SHADER VOLUMESHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## bake_divisions
-**Int** 
+## bake_divisions  
+**Int**  
 
-Default value : 100
+Default value : 100  
 
 Divide widest axis by this many divisions
 
 
-## bake_resolution_mode
-**Int** *enum*
+## bake_resolution_mode  
+**Int**  *enum*
 
 - default = 0 (default)
 
@@ -42,34 +43,34 @@ Toggle method to specify grid resolution of baked density grid.
 		voxel size: specify voxel size.
 
 
-## bake_voxel_size
-**Float** 
+## bake_voxel_size  
+**Float**  
 
-Default value : 10.0
+Default value : 10.0  
 
 Size of voxel in world space
 
 
-## indirect_volume
-**Volumeshader** 
+## indirect_volume  
+**Volumeshader**  
 
-Default value : None
+Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_volume</b> needs to be written</p>
 
 
-## label
-**String** 
+## label  
+**String**  
 
-Default value : 
+Default value :   
 
 label used in light aovs
 
 
-## surface_opacity_threshold
-**Float** 
+## surface_opacity_threshold  
+**Float**  
 
-Default value : 0.5
+Default value : 0.5  
 
 Accumulated opacity that's considered the 'surface' for computing surface position and Z
 

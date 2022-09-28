@@ -10,21 +10,22 @@ title: LODMap
 
 # LODMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## far_value
-**Rgb** *bindable*
+## far_value  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 value output when feature_width/camera_distance is more than or equal to stop
 
 
-## mode
-**Int** *enum*
+## mode  
+**Int**  *enum*
 
 - feature width = 0 (default)
 
@@ -34,26 +35,26 @@ value output when feature_width/camera_distance is more than or equal to stop
 Use feature_width for LOD based on average, world-space feature-width visible in a pixel, correctly changing with resolution. Use camera_distance for LOD based on distance from render cam.
 
 
-## near_value
-**Rgb** *bindable*
+## near_value  
+**Rgb**  *bindable*
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 value output when feature_width/camera_distance is less than or equal to start
 
 
-## start
-**Float** 
+## start  
+**Float**  
 
-Default value : 0.00999999977648
+Default value : 0.00999999977648  
 
 feature_width/camera_distance at which to start blending near_value->far_value
 
 
-## stop
-**Float** 
+## stop  
+**Float**  
 
-Default value : 0.10000000149
+Default value : 0.10000000149  
 
 feature_width/camera_distance at which to stop blending near_value->far_value
 

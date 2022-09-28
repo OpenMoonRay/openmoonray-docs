@@ -10,15 +10,16 @@ title: LightFilterSet
 
 # LightFilterSet
 **LIGHTFILTERSET**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## lightfilters
-**Lightfilter Vector** 
+## lightfilters  
+**Lightfilter Vector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lightfilters</b> needs to be written</p>
 

@@ -10,217 +10,214 @@ title: PerspectiveCamera
 
 # PerspectiveCamera
 **NODE CAMERA**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Depth of Field attributes</summary>
 
-## bokeh
-**Bool** 
+## bokeh  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 Enable Bokeh. Requires DOF to be enabled.
 
 
-## bokeh_angle
-**Float** 
+## bokeh_angle  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 Angle of iris rotation
 
 
-## bokeh_image
-**String** 
+## bokeh_image  
+**String**  
 
-Default value : 
+Default value :   
 
 Path to image file to be used for the iris
 
 
-## bokeh_sides
-**Int** 
+## bokeh_sides  
+**Int**  
 
-Default value : 0
+Default value : 0  
 
 Number of sides of the iris. Specifying less than 3 sides will default to a disk.
 
 
-## bokeh_weight_location
-**Float** 
+## bokeh_weight_location  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 Distance from the origin of Bokeh shape
 
 
-## bokeh_weight_strength
-**Float** 
+## bokeh_weight_strength  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 Controls the strength of weights as samples approach the weight location
 
 
-## dof
-**Bool** 
+## dof  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>dof</b> needs to be written</p>
 
 
-## dof_aperture
-**Float** 
+## dof_aperture  
+**Float**  
 
-Default value : 8.0
+Default value : 8.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>dof_aperture</b> needs to be written</p>
 
 
-## dof_focus_distance
-**Float** 
+## dof_focus_distance  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>dof_focus_distance</b> needs to be written</p>
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">Frustum attributes</summary>
 
-## far
-**Float** 
+## far  
+**Float**  
 
-Default value : 10000.0
+Default value : 10000.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>far</b> needs to be written</p>
 
 
-## film_width_aperture
-**Float** 
+## film_width_aperture  
+**Float**  
 
-Default value : 24.0
+Default value : 24.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>film_width_aperture</b> needs to be written</p>
 
 
-## focal
-**Float** *blurrable*
+## focal  
+**Float**  *blurrable*
 
-Default value : 30.0
+Default value : 30.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>focal</b> needs to be written</p>
 
 
-## horizontal_film_offset
-**Float** 
+## horizontal_film_offset  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>horizontal_film_offset</b> needs to be written</p>
 
 
-## near
-**Float** 
+## near  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>near</b> needs to be written</p>
 
 
-## pixel_aspect_ratio
-**Float** 
+## pixel_aspect_ratio  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 ratio of pixel size y / x
 
 
-## vertical_film_offset
-**Float** 
+## vertical_film_offset  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>vertical_film_offset</b> needs to be written</p>
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">Motion Blur attributes</summary>
 
-## mb_shutter_bias
-**Float** 
+## mb_shutter_bias  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
 
 
-## mb_shutter_close
-**Float** 
+## mb_shutter_close  
+**Float**  
 
-Default value : 0.25
+Default value : 0.25  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
 
 
-## mb_shutter_open
-**Float** 
+## mb_shutter_open  
+**Float**  
 
-Default value : -0.25
+Default value : -0.25  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">Render Masks attributes</summary>
 
-## pixel_sample_map
-**String** 
+## pixel_sample_map  
+**String**  
 
-Default value : 
+Default value :   
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">Stereo attributes</summary>
 
-## stereo_convergence_distance
-**Float** 
+## stereo_convergence_distance  
+**Float**  
 
-Default value : 100.0
+Default value : 100.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_convergence_distance</b> needs to be written</p>
 
 
-## stereo_interocular_distance
-**Float** 
+## stereo_interocular_distance  
+**Float**  
 
-Default value : 6.30000019073
+Default value : 6.30000019073  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_interocular_distance</b> needs to be written</p>
 
 
-## stereo_view
-**Int** *enum*
+## stereo_view  
+**Int**  *enum*
 
 - center view = 0 (default)
 
@@ -234,15 +231,14 @@ Default value : 6.30000019073
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## node_xform
-**Mat4d** *blurrable*
+## node_xform  
+**Mat4d**  *blurrable*
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 

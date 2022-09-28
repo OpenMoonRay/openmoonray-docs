@@ -10,13 +10,14 @@ title: ProjectCameraNormalMap
 
 # ProjectCameraNormalMap
 **SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## aspect_ratio_source
-**Int** *enum*
+## aspect_ratio_source  
+**Int**  *enum*
 
 - from texture = 0 (default)
 
@@ -26,16 +27,16 @@ title: ProjectCameraNormalMap
 Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio
 
 
-## custom_aspect_ratio
-**Float** 
+## custom_aspect_ratio  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 a custom aspect ratio for the projected texture
 
 
-## normal_encoding
-**Int** *enum*
+## normal_encoding  
+**Int**  *enum*
 
 - [0,1] = 0 (default)
 
@@ -45,34 +46,34 @@ a custom aspect ratio for the projected texture
 Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]
 
 
-## project_on_back_faces
-**Bool** 
+## project_on_back_faces  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 Toggles whether camera projections appear on back faces.
 
 
-## projector
-**Camera** 
+## projector  
+**Camera**  
 
-Default value : None
+Default value : None  
 
 the camera to project from
 
 
-## texture
-**String** *filename*
+## texture  
+**String**  *filename*
 
-Default value : 
+Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## use_reference_space
-**Bool** 
+## use_reference_space  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 use reference space
 

@@ -10,44 +10,44 @@ title: BlendDisplayFilter
 
 # BlendDisplayFilter
 ****
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## invert_mask
-**Bool** 
+## invert_mask  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 invert value of mask
 
 
-## mix
-**Float** 
+## mix  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 blend between output and input
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## blendAmt
-**Float** 
+## blendAmt  
+**Float**  
 
-Default value : 0.5
+Default value : 0.5  
 
 float determining amount of blend
 
 
-## blendType
-**Int** *enum*
+## blendType  
+**Int**  *enum*
 
 - linear = 0 (default)
 
@@ -57,26 +57,26 @@ float determining amount of blend
 <p class="scene-class-attr-missing">Documentation for the attribute <b>blendType</b> needs to be written</p>
 
 
-## input1
-**67141632** 
+## input1  
+**67141632**  
 
-Default value : None
+Default value : None  
 
 first operand
 
 
-## input2
-**67141632** 
+## input2  
+**67141632**  
 
-Default value : None
+Default value : None  
 
 second operand
 
 
-## mask
-**67141632** 
+## mask  
+**67141632**  
 
-Default value : None
+Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 

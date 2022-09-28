@@ -10,69 +10,70 @@ title: ColorRampLightFilter
 
 # ColorRampLightFilter
 **LIGHTFILTER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-## begin_distance
-**Float** 
+## begin_distance  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>begin_distance</b> needs to be written</p>
 
 
-## colors
-**RgbVector** 
+## colors  
+**RgbVector**  
 
-Default value : [[ 1, 1, 1 ], [ 0, 0, 0 ]]
+Default value : [[ 1, 1, 1 ], [ 0, 0, 0 ]]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>colors</b> needs to be written</p>
 
 
-## density
-**Float** 
+## density  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>density</b> needs to be written</p>
 
 
-## distances
-**FloatVector** 
+## distances  
+**FloatVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>distances</b> needs to be written</p>
 
 
-## end_distance
-**Float** 
+## end_distance  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>end_distance</b> needs to be written</p>
 
 
-## intensity
-**Float** 
+## intensity  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>intensity</b> needs to be written</p>
 
 
-## interpolation_types
-**IntVector** 
+## interpolation_types  
+**IntVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>interpolation_types</b> needs to be written</p>
 
 
-## mode
-**Int** *enum*
+## mode  
+**Int**  *enum*
 
 - radial = 0 (default)
 
@@ -82,16 +83,16 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mode</b> needs to be written</p>
 
 
-## node_xform
-**Mat4d** *blurrable*
+## node_xform  
+**Mat4d**  *blurrable*
 
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
-## wrap_mode
-**Int** *enum*
+## wrap_mode  
+**Int**  *enum*
 
 - extend = 0 (default)
 
@@ -103,23 +104,22 @@ For directional filter mode where filter uses distance along -Z axis.  Extend: f
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## on
-**Bool** 
+## on  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
-## use_xform
-**Bool** 
+## use_xform  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>use_xform</b> needs to be written</p>
 

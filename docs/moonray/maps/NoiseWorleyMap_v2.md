@@ -10,108 +10,108 @@ title: NoiseWorleyMap_v2
 
 # NoiseWorleyMap_v2
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Adjustment attributes</summary>
 
-## bias
-**Float** *bindable*
+## bias  
+**Float**  *bindable*
 
-Default value : 0.5
+Default value : 0.5  
 
 Bias of interpolation from color A to color B
 
 
-## gain
-**Float** *bindable*
+## gain  
+**Float**  *bindable*
 
-Default value : 0.5
+Default value : 0.5  
 
 Gain of interpolation from color A to color B
 
 
-## invert
-**Bool** 
+## invert  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 Invert the final pattern
 
 
-## point_size
-**Float** 
+## point_size  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 For points output mode, relative radius of points
 
 
-## remap
-**Vec2f** *bindable*
+## remap  
+**Vec2f**  *bindable*
 
-Default value : [ 0, 1 ]
+Default value : [ 0, 1 ]  
 
 Allows mapping the distances from the specified min/max range into the 0..1 range
 
 
-## smoothstep
-**Vec2f** *bindable*
+## smoothstep  
+**Vec2f**  *bindable*
 
-Default value : [ 0, 1 ]
+Default value : [ 0, 1 ]  
 
 min/max values between which the smoothstep will interpolate
 
 
-## use_smoothstep
-**Bool** 
+## use_smoothstep  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 Put the noise value through a smoothstep function defined by min/max
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## F1
-**Float** *bindable*
+## F1  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 Influence of F1 (the closest feature point)
 
 
-## F2
-**Float** *bindable*
+## F2  
+**Float**  *bindable*
 
-Default value : 0.0
+Default value : 0.0  
 
 Influence of F2 (the second closest feature point)
 
 
-## F3
-**Float** *bindable*
+## F3  
+**Float**  *bindable*
 
-Default value : 0.0
+Default value : 0.0  
 
 Influence of F3 (the third closest feature point)
 
 
-## F4
-**Float** *bindable*
+## F4  
+**Float**  *bindable*
 
-Default value : 0.0
+Default value : 0.0  
 
 Influence of F4 (the fourth closest feature point)
 
 
-## cell_id
-**Int** *enum*
+## cell_id  
+**Int**  *enum*
 
 - f1 = 0 (default)
 
@@ -127,13 +127,12 @@ Which of the distances determines the cell id
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">Output attributes</summary>
 
-## distance_method
-**Int** *enum*
+## distance_method  
+**Int**  *enum*
 
 - linear = 0 (default)
 
@@ -151,16 +150,16 @@ Which of the distances determines the cell id
 Metric for calculating distance to feature points which controls the shape of the falloff when output mode is distance
 
 
-## minkowski_number
-**Float** *bindable*
+## minkowski_number  
+**Float**  *bindable*
 
-Default value : 3.0
+Default value : 3.0  
 
 Exponent on distances when distance method is set to Minkowski
 
 
-## output_mode
-**Int** *enum*
+## output_mode  
+**Int**  *enum*
 
 - distance = 0 (default)
 
@@ -178,37 +177,36 @@ Method by which the shader outputs a color.  Distance uses F1..F4 interpolated b
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">Space attributes</summary>
 
-## camera
-**Camera** 
+## camera  
+**Camera**  
 
-Default value : None
+Default value : None  
 
 camera used to define camera and screen space
 
 
-## input_texture_coordinates
-**Vec3f** *bindable*
+## input_texture_coordinates  
+**Vec3f**  *bindable*
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
 
 
-## object_space
-**Geometry** 
+## object_space  
+**Geometry**  
 
-Default value : None
+Default value : None  
 
 Directly connect object to use that object's space.
 
 
-## space
-**Int** *enum*
+## space  
+**Int**  *enum*
 
 - render = 0
 
@@ -236,21 +234,20 @@ The space to calculate the noise in
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">Transform attributes</summary>
 
-## rotation
-**Vec3f** *bindable*
+## rotation  
+**Vec3f**  *bindable*
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 Rotates the noise in space based on the specified rotation order
 
 
-## rotation_order
-**Int** *enum*
+## rotation_order  
+**Int**  *enum*
 
 - xyz = 0 (default)
 
@@ -268,16 +265,16 @@ Rotates the noise in space based on the specified rotation order
 Order in which to apply the euler rotations
 
 
-## scale
-**Vec3f** *bindable*
+## scale  
+**Vec3f**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 Vector to scale the noise non-proportionally
 
 
-## transformation_order
-**Int** *enum*
+## transformation_order  
+**Int**  *enum*
 
 - srt = 0
 
@@ -295,65 +292,64 @@ Vector to scale the noise non-proportionally
 Order in which to apply the translation, rotation, and frequency
 
 
-## translation
-**Vec3f** *bindable*
+## translation  
+**Vec3f**  *bindable*
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 Translation of the noise in space
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## color_A
-**Rgb** *bindable*
+## color_A  
+**Rgb**  *bindable*
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 The interpolated color value at distance equals zero
 
 
-## color_B
-**Rgb** *bindable*
+## color_B  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 The interpolated color value at distance equals one
 
 
-## frequency
-**Float** *bindable*
+## frequency  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 Scalar multiplier for the frequency vector
 
 
-## jitter
-**Float** *bindable*
+## jitter  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 Controls the distortion of the cells
 
 
-## max_level
-**Float** *bindable*
+## max_level  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 Number of octaves of noise to add together for the final result
 
 
-## seed
-**Int** 
+## seed  
+**Int**  
 
-Default value : 0
+Default value : 0  
 
 The seed for the random number generator
 

@@ -10,175 +10,176 @@ title: UserData
 
 # UserData
 **USERDATA**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## bool_key
-**String** 
+## bool_key  
+**String**  
 
-Default value : 
+Default value :   
 
 key name for bool type user data
 
 
-## bool_values
-**BoolVector** 
+## bool_values  
+**BoolVector**  
 
-Default value : []
+Default value : []  
 
 bool type user data values
 
 
-## color_key
-**String** 
+## color_key  
+**String**  
 
-Default value : 
+Default value :   
 
 key name for color type user data
 
 
-## color_values_0
-**RgbVector** 
+## color_values_0  
+**RgbVector**  
 
-Default value : []
+Default value : []  
 
 color type user data values for motion step 0
 
 
-## color_values_1
-**RgbVector** 
+## color_values_1  
+**RgbVector**  
 
-Default value : []
+Default value : []  
 
 color type user data values for motion step 1
 
 
-## float_key
-**String** 
+## float_key  
+**String**  
 
-Default value : 
+Default value :   
 
 key name for float type user data
 
 
-## float_values_0
-**FloatVector** 
+## float_values_0  
+**FloatVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 float type user data values for motion step 0
 
 
-## float_values_1
-**FloatVector** 
+## float_values_1  
+**FloatVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 float type user data values for motion step 1
 
 
-## int_key
-**String** 
+## int_key  
+**String**  
 
-Default value : 
+Default value :   
 
 key name for integer type user data
 
 
-## int_values
-**IntVector** 
+## int_values  
+**IntVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 integer type user data values
 
 
-## mat4f_key
-**String** 
+## mat4f_key  
+**String**  
 
-Default value : 
+Default value :   
 
 key name for mat4f type user data
 
 
-## mat4f_values_0
-**Mat4fVector** 
+## mat4f_values_0  
+**Mat4fVector**  
 
-Default value : []
+Default value : []  
 
 mat4f type user data values for motion step 0
 
 
-## mat4f_values_1
-**Mat4fVector** 
+## mat4f_values_1  
+**Mat4fVector**  
 
-Default value : []
+Default value : []  
 
 mat4f type user data values for motion step 1
 
 
-## string_key
-**String** 
+## string_key  
+**String**  
 
-Default value : 
+Default value :   
 
 key name for string type user data
 
 
-## string_values
-**StringVector** 
+## string_values  
+**StringVector**  
 
-Default value : []
+Default value : []  
 
 string type user data values
 
 
-## vec2f_key
-**String** 
+## vec2f_key  
+**String**  
 
-Default value : 
+Default value :   
 
 key name for vec2f type user data
 
 
-## vec2f_values_0
-**Vec2fVector** 
+## vec2f_values_0  
+**Vec2fVector**  
 
-Default value : []
+Default value : []  
 
 vec2f type user data values for motion step 0
 
 
-## vec2f_values_1
-**Vec2fVector** 
+## vec2f_values_1  
+**Vec2fVector**  
 
-Default value : []
+Default value : []  
 
 vec2f type user data values for motion step 1
 
 
-## vec3f_key
-**String** 
+## vec3f_key  
+**String**  
 
-Default value : 
+Default value :   
 
 key name for vec3f type user data
 
 
-## vec3f_values_0
-**Vec3fVector** 
+## vec3f_values_0  
+**Vec3fVector**  
 
-Default value : []
+Default value : []  
 
 vec3f type user data values for motion step 0
 
 
-## vec3f_values_1
-**Vec3fVector** 
+## vec3f_values_1  
+**Vec3fVector**  
 
-Default value : []
+Default value : []  
 
 vec3f type user data values for motion step 1
 

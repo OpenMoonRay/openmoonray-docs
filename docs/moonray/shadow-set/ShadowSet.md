@@ -10,15 +10,16 @@ title: ShadowSet
 
 # ShadowSet
 ****
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## lights
-**Light Vector** 
+## lights  
+**Light Vector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lights</b> needs to be written</p>
 

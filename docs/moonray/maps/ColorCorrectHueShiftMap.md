@@ -10,39 +10,40 @@ title: ColorCorrectHueShiftMap
 
 # ColorCorrectHueShiftMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## hue_shift
-**Float** *bindable*
+## hue_shift  
+**Float**  *bindable*
 
-Default value : 0.0
+Default value : 0.0  
 
 shifts the hue of the input (spectrum range is 0-1)
 
 
-## input
-**Rgb** *bindable*
+## input  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 bind the input here
 
 
-## mix
-**Float** *bindable*
+## mix  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 how much of the overall color correct to mix in
 
 
-## on
-**Bool** 
+## on  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 enables/disables all color correct operations
 

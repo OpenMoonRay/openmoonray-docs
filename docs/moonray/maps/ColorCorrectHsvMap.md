@@ -10,87 +10,88 @@ title: ColorCorrectHsvMap
 
 # ColorCorrectHsvMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## clamp
-**Bool** 
+## clamp  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 clamps output to [0,1] range
 
 
-## hue_shift
-**Float** *bindable*
+## hue_shift  
+**Float**  *bindable*
 
-Default value : 0.0
+Default value : 0.0  
 
 shifts the hue of the input (360 rolls over back to 0)
 
 
-## input
-**Rgb** *bindable*
+## input  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 input color
 
 
-## on
-**Bool** 
+## on  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 all attributes on/off
 
 
-## saturation_contrast
-**Float** 
+## saturation_contrast  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 modifies the contrast of the input's saturation (-1, 1)
 
 
-## saturation_factor
-**Float** *bindable*
+## saturation_factor  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 multiplies the saturation of the input
 
 
-## saturation_shift
-**Float** 
+## saturation_shift  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 shifts the saturation of the input (-1, 1)
 
 
-## value_contrast
-**Float** 
+## value_contrast  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 modifies the contrast of the input's value (-1, 1)
 
 
-## value_factor
-**Float** *bindable*
+## value_factor  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 multiplies the value of the input
 
 
-## value_shift
-**Float** 
+## value_shift  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 shifts the value of the input (-1, 1)
 

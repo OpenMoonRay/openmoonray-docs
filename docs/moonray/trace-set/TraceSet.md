@@ -10,23 +10,24 @@ title: TraceSet
 
 # TraceSet
 **TRACESET**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## geometries
-**SceneObjectIndexable** 
+## geometries  
+**SceneObjectIndexable**  
 
-Default value : None
+Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 
 
-## parts
-**StringVector** 
+## parts  
+**StringVector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>parts</b> needs to be written</p>
 

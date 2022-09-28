@@ -10,54 +10,54 @@ title: IntensityLightFilter
 
 # IntensityLightFilter
 **LIGHTFILTER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-## color
-**Rgb** 
+## color  
+**Rgb**  
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>color</b> needs to be written</p>
 
 
-## exposure
-**Float** 
+## exposure  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>exposure</b> needs to be written</p>
 
 
-## intensity
-**Float** 
+## intensity  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>intensity</b> needs to be written</p>
 
 
-## invert
-**Bool** 
+## invert  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## on
-**Bool** 
+## on  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 

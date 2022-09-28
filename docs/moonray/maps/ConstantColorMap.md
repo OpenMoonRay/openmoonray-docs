@@ -10,15 +10,16 @@ title: ConstantColorMap
 
 # ConstantColorMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## color_value
-**Rgb** 
+## color_value  
+**Rgb**  
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 constant color value
 

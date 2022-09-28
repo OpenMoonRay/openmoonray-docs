@@ -10,39 +10,40 @@ title: UsdTransform2d
 
 # UsdTransform2d
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## in
-**Rgb** *bindable*
+## in  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.
 
 
-## rotation
-**Float** 
+## rotation  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.
 
 
-## scale
-**Vec2f** 
+## scale  
+**Vec2f**  
 
-Default value : [ 1, 1 ]
+Default value : [ 1, 1 ]  
 
 Scale around the origin to be applied to all components of the data.
 
 
-## translation
-**Vec2f** 
+## translation  
+**Vec2f**  
 
-Default value : [ 0, 0 ]
+Default value : [ 0, 0 ]  
 
 Translation to be applied to all components of the data.
 

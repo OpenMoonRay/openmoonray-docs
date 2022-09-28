@@ -10,31 +10,32 @@ title: UsdPrimvarReader_int
 
 # UsdPrimvarReader_int
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## fallback
-**Int** *bindable*
+## fallback  
+**Int**  *bindable*
 
-Default value : 0
+Default value : 0  
 
 fallback value to be returned if geometry fetch failed.
 
 
-## varname
-**String** 
+## varname  
+**String**  
 
-Default value : 
+Default value :   
 
 Name of the primvar to be read from the mesh
 
 
-## warn_when_unavailable
-**Bool** 
+## warn_when_unavailable  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 Whether or not to issue a warning when the requested attribute is unavailable
 

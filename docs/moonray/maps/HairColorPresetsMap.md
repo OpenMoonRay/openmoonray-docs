@@ -10,13 +10,14 @@ title: HairColorPresetsMap
 
 # HairColorPresetsMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## color
-**Int** *enum*
+## color  
+**Int**  *enum*
 
 - black = 0 (default)
 

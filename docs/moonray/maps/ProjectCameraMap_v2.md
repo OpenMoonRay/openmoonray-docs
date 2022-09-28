@@ -10,21 +10,22 @@ title: ProjectCameraMap_v2
 
 # ProjectCameraMap_v2
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## alpha_only
-**Bool** 
+## alpha_only  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 When enabled, the alpha channel is returned instead of RGB
 
 
-## aspect_ratio_source
-**Int** *enum*
+## aspect_ratio_source  
+**Int**  *enum*
 
 - from texture = 0 (default)
 
@@ -34,24 +35,24 @@ When enabled, the alpha channel is returned instead of RGB
 Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio
 
 
-## black_outside_projection
-**Bool** 
+## black_outside_projection  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 Toggles whether projections appear outside the 0-1 uv range of the projector
 
 
-## custom_aspect_ratio
-**Float** 
+## custom_aspect_ratio  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 a custom aspect ratio for the projected texture
 
 
-## gamma
-**Int** *enum*
+## gamma  
+**Int**  *enum*
 
 - off = 0
 
@@ -63,42 +64,42 @@ a custom aspect ratio for the projected texture
 Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images
 
 
-## project_on_back_faces
-**Bool** 
+## project_on_back_faces  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 Toggles whether camera projections appear on back faces.
 
 
-## projector
-**Camera** 
+## projector  
+**Camera**  
 
-Default value : None
+Default value : None  
 
 the camera to project from
 
 
-## texture
-**String** *filename*
+## texture  
+**String**  *filename*
 
-Default value : 
+Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## unpremultiply
-**Bool** 
+## unpremultiply  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 When enabled, the rgb channels are divided by the alpha channel (where non-zero)
 
 
-## use_reference_space
-**Bool** 
+## use_reference_space  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 use reference space
 

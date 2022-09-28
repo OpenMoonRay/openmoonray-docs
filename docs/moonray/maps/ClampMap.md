@@ -10,39 +10,40 @@ title: ClampMap
 
 # ClampMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## clamp
-**Bool** 
+## clamp  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.
 
 
-## clamp_max
-**Float** 
+## clamp_max  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 the maximum value output by this map when 'clamp' is enabled
 
 
-## clamp_min
-**Float** 
+## clamp_min  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 the minimum value output by this map when 'clamp' is enabled
 
 
-## input
-**Rgb** *bindable*
+## input  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 the input values to be remapped
 

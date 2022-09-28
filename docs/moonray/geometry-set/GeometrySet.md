@@ -10,15 +10,16 @@ title: GeometrySet
 
 # GeometrySet
 **GEOMETRYSET**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## geometries
-**SceneObjectIndexable** 
+## geometries  
+**SceneObjectIndexable**  
 
-Default value : None
+Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 

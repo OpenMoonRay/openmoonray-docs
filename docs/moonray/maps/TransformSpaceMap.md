@@ -10,29 +10,30 @@ title: TransformSpaceMap
 
 # TransformSpaceMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## camera
-**Camera** 
+## camera  
+**Camera**  
 
-Default value : None
+Default value : None  
 
 an alternate camera to use when transforming to/from 'camera' space
 
 
-## concatenate_instance_level_transforms
-**Bool** 
+## concatenate_instance_level_transforms  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 When true, instance level transforms below the specified one are concatenated otherwise only the selected level's transform is used
 
 
-## from_space
-**Int** *enum*
+## from_space  
+**Int**  *enum*
 
 - render = 0 (default)
 
@@ -62,16 +63,16 @@ When true, instance level transforms below the specified one are concatenated ot
 the space to transform from
 
 
-## input
-**Vec3f** *bindable*
+## input  
+**Vec3f**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 the input value to transform
 
 
-## input_type
-**Int** *enum*
+## input_type  
+**Int**  *enum*
 
 - point = 0
 
@@ -83,16 +84,16 @@ the input value to transform
 the type of input value provided
 
 
-## object
-**Geometry** 
+## object  
+**Geometry**  
 
-Default value : None
+Default value : None  
 
 an alternate object to use when transforming to/from 'object' space
 
 
-## to_space
-**Int** *enum*
+## to_space  
+**Int**  *enum*
 
 - render = 0
 
@@ -122,42 +123,42 @@ an alternate object to use when transforming to/from 'object' space
 the space to transform to
 
 
-## use_custom_window_coordinates
-**Bool** 
+## use_custom_window_coordinates  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 used to apply non-uniform scaling to projection
 
 
-## window_x_max
-**Float** 
+## window_x_max  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 maximum projected x coordinate
 
 
-## window_x_min
-**Float** 
+## window_x_min  
+**Float**  
 
-Default value : -1.0
+Default value : -1.0  
 
 minimum projected x coordinate
 
 
-## window_y_max
-**Float** 
+## window_y_max  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 maximum projected y coordinate
 
 
-## window_y_min
-**Float** 
+## window_y_min  
+**Float**  
 
-Default value : -1.0
+Default value : -1.0  
 
 minimum projected y coordinate
 

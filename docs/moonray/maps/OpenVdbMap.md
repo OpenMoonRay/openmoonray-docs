@@ -10,52 +10,52 @@ title: OpenVdbMap
 
 # OpenVdbMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## show_active_field
-**Bool** 
+## show_active_field  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 When enabled active/inactive field locations will be white/black, respectively
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## default_value
-**Rgb** 
+## default_value  
+**Rgb**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 A default value to use when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found
 
 
-## grid_name
-**String** 
+## grid_name  
+**String**  
 
-Default value : 
+Default value :   
 
 The name of the grid within the .vdb file from which to sample (hint: use openvdb_print to see contents of .vdb file). If no grid is specified, the first grid found in the .vdb will be used.  In cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])
 
 
-## input_texture_coordinates
-**Vec3f** *bindable*
+## input_texture_coordinates  
+**Vec3f**  *bindable*
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 The world-space coordinate to use when 'texture coordinates' is set to 'input texture coordinates'
 
 
-## interpolation
-**Int** *enum*
+## interpolation  
+**Int**  *enum*
 
 - point = 0
 
@@ -67,32 +67,32 @@ The world-space coordinate to use when 'texture coordinates' is set to 'input te
 The type of interpolation to use when sampling the vdb
 
 
-## openvdb_geometry
-**Geometry** 
+## openvdb_geometry  
+**Geometry**  
 
-Default value : None
+Default value : None  
 
 The OpenVdbGeometry object from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from OpenVdbGeometry'
 
 
-## show_warnings
-**Bool** 
+## show_warnings  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 Enables a warning message when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found
 
 
-## texture
-**String** *filename*
+## texture  
+**String**  *filename*
 
-Default value : 
-
-
+Default value :   
 
 
-## texture_coordinates
-**Int** *enum*
+
+
+## texture_coordinates  
+**Int**  *enum*
 
 - position = 0 (default)
 
@@ -104,8 +104,8 @@ Default value :
 Which coordinate source to use for the texture lookup
 
 
-## vdb_source
-**Int** *enum*
+## vdb_source  
+**Int**  *enum*
 
 - from texture = 0 (default)
 

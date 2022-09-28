@@ -10,45 +10,46 @@ title: UsdUVTexture
 
 # UsdUVTexture
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## bias
-**Rgb** 
+## bias  
+**Rgb**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 Bias to be applied to all components of the texture.  output = textureValue * scale + bias
 
 
-## fallback
-**Rgb** 
+## fallback  
+**Rgb**  
 
-Default value : [ 0, 0, 0 ]
+Default value : [ 0, 0, 0 ]  
 
 Fallback value used when texture can not be read.
 
 
-## file
-**String** *filename*
+## file  
+**String**  *filename*
 
-Default value : 
+Default value :   
 
 Path to the texture
 
 
-## scale
-**Rgb** 
+## scale  
+**Rgb**  
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 Scale to be applied to all components of the texture.  output = textureValue * scale + bias
 
 
-## sourceColorSpace
-**Int** *enum*
+## sourceColorSpace  
+**Int**  *enum*
 
 - raw = 0
 
@@ -60,40 +61,40 @@ Scale to be applied to all components of the texture.  output = textureValue * s
 Flag indicating the color space in which the source texture is encoded.
 
 
-## st
-**Vec2f** *bindable*
+## st  
+**Vec2f**  *bindable*
 
-Default value : [ 1, 1 ]
+Default value : [ 1, 1 ]  
 
 Texture coordinate to use to fetch this texture.
 
 
-## udim_files
-**StringVector** 
+## udim_files  
+**StringVector**  
 
-Default value : []
+Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>udim_files</b> needs to be written</p>
 
 
-## udim_max_v
-**Int** 
+## udim_max_v  
+**Int**  
 
-Default value : 10
+Default value : 10  
 
 udim maximum v value
 
 
-## udim_values
-**IntVector** 
+## udim_values  
+**IntVector**  
 
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
+Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>udim_values</b> needs to be written</p>
 
 
-## wrapS
-**Int** *enum*
+## wrapS  
+**Int**  *enum*
 
 - black = 0
 
@@ -109,8 +110,8 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 Wrap mode when reading this texture.
 
 
-## wrapT
-**Int** *enum*
+## wrapT  
+**Int**  *enum*
 
 - black = 0
 

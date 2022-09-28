@@ -10,15 +10,16 @@ title: ConstantScalarMap
 
 # ConstantScalarMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## scalar_value
-**Float** 
+## scalar_value  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 constant scalar value
 

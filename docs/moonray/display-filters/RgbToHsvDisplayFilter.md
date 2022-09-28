@@ -10,52 +10,52 @@ title: RgbToHsvDisplayFilter
 
 # RgbToHsvDisplayFilter
 ****
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## invert_mask
-**Bool** 
+## invert_mask  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 invert value of mask
 
 
-## mix
-**Float** 
+## mix  
+**Float**  
 
-Default value : 1.0
+Default value : 1.0  
 
 blend between output and input
 
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## input
-**67141632** 
+## input  
+**67141632**  
 
-Default value : None
+Default value : None  
 
 image buffer
 
 
-## mask
-**67141632** 
+## mask  
+**67141632**  
 
-Default value : None
+Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-## mode
-**Int** *enum*
+## mode  
+**Int**  *enum*
 
 - rgb_to_hsv = 0 (default)
 

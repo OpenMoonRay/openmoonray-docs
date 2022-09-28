@@ -10,13 +10,14 @@ title: HairLayerMaterial
 
 # HairLayerMaterial
 **ROOTSHADER MATERIAL SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## blend_color_space
-**Int** *enum*
+## blend_color_space  
+**Int**  *enum*
 
 - RGB = 0 (default)
 
@@ -28,8 +29,8 @@ title: HairLayerMaterial
 Color space used when blending the two material's color parameters
 
 
-## fallback_bssrdf
-**Int** *enum*
+## fallback_bssrdf  
+**Int**  *enum*
 
 - normalized diffusion = 0 (default)
 
@@ -41,55 +42,54 @@ If child materials disagree on the type of bssrdf, this type will be used instea
 
 </details>
 
----
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## extra_aovs
-**Map** 
+## extra_aovs  
+**Map**  
 
-Default value : None
+Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## hair_material_A
-**262144** 
+## hair_material_A  
+**262144**  
 
-Default value : None
+Default value : None  
 
 foreground hair material
 
 
-## hair_material_B
-**262144** 
+## hair_material_B  
+**262144**  
 
-Default value : None
+Default value : None  
 
 background hair material
 
 
-## label
-**String** 
+## label  
+**String**  
 
-Default value : 
+Default value :   
 
 label used in material and light aovs
 
 
-## mask
-**Float** *bindable*
+## mask  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 foreground hair material weight
 
 
-## priority
-**Int** 
+## priority  
+**Int**  
 
-Default value : 0
+Default value : 0  
 
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 

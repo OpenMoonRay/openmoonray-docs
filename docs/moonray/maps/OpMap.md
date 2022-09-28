@@ -10,53 +10,54 @@ title: OpMap
 
 # OpMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## clamp
-**Bool** 
+## clamp  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 if on, the result is clamped to 0 - 1
 
 
-## op1
-**Rgb** *bindable*
+## op1  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 the first operand
 
 
-## op1_factor
-**Float** *bindable*
+## op1_factor  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 a scalar multiplier on op1
 
 
-## op2
-**Rgb** *bindable*
+## op2  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 the second operand
 
 
-## op2_factor
-**Float** *bindable*
+## op2_factor  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 a scalar multiplier on op2
 
 
-## operation
-**Int** *enum*
+## operation  
+**Int**  *enum*
 
 - add = 0 (default)
 

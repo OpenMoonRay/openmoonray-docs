@@ -10,69 +10,70 @@ title: ColorCorrectLegacyMap
 
 # ColorCorrectLegacyMap
 **MAP SHADER**
+
 ---
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## brightness
-**Float** 
+## brightness  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>brightness</b> needs to be written</p>
 
 
-## clamp
-**Bool** 
+## clamp  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>clamp</b> needs to be written</p>
 
 
-## contrast
-**Float** 
+## contrast  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
 
 
-## hue
-**Float** 
+## hue  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>hue</b> needs to be written</p>
 
 
-## input
-**Rgb** *bindable*
+## input  
+**Rgb**  *bindable*
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input</b> needs to be written</p>
 
 
-## invert
-**Bool** 
+## invert  
+**Bool**  
 
-Default value : False
+Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
 
 
-## mask
-**Float** *bindable*
+## mask  
+**Float**  *bindable*
 
-Default value : 1.0
+Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-## monochrome
-**Int** *enum*
+## monochrome  
+**Int**  *enum*
 
 - off = 0 (default)
 
@@ -94,26 +95,26 @@ Default value : 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>monochrome</b> needs to be written</p>
 
 
-## multiplier
-**Rgb** 
+## multiplier  
+**Rgb**  
 
-Default value : [ 1, 1, 1 ]
+Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>multiplier</b> needs to be written</p>
 
 
-## on
-**Bool** 
+## on  
+**Bool**  
 
-Default value : True
+Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
-## saturation
-**Float** 
+## saturation  
+**Float**  
 
-Default value : 0.0
+Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
 
