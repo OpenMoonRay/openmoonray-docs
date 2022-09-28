@@ -382,6 +382,8 @@ toc:
       - item: Light Filters
       - item: Render Output
         path: /moonray/render-output
+      - item: Scene Variables
+        path: /moonray/scene-variables
       - item: Shadow Set
         path: /moonray/shadow-set
       - item: Shadow Receiver Set
