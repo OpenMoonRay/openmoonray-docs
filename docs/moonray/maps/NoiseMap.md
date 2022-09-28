@@ -15,6 +15,7 @@ title: NoiseMap
 
 <details open>
 <summary class="scene-class-attr-group">4D attributes</summary>
+<br>
 
 <h3>time</h3>
 <b>Float</b>  *bindable*
@@ -37,6 +38,7 @@ If on, 4-dimensional noise is used instead of 3-dimensional
 
 <details open>
 <summary class="scene-class-attr-group">Adjustment attributes</summary>
+<br>
 
 <h3>bias</h3>
 <b>Float</b>  *bindable*
@@ -83,6 +85,7 @@ Put the noise value through a smoothstep function defined by min/max
 
 <details open>
 <summary class="scene-class-attr-group">Flow Noise attributes</summary>
+<br>
 
 <h3>flow_advection_rate</h3>
 <b>Float</b>  *bindable*
@@ -105,6 +108,7 @@ Angle of rotation for flow noise
 
 <details open>
 <summary class="scene-class-attr-group">Space attributes</summary>
+<br>
 
 <h3>camera</h3>
 <b>Camera</b>  
@@ -162,6 +166,7 @@ The space to calculate the noise in
 
 <details open>
 <summary class="scene-class-attr-group">Transform attributes</summary>
+<br>
 
 <h3>rotation</h3>
 <b>Vec3f</b>  *bindable*
@@ -230,6 +235,7 @@ Translation of the noise in space
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>amplitude</h3>
 <b>Float</b>  *bindable*

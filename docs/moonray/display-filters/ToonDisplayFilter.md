@@ -15,6 +15,7 @@ title: ToonDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>ambient</h3>
 <b>Rgb</b>  

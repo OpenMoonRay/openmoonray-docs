@@ -15,6 +15,7 @@ title: IntensityLightFilter
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
+<br>
 
 <h3>color</h3>
 <b>Rgb</b>  
@@ -53,6 +54,7 @@ default: False
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>on</h3>
 <b>Bool</b>  

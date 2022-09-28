@@ -15,6 +15,7 @@ title: BarnDoorLightFilter
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
+<br>
 
 <h3>color</h3>
 <b>Rgb</b>  
@@ -216,6 +217,7 @@ attach to the light (in the -Z direction) and ignore node_xform
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>on</h3>
 <b>Bool</b>  

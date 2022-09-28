@@ -15,6 +15,7 @@ title: ShadowReceiverSet
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
+<br>
 
 <h3>complement</h3>
 <b>Bool</b>  
@@ -29,6 +30,7 @@ default: False
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>geometries</h3>
 <b>SceneObjectIndexable</b>  

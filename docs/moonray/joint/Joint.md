@@ -15,6 +15,7 @@ title: Joint
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>node_xform</h3>
 <b>Mat4d</b>  *blurrable*

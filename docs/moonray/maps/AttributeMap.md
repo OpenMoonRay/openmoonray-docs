@@ -15,6 +15,7 @@ title: AttributeMap
 
 <details open>
 <summary class="scene-class-attr-group">Primitive Attribute attributes</summary>
+<br>
 
 <h3>primitive_attribute_name</h3>
 <b>String</b>  
@@ -46,6 +47,7 @@ the type of primitive attribute to display when attribute 'map type' is set to '
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>color</h3>
 <b>Rgb</b>  *bindable*

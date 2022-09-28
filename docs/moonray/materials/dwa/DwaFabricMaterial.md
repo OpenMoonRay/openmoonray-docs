@@ -15,6 +15,7 @@ title: DwaFabricMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
+<br>
 
 <h3>casts_caustics</h3>
 <b>Bool</b>  
@@ -45,6 +46,7 @@ enables proper shading of infinitely thin geometry such as paper or leaves.
 
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
+<br>
 
 <h3>albedo</h3>
 <b>Rgb</b>  *bindable*
@@ -110,6 +112,7 @@ enables/disables diffuse reflectance
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
+<br>
 
 <h3>emission</h3>
 <b>Rgb</b>  *bindable*
@@ -132,6 +135,7 @@ enables/disable emission
 
 <details open>
 <summary class="scene-class-attr-group">Fabric attributes</summary>
+<br>
 
 <h3>show_specular</h3>
 <b>Bool</b>  
@@ -194,6 +198,7 @@ Roughness of the fabric specular highlights from the weft threads.
 
 <details open>
 <summary class="scene-class-attr-group">Fuzz attributes</summary>
+<br>
 
 <h3>fuzz</h3>
 <b>Float</b>  *bindable*
@@ -256,6 +261,7 @@ Specify whether dark fuzz fibers absorb energy or transmit it to the layers belo
 
 <details open>
 <summary class="scene-class-attr-group">Glitter attributes</summary>
+<br>
 
 <h3>glitter</h3>
 <b>Float</b>  *bindable*
@@ -487,6 +493,7 @@ Enables/disables glitter lobes
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
+<br>
 
 <h3>input_normal</h3>
 <b>33554432</b>  
@@ -509,6 +516,7 @@ controls the amount of influence of the alternate normal
 
 <details open>
 <summary class="scene-class-attr-group">Threads attributes</summary>
+<br>
 
 <h3>warp_thread_coverage</h3>
 <b>Float</b>  
@@ -539,6 +547,7 @@ This attribute can be used to 'elevate/rotate' the threads from their default di
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  

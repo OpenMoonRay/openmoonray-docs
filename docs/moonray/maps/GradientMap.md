@@ -15,6 +15,7 @@ title: GradientMap
 
 <details open>
 <summary class="scene-class-attr-group">Additional properties attributes</summary>
+<br>
 
 <h3>symmetric</h3>
 <b>Bool</b>  
@@ -37,6 +38,7 @@ Shifts the center of the symmetric falloff
 
 <details open>
 <summary class="scene-class-attr-group">Falloff properties attributes</summary>
+<br>
 
 <h3>falloff_bias</h3>
 <b>Float</b>  
@@ -102,6 +104,7 @@ Falloff blend mode
 
 <details open>
 <summary class="scene-class-attr-group">Gradient properties attributes</summary>
+<br>
 
 <h3>color_A</h3>
 <b>Rgb</b>  *bindable*

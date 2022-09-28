@@ -15,6 +15,7 @@ title: DiskLight
 
 <details open>
 <summary class="scene-class-attr-group">Map attributes</summary>
+<br>
 
 <h3>contrast</h3>
 <b>Rgb</b>  
@@ -141,6 +142,7 @@ Translations in (u,v) expressed as fractions of the unscaled texture space
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
+<br>
 
 <h3>apply_scene_scale</h3>
 <b>Bool</b>  
@@ -328,6 +330,7 @@ directionality of light emission. 1 is completely diffuse hemisphere. 0 is paral
 
 <details open>
 <summary class="scene-class-attr-group">Visibility Flags attributes</summary>
+<br>
 
 <h3>visible_diffuse_reflection</h3>
 <b>Bool</b>  
@@ -382,6 +385,7 @@ whether the light is visible in miror transmission (refraction).
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>light_filters</h3>
 <b>Object Vector</b>  

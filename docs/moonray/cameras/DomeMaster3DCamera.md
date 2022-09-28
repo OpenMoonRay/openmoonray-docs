@@ -15,6 +15,7 @@ title: DomeMaster3DCamera
 
 <details open>
 <summary class="scene-class-attr-group">Frustum attributes</summary>
+<br>
 
 <h3>far</h3>
 <b>Float</b>  
@@ -37,6 +38,7 @@ default: 1.0
 
 <details open>
 <summary class="scene-class-attr-group">Motion Blur attributes</summary>
+<br>
 
 <h3>mb_shutter_bias</h3>
 <b>Float</b>  
@@ -67,6 +69,7 @@ default: -0.25
 
 <details open>
 <summary class="scene-class-attr-group">Render Masks attributes</summary>
+<br>
 
 <h3>pixel_sample_map</h3>
 <b>String</b>  
@@ -81,6 +84,7 @@ default:
 
 <details open>
 <summary class="scene-class-attr-group">Stereo attributes</summary>
+<br>
 
 <h3>head_tilt_map</h3>
 <b>Float</b>  
@@ -140,6 +144,7 @@ default: False
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>FOV_horizontal_angle</h3>
 <b>Float</b>  

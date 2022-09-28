@@ -15,6 +15,7 @@ title: RdlInstancerGeometry
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>disable_indices</h3>
 <b>IntVector</b>  

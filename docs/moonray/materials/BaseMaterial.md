@@ -15,6 +15,7 @@ title: BaseMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
+<br>
 
 <h3>diffuse</h3>
 <b>Bool</b>  
@@ -45,6 +46,7 @@ default: 1.0
 
 <details open>
 <summary class="scene-class-attr-group">Directional Diffuse attributes</summary>
+<br>
 
 <h3>directional_diffuse</h3>
 <b>Bool</b>  
@@ -83,6 +85,7 @@ default: 0.5
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
+<br>
 
 <h3>emission</h3>
 <b>Bool</b>  
@@ -113,6 +116,7 @@ default: 0.0
 
 <details open>
 <summary class="scene-class-attr-group">Iridescence attributes</summary>
+<br>
 
 <h3>iridescence</h3>
 <b>Bool</b>  
@@ -183,6 +187,7 @@ Controls how much the color spectrum is repeated
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
+<br>
 
 <h3>input_normal_space</h3>
 <b>Int</b>  *enum*
@@ -200,6 +205,7 @@ Specifies what space the input normal is in.  Usually this is tangent space for 
 
 <details open>
 <summary class="scene-class-attr-group">Opacity attributes</summary>
+<br>
 
 <h3>opacity</h3>
 <b>Bool</b>  
@@ -222,6 +228,7 @@ default: 1.0
 
 <details open>
 <summary class="scene-class-attr-group">Specular attributes</summary>
+<br>
 
 <h3>retroreflectivity</h3>
 <b>Float</b>  *bindable*
@@ -268,6 +275,7 @@ default: 0.300000011921
 
 <details open>
 <summary class="scene-class-attr-group">Translucency attributes</summary>
+<br>
 
 <h3>translucency</h3>
 <b>Bool</b>  
@@ -314,6 +322,7 @@ default: 1.0
 
 <details open>
 <summary class="scene-class-attr-group">Translucent Diffuse attributes</summary>
+<br>
 
 <h3>translucent_diffuse</h3>
 <b>Bool</b>  
@@ -344,6 +353,7 @@ default: 1.0
 
 <details open>
 <summary class="scene-class-attr-group">Transmission attributes</summary>
+<br>
 
 <h3>transmission</h3>
 <b>Bool</b>  
@@ -374,6 +384,7 @@ default: 0.0
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>anisotropic_direction</h3>
 <b>Vec2f</b>  *bindable*

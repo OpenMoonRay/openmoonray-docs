@@ -15,6 +15,7 @@ title: DwaEmissiveMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
+<br>
 
 <h3>presence</h3>
 <b>Float</b>  *bindable*
@@ -29,6 +30,7 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
+<br>
 
 <h3>emission</h3>
 <b>Rgb</b>  *bindable*
@@ -51,6 +53,7 @@ enables/disable emission
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  

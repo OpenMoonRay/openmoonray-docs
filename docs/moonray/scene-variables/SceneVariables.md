@@ -15,6 +15,7 @@ title: SceneVariables
 
 <details open>
 <summary class="scene-class-attr-group">Caching attributes</summary>
+<br>
 
 <h3>fast_geometry_update</h3>
 <b>Bool</b>  
@@ -45,6 +46,7 @@ maximum number of simultaneous open file handles
 
 <details open>
 <summary class="scene-class-attr-group">Camera and Layer attributes</summary>
+<br>
 
 <h3>camera</h3>
 <b>Camera</b>  
@@ -67,6 +69,7 @@ default: None
 
 <details open>
 <summary class="scene-class-attr-group">Checkpoint attributes</summary>
+<br>
 
 <h3>checkpoint_active</h3>
 <b>Bool</b>  
@@ -188,6 +191,7 @@ Specify total number of checkpoint files for quality based checkpoint mode.This 
 
 <details open>
 <summary class="scene-class-attr-group">Debug attributes</summary>
+<br>
 
 <h3>debug_console</h3>
 <b>Int</b>  
@@ -242,6 +246,7 @@ Checks geometry for bad data
 
 <details open>
 <summary class="scene-class-attr-group">Deep Images attributes</summary>
+<br>
 
 <h3>deep_curvature_tolerance</h3>
 <b>Float</b>  
@@ -307,6 +312,7 @@ Maximum range of the deep surface's Z values within a pixel before it is split
 
 <details open>
 <summary class="scene-class-attr-group">Driver attributes</summary>
+<br>
 
 <h3>interactive_mode</h3>
 <b>Bool</b>  
@@ -380,6 +386,7 @@ Define temporary directory name for temporary file generation. Use $TMPDIR envir
 
 <details open>
 <summary class="scene-class-attr-group">Filtering attributes</summary>
+<br>
 
 <h3>pixel_filter</h3>
 <b>Int</b>  *enum*
@@ -415,6 +422,7 @@ default: 0.0
 
 <details open>
 <summary class="scene-class-attr-group">Fireflies Removal attributes</summary>
+<br>
 
 <h3>roughness_clamping_factor</h3>
 <b>Float</b>  
@@ -445,6 +453,7 @@ clamp sample values to a maximum (disabled if 0.0). Warning: Using this techniqu
 
 <details open>
 <summary class="scene-class-attr-group">Frame attributes</summary>
+<br>
 
 <h3>frame</h3>
 <b>Float</b>  
@@ -475,6 +484,7 @@ default: 0.0
 
 <details open>
 <summary class="scene-class-attr-group">Global Toggles attributes</summary>
+<br>
 
 <h3>enable_displacement</h3>
 <b>Bool</b>  
@@ -578,6 +588,7 @@ Attempt to soften hard shadow terminator boundaries due to shading/geometric nor
 
 <details open>
 <summary class="scene-class-attr-group">Image Size attributes</summary>
+<br>
 
 <h3>aperture_window</h3>
 <b>IntVector</b>  
@@ -632,6 +643,7 @@ Subviewport of region window. Coordinate (0,0) maps to left, bottom of region wi
 
 <details open>
 <summary class="scene-class-attr-group">Logging attributes</summary>
+<br>
 
 <h3>athena_debug</h3>
 <b>Bool</b>  
@@ -694,6 +706,7 @@ default: True
 
 <details open>
 <summary class="scene-class-attr-group">Metadata attributes</summary>
+<br>
 
 <h3>exr_header_attributes</h3>
 <b>Metadata</b>  
@@ -708,6 +721,7 @@ Metadata that is passed directly to the exr header. Format: {"name", "type", "va
 
 <details open>
 <summary class="scene-class-attr-group">Motion and Scale attributes</summary>
+<br>
 
 <h3>motion_steps</h3>
 <b>FloatVector</b>  
@@ -730,6 +744,7 @@ default: 0.00999999977648
 
 <details open>
 <summary class="scene-class-attr-group">Path Guide attributes</summary>
+<br>
 
 <h3>path_guide_enable</h3>
 <b>Bool</b>  
@@ -744,6 +759,7 @@ Turn on path guiding to handle difficult light transport problems (e.g. caustics
 
 <details open>
 <summary class="scene-class-attr-group">Resume Render attributes</summary>
+<br>
 
 <h3>on_resume_script</h3>
 <b>String</b>  
@@ -774,6 +790,7 @@ resuming render process
 
 <details open>
 <summary class="scene-class-attr-group">Sampling attributes</summary>
+<br>
 
 <h3>bsdf_sampler_strategy</h3>
 <b>Int</b>  *enum*
@@ -921,6 +938,7 @@ Defines at which point the accumulated opacity can be considered as opaque, skip
 
 <details open>
 <summary class="scene-class-attr-group">Volumes attributes</summary>
+<br>
 
 <h3>max_volume_depth</h3>
 <b>Int</b>  
@@ -1012,6 +1030,7 @@ Controls the quality of volume shadow (transmittance). The higher number gives m
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>batch_tile_order</h3>
 <b>Int</b>  *enum*

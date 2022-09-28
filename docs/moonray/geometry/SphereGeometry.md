@@ -15,6 +15,7 @@ title: SphereGeometry
 
 <details open>
 <summary class="scene-class-attr-group">Quadric attributes</summary>
+<br>
 
 <h3>phi_max</h3>
 <b>Float</b>  
@@ -53,6 +54,7 @@ default: -1.0
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>label</h3>
 <b>String</b>  

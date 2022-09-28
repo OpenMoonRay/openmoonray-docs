@@ -15,6 +15,7 @@ title: DecayLightFilter
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
+<br>
 
 <h3>falloff_far</h3>
 <b>Bool</b>  
@@ -69,6 +70,7 @@ default: 0.0
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>on</h3>
 <b>Bool</b>  

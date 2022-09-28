@@ -15,6 +15,7 @@ title: CombineNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
+<br>
 
 <h3>input_1</h3>
 <b>33554432</b>  

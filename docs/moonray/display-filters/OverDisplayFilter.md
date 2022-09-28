@@ -15,6 +15,7 @@ title: OverDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>alpha</h3>
 <b>67141632</b>  

@@ -15,6 +15,7 @@ title: CurvatureMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>invert</h3>
 <b>Bool</b>  

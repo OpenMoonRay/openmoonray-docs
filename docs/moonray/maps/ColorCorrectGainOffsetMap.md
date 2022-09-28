@@ -15,6 +15,7 @@ title: ColorCorrectGainOffsetMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>gain</h3>
 <b>Float</b>  *bindable*

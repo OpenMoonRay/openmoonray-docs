@@ -15,6 +15,7 @@ title: DirectionalMap
 
 <details open>
 <summary class="scene-class-attr-group">Adjustment attributes</summary>
+<br>
 
 <h3>bias</h3>
 <b>Float</b>  *bindable*
@@ -75,6 +76,7 @@ apply smoothstep function to result
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
+<br>
 
 <h3>input_normal</h3>
 <b>33554432</b>  
@@ -97,6 +99,7 @@ controls the amount of influence of the alternate normal
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>color_a</h3>
 <b>Rgb</b>  *bindable*

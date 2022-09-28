@@ -15,6 +15,7 @@ title: CombineLightFilter
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>light_filters</h3>
 <b>Object Vector</b>  

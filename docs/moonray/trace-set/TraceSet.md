@@ -15,6 +15,7 @@ title: TraceSet
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>geometries</h3>
 <b>SceneObjectIndexable</b>  

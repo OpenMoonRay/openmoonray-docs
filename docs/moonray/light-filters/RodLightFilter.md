@@ -15,6 +15,7 @@ title: RodLightFilter
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
+<br>
 
 <h3>color</h3>
 <b>Rgb</b>  
@@ -125,6 +126,7 @@ width of the base box (before radius and edge)
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>on</h3>
 <b>Bool</b>  

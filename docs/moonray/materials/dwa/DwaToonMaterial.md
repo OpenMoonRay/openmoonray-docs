@@ -15,6 +15,7 @@ title: DwaToonMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
+<br>
 
 <h3>prevent_light_culling</h3>
 <b>Bool</b>  
@@ -45,6 +46,7 @@ Set of geometries that contribute neighboring subsurface points. By default, onl
 
 <details open>
 <summary class="scene-class-attr-group">Clearcoat attributes</summary>
+<br>
 
 <h3>clearcoat</h3>
 <b>Float</b>  *bindable*
@@ -142,6 +144,7 @@ specifies whether the clearcoat lobe should use an independent normal
 
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
+<br>
 
 <h3>casts_caustics</h3>
 <b>Bool</b>  
@@ -172,6 +175,7 @@ enables proper shading of infinitely thin geometry such as paper or leaves.
 
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
+<br>
 
 <h3>albedo</h3>
 <b>Rgb</b>  *bindable*
@@ -503,6 +507,7 @@ Controls how the diffuse ligthing falls off.  Values greater than 0.0 shift the 
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
+<br>
 
 <h3>emission</h3>
 <b>Rgb</b>  *bindable*
@@ -525,6 +530,7 @@ enables/disable emission
 
 <details open>
 <summary class="scene-class-attr-group">Fuzz attributes</summary>
+<br>
 
 <h3>fuzz</h3>
 <b>Float</b>  *bindable*
@@ -587,6 +593,7 @@ Specify whether dark fuzz fibers absorb energy or transmit it to the layers belo
 
 <details open>
 <summary class="scene-class-attr-group">Glitter attributes</summary>
+<br>
 
 <h3>glitter</h3>
 <b>Float</b>  *bindable*
@@ -818,6 +825,7 @@ Enables/disables glitter lobes
 
 <details open>
 <summary class="scene-class-attr-group">Iridescence attributes</summary>
+<br>
 
 <h3>iridescence</h3>
 <b>Float</b>  *bindable*
@@ -947,6 +955,7 @@ Controls how much the color spectrum is repeated
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
+<br>
 
 <h3>input_normal</h3>
 <b>33554432</b>  
@@ -969,6 +978,7 @@ controls the amount of influence of the alternate normal
 
 <details open>
 <summary class="scene-class-attr-group">Normal Anti-aliasing attributes</summary>
+<br>
 
 <h3>normal_AA_dial</h3>
 <b>Float</b>  
@@ -994,6 +1004,7 @@ Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'tok
 
 <details open>
 <summary class="scene-class-attr-group">Specular attributes</summary>
+<br>
 
 <h3>anisotropy</h3>
 <b>Float</b>  *bindable*
@@ -1207,6 +1218,7 @@ List of colors on the ramp
 
 <details open>
 <summary class="scene-class-attr-group">Transmission attributes</summary>
+<br>
 
 <h3>dispersion_abbe_number</h3>
 <b>Float</b>  
@@ -1285,6 +1297,7 @@ use a separate roughness for transmission
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  

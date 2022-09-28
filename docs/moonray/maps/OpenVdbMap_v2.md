@@ -15,6 +15,7 @@ title: OpenVdbMap_v2
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
+<br>
 
 <h3>show_active_field</h3>
 <b>Bool</b>  
@@ -29,6 +30,7 @@ When enabled active/inactive field locations will be white/black, respectively
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>default_value</h3>
 <b>Rgb</b>  

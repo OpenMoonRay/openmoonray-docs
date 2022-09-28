@@ -15,6 +15,7 @@ title: UsdPreviewSurface
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>clearcoat</h3>
 <b>Float</b>  *bindable*

@@ -15,6 +15,7 @@ title: CheckerboardMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>color_A</h3>
 <b>Rgb</b>  

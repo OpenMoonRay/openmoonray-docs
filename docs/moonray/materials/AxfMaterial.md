@@ -15,6 +15,7 @@ title: AxfMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
+<br>
 
 <h3>input_normal_dial</h3>
 <b>Float</b>  
@@ -48,6 +49,7 @@ Specifies what space the normal is given in.  Usually this is tangent space for 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>alpha</h3>
 <b>Float</b>  *bindable*

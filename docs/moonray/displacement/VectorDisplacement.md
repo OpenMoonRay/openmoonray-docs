@@ -15,6 +15,7 @@ title: VectorDisplacement
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>bound_padding</h3>
 <b>Float</b>  

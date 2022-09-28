@@ -15,6 +15,7 @@ title: ProjectCameraMap_v2
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>alpha_only</h3>
 <b>Bool</b>  

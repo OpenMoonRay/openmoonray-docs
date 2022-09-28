@@ -15,6 +15,7 @@ title: HairColorCorrectMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Hue/Sat/Gain attributes</summary>
+<br>
 
 <h3>gain</h3>
 <b>Float</b>  *bindable*
@@ -45,6 +46,7 @@ desaturates the input below 1.0 and adds saturation above 1.0
 
 <details open>
 <summary class="scene-class-attr-group">TMI attributes</summary>
+<br>
 
 <h3>TMI</h3>
 <b>Rgb</b>  
@@ -67,6 +69,7 @@ enables the TMI parameters
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  

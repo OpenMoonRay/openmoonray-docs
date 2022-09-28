@@ -15,6 +15,7 @@ title: VdbGeometry
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>density_grid</h3>
 <b>String</b>  

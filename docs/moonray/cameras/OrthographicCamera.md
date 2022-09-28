@@ -15,6 +15,7 @@ title: OrthographicCamera
 
 <details open>
 <summary class="scene-class-attr-group">Depth of Field attributes</summary>
+<br>
 
 <h3>bokeh</h3>
 <b>Bool</b>  
@@ -93,6 +94,7 @@ default: 0.0
 
 <details open>
 <summary class="scene-class-attr-group">Frustum attributes</summary>
+<br>
 
 <h3>far</h3>
 <b>Float</b>  
@@ -147,6 +149,7 @@ default: 0.0
 
 <details open>
 <summary class="scene-class-attr-group">Motion Blur attributes</summary>
+<br>
 
 <h3>mb_shutter_bias</h3>
 <b>Float</b>  
@@ -177,6 +180,7 @@ default: -0.25
 
 <details open>
 <summary class="scene-class-attr-group">Render Masks attributes</summary>
+<br>
 
 <h3>pixel_sample_map</h3>
 <b>String</b>  
@@ -191,6 +195,7 @@ default:
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>node_xform</h3>
 <b>Mat4d</b>  *blurrable*

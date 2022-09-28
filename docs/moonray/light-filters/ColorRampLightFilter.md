@@ -15,6 +15,7 @@ title: ColorRampLightFilter
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
+<br>
 
 <h3>begin_distance</h3>
 <b>Float</b>  
@@ -107,6 +108,7 @@ For directional filter mode where filter uses distance along -Z axis.  Extend: f
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>on</h3>
 <b>Bool</b>  

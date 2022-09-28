@@ -15,6 +15,7 @@ title: ImageNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">UVs attributes</summary>
+<br>
 
 <h3>offset</h3>
 <b>Vec2f</b>  
@@ -77,6 +78,7 @@ default: <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>default_value</h3>
 <b>Vec3f</b>  

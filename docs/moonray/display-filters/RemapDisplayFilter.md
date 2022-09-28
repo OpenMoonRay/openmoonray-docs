@@ -15,6 +15,7 @@ title: RemapDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
+<br>
 
 <h3>invert_mask</h3>
 <b>Bool</b>  
@@ -37,6 +38,7 @@ blend between output and input
 
 <details open>
 <summary class="scene-class-attr-group">Channel attributes</summary>
+<br>
 
 <h3>clamp_max_RGB</h3>
 <b>Rgb</b>  
@@ -99,6 +101,7 @@ the value that 'input min' is remapped to
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>clamp</h3>
 <b>Bool</b>  

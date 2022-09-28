@@ -15,6 +15,7 @@ title: HairToonMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
+<br>
 
 <h3>back_hair_color</h3>
 <b>Rgb</b>  *bindable*
@@ -53,6 +54,7 @@ default: False
 
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
+<br>
 
 <h3>presence</h3>
 <b>Float</b>  *bindable*
@@ -67,6 +69,7 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
+<br>
 
 <h3>hair_color</h3>
 <b>Rgb</b>  *bindable*
@@ -97,6 +100,7 @@ Show the hair diffuse lobe
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
+<br>
 
 <h3>emission</h3>
 <b>Rgb</b>  *bindable*
@@ -119,6 +123,7 @@ enables/disable emission
 
 <details open>
 <summary class="scene-class-attr-group">Specular 1 attributes</summary>
+<br>
 
 <h3>specular_1_enable_indirect_reflections</h3>
 <b>Bool</b>  
@@ -282,6 +287,7 @@ List of colors on the ramp
 
 <details open>
 <summary class="scene-class-attr-group">Specular 2 attributes</summary>
+<br>
 
 <h3>specular_2_enable_indirect_reflections</h3>
 <b>Bool</b>  
@@ -445,6 +451,7 @@ List of colors on the ramp
 
 <details open>
 <summary class="scene-class-attr-group">Specular 3 attributes</summary>
+<br>
 
 <h3>specular_3_enable_indirect_reflections</h3>
 <b>Bool</b>  
@@ -608,6 +615,7 @@ List of colors on the ramp
 
 <details open>
 <summary class="scene-class-attr-group">Subsurface attributes</summary>
+<br>
 
 <h3>bssrdf</h3>
 <b>Int</b>  *enum*
@@ -673,6 +681,7 @@ default: 1.0
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  

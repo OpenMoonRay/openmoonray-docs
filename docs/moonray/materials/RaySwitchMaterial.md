@@ -15,6 +15,7 @@ title: RaySwitchMaterial
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>camera_ray_material</h3>
 <b>Material</b>  

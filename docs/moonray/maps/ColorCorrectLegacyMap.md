@@ -15,6 +15,7 @@ title: ColorCorrectLegacyMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>brightness</h3>
 <b>Float</b>  

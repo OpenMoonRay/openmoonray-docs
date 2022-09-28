@@ -15,6 +15,7 @@ title: HairMaterial_v3
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
+<br>
 
 <h3>show_multiple_scattering</h3>
 <b>Bool</b>  
@@ -37,6 +38,7 @@ optimized sampling of all the hair lobes, results in 2x-4x speedup on average (d
 
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
+<br>
 
 <h3>casts_caustics</h3>
 <b>Bool</b>  
@@ -59,6 +61,7 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
+<br>
 
 <h3>emission</h3>
 <b>Rgb</b>  *bindable*
@@ -81,6 +84,7 @@ enables/disable emission
 
 <details open>
 <summary class="scene-class-attr-group">Fresnel attributes</summary>
+<br>
 
 <h3>cuticle_layer_thickness</h3>
 <b>Float</b>  *bindable*
@@ -116,6 +120,7 @@ keep this value between [1.3,2.0] for realistic behavior (human hair is around 1
 
 <details open>
 <summary class="scene-class-attr-group">Primary Specular attributes</summary>
+<br>
 
 <h3>primary_specular_offset</h3>
 <b>Float</b>  *bindable*
@@ -154,6 +159,7 @@ show primary specular
 
 <details open>
 <summary class="scene-class-attr-group">Secondary Specular attributes</summary>
+<br>
 
 <h3>glint_eccentricity</h3>
 <b>Float</b>  *bindable*
@@ -248,6 +254,7 @@ when disabled, uses a physically correct value for secondary specular roughness 
 
 <details open>
 <summary class="scene-class-attr-group">Transmission attributes</summary>
+<br>
 
 <h3>direct_transmission_saturation</h3>
 <b>Float</b>  *bindable*
@@ -310,6 +317,7 @@ when disabled, uses a physically correct value for Transmission roughness which 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  

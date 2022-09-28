@@ -15,6 +15,7 @@ title: UsdPrimvarReader_float3
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>fallback</h3>
 <b>Vec3f</b>  *bindable*

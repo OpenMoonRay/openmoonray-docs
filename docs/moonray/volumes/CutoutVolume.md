@@ -15,6 +15,7 @@ title: CutoutVolume
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>bake_divisions</h3>
 <b>Int</b>  

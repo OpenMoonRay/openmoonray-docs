@@ -15,6 +15,7 @@ title: RampMap
 
 <details open>
 <summary class="scene-class-attr-group">Additional properties attributes</summary>
+<br>
 
 <h3>input_texture_coordinates</h3>
 <b>Vec3f</b>  *bindable*
@@ -56,6 +57,7 @@ Creates waves which perturb the ramp pattern
 
 <details open>
 <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
+<br>
 
 <h3>colors</h3>
 <b>RgbVector</b>  
@@ -88,6 +90,7 @@ Color ramp
 
 <details open>
 <summary class="scene-class-attr-group">Ramp properties attributes</summary>
+<br>
 
 <h3>camera</h3>
 <b>Camera</b>  
@@ -177,6 +180,7 @@ Only applies when 'texture coordinates' is set to 'default state coordinates'
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>texture_coordinates</h3>
 <b>Int</b>  *enum*

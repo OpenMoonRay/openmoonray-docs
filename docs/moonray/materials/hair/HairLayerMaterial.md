@@ -15,6 +15,7 @@ title: HairLayerMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
+<br>
 
 <h3>blend_color_space</h3>
 <b>Int</b>  *enum*
@@ -45,6 +46,7 @@ If child materials disagree on the type of bssrdf, this type will be used instea
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  

@@ -15,6 +15,7 @@ title: RdlCurveGeometry
 
 <details open>
 <summary class="scene-class-attr-group">Curve attributes</summary>
+<br>
 
 <h3>tessellation_rate</h3>
 <b>Int</b>  
@@ -29,6 +30,7 @@ Number of segments to split curve spans into
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>accleration_list</h3>
 <b>Vec3fVector</b>  

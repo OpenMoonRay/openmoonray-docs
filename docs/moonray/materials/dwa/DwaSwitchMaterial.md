@@ -15,6 +15,7 @@ title: DwaSwitchMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
+<br>
 
 <h3>fallback_bssrdf</h3>
 <b>Int</b>  *enum*
@@ -42,6 +43,7 @@ By default, only the geometry associated with this material contributes to subsu
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>choice</h3>
 <b>Int</b>  

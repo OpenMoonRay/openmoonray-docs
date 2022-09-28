@@ -15,6 +15,7 @@ title: RampDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
+<br>
 
 <h3>invert_mask</h3>
 <b>Bool</b>  
@@ -37,6 +38,7 @@ blend between output and input
 
 <details open>
 <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
+<br>
 
 <h3>colors</h3>
 <b>RgbVector</b>  
@@ -67,6 +69,7 @@ Color ramp
 
 <details open>
 <summary class="scene-class-attr-group">Ramp properties attributes</summary>
+<br>
 
 <h3>input</h3>
 <b>67141632</b>  
@@ -106,6 +109,7 @@ input to the input ramp
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>mask</h3>
 <b>67141632</b>  

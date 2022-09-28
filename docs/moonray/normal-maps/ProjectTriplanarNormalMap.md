@@ -15,6 +15,7 @@ title: ProjectTriplanarNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">Negative X Modifiers attributes</summary>
+<br>
 
 <h3>negative_x_invert_s</h3>
 <b>Bool</b>  
@@ -85,6 +86,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 <details open>
 <summary class="scene-class-attr-group">Negative Y Modifiers attributes</summary>
+<br>
 
 <h3>negative_y_invert_s</h3>
 <b>Bool</b>  
@@ -155,6 +157,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 <details open>
 <summary class="scene-class-attr-group">Negative Z Modifiers attributes</summary>
+<br>
 
 <h3>negative_z_invert_s</h3>
 <b>Bool</b>  
@@ -225,6 +228,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 <details open>
 <summary class="scene-class-attr-group">Positive X Modifiers attributes</summary>
+<br>
 
 <h3>positive_x_invert_s</h3>
 <b>Bool</b>  
@@ -295,6 +299,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 <details open>
 <summary class="scene-class-attr-group">Positive Y Modifiers attributes</summary>
+<br>
 
 <h3>positive_y_invert_s</h3>
 <b>Bool</b>  
@@ -365,6 +370,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 <details open>
 <summary class="scene-class-attr-group">Positive Z Modifiers attributes</summary>
+<br>
 
 <h3>positive_z_invert_s</h3>
 <b>Bool</b>  
@@ -435,6 +441,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>TRS_order</h3>
 <b>Int</b>  *enum*

@@ -15,6 +15,7 @@ title: NoiseWorleyMap_v2
 
 <details open>
 <summary class="scene-class-attr-group">Adjustment attributes</summary>
+<br>
 
 <h3>bias</h3>
 <b>Float</b>  *bindable*
@@ -77,6 +78,7 @@ Put the noise value through a smoothstep function defined by min/max
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
+<br>
 
 <h3>F1</h3>
 <b>Float</b>  *bindable*
@@ -130,6 +132,7 @@ Which of the distances determines the cell id
 
 <details open>
 <summary class="scene-class-attr-group">Output attributes</summary>
+<br>
 
 <h3>distance_method</h3>
 <b>Int</b>  *enum*
@@ -180,6 +183,7 @@ Method by which the shader outputs a color.  Distance uses F1..F4 interpolated b
 
 <details open>
 <summary class="scene-class-attr-group">Space attributes</summary>
+<br>
 
 <h3>camera</h3>
 <b>Camera</b>  
@@ -237,6 +241,7 @@ The space to calculate the noise in
 
 <details open>
 <summary class="scene-class-attr-group">Transform attributes</summary>
+<br>
 
 <h3>rotation</h3>
 <b>Vec3f</b>  *bindable*
@@ -305,6 +310,7 @@ Translation of the noise in space
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>color_A</h3>
 <b>Rgb</b>  *bindable*

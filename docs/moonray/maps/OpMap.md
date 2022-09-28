@@ -15,6 +15,7 @@ title: OpMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>clamp</h3>
 <b>Bool</b>  

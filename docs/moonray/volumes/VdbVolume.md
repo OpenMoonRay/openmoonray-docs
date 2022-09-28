@@ -15,6 +15,7 @@ title: VdbVolume
 
 <details open>
 <summary class="scene-class-attr-group">Optical Properties attributes</summary>
+<br>
 
 <h3>anisotropy</h3>
 <b>Float</b>  *bindable*
@@ -53,6 +54,7 @@ A multiplier further applied to the opacity gain.
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>bake_divisions</h3>
 <b>Int</b>  

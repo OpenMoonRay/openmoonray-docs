@@ -15,6 +15,7 @@ title: RenderOutput
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>active</h3>
 <b>Bool</b>  

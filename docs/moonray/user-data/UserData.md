@@ -15,6 +15,7 @@ title: UserData
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>bool_key</h3>
 <b>String</b>  

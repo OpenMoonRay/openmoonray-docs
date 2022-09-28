@@ -15,6 +15,7 @@ title: BoxGeometry
 
 <details open>
 <summary class="scene-class-attr-group">Quadric attributes</summary>
+<br>
 
 <h3>size</h3>
 <b>Vec3f</b>  
@@ -29,6 +30,7 @@ default: [ 1, 1, 1 ]
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>label</h3>
 <b>String</b>  

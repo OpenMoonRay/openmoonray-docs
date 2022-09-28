@@ -15,6 +15,7 @@ title: ProjectSphericalMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>TRS_order</h3>
 <b>Int</b>  *enum*

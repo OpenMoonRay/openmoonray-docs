@@ -15,6 +15,7 @@ title: DistortNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">Space attributes</summary>
+<br>
 
 <h3>input_texture_coordinates</h3>
 <b>Vec3f</b>  *bindable*
@@ -50,6 +51,7 @@ The space to calculate the noise in
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>amplitude_U</h3>
 <b>Float</b>  

@@ -15,6 +15,7 @@ title: RgbToNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>input</h3>
 <b>Rgb</b>  *bindable*

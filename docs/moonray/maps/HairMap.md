@@ -15,6 +15,7 @@ title: HairMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>base_color</h3>
 <b>Rgb</b>  *bindable*

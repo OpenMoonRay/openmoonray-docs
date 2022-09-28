@@ -15,6 +15,7 @@ title: DwaSkinMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
+<br>
 
 <h3>specular</h3>
 <b>Float</b>  *bindable*
@@ -37,6 +38,7 @@ Set of geometries that contribute neighboring subsurface points. By default, onl
 
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
+<br>
 
 <h3>casts_caustics</h3>
 <b>Bool</b>  
@@ -67,6 +69,7 @@ enables proper shading of infinitely thin geometry such as paper or leaves.
 
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
+<br>
 
 <h3>albedo</h3>
 <b>Rgb</b>  *bindable*
@@ -169,6 +172,7 @@ enables/disables diffuse reflectance
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
+<br>
 
 <h3>emission</h3>
 <b>Rgb</b>  *bindable*
@@ -191,6 +195,7 @@ enables/disable emission
 
 <details open>
 <summary class="scene-class-attr-group">Fuzz attributes</summary>
+<br>
 
 <h3>fuzz</h3>
 <b>Float</b>  *bindable*
@@ -253,6 +258,7 @@ Specify whether dark fuzz fibers absorb energy or transmit it to the layers belo
 
 <details open>
 <summary class="scene-class-attr-group">Glitter attributes</summary>
+<br>
 
 <h3>glitter</h3>
 <b>Float</b>  *bindable*
@@ -484,6 +490,7 @@ Enables/disables glitter lobes
 
 <details open>
 <summary class="scene-class-attr-group">Iridescence attributes</summary>
+<br>
 
 <h3>iridescence</h3>
 <b>Float</b>  *bindable*
@@ -613,6 +620,7 @@ Controls how much the color spectrum is repeated
 
 <details open>
 <summary class="scene-class-attr-group">Moisture attributes</summary>
+<br>
 
 <h3>independent_moisture_normal</h3>
 <b>33554432</b>  
@@ -686,6 +694,7 @@ specifies whether the moisture lobe should use an independent normal
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
+<br>
 
 <h3>input_normal</h3>
 <b>33554432</b>  
@@ -708,6 +717,7 @@ controls the amount of influence of the alternate normal
 
 <details open>
 <summary class="scene-class-attr-group">Normal Anti-aliasing attributes</summary>
+<br>
 
 <h3>normal_AA_dial</h3>
 <b>Float</b>  
@@ -733,6 +743,7 @@ Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'tok
 
 <details open>
 <summary class="scene-class-attr-group">Specular attributes</summary>
+<br>
 
 <h3>anisotropy</h3>
 <b>Float</b>  *bindable*
@@ -790,6 +801,7 @@ sets the normalized distribution function for specular.  GGX is currently isotro
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  

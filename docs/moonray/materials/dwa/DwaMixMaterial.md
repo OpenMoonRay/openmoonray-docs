@@ -15,6 +15,7 @@ title: DwaMixMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
+<br>
 
 <h3>blend_color_space</h3>
 <b>Int</b>  *enum*
@@ -106,6 +107,7 @@ By default, only the geometry associated with this material contributes to subsu
 
 <details open>
 <summary class="scene-class-attr-group">Glitter Fallback attributes</summary>
+<br>
 
 <h3>fallback_glitter_LOD_quality</h3>
 <b>Float</b>  
@@ -209,6 +211,7 @@ filename that points to a texture .exr or .tx file (must be mip-mapped and tiled
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  

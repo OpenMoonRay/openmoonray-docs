@@ -15,6 +15,7 @@ title: ProjectCameraNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>aspect_ratio_source</h3>
 <b>Int</b>  *enum*

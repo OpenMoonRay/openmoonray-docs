@@ -15,6 +15,7 @@ title: UsdInstanceGeometry
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>curved_motion_blur_sample_count</h3>
 <b>Int</b>  

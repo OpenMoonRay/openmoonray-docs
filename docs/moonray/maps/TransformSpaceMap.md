@@ -15,6 +15,7 @@ title: TransformSpaceMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>camera</h3>
 <b>Camera</b>  

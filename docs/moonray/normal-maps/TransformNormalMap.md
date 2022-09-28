@@ -15,6 +15,7 @@ title: TransformNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
+<br>
 
 <h3>input_normal</h3>
 <b>Vec3f</b>  *bindable*
@@ -29,6 +30,7 @@ input normal in either tangent or render space
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>decode_input_normal</h3>
 <b>Bool</b>  

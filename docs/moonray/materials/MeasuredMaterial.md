@@ -15,6 +15,7 @@ title: MeasuredMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
+<br>
 
 <h3>diffuse</h3>
 <b>Bool</b>  
@@ -69,6 +70,7 @@ default: 1.0
 
 <details open>
 <summary class="scene-class-attr-group">Specular attributes</summary>
+<br>
 
 <h3>specular</h3>
 <b>Bool</b>  
@@ -123,6 +125,7 @@ default: 1.0
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
+<br>
 
 <h3>anisotropic_direction</h3>
 <b>Vec2f</b>  
