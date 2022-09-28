@@ -25,7 +25,7 @@ title: ProjectCameraNormalMap
           | custom = 1
         
       
-        <p>Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
       
     
     <h3>custom_aspect_ratio</h3>
@@ -34,7 +34,7 @@ title: ProjectCameraNormalMap
       
         default: 1.0
       
-        <p>a custom aspect ratio for the projected texture</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">a custom aspect ratio for the projected texture</p>
       
     
     <h3>normal_encoding</h3>
@@ -46,7 +46,7 @@ title: ProjectCameraNormalMap
           | [-1,1] = 1
         
       
-        <p>Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
       
     
     <h3>project_on_back_faces</h3>
@@ -55,7 +55,7 @@ title: ProjectCameraNormalMap
       
         default: False
       
-        <p>Toggles whether camera projections appear on back faces.</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
       
     
     <h3>projector</h3>
@@ -64,7 +64,7 @@ title: ProjectCameraNormalMap
       
         default: None
       
-        <p>the camera to project from</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">the camera to project from</p>
       
     
     <h3>texture</h3>
@@ -73,7 +73,7 @@ title: ProjectCameraNormalMap
       
         default: 
       
-        <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     
     <h3>use_reference_space</h3>
@@ -82,7 +82,7 @@ title: ProjectCameraNormalMap
       
         default: False
       
-        <p>use reference space</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
       
     
   </p>

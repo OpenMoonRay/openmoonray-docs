@@ -31,7 +31,7 @@ title: Metadata
       
         default: []
       
-        <p>Allowed types for exr headers:
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Allowed types for exr headers:
 
 			* box2i
 

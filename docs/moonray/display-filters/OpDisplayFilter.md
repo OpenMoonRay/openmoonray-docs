@@ -22,7 +22,7 @@ title: OpDisplayFilter
       
         default: False
       
-        <p>invert value of mask</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
       
     
     <h3>mix</h3>
@@ -31,7 +31,7 @@ title: OpDisplayFilter
       
         default: 1.0
       
-        <p>blend between output and input</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: OpDisplayFilter
       
         default: None
       
-        <p>first operand</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">first operand</p>
       
     
     <h3>input2</h3>
@@ -57,7 +57,7 @@ title: OpDisplayFilter
       
         default: None
       
-        <p>second operand</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">second operand</p>
       
     
     <h3>mask</h3>

@@ -31,7 +31,7 @@ title: LcToRgbMap
       
         default: [ 100, 0, 0 ]
       
-        <p>Target color for remapping, in LAB colorspace</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Target color for remapping, in LAB colorspace</p>
       
     
   </p>

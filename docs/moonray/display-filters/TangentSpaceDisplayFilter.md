@@ -22,7 +22,7 @@ title: TangentSpaceDisplayFilter
       
         default: False
       
-        <p>invert value of mask</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
       
     
     <h3>mix</h3>
@@ -31,7 +31,7 @@ title: TangentSpaceDisplayFilter
       
         default: 1.0
       
-        <p>blend between output and input</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: TangentSpaceDisplayFilter
       
         default: None
       
-        <p>Connect a RenderOutput with State N AOV here. Used to construct tangent space.</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Connect a RenderOutput with State N AOV here. Used to construct tangent space.</p>
       
     
     <h3>dPds</h3>
@@ -57,7 +57,7 @@ title: TangentSpaceDisplayFilter
       
         default: None
       
-        <p>Connect a RenderOutput with State dPds AOV here. Used to construct tangent space.</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Connect a RenderOutput with State dPds AOV here. Used to construct tangent space.</p>
       
     
     <h3>input</h3>
@@ -66,7 +66,7 @@ title: TangentSpaceDisplayFilter
       
         default: None
       
-        <p>data to transform into tangent space</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">data to transform into tangent space</p>
       
     
     <h3>mask</h3>
@@ -84,7 +84,7 @@ title: TangentSpaceDisplayFilter
       
         default: True
       
-        <p>when on, encodes the output to clamped [0, 1] in the same manner as a normal map</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">when on, encodes the output to clamped [0, 1] in the same manner as a normal map</p>
       
     
   </p>

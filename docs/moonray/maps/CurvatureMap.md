@@ -38,7 +38,7 @@ title: CurvatureMap
           | all = 3 (default)
         
       
-        <p>The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
       
     
     <h3>power</h3>

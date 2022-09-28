@@ -22,7 +22,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p>multiplies the input channels by the specified values</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">multiplies the input channels by the specified values</p>
       
     
     <h3>gain_b</h3>
@@ -31,7 +31,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p>multiplies the blue channel by the specified values</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">multiplies the blue channel by the specified values</p>
       
     
     <h3>gain_g</h3>
@@ -40,7 +40,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p>multiplies the green channel by the specified values</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">multiplies the green channel by the specified values</p>
       
     
     <h3>gain_r</h3>
@@ -49,7 +49,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p>multiplies the red channel by the specified values</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">multiplies the red channel by the specified values</p>
       
     
     <h3>input</h3>
@@ -58,7 +58,7 @@ title: ColorCorrectGainOffsetMap
       
         default: [ 1, 1, 1 ]
       
-        <p>bind the input here</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
       
     
     <h3>mix</h3>
@@ -67,7 +67,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p>how much of the overall color correct to mix in</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
       
     
     <h3>offset</h3>
@@ -76,7 +76,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 0.0
       
-        <p>adds the specified values to the input</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the input</p>
       
     
     <h3>offset_b</h3>
@@ -85,7 +85,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p>adds the specified values to the blue channel</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the blue channel</p>
       
     
     <h3>offset_g</h3>
@@ -94,7 +94,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p>adds the specified values to the green channel</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the green channel</p>
       
     
     <h3>offset_r</h3>
@@ -103,7 +103,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p>adds the specified values to the red channel</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the red channel</p>
       
     
     <h3>on</h3>
@@ -112,7 +112,7 @@ title: ColorCorrectGainOffsetMap
       
         default: True
       
-        <p>enables/disables all color correct operations</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">enables/disables all color correct operations</p>
       
     
     <h3>use_per_channel_gain_offset</h3>
@@ -121,7 +121,7 @@ title: ColorCorrectGainOffsetMap
       
         default: False
       
-        <p>enables separate RGB controls for gain and offset</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">enables separate RGB controls for gain and offset</p>
       
     
   </p>

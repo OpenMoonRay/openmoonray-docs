@@ -22,7 +22,7 @@ title: ShadowDisplayFilter
       
         default: 1.0
       
-        <p>Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.</p>
       
     
     <h3>occluded</h3>
@@ -31,7 +31,7 @@ title: ShadowDisplayFilter
       
         default: None
       
-        <p>Image Buffer representing the occluded image</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Image Buffer representing the occluded image</p>
       
     
     <h3>shadow_color</h3>
@@ -40,7 +40,7 @@ title: ShadowDisplayFilter
       
         default: [ 0, 0, 0 ]
       
-        <p>color of the shadow</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">color of the shadow</p>
       
     
     <h3>unoccluded</h3>
@@ -49,7 +49,7 @@ title: ShadowDisplayFilter
       
         default: None
       
-        <p>Image Buffer representing the unoccluded image</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Image Buffer representing the unoccluded image</p>
       
     
   </p>

@@ -52,7 +52,7 @@ title: VdbLightFilter
       
         default: 
       
-        <p>The name of the grid within the .vdb file from which to sample for density(hint: use openvdb_print to see contents of .vdb file). If no grid is specified, it will use 'density' as the defaultIn cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">The name of the grid within the .vdb file from which to sample for density(hint: use openvdb_print to see contents of .vdb file). If no grid is specified, it will use 'density' as the defaultIn cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
       
     
     <h3>density_remap_input_max</h3>
@@ -156,7 +156,7 @@ title: VdbLightFilter
       
         default: 
       
-        <p>Supply the path to the vdb</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Supply the path to the vdb</p>
       
     
   </p>

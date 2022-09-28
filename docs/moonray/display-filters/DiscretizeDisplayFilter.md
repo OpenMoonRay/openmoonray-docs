@@ -22,7 +22,7 @@ title: DiscretizeDisplayFilter
       
         default: False
       
-        <p>invert value of mask</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
       
     
     <h3>mix</h3>
@@ -31,7 +31,7 @@ title: DiscretizeDisplayFilter
       
         default: 1.0
       
-        <p>blend between output and input</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: DiscretizeDisplayFilter
       
         default: None
       
-        <p>Image buffer to discretize</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Image buffer to discretize</p>
       
     
     <h3>mask</h3>
@@ -66,7 +66,7 @@ title: DiscretizeDisplayFilter
       
         default: 8
       
-        <p>number of discrete color bins</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">number of discrete color bins</p>
       
     
   </p>

@@ -25,7 +25,7 @@ title: DebugMap
           | render = 1
         
       
-        <p>Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
       
     
   </p>
@@ -42,7 +42,7 @@ title: DebugMap
       
         default: surface_st
       
-        <p>the name of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">the name of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
       
     
     <h3>primitive_attribute_type</h3>
@@ -58,7 +58,7 @@ title: DebugMap
           | rgb = 3
         
       
-        <p>the type of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">the type of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
       
     
   </p>

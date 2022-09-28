@@ -22,7 +22,7 @@ title: AttributeMap
       
         default: Cd
       
-        <p>the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       
     
     <h3>primitive_attribute_type</h3>
@@ -40,7 +40,7 @@ title: AttributeMap
           | int = 4
         
       
-        <p>the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       
     
   </p>
@@ -57,7 +57,7 @@ title: AttributeMap
       
         default: [ 1, 1, 1 ]
       
-        <p>input color - preferably a connected map</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">input color - preferably a connected map</p>
       
     
     <h3>default_value</h3>
@@ -66,7 +66,7 @@ title: AttributeMap
       
         default: [ 1, 1, 1 ]
       
-        <p>default value to display when the requested attribute is not available</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">default value to display when the requested attribute is not available</p>
       
     
     <h3>map_type</h3>
@@ -119,7 +119,7 @@ title: AttributeMap
       
         default: False
       
-        <p>Whether or not to issue a warning when the requested attribute is unavailable</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Whether or not to issue a warning when the requested attribute is unavailable</p>
       
     
   </p>

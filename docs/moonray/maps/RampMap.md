@@ -22,7 +22,7 @@ title: RampMap
       
         default: [ 0, 0, 0 ]
       
-        <p>Bind custom UV coordinates</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Bind custom UV coordinates</p>
       
     
     <h3>uv_repeat</h3>
@@ -31,7 +31,7 @@ title: RampMap
       
         default: [ 1, 1 ]
       
-        <p>Number of times to repeat the ramp pattern</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Number of times to repeat the ramp pattern</p>
       
     
     <h3>uv_wave</h3>
@@ -40,7 +40,7 @@ title: RampMap
       
         default: [ 0, 0 ]
       
-        <p>Creates waves which perturb the ramp pattern</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Creates waves which perturb the ramp pattern</p>
       
     
     <h3>wrap_type</h3>
@@ -69,7 +69,7 @@ title: RampMap
       
         default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
       
-        <p>List of colors on the ramp</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
       
     
     <h3>interpolations</h3>
@@ -78,7 +78,7 @@ title: RampMap
       
         default: <scene_rdl2.__scene_rdl2__.IntVector object at >
       
-        <p>None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+        <p class=jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 
 			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       
@@ -89,7 +89,7 @@ title: RampMap
       
         default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
       
-        <p>Color ramp</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Color ramp</p>
       
     
   </p>
@@ -106,7 +106,7 @@ title: RampMap
       
         default: None
       
-        <p>Camera used to define camera and screen space</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Camera used to define camera and screen space</p>
       
     
     <h3>color_space</h3>
@@ -120,7 +120,7 @@ title: RampMap
           | hsl = 2
         
       
-        <p>Color space to perform interpolation in</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Color space to perform interpolation in</p>
       
     
     <h3>input</h3>
@@ -129,7 +129,7 @@ title: RampMap
       
         default: 1.0
       
-        <p>Input signal for ramp, used when ramp type is set to input</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Input signal for ramp, used when ramp type is set to input</p>
       
     
     <h3>object</h3>
@@ -186,7 +186,7 @@ title: RampMap
           | texture = 6
         
       
-        <p>Only applies when 'texture coordinates' is set to 'default state coordinates'</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Only applies when 'texture coordinates' is set to 'default state coordinates'</p>
       
     
   </p>

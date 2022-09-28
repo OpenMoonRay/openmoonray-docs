@@ -27,7 +27,7 @@ title: HairLayerMaterial
           | HSL = 2
         
       
-        <p>Color space used when blending the two material's color parameters</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Color space used when blending the two material's color parameters</p>
       
     
     <h3>fallback_bssrdf</h3>
@@ -39,7 +39,7 @@ title: HairLayerMaterial
           | dipole = 1
         
       
-        <p>If child materials disagree on the type of bssrdf, this type will be used instead.</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
       
     
   </p>
@@ -56,7 +56,7 @@ title: HairLayerMaterial
       
         default: None
       
-        <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       
     
     <h3>hair_material_A</h3>
@@ -65,7 +65,7 @@ title: HairLayerMaterial
       
         default: None
       
-        <p>foreground hair material</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">foreground hair material</p>
       
     
     <h3>hair_material_B</h3>
@@ -74,7 +74,7 @@ title: HairLayerMaterial
       
         default: None
       
-        <p>background hair material</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">background hair material</p>
       
     
     <h3>label</h3>
@@ -83,7 +83,7 @@ title: HairLayerMaterial
       
         default: 
       
-        <p>label used in material and light aovs</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
       
     
     <h3>mask</h3>
@@ -92,7 +92,7 @@ title: HairLayerMaterial
       
         default: 1.0
       
-        <p>foreground hair material weight</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">foreground hair material weight</p>
       
     
     <h3>priority</h3>
@@ -101,7 +101,7 @@ title: HairLayerMaterial
       
         default: 0
       
-        <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       
     
   </p>

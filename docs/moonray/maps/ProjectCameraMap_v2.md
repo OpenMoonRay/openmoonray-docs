@@ -22,7 +22,7 @@ title: ProjectCameraMap_v2
       
         default: False
       
-        <p>When enabled, the alpha channel is returned instead of RGB</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">When enabled, the alpha channel is returned instead of RGB</p>
       
     
     <h3>aspect_ratio_source</h3>
@@ -34,7 +34,7 @@ title: ProjectCameraMap_v2
           | custom = 1
         
       
-        <p>Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
       
     
     <h3>black_outside_projection</h3>
@@ -43,7 +43,7 @@ title: ProjectCameraMap_v2
       
         default: True
       
-        <p>Toggles whether projections appear outside the 0-1 uv range of the projector</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
       
     
     <h3>custom_aspect_ratio</h3>
@@ -52,7 +52,7 @@ title: ProjectCameraMap_v2
       
         default: 1.0
       
-        <p>a custom aspect ratio for the projected texture</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">a custom aspect ratio for the projected texture</p>
       
     
     <h3>gamma</h3>
@@ -66,7 +66,7 @@ title: ProjectCameraMap_v2
           | auto = 2 (default)
         
       
-        <p>Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>
       
     
     <h3>project_on_back_faces</h3>
@@ -75,7 +75,7 @@ title: ProjectCameraMap_v2
       
         default: False
       
-        <p>Toggles whether camera projections appear on back faces.</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
       
     
     <h3>projector</h3>
@@ -84,7 +84,7 @@ title: ProjectCameraMap_v2
       
         default: None
       
-        <p>the camera to project from</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">the camera to project from</p>
       
     
     <h3>texture</h3>
@@ -93,7 +93,7 @@ title: ProjectCameraMap_v2
       
         default: 
       
-        <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     
     <h3>unpremultiply</h3>
@@ -102,7 +102,7 @@ title: ProjectCameraMap_v2
       
         default: False
       
-        <p>When enabled, the rgb channels are divided by the alpha channel (where non-zero)</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">When enabled, the rgb channels are divided by the alpha channel (where non-zero)</p>
       
     
     <h3>use_reference_space</h3>
@@ -111,7 +111,7 @@ title: ProjectCameraMap_v2
       
         default: False
       
-        <p>use reference space</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
       
     
   </p>

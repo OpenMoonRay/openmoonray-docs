@@ -22,7 +22,7 @@ title: ConvolutionDisplayFilter
       
         default: False
       
-        <p>invert value of mask</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
       
     
     <h3>mix</h3>
@@ -31,7 +31,7 @@ title: ConvolutionDisplayFilter
       
         default: 1.0
       
-        <p>blend between output and input</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: ConvolutionDisplayFilter
       
         default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
       
-        <p>a list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7)</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">a list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7)</p>
       
     
     <h3>input</h3>
@@ -57,7 +57,7 @@ title: ConvolutionDisplayFilter
       
         default: None
       
-        <p>RenderOutput to convolve</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">RenderOutput to convolve</p>
       
     
     <h3>kernel_size</h3>
@@ -66,7 +66,7 @@ title: ConvolutionDisplayFilter
       
         default: 5
       
-        <p>size of kernel in pixels. Size must be odd. If using custom kernel, this attribute is ignored, and the size of the custom kernel is used instead</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">size of kernel in pixels. Size must be odd. If using custom kernel, this attribute is ignored, and the size of the custom kernel is used instead</p>
       
     
     <h3>kernel_type</h3>

@@ -22,7 +22,7 @@ title: ColorCorrectNukeMap
       
         default: [ 0, 0, 0 ]
       
-        <p>T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       
     
     <h3>TMI_control_enabled</h3>

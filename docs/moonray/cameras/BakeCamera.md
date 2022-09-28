@@ -100,7 +100,7 @@ title: BakeCamera
       
         default: 0.00300000002608
       
-        <p>Ray-tracing offset for primary ray origin</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Ray-tracing offset for primary ray origin</p>
       
     
     <h3>geometry</h3>
@@ -109,7 +109,7 @@ title: BakeCamera
       
         default: None
       
-        <p>The geometry object to bake</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">The geometry object to bake</p>
       
     
     <h3>map_factor</h3>
@@ -118,7 +118,7 @@ title: BakeCamera
       
         default: 1.0
       
-        <p>Increase or decrease the internal position map buffer resolution</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Increase or decrease the internal position map buffer resolution</p>
       
     
     <h3>mode</h3>
@@ -134,7 +134,7 @@ title: BakeCamera
           | above surface reverse normal = 3 (default)
         
       
-        <p>How to generate primary rays</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">How to generate primary rays</p>
       
     
     <h3>node_xform</h3>
@@ -152,7 +152,7 @@ title: BakeCamera
       
         default: 
       
-        <p>Use this option to supply your own normals that are used when computing ray directions.  Without this option, normals are computed from the geometry and do not take into account any material applied normal mapping.</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Use this option to supply your own normals that are used when computing ray directions.  Without this option, normals are computed from the geometry and do not take into account any material applied normal mapping.</p>
       
     
     <h3>normal_map_space</h3>
@@ -164,7 +164,7 @@ title: BakeCamera
           | tangent space = 1
         
       
-        <p>Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.</p>
       
     
     <h3>udim</h3>
@@ -173,7 +173,7 @@ title: BakeCamera
       
         default: 1001
       
-        <p>Udim tile to bake</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Udim tile to bake</p>
       
     
     <h3>use_relative_bias</h3>
@@ -182,7 +182,7 @@ title: BakeCamera
       
         default: True
       
-        <p>If true, bias is scaled based on position magnitude</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">If true, bias is scaled based on position magnitude</p>
       
     
     <h3>uv_attribute</h3>
@@ -191,7 +191,7 @@ title: BakeCamera
       
         default: 
       
-        <p>Specifies a Vec2f primitive attribute to use as the uv coordinates.  If empty, the default uv for the mesh is used.  The uvs must provide a unique parameterization of the mesh, i.e. a given (u, v) can appear only once on the mesh being baked.</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Specifies a Vec2f primitive attribute to use as the uv coordinates.  If empty, the default uv for the mesh is used.  The uvs must provide a unique parameterization of the mesh, i.e. a given (u, v) can appear only once on the mesh being baked.</p>
       
     
   </p>

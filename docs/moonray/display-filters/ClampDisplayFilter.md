@@ -22,7 +22,7 @@ title: ClampDisplayFilter
       
         default: False
       
-        <p>invert value of mask</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
       
     
     <h3>mix</h3>
@@ -31,7 +31,7 @@ title: ClampDisplayFilter
       
         default: 1.0
       
-        <p>blend between output and input</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
       
     
   </p>
@@ -48,7 +48,7 @@ title: ClampDisplayFilter
       
         default: None
       
-        <p>Image buffer to clamp</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">Image buffer to clamp</p>
       
     
     <h3>mask</h3>
@@ -66,7 +66,7 @@ title: ClampDisplayFilter
       
         default: [ 1, 1, 1 ]
       
-        <p>max color value</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">max color value</p>
       
     
     <h3>min</h3>
@@ -75,7 +75,7 @@ title: ClampDisplayFilter
       
         default: [ 0, 0, 0 ]
       
-        <p>min color value</p>
+        <p class=jekyll-theme-minimal scene-class-attr-comment">min color value</p>
       
     
   </p>
