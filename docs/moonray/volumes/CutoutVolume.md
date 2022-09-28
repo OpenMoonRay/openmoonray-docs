@@ -29,11 +29,11 @@ title: CutoutVolume
     <b>Int</b>
     <i>enum</i>
     
-    - default = 0 (default)
+    |  default = 0 (default) 
     
-    - divisions = 1
+    |  divisions = 1 
     
-    - voxel size = 2
+    |  voxel size = 2 
     
     
     <p>Toggle method to specify grid resolution of baked density grid.

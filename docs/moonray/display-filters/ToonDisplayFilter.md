@@ -29,13 +29,13 @@ title: ToonDisplayFilter
     <b>Int</b>
     <i>enum</i>
     
-    - None = 0 (default)
+    |  None = 0 (default) 
     
-    - Sobel = 1
+    |  Sobel = 1 
     
-    - Laplacian = 2
+    |  Laplacian = 2 
     
-    - Laplacian of Gaussian = 3
+    |  Laplacian of Gaussian = 3 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

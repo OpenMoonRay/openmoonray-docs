@@ -500,17 +500,17 @@ title: ProjectTriplanarMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - Scale Rot Trans = 0 (default)
+    |  Scale Rot Trans = 0 (default) 
     
-    - Scale Trans Rot = 1
+    |  Scale Trans Rot = 1 
     
-    - Rot Scale Trans = 2
+    |  Rot Scale Trans = 2 
     
-    - Rot Trans Scale = 3
+    |  Rot Trans Scale = 3 
     
-    - Trans Scale Rot = 4
+    |  Trans Scale Rot = 4 
     
-    - Trans Rot Scale = 5
+    |  Trans Rot Scale = 5 
     
     
     <p>Order in which to apply transformations</p>
@@ -520,11 +520,11 @@ title: ProjectTriplanarMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - off = 0
+    |  off = 0 
     
-    - on = 1
+    |  on = 1 
     
-    - auto = 2 (default)
+    |  auto = 2 (default) 
     
     
     <p>Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>
@@ -552,11 +552,11 @@ title: ProjectTriplanarMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - P/N = 0 (default)
+    |  P/N = 0 (default) 
     
-    - ref_P/ref_N = 1
+    |  ref_P/ref_N = 1 
     
-    - input_position/input_normal = 2
+    |  input_position/input_normal = 2 
     
     
     <p>Input position to use</p>
@@ -620,11 +620,11 @@ title: ProjectTriplanarMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - one = 1
+    |  one = 1 
     
-    - three = 3 (default)
+    |  three = 3 (default) 
     
-    - six = 6
+    |  six = 6 
     
     
     <p>Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
@@ -697,11 +697,11 @@ title: ProjectTriplanarMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - projector = 0 (default)
+    |  projector = 0 (default) 
     
-    - projection_matrix = 1
+    |  projection_matrix = 1 
     
-    - TRS = 2
+    |  TRS = 2 
     
     
     <p>Source parameters to use for projection transform</p>
@@ -765,17 +765,17 @@ title: ProjectTriplanarMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - xyz = 0 (default)
+    |  xyz = 0 (default) 
     
-    - xzy = 1
+    |  xzy = 1 
     
-    - yxz = 2
+    |  yxz = 2 
     
-    - yzx = 3
+    |  yzx = 3 
     
-    - zxy = 4
+    |  zxy = 4 
     
-    - zyx = 5
+    |  zyx = 5 
     
     
     <p>Order in which to apply rotation transformations</p>

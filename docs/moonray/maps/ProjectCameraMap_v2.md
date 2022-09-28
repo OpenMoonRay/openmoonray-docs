@@ -29,9 +29,9 @@ title: ProjectCameraMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - from texture = 0 (default)
+    |  from texture = 0 (default) 
     
-    - custom = 1
+    |  custom = 1 
     
     
     <p>Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
@@ -59,11 +59,11 @@ title: ProjectCameraMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - off = 0
+    |  off = 0 
     
-    - on = 1
+    |  on = 1 
     
-    - auto = 2 (default)
+    |  auto = 2 (default) 
     
     
     <p>Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>

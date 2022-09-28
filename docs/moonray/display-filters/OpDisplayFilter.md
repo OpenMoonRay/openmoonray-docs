@@ -73,65 +73,65 @@ title: OpDisplayFilter
     <b>Int</b>
     <i>enum</i>
     
-    - add = 0 (default)
+    |  add = 0 (default) 
     
-    - subtract = 1
+    |  subtract = 1 
     
-    - multiply = 2
+    |  multiply = 2 
     
-    - divide = 3
+    |  divide = 3 
     
-    - min = 4
+    |  min = 4 
     
-    - max = 5
+    |  max = 5 
     
-    - power = 6
+    |  power = 6 
     
-    - cross = 7
+    |  cross = 7 
     
-    - dot = 8
+    |  dot = 8 
     
-    - modulo = 9
+    |  modulo = 9 
     
-    - greater_than = 10
+    |  greater_than = 10 
     
-    - greater_than_or_equal = 11
+    |  greater_than_or_equal = 11 
     
-    - less_than = 12
+    |  less_than = 12 
     
-    - less_than_or_equal = 13
+    |  less_than_or_equal = 13 
     
-    - equal = 14
+    |  equal = 14 
     
-    - not_equal = 15
+    |  not_equal = 15 
     
-    - and = 16
+    |  and = 16 
     
-    - or = 17
+    |  or = 17 
     
-    - xor = 18
+    |  xor = 18 
     
-    - invert = 19
+    |  invert = 19 
     
-    - normalize = 20
+    |  normalize = 20 
     
-    - abs = 21
+    |  abs = 21 
     
-    - ceil = 22
+    |  ceil = 22 
     
-    - floor = 23
+    |  floor = 23 
     
-    - length = 24
+    |  length = 24 
     
-    - sine = 25
+    |  sine = 25 
     
-    - cosine = 26
+    |  cosine = 26 
     
-    - round = 27
+    |  round = 27 
     
-    - acos = 28
+    |  acos = 28 
     
-    - not = 29
+    |  not = 29 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

@@ -64,9 +64,9 @@ title: RgbToHsvDisplayFilter
     <b>Int</b>
     <i>enum</i>
     
-    - rgb_to_hsv = 0 (default)
+    |  rgb_to_hsv = 0 (default) 
     
-    - hsv_to_rgb = 1
+    |  hsv_to_rgb = 1 
     
     
     <p>specify whether you are converting rgb->hsv or hsv->rgb</p>

@@ -20,9 +20,9 @@ title: ProjectCameraNormalMap
     <b>Int</b>
     <i>enum</i>
     
-    - from texture = 0 (default)
+    |  from texture = 0 (default) 
     
-    - custom = 1
+    |  custom = 1 
     
     
     <p>Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
@@ -41,9 +41,9 @@ title: ProjectCameraNormalMap
     <b>Int</b>
     <i>enum</i>
     
-    - [0,1] = 0 (default)
+    |  [0,1] = 0 (default) 
     
-    - [-1,1] = 1
+    |  [-1,1] = 1 
     
     
     <p>Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>

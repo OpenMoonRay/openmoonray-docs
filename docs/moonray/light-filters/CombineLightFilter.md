@@ -29,15 +29,15 @@ title: CombineLightFilter
     <b>Int</b>
     <i>enum</i>
     
-    - multiply = 0 (default)
+    |  multiply = 0 (default) 
     
-    - min = 1
+    |  min = 1 
     
-    - max = 2
+    |  max = 2 
     
-    - add = 3
+    |  add = 3 
     
-    - subtract = 4
+    |  subtract = 4 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

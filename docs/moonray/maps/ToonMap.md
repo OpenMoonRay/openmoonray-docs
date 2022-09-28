@@ -56,11 +56,11 @@ title: ToonMap
     <b>Int</b>
     <i>enum</i>
     
-    - outline = 0
+    |  outline = 0 
     
-    - crease = 1
+    |  crease = 1 
     
-    - both = 2 (default)
+    |  both = 2 (default) 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

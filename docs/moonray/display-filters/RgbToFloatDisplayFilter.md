@@ -64,21 +64,21 @@ title: RgbToFloatDisplayFilter
     <b>Int</b>
     <i>enum</i>
     
-    - r = 0
+    |  r = 0 
     
-    - g = 1
+    |  g = 1 
     
-    - b = 2
+    |  b = 2 
     
-    - min = 3
+    |  min = 3 
     
-    - max = 4
+    |  max = 4 
     
-    - average = 5 (default)
+    |  average = 5 (default) 
     
-    - sum = 6
+    |  sum = 6 
     
-    - luminance = 7
+    |  luminance = 7 
     
     
     <p>specify the method to convert RGB Color to float</p>

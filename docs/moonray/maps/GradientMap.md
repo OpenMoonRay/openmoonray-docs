@@ -91,17 +91,17 @@ title: GradientMap
     <b>Int</b>
     <i>enum</i>
     
-    - none = 0
+    |  none = 0 
     
-    - natural = 1 (default)
+    |  natural = 1 (default) 
     
-    - linear = 2
+    |  linear = 2 
     
-    - squared = 3
+    |  squared = 3 
     
-    - gaussian = 4
+    |  gaussian = 4 
     
-    - ease out = 5
+    |  ease out = 5 
     
     
     <p>Falloff blend mode</p>
@@ -155,19 +155,19 @@ title: GradientMap
     <b>Int</b>
     <i>enum</i>
     
-    - render = 0 (default)
+    |  render = 0 (default) 
     
-    - camera = 1
+    |  camera = 1 
     
-    - world = 2
+    |  world = 2 
     
-    - screen = 3
+    |  screen = 3 
     
-    - object = 4
+    |  object = 4 
     
-    - reference = 5
+    |  reference = 5 
     
-    - texture = 6
+    |  texture = 6 
     
     
     <p>The transformation space in which to perform the blending</p>

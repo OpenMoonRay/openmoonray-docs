@@ -29,15 +29,15 @@ title: AttributeMap
     <b>Int</b>
     <i>enum</i>
     
-    - float = 0
+    |  float = 0 
     
-    - vec2f = 1
+    |  vec2f = 1 
     
-    - vec3f = 2
+    |  vec3f = 2 
     
-    - rgb = 3 (default)
+    |  rgb = 3 (default) 
     
-    - int = 4
+    |  int = 4 
     
     
     <p>the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
@@ -73,41 +73,41 @@ title: AttributeMap
     <b>Int</b>
     <i>enum</i>
     
-    - primitive attribute = 0 (default)
+    |  primitive attribute = 0 (default) 
     
-    - position = 1
+    |  position = 1 
     
-    - texture st = 2
+    |  texture st = 2 
     
-    - shading normal = 3
+    |  shading normal = 3 
     
-    - geometric normal = 4
+    |  geometric normal = 4 
     
-    - dpds = 5
+    |  dpds = 5 
     
-    - dpdt = 6
+    |  dpdt = 6 
     
-    - dnds = 7
+    |  dnds = 7 
     
-    - dndt = 8
+    |  dndt = 8 
     
-    - map color = 9
+    |  map color = 9 
     
-    - hair surface P = 12
+    |  hair surface P = 12 
     
-    - hair surface N = 13
+    |  hair surface N = 13 
     
-    - hair surface st = 14
+    |  hair surface st = 14 
     
-    - hair closest surface st = 15
+    |  hair closest surface st = 15 
     
-    - id = 16
+    |  id = 16 
     
-    - velocity = 17
+    |  velocity = 17 
     
-    - acceleration = 18
+    |  acceleration = 18 
     
-    - motionvec = 19
+    |  motionvec = 19 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

@@ -29,19 +29,19 @@ title: DistortNormalMap
     <b>Int</b>
     <i>enum</i>
     
-    - world = 2
+    |  world = 2 
     
-    - object = 4 (default)
+    |  object = 4 (default) 
     
-    - reference = 5
+    |  reference = 5 
     
-    - texture = 6
+    |  texture = 6 
     
-    - input texture coordinates = 7
+    |  input texture coordinates = 7 
     
-    - hair_surface_uv = 8
+    |  hair_surface_uv = 8 
     
-    - hair_closest_surface_uv = 9
+    |  hair_closest_surface_uv = 9 
     
     
     <p>The space to calculate the noise in</p>

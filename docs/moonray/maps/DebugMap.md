@@ -20,9 +20,9 @@ title: DebugMap
     <b>Int</b>
     <i>enum</i>
     
-    - tangent = 0 (default)
+    |  tangent = 0 (default) 
     
-    - render = 1
+    |  render = 1 
     
     
     <p>Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
@@ -49,13 +49,13 @@ title: DebugMap
     <b>Int</b>
     <i>enum</i>
     
-    - float = 0
+    |  float = 0 
     
-    - vec2f = 1 (default)
+    |  vec2f = 1 (default) 
     
-    - vec3f = 2
+    |  vec3f = 2 
     
-    - rgb = 3
+    |  rgb = 3 
     
     
     <p>the type of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
@@ -100,19 +100,19 @@ title: DebugMap
     <b>Int</b>
     <i>enum</i>
     
-    - position = 0 (default)
+    |  position = 0 (default) 
     
-    - texture st = 1
+    |  texture st = 1 
     
-    - shading normal = 2
+    |  shading normal = 2 
     
-    - geometric normal = 3
+    |  geometric normal = 3 
     
-    - dpds = 4
+    |  dpds = 4 
     
-    - dpdt = 5
+    |  dpdt = 5 
     
-    - primitive attribute = 6
+    |  primitive attribute = 6 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

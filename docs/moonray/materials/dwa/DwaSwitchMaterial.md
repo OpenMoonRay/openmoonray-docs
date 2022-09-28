@@ -20,11 +20,11 @@ title: DwaSwitchMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - normalized diffusion = 0 (default)
+    |  normalized diffusion = 0 (default) 
     
-    - dipole = 1
+    |  dipole = 1 
     
-    - random walk = 2
+    |  random walk = 2 
     
     
     <p>If the two materials disagree on the type of bssrdf, this type will be used instead.</p>

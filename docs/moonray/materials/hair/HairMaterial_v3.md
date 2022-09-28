@@ -107,11 +107,11 @@ title: HairMaterial_v3
     <b>Int</b>
     <i>enum</i>
     
-    - simple longitudinal = 0
+    |  simple longitudinal = 0 
     
-    - dielectric cylinder = 1 (default)
+    |  dielectric cylinder = 1 (default) 
     
-    - layered cuticles = 2
+    |  layered cuticles = 2 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

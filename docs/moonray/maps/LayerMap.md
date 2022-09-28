@@ -47,37 +47,37 @@ title: LayerMap
     <b>Int</b>
     <i>enum</i>
     
-    - off = 0
+    |  off = 0 
     
-    - over = 1 (default)
+    |  over = 1 (default) 
     
-    - add = 2
+    |  add = 2 
     
-    - subtract = 3
+    |  subtract = 3 
     
-    - multiply = 4
+    |  multiply = 4 
     
-    - screen = 5
+    |  screen = 5 
     
-    - overlay = 6
+    |  overlay = 6 
     
-    - overlay contrast = 7
+    |  overlay contrast = 7 
     
-    - darken = 8
+    |  darken = 8 
     
-    - lighten = 9
+    |  lighten = 9 
     
-    - color dodge = 10
+    |  color dodge = 10 
     
-    - color burn = 11
+    |  color burn = 11 
     
-    - hard light = 12
+    |  hard light = 12 
     
-    - soft light = 13
+    |  soft light = 13 
     
-    - difference = 14
+    |  difference = 14 
     
-    - exclusion = 15
+    |  exclusion = 15 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

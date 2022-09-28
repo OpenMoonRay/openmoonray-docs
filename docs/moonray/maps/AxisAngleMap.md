@@ -29,9 +29,9 @@ title: AxisAngleMap
     <b>Int</b>
     <i>enum</i>
     
-    - world = 2 (default)
+    |  world = 2 (default) 
     
-    - object = 4
+    |  object = 4 
     
     
     <p>the space of the axis to rotate about</p>
@@ -41,15 +41,15 @@ title: AxisAngleMap
     <b>Int</b>
     <i>enum</i>
     
-    - render = 0 (default)
+    |  render = 0 (default) 
     
-    - camera = 1
+    |  camera = 1 
     
-    - world = 2
+    |  world = 2 
     
-    - screen = 3
+    |  screen = 3 
     
-    - object = 4
+    |  object = 4 
     
     
     <p>the space to transform from</p>
@@ -68,15 +68,15 @@ title: AxisAngleMap
     <b>Int</b>
     <i>enum</i>
     
-    - render = 0 (default)
+    |  render = 0 (default) 
     
-    - camera = 1
+    |  camera = 1 
     
-    - world = 2
+    |  world = 2 
     
-    - screen = 3
+    |  screen = 3 
     
-    - object = 4
+    |  object = 4 
     
     
     <p>the space to transform the resulting vector to</p>

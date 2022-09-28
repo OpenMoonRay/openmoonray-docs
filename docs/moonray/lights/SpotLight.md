@@ -73,15 +73,15 @@ title: SpotLight
     <b>Int</b>
     <i>enum</i>
     
-    - off = 0
+    |  off = 0 
     
-    - linear = 1
+    |  linear = 1 
     
-    - ease in = 2
+    |  ease in = 2 
     
-    - ease out = 3
+    |  ease out = 3 
     
-    - ease in/out = 4 (default)
+    |  ease in/out = 4 (default) 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -278,13 +278,13 @@ title: SpotLight
     <b>Int</b>
     <i>enum</i>
     
-    - linear = 0 (default)
+    |  linear = 0 (default) 
     
-    - exponential_up = 1
+    |  exponential_up = 1 
     
-    - exponential_down = 2
+    |  exponential_down = 2 
     
-    - smoothstep = 3
+    |  smoothstep = 3 
     
     
     <p>clear radius interpolation: interpolation type to use for the clear radius shadow falloff</p>
@@ -366,11 +366,11 @@ title: SpotLight
     <b>Int</b>
     <i>enum</i>
     
-    - force off = 0
+    |  force off = 0 
     
-    - force on = 1
+    |  force on = 1 
     
-    - use default = 2 (default)
+    |  use default = 2 (default) 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -389,13 +389,13 @@ title: SpotLight
     <b>Int</b>
     <i>enum</i>
     
-    - nearest neighbor = 0 (default)
+    |  nearest neighbor = 0 (default) 
     
-    - bilinear = 1
+    |  bilinear = 1 
     
-    - nearest neighbor with nearest mip = 2
+    |  nearest neighbor with nearest mip = 2 
     
-    - bilinear with nearest mip = 3
+    |  bilinear with nearest mip = 3 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -405,11 +405,11 @@ title: SpotLight
     <b>Int</b>
     <i>enum</i>
     
-    - force off = 0
+    |  force off = 0 
     
-    - force on = 1
+    |  force on = 1 
     
-    - use default = 2 (default)
+    |  use default = 2 (default) 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

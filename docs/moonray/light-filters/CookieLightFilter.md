@@ -74,9 +74,9 @@ title: CookieLightFilter
     <b>Int</b>
     <i>enum</i>
     
-    - gaussian = 0 (default)
+    |  gaussian = 0 (default) 
     
-    - circular = 1
+    |  circular = 1 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -104,11 +104,11 @@ title: CookieLightFilter
     <b>Int</b>
     <i>enum</i>
     
-    - black = 0 (default)
+    |  black = 0 (default) 
     
-    - white = 1
+    |  white = 1 
     
-    - default = 2
+    |  default = 2 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -189,9 +189,9 @@ title: CookieLightFilter
     <b>Int</b>
     <i>enum</i>
     
-    - perspective = 0 (default)
+    |  perspective = 0 (default) 
     
-    - orthographic = 1
+    |  orthographic = 1 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

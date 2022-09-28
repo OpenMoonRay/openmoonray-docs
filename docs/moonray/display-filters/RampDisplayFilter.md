@@ -90,23 +90,23 @@ title: RampDisplayFilter
     <b>Int</b>
     <i>enum</i>
     
-    - v_ramp = 0 (default)
+    |  v_ramp = 0 (default) 
     
-    - u_ramp = 1
+    |  u_ramp = 1 
     
-    - diagonal_ramp = 2
+    |  diagonal_ramp = 2 
     
-    - radial_ramp = 3
+    |  radial_ramp = 3 
     
-    - circular_ramp = 4
+    |  circular_ramp = 4 
     
-    - box_ramp = 5
+    |  box_ramp = 5 
     
-    - uxv_ramp = 6
+    |  uxv_ramp = 6 
     
-    - four_corner_ramp = 7
+    |  four_corner_ramp = 7 
     
-    - input_ramp = 8
+    |  input_ramp = 8 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

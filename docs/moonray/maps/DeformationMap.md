@@ -20,13 +20,13 @@ title: DeformationMap
     <b>Int</b>
     <i>enum</i>
     
-    - RGB = 0
+    |  RGB = 0 
     
-    - deformation_S = 1
+    |  deformation_S = 1 
     
-    - deformation_T = 2
+    |  deformation_T = 2 
     
-    - deformation_avg = 3 (default)
+    |  deformation_avg = 3 (default) 
     
     
     <p>Controls output: 

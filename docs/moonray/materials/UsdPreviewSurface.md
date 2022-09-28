@@ -164,9 +164,9 @@ title: UsdPreviewSurface
     <b>Int</b>
     <i>enum</i>
     
-    - Metalness workflow = 0 (default)
+    |  Metalness workflow = 0 (default) 
     
-    - Specular workflow = 1
+    |  Specular workflow = 1 
     
     
     <p>This node can fundamentally operate in two modes : Specular workflow where you provide a texture/value to the 'specularColor' input. Or, Metallic workflow where you provide a texture/value to the 'metallic' input.</p>

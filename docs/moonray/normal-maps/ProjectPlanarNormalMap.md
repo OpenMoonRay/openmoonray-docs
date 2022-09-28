@@ -20,17 +20,17 @@ title: ProjectPlanarNormalMap
     <b>Int</b>
     <i>enum</i>
     
-    - Scale Rot Trans = 0 (default)
+    |  Scale Rot Trans = 0 (default) 
     
-    - Scale Trans Rot = 1
+    |  Scale Trans Rot = 1 
     
-    - Rot Scale Trans = 2
+    |  Rot Scale Trans = 2 
     
-    - Rot Trans Scale = 3
+    |  Rot Trans Scale = 3 
     
-    - Trans Scale Rot = 4
+    |  Trans Scale Rot = 4 
     
-    - Trans Rot Scale = 5
+    |  Trans Rot Scale = 5 
     
     
     <p>Order in which to apply transformations</p>
@@ -40,9 +40,9 @@ title: ProjectPlanarNormalMap
     <b>Int</b>
     <i>enum</i>
     
-    - [0,1] = 0 (default)
+    |  [0,1] = 0 (default) 
     
-    - [-1,1] = 1
+    |  [-1,1] = 1 
     
     
     <p>Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
@@ -61,11 +61,11 @@ title: ProjectPlanarNormalMap
     <b>Int</b>
     <i>enum</i>
     
-    - projector = 0 (default)
+    |  projector = 0 (default) 
     
-    - projection_matrix = 1
+    |  projection_matrix = 1 
     
-    - TRS = 2
+    |  TRS = 2 
     
     
     <p>Source parameters to use for projection transform</p>
@@ -93,17 +93,17 @@ title: ProjectPlanarNormalMap
     <b>Int</b>
     <i>enum</i>
     
-    - xyz = 0 (default)
+    |  xyz = 0 (default) 
     
-    - xzy = 1
+    |  xzy = 1 
     
-    - yxz = 2
+    |  yxz = 2 
     
-    - yzx = 3
+    |  yzx = 3 
     
-    - zxy = 4
+    |  zxy = 4 
     
-    - zyx = 5
+    |  zyx = 5 
     
     
     <p>Order in which to apply rotation transformations</p>

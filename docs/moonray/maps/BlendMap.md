@@ -29,9 +29,9 @@ title: BlendMap
     <b>Int</b>
     <i>enum</i>
     
-    - linear = 0 (default)
+    |  linear = 0 (default) 
     
-    - cubic = 1
+    |  cubic = 1 
     
     
     <p>The type of blending algorithm</p>

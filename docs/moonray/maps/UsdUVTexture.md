@@ -56,11 +56,11 @@ title: UsdUVTexture
     <b>Int</b>
     <i>enum</i>
     
-    - raw = 0
+    |  raw = 0 
     
-    - sRGB = 1
+    |  sRGB = 1 
     
-    - auto = 2 (default)
+    |  auto = 2 (default) 
     
     
     <p>Flag indicating the color space in which the source texture is encoded.</p>
@@ -106,15 +106,15 @@ title: UsdUVTexture
     <b>Int</b>
     <i>enum</i>
     
-    - black = 0
+    |  black = 0 
     
-    - clamp = 1
+    |  clamp = 1 
     
-    - repeat = 2
+    |  repeat = 2 
     
-    - mirror = 3
+    |  mirror = 3 
     
-    - useMetadata = 4 (default)
+    |  useMetadata = 4 (default) 
     
     
     <p>Wrap mode when reading this texture.</p>
@@ -124,15 +124,15 @@ title: UsdUVTexture
     <b>Int</b>
     <i>enum</i>
     
-    - black = 0
+    |  black = 0 
     
-    - clamp = 1
+    |  clamp = 1 
     
-    - repeat = 2
+    |  repeat = 2 
     
-    - mirror = 3
+    |  mirror = 3 
     
-    - useMetadata = 4 (default)
+    |  useMetadata = 4 (default) 
     
     
     <p>Wrap mode when reading this texture.</p>

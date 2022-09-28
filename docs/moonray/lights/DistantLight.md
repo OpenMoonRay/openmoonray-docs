@@ -244,11 +244,11 @@ title: DistantLight
     <b>Int</b>
     <i>enum</i>
     
-    - force off = 0
+    |  force off = 0 
     
-    - force on = 1
+    |  force on = 1 
     
-    - use default = 2 (default)
+    |  use default = 2 (default) 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -267,13 +267,13 @@ title: DistantLight
     <b>Int</b>
     <i>enum</i>
     
-    - nearest neighbor = 0 (default)
+    |  nearest neighbor = 0 (default) 
     
-    - bilinear = 1
+    |  bilinear = 1 
     
-    - nearest neighbor with nearest mip = 2
+    |  nearest neighbor with nearest mip = 2 
     
-    - bilinear with nearest mip = 3
+    |  bilinear with nearest mip = 3 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -283,11 +283,11 @@ title: DistantLight
     <b>Int</b>
     <i>enum</i>
     
-    - force off = 0
+    |  force off = 0 
     
-    - force on = 1
+    |  force on = 1 
     
-    - use default = 2 (default)
+    |  use default = 2 (default) 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

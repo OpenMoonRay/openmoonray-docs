@@ -109,9 +109,9 @@ title: ImageNormalMap
     <b>Int</b>
     <i>enum</i>
     
-    - [0,1] = 0 (default)
+    |  [0,1] = 0 (default) 
     
-    - [-1,1] = 1
+    |  [-1,1] = 1 
     
     
     <p>Most normal maps are encoded [0,1]. Only certain rare floating point normal maps are encoded [-1,1]</p>
@@ -130,9 +130,9 @@ title: ImageNormalMap
     <b>Int</b>
     <i>enum</i>
     
-    - texture = 0 (default)
+    |  texture = 0 (default) 
     
-    - input texture coordinates = 1
+    |  input texture coordinates = 1 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

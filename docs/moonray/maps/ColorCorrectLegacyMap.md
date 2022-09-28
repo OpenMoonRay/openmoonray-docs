@@ -83,21 +83,21 @@ title: ColorCorrectLegacyMap
     <b>Int</b>
     <i>enum</i>
     
-    - off = 0 (default)
+    |  off = 0 (default) 
     
-    - luminance = 1
+    |  luminance = 1 
     
-    - average = 2
+    |  average = 2 
     
-    - minimum = 3
+    |  minimum = 3 
     
-    - maximum = 4
+    |  maximum = 4 
     
-    - red channel = 5
+    |  red channel = 5 
     
-    - green channel = 6
+    |  green channel = 6 
     
-    - blue channel = 7
+    |  blue channel = 7 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

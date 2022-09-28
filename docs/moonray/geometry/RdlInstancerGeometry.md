@@ -38,15 +38,15 @@ title: RdlInstancerGeometry
     <b>Int</b>
     <i>enum</i>
     
-    - instance level 0 = 0 (default)
+    |  instance level 0 = 0 (default) 
     
-    - instance level 1 = 1
+    |  instance level 1 = 1 
     
-    - instance level 2 = 2
+    |  instance level 2 = 2 
     
-    - instance level 3 = 3
+    |  instance level 3 = 3 
     
-    - instance level 4 = 4
+    |  instance level 4 = 4 
     
     
     <p>Level of this instance.  This level can be referenced in TransformSpaceMap to allow for transforming data to/from the local space of each instance this instancer produces.</p>
@@ -65,9 +65,9 @@ title: RdlInstancerGeometry
     <b>Int</b>
     <i>enum</i>
     
-    - xform attributes = 0 (default)
+    |  xform attributes = 0 (default) 
     
-    - xform list = 2
+    |  xform list = 2 
     
     
     <p>Specify the source of xforms/refIndices for instancing. If set to "xform attributes", taking data from attributes "positions", "orientations", "scales", "velocities" and "refIndices". If set to "xform list", taking data from "xform list", "velocities" and "refIndices". </p>
@@ -189,11 +189,11 @@ B is a list of labels corresponding to the sets corresponding to distinct values
     <b>Int</b>
     <i>enum</i>
     
-    - force two-sided = 0 (default)
+    |  force two-sided = 0 (default) 
     
-    - force single-sided = 1
+    |  force single-sided = 1 
     
-    - use mesh sidedness = 2
+    |  use mesh sidedness = 2 
     
     
     <p>set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>

@@ -500,17 +500,17 @@ title: ProjectTriplanarNormalMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - Scale Rot Trans = 0 (default)
+    |  Scale Rot Trans = 0 (default) 
     
-    - Scale Trans Rot = 1
+    |  Scale Trans Rot = 1 
     
-    - Rot Scale Trans = 2
+    |  Rot Scale Trans = 2 
     
-    - Rot Trans Scale = 3
+    |  Rot Trans Scale = 3 
     
-    - Trans Scale Rot = 4
+    |  Trans Scale Rot = 4 
     
-    - Trans Rot Scale = 5
+    |  Trans Rot Scale = 5 
     
     
     <p>Order in which to apply transformations</p>
@@ -538,11 +538,11 @@ title: ProjectTriplanarNormalMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - P/N = 0 (default)
+    |  P/N = 0 (default) 
     
-    - ref_P/ref_N = 1
+    |  ref_P/ref_N = 1 
     
-    - input_position/input_normal = 2
+    |  input_position/input_normal = 2 
     
     
     <p>Input position to use</p>
@@ -606,9 +606,9 @@ title: ProjectTriplanarNormalMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - [0,1] = 0 (default)
+    |  [0,1] = 0 (default) 
     
-    - [-1,1] = 1
+    |  [-1,1] = 1 
     
     
     <p>Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
@@ -618,11 +618,11 @@ title: ProjectTriplanarNormalMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - one = 1
+    |  one = 1 
     
-    - three = 3 (default)
+    |  three = 3 (default) 
     
-    - six = 6
+    |  six = 6 
     
     
     <p>Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
@@ -695,11 +695,11 @@ title: ProjectTriplanarNormalMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - projector = 0 (default)
+    |  projector = 0 (default) 
     
-    - projection_matrix = 1
+    |  projection_matrix = 1 
     
-    - TRS = 2
+    |  TRS = 2 
     
     
     <p>Source parameters to use for projection transform</p>
@@ -763,17 +763,17 @@ title: ProjectTriplanarNormalMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - xyz = 0 (default)
+    |  xyz = 0 (default) 
     
-    - xzy = 1
+    |  xzy = 1 
     
-    - yxz = 2
+    |  yxz = 2 
     
-    - yzx = 3
+    |  yzx = 3 
     
-    - zxy = 4
+    |  zxy = 4 
     
-    - zyx = 5
+    |  zyx = 5 
     
     
     <p>Order in which to apply rotation transformations</p>

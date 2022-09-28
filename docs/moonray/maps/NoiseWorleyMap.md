@@ -74,13 +74,13 @@ title: NoiseWorleyMap
     <b>Int</b>
     <i>enum</i>
     
-    - f1 = 0 (default)
+    |  f1 = 0 (default) 
     
-    - f2 = 1
+    |  f2 = 1 
     
-    - f3 = 2
+    |  f3 = 2 
     
-    - f4 = 3
+    |  f4 = 3 
     
     
     <p>Which of the distances determines the cell id</p>
@@ -108,17 +108,17 @@ title: NoiseWorleyMap
     <b>Int</b>
     <i>enum</i>
     
-    - linear = 0 (default)
+    |  linear = 0 (default) 
     
-    - linear squared = 1
+    |  linear squared = 1 
     
-    - manhattan = 2
+    |  manhattan = 2 
     
-    - chebyshev = 3
+    |  chebyshev = 3 
     
-    - quadratic = 4
+    |  quadratic = 4 
     
-    - minkowski = 5
+    |  minkowski = 5 
     
     
     <p>Metric for calculating distance to feature points which controls the shape of the falloff when output mode is distance</p>
@@ -200,11 +200,11 @@ title: NoiseWorleyMap
     <b>Int</b>
     <i>enum</i>
     
-    - distance = 0 (default)
+    |  distance = 0 (default) 
     
-    - gradient = 1
+    |  gradient = 1 
     
-    - cell id = 2
+    |  cell id = 2 
     
     
     <p>Method by which the shader outputs a color.  Distance uses F1..F4 interpolated between color A and color B, gradient outputs the gradient of the noise, and cell ID outputs a random color for each cell</p>
@@ -232,17 +232,17 @@ title: NoiseWorleyMap
     <b>Int</b>
     <i>enum</i>
     
-    - xyz = 0 (default)
+    |  xyz = 0 (default) 
     
-    - xzy = 1
+    |  xzy = 1 
     
-    - yxz = 2
+    |  yxz = 2 
     
-    - yzx = 3
+    |  yzx = 3 
     
-    - zxy = 4
+    |  zxy = 4 
     
-    - zyx = 5
+    |  zyx = 5 
     
     
     <p>Order in which to apply the euler rotations</p>
@@ -279,21 +279,21 @@ title: NoiseWorleyMap
     <b>Int</b>
     <i>enum</i>
     
-    - render = 0 (default)
+    |  render = 0 (default) 
     
-    - camera = 1
+    |  camera = 1 
     
-    - world = 2
+    |  world = 2 
     
-    - screen = 3
+    |  screen = 3 
     
-    - object = 4
+    |  object = 4 
     
-    - reference = 5
+    |  reference = 5 
     
-    - texture = 6
+    |  texture = 6 
     
-    - input texture coordinates = 7
+    |  input texture coordinates = 7 
     
     
     <p>The space to calculate the noise in</p>
@@ -303,17 +303,17 @@ title: NoiseWorleyMap
     <b>Int</b>
     <i>enum</i>
     
-    - srt = 0
+    |  srt = 0 
     
-    - str = 1
+    |  str = 1 
     
-    - rst = 2
+    |  rst = 2 
     
-    - rts = 3
+    |  rts = 3 
     
-    - tsr = 4 (default)
+    |  tsr = 4 (default) 
     
-    - trs = 5
+    |  trs = 5 
     
     
     <p>Order in which to apply the translation, rotation, and frequency</p>

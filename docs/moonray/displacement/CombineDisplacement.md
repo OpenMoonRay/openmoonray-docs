@@ -47,11 +47,11 @@ title: CombineDisplacement
     <b>Int</b>
     <i>enum</i>
     
-    - add = 0 (default)
+    |  add = 0 (default) 
     
-    - max magnitude = 1
+    |  max magnitude = 1 
     
-    - min magnitude = 2
+    |  min magnitude = 2 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

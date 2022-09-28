@@ -38,29 +38,29 @@ title: TransformSpaceMap
     <b>Int</b>
     <i>enum</i>
     
-    - render = 0 (default)
+    |  render = 0 (default) 
     
-    - camera = 1
+    |  camera = 1 
     
-    - world = 2
+    |  world = 2 
     
-    - screen = 3
+    |  screen = 3 
     
-    - object = 4
+    |  object = 4 
     
-    - local tangent = 5
+    |  local tangent = 5 
     
-    - instance object transform = 6
+    |  instance object transform = 6 
     
-    - instance level 0 = 7
+    |  instance level 0 = 7 
     
-    - instance level 1 = 8
+    |  instance level 1 = 8 
     
-    - instance level 2 = 9
+    |  instance level 2 = 9 
     
-    - instance level 3 = 10
+    |  instance level 3 = 10 
     
-    - instance level 4 = 11
+    |  instance level 4 = 11 
     
     
     <p>the space to transform from</p>
@@ -79,11 +79,11 @@ title: TransformSpaceMap
     <b>Int</b>
     <i>enum</i>
     
-    - point = 0
+    |  point = 0 
     
-    - vector = 1 (default)
+    |  vector = 1 (default) 
     
-    - normal = 2
+    |  normal = 2 
     
     
     <p>the type of input value provided</p>
@@ -102,29 +102,29 @@ title: TransformSpaceMap
     <b>Int</b>
     <i>enum</i>
     
-    - render = 0
+    |  render = 0 
     
-    - camera = 1
+    |  camera = 1 
     
-    - world = 2 (default)
+    |  world = 2 (default) 
     
-    - screen = 3
+    |  screen = 3 
     
-    - object = 4
+    |  object = 4 
     
-    - local reference tangent = 5
+    |  local reference tangent = 5 
     
-    - instance level 0 = 6
+    |  instance level 0 = 6 
     
-    - instance level 1 = 7
+    |  instance level 1 = 7 
     
-    - instance level 2 = 8
+    |  instance level 2 = 8 
     
-    - instance level 3 = 9
+    |  instance level 3 = 9 
     
-    - instance level 4 = 10
+    |  instance level 4 = 10 
     
-    - instance object transform = 11
+    |  instance object transform = 11 
     
     
     <p>the space to transform to</p>

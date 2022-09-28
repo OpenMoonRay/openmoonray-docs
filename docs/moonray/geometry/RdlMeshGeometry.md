@@ -83,17 +83,17 @@ title: RdlMeshGeometry
     <b>Int</b>
     <i>enum</i>
     
-    - best = -1 (default)
+    |  best = -1 (default) 
     
-    - static = 0
+    |  static = 0 
     
-    - velocity = 1
+    |  velocity = 1 
     
-    - frame delta = 2
+    |  frame delta = 2 
     
-    - acceleration = 3
+    |  acceleration = 3 
     
-    - hermite = 4
+    |  hermite = 4 
     
     
     <p>Motion blur type for PolygonMesh/Points/Curves in alembic file.
@@ -135,9 +135,9 @@ title: RdlMeshGeometry
     <b>Int</b>
     <i>enum</i>
     
-    - right-handed = 0 (default)
+    |  right-handed = 0 (default) 
     
-    - left-handed = 1
+    |  left-handed = 1 
     
     
     <p>When set to "left-handed", normals are generated using the left-handed rule. This reverses the direction of generated normals, and which side of surfaces is considered the front, without affecting supplied normals.</p>
@@ -174,11 +174,11 @@ title: RdlMeshGeometry
     <b>Int</b>
     <i>enum</i>
     
-    - first motion step = 0
+    |  first motion step = 0 
     
-    - second motion step = 1
+    |  second motion step = 1 
     
-    - both motion steps = 2 (default)
+    |  both motion steps = 2 (default) 
     
     
     <p>Which frame(s) do we take the primitive attributes from?
@@ -261,11 +261,11 @@ B is a list of labels corresponding to the sets corresponding to distinct values
     <b>Int</b>
     <i>enum</i>
     
-    - force two-sided = 0 (default)
+    |  force two-sided = 0 (default) 
     
-    - force single-sided = 1
+    |  force single-sided = 1 
     
-    - use mesh sidedness = 2
+    |  use mesh sidedness = 2 
     
     
     <p>set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
@@ -293,11 +293,11 @@ B is a list of labels corresponding to the sets corresponding to distinct values
     <b>Int</b>
     <i>enum</i>
     
-    - none = 0
+    |  none = 0 
     
-    - edge only = 1
+    |  edge only = 1 
     
-    - edge and corner = 2 (default)
+    |  edge and corner = 2 (default) 
     
     
     <p>Boundary interpolation: Corners, Edges or None</p>
@@ -343,17 +343,17 @@ B is a list of labels corresponding to the sets corresponding to distinct values
     <b>Int</b>
     <i>enum</i>
     
-    - none = 0
+    |  none = 0 
     
-    - corners only = 1 (default)
+    |  corners only = 1 (default) 
     
-    - corners plus1 = 2
+    |  corners plus1 = 2 
     
-    - corners plus2 = 3
+    |  corners plus2 = 3 
     
-    - boundaries = 4
+    |  boundaries = 4 
     
-    - all = 5
+    |  all = 5 
     
     
     <p>Face-varying linear interpolation: None, Corners Only, Corners Plus 1 or Plus 2 (RenderMan), Boundaries, or All</p>
@@ -363,9 +363,9 @@ B is a list of labels corresponding to the sets corresponding to distinct values
     <b>Int</b>
     <i>enum</i>
     
-    - bilinear = 0
+    |  bilinear = 0 
     
-    - catclark = 1 (default)
+    |  catclark = 1 (default) 
     
     
     <p>CatClark or Bilinear</p>

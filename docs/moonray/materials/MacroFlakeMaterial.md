@@ -90,9 +90,9 @@ title: MacroFlakeMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - block = 0
+    |  block = 0 
     
-    - add = 1 (default)
+    |  add = 1 (default) 
     
     
     <p>Whether to block the diffuse lobe where the mask is applied</p>
@@ -111,9 +111,9 @@ title: MacroFlakeMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - block = 0 (default)
+    |  block = 0 (default) 
     
-    - add = 1
+    |  add = 1 
     
     
     <p>Whether to block the fuzz lobe where the mask is applied</p>
@@ -159,9 +159,9 @@ title: MacroFlakeMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - block = 0
+    |  block = 0 
     
-    - add = 1 (default)
+    |  add = 1 (default) 
     
     
     <p>Whether to block the underlying specular lobe where the mask is applied</p>

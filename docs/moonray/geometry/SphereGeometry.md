@@ -140,11 +140,11 @@ B is a list of labels corresponding to the sets corresponding to distinct values
     <b>Int</b>
     <i>enum</i>
     
-    - force two-sided = 0 (default)
+    |  force two-sided = 0 (default) 
     
-    - force single-sided = 1
+    |  force single-sided = 1 
     
-    - use mesh sidedness = 2
+    |  use mesh sidedness = 2 
     
     
     <p>set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>

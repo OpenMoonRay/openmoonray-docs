@@ -64,11 +64,11 @@ title: DwaAdjustMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - unmodified = 0 (default)
+    |  unmodified = 0 (default) 
     
-    - force on = 1
+    |  force on = 1 
     
-    - force off = 2
+    |  force off = 2 
     
     
     <p>allows you to keep or set casts caustics attribute</p>
@@ -105,11 +105,11 @@ title: DwaAdjustMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - unmodified = 0 (default)
+    |  unmodified = 0 (default) 
     
-    - force on = 1
+    |  force on = 1 
     
-    - force off = 2
+    |  force off = 2 
     
     
     <p>allows you to keep or set thin geometry attribute</p>
@@ -136,11 +136,11 @@ title: DwaAdjustMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - off = 0 (default)
+    |  off = 0 (default) 
     
-    - masked = 1
+    |  masked = 1 
     
-    - unmasked = 2
+    |  unmasked = 2 
     
     
     <p>how to handle emission input. masked uses mix input, unmasked is mix = 1</p>

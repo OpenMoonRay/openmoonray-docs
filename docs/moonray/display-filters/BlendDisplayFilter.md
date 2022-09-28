@@ -55,9 +55,9 @@ title: BlendDisplayFilter
     <b>Int</b>
     <i>enum</i>
     
-    - linear = 0 (default)
+    |  linear = 0 (default) 
     
-    - cubic = 1
+    |  cubic = 1 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

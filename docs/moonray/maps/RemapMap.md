@@ -181,9 +181,9 @@ title: RemapMap
     <b>Int</b>
     <i>enum</i>
     
-    - uniform = 0 (default)
+    |  uniform = 0 (default) 
     
-    - RGB = 1
+    |  RGB = 1 
     
     
     <p>Choose whether you are remapping using single values (uniform) or with separate RGB channels</p>

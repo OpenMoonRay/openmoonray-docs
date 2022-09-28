@@ -125,13 +125,13 @@ title: BakeCamera
     <b>Int</b>
     <i>enum</i>
     
-    - from camera to surface = 0
+    |  from camera to surface = 0 
     
-    - from surface along normal = 1
+    |  from surface along normal = 1 
     
-    - from surface along reflection vector = 2
+    |  from surface along reflection vector = 2 
     
-    - above surface reverse normal = 3 (default)
+    |  above surface reverse normal = 3 (default) 
     
     
     <p>How to generate primary rays</p>
@@ -159,9 +159,9 @@ title: BakeCamera
     <b>Int</b>
     <i>enum</i>
     
-    - camera space = 0 (default)
+    |  camera space = 0 (default) 
     
-    - tangent space = 1
+    |  tangent space = 1 
     
     
     <p>Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.</p>

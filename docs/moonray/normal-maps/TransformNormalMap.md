@@ -46,9 +46,9 @@ title: TransformNormalMap
     <b>Int</b>
     <i>enum</i>
     
-    - tangent to render = 0 (default)
+    |  tangent to render = 0 (default) 
     
-    - render to tangent = 1
+    |  render to tangent = 1 
     
     
     <p>transform to apply to the normals</p>

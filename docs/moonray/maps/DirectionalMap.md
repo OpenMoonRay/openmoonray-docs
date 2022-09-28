@@ -29,9 +29,9 @@ title: DirectionalMap
     <b>Int</b>
     <i>enum</i>
     
-    - clamp = 0 (default)
+    |  clamp = 0 (default) 
     
-    - absolute = 1
+    |  absolute = 1 
     
     
     <p>determines how surfaces facing opposite the prime direction are handled</p>
@@ -41,9 +41,9 @@ title: DirectionalMap
     <b>Int</b>
     <i>enum</i>
     
-    - cosine = 0 (default)
+    |  cosine = 0 (default) 
     
-    - linear = 1
+    |  linear = 1 
     
     
     <p>determines how the effect falls off as the difference angle increases</p>
@@ -150,17 +150,17 @@ title: DirectionalMap
     <b>Int</b>
     <i>enum</i>
     
-    - +X axis = 0
+    |  +X axis = 0 
     
-    - -X axis = 1 (default)
+    |  -X axis = 1 (default) 
     
-    - +Y axis = 2
+    |  +Y axis = 2 
     
-    - -Y axis = 3
+    |  -Y axis = 3 
     
-    - +Z axis = 4
+    |  +Z axis = 4 
     
-    - -Z axis = 5
+    |  -Z axis = 5 
     
     
     <p>which axis to use when 'prime direction' is set to 'axis of object'</p>
@@ -170,9 +170,9 @@ title: DirectionalMap
     <b>Int</b>
     <i>enum</i>
     
-    - perpendicular = 0 (default)
+    |  perpendicular = 0 (default) 
     
-    - parallel = 1
+    |  parallel = 1 
     
     
     <p>determines which directions are given color A and which are given color B. Switching this effectively swaps the colors</p>
@@ -182,13 +182,13 @@ title: DirectionalMap
     <b>Int</b>
     <i>enum</i>
     
-    - observer direction = 0 (default)
+    |  observer direction = 0 (default) 
     
-    - custom direction = 1
+    |  custom direction = 1 
     
-    - axis of object = 2
+    |  axis of object = 2 
     
-    - look-at object = 3
+    |  look-at object = 3 
     
     
     <p>which source is used for the prime direction</p>

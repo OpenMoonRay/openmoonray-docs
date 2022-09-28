@@ -29,13 +29,13 @@ title: CurvatureMap
     <b>Int</b>
     <i>enum</i>
     
-    - convex = 0
+    |  convex = 0 
     
-    - concave = 1
+    |  concave = 1 
     
-    - composite = 2
+    |  composite = 2 
     
-    - all = 3 (default)
+    |  all = 3 (default) 
     
     
     <p>The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>

@@ -20,9 +20,9 @@ title: VdbLightFilter
     <b>Int</b>
     <i>enum</i>
     
-    - gaussian = 0 (default)
+    |  gaussian = 0 (default) 
     
-    - circular = 1
+    |  circular = 1 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -140,11 +140,11 @@ title: VdbLightFilter
     <b>Int</b>
     <i>enum</i>
     
-    - point = 0 (default)
+    |  point = 0 (default) 
     
-    - box = 1
+    |  box = 1 
     
-    - quadratic = 2
+    |  quadratic = 2 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

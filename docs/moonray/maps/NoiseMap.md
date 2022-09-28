@@ -152,25 +152,25 @@ title: NoiseMap
     <b>Int</b>
     <i>enum</i>
     
-    - render = 0 (default)
+    |  render = 0 (default) 
     
-    - camera = 1
+    |  camera = 1 
     
-    - world = 2
+    |  world = 2 
     
-    - screen = 3
+    |  screen = 3 
     
-    - object = 4
+    |  object = 4 
     
-    - reference = 5
+    |  reference = 5 
     
-    - texture = 6
+    |  texture = 6 
     
-    - input texture coordinates = 7
+    |  input texture coordinates = 7 
     
-    - hair_surface_uv = 8
+    |  hair_surface_uv = 8 
     
-    - hair_closest_surface_uv = 9
+    |  hair_closest_surface_uv = 9 
     
     
     <p>The space to calculate the noise in</p>
@@ -197,17 +197,17 @@ title: NoiseMap
     <b>Int</b>
     <i>enum</i>
     
-    - xyz = 0 (default)
+    |  xyz = 0 (default) 
     
-    - xzy = 1
+    |  xzy = 1 
     
-    - yxz = 2
+    |  yxz = 2 
     
-    - yzx = 3
+    |  yzx = 3 
     
-    - zxy = 4
+    |  zxy = 4 
     
-    - zyx = 5
+    |  zyx = 5 
     
     
     <p>Order in which to apply the euler rotations</p>
@@ -226,17 +226,17 @@ title: NoiseMap
     <b>Int</b>
     <i>enum</i>
     
-    - srt = 0
+    |  srt = 0 
     
-    - str = 1
+    |  str = 1 
     
-    - rst = 2
+    |  rst = 2 
     
-    - rts = 3
+    |  rts = 3 
     
-    - tsr = 4 (default)
+    |  tsr = 4 (default) 
     
-    - trs = 5
+    |  trs = 5 
     
     
     <p>Order in which to apply the translation, rotation, and frequency</p>
@@ -308,9 +308,9 @@ title: NoiseMap
     <b>Int</b>
     <i>enum</i>
     
-    - perlin classic = 0 (default)
+    |  perlin classic = 0 (default) 
     
-    - perlin simplex = 1
+    |  perlin simplex = 1 
     
     
     <p>Type of noise to use for distortion.</p>
@@ -347,9 +347,9 @@ title: NoiseMap
     <b>Int</b>
     <i>enum</i>
     
-    - perlin classic = 0 (default)
+    |  perlin classic = 0 (default) 
     
-    - perlin simplex = 1
+    |  perlin simplex = 1 
     
     
     <p>Type of noise to use. Simplex grid activates Flow Noise Angle and Advection</p>

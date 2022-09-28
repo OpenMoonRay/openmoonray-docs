@@ -46,17 +46,17 @@ title: ImageDisplayFilter
     <b>Int</b>
     <i>enum</i>
     
-    - stretch = 0 (default)
+    |  stretch = 0 (default) 
     
-    - fit_horizontal = 1
+    |  fit_horizontal = 1 
     
-    - fit_vertical = 2
+    |  fit_vertical = 2 
     
-    - fit_by_smallest_dimension = 3
+    |  fit_by_smallest_dimension = 3 
     
-    - fit_by_largest_dimension = 4
+    |  fit_by_largest_dimension = 4 
     
-    - no_scale = 5
+    |  no_scale = 5 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

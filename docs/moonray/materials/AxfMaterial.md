@@ -38,9 +38,9 @@ title: AxfMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - tangent = 0 (default)
+    |  tangent = 0 (default) 
     
-    - render = 1
+    |  render = 1 
     
     
     <p>Specifies what space the normal is given in.  Usually this is tangent space for texture maps and render space for projections</p>

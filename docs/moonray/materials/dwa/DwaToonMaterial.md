@@ -82,9 +82,9 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - Beckmann = 0
+    |  Beckmann = 0 
     
-    - GGX = 1 (default)
+    |  GGX = 1 (default) 
     
     
     <p>sets the normalized distribution function for clearcoat.  GGX is currently isotropic only</p>
@@ -209,11 +209,11 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - normalized diffusion = 0 (default)
+    |  normalized diffusion = 0 (default) 
     
-    - dipole = 1
+    |  dipole = 1 
     
-    - random walk = 2
+    |  random walk = 2 
     
     
     <p>0 for NormalizedDiffuse, 1 for Dipole, 2 for random walk</p>
@@ -250,9 +250,9 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - oren-nayar = 0 (default)
+    |  oren-nayar = 0 (default) 
     
-    - ramp = 1
+    |  ramp = 1 
     
     
     <p>The method used to render the diffuse response.</p>
@@ -280,9 +280,9 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - RGB = 0
+    |  RGB = 0 
     
-    - Monochromatic = 1 (default)
+    |  Monochromatic = 1 (default) 
     
     
     <p>Controls how diffuse transmission color attenuates diffuse reflection</p>
@@ -750,17 +750,17 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - off = 0 (default)
+    |  off = 0 (default) 
     
-    - blend = 1
+    |  blend = 1 
     
-    - color = 2
+    |  color = 2 
     
-    - averageColor = 3
+    |  averageColor = 3 
     
-    - footprintArea = 4
+    |  footprintArea = 4 
     
-    - radius = 5
+    |  radius = 5 
     
     
     <p>developer debug visualization modes</p>
@@ -788,9 +788,9 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - physical = 0 (default)
+    |  physical = 0 (default) 
     
-    - additive = 1
+    |  additive = 1 
     
     
     <p>layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
@@ -854,9 +854,9 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - object = 4
+    |  object = 4 
     
-    - reference = 5 (default)
+    |  reference = 5 (default) 
     
     
     <p>The space to calculate the worley noise in, defaults to reference space</p>
@@ -937,9 +937,9 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - primary specular = 0 (default)
+    |  primary specular = 0 (default) 
     
-    - clearcoat/moisture specular = 1
+    |  clearcoat/moisture specular = 1 
     
     
     <p>Apply iridescence to primary specular lobe or clearcoat/moisture lobe</p>
@@ -967,9 +967,9 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - use hue interpolation = 0 (default)
+    |  use hue interpolation = 0 (default) 
     
-    - use ramp = 1
+    |  use ramp = 1 
     
     
     <p>use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp</p>
@@ -1035,9 +1035,9 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - RGB = 0 (default)
+    |  RGB = 0 (default) 
     
-    - HSV = 1
+    |  HSV = 1 
     
     
     <p>RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation</p>
@@ -1108,9 +1108,9 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - none = 0 (default)
+    |  none = 0 (default) 
     
-    - toksvig = 1
+    |  toksvig = 1 
     
     
     <p>Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.</p>
@@ -1200,11 +1200,11 @@ title: DwaToonMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - Beckmann = 0
+    |  Beckmann = 0 
     
-    - GGX = 1 (default)
+    |  GGX = 1 (default) 
     
-    - Toon = 2
+    |  Toon = 2 
     
     
     <p>sets the normalized distribution function for specular.  GGX is currently isotropic only</p>

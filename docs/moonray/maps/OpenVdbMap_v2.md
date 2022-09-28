@@ -64,11 +64,11 @@ title: OpenVdbMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - point = 0
+    |  point = 0 
     
-    - box = 1
+    |  box = 1 
     
-    - quadratic = 2 (default)
+    |  quadratic = 2 (default) 
     
     
     <p>The type of interpolation to use when sampling the vdb</p>
@@ -105,11 +105,11 @@ title: OpenVdbMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - position = 0 (default)
+    |  position = 0 (default) 
     
-    - reference position = 1
+    |  reference position = 1 
     
-    - input texture coordinates = 2
+    |  input texture coordinates = 2 
     
     
     <p>Which coordinate source to use for the texture lookup</p>
@@ -119,9 +119,9 @@ title: OpenVdbMap_v2
     <b>Int</b>
     <i>enum</i>
     
-    - from texture = 0 (default)
+    |  from texture = 0 (default) 
     
-    - from OpenVdbGeometry = 1
+    |  from OpenVdbGeometry = 1 
     
     
     <p>Where to look for the vdb filename.  Choose 'from texture' to specify a .vdb filename directly via the 'texture' attribute.  Choose 'from OpenVdbGeometry' to use the .vdb filename and transform from an OpenVdbGeometry object in the scene using the 'openvdb geometry' attribute</p>

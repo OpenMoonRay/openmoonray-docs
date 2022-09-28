@@ -20,11 +20,11 @@ title: HairLayerMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - RGB = 0 (default)
+    |  RGB = 0 (default) 
     
-    - HSV = 1
+    |  HSV = 1 
     
-    - HSL = 2
+    |  HSL = 2 
     
     
     <p>Color space used when blending the two material's color parameters</p>
@@ -34,9 +34,9 @@ title: HairLayerMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - normalized diffusion = 0 (default)
+    |  normalized diffusion = 0 (default) 
     
-    - dipole = 1
+    |  dipole = 1 
     
     
     <p>If child materials disagree on the type of bssrdf, this type will be used instead.</p>

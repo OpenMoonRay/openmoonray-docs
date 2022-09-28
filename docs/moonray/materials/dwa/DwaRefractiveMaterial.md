@@ -64,9 +64,9 @@ title: DwaRefractiveMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - Beckmann = 0
+    |  Beckmann = 0 
     
-    - GGX = 1 (default)
+    |  GGX = 1 (default) 
     
     
     <p>sets the normalized distribution function for clearcoat.  GGX is currently isotropic only</p>
@@ -288,9 +288,9 @@ title: DwaRefractiveMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - primary specular = 0 (default)
+    |  primary specular = 0 (default) 
     
-    - clearcoat/moisture specular = 1
+    |  clearcoat/moisture specular = 1 
     
     
     <p>Apply iridescence to primary specular lobe or clearcoat/moisture lobe</p>
@@ -318,9 +318,9 @@ title: DwaRefractiveMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - use hue interpolation = 0 (default)
+    |  use hue interpolation = 0 (default) 
     
-    - use ramp = 1
+    |  use ramp = 1 
     
     
     <p>use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp</p>
@@ -386,9 +386,9 @@ title: DwaRefractiveMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - RGB = 0 (default)
+    |  RGB = 0 (default) 
     
-    - HSV = 1
+    |  HSV = 1 
     
     
     <p>RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation</p>
@@ -459,9 +459,9 @@ title: DwaRefractiveMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - none = 0 (default)
+    |  none = 0 (default) 
     
-    - toksvig = 1
+    |  toksvig = 1 
     
     
     <p>Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.</p>
@@ -524,9 +524,9 @@ title: DwaRefractiveMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - Beckmann = 0
+    |  Beckmann = 0 
     
-    - GGX = 1 (default)
+    |  GGX = 1 (default) 
     
     
     <p>sets the normalized distribution function for specular.  GGX is currently isotropic only</p>

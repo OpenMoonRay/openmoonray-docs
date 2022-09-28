@@ -47,17 +47,17 @@ title: RdlPointGeometry
     <b>Int</b>
     <i>enum</i>
     
-    - best = -1 (default)
+    |  best = -1 (default) 
     
-    - static = 0
+    |  static = 0 
     
-    - velocity = 1
+    |  velocity = 1 
     
-    - frame delta = 2
+    |  frame delta = 2 
     
-    - acceleration = 3
+    |  acceleration = 3 
     
-    - hermite = 4
+    |  hermite = 4 
     
     
     <p>Motion blur type for PolygonMesh/Points/Curves in alembic file.
@@ -108,11 +108,11 @@ title: RdlPointGeometry
     <b>Int</b>
     <i>enum</i>
     
-    - first motion step = 0
+    |  first motion step = 0 
     
-    - second motion step = 1
+    |  second motion step = 1 
     
-    - both motion steps = 2 (default)
+    |  both motion steps = 2 (default) 
     
     
     <p>Which frame(s) do we take the primitive attributes from?
@@ -204,11 +204,11 @@ B is a list of labels corresponding to the sets corresponding to distinct values
     <b>Int</b>
     <i>enum</i>
     
-    - force two-sided = 0 (default)
+    |  force two-sided = 0 (default) 
     
-    - force single-sided = 1
+    |  force single-sided = 1 
     
-    - use mesh sidedness = 2
+    |  use mesh sidedness = 2 
     
     
     <p>set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>

@@ -65,19 +65,19 @@ title: UVTransformMap
     <b>Int</b>
     <i>enum</i>
     
-    - render = 0
+    |  render = 0 
     
-    - camera = 1
+    |  camera = 1 
     
-    - world = 2
+    |  world = 2 
     
-    - screen = 3
+    |  screen = 3 
     
-    - object = 4
+    |  object = 4 
     
-    - reference = 5
+    |  reference = 5 
     
-    - texture = 6 (default)
+    |  texture = 6 (default) 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

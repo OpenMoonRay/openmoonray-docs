@@ -38,9 +38,9 @@ title: VectorDisplacement
     <b>Int</b>
     <i>enum</i>
     
-    - tangent = 0 (default)
+    |  tangent = 0 (default) 
     
-    - object = 1
+    |  object = 1 
     
     
     <p>The space that the map bound to the vector parameter is in</p>
@@ -50,9 +50,9 @@ title: VectorDisplacement
     <b>Int</b>
     <i>enum</i>
     
-    - tnb = 0 (default)
+    |  tnb = 0 (default) 
     
-    - tbn = 1
+    |  tbn = 1 
     
     
     <p>Controls how RGB maps to Tangent, Normal, and Bi-Normal</p>

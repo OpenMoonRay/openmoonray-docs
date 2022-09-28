@@ -47,9 +47,9 @@ title: RampMap
     <b>Int</b>
     <i>enum</i>
     
-    - wrap = 0 (default)
+    |  wrap = 0 (default) 
     
-    - clamp = 1
+    |  clamp = 1 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -113,11 +113,11 @@ title: RampMap
     <b>Int</b>
     <i>enum</i>
     
-    - rgb = 0 (default)
+    |  rgb = 0 (default) 
     
-    - hsv = 1
+    |  hsv = 1 
     
-    - hsl = 2
+    |  hsl = 2 
     
     
     <p>Color space to perform interpolation in</p>
@@ -145,23 +145,23 @@ title: RampMap
     <b>Int</b>
     <i>enum</i>
     
-    - v = 0 (default)
+    |  v = 0 (default) 
     
-    - u = 1
+    |  u = 1 
     
-    - diagonal = 2
+    |  diagonal = 2 
     
-    - radial = 3
+    |  radial = 3 
     
-    - circular = 4
+    |  circular = 4 
     
-    - box = 5
+    |  box = 5 
     
-    - uxv = 6
+    |  uxv = 6 
     
-    - four corner = 7
+    |  four corner = 7 
     
-    - input = 8
+    |  input = 8 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -171,19 +171,19 @@ title: RampMap
     <b>Int</b>
     <i>enum</i>
     
-    - render = 0 (default)
+    |  render = 0 (default) 
     
-    - camera = 1
+    |  camera = 1 
     
-    - world = 2
+    |  world = 2 
     
-    - screen = 3
+    |  screen = 3 
     
-    - object = 4
+    |  object = 4 
     
-    - reference = 5
+    |  reference = 5 
     
-    - texture = 6
+    |  texture = 6 
     
     
     <p>Only applies when 'texture coordinates' is set to 'default state coordinates'</p>
@@ -201,9 +201,9 @@ title: RampMap
     <b>Int</b>
     <i>enum</i>
     
-    - default state coordinates = 0 (default)
+    |  default state coordinates = 0 (default) 
     
-    - input texture coordinates = 1
+    |  input texture coordinates = 1 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

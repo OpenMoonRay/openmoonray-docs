@@ -73,11 +73,11 @@ title: ConvolutionDisplayFilter
     <b>Int</b>
     <i>enum</i>
     
-    - gaussian = 0 (default)
+    |  gaussian = 0 (default) 
     
-    - box = 1
+    |  box = 1 
     
-    - custom = 2
+    |  custom = 2 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

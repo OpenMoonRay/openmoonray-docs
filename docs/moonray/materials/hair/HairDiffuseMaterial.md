@@ -116,9 +116,9 @@ title: HairDiffuseMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - normalized diffusion = 0 (default)
+    |  normalized diffusion = 0 (default) 
     
-    - dipole = 1
+    |  dipole = 1 
     
     
     <p>0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.</p>

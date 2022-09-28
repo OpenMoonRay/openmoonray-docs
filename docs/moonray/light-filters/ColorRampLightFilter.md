@@ -83,9 +83,9 @@ title: ColorRampLightFilter
     <b>Int</b>
     <i>enum</i>
     
-    - radial = 0 (default)
+    |  radial = 0 (default) 
     
-    - directional = 1
+    |  directional = 1 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -104,9 +104,9 @@ title: ColorRampLightFilter
     <b>Int</b>
     <i>enum</i>
     
-    - extend = 0 (default)
+    |  extend = 0 (default) 
     
-    - mirror = 1
+    |  mirror = 1 
     
     
     <p>For directional filter mode where filter uses distance along -Z axis.  Extend: f(z) = f(0) for z > 0.  Mirror: f(z) = f(-z).</p>

@@ -20,11 +20,11 @@ title: DwaMixMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - RGB = 0 (default)
+    |  RGB = 0 (default) 
     
-    - HSV = 1
+    |  HSV = 1 
     
-    - HSL = 2
+    |  HSL = 2 
     
     
     <p>Color space used when blending the two material's color parameters</p>
@@ -34,11 +34,11 @@ title: DwaMixMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - normalized diffusion = 0 (default)
+    |  normalized diffusion = 0 (default) 
     
-    - dipole = 1
+    |  dipole = 1 
     
-    - random walk = 2
+    |  random walk = 2 
     
     
     <p>If child materials disagree on the type of bssrdf, this type will be used instead.</p>
@@ -57,9 +57,9 @@ title: DwaMixMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - Beckmann = 0
+    |  Beckmann = 0 
     
-    - GGX = 1 (default)
+    |  GGX = 1 (default) 
     
     
     <p>If child materials disagree on the type of outer specular model, this type will be used instead.</p>
@@ -69,9 +69,9 @@ title: DwaMixMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - Beckmann = 0
+    |  Beckmann = 0 
     
-    - GGX = 1 (default)
+    |  GGX = 1 (default) 
     
     
     <p>If child materials disagree on the type of specular model, this type will be used instead.</p>
@@ -90,11 +90,11 @@ title: DwaMixMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - Beckmann = 0
+    |  Beckmann = 0 
     
-    - GGX = 1 (default)
+    |  GGX = 1 (default) 
     
-    - Toon = 2
+    |  Toon = 2 
     
     
     <p>If child materials disagree on the type of toon specular model, this type will be used instead.</p>
@@ -130,17 +130,17 @@ title: DwaMixMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - off = 0 (default)
+    |  off = 0 (default) 
     
-    - blend = 1
+    |  blend = 1 
     
-    - color = 2
+    |  color = 2 
     
-    - averageColor = 3
+    |  averageColor = 3 
     
-    - footprintArea = 4
+    |  footprintArea = 4 
     
-    - radius = 5
+    |  radius = 5 
     
     
     <p>developer debug visualization modes.  This parameter will only be used when layering two distinct glitter materials.</p>
@@ -150,9 +150,9 @@ title: DwaMixMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - physical = 0 (default)
+    |  physical = 0 (default) 
     
-    - additive = 1
+    |  additive = 1 
     
     
     <p>layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow).  This parameter will only be used when layering two distinct glitter materials.</p>
@@ -180,9 +180,9 @@ title: DwaMixMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - object = 4
+    |  object = 4 
     
-    - reference = 5 (default)
+    |  reference = 5 (default) 
     
     
     <p>The space to calculate the worley noise in, defaults to reference space.  This parameter will only be used when layering two distinct glitter materials.</p>
@@ -839,13 +839,13 @@ title: DwaMixMaterial
     <b>Int</b>
     <i>enum</i>
     
-    - linear = 0 (default)
+    |  linear = 0 (default) 
     
-    - hold = 1
+    |  hold = 1 
     
-    - nearest = 2
+    |  nearest = 2 
     
-    - smooth = 3
+    |  smooth = 3 
     
     
     <p>Adjusts rate of transition from one material to the next based on mix value</p>

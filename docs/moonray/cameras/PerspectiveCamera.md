@@ -250,11 +250,11 @@ title: PerspectiveCamera
     <b>Int</b>
     <i>enum</i>
     
-    - center view = 0 (default)
+    |  center view = 0 (default) 
     
-    - left view = 1
+    |  left view = 1 
     
-    - right view = 2
+    |  right view = 2 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

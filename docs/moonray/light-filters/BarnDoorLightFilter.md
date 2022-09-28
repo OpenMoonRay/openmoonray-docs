@@ -92,9 +92,9 @@ title: BarnDoorLightFilter
     <b>Int</b>
     <i>enum</i>
     
-    - analytical = 0 (default)
+    |  analytical = 0 (default) 
     
-    - physical = 1
+    |  physical = 1 
     
     
     <p>analytical mode allows light to shading points that project to the flap opening.physical mode allows light whose direction goes through the flap opening.</p>
@@ -122,11 +122,11 @@ title: BarnDoorLightFilter
     <b>Int</b>
     <i>enum</i>
     
-    - black = 0
+    |  black = 0 
     
-    - white = 1
+    |  white = 1 
     
-    - default = 2 (default)
+    |  default = 2 (default) 
     
     
     <p>force region before the pre_barn_distance to be fully filtered (black), not filtered at all (white), or treated the same as elsewhere (default)</p>
@@ -154,9 +154,9 @@ title: BarnDoorLightFilter
     <b>Int</b>
     <i>enum</i>
     
-    - perspective = 0 (default)
+    |  perspective = 0 (default) 
     
-    - orthographic = 1
+    |  orthographic = 1 
     
     
     <p>projection type used to map points to the flap opening. perspective has a focal point, while orthographic does not.</p>

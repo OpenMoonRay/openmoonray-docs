@@ -180,11 +180,11 @@ title: ImageMap
     <b>Int</b>
     <i>enum</i>
     
-    - off = 0
+    |  off = 0 
     
-    - on = 1
+    |  on = 1 
     
-    - auto = 2 (default)
+    |  auto = 2 (default) 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -248,13 +248,13 @@ title: ImageMap
     <b>Int</b>
     <i>enum</i>
     
-    - texture = 0 (default)
+    |  texture = 0 (default) 
     
-    - hair surface = 1
+    |  hair surface = 1 
     
-    - input texture coordinates = 2
+    |  input texture coordinates = 2 
     
-    - hair closest surface = 3
+    |  hair closest surface = 3 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>

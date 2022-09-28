@@ -65,9 +65,9 @@ title: CheckerboardMap
     <b>Int</b>
     <i>enum</i>
     
-    - texture = 0 (default)
+    |  texture = 0 (default) 
     
-    - input texture coordinates = 1
+    |  input texture coordinates = 1 
     
     
     <p>switches between the model's uv coordinates or the input texture coordinates</p>

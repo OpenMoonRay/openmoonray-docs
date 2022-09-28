@@ -126,9 +126,9 @@ title: SceneVariables
     <b>Int</b>
     <i>enum</i>
     
-    - time = 0 (default)
+    |  time = 0 (default) 
     
-    - quality = 1
+    |  quality = 1 
     
     
     <p>Select checkpoint computation internal logic based on the time interval or quality steps</p>
@@ -289,9 +289,9 @@ title: SceneVariables
     <b>Int</b>
     <i>enum</i>
     
-    - openexr2.0 = 0
+    |  openexr2.0 = 0 
     
-    - opendcx2.0 = 1 (default)
+    |  opendcx2.0 = 1 (default) 
     
     
     <p>Deep image format: openexr2.0: vanilla OpenEXR deep, opendcx2.0: DCX abuffer mask encoding</p>
@@ -399,9 +399,9 @@ title: SceneVariables
     <b>Int</b>
     <i>enum</i>
     
-    - non-overlapped tile = 0
+    |  non-overlapped tile = 0 
     
-    - multiplex pixel = 1 (default)
+    |  multiplex pixel = 1 (default) 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -437,11 +437,11 @@ title: SceneVariables
     <b>Int</b>
     <i>enum</i>
     
-    - box = 0
+    |  box = 0 
     
-    - cubic b-spline = 1 (default)
+    |  cubic b-spline = 1 (default) 
     
-    - quadratic b-spline = 2
+    |  quadratic b-spline = 2 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -637,15 +637,15 @@ title: SceneVariables
     <b>Int</b>
     <i>enum</i>
     
-    - Off = 0 (default)
+    |  Off = 0 (default) 
     
-    - On = 1
+    |  On = 1 
     
-    - On (Sine Compensation Alternative) = 2
+    |  On (Sine Compensation Alternative) = 2 
     
-    - On (GGX Compensation Alternative) = 3
+    |  On (GGX Compensation Alternative) = 3 
     
-    - On (Cosine Compensation Alternative = 4
+    |  On (Cosine Compensation Alternative = 4 
     
     
     <p>Attempt to soften hard shadow terminator boundaries due to shading/geometric normal deviations.  "ON uses a custom terminator softening method. Cosine Compensation" is Chiang's 2019 SIGGRAPH technique.  "GGX" is Estevez's raytracing gems technique.  "Sine Compensation" is a sine based modification of Chiang's method. Different scenes may work better with different techniques.  The recommendation is to start with the custom compensation ON, then sine compensation technique, then GGX, then cosine.</p>
@@ -891,11 +891,11 @@ title: SceneVariables
     <b>Int</b>
     <i>enum</i>
     
-    - multi-sample = 0 (default)
+    |  multi-sample = 0 (default) 
     
-    - one-sample = 1
+    |  one-sample = 1 
     
-    - one-lobe = 2
+    |  one-lobe = 2 
     
     
     <p>Indirect sampling and evaluation strategy: all lobes using one path segment per lobe (multi-sample), all lobes using one shared path segment (one-sample), or one lobe.</p>
@@ -1102,11 +1102,11 @@ title: SceneVariables
     <b>Int</b>
     <i>enum</i>
     
-    - sum = 0 (default)
+    |  sum = 0 (default) 
     
-    - max = 1
+    |  max = 1 
     
-    - rnd = 2
+    |  rnd = 2 
     
     
     <p>Selects how to handle contributions from overlapping volumes:
@@ -1159,21 +1159,21 @@ title: SceneVariables
     <b>Int</b>
     <i>enum</i>
     
-    - top = 0
+    |  top = 0 
     
-    - bottom = 1
+    |  bottom = 1 
     
-    - left = 2
+    |  left = 2 
     
-    - right = 3
+    |  right = 3 
     
-    - morton = 4 (default)
+    |  morton = 4 (default) 
     
-    - random = 5
+    |  random = 5 
     
-    - spiral square = 6
+    |  spiral square = 6 
     
-    - spiral rect = 7
+    |  spiral rect = 7 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -1183,21 +1183,21 @@ title: SceneVariables
     <b>Int</b>
     <i>enum</i>
     
-    - top = 0
+    |  top = 0 
     
-    - bottom = 1
+    |  bottom = 1 
     
-    - left = 2
+    |  left = 2 
     
-    - right = 3
+    |  right = 3 
     
-    - morton = 4 (default)
+    |  morton = 4 (default) 
     
-    - random = 5
+    |  random = 5 
     
-    - spiral square = 6
+    |  spiral square = 6 
     
-    - spiral rect = 7
+    |  spiral rect = 7 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -1234,21 +1234,21 @@ title: SceneVariables
     <b>Int</b>
     <i>enum</i>
     
-    - top = 0
+    |  top = 0 
     
-    - bottom = 1
+    |  bottom = 1 
     
-    - left = 2
+    |  left = 2 
     
-    - right = 3
+    |  right = 3 
     
-    - morton = 4 (default)
+    |  morton = 4 (default) 
     
-    - random = 5
+    |  random = 5 
     
-    - spiral square = 6
+    |  spiral square = 6 
     
-    - spiral rect = 7
+    |  spiral rect = 7 
     
     
     <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
@@ -1258,9 +1258,9 @@ title: SceneVariables
     <b>Int</b>
     <i>enum</i>
     
-    - uniform = 0 (default)
+    |  uniform = 0 (default) 
     
-    - adaptive = 2
+    |  adaptive = 2 
     
     
     <p>Controls which sampling scheme to use, defaults to uniform sampling.</p>

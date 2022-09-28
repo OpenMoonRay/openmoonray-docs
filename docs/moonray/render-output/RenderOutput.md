@@ -38,9 +38,9 @@ title: RenderOutput
     <b>Int</b>
     <i>enum</i>
     
-    - float = 0
+    |  float = 0 
     
-    - half = 1 (default)
+    |  half = 1 (default) 
     
     
     <p>The pixel encoding (bit depth and type) of the output channel.</p>
@@ -59,13 +59,13 @@ title: RenderOutput
     <b>Int</b>
     <i>enum</i>
     
-    - auto = 0 (default)
+    |  auto = 0 (default) 
     
-    - rgb = 1
+    |  rgb = 1 
     
-    - xyz = 2
+    |  xyz = 2 
     
-    - uvw = 3
+    |  uvw = 3 
     
     
     <p>When processing multi-channel outputs, how should channel names be suffixed?
@@ -101,25 +101,25 @@ title: RenderOutput
     <b>Int</b>
     <i>enum</i>
     
-    - none = 0
+    |  none = 0 
     
-    - zip = 1 (default)
+    |  zip = 1 (default) 
     
-    - rle = 2
+    |  rle = 2 
     
-    - zips = 3
+    |  zips = 3 
     
-    - piz = 4
+    |  piz = 4 
     
-    - pxr24 = 5
+    |  pxr24 = 5 
     
-    - b44 = 6
+    |  b44 = 6 
     
-    - b44a = 7
+    |  b44a = 7 
     
-    - dwaa = 8
+    |  dwaa = 8 
     
-    - dwab = 9
+    |  dwab = 9 
     
     
     <p>Compression used for file (or file part in the multi-part case). All render outputs that target the same image must specify the same compression.</p>
@@ -147,11 +147,11 @@ title: RenderOutput
     <b>Int</b>
     <i>enum</i>
     
-    - not an input = 0 (default)
+    |  not an input = 0 (default) 
     
-    - as albedo = 1
+    |  as albedo = 1 
     
-    - as normal = 2
+    |  as normal = 2 
     
     
     <p>How to use this output as a denoiser input</p>
@@ -336,17 +336,17 @@ title: RenderOutput
     <b>Int</b>
     <i>enum</i>
     
-    - average = 0 (default)
+    |  average = 0 (default) 
     
-    - sum = 1
+    |  sum = 1 
     
-    - min = 2
+    |  min = 2 
     
-    - max = 3
+    |  max = 3 
     
-    - force_consistent_sampling = 4
+    |  force_consistent_sampling = 4 
     
-    - closest = 5
+    |  closest = 5 
     
     
     <p>the math filter over the pixel.
@@ -388,13 +388,13 @@ options include:
     <b>Int</b>
     <i>enum</i>
     
-    - FLOAT = 0 (default)
+    |  FLOAT = 0 (default) 
     
-    - VEC2F = 1
+    |  VEC2F = 1 
     
-    - VEC3F = 2
+    |  VEC3F = 2 
     
-    - RGB = 3
+    |  RGB = 3 
     
     
     <p>This attribute specifies the type of the attribute named with the "primitive attribute" setting.  This is required to uniquely specify the primitive attribute.</p>
@@ -413,37 +413,37 @@ options include:
     <b>Int</b>
     <i>enum</i>
     
-    - beauty = 0 (default)
+    |  beauty = 0 (default) 
     
-    - alpha = 1
+    |  alpha = 1 
     
-    - depth = 2
+    |  depth = 2 
     
-    - state variable = 3
+    |  state variable = 3 
     
-    - primitive attribute = 4
+    |  primitive attribute = 4 
     
-    - time per pixel = 5
+    |  time per pixel = 5 
     
-    - wireframe = 6
+    |  wireframe = 6 
     
-    - material aov = 7
+    |  material aov = 7 
     
-    - light aov = 8
+    |  light aov = 8 
     
-    - visibility aov = 9
+    |  visibility aov = 9 
     
-    - variance aov = 10
+    |  variance aov = 10 
     
-    - weight = 11
+    |  weight = 11 
     
-    - beauty aux = 12
+    |  beauty aux = 12 
     
-    - cryptomatte = 13
+    |  cryptomatte = 13 
     
-    - alpha aux = 14
+    |  alpha aux = 14 
     
-    - display filter = 15
+    |  display filter = 15 
     
     
     <p>The result to output.  Available results: 
@@ -500,31 +500,31 @@ options include:
     <b>Int</b>
     <i>enum</i>
     
-    - P = 0
+    |  P = 0 
     
-    - Ng = 1
+    |  Ng = 1 
     
-    - N = 2 (default)
+    |  N = 2 (default) 
     
-    - St = 3
+    |  St = 3 
     
-    - dPds = 4
+    |  dPds = 4 
     
-    - dPdt = 5
+    |  dPdt = 5 
     
-    - dSdx = 6
+    |  dSdx = 6 
     
-    - dSdy = 7
+    |  dSdy = 7 
     
-    - dTdx = 8
+    |  dTdx = 8 
     
-    - dTdy = 9
+    |  dTdy = 9 
     
-    - Wp = 10
+    |  Wp = 10 
     
-    - depth = 11
+    |  depth = 11 
     
-    - motionvec = 12
+    |  motionvec = 12 
     
     
     <p>If "result" is "state variable", this attribute specifies the particular state variable result. 

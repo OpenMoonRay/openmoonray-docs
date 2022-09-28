@@ -29,9 +29,9 @@ title: LODMap
     <b>Int</b>
     <i>enum</i>
     
-    - feature width = 0 (default)
+    |  feature width = 0 (default) 
     
-    - camera distance = 1
+    |  camera distance = 1 
     
     
     <p>Use feature_width for LOD based on average, world-space feature-width visible in a pixel, correctly changing with resolution. Use camera_distance for LOD based on distance from render cam.</p>
