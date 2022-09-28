@@ -15,7 +15,7 @@ title: ImageMap
 
 <details open>
 <summary class="scene-class-attr-group">Blur attributes</summary>
-<br>
+<p>
 
 <h3>blur</h3>
 <b>Float</b>  *bindable*
@@ -41,12 +41,13 @@ default: 3
 This parameter is deprecated, do not use!  Number of internal samples for blur.   Higher values increase quality
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Color Correction attributes</summary>
-<br>
+<p>
 
 <h3>TMI</h3>
 <b>Vec3f</b>  
@@ -136,12 +137,13 @@ default: False
 <p class="scene-class-attr-missing">Documentation for the attribute <b>saturation_enabled</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>alpha_only</h3>
 <b>Bool</b>  
@@ -275,5 +277,6 @@ default: True
 <p class="scene-class-attr-missing">Documentation for the attribute <b>wrap_around</b> needs to be written</p>
 
 
+</p>
 </details>
 

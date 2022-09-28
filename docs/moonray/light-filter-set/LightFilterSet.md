@@ -15,7 +15,7 @@ title: LightFilterSet
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>lightfilters</h3>
 <b>Lightfilter Vector</b>  
@@ -25,5 +25,6 @@ default: []
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lightfilters</b> needs to be written</p>
 
 
+</p>
 </details>
 

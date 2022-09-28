@@ -15,7 +15,7 @@ title: ProjectCameraMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>black_outside_projection</h3>
 <b>Bool</b>  
@@ -89,5 +89,6 @@ default: -1.0
 minimum projected y coordinate
 
 
+</p>
 </details>
 

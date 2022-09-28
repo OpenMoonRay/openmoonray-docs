@@ -15,7 +15,7 @@ title: CombineNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
-<br>
+<p>
 
 <h3>input_1</h3>
 <b>33554432</b>  
@@ -49,5 +49,6 @@ default: 1.0
 Amount of normal map 2 to blend in
 
 
+</p>
 </details>
 

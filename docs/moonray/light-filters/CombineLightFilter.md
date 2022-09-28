@@ -15,7 +15,7 @@ title: CombineLightFilter
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>light_filters</h3>
 <b>Object Vector</b>  
@@ -50,5 +50,6 @@ default: True
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
+</p>
 </details>
 

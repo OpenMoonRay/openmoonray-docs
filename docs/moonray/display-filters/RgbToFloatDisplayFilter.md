@@ -15,7 +15,7 @@ title: RgbToFloatDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>invert_mask</h3>
 <b>Bool</b>  
@@ -33,12 +33,13 @@ default: 1.0
 blend between output and input
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>input</h3>
 <b>67141632</b>  
@@ -79,5 +80,6 @@ default: None
 specify the method to convert RGB Color to float
 
 
+</p>
 </details>
 

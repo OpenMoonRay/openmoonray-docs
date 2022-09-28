@@ -15,7 +15,7 @@ title: AxfMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
-<br>
+<p>
 
 <h3>input_normal_dial</h3>
 <b>Float</b>  
@@ -44,12 +44,13 @@ bind the 'Normal' texture here, the multiplier is ignored. The state's normal is
 Specifies what space the normal is given in.  Usually this is tangent space for texture maps and render space for projections
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>alpha</h3>
 <b>Float</b>  *bindable*
@@ -131,5 +132,6 @@ default: [ 1, 1 ]
 bind the 'SpecularLobe' texture here
 
 
+</p>
 </details>
 

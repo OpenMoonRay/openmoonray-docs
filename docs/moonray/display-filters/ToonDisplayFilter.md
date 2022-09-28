@@ -15,7 +15,7 @@ title: ToonDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>ambient</h3>
 <b>Rgb</b>  
@@ -112,5 +112,6 @@ default: 2
 Sets number of toon cels in diffuse shading
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: UsdTransform2d
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>in</h3>
 <b>Rgb</b>  *bindable*
@@ -49,5 +49,6 @@ default: [ 0, 0 ]
 Translation to be applied to all components of the data.
 
 
+</p>
 </details>
 

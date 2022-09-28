@@ -15,7 +15,7 @@ title: BoxGeometry
 
 <details open>
 <summary class="scene-class-attr-group">Quadric attributes</summary>
-<br>
+<p>
 
 <h3>size</h3>
 <b>Vec3f</b>  
@@ -25,12 +25,13 @@ default: [ 1, 1, 1 ]
 <p class="scene-class-attr-missing">Documentation for the attribute <b>size</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>label</h3>
 <b>String</b>  
@@ -193,5 +194,6 @@ default: True
 whether the geometry is visible in indirect volume rays
 
 
+</p>
 </details>
 

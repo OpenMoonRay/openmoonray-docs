@@ -15,7 +15,7 @@ title: ToonMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>crease_color</h3>
 <b>Rgb</b>  *bindable*
@@ -86,5 +86,6 @@ default: 0.0
 In most cases, the shader would trace an outline of a model well when this threshold is zero.
 
 
+</p>
 </details>
 

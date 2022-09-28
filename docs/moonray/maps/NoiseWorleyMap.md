@@ -15,7 +15,7 @@ title: NoiseWorleyMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>F1</h3>
 <b>Float</b>  *bindable*
@@ -309,5 +309,6 @@ default: False
 Put the noise value through a smoothstep function defined by min/max
 
 
+</p>
 </details>
 

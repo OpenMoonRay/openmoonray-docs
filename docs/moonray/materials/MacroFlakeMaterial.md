@@ -15,7 +15,7 @@ title: MacroFlakeMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
-<br>
+<p>
 
 <h3>input_normal</h3>
 <b>33554432</b>  
@@ -33,12 +33,13 @@ default: 1.0
 controls the amount of influence of the alternate normal
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Specular attributes</summary>
-<br>
+<p>
 
 <h3>metallic_color</h3>
 <b>Rgb</b>  *bindable*
@@ -64,12 +65,13 @@ default: 0.5
 the roughness of the surface (currently only affects reflection)
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>background_material</h3>
 <b>Material</b>  
@@ -152,5 +154,6 @@ The material's place in an order of precedence for overlapping dielectrics. A va
 Whether to block the underlying specular lobe where the mask is applied
 
 
+</p>
 </details>
 

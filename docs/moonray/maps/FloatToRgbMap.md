@@ -15,7 +15,7 @@ title: FloatToRgbMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>B</h3>
 <b>Float</b>  *bindable*
@@ -41,5 +41,6 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>R</b> needs to be written</p>
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: NormalDisplacement
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>bound_padding</h3>
 <b>Float</b>  
@@ -49,5 +49,6 @@ default: 0.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>zero_value</b> needs to be written</p>
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: ColorCorrectContrastMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>contrast</h3>
 <b>Float</b>  *bindable*
@@ -81,5 +81,6 @@ default: False
 enables separate RGB controls for contrast
 
 
+</p>
 </details>
 

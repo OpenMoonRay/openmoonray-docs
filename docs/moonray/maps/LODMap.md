@@ -15,7 +15,7 @@ title: LODMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>far_value</h3>
 <b>Rgb</b>  *bindable*
@@ -60,5 +60,6 @@ default: 0.10000000149
 feature_width/camera_distance at which to stop blending near_value->far_value
 
 
+</p>
 </details>
 

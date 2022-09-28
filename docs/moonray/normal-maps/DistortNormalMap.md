@@ -15,7 +15,7 @@ title: DistortNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">Space attributes</summary>
-<br>
+<p>
 
 <h3>input_texture_coordinates</h3>
 <b>Vec3f</b>  *bindable*
@@ -46,12 +46,13 @@ default: [ 0, 0, 0 ]
 The space to calculate the noise in
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>amplitude_U</h3>
 <b>Float</b>  
@@ -125,5 +126,6 @@ default: False
 when checked, use input_U and V. otherwise use geometry dPds/t
 
 
+</p>
 </details>
 

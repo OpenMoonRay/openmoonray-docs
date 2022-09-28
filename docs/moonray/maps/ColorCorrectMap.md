@@ -15,7 +15,7 @@ title: ColorCorrectMap
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>contrast_b</h3>
 <b>Float</b>  *bindable*
@@ -169,12 +169,13 @@ default: False
 enables separate RGB controls for saturation
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>TMI</h3>
 <b>Rgb</b>  *bindable*
@@ -328,5 +329,6 @@ default: True
 enables the saturation parameter
 
 
+</p>
 </details>
 

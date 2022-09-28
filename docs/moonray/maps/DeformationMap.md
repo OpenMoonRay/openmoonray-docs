@@ -15,7 +15,7 @@ title: DeformationMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>output_mode</h3>
 <b>Int</b>  *enum*
@@ -56,5 +56,6 @@ default: [ 1, 1, 1 ]
 Warning color to output when derivatives are missing or zero
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: RdlInstancerGeometry
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>disable_indices</h3>
 <b>IntVector</b>  
@@ -294,5 +294,6 @@ default: []
 A list of xforms that represent the per-instance xform.
 
 
+</p>
 </details>
 

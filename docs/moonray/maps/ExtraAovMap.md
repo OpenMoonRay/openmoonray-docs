@@ -15,7 +15,7 @@ title: ExtraAovMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>color</h3>
 <b>Rgb</b>  *bindable*
@@ -41,5 +41,6 @@ default: False
 If true, accumulate this aov when scattering off the surface as an indirect ray (after the LPE scatter transition event, after path throughput multiplication), rather than when the surface is first intersected.  The purpose of this setting is to efficiently capture information from all rays that leave a surface that could potentially intersect and trigger aov evaluation on other surfaces.
 
 
+</p>
 </details>
 

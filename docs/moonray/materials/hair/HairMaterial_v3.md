@@ -15,7 +15,7 @@ title: HairMaterial_v3
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>show_multiple_scattering</h3>
 <b>Bool</b>  
@@ -33,12 +33,13 @@ default: True
 optimized sampling of all the hair lobes, results in 2x-4x speedup on average (disables individual hair lobe AOVs). When false, the look may slightly change if using biased techniques like roughness/sample clamping. 
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
-<br>
+<p>
 
 <h3>casts_caustics</h3>
 <b>Bool</b>  
@@ -56,12 +57,13 @@ default: 1.0
 controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
-<br>
+<p>
 
 <h3>emission</h3>
 <b>Rgb</b>  *bindable*
@@ -79,12 +81,13 @@ default: False
 enables/disable emission
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Fresnel attributes</summary>
-<br>
+<p>
 
 <h3>cuticle_layer_thickness</h3>
 <b>Float</b>  *bindable*
@@ -115,12 +118,13 @@ default: 1.45000004768
 keep this value between [1.3,2.0] for realistic behavior (human hair is around 1.55)
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Primary Specular attributes</summary>
-<br>
+<p>
 
 <h3>primary_specular_offset</h3>
 <b>Float</b>  *bindable*
@@ -154,12 +158,13 @@ default: True
 show primary specular
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Secondary Specular attributes</summary>
-<br>
+<p>
 
 <h3>glint_eccentricity</h3>
 <b>Float</b>  *bindable*
@@ -249,12 +254,13 @@ default: False
 when disabled, uses a physically correct value for secondary specular roughness which is linked to the primary specular roughness
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Transmission attributes</summary>
-<br>
+<p>
 
 <h3>direct_transmission_saturation</h3>
 <b>Float</b>  *bindable*
@@ -312,12 +318,13 @@ default: False
 when disabled, uses a physically correct value for Transmission roughness which is linked to the primary specular roughness
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  
@@ -351,5 +358,6 @@ default: 0
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 
 
+</p>
 </details>
 

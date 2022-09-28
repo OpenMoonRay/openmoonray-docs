@@ -15,7 +15,7 @@ title: SwitchNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>choice</h3>
 <b>Float</b>  *bindable*
@@ -537,5 +537,6 @@ default: None
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input9</b> needs to be written</p>
 
 
+</p>
 </details>
 

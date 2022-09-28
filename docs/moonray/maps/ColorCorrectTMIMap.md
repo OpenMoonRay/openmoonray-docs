@@ -15,7 +15,7 @@ title: ColorCorrectTMIMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>TMI</h3>
 <b>Rgb</b>  *bindable*
@@ -49,5 +49,6 @@ default: True
 enables/disables all color correct operations
 
 
+</p>
 </details>
 

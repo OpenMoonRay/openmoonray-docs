@@ -15,7 +15,7 @@ title: CurvatureMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>invert</h3>
 <b>Bool</b>  
@@ -56,5 +56,6 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
 
 
+</p>
 </details>
 

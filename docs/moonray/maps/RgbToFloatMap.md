@@ -15,7 +15,7 @@ title: RgbToFloatMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>input</h3>
 <b>Rgb</b>  *bindable*
@@ -48,5 +48,6 @@ default: [ 1, 1, 1 ]
 specify the method to convert RGB Color to float
 
 
+</p>
 </details>
 

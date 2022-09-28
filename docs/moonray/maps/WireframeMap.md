@@ -15,7 +15,7 @@ title: WireframeMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>fill_color</h3>
 <b>Rgb</b>  
@@ -49,5 +49,6 @@ default: True
 <p class="scene-class-attr-missing">Documentation for the attribute <b>raster</b> needs to be written</p>
 
 
+</p>
 </details>
 

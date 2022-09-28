@@ -15,7 +15,7 @@ title: DwaAdjustMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Enable attributes</summary>
-<br>
+<p>
 
 <h3>adjust_color</h3>
 <b>Bool</b>  
@@ -49,12 +49,13 @@ default: True
 use specular adjustment attrs: specular_set, specular_set_blend, specular_mult
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Override attributes</summary>
-<br>
+<p>
 
 <h3>casts_caustics</h3>
 <b>Int</b>  *enum*
@@ -106,12 +107,13 @@ when checked, turn off all specular from input
 allows you to keep or set thin geometry attribute
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>emission</h3>
 <b>Rgb</b>  *bindable*
@@ -182,5 +184,6 @@ default: 0
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 
 
+</p>
 </details>
 

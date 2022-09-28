@@ -15,7 +15,7 @@ title: SceneVariables
 
 <details open>
 <summary class="scene-class-attr-group">Caching attributes</summary>
-<br>
+<p>
 
 <h3>fast_geometry_update</h3>
 <b>Bool</b>  
@@ -41,12 +41,13 @@ default: 24000
 maximum number of simultaneous open file handles
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Camera and Layer attributes</summary>
-<br>
+<p>
 
 <h3>camera</h3>
 <b>Camera</b>  
@@ -64,12 +65,13 @@ default: None
 <p class="scene-class-attr-missing">Documentation for the attribute <b>layer</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Checkpoint attributes</summary>
-<br>
+<p>
 
 <h3>checkpoint_active</h3>
 <b>Bool</b>  
@@ -186,12 +188,13 @@ default: 0
 Specify total number of checkpoint files for quality based checkpoint mode.This variable is a substitute parameter of checkpoint_quality_steps.If this value is 0 (= default), the checkpoint generation interval is controlled by checkpoint_quality_steps variable.If this value is 1 or bigger, checkpoint generation interval is calculated based on this value and the renderer tries to generate a user defined number of checkpoint files automatically.This option respects the checkpoint_start_sample variable.In some cases, the renderer might not create the requested checkpoint_total_files due to current limitation of internal implementation or user specified bigger than 1 for checkpoint_start_sample variable. However even in that case, the renderer tries to create the closest number of total checkpoint files which user defined number as checkpoint_total_files.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Debug attributes</summary>
-<br>
+<p>
 
 <h3>debug_console</h3>
 <b>Int</b>  
@@ -241,12 +244,13 @@ default: False
 Checks geometry for bad data
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Deep Images attributes</summary>
-<br>
+<p>
 
 <h3>deep_curvature_tolerance</h3>
 <b>Float</b>  
@@ -307,12 +311,13 @@ default: 2.0
 Maximum range of the deep surface's Z values within a pixel before it is split
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Driver attributes</summary>
-<br>
+<p>
 
 <h3>interactive_mode</h3>
 <b>Bool</b>  
@@ -381,12 +386,13 @@ default:
 Define temporary directory name for temporary file generation. Use $TMPDIR environment variable value if this variable is empty.If $TMPDIR is also empty, use /tmp
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Filtering attributes</summary>
-<br>
+<p>
 
 <h3>pixel_filter</h3>
 <b>Int</b>  *enum*
@@ -417,12 +423,13 @@ default: 0.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>texture_blur</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Fireflies Removal attributes</summary>
-<br>
+<p>
 
 <h3>roughness_clamping_factor</h3>
 <b>Float</b>  
@@ -448,12 +455,13 @@ default: 0.0
 clamp sample values to a maximum (disabled if 0.0). Warning: Using this technique is biased
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Frame attributes</summary>
-<br>
+<p>
 
 <h3>frame</h3>
 <b>Float</b>  
@@ -479,12 +487,13 @@ default: 0.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>min_frame</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Global Toggles attributes</summary>
-<br>
+<p>
 
 <h3>enable_displacement</h3>
 <b>Bool</b>  
@@ -583,12 +592,13 @@ turns on/off propagation for ray visibility masks
 Attempt to soften hard shadow terminator boundaries due to shading/geometric normal deviations.  "ON uses a custom terminator softening method. Cosine Compensation" is Chiang's 2019 SIGGRAPH technique.  "GGX" is Estevez's raytracing gems technique.  "Sine Compensation" is a sine based modification of Chiang's method. Different scenes may work better with different techniques.  The recommendation is to start with the custom compensation ON, then sine compensation technique, then GGX, then cosine.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Image Size attributes</summary>
-<br>
+<p>
 
 <h3>aperture_window</h3>
 <b>IntVector</b>  
@@ -638,12 +648,13 @@ default: <scene_rdl2.__scene_rdl2__.IntVector object at >
 Subviewport of region window. Coordinate (0,0) maps to left, bottom of region window
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Logging attributes</summary>
-<br>
+<p>
 
 <h3>athena_debug</h3>
 <b>Bool</b>  
@@ -701,12 +712,13 @@ default: True
 <p class="scene-class-attr-missing">Documentation for the attribute <b>warning</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Metadata attributes</summary>
-<br>
+<p>
 
 <h3>exr_header_attributes</h3>
 <b>Metadata</b>  
@@ -716,12 +728,13 @@ default: None
 Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Motion and Scale attributes</summary>
-<br>
+<p>
 
 <h3>motion_steps</h3>
 <b>FloatVector</b>  
@@ -739,12 +752,13 @@ default: 0.00999999977648
 (in meters): one unit in world space = 'scene scale' meters
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Path Guide attributes</summary>
-<br>
+<p>
 
 <h3>path_guide_enable</h3>
 <b>Bool</b>  
@@ -754,12 +768,13 @@ default: False
 Turn on path guiding to handle difficult light transport problems (e.g. caustics) at the cost of increased memory
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Resume Render attributes</summary>
-<br>
+<p>
 
 <h3>on_resume_script</h3>
 <b>String</b>  
@@ -785,12 +800,13 @@ default: False
 resuming render process
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Sampling attributes</summary>
-<br>
+<p>
 
 <h3>bsdf_sampler_strategy</h3>
 <b>Int</b>  *enum*
@@ -933,12 +949,13 @@ default: 1.0
 Defines at which point the accumulated opacity can be considered as opaque, skipping generation of new transparency rays.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Volumes attributes</summary>
-<br>
+<p>
 
 <h3>max_volume_depth</h3>
 <b>Int</b>  
@@ -1025,12 +1042,13 @@ default: 1.0
 Controls the quality of volume shadow (transmittance). The higher number gives more accurate volume shadow.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>batch_tile_order</h3>
 <b>Int</b>  *enum*
@@ -1152,5 +1170,6 @@ default: True
 Selection of image file write uses two stage output logic or not. Two stage output (=true: default) is that the image file is written out to temporary file location first and copy/rename next. This solution greatly reduces the risk of output data collapsing from unexpected render process termination for both of final output and checkpoint output. Temporary file directory is defined by tmp_dir scene_variable.
 
 
+</p>
 </details>
 

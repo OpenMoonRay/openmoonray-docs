@@ -15,7 +15,7 @@ title: HairDiffuseMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>back_hair_color</h3>
 <b>Rgb</b>  *bindable*
@@ -49,12 +49,13 @@ default: False
 (advanced) use a separate hair color for front and back
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
-<br>
+<p>
 
 <h3>casts_caustics</h3>
 <b>Bool</b>  
@@ -72,12 +73,13 @@ default: 1.0
 controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
-<br>
+<p>
 
 <h3>emission</h3>
 <b>Rgb</b>  *bindable*
@@ -95,12 +97,13 @@ default: False
 enables/disable emission
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Subsurface attributes</summary>
-<br>
+<p>
 
 <h3>bssrdf</h3>
 <b>Int</b>  *enum*
@@ -161,12 +164,13 @@ default: 1.0
 0 is fully hair diffuse, 1 is fully SSS. No effect if scattering radius is 0.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  
@@ -200,5 +204,6 @@ default: 0
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 
 
+</p>
 </details>
 

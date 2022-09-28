@@ -15,7 +15,7 @@ title: VdbGeometry
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>density_grid</h3>
 <b>String</b>  
@@ -247,5 +247,6 @@ default: True
 whether the geometry is visible in indirect volume rays
 
 
+</p>
 </details>
 

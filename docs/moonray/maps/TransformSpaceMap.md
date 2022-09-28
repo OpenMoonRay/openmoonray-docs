@@ -15,7 +15,7 @@ title: TransformSpaceMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>camera</h3>
 <b>Camera</b>  
@@ -164,5 +164,6 @@ default: -1.0
 minimum projected y coordinate
 
 
+</p>
 </details>
 

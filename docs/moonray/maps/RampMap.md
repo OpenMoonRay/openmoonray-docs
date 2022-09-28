@@ -15,7 +15,7 @@ title: RampMap
 
 <details open>
 <summary class="scene-class-attr-group">Additional properties attributes</summary>
-<br>
+<p>
 
 <h3>input_texture_coordinates</h3>
 <b>Vec3f</b>  *bindable*
@@ -52,12 +52,13 @@ Creates waves which perturb the ramp pattern
 <p class="scene-class-attr-missing">Documentation for the attribute <b>wrap_type</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
-<br>
+<p>
 
 <h3>colors</h3>
 <b>RgbVector</b>  
@@ -85,12 +86,13 @@ default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
 Color ramp
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Ramp properties attributes</summary>
-<br>
+<p>
 
 <h3>camera</h3>
 <b>Camera</b>  
@@ -175,12 +177,13 @@ default: None
 Only applies when 'texture coordinates' is set to 'default state coordinates'
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>texture_coordinates</h3>
 <b>Int</b>  *enum*
@@ -193,5 +196,6 @@ Only applies when 'texture coordinates' is set to 'default state coordinates'
 <p class="scene-class-attr-missing">Documentation for the attribute <b>texture_coordinates</b> needs to be written</p>
 
 
+</p>
 </details>
 

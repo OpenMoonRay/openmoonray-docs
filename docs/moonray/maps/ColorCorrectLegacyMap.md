@@ -15,7 +15,7 @@ title: ColorCorrectLegacyMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>brightness</h3>
 <b>Float</b>  
@@ -120,5 +120,6 @@ default: 0.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
 
 
+</p>
 </details>
 

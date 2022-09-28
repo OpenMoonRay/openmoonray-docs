@@ -15,7 +15,7 @@ title: DebugMap
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
-<br>
+<p>
 
 <h3>input_normal_space</h3>
 <b>Int</b>  *enum*
@@ -28,12 +28,13 @@ title: DebugMap
 Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Primitive Attribute attributes</summary>
-<br>
+<p>
 
 <h3>primitive_attribute_name</h3>
 <b>String</b>  
@@ -58,12 +59,13 @@ the name of primitive attribute to displayed when attribute 'map type' is set to
 the type of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>checkerboard</h3>
 <b>Bool</b>  
@@ -110,5 +112,6 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>map_type</b> needs to be written</p>
 
 
+</p>
 </details>
 

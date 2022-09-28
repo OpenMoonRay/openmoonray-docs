@@ -15,7 +15,7 @@ title: CookieLightFilter
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
-<br>
+<p>
 
 <h3>blur_far_distance</h3>
 <b>Float</b>  
@@ -121,12 +121,13 @@ default: None
 <p class="scene-class-attr-missing">Documentation for the attribute <b>texture_map</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>node_xform</h3>
 <b>Mat4d</b>  *blurrable*
@@ -179,5 +180,6 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>projector_type</b> needs to be written</p>
 
 
+</p>
 </details>
 

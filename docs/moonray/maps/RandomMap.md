@@ -15,7 +15,7 @@ title: RandomMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>input</h3>
 <b>Rgb</b>  *bindable*
@@ -57,5 +57,6 @@ default: 0
 additional seed added to input for random number generator
 
 
+</p>
 </details>
 

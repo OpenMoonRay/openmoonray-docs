@@ -15,7 +15,7 @@ title: RdlCurveGeometry
 
 <details open>
 <summary class="scene-class-attr-group">Curve attributes</summary>
-<br>
+<p>
 
 <h3>tessellation_rate</h3>
 <b>Int</b>  
@@ -25,12 +25,13 @@ default: 4
 Number of segments to split curve spans into
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>accleration_list</h3>
 <b>Vec3fVector</b>  
@@ -381,5 +382,6 @@ default: True
 whether the geometry is visible in indirect volume rays
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: LayerMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>input_A</h3>
 <b>Rgb</b>  *bindable*
@@ -80,5 +80,6 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mode</b> needs to be written</p>
 
 
+</p>
 </details>
 

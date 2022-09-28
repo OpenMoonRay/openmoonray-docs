@@ -15,7 +15,7 @@ title: NoiseWorleyMap_v2
 
 <details open>
 <summary class="scene-class-attr-group">Adjustment attributes</summary>
-<br>
+<p>
 
 <h3>bias</h3>
 <b>Float</b>  *bindable*
@@ -73,12 +73,13 @@ default: False
 Put the noise value through a smoothstep function defined by min/max
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>F1</h3>
 <b>Float</b>  *bindable*
@@ -127,12 +128,13 @@ Influence of F4 (the fourth closest feature point)
 Which of the distances determines the cell id
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Output attributes</summary>
-<br>
+<p>
 
 <h3>distance_method</h3>
 <b>Int</b>  *enum*
@@ -178,12 +180,13 @@ Exponent on distances when distance method is set to Minkowski
 Method by which the shader outputs a color.  Distance uses F1..F4 interpolated between color A and color B, gradient outputs the gradient of the noise, and cell ID outputs a random color for each cell
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Space attributes</summary>
-<br>
+<p>
 
 <h3>camera</h3>
 <b>Camera</b>  
@@ -236,12 +239,13 @@ Directly connect object to use that object's space.
 The space to calculate the noise in
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Transform attributes</summary>
-<br>
+<p>
 
 <h3>rotation</h3>
 <b>Vec3f</b>  *bindable*
@@ -305,12 +309,13 @@ default: [ 0, 0, 0 ]
 Translation of the noise in space
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>color_A</h3>
 <b>Rgb</b>  *bindable*
@@ -360,5 +365,6 @@ default: 0
 The seed for the random number generator
 
 
+</p>
 </details>
 

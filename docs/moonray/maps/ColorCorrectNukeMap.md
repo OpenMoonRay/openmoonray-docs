@@ -15,7 +15,7 @@ title: ColorCorrectNukeMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>TMI</h3>
 <b>Vec3f</b>  
@@ -113,5 +113,6 @@ default: False
 <p class="scene-class-attr-missing">Documentation for the attribute <b>saturation_enabled</b> needs to be written</p>
 
 
+</p>
 </details>
 

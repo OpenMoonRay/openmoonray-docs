@@ -15,7 +15,7 @@ title: Metadata
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>name</h3>
 <b>StringVector</b>  
@@ -67,5 +67,6 @@ default: []
 <p class="scene-class-attr-missing">Documentation for the attribute <b>value</b> needs to be written</p>
 
 
+</p>
 </details>
 

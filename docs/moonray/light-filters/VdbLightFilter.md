@@ -15,7 +15,7 @@ title: VdbLightFilter
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
-<br>
+<p>
 
 <h3>blur_type</h3>
 <b>Int</b>  *enum*
@@ -145,12 +145,13 @@ default:
 Supply the path to the vdb
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>node_xform</h3>
 <b>Mat4d</b>  *blurrable*
@@ -168,5 +169,6 @@ default: True
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
+</p>
 </details>
 

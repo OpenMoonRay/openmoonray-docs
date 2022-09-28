@@ -15,7 +15,7 @@ title: RodLightFilter
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
-<br>
+<p>
 
 <h3>color</h3>
 <b>Rgb</b>  
@@ -121,12 +121,13 @@ default: 1.0
 width of the base box (before radius and edge)
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>on</h3>
 <b>Bool</b>  
@@ -136,5 +137,6 @@ default: True
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
+</p>
 </details>
 

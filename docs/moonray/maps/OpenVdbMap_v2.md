@@ -15,7 +15,7 @@ title: OpenVdbMap_v2
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>show_active_field</h3>
 <b>Bool</b>  
@@ -25,12 +25,13 @@ default: False
 When enabled active/inactive field locations will be white/black, respectively
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>default_value</h3>
 <b>Rgb</b>  
@@ -117,5 +118,6 @@ Which coordinate source to use for the texture lookup
 Where to look for the vdb filename.  Choose 'from texture' to specify a .vdb filename directly via the 'texture' attribute.  Choose 'from OpenVdbGeometry' to use the .vdb filename and transform from an OpenVdbGeometry object in the scene using the 'openvdb geometry' attribute
 
 
+</p>
 </details>
 

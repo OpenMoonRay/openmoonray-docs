@@ -15,7 +15,7 @@ title: HairColorCorrectMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Hue/Sat/Gain attributes</summary>
-<br>
+<p>
 
 <h3>gain</h3>
 <b>Float</b>  *bindable*
@@ -41,12 +41,13 @@ default: 1.0
 desaturates the input below 1.0 and adds saturation above 1.0
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">TMI attributes</summary>
-<br>
+<p>
 
 <h3>TMI</h3>
 <b>Rgb</b>  
@@ -64,12 +65,13 @@ default: False
 enables the TMI parameters
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  
@@ -119,5 +121,6 @@ default: 0
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 
 
+</p>
 </details>
 

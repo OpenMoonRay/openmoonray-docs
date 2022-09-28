@@ -15,7 +15,7 @@ title: HairMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>base_color</h3>
 <b>Rgb</b>  *bindable*
@@ -57,5 +57,6 @@ default: [ 1, 1, 1 ]
 <p class="scene-class-attr-missing">Documentation for the attribute <b>tip_color</b> needs to be written</p>
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: ProjectTriplanarUdimMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>TRS_order</h3>
 <b>Int</b>  *enum*
@@ -220,5 +220,6 @@ default: [ 1, 1 ]
 2D scale for z projected map
 
 
+</p>
 </details>
 

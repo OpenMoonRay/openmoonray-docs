@@ -15,7 +15,7 @@ title: UsdUVTexture
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>bias</h3>
 <b>Rgb</b>  
@@ -128,5 +128,6 @@ Wrap mode when reading this texture.
 Wrap mode when reading this texture.
 
 
+</p>
 </details>
 

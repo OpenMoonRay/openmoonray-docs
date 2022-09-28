@@ -15,7 +15,7 @@ title: ColorRampLightFilter
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
-<br>
+<p>
 
 <h3>begin_distance</h3>
 <b>Float</b>  
@@ -103,12 +103,13 @@ default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 For directional filter mode where filter uses distance along -Z axis.  Extend: f(z) = f(0) for z > 0.  Mirror: f(z) = f(-z).
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>on</h3>
 <b>Bool</b>  
@@ -126,5 +127,6 @@ default: False
 <p class="scene-class-attr-missing">Documentation for the attribute <b>use_xform</b> needs to be written</p>
 
 
+</p>
 </details>
 

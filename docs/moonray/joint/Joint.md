@@ -15,7 +15,7 @@ title: Joint
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>node_xform</h3>
 <b>Mat4d</b>  *blurrable*
@@ -25,5 +25,6 @@ default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
+</p>
 </details>
 

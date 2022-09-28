@@ -15,7 +15,7 @@ title: MeasuredMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
-<br>
+<p>
 
 <h3>diffuse</h3>
 <b>Bool</b>  
@@ -65,12 +65,13 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_saturation</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Specular attributes</summary>
-<br>
+<p>
 
 <h3>specular</h3>
 <b>Bool</b>  
@@ -120,12 +121,13 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>specular_saturation</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>anisotropic_direction</h3>
 <b>Vec2f</b>  
@@ -191,5 +193,6 @@ default: 0
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 
 
+</p>
 </details>
 

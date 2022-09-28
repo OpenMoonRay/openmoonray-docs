@@ -15,7 +15,7 @@ title: OverDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>alpha</h3>
 <b>67141632</b>  
@@ -57,5 +57,6 @@ default: 1.0
 blend between output and input
 
 
+</p>
 </details>
 

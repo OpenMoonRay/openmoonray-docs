@@ -15,7 +15,7 @@ title: DomeMaster3DCamera
 
 <details open>
 <summary class="scene-class-attr-group">Frustum attributes</summary>
-<br>
+<p>
 
 <h3>far</h3>
 <b>Float</b>  
@@ -33,12 +33,13 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>near</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Motion Blur attributes</summary>
-<br>
+<p>
 
 <h3>mb_shutter_bias</h3>
 <b>Float</b>  
@@ -64,12 +65,13 @@ default: -0.25
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Render Masks attributes</summary>
-<br>
+<p>
 
 <h3>pixel_sample_map</h3>
 <b>String</b>  
@@ -79,12 +81,13 @@ default:
 <p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Stereo attributes</summary>
-<br>
+<p>
 
 <h3>head_tilt_map</h3>
 <b>Float</b>  
@@ -139,12 +142,13 @@ default: False
 <p class="scene-class-attr-missing">Documentation for the attribute <b>zenith_mode</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>FOV_horizontal_angle</h3>
 <b>Float</b>  
@@ -186,5 +190,6 @@ default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
+</p>
 </details>
 

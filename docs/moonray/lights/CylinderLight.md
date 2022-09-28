@@ -15,7 +15,7 @@ title: CylinderLight
 
 <details open>
 <summary class="scene-class-attr-group">Map attributes</summary>
-<br>
+<p>
 
 <h3>contrast</h3>
 <b>Rgb</b>  
@@ -137,12 +137,13 @@ default: [ 0, 0 ]
 Translations in (u,v) expressed as fractions of the unscaled texture space
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
-<br>
+<p>
 
 <h3>apply_scene_scale</h3>
 <b>Bool</b>  
@@ -323,12 +324,13 @@ Is light used for ray termination color? Ray termination color is used for filli
 <p class="scene-class-attr-missing">Documentation for the attribute <b>visible_in_camera</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Visibility Flags attributes</summary>
-<br>
+<p>
 
 <h3>visible_diffuse_reflection</h3>
 <b>Bool</b>  
@@ -378,12 +380,13 @@ default: True
 whether the light is visible in miror transmission (refraction).
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>light_filters</h3>
 <b>Object Vector</b>  
@@ -401,5 +404,6 @@ default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: ConvolutionDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>invert_mask</h3>
 <b>Bool</b>  
@@ -33,12 +33,13 @@ default: 1.0
 blend between output and input
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>custom_kernel</h3>
 <b>FloatVector</b>  
@@ -85,5 +86,6 @@ default: None
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
+</p>
 </details>
 

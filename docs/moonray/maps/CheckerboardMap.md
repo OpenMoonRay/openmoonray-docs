@@ -15,7 +15,7 @@ title: CheckerboardMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>color_A</h3>
 <b>Rgb</b>  
@@ -68,5 +68,6 @@ number of checkerboard squares in the V direction
 switches between the model's uv coordinates or the input texture coordinates
 
 
+</p>
 </details>
 

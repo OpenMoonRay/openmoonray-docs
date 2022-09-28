@@ -15,7 +15,7 @@ title: GlitterFlakeMaterial_v2
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>approximate_glitter_for_secondary_rays</h3>
 <b>Bool</b>  
@@ -60,12 +60,13 @@ default: 1.0
 use this to control where glitter appears
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Appearance attributes</summary>
-<br>
+<p>
 
 <h3>decouple_flake_size</h3>
 <b>Bool</b>  
@@ -171,12 +172,13 @@ default: False
 use textured glitter flakes
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
-<br>
+<p>
 
 <h3>presence</h3>
 <b>Float</b>  *bindable*
@@ -186,12 +188,13 @@ default: 1.0
 controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Flake Generation attributes</summary>
-<br>
+<p>
 
 <h3>compensate_reference_space_deformation</h3>
 <b>Bool</b>  
@@ -220,12 +223,13 @@ The seed for the random number generator
 The space to calculate the noise in, defaults to reference space
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Glitter A Appearance attributes</summary>
-<br>
+<p>
 
 <h3>flake_color_A</h3>
 <b>Rgb</b>  *bindable*
@@ -259,12 +263,13 @@ default: 1.0
 0 implies none of this style, 1 implies all the flakes will get this style
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Glitter B Appearance attributes</summary>
-<br>
+<p>
 
 <h3>flake_color_B</h3>
 <b>Rgb</b>  *bindable*
@@ -298,12 +303,13 @@ default: 0.0
 0 implies none of this style, 1 implies all the flakes will get this style
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Layering attributes</summary>
-<br>
+<p>
 
 <h3>layering_mode</h3>
 <b>Int</b>  *enum*
@@ -324,12 +330,13 @@ default: None
 material that fills the gaps between glitter flakes
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  
@@ -355,5 +362,6 @@ default: 0
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 
 
+</p>
 </details>
 

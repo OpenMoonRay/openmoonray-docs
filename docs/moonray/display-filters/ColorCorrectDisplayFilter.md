@@ -15,7 +15,7 @@ title: ColorCorrectDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>invert_mask</h3>
 <b>Bool</b>  
@@ -33,12 +33,13 @@ default: 1.0
 blend between output and input
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>contrast</h3>
 <b>Float</b>  
@@ -104,5 +105,6 @@ default: 1.0
 Desaturates input below 1.0 and adds saturation above 1.0
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: RenderOutput
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>active</h3>
 <b>Bool</b>  
@@ -539,5 +539,6 @@ default: C[<T.><RS>]*[<R[DG]><TD>][LO]
 If "result" is "visibility aov", this attribute specifies a light path expression that defines the set of all paths usedto compute the visibility ratio.
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: AttributeMap
 
 <details open>
 <summary class="scene-class-attr-group">Primitive Attribute attributes</summary>
-<br>
+<p>
 
 <h3>primitive_attribute_name</h3>
 <b>String</b>  
@@ -42,12 +42,13 @@ the name of primitive attribute to display when attribute 'map type' is set to '
 the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>color</h3>
 <b>Rgb</b>  *bindable*
@@ -116,5 +117,6 @@ default: False
 Whether or not to issue a warning when the requested attribute is unavailable
 
 
+</p>
 </details>
 

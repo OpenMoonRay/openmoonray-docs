@@ -15,7 +15,7 @@ title: LcToRgbMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>input_color</h3>
 <b>Rgb</b>  *bindable*
@@ -33,5 +33,6 @@ default: [ 100, 0, 0 ]
 Target color for remapping, in LAB colorspace
 
 
+</p>
 </details>
 

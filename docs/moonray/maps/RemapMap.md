@@ -15,7 +15,7 @@ title: RemapMap
 
 <details open>
 <summary class="scene-class-attr-group">Channel attributes</summary>
-<br>
+<p>
 
 <h3>clamp_max_RGB</h3>
 <b>Rgb</b>  
@@ -73,12 +73,13 @@ default: [ 0, 0, 0 ]
 the value that 'input min' is remapped to
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>clamp</h3>
 <b>Bool</b>  
@@ -171,5 +172,6 @@ the value that 'input min' is remapped to
 Choose whether you are remapping using single values (uniform) or with separate RGB channels
 
 
+</p>
 </details>
 

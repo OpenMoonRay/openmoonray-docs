@@ -15,7 +15,7 @@ title: ColorCorrectHsvMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>clamp</h3>
 <b>Bool</b>  
@@ -97,5 +97,6 @@ default: 0.0
 shifts the value of the input (-1, 1)
 
 
+</p>
 </details>
 

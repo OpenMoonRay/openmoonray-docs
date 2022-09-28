@@ -15,7 +15,7 @@ title: UVTransformMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>offset</h3>
 <b>Vec2f</b>  
@@ -78,5 +78,6 @@ default: [ 1, 1 ]
 <p class="scene-class-attr-missing">Documentation for the attribute <b>space</b> needs to be written</p>
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: ListMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>map0</h3>
 <b>Map</b>  
@@ -177,5 +177,6 @@ default: None
 Map object reference
 
 
+</p>
 </details>
 

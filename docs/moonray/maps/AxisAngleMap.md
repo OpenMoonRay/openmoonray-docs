@@ -15,7 +15,7 @@ title: AxisAngleMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>angle</h3>
 <b>Float</b>  *bindable*
@@ -86,5 +86,6 @@ default: [ 0, 1, 0 ]
 axis to be rotated around
 
 
+</p>
 </details>
 

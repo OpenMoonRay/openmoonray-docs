@@ -15,7 +15,7 @@ title: ClampMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>clamp</h3>
 <b>Bool</b>  
@@ -49,5 +49,6 @@ default: [ 1, 1, 1 ]
 the input values to be remapped
 
 
+</p>
 </details>
 

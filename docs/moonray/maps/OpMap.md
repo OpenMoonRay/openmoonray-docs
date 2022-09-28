@@ -15,7 +15,7 @@ title: OpMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>clamp</h3>
 <b>Bool</b>  
@@ -142,5 +142,6 @@ a scalar multiplier on op2
 <p class="scene-class-attr-missing">Documentation for the attribute <b>operation</b> needs to be written</p>
 
 
+</p>
 </details>
 

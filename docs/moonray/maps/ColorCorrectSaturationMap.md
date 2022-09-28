@@ -15,7 +15,7 @@ title: ColorCorrectSaturationMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>input</h3>
 <b>Rgb</b>  *bindable*
@@ -81,5 +81,6 @@ default: False
 enables separate RGB controls for saturation
 
 
+</p>
 </details>
 

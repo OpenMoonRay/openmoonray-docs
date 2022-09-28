@@ -15,7 +15,7 @@ title: SphereGeometry
 
 <details open>
 <summary class="scene-class-attr-group">Quadric attributes</summary>
-<br>
+<p>
 
 <h3>phi_max</h3>
 <b>Float</b>  
@@ -49,12 +49,13 @@ default: -1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>zmin</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>label</h3>
 <b>String</b>  
@@ -217,5 +218,6 @@ default: True
 whether the geometry is visible in indirect volume rays
 
 
+</p>
 </details>
 

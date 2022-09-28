@@ -15,7 +15,7 @@ title: DwaToonMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>prevent_light_culling</h3>
 <b>Bool</b>  
@@ -41,12 +41,13 @@ default: None
 Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Clearcoat attributes</summary>
-<br>
+<p>
 
 <h3>clearcoat</h3>
 <b>Float</b>  *bindable*
@@ -139,12 +140,13 @@ default: False
 specifies whether the clearcoat lobe should use an independent normal
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
-<br>
+<p>
 
 <h3>casts_caustics</h3>
 <b>Bool</b>  
@@ -170,12 +172,13 @@ default: False
 enables proper shading of infinitely thin geometry such as paper or leaves.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
-<br>
+<p>
 
 <h3>albedo</h3>
 <b>Rgb</b>  *bindable*
@@ -502,12 +505,13 @@ default: 0.0500000007451
 Controls how the diffuse ligthing falls off.  Values greater than 0.0 shift the falloff point closer to the light source and values less than 0.0 shift the falloff point further away
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
-<br>
+<p>
 
 <h3>emission</h3>
 <b>Rgb</b>  *bindable*
@@ -525,12 +529,13 @@ default: False
 enables/disable emission
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Fuzz attributes</summary>
-<br>
+<p>
 
 <h3>fuzz</h3>
 <b>Float</b>  *bindable*
@@ -588,12 +593,13 @@ default: False
 Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Glitter attributes</summary>
-<br>
+<p>
 
 <h3>glitter</h3>
 <b>Float</b>  *bindable*
@@ -820,12 +826,13 @@ default: False
 Enables/disables glitter lobes
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Iridescence attributes</summary>
-<br>
+<p>
 
 <h3>iridescence</h3>
 <b>Float</b>  *bindable*
@@ -950,12 +957,13 @@ default: 1.0
 Controls how much the color spectrum is repeated
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
-<br>
+<p>
 
 <h3>input_normal</h3>
 <b>33554432</b>  
@@ -973,12 +981,13 @@ default: 1.0
 controls the amount of influence of the alternate normal
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Normal Anti-aliasing attributes</summary>
-<br>
+<p>
 
 <h3>normal_AA_dial</h3>
 <b>Float</b>  
@@ -999,12 +1008,13 @@ Controls the amount roughness compensation from the normal map AA strategy.
 Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Specular attributes</summary>
-<br>
+<p>
 
 <h3>anisotropy</h3>
 <b>Float</b>  *bindable*
@@ -1213,12 +1223,13 @@ default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
 List of colors on the ramp
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Transmission attributes</summary>
-<br>
+<p>
 
 <h3>dispersion_abbe_number</h3>
 <b>Float</b>  
@@ -1292,12 +1303,13 @@ default: False
 use a separate roughness for transmission
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  
@@ -1323,5 +1335,6 @@ default: 0
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 
 
+</p>
 </details>
 

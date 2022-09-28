@@ -15,7 +15,7 @@ title: DwaFabricMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
-<br>
+<p>
 
 <h3>casts_caustics</h3>
 <b>Bool</b>  
@@ -41,12 +41,13 @@ default: False
 enables proper shading of infinitely thin geometry such as paper or leaves.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
-<br>
+<p>
 
 <h3>albedo</h3>
 <b>Rgb</b>  *bindable*
@@ -107,12 +108,13 @@ default: True
 enables/disables diffuse reflectance
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
-<br>
+<p>
 
 <h3>emission</h3>
 <b>Rgb</b>  *bindable*
@@ -130,12 +132,13 @@ default: False
 enables/disable emission
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Fabric attributes</summary>
-<br>
+<p>
 
 <h3>show_specular</h3>
 <b>Bool</b>  
@@ -193,12 +196,13 @@ default: 0.75
 Roughness of the fabric specular highlights from the weft threads.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Fuzz attributes</summary>
-<br>
+<p>
 
 <h3>fuzz</h3>
 <b>Float</b>  *bindable*
@@ -256,12 +260,13 @@ default: False
 Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Glitter attributes</summary>
-<br>
+<p>
 
 <h3>glitter</h3>
 <b>Float</b>  *bindable*
@@ -488,12 +493,13 @@ default: False
 Enables/disables glitter lobes
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
-<br>
+<p>
 
 <h3>input_normal</h3>
 <b>33554432</b>  
@@ -511,12 +517,13 @@ default: 1.0
 controls the amount of influence of the alternate normal
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Threads attributes</summary>
-<br>
+<p>
 
 <h3>warp_thread_coverage</h3>
 <b>Float</b>  
@@ -542,12 +549,13 @@ default: 0.0
 This attribute can be used to 'elevate/rotate' the threads from their default direction. When laying flat on the surface (thread_direction.z=0), a value around 45 works well for 'silky' looks. Range - -90, +90. When threads are upright (thread_direction.z=1), this attribute can be used to 'dishevel' the threads and create a 'velvety' look (see wiki).
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  
@@ -573,5 +581,6 @@ default: 0
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 
 
+</p>
 </details>
 

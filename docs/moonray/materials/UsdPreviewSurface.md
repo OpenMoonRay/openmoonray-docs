@@ -15,7 +15,7 @@ title: UsdPreviewSurface
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>clearcoat</h3>
 <b>Float</b>  *bindable*
@@ -156,5 +156,6 @@ Specular color to be used. This is the color at 0 incidence. Edge color is assum
 This node can fundamentally operate in two modes : Specular workflow where you provide a texture/value to the 'specularColor' input. Or, Metallic workflow where you provide a texture/value to the 'metallic' input.
 
 
+</p>
 </details>
 

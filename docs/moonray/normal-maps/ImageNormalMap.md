@@ -15,7 +15,7 @@ title: ImageNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">UVs attributes</summary>
-<br>
+<p>
 
 <h3>offset</h3>
 <b>Vec2f</b>  
@@ -73,12 +73,13 @@ default: <scene_rdl2.__scene_rdl2__.IntVector object at >
 <p class="scene-class-attr-missing">Documentation for the attribute <b>udim_values</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>default_value</h3>
 <b>Vec3f</b>  
@@ -142,5 +143,6 @@ default: True
 Controls whether to repeat (true) or clamp (false) the texture
 
 
+</p>
 </details>
 

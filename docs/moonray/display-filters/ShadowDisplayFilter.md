@@ -15,7 +15,7 @@ title: ShadowDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>density</h3>
 <b>Float</b>  
@@ -49,5 +49,6 @@ default: None
 Image Buffer representing the unoccluded image
 
 
+</p>
 </details>
 

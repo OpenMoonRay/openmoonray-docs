@@ -15,7 +15,7 @@ title: ProjectCameraMap_v2
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>alpha_only</h3>
 <b>Bool</b>  
@@ -105,5 +105,6 @@ default: False
 use reference space
 
 
+</p>
 </details>
 

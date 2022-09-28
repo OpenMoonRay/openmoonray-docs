@@ -15,7 +15,7 @@ title: RdlMeshGeometry
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>accleration_list</h3>
 <b>Vec3fVector</b>  
@@ -476,5 +476,6 @@ default: True
 whether the geometry is visible in indirect volume rays
 
 
+</p>
 </details>
 

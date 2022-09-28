@@ -15,7 +15,7 @@ title: SwitchDisplacement
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>bound_padding</h3>
 <b>Float</b>  
@@ -545,5 +545,6 @@ default: None
 <p class="scene-class-attr-missing">Documentation for the attribute <b>displacement9</b> needs to be written</p>
 
 
+</p>
 </details>
 

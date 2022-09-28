@@ -15,7 +15,7 @@ title: BaseMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
-<br>
+<p>
 
 <h3>diffuse</h3>
 <b>Bool</b>  
@@ -41,12 +41,13 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_factor</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Directional Diffuse attributes</summary>
-<br>
+<p>
 
 <h3>directional_diffuse</h3>
 <b>Bool</b>  
@@ -80,12 +81,13 @@ default: 0.5
 <p class="scene-class-attr-missing">Documentation for the attribute <b>directional_diffuse_roughness</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
-<br>
+<p>
 
 <h3>emission</h3>
 <b>Bool</b>  
@@ -111,12 +113,13 @@ default: 0.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>emission_factor</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Iridescence attributes</summary>
-<br>
+<p>
 
 <h3>iridescence</h3>
 <b>Bool</b>  
@@ -182,12 +185,13 @@ default: 1.0
 Controls how much the color spectrum is repeated
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
-<br>
+<p>
 
 <h3>input_normal_space</h3>
 <b>Int</b>  *enum*
@@ -200,12 +204,13 @@ Controls how much the color spectrum is repeated
 Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Opacity attributes</summary>
-<br>
+<p>
 
 <h3>opacity</h3>
 <b>Bool</b>  
@@ -223,12 +228,13 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>opacity_factor</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Specular attributes</summary>
-<br>
+<p>
 
 <h3>retroreflectivity</h3>
 <b>Float</b>  *bindable*
@@ -270,12 +276,13 @@ default: 0.300000011921
 <p class="scene-class-attr-missing">Documentation for the attribute <b>specular_roughness</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Translucency attributes</summary>
-<br>
+<p>
 
 <h3>translucency</h3>
 <b>Bool</b>  
@@ -317,12 +324,13 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>translucency_radius</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Translucent Diffuse attributes</summary>
-<br>
+<p>
 
 <h3>translucent_diffuse</h3>
 <b>Bool</b>  
@@ -348,12 +356,13 @@ default: 1.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>translucent_diffuse_factor</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Transmission attributes</summary>
-<br>
+<p>
 
 <h3>transmission</h3>
 <b>Bool</b>  
@@ -379,12 +388,13 @@ default: 0.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>transmission_factor</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>anisotropic_direction</h3>
 <b>Vec2f</b>  *bindable*
@@ -474,5 +484,6 @@ default: True
 <p class="scene-class-attr-missing">Documentation for the attribute <b>use_fresnel</b> needs to be written</p>
 
 
+</p>
 </details>
 

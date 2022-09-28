@@ -15,7 +15,7 @@ title: UsdPrimvarReader_normal
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>fallback</h3>
 <b>Vec3f</b>  *bindable*
@@ -41,5 +41,6 @@ default: False
 Whether or not to issue a warning when the requested attribute is unavailable
 
 
+</p>
 </details>
 

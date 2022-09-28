@@ -15,7 +15,7 @@ title: ShadowSet
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>lights</h3>
 <b>Light Vector</b>  
@@ -25,5 +25,6 @@ default: []
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lights</b> needs to be written</p>
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: PerspectiveCamera
 
 <details open>
 <summary class="scene-class-attr-group">Depth of Field attributes</summary>
-<br>
+<p>
 
 <h3>bokeh</h3>
 <b>Bool</b>  
@@ -89,12 +89,13 @@ default: 0.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>dof_focus_distance</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Frustum attributes</summary>
-<br>
+<p>
 
 <h3>far</h3>
 <b>Float</b>  
@@ -152,12 +153,13 @@ default: 0.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>vertical_film_offset</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Motion Blur attributes</summary>
-<br>
+<p>
 
 <h3>mb_shutter_bias</h3>
 <b>Float</b>  
@@ -183,12 +185,13 @@ default: -0.25
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Render Masks attributes</summary>
-<br>
+<p>
 
 <h3>pixel_sample_map</h3>
 <b>String</b>  
@@ -198,12 +201,13 @@ default:
 <p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Stereo attributes</summary>
-<br>
+<p>
 
 <h3>stereo_convergence_distance</h3>
 <b>Float</b>  
@@ -234,12 +238,13 @@ default: 6.30000019073
 <p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_view</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>node_xform</h3>
 <b>Mat4d</b>  *blurrable*
@@ -249,5 +254,6 @@ default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
+</p>
 </details>
 

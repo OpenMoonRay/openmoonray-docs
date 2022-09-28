@@ -15,7 +15,7 @@ title: ProjectPlanarNormalMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>TRS_order</h3>
 <b>Int</b>  *enum*
@@ -143,5 +143,6 @@ default: True
 Controls whether to repeat (true) or clamp (false) the texture
 
 
+</p>
 </details>
 

@@ -15,7 +15,7 @@ title: CombineDisplacement
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>bound_padding</h3>
 <b>Float</b>  
@@ -70,5 +70,6 @@ default: 1.0
 Scale of input 2
 
 
+</p>
 </details>
 

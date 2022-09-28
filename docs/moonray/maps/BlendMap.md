@@ -15,7 +15,7 @@ title: BlendMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>blend_amount</h3>
 <b>Float</b>  *bindable*
@@ -68,5 +68,6 @@ default: 0.0
 If the blend amount is less than or equal to this amount, it will choose color A (0)
 
 
+</p>
 </details>
 

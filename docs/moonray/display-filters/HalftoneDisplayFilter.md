@@ -15,7 +15,7 @@ title: HalftoneDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>invert_mask</h3>
 <b>Bool</b>  
@@ -33,12 +33,13 @@ default: 1.0
 blend between output and input
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>filter_width</h3>
 <b>Float</b>  
@@ -88,5 +89,6 @@ default: 5
 The size in pixels of the halftone dots
 
 
+</p>
 </details>
 

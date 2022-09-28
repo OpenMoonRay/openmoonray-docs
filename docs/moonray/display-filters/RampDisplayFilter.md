@@ -15,7 +15,7 @@ title: RampDisplayFilter
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>invert_mask</h3>
 <b>Bool</b>  
@@ -33,12 +33,13 @@ default: 1.0
 blend between output and input
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
-<br>
+<p>
 
 <h3>colors</h3>
 <b>RgbVector</b>  
@@ -64,12 +65,13 @@ default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
 Color ramp
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Ramp properties attributes</summary>
-<br>
+<p>
 
 <h3>input</h3>
 <b>67141632</b>  
@@ -104,12 +106,13 @@ input to the input ramp
 <p class="scene-class-attr-missing">Documentation for the attribute <b>ramp_type</b> needs to be written</p>
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>mask</h3>
 <b>67141632</b>  
@@ -119,5 +122,6 @@ default: None
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
+</p>
 </details>
 

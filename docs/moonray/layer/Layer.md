@@ -15,7 +15,7 @@ title: Layer
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>displacements</h3>
 <b>Displacement Vector</b>  
@@ -89,5 +89,6 @@ default: []
 <p class="scene-class-attr-missing">Documentation for the attribute <b>volume_shaders</b> needs to be written</p>
 
 
+</p>
 </details>
 

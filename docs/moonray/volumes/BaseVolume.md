@@ -15,7 +15,7 @@ title: BaseVolume
 
 <details open>
 <summary class="scene-class-attr-group">Attenuation Properties attributes</summary>
-<br>
+<p>
 
 <h3>attenuation_color</h3>
 <b>Rgb</b>  *bindable*
@@ -33,12 +33,13 @@ default: 1.0
 the rate at which the intensity of a ray traversing a volume is lost. Technically the product of attenuation color and intensity is the attenuation(extinction) coefficient.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Emission Properties attributes</summary>
-<br>
+<p>
 
 <h3>emission_color</h3>
 <b>Rgb</b>  *bindable*
@@ -56,12 +57,13 @@ default: 1.0
 the rate at which a volume emits light at a given point. Technically the product of emission color and intensity is the emission coefficient.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Scattering Properties attributes</summary>
-<br>
+<p>
 
 <h3>anisotropy</h3>
 <b>Float</b>  *bindable*
@@ -79,12 +81,13 @@ default: [ 1, 1, 1 ]
 reflectance color of the volume. Technically this is called scattering albedo, which is the scattering coefficient divided by the extinction coefficient.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>bake_divisions</h3>
 <b>Int</b>  
@@ -137,5 +140,6 @@ default: 0.5
 Accumulated opacity that's considered the 'surface' for computing surface position and Z
 
 
+</p>
 </details>
 

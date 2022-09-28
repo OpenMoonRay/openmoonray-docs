@@ -15,7 +15,7 @@ title: ColorCorrectGainOffsetMap
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>gain</h3>
 <b>Float</b>  *bindable*
@@ -113,5 +113,6 @@ default: False
 enables separate RGB controls for gain and offset
 
 
+</p>
 </details>
 

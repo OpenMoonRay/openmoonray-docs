@@ -15,7 +15,7 @@ title: CutoutVolume
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>bake_divisions</h3>
 <b>Int</b>  
@@ -76,5 +76,6 @@ default: 0.5
 Accumulated opacity that's considered the 'surface' for computing surface position and Z
 
 
+</p>
 </details>
 

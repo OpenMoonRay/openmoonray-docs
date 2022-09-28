@@ -15,7 +15,7 @@ title: UserData
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>bool_key</h3>
 <b>String</b>  
@@ -185,5 +185,6 @@ default: []
 vec3f type user data values for motion step 1
 
 
+</p>
 </details>
 

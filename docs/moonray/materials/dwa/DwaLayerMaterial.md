@@ -15,7 +15,7 @@ title: DwaLayerMaterial
 
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
-<br>
+<p>
 
 <h3>blend_color_space</h3>
 <b>Int</b>  *enum*
@@ -102,12 +102,13 @@ default: None
 By default, only the geometry associated with this material contributes to subsurface. The DwaLayerMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">Glitter Fallback attributes</summary>
-<br>
+<p>
 
 <h3>fallback_glitter_LOD_quality</h3>
 <b>Float</b>  
@@ -206,12 +207,13 @@ default:
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).  This parameter will only be used when layering two distinct glitter materials.
 
 
+</p>
 </details>
 
 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
-<br>
+<p>
 
 <h3>extra_aovs</h3>
 <b>Map</b>  
@@ -261,5 +263,6 @@ default: 0
 The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
 
 
+</p>
 </details>
 
