@@ -1,0 +1,8 @@
+summary.scene-class-attr-group{
+  color: gray;
+  font: 18px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p.scene-class-attr-missing{
+  color: red
+}
