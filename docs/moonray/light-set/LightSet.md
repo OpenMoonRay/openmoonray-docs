@@ -9,30 +9,19 @@ title: LightSet
 ---
 
 # LightSet
-
 **LIGHTSET**
-
-Documentation for class LightSet
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## lights
-
 **Light Vector** 
 
-
 Default value : []
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lights</b> needs to be written</p>
 
 
-
-
+</details>
 

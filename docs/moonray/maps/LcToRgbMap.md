@@ -9,45 +9,27 @@ title: LcToRgbMap
 ---
 
 # LcToRgbMap
-
 **MAP SHADER**
-
-Documentation for class LcToRgbMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## input_color
-
 **Rgb** *bindable*
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_color</b> needs to be written</p>
 
 
-
-
 ## target_color
-
 **Rgb** *bindable*
 
-
 Default value : [ 100, 0, 0 ]
-
-
-
 
 Target color for remapping, in LAB colorspace
 
 
-
-
+</details>
 

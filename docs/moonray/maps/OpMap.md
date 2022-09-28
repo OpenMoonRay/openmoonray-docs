@@ -9,97 +9,54 @@ title: OpMap
 ---
 
 # OpMap
-
 **MAP SHADER**
-
-Documentation for class OpMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## clamp
-
 **Bool** 
 
-
 Default value : False
-
-
-
 
 if on, the result is clamped to 0 - 1
 
 
-
-
 ## op1
-
 **Rgb** *bindable*
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 the first operand
 
 
-
-
 ## op1_factor
-
 **Float** *bindable*
 
-
 Default value : 1.0
-
-
-
 
 a scalar multiplier on op1
 
 
-
-
 ## op2
-
 **Rgb** *bindable*
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 the second operand
 
 
-
-
 ## op2_factor
-
 **Float** *bindable*
 
-
 Default value : 1.0
-
-
-
 
 a scalar multiplier on op2
 
 
-
-
 ## operation
-
 **Int** *enum*
-
-
 
 - add = 0 (default)
 
@@ -180,12 +137,8 @@ a scalar multiplier on op2
 - bitwise_or = 38
 
 
-
-
-
 <p class="scene-class-attr-missing">Documentation for the attribute <b>operation</b> needs to be written</p>
 
 
-
-
+</details>
 

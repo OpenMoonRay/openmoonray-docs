@@ -9,30 +9,19 @@ title: GeometrySet
 ---
 
 # GeometrySet
-
 **GEOMETRYSET**
-
-Documentation for class GeometrySet
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## geometries
-
 **SceneObjectIndexable** 
 
-
 Default value : None
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 
 
-
-
+</details>
 

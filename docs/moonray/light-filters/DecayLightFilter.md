@@ -9,126 +9,74 @@ title: DecayLightFilter
 ---
 
 # DecayLightFilter
-
 **LIGHTFILTER**
-
-Documentation for class DecayLightFilter
-
-
-
 ---
 
-## <p class="scene-class-attr-group">Properties attributes</p>
+<details open>
+<summary class="scene-class-attr-group">Properties attributes</summary>
 
 ## falloff_far
-
 **Bool** 
 
-
 Default value : False
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>falloff_far</b> needs to be written</p>
 
 
-
-
 ## falloff_near
-
 **Bool** 
 
-
 Default value : False
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>falloff_near</b> needs to be written</p>
 
 
-
-
 ## far_end
-
 **Float** 
 
-
 Default value : 0.0
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>far_end</b> needs to be written</p>
 
 
-
-
 ## far_start
-
 **Float** 
 
-
 Default value : 0.0
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>far_start</b> needs to be written</p>
 
 
-
-
 ## near_end
-
 **Float** 
 
-
 Default value : 0.0
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>near_end</b> needs to be written</p>
 
 
-
-
 ## near_start
-
 **Float** 
 
-
 Default value : 0.0
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>near_start</b> needs to be written</p>
 
 
-
-
-
+</details>
 
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## on
-
 **Bool** 
 
-
 Default value : True
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
-
-
+</details>
 

@@ -9,30 +9,19 @@ title: Joint
 ---
 
 # Joint
-
 **NODE JOINT**
-
-Documentation for class Joint
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## node_xform
-
 **Mat4d** *blurrable*
 
-
 Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
-
-
+</details>
 

@@ -9,30 +9,19 @@ title: ConstantColorMap
 ---
 
 # ConstantColorMap
-
 **MAP SHADER**
-
-Documentation for class ConstantColorMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## color_value
-
 **Rgb** 
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 constant color value
 
 
-
-
+</details>
 

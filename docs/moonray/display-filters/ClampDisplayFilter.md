@@ -9,111 +9,66 @@ title: ClampDisplayFilter
 ---
 
 # ClampDisplayFilter
-
 ****
-
-Documentation for class ClampDisplayFilter
-
-
-
 ---
 
-## <p class="scene-class-attr-group">Advanced attributes</p>
+<details open>
+<summary class="scene-class-attr-group">Advanced attributes</summary>
 
 ## invert_mask
-
 **Bool** 
 
-
 Default value : False
-
-
-
 
 invert value of mask
 
 
-
-
 ## mix
-
 **Float** 
 
-
 Default value : 1.0
-
-
-
 
 blend between output and input
 
 
-
-
-
+</details>
 
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## input
-
 **67141632** 
 
-
 Default value : None
-
-
-
 
 Image buffer to clamp
 
 
-
-
 ## mask
-
 **67141632** 
 
-
 Default value : None
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-
-
 ## max
-
 **Rgb** 
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 max color value
 
 
-
-
 ## min
-
 **Rgb** 
 
-
 Default value : [ 0, 0, 0 ]
-
-
-
 
 min color value
 
 
-
-
+</details>
 

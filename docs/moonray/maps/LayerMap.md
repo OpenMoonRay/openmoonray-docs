@@ -9,67 +9,38 @@ title: LayerMap
 ---
 
 # LayerMap
-
 **MAP SHADER**
-
-Documentation for class LayerMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## input_A
-
 **Rgb** *bindable*
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_A</b> needs to be written</p>
 
 
-
-
 ## input_B
-
 **Rgb** *bindable*
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_B</b> needs to be written</p>
 
 
-
-
 ## mask
-
 **Float** *bindable*
 
-
 Default value : 1.0
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-
-
 ## mode
-
 **Int** *enum*
-
-
 
 - off = 0
 
@@ -104,12 +75,8 @@ Default value : 1.0
 - exclusion = 15
 
 
-
-
-
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mode</b> needs to be written</p>
 
 
-
-
+</details>
 

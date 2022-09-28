@@ -9,103 +9,61 @@ title: OpDisplayFilter
 ---
 
 # OpDisplayFilter
-
 ****
-
-Documentation for class OpDisplayFilter
-
-
-
 ---
 
-## <p class="scene-class-attr-group">Advanced attributes</p>
+<details open>
+<summary class="scene-class-attr-group">Advanced attributes</summary>
 
 ## invert_mask
-
 **Bool** 
 
-
 Default value : False
-
-
-
 
 invert value of mask
 
 
-
-
 ## mix
-
 **Float** 
 
-
 Default value : 1.0
-
-
-
 
 blend between output and input
 
 
-
-
-
+</details>
 
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## input1
-
 **67141632** 
 
-
 Default value : None
-
-
-
 
 first operand
 
 
-
-
 ## input2
-
 **67141632** 
 
-
 Default value : None
-
-
-
 
 second operand
 
 
-
-
 ## mask
-
 **67141632** 
 
-
 Default value : None
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-
-
 ## operation
-
 **Int** *enum*
-
-
 
 - add = 0 (default)
 
@@ -168,12 +126,8 @@ Default value : None
 - not = 29
 
 
-
-
-
 <p class="scene-class-attr-missing">Documentation for the attribute <b>operation</b> needs to be written</p>
 
 
-
-
+</details>
 

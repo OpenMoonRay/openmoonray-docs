@@ -9,30 +9,19 @@ title: LightFilterSet
 ---
 
 # LightFilterSet
-
 **LIGHTFILTERSET**
-
-Documentation for class LightFilterSet
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## lightfilters
-
 **Lightfilter Vector** 
 
-
 Default value : []
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lightfilters</b> needs to be written</p>
 
 
-
-
+</details>
 

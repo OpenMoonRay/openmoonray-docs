@@ -9,45 +9,27 @@ title: TraceSet
 ---
 
 # TraceSet
-
 **TRACESET**
-
-Documentation for class TraceSet
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## geometries
-
 **SceneObjectIndexable** 
 
-
 Default value : None
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 
 
-
-
 ## parts
-
 **StringVector** 
 
-
 Default value : []
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>parts</b> needs to be written</p>
 
 
-
-
+</details>
 

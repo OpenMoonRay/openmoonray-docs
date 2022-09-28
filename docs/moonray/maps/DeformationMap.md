@@ -9,22 +9,14 @@ title: DeformationMap
 ---
 
 # DeformationMap
-
 **MAP SHADER**
-
-Documentation for class DeformationMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## output_mode
-
 **Int** *enum*
-
-
 
 - RGB = 0
 
@@ -33,9 +25,6 @@ Documentation for class DeformationMap
 - deformation_T = 2
 
 - deformation_avg = 3 (default)
-
-
-
 
 
 Controls output: 
@@ -49,36 +38,21 @@ Controls output:
 		    deformation_avg - average deformation from ref space
 
 
-
-
 ## use_warning_color
-
 **Bool** 
 
-
 Default value : False
-
-
-
 
 If derivatives are missing or zero output the warning color erroring out
 
 
-
-
 ## warning_color
-
 **Rgb** *bindable*
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 Warning color to output when derivatives are missing or zero
 
 
-
-
+</details>
 

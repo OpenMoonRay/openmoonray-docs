@@ -9,97 +9,54 @@ title: UVTransformMap
 ---
 
 # UVTransformMap
-
 **MAP SHADER**
-
-Documentation for class UVTransformMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## offset
-
 **Vec2f** 
 
-
 Default value : [ 0, 0 ]
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
 
 
-
-
 ## rotation_angle
-
 **Float** 
 
-
 Default value : 0.0
-
-
-
 
 Rotation in degrees
 
 
-
-
 ## rotation_axis
-
 **Vec3f** 
 
-
 Default value : [ 0, 0, 1 ]
-
-
-
 
 Axis in which to rotate (only for 3D spaces)
 
 
-
-
 ## rotation_center
-
 **Vec2f** 
 
-
 Default value : [ 0.5, 0.5 ]
-
-
-
 
 UV coordinate around which to rotate
 
 
-
-
 ## scale
-
 **Vec2f** 
 
-
 Default value : [ 1, 1 ]
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
 
 
-
-
 ## space
-
 **Int** *enum*
-
-
 
 - render = 0
 
@@ -116,12 +73,8 @@ Default value : [ 1, 1 ]
 - texture = 6 (default)
 
 
-
-
-
 <p class="scene-class-attr-missing">Documentation for the attribute <b>space</b> needs to be written</p>
 
 
-
-
+</details>
 

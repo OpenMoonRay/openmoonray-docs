@@ -9,52 +9,30 @@ title: TransformSpaceMap
 ---
 
 # TransformSpaceMap
-
 **MAP SHADER**
-
-Documentation for class TransformSpaceMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## camera
-
 **Camera** 
 
-
 Default value : None
-
-
-
 
 an alternate camera to use when transforming to/from 'camera' space
 
 
-
-
 ## concatenate_instance_level_transforms
-
 **Bool** 
 
-
 Default value : True
-
-
-
 
 When true, instance level transforms below the specified one are concatenated otherwise only the selected level's transform is used
 
 
-
-
 ## from_space
-
 **Int** *enum*
-
-
 
 - render = 0 (default)
 
@@ -81,34 +59,19 @@ When true, instance level transforms below the specified one are concatenated ot
 - instance level 4 = 11
 
 
-
-
-
 the space to transform from
 
 
-
-
 ## input
-
 **Vec3f** *bindable*
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 the input value to transform
 
 
-
-
 ## input_type
-
 **Int** *enum*
-
-
 
 - point = 0
 
@@ -117,34 +80,19 @@ the input value to transform
 - normal = 2
 
 
-
-
-
 the type of input value provided
 
 
-
-
 ## object
-
 **Geometry** 
 
-
 Default value : None
-
-
-
 
 an alternate object to use when transforming to/from 'object' space
 
 
-
-
 ## to_space
-
 **Int** *enum*
-
-
 
 - render = 0
 
@@ -171,87 +119,48 @@ an alternate object to use when transforming to/from 'object' space
 - instance object transform = 11
 
 
-
-
-
 the space to transform to
 
 
-
-
 ## use_custom_window_coordinates
-
 **Bool** 
 
-
 Default value : False
-
-
-
 
 used to apply non-uniform scaling to projection
 
 
-
-
 ## window_x_max
-
 **Float** 
 
-
 Default value : 1.0
-
-
-
 
 maximum projected x coordinate
 
 
-
-
 ## window_x_min
-
 **Float** 
 
-
 Default value : -1.0
-
-
-
 
 minimum projected x coordinate
 
 
-
-
 ## window_y_max
-
 **Float** 
 
-
 Default value : 1.0
-
-
-
 
 maximum projected y coordinate
 
 
-
-
 ## window_y_min
-
 **Float** 
 
-
 Default value : -1.0
-
-
-
 
 minimum projected y coordinate
 
 
-
-
+</details>
 

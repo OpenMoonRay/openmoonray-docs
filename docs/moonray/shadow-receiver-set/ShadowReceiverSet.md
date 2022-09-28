@@ -9,51 +9,34 @@ title: ShadowReceiverSet
 ---
 
 # ShadowReceiverSet
-
 ****
-
-Documentation for class ShadowReceiverSet
-
-
-
 ---
 
-## <p class="scene-class-attr-group">Properties attributes</p>
+<details open>
+<summary class="scene-class-attr-group">Properties attributes</summary>
 
 ## complement
-
 **Bool** 
 
-
 Default value : False
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>complement</b> needs to be written</p>
 
 
-
-
-
+</details>
 
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## geometries
-
 **SceneObjectIndexable** 
 
-
 Default value : None
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 
 
-
-
+</details>
 

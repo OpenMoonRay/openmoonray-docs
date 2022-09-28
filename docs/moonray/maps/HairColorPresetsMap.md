@@ -9,22 +9,14 @@ title: HairColorPresetsMap
 ---
 
 # HairColorPresetsMap
-
 **MAP SHADER**
-
-Documentation for class HairColorPresetsMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## color
-
 **Int** *enum*
-
-
 
 - black = 0 (default)
 
@@ -57,12 +49,8 @@ Documentation for class HairColorPresetsMap
 - chestnut brown = 14
 
 
-
-
-
 <p class="scene-class-attr-missing">Documentation for the attribute <b>color</b> needs to be written</p>
 
 
-
-
+</details>
 

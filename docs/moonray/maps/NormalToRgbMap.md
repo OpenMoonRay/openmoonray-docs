@@ -9,30 +9,19 @@ title: NormalToRgbMap
 ---
 
 # NormalToRgbMap
-
 **MAP SHADER**
-
-Documentation for class NormalToRgbMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## input
-
 **33554432** 
 
-
 Default value : None
-
-
-
 
 Input normal map to convert to a color
 
 
-
-
+</details>
 

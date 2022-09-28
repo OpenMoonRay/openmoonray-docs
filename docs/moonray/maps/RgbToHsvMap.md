@@ -9,30 +9,19 @@ title: RgbToHsvMap
 ---
 
 # RgbToHsvMap
-
 **MAP SHADER**
-
-Documentation for class RgbToHsvMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## input
-
 **Rgb** *bindable*
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 bind the input here
 
 
-
-
+</details>
 

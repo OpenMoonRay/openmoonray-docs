@@ -9,88 +9,53 @@ title: RgbToFloatDisplayFilter
 ---
 
 # RgbToFloatDisplayFilter
-
 ****
-
-Documentation for class RgbToFloatDisplayFilter
-
-
-
 ---
 
-## <p class="scene-class-attr-group">Advanced attributes</p>
+<details open>
+<summary class="scene-class-attr-group">Advanced attributes</summary>
 
 ## invert_mask
-
 **Bool** 
 
-
 Default value : False
-
-
-
 
 invert value of mask
 
 
-
-
 ## mix
-
 **Float** 
 
-
 Default value : 1.0
-
-
-
 
 blend between output and input
 
 
-
-
-
+</details>
 
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## input
-
 **67141632** 
 
-
 Default value : None
-
-
-
 
 image buffer
 
 
-
-
 ## mask
-
 **67141632** 
 
-
 Default value : None
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-
-
 ## mode
-
 **Int** *enum*
-
-
 
 - r = 0
 
@@ -109,12 +74,8 @@ Default value : None
 - luminance = 7
 
 
-
-
-
 specify the method to convert RGB Color to float
 
 
-
-
+</details>
 

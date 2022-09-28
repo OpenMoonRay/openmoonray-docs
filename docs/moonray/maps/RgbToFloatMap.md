@@ -9,37 +9,22 @@ title: RgbToFloatMap
 ---
 
 # RgbToFloatMap
-
 **MAP SHADER**
-
-Documentation for class RgbToFloatMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## input
-
 **Rgb** *bindable*
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input</b> needs to be written</p>
 
 
-
-
 ## mode
-
 **Int** *enum*
-
-
 
 - r = 0
 
@@ -58,12 +43,8 @@ Default value : [ 1, 1, 1 ]
 - luminance = 7
 
 
-
-
-
 specify the method to convert RGB Color to float
 
 
-
-
+</details>
 

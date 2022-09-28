@@ -9,22 +9,14 @@ title: ProjectPlanarMap
 ---
 
 # ProjectPlanarMap
-
 **MAP SHADER**
-
-Documentation for class ProjectPlanarMap
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## TRS_order
-
 **Int** *enum*
-
-
 
 - Scale Rot Trans = 0 (default)
 
@@ -39,64 +31,35 @@ Documentation for class ProjectPlanarMap
 - Trans Rot Scale = 5
 
 
-
-
-
 Order in which to apply transformations
 
 
-
-
 ## black_outside_projection
-
 **Bool** 
 
-
 Default value : False
-
-
-
 
 Toggles whether projections appear outside the 0-1 uv range of the projector
 
 
-
-
 ## project_on_back_faces
-
 **Bool** 
 
-
 Default value : True
-
-
-
 
 Toggles whether projections appear on back faces relative to projector
 
 
-
-
 ## projection_matrix
-
 **Mat4d** 
 
-
 Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-
-
-
 
 the transform to use for projection
 
 
-
-
 ## projection_mode
-
 **Int** *enum*
-
-
 
 - projector = 0 (default)
 
@@ -105,49 +68,27 @@ the transform to use for projection
 - TRS = 2
 
 
-
-
-
 Source parameters to use for projection transform
 
 
-
-
 ## projector
-
 **Node** 
 
-
 Default value : None
-
-
-
 
 the object whose transform to use for projection
 
 
-
-
 ## rotate
-
 **Vec3d** 
 
-
 Default value : [ 0, 0, 0 ]
-
-
-
 
 Rotation of the projection transform
 
 
-
-
 ## rotation_order
-
 **Int** *enum*
-
-
 
 - xyz = 0 (default)
 
@@ -162,57 +103,32 @@ Rotation of the projection transform
 - zyx = 5
 
 
-
-
-
 Order in which to apply rotation transformations
 
 
-
-
 ## scale
-
 **Vec3d** 
 
-
 Default value : [ 1, 1, 1 ]
-
-
-
 
 Scale of the projection transform
 
 
-
-
 ## translate
-
 **Vec3d** 
 
-
 Default value : [ 0, 0, 0 ]
-
-
-
 
 Tranlation of the projection transform
 
 
-
-
 ## use_reference_space
-
 **Bool** 
 
-
 Default value : False
-
-
-
 
 use reference space
 
 
-
-
+</details>
 

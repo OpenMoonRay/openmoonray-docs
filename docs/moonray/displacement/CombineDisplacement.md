@@ -9,67 +9,38 @@ title: CombineDisplacement
 ---
 
 # CombineDisplacement
-
 **ROOTSHADER SHADER DISPLACEMENT**
-
-Documentation for class CombineDisplacement
-
-
-
 ---
 
-## <p class="scene-class-attr-group">General attributes</p>
+<details open>
+<summary class="scene-class-attr-group">General attributes</summary>
 
 ## bound_padding
-
 **Float** 
 
-
 Default value : 0.0
-
-
-
 
 bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.
 
 
-
-
 ## input_1
-
 **Displacement** 
 
-
 Default value : None
-
-
-
 
 Displacement object 1
 
 
-
-
 ## input_2
-
 **Displacement** 
 
-
 Default value : None
-
-
-
 
 Displacement object 2
 
 
-
-
 ## operation
-
 **Int** *enum*
-
-
 
 - add = 0 (default)
 
@@ -78,42 +49,24 @@ Displacement object 2
 - min magnitude = 2
 
 
-
-
-
 <p class="scene-class-attr-missing">Documentation for the attribute <b>operation</b> needs to be written</p>
 
 
-
-
 ## scale_1
-
 **Float** *bindable*
 
-
 Default value : 1.0
-
-
-
 
 Scale of input 1
 
 
-
-
 ## scale_2
-
 **Float** *bindable*
 
-
 Default value : 1.0
-
-
-
 
 Scale of input 2
 
 
-
-
+</details>
 
