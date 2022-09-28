@@ -7,77 +7,59 @@ title: WireframeMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # WireframeMap
-
 **MAP SHADER**
-
-Documentation for class WireframeMap
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## fill_color
-
-**Rgb** 
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>fill_color</b> needs to be written</p>
-
-
-
-
-## line_color
-
-**Rgb** 
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>line_color</b> needs to be written</p>
-
-
-
-
-## line_width
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>line_width</b> needs to be written</p>
-
-
-
-
-## raster
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>raster</b> needs to be written</p>
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>fill_color</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>line_color</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>line_width</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>raster</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

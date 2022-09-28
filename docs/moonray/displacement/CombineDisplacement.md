@@ -7,113 +7,86 @@ title: CombineDisplacement
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # CombineDisplacement
-
 **ROOTSHADER SHADER DISPLACEMENT**
-
-Documentation for class CombineDisplacement
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## bound_padding
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.
-
-
-
-
-## input_1
-
-**Displacement** 
-
-
-Default value : None
-
-
-
-
-Displacement object 1
-
-
-
-
-## input_2
-
-**Displacement** 
-
-
-Default value : None
-
-
-
-
-Displacement object 2
-
-
-
-
-## operation
-
-**Int** *enum*
-
-
-
-- add = 0 (default)
-
-- max magnitude = 1
-
-- min magnitude = 2
-
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>operation</b> needs to be written</p>
-
-
-
-
-## scale_1
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-Scale of input 1
-
-
-
-
-## scale_2
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-Scale of input 2
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>bound_padding</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
+        
+      </p>
+    
+    <h3>input_1</h3>
+    <p>
+      <b>Displacement</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Displacement object 1</p>
+        
+      </p>
+    
+    <h3>input_2</h3>
+    <p>
+      <b>Displacement</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Displacement object 2</p>
+        
+      </p>
+    
+    <h3>operation</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | add = 0 (default)
+          
+            | max magnitude = 1
+          
+            | min magnitude = 2
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>scale_1</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of input 1</p>
+        
+      </p>
+    
+    <h3>scale_2</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of input 2</p>
+        
+      </p>
+    
+  </p>
+</details>
 

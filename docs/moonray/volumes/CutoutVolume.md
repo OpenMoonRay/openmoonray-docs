@@ -7,119 +7,92 @@ title: CutoutVolume
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # CutoutVolume
-
 **ROOTSHADER SHADER VOLUMESHADER**
-
-Documentation for class CutoutVolume
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## bake_divisions
-
-**Int** 
-
-
-Default value : 100
-
-
-
-
-Divide widest axis by this many divisions
-
-
-
-
-## bake_resolution_mode
-
-**Int** *enum*
-
-
-
-- default = 0 (default)
-
-- divisions = 1
-
-- voxel size = 2
-
-
-
-
-
-Toggle method to specify grid resolution of baked density grid.
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>bake_divisions</h3>
+    <p>
+      <b>Int</b>
+      
+        
+          default: 100
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Divide widest axis by this many divisions</p>
+        
+      </p>
+    
+    <h3>bake_resolution_mode</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | default = 0 (default)
+          
+            | divisions = 1
+          
+            | voxel size = 2
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Toggle method to specify grid resolution of baked density grid.
 
 		default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions
 
 		divisions: specify number of divisions.
 
-		voxel size: specify voxel size.
-
-
-
-
-## bake_voxel_size
-
-**Float** 
-
-
-Default value : 10.0
-
-
-
-
-Size of voxel in world space
-
-
-
-
-## indirect_volume
-
-**Volumeshader** 
-
-
-Default value : None
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>indirect_volume</b> needs to be written</p>
-
-
-
-
-## label
-
-**String** 
-
-
-Default value : 
-
-
-
-
-label used in light aovs
-
-
-
-
-## surface_opacity_threshold
-
-**Float** 
-
-
-Default value : 0.5
-
-
-
-
-Accumulated opacity that's considered the 'surface' for computing surface position and Z
-
-
-
-
+		voxel size: specify voxel size.</p>
+        
+      </p>
+    
+    <h3>bake_voxel_size</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 10.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Size of voxel in world space</p>
+        
+      </p>
+    
+    <h3>indirect_volume</h3>
+    <p>
+      <b>Volumeshader</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>label</h3>
+    <p>
+      <b>String</b>
+      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">label used in light aovs</p>
+        
+      </p>
+    
+    <h3>surface_opacity_threshold</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Accumulated opacity that's considered the 'surface' for computing surface position and Z</p>
+        
+      </p>
+    
+  </p>
+</details>
 

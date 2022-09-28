@@ -7,134 +7,105 @@ title: ConvolutionDisplayFilter
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # ConvolutionDisplayFilter
-
 ****
 
-Documentation for class ConvolutionDisplayFilter
-
-
-
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
-
-## invert_mask
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-invert value of mask
-
-
-
-
-## mix
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-blend between output and input
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## custom_kernel
-
-**FloatVector** 
-
-
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
-
-
-
-
-a list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7)
-
-
-
-
-## input
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-RenderOutput to convolve
-
-
-
-
-## kernel_size
-
-**Int** 
-
-
-Default value : 5
-
-
-
-
-size of kernel in pixels. Size must be odd. If using custom kernel, this attribute is ignored, and the size of the custom kernel is used instead
-
-
-
-
-## kernel_type
-
-**Int** *enum*
-
-
-
-- gaussian = 0 (default)
-
-- box = 1
-
-- custom = 2
-
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>kernel_type</b> needs to be written</p>
-
-
-
-
-## mask
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>mask</b> needs to be written</p>
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <p>
+    
+    <h3>invert_mask</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        
+      </p>
+    
+    <h3>mix</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>custom_kernel</h3>
+    <p>
+      <b>FloatVector</b>
+      
+        
+          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">a list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7)</p>
+        
+      </p>
+    
+    <h3>input</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput to convolve</p>
+        
+      </p>
+    
+    <h3>kernel_size</h3>
+    <p>
+      <b>Int</b>
+      
+        
+          default: 5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">size of kernel in pixels. Size must be odd. If using custom kernel, this attribute is ignored, and the size of the custom kernel is used instead</p>
+        
+      </p>
+    
+    <h3>kernel_type</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | gaussian = 0 (default)
+          
+            | box = 1
+          
+            | custom = 2
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>mask</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

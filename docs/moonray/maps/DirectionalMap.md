@@ -7,301 +7,234 @@ title: DirectionalMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # DirectionalMap
-
 **MAP SHADER**
 
-Documentation for class DirectionalMap
-
-
-
 ---
 
-## <p style="color:blue;">Adjustment attributes</p>
-
-## bias
-
-**Float** *bindable*
-
-
-Default value : 0.5
-
-
-
-
-controls the rate at which the effect increases as the shading normal approaches the prime direction
-
-
-
-
-## clamping_behavior
-
-**Int** *enum*
-
-
-
-- clamp = 0 (default)
-
-- absolute = 1
-
-
-
-
-
-determines how surfaces facing opposite the prime direction are handled
-
-
-
-
-## falloff_type
-
-**Int** *enum*
-
-
-
-- cosine = 0 (default)
-
-- linear = 1
-
-
-
-
-
-determines how the effect falls off as the difference angle increases
-
-
-
-
-## smoothstep_end
-
-**Float** *bindable*
-
-
-Default value : 0.550000011921
-
-
-
-
-the value at which the effect is considered 100% on
-
-
-
-
-## smoothstep_start
-
-**Float** *bindable*
-
-
-Default value : 0.449999988079
-
-
-
-
-the value at which the effect is considered 100% off
-
-
-
-
-## use_smoothstep
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-apply smoothstep function to result
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Normal attributes</p>
-
-## input_normal
-
-**33554432** 
-
-
-Default value : None
-
-
-
-
-specifies an alternate shading normal when bound. The binding multiplier is ignored
-
-
-
-
-## input_normal_dial
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-controls the amount of influence of the alternate normal
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## color_a
-
-**Rgb** *bindable*
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-the color of the effect when the difference angle is greatest
-
-
-
-
-## color_b
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-the color of the effect when the difference angle is smallest
-
-
-
-
-## custom_direction
-
-**Vec3f** *bindable*
-
-
-Default value : [ 0, 1, 0 ]
-
-
-
-
-specifies a custom direction in world space as the prime direction
-
-
-
-
-## object
-
-**Node** 
-
-
-Default value : None
-
-
-
-
-the object to use when 'prime direction' is set to 'axis of object' or 'look-at object'
-
-
-
-
-## object_axis
-
-**Int** *enum*
-
-
-
-- +X axis = 0
-
-- -X axis = 1 (default)
-
-- +Y axis = 2
-
-- -Y axis = 3
-
-- +Z axis = 4
-
-- -Z axis = 5
-
-
-
-
-
-which axis to use when 'prime direction' is set to 'axis of object'
-
-
-
-
-## polarity
-
-**Int** *enum*
-
-
-
-- perpendicular = 0 (default)
-
-- parallel = 1
-
-
-
-
-
-determines which directions are given color A and which are given color B. Switching this effectively swaps the colors
-
-
-
-
-## prime_direction
-
-**Int** *enum*
-
-
-
-- observer direction = 0 (default)
-
-- custom direction = 1
-
-- axis of object = 2
-
-- look-at object = 3
-
-
-
-
-
-which source is used for the prime direction
-
-
-
-
-## use_reference_space
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-use reference space position and normals
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Adjustment attributes</summary>
+  <p>
+    
+    <h3>bias</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the rate at which the effect increases as the shading normal approaches the prime direction</p>
+        
+      </p>
+    
+    <h3>clamping_behavior</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | clamp = 0 (default)
+          
+            | absolute = 1
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">determines how surfaces facing opposite the prime direction are handled</p>
+        
+      </p>
+    
+    <h3>falloff_type</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | cosine = 0 (default)
+          
+            | linear = 1
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">determines how the effect falls off as the difference angle increases</p>
+        
+      </p>
+    
+    <h3>smoothstep_end</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.550000011921
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the value at which the effect is considered 100% on</p>
+        
+      </p>
+    
+    <h3>smoothstep_start</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.449999988079
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the value at which the effect is considered 100% off</p>
+        
+      </p>
+    
+    <h3>use_smoothstep</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">apply smoothstep function to result</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
+  <p>
+    
+    <h3>input_normal</h3>
+    <p>
+      <b>33554432</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal when bound. The binding multiplier is ignored</p>
+        
+      </p>
+    
+    <h3>input_normal_dial</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the amount of influence of the alternate normal</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>color_a</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the color of the effect when the difference angle is greatest</p>
+        
+      </p>
+    
+    <h3>color_b</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the color of the effect when the difference angle is smallest</p>
+        
+      </p>
+    
+    <h3>custom_direction</h3>
+    <p>
+      <b>Vec3f</b>
+      <i>bindable</i>
+        
+          default: [ 0, 1, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specifies a custom direction in world space as the prime direction</p>
+        
+      </p>
+    
+    <h3>object</h3>
+    <p>
+      <b>Node</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the object to use when 'prime direction' is set to 'axis of object' or 'look-at object'</p>
+        
+      </p>
+    
+    <h3>object_axis</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | +X axis = 0
+          
+            | -X axis = 1 (default)
+          
+            | +Y axis = 2
+          
+            | -Y axis = 3
+          
+            | +Z axis = 4
+          
+            | -Z axis = 5
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">which axis to use when 'prime direction' is set to 'axis of object'</p>
+        
+      </p>
+    
+    <h3>polarity</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | perpendicular = 0 (default)
+          
+            | parallel = 1
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">determines which directions are given color A and which are given color B. Switching this effectively swaps the colors</p>
+        
+      </p>
+    
+    <h3>prime_direction</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | observer direction = 0 (default)
+          
+            | custom direction = 1
+          
+            | axis of object = 2
+          
+            | look-at object = 3
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">which source is used for the prime direction</p>
+        
+      </p>
+    
+    <h3>use_reference_space</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space position and normals</p>
+        
+      </p>
+    
+  </p>
+</details>
 

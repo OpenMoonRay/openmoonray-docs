@@ -7,114 +7,93 @@ title: RgbToFloatDisplayFilter
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # RgbToFloatDisplayFilter
-
 ****
 
-Documentation for class RgbToFloatDisplayFilter
-
-
-
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
-
-## invert_mask
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-invert value of mask
-
-
-
-
-## mix
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-blend between output and input
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## input
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-image buffer
-
-
-
-
-## mask
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>mask</b> needs to be written</p>
-
-
-
-
-## mode
-
-**Int** *enum*
-
-
-
-- r = 0
-
-- g = 1
-
-- b = 2
-
-- min = 3
-
-- max = 4
-
-- average = 5 (default)
-
-- sum = 6
-
-- luminance = 7
-
-
-
-
-
-specify the method to convert RGB Color to float
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <p>
+    
+    <h3>invert_mask</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        
+      </p>
+    
+    <h3>mix</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>input</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">image buffer</p>
+        
+      </p>
+    
+    <h3>mask</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>mode</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | r = 0
+          
+            | g = 1
+          
+            | b = 2
+          
+            | min = 3
+          
+            | max = 4
+          
+            | average = 5 (default)
+          
+            | sum = 6
+          
+            | luminance = 7
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specify the method to convert RGB Color to float</p>
+        
+      </p>
+    
+  </p>
+</details>
 

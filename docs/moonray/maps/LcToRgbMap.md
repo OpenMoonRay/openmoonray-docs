@@ -7,47 +7,37 @@ title: LcToRgbMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # LcToRgbMap
-
 **MAP SHADER**
-
-Documentation for class LcToRgbMap
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## input_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>input_color</b> needs to be written</p>
-
-
-
-
-## target_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 100, 0, 0 ]
-
-
-
-
-Target color for remapping, in LAB colorspace
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>input_color</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>target_color</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 100, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Target color for remapping, in LAB colorspace</p>
+        
+      </p>
+    
+  </p>
+</details>
 

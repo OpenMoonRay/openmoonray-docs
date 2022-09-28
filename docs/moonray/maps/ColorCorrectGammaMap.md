@@ -7,137 +7,103 @@ title: ColorCorrectGammaMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # ColorCorrectGammaMap
-
 **MAP SHADER**
-
-Documentation for class ColorCorrectGammaMap
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## gamma
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-raises the input to the specified exponents
-
-
-
-
-## gamma_b
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-raises the blue channel to the specified exponents
-
-
-
-
-## gamma_g
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-raises the green channel to the specified exponents
-
-
-
-
-## gamma_r
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-raises the red channel to the specified exponents
-
-
-
-
-## input
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-bind the input here
-
-
-
-
-## mix
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-how much of the overall color correct to mix in
-
-
-
-
-## on
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-enables/disables all color correct operations
-
-
-
-
-## use_per_channel_gamma
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-enables separate RGB controls for gamma
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>gamma</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">raises the input to the specified exponents</p>
+        
+      </p>
+    
+    <h3>gamma_b</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">raises the blue channel to the specified exponents</p>
+        
+      </p>
+    
+    <h3>gamma_g</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">raises the green channel to the specified exponents</p>
+        
+      </p>
+    
+    <h3>gamma_r</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">raises the red channel to the specified exponents</p>
+        
+      </p>
+    
+    <h3>input</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+        
+      </p>
+    
+    <h3>mix</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
+        
+      </p>
+    
+    <h3>on</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables all color correct operations</p>
+        
+      </p>
+    
+    <h3>use_per_channel_gamma</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables separate RGB controls for gamma</p>
+        
+      </p>
+    
+  </p>
+</details>
 

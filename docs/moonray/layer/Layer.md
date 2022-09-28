@@ -7,152 +7,114 @@ title: Layer
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # Layer
-
 **LAYER TRACESET**
-
-Documentation for class Layer
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## displacements
-
-**Displacement Vector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>displacements</b> needs to be written</p>
-
-
-
-
-## geometries
-
-**SceneObjectIndexable** 
-
-
-Default value : None
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>geometries</b> needs to be written</p>
-
-
-
-
-## lightfiltersets
-
-**Lightfilterset Vector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>lightfiltersets</b> needs to be written</p>
-
-
-
-
-## lightsets
-
-**Lightset Vector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>lightsets</b> needs to be written</p>
-
-
-
-
-## parts
-
-**StringVector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>parts</b> needs to be written</p>
-
-
-
-
-## shadowreceiversets
-
-**134217728 Vector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>shadowreceiversets</b> needs to be written</p>
-
-
-
-
-## shadowsets
-
-**16777216 Vector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>shadowsets</b> needs to be written</p>
-
-
-
-
-## surface_shaders
-
-**Material Vector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>surface_shaders</b> needs to be written</p>
-
-
-
-
-## volume_shaders
-
-**Volumeshader Vector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>volume_shaders</b> needs to be written</p>
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>displacements</h3>
+    <p>
+      <b>Displacement Vector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>geometries</h3>
+    <p>
+      <b>SceneObjectIndexable</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>lightfiltersets</h3>
+    <p>
+      <b>Lightfilterset Vector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>lightsets</h3>
+    <p>
+      <b>Lightset Vector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>parts</h3>
+    <p>
+      <b>StringVector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>shadowreceiversets</h3>
+    <p>
+      <b>134217728 Vector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>shadowsets</h3>
+    <p>
+      <b>16777216 Vector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>surface_shaders</h3>
+    <p>
+      <b>Material Vector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>volume_shaders</h3>
+    <p>
+      <b>Volumeshader Vector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

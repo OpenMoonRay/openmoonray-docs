@@ -7,233 +7,177 @@ title: RodLightFilter
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # RodLightFilter
-
 **LIGHTFILTER**
 
-Documentation for class RodLightFilter
-
-
-
 ---
 
-## <p style="color:blue;">Properties attributes</p>
-
-## color
-
-**Rgb** 
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-filter color. Scales the light within the volume. For each color channel, 0=full shadow, 1=no shadow
-
-
-
-
-## density
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-fades the filter effect. 0=no effect (like having no filter), 1=full effect
-
-
-
-
-## depth
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-depth of the base box (before radius and edge)
-
-
-
-
-## edge
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-size of transition zone from the rounded box to the outside
-
-
-
-
-## height
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-height of the base box (before radius and edge)
-
-
-
-
-## intensity
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-scalar for multiplying the color. 0=black 1=color
-
-
-
-
-## invert
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-swap application of filter from inside the volume to outside
-
-
-
-
-## node_xform
-
-**Mat4d** *blurrable*
-
-
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-
-
-
-
-transform of the filter
-
-
-
-
-## radius
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-radius by which to expand the base box into a rounded box
-
-
-
-
-## ramp_in_distances
-
-**FloatVector** 
-
-
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
-
-
-
-
-input distance for ramp control
-
-
-
-
-## ramp_interpolation_types
-
-**IntVector** 
-
-
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
-
-
-
-
-interpolation types for ramp control
-
-
-
-
-## ramp_out_distances
-
-**FloatVector** 
-
-
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
-
-
-
-
-remapped distances for ramp control
-
-
-
-
-## width
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-width of the base box (before radius and edge)
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## on
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>on</b> needs to be written</p>
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Properties attributes</summary>
+  <p>
+    
+    <h3>color</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">filter color. Scales the light within the volume. For each color channel, 0=full shadow, 1=no shadow</p>
+        
+      </p>
+    
+    <h3>density</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">fades the filter effect. 0=no effect (like having no filter), 1=full effect</p>
+        
+      </p>
+    
+    <h3>depth</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">depth of the base box (before radius and edge)</p>
+        
+      </p>
+    
+    <h3>edge</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">size of transition zone from the rounded box to the outside</p>
+        
+      </p>
+    
+    <h3>height</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">height of the base box (before radius and edge)</p>
+        
+      </p>
+    
+    <h3>intensity</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">scalar for multiplying the color. 0=black 1=color</p>
+        
+      </p>
+    
+    <h3>invert</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">swap application of filter from inside the volume to outside</p>
+        
+      </p>
+    
+    <h3>node_xform</h3>
+    <p>
+      <b>Mat4d</b>
+      <i>blurrable</i>
+        
+          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">transform of the filter</p>
+        
+      </p>
+    
+    <h3>radius</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">radius by which to expand the base box into a rounded box</p>
+        
+      </p>
+    
+    <h3>ramp_in_distances</h3>
+    <p>
+      <b>FloatVector</b>
+      
+        
+          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">input distance for ramp control</p>
+        
+      </p>
+    
+    <h3>ramp_interpolation_types</h3>
+    <p>
+      <b>IntVector</b>
+      
+        
+          default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">interpolation types for ramp control</p>
+        
+      </p>
+    
+    <h3>ramp_out_distances</h3>
+    <p>
+      <b>FloatVector</b>
+      
+        
+          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">remapped distances for ramp control</p>
+        
+      </p>
+    
+    <h3>width</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">width of the base box (before radius and edge)</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>on</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

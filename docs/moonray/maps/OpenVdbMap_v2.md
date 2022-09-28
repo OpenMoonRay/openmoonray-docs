@@ -7,189 +7,146 @@ title: OpenVdbMap_v2
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # OpenVdbMap_v2
-
 **MAP SHADER**
 
-Documentation for class OpenVdbMap_v2
-
-
-
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
-
-## show_active_field
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-When enabled active/inactive field locations will be white/black, respectively
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## default_value
-
-**Rgb** 
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-A default value to use when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found
-
-
-
-
-## grid_name
-
-**String** 
-
-
-Default value : 
-
-
-
-
-The name of the grid within the .vdb file from which to sample (hint: use openvdb_print to see contents of .vdb file). If no grid is specified, the first grid found in the .vdb will be used.  In cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])
-
-
-
-
-## input_texture_coordinates
-
-**Vec3f** *bindable*
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-The world-space coordinate to use when 'texture coordinates' is set to 'input texture coordinates'
-
-
-
-
-## interpolation
-
-**Int** *enum*
-
-
-
-- point = 0
-
-- box = 1
-
-- quadratic = 2 (default)
-
-
-
-
-
-The type of interpolation to use when sampling the vdb
-
-
-
-
-## openvdb_geometry
-
-**Geometry Vector** 
-
-
-Default value : []
-
-
-
-
-The OpenVdbGeometry object(s) from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from OpenVdbGeometry'
-
-
-
-
-## show_warnings
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-Enables a warning message when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found
-
-
-
-
-## texture
-
-**String** *filename*
-
-
-Default value : 
-
-
-
-
-
-
-
-
-
-## texture_coordinates
-
-**Int** *enum*
-
-
-
-- position = 0 (default)
-
-- reference position = 1
-
-- input texture coordinates = 2
-
-
-
-
-
-Which coordinate source to use for the texture lookup
-
-
-
-
-## vdb_source
-
-**Int** *enum*
-
-
-
-- from texture = 0 (default)
-
-- from OpenVdbGeometry = 1
-
-
-
-
-
-Where to look for the vdb filename.  Choose 'from texture' to specify a .vdb filename directly via the 'texture' attribute.  Choose 'from OpenVdbGeometry' to use the .vdb filename and transform from an OpenVdbGeometry object in the scene using the 'openvdb geometry' attribute
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <p>
+    
+    <h3>show_active_field</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">When enabled active/inactive field locations will be white/black, respectively</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>default_value</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">A default value to use when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
+        
+      </p>
+    
+    <h3>grid_name</h3>
+    <p>
+      <b>String</b>
+      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The name of the grid within the .vdb file from which to sample (hint: use openvdb_print to see contents of .vdb file). If no grid is specified, the first grid found in the .vdb will be used.  In cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
+        
+      </p>
+    
+    <h3>input_texture_coordinates</h3>
+    <p>
+      <b>Vec3f</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The world-space coordinate to use when 'texture coordinates' is set to 'input texture coordinates'</p>
+        
+      </p>
+    
+    <h3>interpolation</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | point = 0
+          
+            | box = 1
+          
+            | quadratic = 2 (default)
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The type of interpolation to use when sampling the vdb</p>
+        
+      </p>
+    
+    <h3>openvdb_geometry</h3>
+    <p>
+      <b>Geometry Vector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The OpenVdbGeometry object(s) from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from OpenVdbGeometry'</p>
+        
+      </p>
+    
+    <h3>show_warnings</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Enables a warning message when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
+        
+      </p>
+    
+    <h3>texture</h3>
+    <p>
+      <b>String</b>
+      <i>filename</i>
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment"></p>
+        
+      </p>
+    
+    <h3>texture_coordinates</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | position = 0 (default)
+          
+            | reference position = 1
+          
+            | input texture coordinates = 2
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Which coordinate source to use for the texture lookup</p>
+        
+      </p>
+    
+    <h3>vdb_source</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | from texture = 0 (default)
+          
+            | from OpenVdbGeometry = 1
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Where to look for the vdb filename.  Choose 'from texture' to specify a .vdb filename directly via the 'texture' attribute.  Choose 'from OpenVdbGeometry' to use the .vdb filename and transform from an OpenVdbGeometry object in the scene using the 'openvdb geometry' attribute</p>
+        
+      </p>
+    
+  </p>
+</details>
 

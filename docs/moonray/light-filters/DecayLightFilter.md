@@ -7,128 +7,100 @@ title: DecayLightFilter
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # DecayLightFilter
-
 **LIGHTFILTER**
 
-Documentation for class DecayLightFilter
-
-
-
 ---
 
-## <p style="color:blue;">Properties attributes</p>
-
-## falloff_far
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>falloff_far</b> needs to be written</p>
-
-
-
-
-## falloff_near
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>falloff_near</b> needs to be written</p>
-
-
-
-
-## far_end
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>far_end</b> needs to be written</p>
-
-
-
-
-## far_start
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>far_start</b> needs to be written</p>
-
-
-
-
-## near_end
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>near_end</b> needs to be written</p>
-
-
-
-
-## near_start
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>near_start</b> needs to be written</p>
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## on
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>on</b> needs to be written</p>
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Properties attributes</summary>
+  <p>
+    
+    <h3>falloff_far</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>falloff_near</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>far_end</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>far_start</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>near_end</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>near_start</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>on</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

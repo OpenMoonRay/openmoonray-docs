@@ -7,167 +7,125 @@ title: ColorCorrectHsvMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # ColorCorrectHsvMap
-
 **MAP SHADER**
-
-Documentation for class ColorCorrectHsvMap
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## clamp
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-clamps output to [0,1] range
-
-
-
-
-## hue_shift
-
-**Float** *bindable*
-
-
-Default value : 0.0
-
-
-
-
-shifts the hue of the input (360 rolls over back to 0)
-
-
-
-
-## input
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-input color
-
-
-
-
-## on
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-all attributes on/off
-
-
-
-
-## saturation_contrast
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-modifies the contrast of the input's saturation (-1, 1)
-
-
-
-
-## saturation_factor
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-multiplies the saturation of the input
-
-
-
-
-## saturation_shift
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-shifts the saturation of the input (-1, 1)
-
-
-
-
-## value_contrast
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-modifies the contrast of the input's value (-1, 1)
-
-
-
-
-## value_factor
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-multiplies the value of the input
-
-
-
-
-## value_shift
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-shifts the value of the input (-1, 1)
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>clamp</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">clamps output to [0,1] range</p>
+        
+      </p>
+    
+    <h3>hue_shift</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">shifts the hue of the input (360 rolls over back to 0)</p>
+        
+      </p>
+    
+    <h3>input</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">input color</p>
+        
+      </p>
+    
+    <h3>on</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">all attributes on/off</p>
+        
+      </p>
+    
+    <h3>saturation_contrast</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">modifies the contrast of the input's saturation (-1, 1)</p>
+        
+      </p>
+    
+    <h3>saturation_factor</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the saturation of the input</p>
+        
+      </p>
+    
+    <h3>saturation_shift</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">shifts the saturation of the input (-1, 1)</p>
+        
+      </p>
+    
+    <h3>value_contrast</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">modifies the contrast of the input's value (-1, 1)</p>
+        
+      </p>
+    
+    <h3>value_factor</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the value of the input</p>
+        
+      </p>
+    
+    <h3>value_shift</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">shifts the value of the input (-1, 1)</p>
+        
+      </p>
+    
+  </p>
+</details>
 

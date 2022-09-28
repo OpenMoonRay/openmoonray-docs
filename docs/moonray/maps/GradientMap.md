@@ -7,265 +7,209 @@ title: GradientMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # GradientMap
-
 **MAP SHADER**
 
-Documentation for class GradientMap
-
-
-
 ---
 
-## <p style="color:blue;">Additional properties attributes</p>
-
-## symmetric
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-Color A blends into Color B and then back into Color A from the start to the end point
-
-
-
-
-## symmetric_center
-
-**Float** 
-
-
-Default value : 0.5
-
-
-
-
-Shifts the center of the symmetric falloff
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Falloff properties attributes</p>
-
-## falloff_bias
-
-**Float** 
-
-
-Default value : 0.5
-
-
-
-
-Compresses the blending towards the start or end color
-
-
-
-
-## falloff_end
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-Shifts where the falloff ends
-
-
-
-
-## falloff_end_intensity
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-Adjust the intensity of the end color
-
-
-
-
-## falloff_exponent
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-Adjusts rate of blending
-
-
-
-
-## falloff_start
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-Shifts where the falloff starts
-
-
-
-
-## falloff_type
-
-**Int** *enum*
-
-
-
-- none = 0
-
-- natural = 1 (default)
-
-- linear = 2
-
-- squared = 3
-
-- gaussian = 4
-
-- ease out = 5
-
-
-
-
-
-Falloff blend mode
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Gradient properties attributes</p>
-
-## color_A
-
-**Rgb** *bindable*
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-Start color
-
-
-
-
-## color_B
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-End color
-
-
-
-
-## end
-
-**Vec3f** 
-
-
-Default value : [ 0, 1, 0 ]
-
-
-
-
-End position in the chosen space
-
-
-
-
-## object
-
-**Geometry** 
-
-
-Default value : None
-
-
-
-
-Use the provided object's transformation space (only used if object space is also specified)
-
-
-
-
-## space
-
-**Int** *enum*
-
-
-
-- render = 0 (default)
-
-- camera = 1
-
-- world = 2
-
-- screen = 3
-
-- object = 4
-
-- reference = 5
-
-- texture = 6
-
-
-
-
-
-The transformation space in which to perform the blending
-
-
-
-
-## start
-
-**Vec3f** 
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-Start position in the chosen space
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Additional properties attributes</summary>
+  <p>
+    
+    <h3>symmetric</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Color A blends into Color B and then back into Color A from the start to the end point</p>
+        
+      </p>
+    
+    <h3>symmetric_center</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Shifts the center of the symmetric falloff</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Falloff properties attributes</summary>
+  <p>
+    
+    <h3>falloff_bias</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Compresses the blending towards the start or end color</p>
+        
+      </p>
+    
+    <h3>falloff_end</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Shifts where the falloff ends</p>
+        
+      </p>
+    
+    <h3>falloff_end_intensity</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Adjust the intensity of the end color</p>
+        
+      </p>
+    
+    <h3>falloff_exponent</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Adjusts rate of blending</p>
+        
+      </p>
+    
+    <h3>falloff_start</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Shifts where the falloff starts</p>
+        
+      </p>
+    
+    <h3>falloff_type</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | none = 0
+          
+            | natural = 1 (default)
+          
+            | linear = 2
+          
+            | squared = 3
+          
+            | gaussian = 4
+          
+            | ease out = 5
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Falloff blend mode</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Gradient properties attributes</summary>
+  <p>
+    
+    <h3>color_A</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Start color</p>
+        
+      </p>
+    
+    <h3>color_B</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">End color</p>
+        
+      </p>
+    
+    <h3>end</h3>
+    <p>
+      <b>Vec3f</b>
+      
+        
+          default: [ 0, 1, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">End position in the chosen space</p>
+        
+      </p>
+    
+    <h3>object</h3>
+    <p>
+      <b>Geometry</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Use the provided object's transformation space (only used if object space is also specified)</p>
+        
+      </p>
+    
+    <h3>space</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | render = 0 (default)
+          
+            | camera = 1
+          
+            | world = 2
+          
+            | screen = 3
+          
+            | object = 4
+          
+            | reference = 5
+          
+            | texture = 6
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The transformation space in which to perform the blending</p>
+        
+      </p>
+    
+    <h3>start</h3>
+    <p>
+      <b>Vec3f</b>
+      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Start position in the chosen space</p>
+        
+      </p>
+    
+  </p>
+</details>
 

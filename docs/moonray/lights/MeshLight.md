@@ -7,693 +7,525 @@ title: MeshLight
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # MeshLight
-
 **NODE LIGHT**
 
-Documentation for class MeshLight
-
-
-
 ---
 
-## <p style="color:blue;">Map attributes</p>
-
-## contrast
-
-**Rgb** 
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>contrast</b> needs to be written</p>
-
-
-
-
-## gain
-
-**Rgb** 
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>gain</b> needs to be written</p>
-
-
-
-
-## gamma
-
-**Rgb** 
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>gamma</b> needs to be written</p>
-
-
-
-
-## offset
-
-**Rgb** 
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>offset</b> needs to be written</p>
-
-
-
-
-## saturation
-
-**Rgb** 
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>saturation</b> needs to be written</p>
-
-
-
-
-## temperature
-
-**Vec3f** 
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-color temperature using Nuke-like T/M/E settings
-
-
-
-
-## texture
-
-**String** *filename*
-
-
-Default value : 
-
-
-
-
-filename that points to a texture (formats: .exr, .tif, .jpg, etc.)
-
-
-
-
-## texture_border_color
-
-**Rgb** 
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-RGB value used when a texture lookup occurs outside the texture
-
-
-
-
-## texture_coverage
-
-**Vec2f** 
-
-
-Default value : [ 1, 1 ]
-
-
-
-
-Scales in (u,v)
-
-
-
-
-## texture_mirror_u
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-true => mirror in u, false => repeat in u
-
-
-
-
-## texture_mirror_v
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-true => mirror in v, false => repeat in v
-
-
-
-
-## texture_reps_u
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-Number of times texture repeats in u over the scaled texture space
-
-
-
-
-## texture_reps_v
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-Number of times texture repeats in v over the scaled texture space
-
-
-
-
-## texture_rotation
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-Clockwise rotation angle in degrees
-
-
-
-
-## texture_translation
-
-**Vec2f** 
-
-
-Default value : [ 0, 0 ]
-
-
-
-
-Translations in (u,v) expressed as fractions of the unscaled texture space
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Properties attributes</p>
-
-## apply_scene_scale
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-apply scene scale variable when normalized
-
-
-
-
-## clear_radius
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-clear radius: shadows less than this distance from the light are ignored (disabled if <= 0.0)
-
-
-
-
-## clear_radius_falloff_distance
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius
-
-
-
-
-## clear_radius_interpolation_type
-
-**Int** *enum*
-
-
-
-- linear = 0 (default)
-
-- exponential_up = 1
-
-- exponential_down = 2
-
-- smoothstep = 3
-
-
-
-
-
-clear radius interpolation: interpolation type to use for the clear radius shadow falloff
-
-
-
-
-## color
-
-**Rgb** 
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>color</b> needs to be written</p>
-
-
-
-
-## exposure
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>exposure</b> needs to be written</p>
-
-
-
-
-## geometry
-
-**Geometry** 
-
-
-Default value : None
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>geometry</b> needs to be written</p>
-
-
-
-
-## intensity
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>intensity</b> needs to be written</p>
-
-
-
-
-## label
-
-**String** 
-
-
-Default value : 
-
-
-
-
-label used in light aov expressions
-
-
-
-
-## map_shader
-
-**Map** 
-
-
-Default value : None
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>map_shader</b> needs to be written</p>
-
-
-
-
-## max_shadow_distance
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>max_shadow_distance</b> needs to be written</p>
-
-
-
-
-## mb
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-Does light motion affect motion-blur?
-
-
-
-
-## normalized
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>normalized</b> needs to be written</p>
-
-
-
-
-## on
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>on</b> needs to be written</p>
-
-
-
-
-## parts
-
-**StringVector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>parts</b> needs to be written</p>
-
-
-
-
-## presence_shadows
-
-**Int** *enum*
-
-
-
-- force off = 0
-
-- force on = 1
-
-- use default = 2 (default)
-
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>presence_shadows</b> needs to be written</p>
-
-
-
-
-## ray_termination
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.
-
-
-
-
-## texture_filter
-
-**Int** *enum*
-
-
-
-- nearest neighbor = 0 (default)
-
-- bilinear = 1
-
-- nearest neighbor with nearest mip = 2
-
-- bilinear with nearest mip = 3
-
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>texture_filter</b> needs to be written</p>
-
-
-
-
-## visible_in_camera
-
-**Int** *enum*
-
-
-
-- force off = 0
-
-- force on = 1
-
-- use default = 2 (default)
-
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>visible_in_camera</b> needs to be written</p>
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Visibility Flags attributes</p>
-
-## visible_diffuse_reflection
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-whether the light is visible in diffuse reflection
-
-
-
-
-## visible_diffuse_transmission
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-whether the light is visible in diffuse transmission
-
-
-
-
-## visible_glossy_reflection
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-whether the light is visible in glossy reflection.
-
-
-
-
-## visible_glossy_transmission
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-whether the light is visible in glossy transmission (refraction).
-
-
-
-
-## visible_mirror_reflection
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-whether the light is visible in miror reflection.
-
-
-
-
-## visible_mirror_transmission
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-whether the light is visible in miror transmission (refraction).
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## light_filters
-
-**Object Vector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>light_filters</b> needs to be written</p>
-
-
-
-
-## node_xform
-
-**Mat4d** *blurrable*
-
-
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>node_xform</b> needs to be written</p>
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Map attributes</summary>
+  <p>
+    
+    <h3>contrast</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>gain</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>gamma</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>offset</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>saturation</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>temperature</h3>
+    <p>
+      <b>Vec3f</b>
+      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">color temperature using Nuke-like T/M/E settings</p>
+        
+      </p>
+    
+    <h3>texture</h3>
+    <p>
+      <b>String</b>
+      <i>filename</i>
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture (formats: .exr, .tif, .jpg, etc.)</p>
+        
+      </p>
+    
+    <h3>texture_border_color</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">RGB value used when a texture lookup occurs outside the texture</p>
+        
+      </p>
+    
+    <h3>texture_coverage</h3>
+    <p>
+      <b>Vec2f</b>
+      
+        
+          default: [ 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Scales in (u,v)</p>
+        
+      </p>
+    
+    <h3>texture_mirror_u</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">true => mirror in u, false => repeat in u</p>
+        
+      </p>
+    
+    <h3>texture_mirror_v</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">true => mirror in v, false => repeat in v</p>
+        
+      </p>
+    
+    <h3>texture_reps_u</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Number of times texture repeats in u over the scaled texture space</p>
+        
+      </p>
+    
+    <h3>texture_reps_v</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Number of times texture repeats in v over the scaled texture space</p>
+        
+      </p>
+    
+    <h3>texture_rotation</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Clockwise rotation angle in degrees</p>
+        
+      </p>
+    
+    <h3>texture_translation</h3>
+    <p>
+      <b>Vec2f</b>
+      
+        
+          default: [ 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Translations in (u,v) expressed as fractions of the unscaled texture space</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Properties attributes</summary>
+  <p>
+    
+    <h3>apply_scene_scale</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">apply scene scale variable when normalized</p>
+        
+      </p>
+    
+    <h3>clear_radius</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">clear radius: shadows less than this distance from the light are ignored (disabled if <= 0.0)</p>
+        
+      </p>
+    
+    <h3>clear_radius_falloff_distance</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius</p>
+        
+      </p>
+    
+    <h3>clear_radius_interpolation_type</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | linear = 0 (default)
+          
+            | exponential_up = 1
+          
+            | exponential_down = 2
+          
+            | smoothstep = 3
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">clear radius interpolation: interpolation type to use for the clear radius shadow falloff</p>
+        
+      </p>
+    
+    <h3>color</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>exposure</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>geometry</h3>
+    <p>
+      <b>Geometry</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>intensity</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>label</h3>
+    <p>
+      <b>String</b>
+      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">label used in light aov expressions</p>
+        
+      </p>
+    
+    <h3>map_shader</h3>
+    <p>
+      <b>Map</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>max_shadow_distance</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>mb</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Does light motion affect motion-blur?</p>
+        
+      </p>
+    
+    <h3>normalized</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>on</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>parts</h3>
+    <p>
+      <b>StringVector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>presence_shadows</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | force off = 0
+          
+            | force on = 1
+          
+            | use default = 2 (default)
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>ray_termination</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.</p>
+        
+      </p>
+    
+    <h3>texture_filter</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | nearest neighbor = 0 (default)
+          
+            | bilinear = 1
+          
+            | nearest neighbor with nearest mip = 2
+          
+            | bilinear with nearest mip = 3
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>visible_in_camera</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | force off = 0
+          
+            | force on = 1
+          
+            | use default = 2 (default)
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Visibility Flags attributes</summary>
+  <p>
+    
+    <h3>visible_diffuse_reflection</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in diffuse reflection</p>
+        
+      </p>
+    
+    <h3>visible_diffuse_transmission</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in diffuse transmission</p>
+        
+      </p>
+    
+    <h3>visible_glossy_reflection</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in glossy reflection.</p>
+        
+      </p>
+    
+    <h3>visible_glossy_transmission</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in glossy transmission (refraction).</p>
+        
+      </p>
+    
+    <h3>visible_mirror_reflection</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in miror reflection.</p>
+        
+      </p>
+    
+    <h3>visible_mirror_transmission</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in miror transmission (refraction).</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>light_filters</h3>
+    <p>
+      <b>Object Vector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>node_xform</h3>
+    <p>
+      <b>Mat4d</b>
+      <i>blurrable</i>
+        
+          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

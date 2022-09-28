@@ -7,77 +7,59 @@ title: ColorCorrectTMIMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # ColorCorrectTMIMap
-
 **MAP SHADER**
-
-Documentation for class ColorCorrectTMIMap
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## TMI
-
-**Rgb** *bindable*
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy 
-
-
-
-
-## input
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-bind the input here
-
-
-
-
-## mix
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-how much of the overall color correct to mix in
-
-
-
-
-## on
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-enables/disables all color correct operations
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>TMI</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
+        
+      </p>
+    
+    <h3>input</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+        
+      </p>
+    
+    <h3>mix</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
+        
+      </p>
+    
+    <h3>on</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables all color correct operations</p>
+        
+      </p>
+    
+  </p>
+</details>
 

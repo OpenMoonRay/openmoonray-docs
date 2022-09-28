@@ -7,32 +7,26 @@ title: LightFilterSet
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # LightFilterSet
-
 **LIGHTFILTERSET**
-
-Documentation for class LightFilterSet
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## lightfilters
-
-**Lightfilter Vector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>lightfilters</b> needs to be written</p>
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>lightfilters</h3>
+    <p>
+      <b>Lightfilter Vector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

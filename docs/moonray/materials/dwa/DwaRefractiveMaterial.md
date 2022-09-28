@@ -7,988 +7,764 @@ title: DwaRefractiveMaterial
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # DwaRefractiveMaterial
-
 **ROOTSHADER MATERIAL SHADER DWABASELAYERABLE**
 
-Documentation for class DwaRefractiveMaterial
-
-
-
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
-
-## specular
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-enables/disables specular reflections (binary 0|1 for plausibility)
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Clearcoat attributes</p>
-
-## clearcoat
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-enables/disables clearcoat (binary 0|1 for plausibility)
-
-
-
-
-## clearcoat_attenuation_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 0.5, 0.5, 0.5 ]
-
-
-
-
-the attenuation color of the clearcoat when 'cleacoat thickness' > 0
-
-
-
-
-## clearcoat_bending
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-(advanced, recommended ON) bends rays based on the clearcoat-refractive-index before evaluating the lobes under clearcoat
-
-
-
-
-## clearcoat_model
-
-**Int** *enum*
-
-
-
-- Beckmann = 0
-
-- GGX = 1 (default)
-
-
-
-
-
-sets the normalized distribution function for clearcoat.  GGX is currently isotropic only
-
-
-
-
-## clearcoat_normal_dial
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-controls the amount of infuence of the alternate clearcoat normal
-
-
-
-
-## clearcoat_refractive_index
-
-**Float** 
-
-
-Default value : 1.5
-
-
-
-
-defines the Fresnel behavior
-
-
-
-
-## clearcoat_roughness
-
-**Float** *bindable*
-
-
-Default value : 0.10000000149
-
-
-
-
-the roughness of the clearcoat lobe
-
-
-
-
-## clearcoat_thickness
-
-**Float** *bindable*
-
-
-Default value : 0.0
-
-
-
-
-the thickness of the virtual clearcoat layer. Values > 0 enable absorption
-
-
-
-
-## independent_clearcoat_normal
-
-**33554432** 
-
-
-Default value : None
-
-
-
-
-specifies an independent shading normal (normal map) for the clearcoat lobe
-
-
-
-
-## show_clearcoat
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-enables/disables clearcoat
-
-
-
-
-## use_independent_clearcoat_normal
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-specifies whether the clearcoat lobe should use an independent normal
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Common attributes</p>
-
-## casts_caustics
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-allows continuation of caustic light paths.
-
-
-
-
-## presence
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).
-
-
-
-
-## thin_geometry
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-enables proper shading of infinitely thin geometry such as paper or leaves.
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Emission attributes</p>
-
-## emission
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-the energy emitted from this material
-
-
-
-
-## show_emission
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-enables/disable emission
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Fuzz attributes</p>
-
-## fuzz
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-fuzz mask
-
-
-
-
-## fuzz_albedo
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-Color of the fuzz highlights.
-
-
-
-
-## fuzz_normal
-
-**33554432** 
-
-
-Default value : None
-
-
-
-
-specifies an independent shading normal (normal map) for the fuzz lobe
-
-
-
-
-## fuzz_normal_dial
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-controls the amount of infuence of the alternate fuzz normal
-
-
-
-
-## fuzz_roughness
-
-**Float** *bindable*
-
-
-Default value : 0.25
-
-
-
-
-Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage
-
-
-
-
-## show_fuzz
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-Enables/disables fuzz lobe
-
-
-
-
-## use_absorbing_fuzz_fibers
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Iridescence attributes</p>
-
-## iridescence
-
-**Float** *bindable*
-
-
-Default value : 0.0
-
-
-
-
-controls the strength of the iridescence effect
-
-
-
-
-## iridescence_apply_to
-
-**Int** *enum*
-
-
-
-- primary specular = 0 (default)
-
-- clearcoat/moisture specular = 1
-
-
-
-
-
-Apply iridescence to primary specular lobe or clearcoat/moisture lobe
-
-
-
-
-## iridescence_at_0_incidence
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-Iridescence effect at 0 degree viewing angle
-
-
-
-
-## iridescence_at_90_incidence
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-Iridescence effect at 90 degree viewing angle
-
-
-
-
-## iridescence_color_control
-
-**Int** *enum*
-
-
-
-- use hue interpolation = 0 (default)
-
-- use ramp = 1
-
-
-
-
-
-use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp
-
-
-
-
-## iridescence_colors
-
-**RgbVector** 
-
-
-Default value : [[ 1, 0, 0 ], [ 1, 1, 0 ], [ 0, 1, 0 ], [ 0, 1, 1 ], [ 0, 0, 1 ], [ 1, 0, 1 ], [ 1, 0, 0 ]]
-
-
-
-
-List of colors on the ramp
-
-
-
-
-## iridescence_exponent
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-Tightens or broadens the distribution of colors
-
-
-
-
-## iridescence_flip_hue_direction
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-flip interpolation around the hue wheel to counter-clockwise direction
-
-
-
-
-## iridescence_interpolations
-
-**IntVector** 
-
-
-Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
-
-
-
-
-None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
-
-			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
-
-
-
-
-## iridescence_positions
-
-**FloatVector** 
-
-
-Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
-
-
-
-
-ramp positions
-
-
-
-
-## iridescence_primary_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 0, 0 ]
-
-
-
-
-First color to interpolate from around the hue wheel
-
-
-
-
-## iridescence_ramp_interpolation_mode
-
-**Int** *enum*
-
-
-
-- RGB = 0 (default)
-
-- HSV = 1
-
-
-
-
-
-RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation
-
-
-
-
-## iridescence_secondary_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 0, 0 ]
-
-
-
-
-Second color to interpolate to around the hue wheel
-
-
-
-
-## iridescence_thickness
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-Controls how much the color spectrum is repeated
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Normal attributes</p>
-
-## input_normal
-
-**33554432** 
-
-
-Default value : None
-
-
-
-
-specifies an alternate shading normal in the tangent frame (normal map)
-
-
-
-
-## input_normal_dial
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-controls the amount of influence of the alternate normal
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Normal Anti-aliasing attributes</p>
-
-## normal_AA_dial
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-Controls the amount roughness compensation from the normal map AA strategy.
-
-
-
-
-## normal_AA_strategy
-
-**Int** *enum*
-
-
-
-- none = 0 (default)
-
-- toksvig = 1
-
-
-
-
-
-Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Specular attributes</p>
-
-## anisotropy
-
-**Float** *bindable*
-
-
-Default value : 0.0
-
-
-
-
-controls the shape of the primary reflection
-
-
-
-
-## refractive_index
-
-**Float** 
-
-
-Default value : 1.5
-
-
-
-
-defines the Fresnel behavior, (affects reflection and refraction)
-
-
-
-
-## roughness
-
-**Float** *bindable*
-
-
-Default value : 0.5
-
-
-
-
-the roughness of the surface (currently only affects reflection)
-
-
-
-
-## shading_tangent
-
-**Vec2f** *bindable*
-
-
-Default value : [ 1, 0 ]
-
-
-
-
-controls the orientation of anistropy
-
-
-
-
-## show_specular
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-enables/disables specular reflections
-
-
-
-
-## specular_model
-
-**Int** *enum*
-
-
-
-- Beckmann = 0
-
-- GGX = 1 (default)
-
-
-
-
-
-sets the normalized distribution function for specular.  GGX is currently isotropic only
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Transmission attributes</p>
-
-## dispersion_abbe_number
-
-**Float** 
-
-
-Default value : 34.0
-
-
-
-
-The amount of dispersion/chromatic-aberration via refractions. Lower this number to increase the effect. A value of 0 turns off dispersion. Around [25-80] makes sense for realistic glass. Lower values may look better on gemstones.
-
-
-
-
-## independent_transmission_refractive_index
-
-**Float** 
-
-
-Default value : 1.5
-
-
-
-
-defines a separate IOR for the bending of light with transmission
-
-
-
-
-## independent_transmission_roughness
-
-**Float** *bindable*
-
-
-Default value : 0.5
-
-
-
-
-separate roughness for transmission
-
-
-
-
-## show_transmission
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-enables/disables refractive solid model
-
-
-
-
-## transmission_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-the desired color of transmitted light
-
-
-
-
-## use_dispersion
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-use dispersion effects in transmission
-
-
-
-
-## use_independent_transmission_refractive_index
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-use a separate IOR for transmission
-
-
-
-
-## use_independent_transmission_roughness
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-use a separate roughness for transmission
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## extra_aovs
-
-**Map** 
-
-
-Default value : None
-
-
-
-
-Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
-
-
-
-
-## label
-
-**String** 
-
-
-Default value : 
-
-
-
-
-label used in material and light aovs
-
-
-
-
-## priority
-
-**Int** 
-
-
-Default value : 0
-
-
-
-
-The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <p>
+    
+    <h3>specular</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables specular reflections (binary 0|1 for plausibility)</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Clearcoat attributes</summary>
+  <p>
+    
+    <h3>clearcoat</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables clearcoat (binary 0|1 for plausibility)</p>
+        
+      </p>
+    
+    <h3>clearcoat_attenuation_color</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 0.5, 0.5, 0.5 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the attenuation color of the clearcoat when 'cleacoat thickness' > 0</p>
+        
+      </p>
+    
+    <h3>clearcoat_bending</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced, recommended ON) bends rays based on the clearcoat-refractive-index before evaluating the lobes under clearcoat</p>
+        
+      </p>
+    
+    <h3>clearcoat_model</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | Beckmann = 0
+          
+            | GGX = 1 (default)
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">sets the normalized distribution function for clearcoat.  GGX is currently isotropic only</p>
+        
+      </p>
+    
+    <h3>clearcoat_normal_dial</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the amount of infuence of the alternate clearcoat normal</p>
+        
+      </p>
+    
+    <h3>clearcoat_refractive_index</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">defines the Fresnel behavior</p>
+        
+      </p>
+    
+    <h3>clearcoat_roughness</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.10000000149
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the roughness of the clearcoat lobe</p>
+        
+      </p>
+    
+    <h3>clearcoat_thickness</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the thickness of the virtual clearcoat layer. Values > 0 enable absorption</p>
+        
+      </p>
+    
+    <h3>independent_clearcoat_normal</h3>
+    <p>
+      <b>33554432</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an independent shading normal (normal map) for the clearcoat lobe</p>
+        
+      </p>
+    
+    <h3>show_clearcoat</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables clearcoat</p>
+        
+      </p>
+    
+    <h3>use_independent_clearcoat_normal</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specifies whether the clearcoat lobe should use an independent normal</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
+  <p>
+    
+    <h3>casts_caustics</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">allows continuation of caustic light paths.</p>
+        
+      </p>
+    
+    <h3>presence</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
+        
+      </p>
+    
+    <h3>thin_geometry</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables proper shading of infinitely thin geometry such as paper or leaves.</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
+  <p>
+    
+    <h3>emission</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the energy emitted from this material</p>
+        
+      </p>
+    
+    <h3>show_emission</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disable emission</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Fuzz attributes</summary>
+  <p>
+    
+    <h3>fuzz</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">fuzz mask</p>
+        
+      </p>
+    
+    <h3>fuzz_albedo</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Color of the fuzz highlights.</p>
+        
+      </p>
+    
+    <h3>fuzz_normal</h3>
+    <p>
+      <b>33554432</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an independent shading normal (normal map) for the fuzz lobe</p>
+        
+      </p>
+    
+    <h3>fuzz_normal_dial</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the amount of infuence of the alternate fuzz normal</p>
+        
+      </p>
+    
+    <h3>fuzz_roughness</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.25
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage</p>
+        
+      </p>
+    
+    <h3>show_fuzz</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Enables/disables fuzz lobe</p>
+        
+      </p>
+    
+    <h3>use_absorbing_fuzz_fibers</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Iridescence attributes</summary>
+  <p>
+    
+    <h3>iridescence</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the strength of the iridescence effect</p>
+        
+      </p>
+    
+    <h3>iridescence_apply_to</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | primary specular = 0 (default)
+          
+            | clearcoat/moisture specular = 1
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Apply iridescence to primary specular lobe or clearcoat/moisture lobe</p>
+        
+      </p>
+    
+    <h3>iridescence_at_0_incidence</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Iridescence effect at 0 degree viewing angle</p>
+        
+      </p>
+    
+    <h3>iridescence_at_90_incidence</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Iridescence effect at 90 degree viewing angle</p>
+        
+      </p>
+    
+    <h3>iridescence_color_control</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | use hue interpolation = 0 (default)
+          
+            | use ramp = 1
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp</p>
+        
+      </p>
+    
+    <h3>iridescence_colors</h3>
+    <p>
+      <b>RgbVector</b>
+      
+        
+          default: [[ 1, 0, 0 ], [ 1, 1, 0 ], [ 0, 1, 0 ], [ 0, 1, 1 ], [ 0, 0, 1 ], [ 1, 0, 1 ], [ 1, 0, 0 ]]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
+        
+      </p>
+    
+    <h3>iridescence_exponent</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Tightens or broadens the distribution of colors</p>
+        
+      </p>
+    
+    <h3>iridescence_flip_hue_direction</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">flip interpolation around the hue wheel to counter-clockwise direction</p>
+        
+      </p>
+    
+    <h3>iridescence_interpolations</h3>
+    <p>
+      <b>IntVector</b>
+      
+        
+          default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
+
+			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
+        
+      </p>
+    
+    <h3>iridescence_positions</h3>
+    <p>
+      <b>FloatVector</b>
+      
+        
+          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">ramp positions</p>
+        
+      </p>
+    
+    <h3>iridescence_primary_color</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">First color to interpolate from around the hue wheel</p>
+        
+      </p>
+    
+    <h3>iridescence_ramp_interpolation_mode</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | RGB = 0 (default)
+          
+            | HSV = 1
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation</p>
+        
+      </p>
+    
+    <h3>iridescence_secondary_color</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Second color to interpolate to around the hue wheel</p>
+        
+      </p>
+    
+    <h3>iridescence_thickness</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls how much the color spectrum is repeated</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
+  <p>
+    
+    <h3>input_normal</h3>
+    <p>
+      <b>33554432</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal in the tangent frame (normal map)</p>
+        
+      </p>
+    
+    <h3>input_normal_dial</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the amount of influence of the alternate normal</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal Anti-aliasing attributes</summary>
+  <p>
+    
+    <h3>normal_AA_dial</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls the amount roughness compensation from the normal map AA strategy.</p>
+        
+      </p>
+    
+    <h3>normal_AA_strategy</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | none = 0 (default)
+          
+            | toksvig = 1
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Specular attributes</summary>
+  <p>
+    
+    <h3>anisotropy</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the shape of the primary reflection</p>
+        
+      </p>
+    
+    <h3>refractive_index</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">defines the Fresnel behavior, (affects reflection and refraction)</p>
+        
+      </p>
+    
+    <h3>roughness</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the roughness of the surface (currently only affects reflection)</p>
+        
+      </p>
+    
+    <h3>shading_tangent</h3>
+    <p>
+      <b>Vec2f</b>
+      <i>bindable</i>
+        
+          default: [ 1, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the orientation of anistropy</p>
+        
+      </p>
+    
+    <h3>show_specular</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables specular reflections</p>
+        
+      </p>
+    
+    <h3>specular_model</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | Beckmann = 0
+          
+            | GGX = 1 (default)
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">sets the normalized distribution function for specular.  GGX is currently isotropic only</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Transmission attributes</summary>
+  <p>
+    
+    <h3>dispersion_abbe_number</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 34.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The amount of dispersion/chromatic-aberration via refractions. Lower this number to increase the effect. A value of 0 turns off dispersion. Around [25-80] makes sense for realistic glass. Lower values may look better on gemstones.</p>
+        
+      </p>
+    
+    <h3>independent_transmission_refractive_index</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">defines a separate IOR for the bending of light with transmission</p>
+        
+      </p>
+    
+    <h3>independent_transmission_roughness</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">separate roughness for transmission</p>
+        
+      </p>
+    
+    <h3>show_transmission</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables refractive solid model</p>
+        
+      </p>
+    
+    <h3>transmission_color</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the desired color of transmitted light</p>
+        
+      </p>
+    
+    <h3>use_dispersion</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">use dispersion effects in transmission</p>
+        
+      </p>
+    
+    <h3>use_independent_transmission_refractive_index</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">use a separate IOR for transmission</p>
+        
+      </p>
+    
+    <h3>use_independent_transmission_roughness</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">use a separate roughness for transmission</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>extra_aovs</h3>
+    <p>
+      <b>Map</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        
+      </p>
+    
+    <h3>label</h3>
+    <p>
+      <b>String</b>
+      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        
+      </p>
+    
+    <h3>priority</h3>
+    <p>
+      <b>Int</b>
+      
+        
+          default: 0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        
+      </p>
+    
+  </p>
+</details>
 

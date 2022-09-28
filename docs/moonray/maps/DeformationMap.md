@@ -7,38 +7,30 @@ title: DeformationMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # DeformationMap
-
 **MAP SHADER**
-
-Documentation for class DeformationMap
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## output_mode
-
-**Int** *enum*
-
-
-
-- RGB = 0
-
-- deformation_S = 1
-
-- deformation_T = 2
-
-- deformation_avg = 3 (default)
-
-
-
-
-
-Controls output: 
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>output_mode</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | RGB = 0
+          
+            | deformation_S = 1
+          
+            | deformation_T = 2
+          
+            | deformation_avg = 3 (default)
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls output: 
 
 		    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space 
 
@@ -46,39 +38,32 @@ Controls output:
 
 		    deformation_T - deformation along T 
 
-		    deformation_avg - average deformation from ref space
-
-
-
-
-## use_warning_color
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-If derivatives are missing or zero output the warning color erroring out
-
-
-
-
-## warning_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-Warning color to output when derivatives are missing or zero
-
-
-
-
+		    deformation_avg - average deformation from ref space</p>
+        
+      </p>
+    
+    <h3>use_warning_color</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">If derivatives are missing or zero output the warning color erroring out</p>
+        
+      </p>
+    
+    <h3>warning_color</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Warning color to output when derivatives are missing or zero</p>
+        
+      </p>
+    
+  </p>
+</details>
 

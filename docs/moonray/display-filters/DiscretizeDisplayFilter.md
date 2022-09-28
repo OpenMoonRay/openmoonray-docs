@@ -7,98 +7,78 @@ title: DiscretizeDisplayFilter
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # DiscretizeDisplayFilter
-
 ****
 
-Documentation for class DiscretizeDisplayFilter
-
-
-
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
-
-## invert_mask
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-invert value of mask
-
-
-
-
-## mix
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-blend between output and input
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <p>
+    
+    <h3>invert_mask</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        
+      </p>
+    
+    <h3>mix</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        
+      </p>
+    
+  </p>
+</details>
 
 
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## input
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-Image buffer to discretize
-
-
-
-
-## mask
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>mask</b> needs to be written</p>
-
-
-
-
-## num_bins
-
-**Int** 
-
-
-Default value : 8
-
-
-
-
-number of discrete color bins
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>input</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Image buffer to discretize</p>
+        
+      </p>
+    
+    <h3>mask</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>num_bins</h3>
+    <p>
+      <b>Int</b>
+      
+        
+          default: 8
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">number of discrete color bins</p>
+        
+      </p>
+    
+  </p>
+</details>
 

@@ -7,45 +7,34 @@ title: Metadata
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # Metadata
-
 **METADATA**
-
-Documentation for class Metadata
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## name
-
-**StringVector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>name</b> needs to be written</p>
-
-
-
-
-## type
-
-**StringVector** 
-
-
-Default value : []
-
-
-
-
-Allowed types for exr headers:
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>name</h3>
+    <p>
+      <b>StringVector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>type</h3>
+    <p>
+      <b>StringVector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Allowed types for exr headers:
 
 			* box2i
 
@@ -71,24 +60,21 @@ Allowed types for exr headers:
 
 			* v3i
 
-			* v3f
-
-
-
-
-## value
-
-**StringVector** 
-
-
-Default value : []
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>value</b> needs to be written</p>
-
-
-
-
+			* v3f</p>
+        
+      </p>
+    
+    <h3>value</h3>
+    <p>
+      <b>StringVector</b>
+      
+        
+          default: []
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

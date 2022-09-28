@@ -7,302 +7,239 @@ title: DomeMaster3DCamera
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # DomeMaster3DCamera
-
 **NODE CAMERA**
 
-Documentation for class DomeMaster3DCamera
-
-
-
 ---
 
-## <p style="color:blue;">Frustum attributes</p>
-
-## far
-
-**Float** 
-
-
-Default value : 10000.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>far</b> needs to be written</p>
-
-
-
-
-## near
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>near</b> needs to be written</p>
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Motion Blur attributes</p>
-
-## mb_shutter_bias
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
-
-
-
-
-## mb_shutter_close
-
-**Float** 
-
-
-Default value : 0.25
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
-
-
-
-
-## mb_shutter_open
-
-**Float** 
-
-
-Default value : -0.25
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Render Masks attributes</p>
-
-## pixel_sample_map
-
-**String** 
-
-
-Default value : 
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Stereo attributes</p>
-
-## head_tilt_map
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>head_tilt_map</b> needs to be written</p>
-
-
-
-
-## interocular_distance_map_file_name
-
-**String** *filename*
-
-
-Default value : 
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>interocular_distance_map_file_name</b> needs to be written</p>
-
-
-
-
-## stereo_convergence_distance
-
-**Float** 
-
-
-Default value : 360.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>stereo_convergence_distance</b> needs to be written</p>
-
-
-
-
-## stereo_interocular_distance
-
-**Float** 
-
-
-Default value : 6.5
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>stereo_interocular_distance</b> needs to be written</p>
-
-
-
-
-## stereo_view
-
-**Int** *enum*
-
-
-
-- center view = 0 (default)
-
-- left view = 1
-
-- right view = 2
-
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>stereo_view</b> needs to be written</p>
-
-
-
-
-## zenith_mode
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>zenith_mode</b> needs to be written</p>
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## FOV_horizontal_angle
-
-**Float** 
-
-
-Default value : 60.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>FOV_horizontal_angle</b> needs to be written</p>
-
-
-
-
-## FOV_vertical_angle
-
-**Float** 
-
-
-Default value : 30.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>FOV_vertical_angle</b> needs to be written</p>
-
-
-
-
-## flip_ray_x
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>flip_ray_x</b> needs to be written</p>
-
-
-
-
-## flip_ray_y
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>flip_ray_y</b> needs to be written</p>
-
-
-
-
-## node_xform
-
-**Mat4d** *blurrable*
-
-
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>node_xform</b> needs to be written</p>
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Frustum attributes</summary>
+  <p>
+    
+    <h3>far</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 10000.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>near</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Motion Blur attributes</summary>
+  <p>
+    
+    <h3>mb_shutter_bias</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>mb_shutter_close</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.25
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>mb_shutter_open</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: -0.25
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Render Masks attributes</summary>
+  <p>
+    
+    <h3>pixel_sample_map</h3>
+    <p>
+      <b>String</b>
+      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Stereo attributes</summary>
+  <p>
+    
+    <h3>head_tilt_map</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>interocular_distance_map_file_name</h3>
+    <p>
+      <b>String</b>
+      <i>filename</i>
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>stereo_convergence_distance</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 360.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>stereo_interocular_distance</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 6.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>stereo_view</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | center view = 0 (default)
+          
+            | left view = 1
+          
+            | right view = 2
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>zenith_mode</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>FOV_horizontal_angle</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 60.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>FOV_vertical_angle</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 30.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>flip_ray_x</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>flip_ray_y</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>node_xform</h3>
+    <p>
+      <b>Mat4d</b>
+      <i>blurrable</i>
+        
+          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

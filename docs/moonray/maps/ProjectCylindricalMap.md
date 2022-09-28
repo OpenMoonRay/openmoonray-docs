@@ -7,227 +7,174 @@ title: ProjectCylindricalMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # ProjectCylindricalMap
-
 **MAP SHADER**
-
-Documentation for class ProjectCylindricalMap
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## TRS_order
-
-**Int** *enum*
-
-
-
-- Scale Rot Trans = 0 (default)
-
-- Scale Trans Rot = 1
-
-- Rot Scale Trans = 2
-
-- Rot Trans Scale = 3
-
-- Trans Scale Rot = 4
-
-- Trans Rot Scale = 5
-
-
-
-
-
-Order in which to apply transformations
-
-
-
-
-## black_outside_projection
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-Toggles whether projections appear outside the 0-1 uv range of the projector
-
-
-
-
-## project_on_inward_surfaces
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-enables projection on surfaces with inward facing normals
-
-
-
-
-## project_on_outward_surfaces
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-enables projection on surfaces with outward facing normals
-
-
-
-
-## projection_matrix
-
-**Mat4d** 
-
-
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-
-
-
-
-the transform to use for projection
-
-
-
-
-## projection_mode
-
-**Int** *enum*
-
-
-
-- projector = 0 (default)
-
-- projection_matrix = 1
-
-- TRS = 2
-
-
-
-
-
-Source parameters to use for projection transform
-
-
-
-
-## projector
-
-**Node** 
-
-
-Default value : None
-
-
-
-
-the object whose transform to use for projection
-
-
-
-
-## rotate
-
-**Vec3d** 
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-Rotation of the projection transform
-
-
-
-
-## rotation_order
-
-**Int** *enum*
-
-
-
-- xyz = 0 (default)
-
-- xzy = 1
-
-- yxz = 2
-
-- yzx = 3
-
-- zxy = 4
-
-- zyx = 5
-
-
-
-
-
-Order in which to apply rotation transformations
-
-
-
-
-## scale
-
-**Vec3d** 
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-Scale of the projection transform
-
-
-
-
-## translate
-
-**Vec3d** 
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-Tranlation of the projection transform
-
-
-
-
-## use_reference_space
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-use reference space
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>TRS_order</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | Scale Rot Trans = 0 (default)
+          
+            | Scale Trans Rot = 1
+          
+            | Rot Scale Trans = 2
+          
+            | Rot Trans Scale = 3
+          
+            | Trans Scale Rot = 4
+          
+            | Trans Rot Scale = 5
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply transformations</p>
+        
+      </p>
+    
+    <h3>black_outside_projection</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
+        
+      </p>
+    
+    <h3>project_on_inward_surfaces</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables projection on surfaces with inward facing normals</p>
+        
+      </p>
+    
+    <h3>project_on_outward_surfaces</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables projection on surfaces with outward facing normals</p>
+        
+      </p>
+    
+    <h3>projection_matrix</h3>
+    <p>
+      <b>Mat4d</b>
+      
+        
+          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the transform to use for projection</p>
+        
+      </p>
+    
+    <h3>projection_mode</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | projector = 0 (default)
+          
+            | projection_matrix = 1
+          
+            | TRS = 2
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Source parameters to use for projection transform</p>
+        
+      </p>
+    
+    <h3>projector</h3>
+    <p>
+      <b>Node</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the object whose transform to use for projection</p>
+        
+      </p>
+    
+    <h3>rotate</h3>
+    <p>
+      <b>Vec3d</b>
+      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation of the projection transform</p>
+        
+      </p>
+    
+    <h3>rotation_order</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | xyz = 0 (default)
+          
+            | xzy = 1
+          
+            | yxz = 2
+          
+            | yzx = 3
+          
+            | zxy = 4
+          
+            | zyx = 5
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply rotation transformations</p>
+        
+      </p>
+    
+    <h3>scale</h3>
+    <p>
+      <b>Vec3d</b>
+      
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of the projection transform</p>
+        
+      </p>
+    
+    <h3>translate</h3>
+    <p>
+      <b>Vec3d</b>
+      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Tranlation of the projection transform</p>
+        
+      </p>
+    
+    <h3>use_reference_space</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
+        
+      </p>
+    
+  </p>
+</details>
 

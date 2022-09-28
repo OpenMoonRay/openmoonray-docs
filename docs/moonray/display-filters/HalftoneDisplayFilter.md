@@ -7,143 +7,111 @@ title: HalftoneDisplayFilter
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # HalftoneDisplayFilter
-
 ****
 
-Documentation for class HalftoneDisplayFilter
-
-
-
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
-
-## invert_mask
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-invert value of mask
-
-
-
-
-## mix
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-blend between output and input
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## filter_width
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-The width in pixels of the antialiasing
-
-
-
-
-## grayscale
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-Ignore color information, render as grayscale
-
-
-
-
-## input
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-RenderOutput to be represented in halftone
-
-
-
-
-## invert
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-Whether the dots should be black (normal) or white/color (inverted)
-
-
-
-
-## mask
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>mask</b> needs to be written</p>
-
-
-
-
-## size
-
-**Int** 
-
-
-Default value : 5
-
-
-
-
-The size in pixels of the halftone dots
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <p>
+    
+    <h3>invert_mask</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        
+      </p>
+    
+    <h3>mix</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>filter_width</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The width in pixels of the antialiasing</p>
+        
+      </p>
+    
+    <h3>grayscale</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Ignore color information, render as grayscale</p>
+        
+      </p>
+    
+    <h3>input</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput to be represented in halftone</p>
+        
+      </p>
+    
+    <h3>invert</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Whether the dots should be black (normal) or white/color (inverted)</p>
+        
+      </p>
+    
+    <h3>mask</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>size</h3>
+    <p>
+      <b>Int</b>
+      
+        
+          default: 5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The size in pixels of the halftone dots</p>
+        
+      </p>
+    
+  </p>
+</details>
 

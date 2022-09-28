@@ -7,92 +7,70 @@ title: RandomMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # RandomMap
-
 **MAP SHADER**
-
-Documentation for class RandomMap
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## input
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-the input color used as a base seed to generate the random value
-
-
-
-
-## monochrome
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-outputs the same color for all three channels
-
-
-
-
-## output_max
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-the maximum output random value
-
-
-
-
-## output_min
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-the minimum output random value
-
-
-
-
-## seed
-
-**Int** 
-
-
-Default value : 0
-
-
-
-
-additional seed added to input for random number generator
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>input</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the input color used as a base seed to generate the random value</p>
+        
+      </p>
+    
+    <h3>monochrome</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">outputs the same color for all three channels</p>
+        
+      </p>
+    
+    <h3>output_max</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the maximum output random value</p>
+        
+      </p>
+    
+    <h3>output_min</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the minimum output random value</p>
+        
+      </p>
+    
+    <h3>seed</h3>
+    <p>
+      <b>Int</b>
+      
+        
+          default: 0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">additional seed added to input for random number generator</p>
+        
+      </p>
+    
+  </p>
+</details>
 

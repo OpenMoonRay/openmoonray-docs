@@ -7,190 +7,143 @@ title: ToonDisplayFilter
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # ToonDisplayFilter
-
 ****
-
-Documentation for class ToonDisplayFilter
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## ambient
-
-**Rgb** 
-
-
-Default value : [ 0, 0, 0 ]
-
-
-
-
-Adds an ambient light to the cel shading
-
-
-
-
-## edge_detector
-
-**Int** *enum*
-
-
-
-- None = 0 (default)
-
-- Sobel = 1
-
-- Laplacian = 2
-
-- Laplacian of Gaussian = 3
-
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>edge_detector</b> needs to be written</p>
-
-
-
-
-## ink_depth_threshold
-
-**Float** 
-
-
-Default value : 0.00999999977648
-
-
-
-
-The threshold for the depth-based ink outline
-
-
-
-
-## ink_normal_scale
-
-**Float** 
-
-
-Default value : 0.00999999977648
-
-
-
-
-Increase for a more pronounced normal-based ink outline
-
-
-
-
-## ink_normal_threshold
-
-**Float** 
-
-
-Default value : 0.00999999977648
-
-
-
-
-The threshold for the normal-based ink outline
-
-
-
-
-## input_albedo
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-RenderOutput that represents diffuse albedo material aov
-
-
-
-
-## input_depth
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-RenderOutput with 'depth' result
-
-
-
-
-## input_diffuse
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-RenderOutput that represents diffuse reflection LPE
-
-
-
-
-## input_glossy
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-RenderOutput that represents glossy reflection LPE
-
-
-
-
-## input_normal
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-RenderOutput with 'normal' result
-
-
-
-
-## num_cels
-
-**Int** 
-
-
-Default value : 2
-
-
-
-
-Sets number of toon cels in diffuse shading
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>ambient</h3>
+    <p>
+      <b>Rgb</b>
+      
+        
+          default: [ 0, 0, 0 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Adds an ambient light to the cel shading</p>
+        
+      </p>
+    
+    <h3>edge_detector</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | None = 0 (default)
+          
+            | Sobel = 1
+          
+            | Laplacian = 2
+          
+            | Laplacian of Gaussian = 3
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>ink_depth_threshold</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.00999999977648
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The threshold for the depth-based ink outline</p>
+        
+      </p>
+    
+    <h3>ink_normal_scale</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.00999999977648
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Increase for a more pronounced normal-based ink outline</p>
+        
+      </p>
+    
+    <h3>ink_normal_threshold</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.00999999977648
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The threshold for the normal-based ink outline</p>
+        
+      </p>
+    
+    <h3>input_albedo</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput that represents diffuse albedo material aov</p>
+        
+      </p>
+    
+    <h3>input_depth</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput with 'depth' result</p>
+        
+      </p>
+    
+    <h3>input_diffuse</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput that represents diffuse reflection LPE</p>
+        
+      </p>
+    
+    <h3>input_glossy</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput that represents glossy reflection LPE</p>
+        
+      </p>
+    
+    <h3>input_normal</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput with 'normal' result</p>
+        
+      </p>
+    
+    <h3>num_cels</h3>
+    <p>
+      <b>Int</b>
+      
+        
+          default: 2
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Sets number of toon cels in diffuse shading</p>
+        
+      </p>
+    
+  </p>
+</details>
 

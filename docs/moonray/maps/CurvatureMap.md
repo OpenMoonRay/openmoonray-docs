@@ -7,85 +7,66 @@ title: CurvatureMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # CurvatureMap
-
 **MAP SHADER**
-
-Documentation for class CurvatureMap
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## invert
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>invert</b> needs to be written</p>
-
-
-
-
-## mode
-
-**Int** *enum*
-
-
-
-- convex = 0
-
-- concave = 1
-
-- composite = 2
-
-- all = 3 (default)
-
-
-
-
-
-The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.
-
-
-
-
-## power
-
-**Float** 
-
-
-Default value : 0.5
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>power</b> needs to be written</p>
-
-
-
-
-## scale
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>scale</b> needs to be written</p>
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>invert</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>mode</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | convex = 0
+          
+            | concave = 1
+          
+            | composite = 2
+          
+            | all = 3 (default)
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
+        
+      </p>
+    
+    <h3>power</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>scale</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

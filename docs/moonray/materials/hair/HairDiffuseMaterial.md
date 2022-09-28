@@ -7,330 +7,259 @@ title: HairDiffuseMaterial
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # HairDiffuseMaterial
-
 **ROOTSHADER MATERIAL SHADER**
 
-Documentation for class HairDiffuseMaterial
-
-
-
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
-
-## back_hair_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-(advanced only) hair color used for back-lit hair (transmission/forward reflectance)
-
-
-
-
-## front_hair_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-(advanced only) hair color used for front-lit hair (backward reflectance)
-
-
-
-
-## sss_trace_set
-
-**Traceset** 
-
-
-Default value : None
-
-
-
-
-Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.
-
-
-
-
-## use_independent_front_and_back_hair_color
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-(advanced) use a separate hair color for front and back
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Common attributes</p>
-
-## casts_caustics
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-allows continuation of caustic light paths.
-
-
-
-
-## presence
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Emission attributes</p>
-
-## emission
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-the energy emitted from this material
-
-
-
-
-## show_emission
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-enables/disable emission
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Subsurface attributes</p>
-
-## bssrdf
-
-**Int** *enum*
-
-
-
-- normalized diffusion = 0 (default)
-
-- dipole = 1
-
-
-
-
-
-0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.
-
-
-
-
-## enable_sss_input_normal
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-enables sampling the normal map for sss samples. More accurate but potentially expensive
-
-
-
-
-## input_normal
-
-**33554432** 
-
-
-Default value : None
-
-
-
-
-specifies an alternate shading normal (only for SSS lobe)
-
-
-
-
-## input_normal_dial
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-controls influence of input normal versus hair normal for SSS
-
-
-
-
-## scattering_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-the subsurface scattering 'falloff' color
-
-
-
-
-## scattering_radius
-
-**Float** *bindable*
-
-
-Default value : 0.0
-
-
-
-
-the distance the light scatters beneath the surface.  When 0 surface diffuse is used
-
-
-
-
-## subsurface_blend
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-0 is fully hair diffuse, 1 is fully SSS. No effect if scattering radius is 0.
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## extra_aovs
-
-**Map** 
-
-
-Default value : None
-
-
-
-
-Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
-
-
-
-
-## hair_color
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>hair_color</b> needs to be written</p>
-
-
-
-
-## label
-
-**String** 
-
-
-Default value : 
-
-
-
-
-label used in material and light aovs
-
-
-
-
-## priority
-
-**Int** 
-
-
-Default value : 0
-
-
-
-
-The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <p>
+    
+    <h3>back_hair_color</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced only) hair color used for back-lit hair (transmission/forward reflectance)</p>
+        
+      </p>
+    
+    <h3>front_hair_color</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced only) hair color used for front-lit hair (backward reflectance)</p>
+        
+      </p>
+    
+    <h3>sss_trace_set</h3>
+    <p>
+      <b>Traceset</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
+        
+      </p>
+    
+    <h3>use_independent_front_and_back_hair_color</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced) use a separate hair color for front and back</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
+  <p>
+    
+    <h3>casts_caustics</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">allows continuation of caustic light paths.</p>
+        
+      </p>
+    
+    <h3>presence</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
+  <p>
+    
+    <h3>emission</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the energy emitted from this material</p>
+        
+      </p>
+    
+    <h3>show_emission</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disable emission</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Subsurface attributes</summary>
+  <p>
+    
+    <h3>bssrdf</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | normalized diffusion = 0 (default)
+          
+            | dipole = 1
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.</p>
+        
+      </p>
+    
+    <h3>enable_sss_input_normal</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">enables sampling the normal map for sss samples. More accurate but potentially expensive</p>
+        
+      </p>
+    
+    <h3>input_normal</h3>
+    <p>
+      <b>33554432</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal (only for SSS lobe)</p>
+        
+      </p>
+    
+    <h3>input_normal_dial</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls influence of input normal versus hair normal for SSS</p>
+        
+      </p>
+    
+    <h3>scattering_color</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the subsurface scattering 'falloff' color</p>
+        
+      </p>
+    
+    <h3>scattering_radius</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">the distance the light scatters beneath the surface.  When 0 surface diffuse is used</p>
+        
+      </p>
+    
+    <h3>subsurface_blend</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">0 is fully hair diffuse, 1 is fully SSS. No effect if scattering radius is 0.</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>extra_aovs</h3>
+    <p>
+      <b>Map</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        
+      </p>
+    
+    <h3>hair_color</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>label</h3>
+    <p>
+      <b>String</b>
+      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        
+      </p>
+    
+    <h3>priority</h3>
+    <p>
+      <b>Int</b>
+      
+        
+          default: 0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        
+      </p>
+    
+  </p>
+</details>
 

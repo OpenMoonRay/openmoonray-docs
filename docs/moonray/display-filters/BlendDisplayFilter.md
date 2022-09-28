@@ -7,132 +7,103 @@ title: BlendDisplayFilter
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # BlendDisplayFilter
-
 ****
 
-Documentation for class BlendDisplayFilter
-
-
-
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
-
-## invert_mask
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-invert value of mask
-
-
-
-
-## mix
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-blend between output and input
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## blendAmt
-
-**Float** 
-
-
-Default value : 0.5
-
-
-
-
-float determining amount of blend
-
-
-
-
-## blendType
-
-**Int** *enum*
-
-
-
-- linear = 0 (default)
-
-- cubic = 1
-
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>blendType</b> needs to be written</p>
-
-
-
-
-## input1
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-first operand
-
-
-
-
-## input2
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-second operand
-
-
-
-
-## mask
-
-**67141632** 
-
-
-Default value : None
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>mask</b> needs to be written</p>
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <p>
+    
+    <h3>invert_mask</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        
+      </p>
+    
+    <h3>mix</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>blendAmt</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">float determining amount of blend</p>
+        
+      </p>
+    
+    <h3>blendType</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | linear = 0 (default)
+          
+            | cubic = 1
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>input1</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">first operand</p>
+        
+      </p>
+    
+    <h3>input2</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">second operand</p>
+        
+      </p>
+    
+    <h3>mask</h3>
+    <p>
+      <b>67141632</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

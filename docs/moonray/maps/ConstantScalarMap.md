@@ -7,32 +7,26 @@ title: ConstantScalarMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # ConstantScalarMap
-
 **MAP SHADER**
-
-Documentation for class ConstantScalarMap
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## scalar_value
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-constant scalar value
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>scalar_value</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">constant scalar value</p>
+        
+      </p>
+    
+  </p>
+</details>
 

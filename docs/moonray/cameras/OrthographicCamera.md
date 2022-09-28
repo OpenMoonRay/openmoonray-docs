@@ -7,341 +7,267 @@ title: OrthographicCamera
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # OrthographicCamera
-
 **NODE CAMERA**
 
-Documentation for class OrthographicCamera
-
-
-
 ---
 
-## <p style="color:blue;">Depth of Field attributes</p>
-
-## bokeh
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-Enable Bokeh. Requires DOF to be enabled.
-
-
-
-
-## bokeh_angle
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-Angle of iris rotation
-
-
-
-
-## bokeh_image
-
-**String** 
-
-
-Default value : 
-
-
-
-
-Path to image file to be used for the iris
-
-
-
-
-## bokeh_sides
-
-**Int** 
-
-
-Default value : 0
-
-
-
-
-Number of sides of the iris. Specifying less than 3 sides will default to a disk.
-
-
-
-
-## bokeh_weight_location
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-Distance from the origin of Bokeh shape
-
-
-
-
-## bokeh_weight_strength
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-Controls the strength of weights as samples approach the weight location
-
-
-
-
-## dof
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>dof</b> needs to be written</p>
-
-
-
-
-## dof_aperture
-
-**Float** 
-
-
-Default value : 8.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>dof_aperture</b> needs to be written</p>
-
-
-
-
-## dof_focus_distance
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>dof_focus_distance</b> needs to be written</p>
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Frustum attributes</p>
-
-## far
-
-**Float** 
-
-
-Default value : 10000.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>far</b> needs to be written</p>
-
-
-
-
-## film_width_aperture
-
-**Float** 
-
-
-Default value : 24.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>film_width_aperture</b> needs to be written</p>
-
-
-
-
-## horizontal_film_offset
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>horizontal_film_offset</b> needs to be written</p>
-
-
-
-
-## near
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>near</b> needs to be written</p>
-
-
-
-
-## pixel_aspect_ratio
-
-**Float** 
-
-
-Default value : 1.0
-
-
-
-
-ratio of pixel size y / x
-
-
-
-
-## vertical_film_offset
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>vertical_film_offset</b> needs to be written</p>
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Motion Blur attributes</p>
-
-## mb_shutter_bias
-
-**Float** 
-
-
-Default value : 0.0
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
-
-
-
-
-## mb_shutter_close
-
-**Float** 
-
-
-Default value : 0.25
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
-
-
-
-
-## mb_shutter_open
-
-**Float** 
-
-
-Default value : -0.25
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Render Masks attributes</p>
-
-## pixel_sample_map
-
-**String** 
-
-
-Default value : 
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## node_xform
-
-**Mat4d** *blurrable*
-
-
-Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-
-
-
-
-<p style="color:red;">Documentation for the attribute <b>node_xform</b> needs to be written</p>
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Depth of Field attributes</summary>
+  <p>
+    
+    <h3>bokeh</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Enable Bokeh. Requires DOF to be enabled.</p>
+        
+      </p>
+    
+    <h3>bokeh_angle</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Angle of iris rotation</p>
+        
+      </p>
+    
+    <h3>bokeh_image</h3>
+    <p>
+      <b>String</b>
+      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Path to image file to be used for the iris</p>
+        
+      </p>
+    
+    <h3>bokeh_sides</h3>
+    <p>
+      <b>Int</b>
+      
+        
+          default: 0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Number of sides of the iris. Specifying less than 3 sides will default to a disk.</p>
+        
+      </p>
+    
+    <h3>bokeh_weight_location</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Distance from the origin of Bokeh shape</p>
+        
+      </p>
+    
+    <h3>bokeh_weight_strength</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls the strength of weights as samples approach the weight location</p>
+        
+      </p>
+    
+    <h3>dof</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>dof_aperture</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 8.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>dof_focus_distance</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Frustum attributes</summary>
+  <p>
+    
+    <h3>far</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 10000.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>film_width_aperture</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 24.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>horizontal_film_offset</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>near</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>pixel_aspect_ratio</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">ratio of pixel size y / x</p>
+        
+      </p>
+    
+    <h3>vertical_film_offset</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Motion Blur attributes</summary>
+  <p>
+    
+    <h3>mb_shutter_bias</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>mb_shutter_close</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.25
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+    <h3>mb_shutter_open</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: -0.25
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Render Masks attributes</summary>
+  <p>
+    
+    <h3>pixel_sample_map</h3>
+    <p>
+      <b>String</b>
+      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>node_xform</h3>
+    <p>
+      <b>Mat4d</b>
+      <i>blurrable</i>
+        
+          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        
+      </p>
+    
+  </p>
+</details>
 

@@ -7,32 +7,26 @@ title: NormalToRgbMap
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # NormalToRgbMap
-
 **MAP SHADER**
-
-Documentation for class NormalToRgbMap
-
-
 
 ---
 
-## <p style="color:blue;">General attributes</p>
-
-## input
-
-**33554432** 
-
-
-Default value : None
-
-
-
-
-Input normal map to convert to a color
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>input</h3>
+    <p>
+      <b>33554432</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Input normal map to convert to a color</p>
+        
+      </p>
+    
+  </p>
+</details>
 

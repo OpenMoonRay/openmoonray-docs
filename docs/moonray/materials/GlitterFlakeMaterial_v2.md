@@ -7,589 +7,462 @@ title: GlitterFlakeMaterial_v2
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
 # GlitterFlakeMaterial_v2
-
 **ROOTSHADER MATERIAL SHADER**
 
-Documentation for class GlitterFlakeMaterial_v2
-
-
-
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
-
-## approximate_glitter_for_secondary_rays
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-use an approximation to shade glitter for non-mirror secondary rays
-
-
-
-
-## debug_mode
-
-**Int** *enum*
-
-
-
-- off = 0 (default)
-
-- blend = 1
-
-- color = 2
-
-- averageColor = 3
-
-- footprintArea = 4
-
-- radius = 5
-
-
-
-
-
-developer debug visualization modes
-
-
-
-
-## dense_glitter_LOD_quality
-
-**Float** 
-
-
-Default value : 0.5
-
-
-
-
-controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier
-
-
-
-
-## glitter_mask
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-use this to control where glitter appears
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Appearance attributes</p>
-
-## decouple_flake_size
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-makes flake size independent of flake density
-
-
-
-
-## flake_color_hue_variation
-
-**Float** *bindable*
-
-
-Default value : 0.0
-
-
-
-
-introduce hue variation in flake color centered at the base flake color's hue on the hue wheel
-
-
-
-
-## flake_color_saturation_variation
-
-**Float** *bindable*
-
-
-Default value : 0.0
-
-
-
-
-introduce saturation variation in flake color centered at the base flake color's saturation
-
-
-
-
-## flake_color_value_variation
-
-**Float** *bindable*
-
-
-Default value : 0.0
-
-
-
-
-introduce value variation in flake color centered at the base flake color's value
-
-
-
-
-## flake_density
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-controls the number of flakes per unit length; larger density packs more flakes into same space
-
-
-
-
-## flake_jitter
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-Controls how much the flakes are randomly offset from a regular grid
-
-
-
-
-## flake_orientation_randomness
-
-**Float** 
-
-
-Default value : 0.15000000596
-
-
-
-
-randomly orient each texture
-
-
-
-
-## flake_randomness
-
-**Float** 
-
-
-Default value : 0.5
-
-
-
-
-randomness of flake orientation
-
-
-
-
-## flake_texture_1
-
-**String** *filename*
-
-
-Default value : 
-
-
-
-
-filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
-
-
-
-
-## flake_texture_1_frequency
-
-**Float** 
-
-
-Default value : 0.5
-
-
-
-
-0 implies none of this texture, 1 implies all the flakes will get this texture
-
-
-
-
-## flake_texture_2
-
-**String** *filename*
-
-
-Default value : 
-
-
-
-
-filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
-
-
-
-
-## flake_texture_2_frequency
-
-**Float** 
-
-
-Default value : 0.5
-
-
-
-
-0 implies none of this texture, 1 implies all the flakes will get this texture
-
-
-
-
-## use_flake_textures
-
-**Bool** 
-
-
-Default value : False
-
-
-
-
-use textured glitter flakes
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Common attributes</p>
-
-## presence
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Flake Generation attributes</p>
-
-## compensate_reference_space_deformation
-
-**Bool** 
-
-
-Default value : True
-
-
-
-
-(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc
-
-
-
-
-## seed
-
-**Int** 
-
-
-Default value : 0
-
-
-
-
-The seed for the random number generator
-
-
-
-
-## space
-
-**Int** *enum*
-
-
-
-- object = 4
-
-- reference = 5 (default)
-
-
-
-
-
-The space to calculate the noise in, defaults to reference space
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Glitter A Appearance attributes</p>
-
-## flake_color_A
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-base flake color (use physical metallic color values)
-
-
-
-
-## flake_roughness_A
-
-**Float** 
-
-
-Default value : 0.140000000596
-
-
-
-
-specular roughness of individual flakes (0 makes flakes mirror-like)
-
-
-
-
-## flake_size_A
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface
-
-
-
-
-## flake_style_A_frequency
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-0 implies none of this style, 1 implies all the flakes will get this style
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Glitter B Appearance attributes</p>
-
-## flake_color_B
-
-**Rgb** *bindable*
-
-
-Default value : [ 1, 1, 1 ]
-
-
-
-
-base flake color (use physical metallic color values)
-
-
-
-
-## flake_roughness_B
-
-**Float** 
-
-
-Default value : 0.140000000596
-
-
-
-
-specular roughness of individual flakes (0 makes flakes mirror-like)
-
-
-
-
-## flake_size_B
-
-**Float** *bindable*
-
-
-Default value : 1.0
-
-
-
-
-size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface
-
-
-
-
-## flake_style_B_frequency
-
-**Float** *bindable*
-
-
-Default value : 0.0
-
-
-
-
-0 implies none of this style, 1 implies all the flakes will get this style
-
-
-
-
-
-
----
-
-## <p style="color:blue;">Layering attributes</p>
-
-## layering_mode
-
-**Int** *enum*
-
-
-
-- physical = 0 (default)
-
-- additive = 1
-
-
-
-
-
-layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)
-
-
-
-
-## under_material
-
-**Material** 
-
-
-Default value : None
-
-
-
-
-material that fills the gaps between glitter flakes
-
-
-
-
-
-
----
-
-## <p style="color:blue;">General attributes</p>
-
-## extra_aovs
-
-**Map** 
-
-
-Default value : None
-
-
-
-
-Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
-
-
-
-
-## label
-
-**String** 
-
-
-Default value : 
-
-
-
-
-label used in material and light aovs
-
-
-
-
-## priority
-
-**Int** 
-
-
-Default value : 0
-
-
-
-
-The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.
-
-
-
-
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <p>
+    
+    <h3>approximate_glitter_for_secondary_rays</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">use an approximation to shade glitter for non-mirror secondary rays</p>
+        
+      </p>
+    
+    <h3>debug_mode</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | off = 0 (default)
+          
+            | blend = 1
+          
+            | color = 2
+          
+            | averageColor = 3
+          
+            | footprintArea = 4
+          
+            | radius = 5
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">developer debug visualization modes</p>
+        
+      </p>
+    
+    <h3>dense_glitter_LOD_quality</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
+        
+      </p>
+    
+    <h3>glitter_mask</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">use this to control where glitter appears</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Appearance attributes</summary>
+  <p>
+    
+    <h3>decouple_flake_size</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">makes flake size independent of flake density</p>
+        
+      </p>
+    
+    <h3>flake_color_hue_variation</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
+        
+      </p>
+    
+    <h3>flake_color_saturation_variation</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">introduce saturation variation in flake color centered at the base flake color's saturation</p>
+        
+      </p>
+    
+    <h3>flake_color_value_variation</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">introduce value variation in flake color centered at the base flake color's value</p>
+        
+      </p>
+    
+    <h3>flake_density</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the number of flakes per unit length; larger density packs more flakes into same space</p>
+        
+      </p>
+    
+    <h3>flake_jitter</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Controls how much the flakes are randomly offset from a regular grid</p>
+        
+      </p>
+    
+    <h3>flake_orientation_randomness</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.15000000596
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">randomly orient each texture</p>
+        
+      </p>
+    
+    <h3>flake_randomness</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">randomness of flake orientation</p>
+        
+      </p>
+    
+    <h3>flake_texture_1</h3>
+    <p>
+      <b>String</b>
+      <i>filename</i>
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        
+      </p>
+    
+    <h3>flake_texture_1_frequency</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">0 implies none of this texture, 1 implies all the flakes will get this texture</p>
+        
+      </p>
+    
+    <h3>flake_texture_2</h3>
+    <p>
+      <b>String</b>
+      <i>filename</i>
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        
+      </p>
+    
+    <h3>flake_texture_2_frequency</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.5
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">0 implies none of this texture, 1 implies all the flakes will get this texture</p>
+        
+      </p>
+    
+    <h3>use_flake_textures</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: False
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">use textured glitter flakes</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
+  <p>
+    
+    <h3>presence</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Flake Generation attributes</summary>
+  <p>
+    
+    <h3>compensate_reference_space_deformation</h3>
+    <p>
+      <b>Bool</b>
+      
+        
+          default: True
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
+        
+      </p>
+    
+    <h3>seed</h3>
+    <p>
+      <b>Int</b>
+      
+        
+          default: 0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The seed for the random number generator</p>
+        
+      </p>
+    
+    <h3>space</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | object = 4
+          
+            | reference = 5 (default)
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The space to calculate the noise in, defaults to reference space</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Glitter A Appearance attributes</summary>
+  <p>
+    
+    <h3>flake_color_A</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">base flake color (use physical metallic color values)</p>
+        
+      </p>
+    
+    <h3>flake_roughness_A</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.140000000596
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
+        
+      </p>
+    
+    <h3>flake_size_A</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
+        
+      </p>
+    
+    <h3>flake_style_A_frequency</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">0 implies none of this style, 1 implies all the flakes will get this style</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Glitter B Appearance attributes</summary>
+  <p>
+    
+    <h3>flake_color_B</h3>
+    <p>
+      <b>Rgb</b>
+      <i>bindable</i>
+        
+          default: [ 1, 1, 1 ]
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">base flake color (use physical metallic color values)</p>
+        
+      </p>
+    
+    <h3>flake_roughness_B</h3>
+    <p>
+      <b>Float</b>
+      
+        
+          default: 0.140000000596
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
+        
+      </p>
+    
+    <h3>flake_size_B</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 1.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
+        
+      </p>
+    
+    <h3>flake_style_B_frequency</h3>
+    <p>
+      <b>Float</b>
+      <i>bindable</i>
+        
+          default: 0.0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">0 implies none of this style, 1 implies all the flakes will get this style</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Layering attributes</summary>
+  <p>
+    
+    <h3>layering_mode</h3>
+    <p>
+      <b>Int</b>
+      <i>enum</i>
+        
+            | physical = 0 (default)
+          
+            | additive = 1
+          
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
+        
+      </p>
+    
+    <h3>under_material</h3>
+    <p>
+      <b>Material</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">material that fills the gaps between glitter flakes</p>
+        
+      </p>
+    
+  </p>
+</details>
+
+
+<details open>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <p>
+    
+    <h3>extra_aovs</h3>
+    <p>
+      <b>Map</b>
+      
+        
+          default: None
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        
+      </p>
+    
+    <h3>label</h3>
+    <p>
+      <b>String</b>
+      
+        
+          default: 
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        
+      </p>
+    
+    <h3>priority</h3>
+    <p>
+      <b>Int</b>
+      
+        
+          default: 0
+        
+          <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        
+      </p>
+    
+  </p>
+</details>
 
