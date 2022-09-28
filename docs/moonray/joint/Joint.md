@@ -22,7 +22,7 @@ title: Joint
 
 default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

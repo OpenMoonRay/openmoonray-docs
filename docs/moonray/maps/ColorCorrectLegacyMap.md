@@ -22,7 +22,7 @@ title: ColorCorrectLegacyMap
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>brightness</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>clamp</h3>
@@ -30,7 +30,7 @@ default: 0.0
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>clamp</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>contrast</h3>
@@ -38,7 +38,7 @@ default: False
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>hue</h3>
@@ -46,7 +46,7 @@ default: 0.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>hue</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>input</h3>
@@ -54,7 +54,7 @@ default: 0.0
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>invert</h3>
@@ -62,7 +62,7 @@ default: [ 1, 1, 1 ]
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>mask</h3>
@@ -70,7 +70,7 @@ default: False
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>monochrome</h3>
@@ -93,7 +93,7 @@ default: 1.0
 - blue channel = 7
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>monochrome</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>multiplier</h3>
@@ -101,7 +101,7 @@ default: 1.0
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>multiplier</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>on</h3>
@@ -109,7 +109,7 @@ default: [ 1, 1, 1 ]
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>saturation</h3>
@@ -117,7 +117,7 @@ default: True
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

@@ -22,7 +22,7 @@ title: CheckerboardMap
 
 default: [ 0, 0, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>color_A</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>color_B</h3>
@@ -30,7 +30,7 @@ default: [ 0, 0, 0 ]
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>color_B</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>input_texture_coordinates</h3>

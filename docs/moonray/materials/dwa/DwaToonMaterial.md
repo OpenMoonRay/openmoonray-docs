@@ -1204,7 +1204,7 @@ Amount to stretch or compress the specular in the v direction
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>toon_specular_tint</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>toon_specular_use_input_vectors_for_stretch</h3>

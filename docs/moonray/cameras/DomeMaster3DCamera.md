@@ -22,7 +22,7 @@ title: DomeMaster3DCamera
 
 default: 10000.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>far</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>near</h3>
@@ -30,7 +30,7 @@ default: 10000.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>near</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -46,7 +46,7 @@ default: 1.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>mb_shutter_close</h3>
@@ -54,7 +54,7 @@ default: 0.0
 
 default: 0.25
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>mb_shutter_open</h3>
@@ -62,7 +62,7 @@ default: 0.25
 
 default: -0.25
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -78,7 +78,7 @@ default: -0.25
 
 default: 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -94,7 +94,7 @@ default:
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>head_tilt_map</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>interocular_distance_map_file_name</h3>
@@ -102,7 +102,7 @@ default: 1.0
 
 default: 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>interocular_distance_map_file_name</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>stereo_convergence_distance</h3>
@@ -110,7 +110,7 @@ default:
 
 default: 360.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_convergence_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>stereo_interocular_distance</h3>
@@ -118,7 +118,7 @@ default: 360.0
 
 default: 6.5
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_interocular_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>stereo_view</h3>
@@ -131,7 +131,7 @@ default: 6.5
 - right view = 2
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_view</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>zenith_mode</h3>
@@ -139,7 +139,7 @@ default: 6.5
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>zenith_mode</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -155,7 +155,7 @@ default: False
 
 default: 60.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>FOV_horizontal_angle</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>FOV_vertical_angle</h3>
@@ -163,7 +163,7 @@ default: 60.0
 
 default: 30.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>FOV_vertical_angle</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>flip_ray_x</h3>
@@ -171,7 +171,7 @@ default: 30.0
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>flip_ray_x</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>flip_ray_y</h3>
@@ -179,7 +179,7 @@ default: False
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>flip_ray_y</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>node_xform</h3>
@@ -187,7 +187,7 @@ default: False
 
 default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

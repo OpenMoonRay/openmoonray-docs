@@ -38,7 +38,7 @@ Toggles whether camera projections appear on back faces.
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>projector</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>use_custom_window_coordinates</h3>

@@ -57,7 +57,7 @@ Size of voxel in world space
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_volume</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>label</h3>

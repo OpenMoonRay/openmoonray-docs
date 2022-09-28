@@ -75,7 +75,7 @@ Texture coordinate to use to fetch this texture.
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_files</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>udim_max_v</h3>
@@ -91,7 +91,7 @@ udim maximum v value
 
 default: <scene_rdl2.__scene_rdl2__.IntVector object at >
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_values</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>wrapS</h3>

@@ -22,7 +22,7 @@ title: DecayLightFilter
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>falloff_far</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>falloff_near</h3>
@@ -30,7 +30,7 @@ default: False
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>falloff_near</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>far_end</h3>
@@ -38,7 +38,7 @@ default: False
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>far_end</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>far_start</h3>
@@ -46,7 +46,7 @@ default: 0.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>far_start</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>near_end</h3>
@@ -54,7 +54,7 @@ default: 0.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>near_end</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>near_start</h3>
@@ -62,7 +62,7 @@ default: 0.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>near_start</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -78,7 +78,7 @@ default: 0.0
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

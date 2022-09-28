@@ -22,7 +22,7 @@ title: RaySwitchMaterial
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>camera_ray_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>cutout_camera_rays</h3>
@@ -30,7 +30,7 @@ default: None
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>cutout_camera_rays</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>default_material</h3>
@@ -38,7 +38,7 @@ default: False
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>default_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>extra_aovs</h3>
@@ -54,7 +54,7 @@ Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_diffuse_ray_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>indirect_glossy_ray_material</h3>
@@ -62,7 +62,7 @@ default: None
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_glossy_ray_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>indirect_mirror_ray_material</h3>
@@ -70,7 +70,7 @@ default: None
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_mirror_ray_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>label</h3>

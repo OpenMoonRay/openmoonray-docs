@@ -46,7 +46,7 @@ This attribute sets the threshold angle (in degree units) to draw creases. The m
 
 default: [ 0, 0, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>fill_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>mode</h3>
@@ -59,7 +59,7 @@ default: [ 0, 0, 0 ]
 - both = 2 (default)
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mode</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>outline_color</h3>

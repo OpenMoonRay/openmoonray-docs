@@ -22,7 +22,7 @@ title: LightSet
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>lights</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

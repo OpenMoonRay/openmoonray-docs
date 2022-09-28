@@ -22,7 +22,7 @@ title: BoxGeometry
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>size</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -46,7 +46,7 @@ label used in material aov expresssions
 
 default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>ray_epsilon</h3>

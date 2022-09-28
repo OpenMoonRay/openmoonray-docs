@@ -37,7 +37,7 @@ Adds an ambient light to the cel shading
 - Laplacian of Gaussian = 3
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>edge_detector</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>ink_depth_threshold</h3>

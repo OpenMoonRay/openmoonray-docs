@@ -22,7 +22,7 @@ title: SphereGeometry
 
 default: 360.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>phi_max</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>radius</h3>
@@ -30,7 +30,7 @@ default: 360.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>radius</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>zmax</h3>
@@ -38,7 +38,7 @@ default: 1.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>zmax</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>zmin</h3>
@@ -46,7 +46,7 @@ default: 1.0
 
 default: -1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>zmin</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -70,7 +70,7 @@ label used in material aov expresssions
 
 default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>ray_epsilon</h3>

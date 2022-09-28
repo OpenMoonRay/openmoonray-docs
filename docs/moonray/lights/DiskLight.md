@@ -22,7 +22,7 @@ title: DiskLight
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>gain</h3>
@@ -30,7 +30,7 @@ default: [ 1, 1, 1 ]
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>gain</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>gamma</h3>
@@ -38,7 +38,7 @@ default: [ 1, 1, 1 ]
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>gamma</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>offset</h3>
@@ -46,7 +46,7 @@ default: [ 1, 1, 1 ]
 
 default: [ 0, 0, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>saturation</h3>
@@ -54,7 +54,7 @@ default: [ 0, 0, 0 ]
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>temperature</h3>
@@ -189,7 +189,7 @@ clear radius interpolation: interpolation type to use for the clear radius shado
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>exposure</h3>
@@ -197,7 +197,7 @@ default: [ 1, 1, 1 ]
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>exposure</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>intensity</h3>
@@ -205,7 +205,7 @@ default: 0.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>intensity</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>label</h3>
@@ -221,7 +221,7 @@ label used in light aov expressions
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>max_shadow_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>mb</h3>
@@ -237,7 +237,7 @@ Does light motion affect motion-blur?
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>normalized</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>on</h3>
@@ -245,7 +245,7 @@ default: True
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>presence_shadows</h3>
@@ -258,7 +258,7 @@ default: True
 - use default = 2 (default)
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>presence_shadows</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>radius</h3>
@@ -266,7 +266,7 @@ default: True
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>radius</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>ray_termination</h3>
@@ -287,7 +287,7 @@ Is light used for ray termination color? Ray termination color is used for filli
 - 2-sided = 2
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>sidedness</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>spread</h3>
@@ -310,7 +310,7 @@ directionality of light emission. 1 is completely diffuse hemisphere. 0 is paral
 - bilinear with nearest mip = 3
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>texture_filter</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>visible_in_camera</h3>
@@ -323,7 +323,7 @@ directionality of light emission. 1 is completely diffuse hemisphere. 0 is paral
 - use default = 2 (default)
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>visible_in_camera</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -395,7 +395,7 @@ whether the light is visible in miror transmission (refraction).
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>light_filters</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>node_xform</h3>
@@ -403,7 +403,7 @@ default: []
 
 default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

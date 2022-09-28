@@ -22,7 +22,7 @@ title: CurvatureMap
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>mode</h3>
@@ -45,7 +45,7 @@ The composite mode outputs the composite of convex curvature and concave curvatu
 
 default: 0.5
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>power</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>scale</h3>
@@ -53,7 +53,7 @@ default: 0.5
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

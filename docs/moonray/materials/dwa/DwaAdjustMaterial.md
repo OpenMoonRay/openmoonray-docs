@@ -149,7 +149,7 @@ Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>label</h3>

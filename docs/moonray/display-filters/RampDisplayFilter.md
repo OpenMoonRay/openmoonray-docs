@@ -103,7 +103,7 @@ input to the input ramp
 - input_ramp = 8
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>ramp_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -119,7 +119,7 @@ input to the input ramp
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

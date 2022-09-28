@@ -22,7 +22,7 @@ title: IntensityLightFilter
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>exposure</h3>
@@ -30,7 +30,7 @@ default: [ 1, 1, 1 ]
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>exposure</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>intensity</h3>
@@ -38,7 +38,7 @@ default: 0.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>intensity</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>invert</h3>
@@ -46,7 +46,7 @@ default: 1.0
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -62,7 +62,7 @@ default: False
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

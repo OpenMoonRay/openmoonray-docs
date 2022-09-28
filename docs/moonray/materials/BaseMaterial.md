@@ -22,7 +22,7 @@ title: BaseMaterial
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>diffuse_color</h3>
@@ -30,7 +30,7 @@ default: True
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>diffuse_factor</h3>
@@ -38,7 +38,7 @@ default: [ 1, 1, 1 ]
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -54,7 +54,7 @@ default: 1.0
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>directional_diffuse</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>directional_diffuse_color</h3>
@@ -62,7 +62,7 @@ default: True
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>directional_diffuse_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>directional_diffuse_factor</h3>
@@ -70,7 +70,7 @@ default: [ 1, 1, 1 ]
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>directional_diffuse_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>directional_diffuse_roughness</h3>
@@ -78,7 +78,7 @@ default: 0.0
 
 default: 0.5
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>directional_diffuse_roughness</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -94,7 +94,7 @@ default: 0.5
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>emission</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>emission_color</h3>
@@ -102,7 +102,7 @@ default: True
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>emission_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>emission_factor</h3>
@@ -110,7 +110,7 @@ default: [ 1, 1, 1 ]
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>emission_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -126,7 +126,7 @@ default: 0.0
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>iridescence</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>iridescence_at_0_incidence</h3>
@@ -158,7 +158,7 @@ overall multiplier on effect of iridescence
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>iridescence_flip_hue_direction</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>iridescence_primary_color</h3>
@@ -217,7 +217,7 @@ Specifies what space the input normal is in.  Usually this is tangent space for 
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>opacity</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>opacity_factor</h3>
@@ -225,7 +225,7 @@ default: True
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>opacity_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -241,7 +241,7 @@ default: 1.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>retroreflectivity</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular</h3>
@@ -249,7 +249,7 @@ default: 0.0
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular_color</h3>
@@ -257,7 +257,7 @@ default: True
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular_factor</h3>
@@ -265,7 +265,7 @@ default: [ 1, 1, 1 ]
 
 default: 0.10000000149
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular_roughness</h3>
@@ -273,7 +273,7 @@ default: 0.10000000149
 
 default: 0.300000011921
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_roughness</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -289,7 +289,7 @@ default: 0.300000011921
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>translucency</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>translucency_color</h3>
@@ -297,7 +297,7 @@ default: True
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>translucency_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>translucency_factor</h3>
@@ -305,7 +305,7 @@ default: [ 1, 1, 1 ]
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>translucency_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>translucency_falloff</h3>
@@ -313,7 +313,7 @@ default: 0.0
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>translucency_falloff</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>translucency_radius</h3>
@@ -321,7 +321,7 @@ default: [ 1, 1, 1 ]
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>translucency_radius</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -337,7 +337,7 @@ default: 1.0
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>translucent_diffuse</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>translucent_diffuse_color</h3>
@@ -345,7 +345,7 @@ default: False
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>translucent_diffuse_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>translucent_diffuse_factor</h3>
@@ -353,7 +353,7 @@ default: [ 1, 1, 1 ]
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>translucent_diffuse_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -369,7 +369,7 @@ default: 1.0
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>transmission</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>transmission_color</h3>
@@ -377,7 +377,7 @@ default: True
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>transmission_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>transmission_factor</h3>
@@ -385,7 +385,7 @@ default: [ 1, 1, 1 ]
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>transmission_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -401,7 +401,7 @@ default: 0.0
 
 default: [ 1, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>anisotropic_direction</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>anisotropy</h3>
@@ -409,7 +409,7 @@ default: [ 1, 0 ]
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>anisotropy</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>casts_caustics</h3>
@@ -417,7 +417,7 @@ default: 0.0
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>casts_caustics</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>extra_aovs</h3>
@@ -433,7 +433,7 @@ Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>fresnel_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>index_of_refraction</h3>
@@ -449,7 +449,7 @@ affects transmission and translucency
 
 default: [ 0, 0, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>input_normal_dial</h3>
@@ -457,7 +457,7 @@ default: [ 0, 0, 1 ]
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal_dial</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>label</h3>
@@ -481,7 +481,7 @@ The material's place in an order of precedence for overlapping dielectrics. A va
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>use_fresnel</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

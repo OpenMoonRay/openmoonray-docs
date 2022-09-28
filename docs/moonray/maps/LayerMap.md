@@ -22,7 +22,7 @@ title: LayerMap
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_A</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>input_B</h3>
@@ -30,7 +30,7 @@ default: [ 1, 1, 1 ]
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_B</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>mask</h3>
@@ -38,7 +38,7 @@ default: [ 1, 1, 1 ]
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>mode</h3>
@@ -77,7 +77,7 @@ default: 1.0
 - exclusion = 15
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mode</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

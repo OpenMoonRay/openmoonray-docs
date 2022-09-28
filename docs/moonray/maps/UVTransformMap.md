@@ -22,7 +22,7 @@ title: UVTransformMap
 
 default: [ 0, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>rotation_angle</h3>
@@ -54,7 +54,7 @@ UV coordinate around which to rotate
 
 default: [ 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>space</h3>
@@ -75,7 +75,7 @@ default: [ 1, 1 ]
 - texture = 6 (default)
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>space</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

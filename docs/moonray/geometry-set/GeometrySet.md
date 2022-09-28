@@ -22,7 +22,7 @@ title: GeometrySet
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

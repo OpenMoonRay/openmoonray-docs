@@ -136,7 +136,7 @@ Gain of interpolation from color A to color B
 
 default: [ 0, 0, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>invert</h3>

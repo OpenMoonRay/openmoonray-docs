@@ -22,7 +22,7 @@ title: FloatToRgbMap
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>B</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>G</h3>
@@ -30,7 +30,7 @@ default: 1.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>G</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>R</h3>
@@ -38,7 +38,7 @@ default: 1.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>R</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

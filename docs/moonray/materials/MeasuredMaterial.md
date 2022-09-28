@@ -22,7 +22,7 @@ title: MeasuredMaterial
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>diffuse_color</h3>
@@ -30,7 +30,7 @@ default: True
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>diffuse_factor</h3>
@@ -38,7 +38,7 @@ default: [ 1, 1, 1 ]
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>diffuse_filename</h3>
@@ -46,7 +46,7 @@ default: 1.0
 
 default: 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_filename</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>diffuse_hue_shift</h3>
@@ -54,7 +54,7 @@ default:
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_hue_shift</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>diffuse_saturation</h3>
@@ -62,7 +62,7 @@ default: 0.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_saturation</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -78,7 +78,7 @@ default: 1.0
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular_color</h3>
@@ -86,7 +86,7 @@ default: True
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular_factor</h3>
@@ -94,7 +94,7 @@ default: [ 1, 1, 1 ]
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular_filename</h3>
@@ -102,7 +102,7 @@ default: 1.0
 
 default: 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_filename</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular_hue_shift</h3>
@@ -110,7 +110,7 @@ default:
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_hue_shift</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular_saturation</h3>
@@ -118,7 +118,7 @@ default: 0.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_saturation</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -134,7 +134,7 @@ default: 1.0
 
 default: [ 1, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>anisotropic_direction</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>casts_caustics</h3>
@@ -142,7 +142,7 @@ default: [ 1, 0 ]
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>casts_caustics</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>extra_aovs</h3>
@@ -158,7 +158,7 @@ Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that
 
 default: [ 0, 0, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>input_normal_dial</h3>
@@ -166,7 +166,7 @@ default: [ 0, 0, 1 ]
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal_dial</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>input_normal_space</h3>
@@ -174,7 +174,7 @@ default: 1.0
 
 default: 0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal_space</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>label</h3>

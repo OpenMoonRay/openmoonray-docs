@@ -72,7 +72,7 @@ the type of primitive attribute to displayed when attribute 'map type' is set to
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>checkerboard</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>input_normal</h3>
@@ -80,7 +80,7 @@ default: True
 
 default: [ 0, 0, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>input_normal_dial</h3>
@@ -88,7 +88,7 @@ default: [ 0, 0, 1 ]
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal_dial</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>map_type</h3>
@@ -109,7 +109,7 @@ default: 1.0
 - primitive attribute = 6
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>map_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

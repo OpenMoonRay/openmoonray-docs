@@ -75,7 +75,7 @@ size of kernel in pixels. Size must be odd. If using custom kernel, this attribu
 - custom = 2
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>kernel_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>mask</h3>
@@ -83,7 +83,7 @@ size of kernel in pixels. Size must be odd. If using custom kernel, this attribu
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

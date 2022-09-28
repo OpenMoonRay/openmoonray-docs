@@ -22,7 +22,7 @@ title: CookieLightFilter
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_far_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>blur_far_value</h3>
@@ -30,7 +30,7 @@ default: 1.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_far_value</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>blur_mid_value</h3>
@@ -38,7 +38,7 @@ default: 0.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_mid_value</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>blur_midpoint</h3>
@@ -46,7 +46,7 @@ default: 0.0
 
 default: 0.5
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_midpoint</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>blur_near_distance</h3>
@@ -54,7 +54,7 @@ default: 0.5
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_near_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>blur_near_value</h3>
@@ -62,7 +62,7 @@ default: 0.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_near_value</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>blur_type</h3>
@@ -73,7 +73,7 @@ default: 0.0
 - circular = 1
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>density</h3>
@@ -81,7 +81,7 @@ default: 0.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>density</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>invert</h3>
@@ -89,7 +89,7 @@ default: 1.0
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>outside_projection</h3>
@@ -102,7 +102,7 @@ default: False
 - default = 2
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>outside_projection</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>projector</h3>
@@ -110,7 +110,7 @@ default: False
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>projector</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>texture_map</h3>
@@ -118,7 +118,7 @@ default: None
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>texture_map</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -134,7 +134,7 @@ default: None
 
 default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>on</h3>
@@ -142,7 +142,7 @@ default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>projector_film_width_aperture</h3>
@@ -150,7 +150,7 @@ default: True
 
 default: 24.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>projector_film_width_aperture</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>projector_focal</h3>
@@ -158,7 +158,7 @@ default: 24.0
 
 default: 30.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>projector_focal</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>projector_pixel_aspect_ratio</h3>
@@ -166,7 +166,7 @@ default: 30.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>projector_pixel_aspect_ratio</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>projector_type</h3>
@@ -177,7 +177,7 @@ default: 1.0
 - orthographic = 1
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>projector_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

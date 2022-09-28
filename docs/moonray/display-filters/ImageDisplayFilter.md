@@ -57,7 +57,7 @@ blend between output and input
 - no_scale = 5
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>display_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>image_path</h3>
@@ -81,7 +81,7 @@ Input buffer
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

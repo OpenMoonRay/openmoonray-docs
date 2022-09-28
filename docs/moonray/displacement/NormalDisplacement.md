@@ -30,7 +30,7 @@ bound padding defines how much to extend the bounding box of the object. Keep th
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>height</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>height_multiplier</h3>
@@ -46,7 +46,7 @@ Multiply the computed (post zero-value) height with this factor.
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>zero_value</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

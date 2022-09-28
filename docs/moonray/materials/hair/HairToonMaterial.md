@@ -78,7 +78,7 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>hair_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>hair_diffuse</h3>
@@ -267,7 +267,7 @@ Amount to stretch or compress the specular in the v direction
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_1_tint</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular_1_use_input_vectors_for_stretch</h3>
@@ -432,7 +432,7 @@ Amount to stretch or compress the specular in the v direction
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_2_tint</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular_2_use_input_vectors_for_stretch</h3>
@@ -597,7 +597,7 @@ Amount to stretch or compress the specular in the v direction
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_3_tint</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>specular_3_use_input_vectors_for_stretch</h3>

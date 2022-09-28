@@ -106,7 +106,7 @@ default value to display when the requested attribute is not available
 - motionvec = 19
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>map_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>warn_when_unavailable</h3>

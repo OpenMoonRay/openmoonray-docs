@@ -94,7 +94,7 @@ enables/disable emission
 
 default: 0.10000000149
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>cuticle_layer_thickness</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>fresnel_type</h3>
@@ -107,7 +107,7 @@ default: 0.10000000149
 - layered cuticles = 2
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>fresnel_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>refractive_index</h3>
@@ -339,7 +339,7 @@ Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>hair_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>label</h3>

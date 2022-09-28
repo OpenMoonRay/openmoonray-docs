@@ -22,7 +22,7 @@ title: Layer
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>displacements</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>geometries</h3>
@@ -30,7 +30,7 @@ default: []
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>lightfiltersets</h3>
@@ -38,7 +38,7 @@ default: None
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>lightfiltersets</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>lightsets</h3>
@@ -46,7 +46,7 @@ default: []
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>lightsets</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>parts</h3>
@@ -54,7 +54,7 @@ default: []
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>parts</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>shadowreceiversets</h3>
@@ -62,7 +62,7 @@ default: []
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>shadowreceiversets</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>shadowsets</h3>
@@ -70,7 +70,7 @@ default: []
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>shadowsets</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>surface_shaders</h3>
@@ -78,7 +78,7 @@ default: []
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>surface_shaders</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>volume_shaders</h3>
@@ -86,7 +86,7 @@ default: []
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>volume_shaders</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

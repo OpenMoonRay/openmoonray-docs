@@ -49,7 +49,7 @@ Creates waves which perturb the ramp pattern
 - clamp = 1
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>wrap_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -128,7 +128,7 @@ Input signal for ramp, used when ramp type is set to input
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>object</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>ramp_type</h3>
@@ -153,7 +153,7 @@ default: None
 - input = 8
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>ramp_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>space</h3>
@@ -193,7 +193,7 @@ Only applies when 'texture coordinates' is set to 'default state coordinates'
 - input texture coordinates = 1
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

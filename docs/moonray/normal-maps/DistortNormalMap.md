@@ -22,7 +22,7 @@ title: DistortNormalMap
 
 default: [ 0, 0, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>noise_space</h3>

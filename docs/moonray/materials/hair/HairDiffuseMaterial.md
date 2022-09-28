@@ -185,7 +185,7 @@ Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>hair_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>label</h3>

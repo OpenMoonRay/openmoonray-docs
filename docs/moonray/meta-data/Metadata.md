@@ -22,7 +22,7 @@ title: Metadata
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>name</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>type</h3>
@@ -64,7 +64,7 @@ Allowed types for exr headers:
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>value</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

@@ -57,7 +57,7 @@ float determining amount of blend
 - cubic = 1
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>blendType</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>input1</h3>
@@ -81,7 +81,7 @@ second operand
 
 default: None
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

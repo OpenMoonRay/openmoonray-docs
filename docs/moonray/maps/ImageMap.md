@@ -62,7 +62,7 @@ T = Temperature where positive values push towards blue and negative towards red
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>TMI_control_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>contrast</h3>
@@ -70,7 +70,7 @@ default: False
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>contrast_enabled</h3>
@@ -78,7 +78,7 @@ default: [ 1, 1, 1 ]
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>contrast_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>gain</h3>
@@ -86,7 +86,7 @@ default: False
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>gain</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>gain_offset_enabled</h3>
@@ -94,7 +94,7 @@ default: [ 1, 1, 1 ]
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>gain_offset_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>gamma_adjust</h3>
@@ -102,7 +102,7 @@ default: False
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>gamma_adjust</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>gamma_enabled</h3>
@@ -110,7 +110,7 @@ default: [ 1, 1, 1 ]
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>gamma_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>offset_adjust</h3>
@@ -118,7 +118,7 @@ default: False
 
 default: [ 0, 0, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>offset_adjust</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>saturation</h3>
@@ -126,7 +126,7 @@ default: [ 0, 0, 0 ]
 
 default: [ 1, 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>saturation_enabled</h3>
@@ -134,7 +134,7 @@ default: [ 1, 1, 1 ]
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>saturation_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -171,7 +171,7 @@ default color to be used for missing udims when 'use default color when missing'
 - auto = 2 (default)
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>gamma</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>input_texture_coordinates</h3>
@@ -179,7 +179,7 @@ default color to be used for missing udims when 'use default color when missing'
 
 default: [ 0, 0, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>offset</h3>
@@ -187,7 +187,7 @@ default: [ 0, 0, 0 ]
 
 default: [ 0, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>rotation_angle</h3>
@@ -211,7 +211,7 @@ UV coordinate around which to rotate
 
 default: [ 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>texture</h3>
@@ -234,7 +234,7 @@ filename that points to a texture .exr or .tx file (must be mip-mapped and tiled
 - hair closest surface = 3
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>udim_files</h3>
@@ -242,7 +242,7 @@ filename that points to a texture .exr or .tx file (must be mip-mapped and tiled
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_files</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>udim_max_v</h3>
@@ -258,7 +258,7 @@ udim maximum v value
 
 default: <scene_rdl2.__scene_rdl2__.IntVector object at >
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_values</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>use_default_color_when_missing</h3>
@@ -274,7 +274,7 @@ Uses the 'default color' for missing udims and does not report error
 
 default: True
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>wrap_around</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

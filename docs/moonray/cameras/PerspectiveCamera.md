@@ -70,7 +70,7 @@ Controls the strength of weights as samples approach the weight location
 
 default: False
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>dof</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>dof_aperture</h3>
@@ -78,7 +78,7 @@ default: False
 
 default: 8.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>dof_aperture</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>dof_focus_distance</h3>
@@ -86,7 +86,7 @@ default: 8.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>dof_focus_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -102,7 +102,7 @@ default: 0.0
 
 default: 10000.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>far</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>film_width_aperture</h3>
@@ -110,7 +110,7 @@ default: 10000.0
 
 default: 24.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>film_width_aperture</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>focal</h3>
@@ -118,7 +118,7 @@ default: 24.0
 
 default: 30.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>focal</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>horizontal_film_offset</h3>
@@ -126,7 +126,7 @@ default: 30.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>horizontal_film_offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>near</h3>
@@ -134,7 +134,7 @@ default: 0.0
 
 default: 1.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>near</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>pixel_aspect_ratio</h3>
@@ -150,7 +150,7 @@ ratio of pixel size y / x
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>vertical_film_offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -166,7 +166,7 @@ default: 0.0
 
 default: 0.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>mb_shutter_close</h3>
@@ -174,7 +174,7 @@ default: 0.0
 
 default: 0.25
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>mb_shutter_open</h3>
@@ -182,7 +182,7 @@ default: 0.25
 
 default: -0.25
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -198,7 +198,7 @@ default: -0.25
 
 default: 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -214,7 +214,7 @@ default:
 
 default: 100.0
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_convergence_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>stereo_interocular_distance</h3>
@@ -222,7 +222,7 @@ default: 100.0
 
 default: 6.30000019073
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_interocular_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>stereo_view</h3>
@@ -235,7 +235,7 @@ default: 6.30000019073
 - right view = 2
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_view</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -251,7 +251,7 @@ default: 6.30000019073
 
 default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>

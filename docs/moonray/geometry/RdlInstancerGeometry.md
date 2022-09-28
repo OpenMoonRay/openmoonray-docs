@@ -74,7 +74,7 @@ Specify the source of xforms/refIndices for instancing. If set to "xform attribu
 
 default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>orientations</h3>
@@ -211,7 +211,7 @@ Transform the reference (prototype) geometry by it's node_xform parameter before
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>velocities</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>visible_diffuse_reflection</h3>

@@ -22,7 +22,7 @@ title: ImageNormalMap
 
 default: [ 0, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>rotation_angle</h3>
@@ -46,7 +46,7 @@ UV coordinate around which to rotate
 
 default: [ 1, 1 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>udim_files</h3>
@@ -54,7 +54,7 @@ default: [ 1, 1 ]
 
 default: []
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_files</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>udim_max_v</h3>
@@ -70,7 +70,7 @@ udim maximum v value
 
 default: <scene_rdl2.__scene_rdl2__.IntVector object at >
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_values</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 </p>
@@ -94,7 +94,7 @@ default value to be used for missing udims when 'use_default_value_when_missing'
 
 default: [ 0, 0, 0 ]
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>normal_encoding</h3>
@@ -124,7 +124,7 @@ filename that points to a tangent space normal texture .exr or .tx file (must be
 - input texture coordinates = 1
 
 
-<p class="scene-class-attr-missing">Documentation for the attribute <b>texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">No documentation available</p>
 
 
 <h3>use_default_value_when_missing</h3>
