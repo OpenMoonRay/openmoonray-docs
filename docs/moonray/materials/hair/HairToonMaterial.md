@@ -14,7 +14,7 @@ title: HairToonMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>back_hair_color</h3>
@@ -54,7 +54,7 @@ title: HairToonMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Common attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
   <p>
   
   <h3>presence</h3>
@@ -70,7 +70,7 @@ title: HairToonMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Diffuse attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Diffuse attributes</summary>
   <p>
   
   <h3>hair_color</h3>
@@ -78,7 +78,7 @@ title: HairToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>hair_diffuse</h3>
@@ -102,7 +102,7 @@ title: HairToonMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Emission attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
   <p>
   
   <h3>emission</h3>
@@ -126,7 +126,7 @@ title: HairToonMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Specular 1 attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Specular 1 attributes</summary>
   <p>
   
   <h3>specular_1_enable_indirect_reflections</h3>
@@ -267,7 +267,7 @@ title: HairToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>specular_1_use_input_vectors_for_stretch</h3>
@@ -291,7 +291,7 @@ title: HairToonMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Specular 2 attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Specular 2 attributes</summary>
   <p>
   
   <h3>specular_2_enable_indirect_reflections</h3>
@@ -432,7 +432,7 @@ title: HairToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>specular_2_use_input_vectors_for_stretch</h3>
@@ -456,7 +456,7 @@ title: HairToonMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Specular 3 attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Specular 3 attributes</summary>
   <p>
   
   <h3>specular_3_enable_indirect_reflections</h3>
@@ -597,7 +597,7 @@ title: HairToonMaterial
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>specular_3_use_input_vectors_for_stretch</h3>
@@ -621,7 +621,7 @@ title: HairToonMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Subsurface attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Subsurface attributes</summary>
   <p>
   
   <h3>bssrdf</h3>
@@ -688,7 +688,7 @@ title: HairToonMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>extra_aovs</h3>

@@ -14,7 +14,7 @@ title: RaySwitchMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>camera_ray_material</h3>
@@ -22,7 +22,7 @@ title: RaySwitchMaterial
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>cutout_camera_rays</h3>
@@ -30,7 +30,7 @@ title: RaySwitchMaterial
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>default_material</h3>
@@ -38,7 +38,7 @@ title: RaySwitchMaterial
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>extra_aovs</h3>
@@ -54,7 +54,7 @@ title: RaySwitchMaterial
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>indirect_glossy_ray_material</h3>
@@ -62,7 +62,7 @@ title: RaySwitchMaterial
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>indirect_mirror_ray_material</h3>
@@ -70,7 +70,7 @@ title: RaySwitchMaterial
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>label</h3>

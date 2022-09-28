@@ -14,7 +14,7 @@ title: RampMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Additional properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Additional properties attributes</summary>
   <p>
   
   <h3>input_texture_coordinates</h3>
@@ -49,7 +49,7 @@ title: RampMap
   - clamp = 1
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -57,7 +57,7 @@ title: RampMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Ramp Knot attributes</summary>
   <p>
   
   <h3>colors</h3>
@@ -91,7 +91,7 @@ title: RampMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">Ramp properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Ramp properties attributes</summary>
   <p>
   
   <h3>camera</h3>
@@ -128,7 +128,7 @@ title: RampMap
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>ramp_type</h3>
@@ -153,7 +153,7 @@ title: RampMap
   - input = 8
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>space</h3>
@@ -182,7 +182,7 @@ title: RampMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>texture_coordinates</h3>
@@ -193,7 +193,7 @@ title: RampMap
   - input texture coordinates = 1
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

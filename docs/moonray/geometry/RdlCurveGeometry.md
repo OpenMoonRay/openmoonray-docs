@@ -14,7 +14,7 @@ title: RdlCurveGeometry
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Curve attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Curve attributes</summary>
   <p>
   
   <h3>tessellation_rate</h3>
@@ -30,7 +30,7 @@ title: RdlCurveGeometry
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>accleration_list</h3>
@@ -127,7 +127,7 @@ title: RdlCurveGeometry
   
   default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>part_indices</h3>

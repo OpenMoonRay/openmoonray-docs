@@ -14,7 +14,7 @@ title: VectorDisplacement
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>bound_padding</h3>
@@ -30,7 +30,7 @@ title: VectorDisplacement
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>source_space</h3>
@@ -60,7 +60,7 @@ title: VectorDisplacement
   
   default: [ 0, 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

@@ -14,7 +14,7 @@ title: ImageNormalMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">UVs attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">UVs attributes</summary>
   <p>
   
   <h3>offset</h3>
@@ -22,7 +22,7 @@ title: ImageNormalMap
   
   default: [ 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>rotation_angle</h3>
@@ -46,7 +46,7 @@ title: ImageNormalMap
   
   default: [ 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>udim_files</h3>
@@ -54,7 +54,7 @@ title: ImageNormalMap
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>udim_max_v</h3>
@@ -70,7 +70,7 @@ title: ImageNormalMap
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -78,7 +78,7 @@ title: ImageNormalMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>default_value</h3>
@@ -94,7 +94,7 @@ title: ImageNormalMap
   
   default: [ 0, 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>normal_encoding</h3>
@@ -124,7 +124,7 @@ title: ImageNormalMap
   - input texture coordinates = 1
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>use_default_value_when_missing</h3>

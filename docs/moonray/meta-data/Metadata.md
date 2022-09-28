@@ -14,7 +14,7 @@ title: Metadata
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>name</h3>
@@ -22,7 +22,7 @@ title: Metadata
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>type</h3>
@@ -64,7 +64,7 @@ title: Metadata
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

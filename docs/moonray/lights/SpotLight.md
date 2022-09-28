@@ -14,7 +14,7 @@ title: SpotLight
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Cone attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Cone attributes</summary>
   <p>
   
   <h3>aspect_ratio</h3>
@@ -22,7 +22,7 @@ title: SpotLight
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>focal_plane_distance</h3>
@@ -30,7 +30,7 @@ title: SpotLight
   
   default: 10000000000.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>inner_cone_angle</h3>
@@ -38,7 +38,7 @@ title: SpotLight
   
   default: 30.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>lens_radius</h3>
@@ -46,7 +46,7 @@ title: SpotLight
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>outer_cone_angle</h3>
@@ -54,7 +54,7 @@ title: SpotLight
   
   default: 60.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -62,7 +62,7 @@ title: SpotLight
 
 
 <details open>
-  <summary class="scene-class-attr-group">Falloff attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Falloff attributes</summary>
   <p>
   
   <h3>angle_falloff_type</h3>
@@ -79,7 +79,7 @@ title: SpotLight
   - ease in/out = 4 (default)
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>black_level</h3>
@@ -87,7 +87,7 @@ title: SpotLight
   
   default: 0.0010000000475
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -95,7 +95,7 @@ title: SpotLight
 
 
 <details open>
-  <summary class="scene-class-attr-group">Map attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Map attributes</summary>
   <p>
   
   <h3>contrast</h3>
@@ -103,7 +103,7 @@ title: SpotLight
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gain</h3>
@@ -111,7 +111,7 @@ title: SpotLight
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gamma</h3>
@@ -119,7 +119,7 @@ title: SpotLight
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>offset</h3>
@@ -127,7 +127,7 @@ title: SpotLight
   
   default: [ 0, 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>saturation</h3>
@@ -135,7 +135,7 @@ title: SpotLight
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>temperature</h3>
@@ -223,7 +223,7 @@ title: SpotLight
 
 
 <details open>
-  <summary class="scene-class-attr-group">Properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Properties attributes</summary>
   <p>
   
   <h3>apply_scene_scale</h3>
@@ -270,7 +270,7 @@ title: SpotLight
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>exposure</h3>
@@ -278,7 +278,7 @@ title: SpotLight
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>intensity</h3>
@@ -286,7 +286,7 @@ title: SpotLight
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>label</h3>
@@ -302,7 +302,7 @@ title: SpotLight
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>mb</h3>
@@ -318,7 +318,7 @@ title: SpotLight
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>on</h3>
@@ -326,7 +326,7 @@ title: SpotLight
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>presence_shadows</h3>
@@ -339,7 +339,7 @@ title: SpotLight
   - use default = 2 (default)
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>ray_termination</h3>
@@ -362,7 +362,7 @@ title: SpotLight
   - bilinear with nearest mip = 3
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>visible_in_camera</h3>
@@ -375,7 +375,7 @@ title: SpotLight
   - use default = 2 (default)
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -383,7 +383,7 @@ title: SpotLight
 
 
 <details open>
-  <summary class="scene-class-attr-group">Visibility Flags attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Visibility Flags attributes</summary>
   <p>
   
   <h3>visible_diffuse_reflection</h3>
@@ -439,7 +439,7 @@ title: SpotLight
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>light_filters</h3>
@@ -447,7 +447,7 @@ title: SpotLight
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>node_xform</h3>
@@ -455,7 +455,7 @@ title: SpotLight
   
   default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

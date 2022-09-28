@@ -14,7 +14,7 @@ title: UsdPrimvarReader_point
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>fallback</h3>

@@ -14,7 +14,7 @@ title: DwaEmissiveMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Common attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
   <p>
   
   <h3>presence</h3>
@@ -30,7 +30,7 @@ title: DwaEmissiveMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Emission attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
   <p>
   
   <h3>emission</h3>
@@ -54,7 +54,7 @@ title: DwaEmissiveMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>extra_aovs</h3>

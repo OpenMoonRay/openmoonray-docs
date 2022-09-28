@@ -14,7 +14,7 @@ title: SceneVariables
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Caching attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Caching attributes</summary>
   <p>
   
   <h3>fast_geometry_update</h3>
@@ -22,7 +22,7 @@ title: SceneVariables
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>texture_cache_size</h3>
@@ -46,7 +46,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Camera and Layer attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Camera and Layer attributes</summary>
   <p>
   
   <h3>camera</h3>
@@ -54,7 +54,7 @@ title: SceneVariables
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>layer</h3>
@@ -62,7 +62,7 @@ title: SceneVariables
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -70,7 +70,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Checkpoint attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Checkpoint attributes</summary>
   <p>
   
   <h3>checkpoint_active</h3>
@@ -78,7 +78,7 @@ title: SceneVariables
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>checkpoint_bg_write</h3>
@@ -193,7 +193,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Debug attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Debug attributes</summary>
   <p>
   
   <h3>debug_console</h3>
@@ -209,7 +209,7 @@ title: SceneVariables
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>debug_rays_depth_range</h3>
@@ -217,7 +217,7 @@ title: SceneVariables
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>debug_rays_file</h3>
@@ -225,7 +225,7 @@ title: SceneVariables
   
   default: 
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>debug_rays_primary_range</h3>
@@ -233,7 +233,7 @@ title: SceneVariables
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>validate_geometry</h3>
@@ -249,7 +249,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Deep Images attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Deep Images attributes</summary>
   <p>
   
   <h3>deep_curvature_tolerance</h3>
@@ -316,7 +316,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Driver attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Driver attributes</summary>
   <p>
   
   <h3>interactive_mode</h3>
@@ -324,7 +324,7 @@ title: SceneVariables
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>machine_id</h3>
@@ -332,7 +332,7 @@ title: SceneVariables
   
   default: -1
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>num_machines</h3>
@@ -340,7 +340,7 @@ title: SceneVariables
   
   default: -1
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>output_file</h3>
@@ -348,7 +348,7 @@ title: SceneVariables
   
   default: scene.exr
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>progressive_shading</h3>
@@ -356,7 +356,7 @@ title: SceneVariables
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>task_distribution_type</h3>
@@ -367,7 +367,7 @@ title: SceneVariables
   - multiplex pixel = 1 (default)
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>threads</h3>
@@ -375,7 +375,7 @@ title: SceneVariables
   
   default: 0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>tmp_dir</h3>
@@ -391,7 +391,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Filtering attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Filtering attributes</summary>
   <p>
   
   <h3>pixel_filter</h3>
@@ -404,7 +404,7 @@ title: SceneVariables
   - quadratic b-spline = 2
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>pixel_filter_width</h3>
@@ -412,7 +412,7 @@ title: SceneVariables
   
   default: 3.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>texture_blur</h3>
@@ -420,7 +420,7 @@ title: SceneVariables
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -428,7 +428,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Fireflies Removal attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Fireflies Removal attributes</summary>
   <p>
   
   <h3>roughness_clamping_factor</h3>
@@ -460,7 +460,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Frame attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Frame attributes</summary>
   <p>
   
   <h3>frame</h3>
@@ -468,7 +468,7 @@ title: SceneVariables
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>max_frame</h3>
@@ -476,7 +476,7 @@ title: SceneVariables
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>min_frame</h3>
@@ -484,7 +484,7 @@ title: SceneVariables
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -492,7 +492,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Global Toggles attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Global Toggles attributes</summary>
   <p>
   
   <h3>enable_displacement</h3>
@@ -500,7 +500,7 @@ title: SceneVariables
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>enable_dof</h3>
@@ -508,7 +508,7 @@ title: SceneVariables
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>enable_max_geometry_resolution</h3>
@@ -516,7 +516,7 @@ title: SceneVariables
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>enable_motion_blur</h3>
@@ -524,7 +524,7 @@ title: SceneVariables
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>enable_presence_shadows</h3>
@@ -532,7 +532,7 @@ title: SceneVariables
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>enable_shadowing</h3>
@@ -540,7 +540,7 @@ title: SceneVariables
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>enable_subsurface_scattering</h3>
@@ -548,7 +548,7 @@ title: SceneVariables
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>lights_visible_in_camera</h3>
@@ -556,7 +556,7 @@ title: SceneVariables
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>max_geometry_resolution</h3>
@@ -564,7 +564,7 @@ title: SceneVariables
   
   default: 2147483647
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>propagate_visibility_bounce_type</h3>
@@ -597,7 +597,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Image Size attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Image Size attributes</summary>
   <p>
   
   <h3>aperture_window</h3>
@@ -613,7 +613,7 @@ title: SceneVariables
   
   default: 1080
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>image_width</h3>
@@ -621,7 +621,7 @@ title: SceneVariables
   
   default: 1920
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>region_window</h3>
@@ -637,7 +637,7 @@ title: SceneVariables
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>sub_viewport</h3>
@@ -653,7 +653,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Logging attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Logging attributes</summary>
   <p>
   
   <h3>athena_debug</h3>
@@ -661,7 +661,7 @@ title: SceneVariables
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>debug</h3>
@@ -669,7 +669,7 @@ title: SceneVariables
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>error</h3>
@@ -677,7 +677,7 @@ title: SceneVariables
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>fatal_color</h3>
@@ -685,7 +685,7 @@ title: SceneVariables
   
   default: [ 1, 0, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>info</h3>
@@ -693,7 +693,7 @@ title: SceneVariables
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>stats_file</h3>
@@ -701,7 +701,7 @@ title: SceneVariables
   
   default: 
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>warning</h3>
@@ -709,7 +709,7 @@ title: SceneVariables
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -717,7 +717,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Metadata attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Metadata attributes</summary>
   <p>
   
   <h3>exr_header_attributes</h3>
@@ -733,7 +733,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Motion and Scale attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Motion and Scale attributes</summary>
   <p>
   
   <h3>motion_steps</h3>
@@ -757,7 +757,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Path Guide attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Path Guide attributes</summary>
   <p>
   
   <h3>path_guide_enable</h3>
@@ -773,7 +773,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Resume Render attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Resume Render attributes</summary>
   <p>
   
   <h3>on_resume_script</h3>
@@ -805,7 +805,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Sampling attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Sampling attributes</summary>
   <p>
   
   <h3>bsdf_sampler_strategy</h3>
@@ -826,7 +826,7 @@ title: SceneVariables
   
   default: 2
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>bssrdf_samples</h3>
@@ -834,7 +834,7 @@ title: SceneVariables
   
   default: 2
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>disable_optimized_hair_sampling</h3>
@@ -850,7 +850,7 @@ title: SceneVariables
   
   default: 2
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>lock_frame_noise</h3>
@@ -858,7 +858,7 @@ title: SceneVariables
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>max_depth</h3>
@@ -866,7 +866,7 @@ title: SceneVariables
   
   default: 5
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>max_diffuse_depth</h3>
@@ -874,7 +874,7 @@ title: SceneVariables
   
   default: 2
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>max_glossy_depth</h3>
@@ -882,7 +882,7 @@ title: SceneVariables
   
   default: 2
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>max_hair_depth</h3>
@@ -890,7 +890,7 @@ title: SceneVariables
   
   default: 5
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>max_mirror_depth</h3>
@@ -898,7 +898,7 @@ title: SceneVariables
   
   default: 3
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>max_presence_depth</h3>
@@ -906,7 +906,7 @@ title: SceneVariables
   
   default: 16
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>max_subsurface_per_path</h3>
@@ -914,7 +914,7 @@ title: SceneVariables
   
   default: 1
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>pixel_samples</h3>
@@ -922,7 +922,7 @@ title: SceneVariables
   
   default: 8
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>presence_threshold</h3>
@@ -938,7 +938,7 @@ title: SceneVariables
   
   default: 0.0375000014901
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>transparency_threshold</h3>
@@ -954,7 +954,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">Volumes attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Volumes attributes</summary>
   <p>
   
   <h3>max_volume_depth</h3>
@@ -962,7 +962,7 @@ title: SceneVariables
   
   default: 1
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>volume_attenuation_factor</h3>
@@ -1047,7 +1047,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>batch_tile_order</h3>
@@ -1070,7 +1070,7 @@ title: SceneVariables
   - spiral rect = 7
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>checkpoint_tile_order</h3>
@@ -1093,7 +1093,7 @@ title: SceneVariables
   - spiral rect = 7
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>fps</h3>
@@ -1101,7 +1101,7 @@ title: SceneVariables
   
   default: 24.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>max_adaptive_samples</h3>
@@ -1140,7 +1140,7 @@ title: SceneVariables
   - spiral rect = 7
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>sampling_mode</h3>

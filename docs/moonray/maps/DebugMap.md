@@ -14,7 +14,7 @@ title: DebugMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Normal attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
   <p>
   
   <h3>input_normal_space</h3>
@@ -33,7 +33,7 @@ title: DebugMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">Primitive Attribute attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Primitive Attribute attributes</summary>
   <p>
   
   <h3>primitive_attribute_name</h3>
@@ -64,7 +64,7 @@ title: DebugMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>checkerboard</h3>
@@ -72,7 +72,7 @@ title: DebugMap
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>input_normal</h3>
@@ -80,7 +80,7 @@ title: DebugMap
   
   default: [ 0, 0, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>input_normal_dial</h3>
@@ -88,7 +88,7 @@ title: DebugMap
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>map_type</h3>
@@ -109,7 +109,7 @@ title: DebugMap
   - primitive attribute = 6
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

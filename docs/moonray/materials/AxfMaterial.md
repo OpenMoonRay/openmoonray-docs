@@ -14,7 +14,7 @@ title: AxfMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Normal attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
   <p>
   
   <h3>input_normal_dial</h3>
@@ -49,7 +49,7 @@ title: AxfMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>alpha</h3>

@@ -14,7 +14,7 @@ title: DistortNormalMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Space attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Space attributes</summary>
   <p>
   
   <h3>input_texture_coordinates</h3>
@@ -22,7 +22,7 @@ title: DistortNormalMap
   
   default: [ 0, 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>noise_space</h3>
@@ -51,7 +51,7 @@ title: DistortNormalMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>amplitude_U</h3>

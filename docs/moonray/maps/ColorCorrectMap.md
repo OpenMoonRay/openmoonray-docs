@@ -14,7 +14,7 @@ title: ColorCorrectMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>contrast_b</h3>
@@ -174,7 +174,7 @@ title: ColorCorrectMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>TMI</h3>

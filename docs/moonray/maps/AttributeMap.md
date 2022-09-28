@@ -14,7 +14,7 @@ title: AttributeMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Primitive Attribute attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Primitive Attribute attributes</summary>
   <p>
   
   <h3>primitive_attribute_name</h3>
@@ -47,7 +47,7 @@ title: AttributeMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>color</h3>
@@ -106,7 +106,7 @@ title: AttributeMap
   - motionvec = 19
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>warn_when_unavailable</h3>

@@ -14,7 +14,7 @@ title: SphereGeometry
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Quadric attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Quadric attributes</summary>
   <p>
   
   <h3>phi_max</h3>
@@ -22,7 +22,7 @@ title: SphereGeometry
   
   default: 360.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>radius</h3>
@@ -30,7 +30,7 @@ title: SphereGeometry
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>zmax</h3>
@@ -38,7 +38,7 @@ title: SphereGeometry
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>zmin</h3>
@@ -46,7 +46,7 @@ title: SphereGeometry
   
   default: -1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -54,7 +54,7 @@ title: SphereGeometry
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>label</h3>
@@ -70,7 +70,7 @@ title: SphereGeometry
   
   default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>ray_epsilon</h3>

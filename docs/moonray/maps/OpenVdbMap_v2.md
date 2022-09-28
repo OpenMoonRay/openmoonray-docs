@@ -14,7 +14,7 @@ title: OpenVdbMap_v2
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>show_active_field</h3>
@@ -30,7 +30,7 @@ title: OpenVdbMap_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>default_value</h3>

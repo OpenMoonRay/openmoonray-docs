@@ -14,7 +14,7 @@ title: DwaColorCorrectMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Hue/Sat/Gain attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Hue/Sat/Gain attributes</summary>
   <p>
   
   <h3>gain</h3>
@@ -46,7 +46,7 @@ title: DwaColorCorrectMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">TMI attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">TMI attributes</summary>
   <p>
   
   <h3>TMI</h3>
@@ -70,7 +70,7 @@ title: DwaColorCorrectMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>extra_aovs</h3>
@@ -86,7 +86,7 @@ title: DwaColorCorrectMaterial
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>label</h3>

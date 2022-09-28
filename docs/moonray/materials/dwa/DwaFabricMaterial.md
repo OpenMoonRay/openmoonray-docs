@@ -14,7 +14,7 @@ title: DwaFabricMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Common attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
   <p>
   
   <h3>casts_caustics</h3>
@@ -46,7 +46,7 @@ title: DwaFabricMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Diffuse attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Diffuse attributes</summary>
   <p>
   
   <h3>albedo</h3>
@@ -113,7 +113,7 @@ title: DwaFabricMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Emission attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
   <p>
   
   <h3>emission</h3>
@@ -137,7 +137,7 @@ title: DwaFabricMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Fabric attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Fabric attributes</summary>
   <p>
   
   <h3>show_specular</h3>
@@ -201,7 +201,7 @@ title: DwaFabricMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Fuzz attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Fuzz attributes</summary>
   <p>
   
   <h3>fuzz</h3>
@@ -265,7 +265,7 @@ title: DwaFabricMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Glitter attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Glitter attributes</summary>
   <p>
   
   <h3>glitter</h3>
@@ -498,7 +498,7 @@ title: DwaFabricMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Normal attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
   <p>
   
   <h3>input_normal</h3>
@@ -522,7 +522,7 @@ title: DwaFabricMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Threads attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Threads attributes</summary>
   <p>
   
   <h3>warp_thread_coverage</h3>
@@ -554,7 +554,7 @@ title: DwaFabricMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>extra_aovs</h3>

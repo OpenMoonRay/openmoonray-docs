@@ -14,7 +14,7 @@ title: TangentSpaceDisplayFilter
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>invert_mask</h3>
@@ -38,7 +38,7 @@ title: TangentSpaceDisplayFilter
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>N</h3>
@@ -70,7 +70,7 @@ title: TangentSpaceDisplayFilter
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>normal_map_output</h3>

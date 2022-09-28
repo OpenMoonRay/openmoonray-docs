@@ -14,7 +14,7 @@ title: NoiseMap_v2
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">4D attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">4D attributes</summary>
   <p>
   
   <h3>time</h3>
@@ -38,7 +38,7 @@ title: NoiseMap_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Adjustment attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Adjustment attributes</summary>
   <p>
   
   <h3>bias</h3>
@@ -86,7 +86,7 @@ title: NoiseMap_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Flow Noise attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Flow Noise attributes</summary>
   <p>
   
   <h3>flow_advection_rate</h3>
@@ -110,7 +110,7 @@ title: NoiseMap_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Space attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Space attributes</summary>
   <p>
   
   <h3>camera</h3>
@@ -126,7 +126,7 @@ title: NoiseMap_v2
   
   default: [ 0, 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>object_space</h3>
@@ -169,7 +169,7 @@ title: NoiseMap_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Transform attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Transform attributes</summary>
   <p>
   
   <h3>rotation</h3>
@@ -239,7 +239,7 @@ title: NoiseMap_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>amplitude</h3>

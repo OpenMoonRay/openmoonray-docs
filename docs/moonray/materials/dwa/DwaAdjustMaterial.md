@@ -14,7 +14,7 @@ title: DwaAdjustMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Enable attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Enable attributes</summary>
   <p>
   
   <h3>adjust_color</h3>
@@ -54,7 +54,7 @@ title: DwaAdjustMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Override attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Override attributes</summary>
   <p>
   
   <h3>casts_caustics</h3>
@@ -112,7 +112,7 @@ title: DwaAdjustMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>emission</h3>
@@ -149,7 +149,7 @@ title: DwaAdjustMaterial
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>label</h3>

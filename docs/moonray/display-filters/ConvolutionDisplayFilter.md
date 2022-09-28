@@ -14,7 +14,7 @@ title: ConvolutionDisplayFilter
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>invert_mask</h3>
@@ -38,7 +38,7 @@ title: ConvolutionDisplayFilter
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>custom_kernel</h3>
@@ -75,7 +75,7 @@ title: ConvolutionDisplayFilter
   - custom = 2
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>mask</h3>
@@ -83,7 +83,7 @@ title: ConvolutionDisplayFilter
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

@@ -14,7 +14,7 @@ title: ColorRampLightFilter
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Properties attributes</summary>
   <p>
   
   <h3>begin_distance</h3>
@@ -22,7 +22,7 @@ title: ColorRampLightFilter
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>colors</h3>
@@ -30,7 +30,7 @@ title: ColorRampLightFilter
   
   default: [[ 1, 1, 1 ], [ 0, 0, 0 ]]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>density</h3>
@@ -38,7 +38,7 @@ title: ColorRampLightFilter
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>distances</h3>
@@ -46,7 +46,7 @@ title: ColorRampLightFilter
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>end_distance</h3>
@@ -54,7 +54,7 @@ title: ColorRampLightFilter
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>intensity</h3>
@@ -62,7 +62,7 @@ title: ColorRampLightFilter
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>interpolation_types</h3>
@@ -70,7 +70,7 @@ title: ColorRampLightFilter
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>mode</h3>
@@ -81,7 +81,7 @@ title: ColorRampLightFilter
   - directional = 1
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>node_xform</h3>
@@ -89,7 +89,7 @@ title: ColorRampLightFilter
   
   default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>wrap_mode</h3>
@@ -108,7 +108,7 @@ title: ColorRampLightFilter
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>on</h3>
@@ -116,7 +116,7 @@ title: ColorRampLightFilter
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>use_xform</h3>
@@ -124,7 +124,7 @@ title: ColorRampLightFilter
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

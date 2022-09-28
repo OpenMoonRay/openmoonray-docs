@@ -14,7 +14,7 @@ title: RemapMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Channel attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Channel attributes</summary>
   <p>
   
   <h3>clamp_max_RGB</h3>
@@ -78,7 +78,7 @@ title: RemapMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>clamp</h3>

@@ -14,7 +14,7 @@ title: ColorCorrectNukeMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>TMI</h3>
@@ -30,7 +30,7 @@ title: ColorCorrectNukeMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>contrast</h3>
@@ -38,7 +38,7 @@ title: ColorCorrectNukeMap
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>contrast_enabled</h3>
@@ -46,7 +46,7 @@ title: ColorCorrectNukeMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gain</h3>
@@ -54,7 +54,7 @@ title: ColorCorrectNukeMap
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gain_offset_enabled</h3>
@@ -62,7 +62,7 @@ title: ColorCorrectNukeMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gamma</h3>
@@ -70,7 +70,7 @@ title: ColorCorrectNukeMap
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gamma_enabled</h3>
@@ -78,7 +78,7 @@ title: ColorCorrectNukeMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>input</h3>
@@ -86,7 +86,7 @@ title: ColorCorrectNukeMap
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>offset</h3>
@@ -94,7 +94,7 @@ title: ColorCorrectNukeMap
   
   default: [ 0, 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>saturation</h3>
@@ -102,7 +102,7 @@ title: ColorCorrectNukeMap
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>saturation_enabled</h3>
@@ -110,7 +110,7 @@ title: ColorCorrectNukeMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

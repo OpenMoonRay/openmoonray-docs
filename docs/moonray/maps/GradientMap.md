@@ -14,7 +14,7 @@ title: GradientMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Additional properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Additional properties attributes</summary>
   <p>
   
   <h3>symmetric</h3>
@@ -38,7 +38,7 @@ title: GradientMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">Falloff properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Falloff properties attributes</summary>
   <p>
   
   <h3>falloff_bias</h3>
@@ -105,7 +105,7 @@ title: GradientMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">Gradient properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Gradient properties attributes</summary>
   <p>
   
   <h3>color_A</h3>

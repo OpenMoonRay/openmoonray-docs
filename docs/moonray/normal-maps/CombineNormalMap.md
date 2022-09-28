@@ -14,7 +14,7 @@ title: CombineNormalMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Normal attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
   <p>
   
   <h3>input_1</h3>

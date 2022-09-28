@@ -14,7 +14,7 @@ title: Layer
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>displacements</h3>
@@ -22,7 +22,7 @@ title: Layer
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>geometries</h3>
@@ -30,7 +30,7 @@ title: Layer
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>lightfiltersets</h3>
@@ -38,7 +38,7 @@ title: Layer
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>lightsets</h3>
@@ -46,7 +46,7 @@ title: Layer
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>parts</h3>
@@ -54,7 +54,7 @@ title: Layer
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>shadowreceiversets</h3>
@@ -62,7 +62,7 @@ title: Layer
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>shadowsets</h3>
@@ -70,7 +70,7 @@ title: Layer
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>surface_shaders</h3>
@@ -78,7 +78,7 @@ title: Layer
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>volume_shaders</h3>
@@ -86,7 +86,7 @@ title: Layer
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

@@ -14,7 +14,7 @@ title: VdbLightFilter
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Properties attributes</summary>
   <p>
   
   <h3>blur_type</h3>
@@ -25,7 +25,7 @@ title: VdbLightFilter
   - circular = 1
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>blur_value</h3>
@@ -33,7 +33,7 @@ title: VdbLightFilter
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>color_tint</h3>
@@ -41,7 +41,7 @@ title: VdbLightFilter
   
   default: [ 0, 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>density_grid_name</h3>
@@ -57,7 +57,7 @@ title: VdbLightFilter
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>density_remap_input_min</h3>
@@ -65,7 +65,7 @@ title: VdbLightFilter
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>density_remap_inputs</h3>
@@ -73,7 +73,7 @@ title: VdbLightFilter
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>density_remap_interpolation_types</h3>
@@ -81,7 +81,7 @@ title: VdbLightFilter
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>density_remap_output_max</h3>
@@ -89,7 +89,7 @@ title: VdbLightFilter
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>density_remap_output_min</h3>
@@ -97,7 +97,7 @@ title: VdbLightFilter
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>density_remap_outputs</h3>
@@ -105,7 +105,7 @@ title: VdbLightFilter
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>density_rescale_enable</h3>
@@ -113,7 +113,7 @@ title: VdbLightFilter
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>invert_density</h3>
@@ -121,7 +121,7 @@ title: VdbLightFilter
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>vdb_interpolation_type</h3>
@@ -134,7 +134,7 @@ title: VdbLightFilter
   - quadratic = 2
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>vdb_map</h3>
@@ -150,7 +150,7 @@ title: VdbLightFilter
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>node_xform</h3>
@@ -158,7 +158,7 @@ title: VdbLightFilter
   
   default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>on</h3>
@@ -166,7 +166,7 @@ title: VdbLightFilter
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

@@ -14,7 +14,7 @@ title: NoiseWorleyMap_v2
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Adjustment attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Adjustment attributes</summary>
   <p>
   
   <h3>bias</h3>
@@ -78,7 +78,7 @@ title: NoiseWorleyMap_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>F1</h3>
@@ -133,7 +133,7 @@ title: NoiseWorleyMap_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Output attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Output attributes</summary>
   <p>
   
   <h3>distance_method</h3>
@@ -185,7 +185,7 @@ title: NoiseWorleyMap_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Space attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Space attributes</summary>
   <p>
   
   <h3>camera</h3>
@@ -201,7 +201,7 @@ title: NoiseWorleyMap_v2
   
   default: [ 0, 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>object_space</h3>
@@ -244,7 +244,7 @@ title: NoiseWorleyMap_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Transform attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Transform attributes</summary>
   <p>
   
   <h3>rotation</h3>
@@ -314,7 +314,7 @@ title: NoiseWorleyMap_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>color_A</h3>

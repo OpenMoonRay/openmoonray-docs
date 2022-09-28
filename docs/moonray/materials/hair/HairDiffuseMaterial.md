@@ -14,7 +14,7 @@ title: HairDiffuseMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>back_hair_color</h3>
@@ -54,7 +54,7 @@ title: HairDiffuseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Common attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
   <p>
   
   <h3>casts_caustics</h3>
@@ -78,7 +78,7 @@ title: HairDiffuseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Emission attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
   <p>
   
   <h3>emission</h3>
@@ -102,7 +102,7 @@ title: HairDiffuseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Subsurface attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Subsurface attributes</summary>
   <p>
   
   <h3>bssrdf</h3>
@@ -169,7 +169,7 @@ title: HairDiffuseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>extra_aovs</h3>
@@ -185,7 +185,7 @@ title: HairDiffuseMaterial
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>label</h3>

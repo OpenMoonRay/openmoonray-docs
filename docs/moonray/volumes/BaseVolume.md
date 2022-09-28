@@ -14,7 +14,7 @@ title: BaseVolume
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Attenuation Properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Attenuation Properties attributes</summary>
   <p>
   
   <h3>attenuation_color</h3>
@@ -38,7 +38,7 @@ title: BaseVolume
 
 
 <details open>
-  <summary class="scene-class-attr-group">Emission Properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission Properties attributes</summary>
   <p>
   
   <h3>emission_color</h3>
@@ -62,7 +62,7 @@ title: BaseVolume
 
 
 <details open>
-  <summary class="scene-class-attr-group">Scattering Properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Scattering Properties attributes</summary>
   <p>
   
   <h3>anisotropy</h3>
@@ -86,7 +86,7 @@ title: BaseVolume
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>bake_divisions</h3>

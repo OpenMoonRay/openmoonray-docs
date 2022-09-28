@@ -14,7 +14,7 @@ title: RampDisplayFilter
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>invert_mask</h3>
@@ -38,7 +38,7 @@ title: RampDisplayFilter
 
 
 <details open>
-  <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Ramp Knot attributes</summary>
   <p>
   
   <h3>colors</h3>
@@ -70,7 +70,7 @@ title: RampDisplayFilter
 
 
 <details open>
-  <summary class="scene-class-attr-group">Ramp properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Ramp properties attributes</summary>
   <p>
   
   <h3>input</h3>
@@ -103,7 +103,7 @@ title: RampDisplayFilter
   - input_ramp = 8
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -111,7 +111,7 @@ title: RampDisplayFilter
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>mask</h3>
@@ -119,7 +119,7 @@ title: RampDisplayFilter
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

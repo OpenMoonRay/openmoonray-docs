@@ -14,7 +14,7 @@ title: CookieLightFilter
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Properties attributes</summary>
   <p>
   
   <h3>blur_far_distance</h3>
@@ -22,7 +22,7 @@ title: CookieLightFilter
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>blur_far_value</h3>
@@ -30,7 +30,7 @@ title: CookieLightFilter
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>blur_mid_value</h3>
@@ -38,7 +38,7 @@ title: CookieLightFilter
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>blur_midpoint</h3>
@@ -46,7 +46,7 @@ title: CookieLightFilter
   
   default: 0.5
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>blur_near_distance</h3>
@@ -54,7 +54,7 @@ title: CookieLightFilter
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>blur_near_value</h3>
@@ -62,7 +62,7 @@ title: CookieLightFilter
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>blur_type</h3>
@@ -73,7 +73,7 @@ title: CookieLightFilter
   - circular = 1
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>density</h3>
@@ -81,7 +81,7 @@ title: CookieLightFilter
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>invert</h3>
@@ -89,7 +89,7 @@ title: CookieLightFilter
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>outside_projection</h3>
@@ -102,7 +102,7 @@ title: CookieLightFilter
   - default = 2
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>projector</h3>
@@ -110,7 +110,7 @@ title: CookieLightFilter
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>texture_map</h3>
@@ -118,7 +118,7 @@ title: CookieLightFilter
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -126,7 +126,7 @@ title: CookieLightFilter
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>node_xform</h3>
@@ -134,7 +134,7 @@ title: CookieLightFilter
   
   default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>on</h3>
@@ -142,7 +142,7 @@ title: CookieLightFilter
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>projector_film_width_aperture</h3>
@@ -150,7 +150,7 @@ title: CookieLightFilter
   
   default: 24.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>projector_focal</h3>
@@ -158,7 +158,7 @@ title: CookieLightFilter
   
   default: 30.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>projector_pixel_aspect_ratio</h3>
@@ -166,7 +166,7 @@ title: CookieLightFilter
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>projector_type</h3>
@@ -177,7 +177,7 @@ title: CookieLightFilter
   - orthographic = 1
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

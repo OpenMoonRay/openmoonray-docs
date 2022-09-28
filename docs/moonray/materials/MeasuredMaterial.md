@@ -14,7 +14,7 @@ title: MeasuredMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Diffuse attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Diffuse attributes</summary>
   <p>
   
   <h3>diffuse</h3>
@@ -22,7 +22,7 @@ title: MeasuredMaterial
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>diffuse_color</h3>
@@ -30,7 +30,7 @@ title: MeasuredMaterial
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>diffuse_factor</h3>
@@ -38,7 +38,7 @@ title: MeasuredMaterial
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>diffuse_filename</h3>
@@ -46,7 +46,7 @@ title: MeasuredMaterial
   
   default: 
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>diffuse_hue_shift</h3>
@@ -54,7 +54,7 @@ title: MeasuredMaterial
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>diffuse_saturation</h3>
@@ -62,7 +62,7 @@ title: MeasuredMaterial
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -70,7 +70,7 @@ title: MeasuredMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Specular attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Specular attributes</summary>
   <p>
   
   <h3>specular</h3>
@@ -78,7 +78,7 @@ title: MeasuredMaterial
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>specular_color</h3>
@@ -86,7 +86,7 @@ title: MeasuredMaterial
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>specular_factor</h3>
@@ -94,7 +94,7 @@ title: MeasuredMaterial
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>specular_filename</h3>
@@ -102,7 +102,7 @@ title: MeasuredMaterial
   
   default: 
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>specular_hue_shift</h3>
@@ -110,7 +110,7 @@ title: MeasuredMaterial
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>specular_saturation</h3>
@@ -118,7 +118,7 @@ title: MeasuredMaterial
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -126,7 +126,7 @@ title: MeasuredMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>anisotropic_direction</h3>
@@ -134,7 +134,7 @@ title: MeasuredMaterial
   
   default: [ 1, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>casts_caustics</h3>
@@ -142,7 +142,7 @@ title: MeasuredMaterial
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>extra_aovs</h3>
@@ -158,7 +158,7 @@ title: MeasuredMaterial
   
   default: [ 0, 0, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>input_normal_dial</h3>
@@ -166,7 +166,7 @@ title: MeasuredMaterial
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>input_normal_space</h3>
@@ -174,7 +174,7 @@ title: MeasuredMaterial
   
   default: 0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>label</h3>

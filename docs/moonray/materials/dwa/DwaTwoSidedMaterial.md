@@ -14,7 +14,7 @@ title: DwaTwoSidedMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>fallback_bssrdf</h3>
@@ -86,7 +86,7 @@ title: DwaTwoSidedMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>back_material</h3>

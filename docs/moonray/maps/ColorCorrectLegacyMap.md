@@ -14,7 +14,7 @@ title: ColorCorrectLegacyMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>brightness</h3>
@@ -22,7 +22,7 @@ title: ColorCorrectLegacyMap
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>clamp</h3>
@@ -30,7 +30,7 @@ title: ColorCorrectLegacyMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>contrast</h3>
@@ -38,7 +38,7 @@ title: ColorCorrectLegacyMap
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>hue</h3>
@@ -46,7 +46,7 @@ title: ColorCorrectLegacyMap
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>input</h3>
@@ -54,7 +54,7 @@ title: ColorCorrectLegacyMap
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>invert</h3>
@@ -62,7 +62,7 @@ title: ColorCorrectLegacyMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>mask</h3>
@@ -70,7 +70,7 @@ title: ColorCorrectLegacyMap
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>monochrome</h3>
@@ -93,7 +93,7 @@ title: ColorCorrectLegacyMap
   - blue channel = 7
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>multiplier</h3>
@@ -101,7 +101,7 @@ title: ColorCorrectLegacyMap
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>on</h3>
@@ -109,7 +109,7 @@ title: ColorCorrectLegacyMap
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>saturation</h3>
@@ -117,7 +117,7 @@ title: ColorCorrectLegacyMap
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

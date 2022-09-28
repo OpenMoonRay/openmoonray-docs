@@ -14,7 +14,7 @@ title: RemapDisplayFilter
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>invert_mask</h3>
@@ -38,7 +38,7 @@ title: RemapDisplayFilter
 
 
 <details open>
-  <summary class="scene-class-attr-group">Channel attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Channel attributes</summary>
   <p>
   
   <h3>clamp_max_RGB</h3>
@@ -102,7 +102,7 @@ title: RemapDisplayFilter
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>clamp</h3>
@@ -166,7 +166,7 @@ title: RemapDisplayFilter
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>midpoint_bias</h3>

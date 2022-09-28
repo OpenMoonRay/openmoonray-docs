@@ -14,7 +14,7 @@ title: DwaBaseMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>specular</h3>
@@ -38,7 +38,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Clearcoat attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Clearcoat attributes</summary>
   <p>
   
   <h3>clearcoat</h3>
@@ -137,7 +137,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Common attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
   <p>
   
   <h3>casts_caustics</h3>
@@ -169,7 +169,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Diffuse attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Diffuse attributes</summary>
   <p>
   
   <h3>albedo</h3>
@@ -273,7 +273,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Emission attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
   <p>
   
   <h3>emission</h3>
@@ -297,7 +297,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Fuzz attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Fuzz attributes</summary>
   <p>
   
   <h3>fuzz</h3>
@@ -361,7 +361,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Glitter attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Glitter attributes</summary>
   <p>
   
   <h3>glitter</h3>
@@ -594,7 +594,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Iridescence attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Iridescence attributes</summary>
   <p>
   
   <h3>iridescence</h3>
@@ -725,7 +725,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Normal attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
   <p>
   
   <h3>input_normal</h3>
@@ -749,7 +749,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Normal Anti-aliasing attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal Anti-aliasing attributes</summary>
   <p>
   
   <h3>normal_AA_dial</h3>
@@ -776,7 +776,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Specular attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Specular attributes</summary>
   <p>
   
   <h3>anisotropy</h3>
@@ -859,7 +859,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Transmission attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Transmission attributes</summary>
   <p>
   
   <h3>dispersion_abbe_number</h3>
@@ -939,7 +939,7 @@ title: DwaBaseMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>extra_aovs</h3>

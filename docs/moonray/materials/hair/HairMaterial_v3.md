@@ -14,7 +14,7 @@ title: HairMaterial_v3
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>show_multiple_scattering</h3>
@@ -38,7 +38,7 @@ title: HairMaterial_v3
 
 
 <details open>
-  <summary class="scene-class-attr-group">Common attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
   <p>
   
   <h3>casts_caustics</h3>
@@ -62,7 +62,7 @@ title: HairMaterial_v3
 
 
 <details open>
-  <summary class="scene-class-attr-group">Emission attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
   <p>
   
   <h3>emission</h3>
@@ -86,7 +86,7 @@ title: HairMaterial_v3
 
 
 <details open>
-  <summary class="scene-class-attr-group">Fresnel attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Fresnel attributes</summary>
   <p>
   
   <h3>cuticle_layer_thickness</h3>
@@ -94,7 +94,7 @@ title: HairMaterial_v3
   
   default: 0.10000000149
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>fresnel_type</h3>
@@ -107,7 +107,7 @@ title: HairMaterial_v3
   - layered cuticles = 2
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>refractive_index</h3>
@@ -123,7 +123,7 @@ title: HairMaterial_v3
 
 
 <details open>
-  <summary class="scene-class-attr-group">Primary Specular attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Primary Specular attributes</summary>
   <p>
   
   <h3>primary_specular_offset</h3>
@@ -163,7 +163,7 @@ title: HairMaterial_v3
 
 
 <details open>
-  <summary class="scene-class-attr-group">Secondary Specular attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Secondary Specular attributes</summary>
   <p>
   
   <h3>glint_eccentricity</h3>
@@ -259,7 +259,7 @@ title: HairMaterial_v3
 
 
 <details open>
-  <summary class="scene-class-attr-group">Transmission attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Transmission attributes</summary>
   <p>
   
   <h3>direct_transmission_saturation</h3>
@@ -323,7 +323,7 @@ title: HairMaterial_v3
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>extra_aovs</h3>
@@ -339,7 +339,7 @@ title: HairMaterial_v3
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>label</h3>

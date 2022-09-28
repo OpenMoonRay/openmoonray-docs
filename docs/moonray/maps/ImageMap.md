@@ -14,7 +14,7 @@ title: ImageMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Blur attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Blur attributes</summary>
   <p>
   
   <h3>blur</h3>
@@ -46,7 +46,7 @@ title: ImageMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">Color Correction attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Color Correction attributes</summary>
   <p>
   
   <h3>TMI</h3>
@@ -62,7 +62,7 @@ title: ImageMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>contrast</h3>
@@ -70,7 +70,7 @@ title: ImageMap
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>contrast_enabled</h3>
@@ -78,7 +78,7 @@ title: ImageMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gain</h3>
@@ -86,7 +86,7 @@ title: ImageMap
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gain_offset_enabled</h3>
@@ -94,7 +94,7 @@ title: ImageMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gamma_adjust</h3>
@@ -102,7 +102,7 @@ title: ImageMap
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gamma_enabled</h3>
@@ -110,7 +110,7 @@ title: ImageMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>offset_adjust</h3>
@@ -118,7 +118,7 @@ title: ImageMap
   
   default: [ 0, 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>saturation</h3>
@@ -126,7 +126,7 @@ title: ImageMap
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>saturation_enabled</h3>
@@ -134,7 +134,7 @@ title: ImageMap
   
   default: False
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -142,7 +142,7 @@ title: ImageMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>alpha_only</h3>
@@ -171,7 +171,7 @@ title: ImageMap
   - auto = 2 (default)
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>input_texture_coordinates</h3>
@@ -179,7 +179,7 @@ title: ImageMap
   
   default: [ 0, 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>offset</h3>
@@ -187,7 +187,7 @@ title: ImageMap
   
   default: [ 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>rotation_angle</h3>
@@ -211,7 +211,7 @@ title: ImageMap
   
   default: [ 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>texture</h3>
@@ -234,7 +234,7 @@ title: ImageMap
   - hair closest surface = 3
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>udim_files</h3>
@@ -242,7 +242,7 @@ title: ImageMap
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>udim_max_v</h3>
@@ -258,7 +258,7 @@ title: ImageMap
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>use_default_color_when_missing</h3>
@@ -274,7 +274,7 @@ title: ImageMap
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

@@ -14,7 +14,7 @@ title: DistantLight
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Map attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Map attributes</summary>
   <p>
   
   <h3>contrast</h3>
@@ -22,7 +22,7 @@ title: DistantLight
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gain</h3>
@@ -30,7 +30,7 @@ title: DistantLight
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>gamma</h3>
@@ -38,7 +38,7 @@ title: DistantLight
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>offset</h3>
@@ -46,7 +46,7 @@ title: DistantLight
   
   default: [ 0, 0, 0 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>saturation</h3>
@@ -54,7 +54,7 @@ title: DistantLight
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>temperature</h3>
@@ -142,7 +142,7 @@ title: DistantLight
 
 
 <details open>
-  <summary class="scene-class-attr-group">Properties attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Properties attributes</summary>
   <p>
   
   <h3>angular_extent</h3>
@@ -150,7 +150,7 @@ title: DistantLight
   
   default: 0.52999997139
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>color</h3>
@@ -158,7 +158,7 @@ title: DistantLight
   
   default: [ 1, 1, 1 ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>exposure</h3>
@@ -166,7 +166,7 @@ title: DistantLight
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>intensity</h3>
@@ -174,7 +174,7 @@ title: DistantLight
   
   default: 1.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>label</h3>
@@ -190,7 +190,7 @@ title: DistantLight
   
   default: 0.0
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>mb</h3>
@@ -206,7 +206,7 @@ title: DistantLight
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>on</h3>
@@ -214,7 +214,7 @@ title: DistantLight
   
   default: True
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>presence_shadows</h3>
@@ -227,7 +227,7 @@ title: DistantLight
   - use default = 2 (default)
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>ray_termination</h3>
@@ -250,7 +250,7 @@ title: DistantLight
   - bilinear with nearest mip = 3
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>visible_in_camera</h3>
@@ -263,7 +263,7 @@ title: DistantLight
   - use default = 2 (default)
   
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>
@@ -271,7 +271,7 @@ title: DistantLight
 
 
 <details open>
-  <summary class="scene-class-attr-group">Visibility Flags attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Visibility Flags attributes</summary>
   <p>
   
   <h3>visible_diffuse_reflection</h3>
@@ -327,7 +327,7 @@ title: DistantLight
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>light_filters</h3>
@@ -335,7 +335,7 @@ title: DistantLight
   
   default: []
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>node_xform</h3>
@@ -343,7 +343,7 @@ title: DistantLight
   
   default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   </p>

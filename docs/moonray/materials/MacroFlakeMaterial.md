@@ -14,7 +14,7 @@ title: MacroFlakeMaterial
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Normal attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
   <p>
   
   <h3>input_normal</h3>
@@ -38,7 +38,7 @@ title: MacroFlakeMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">Specular attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Specular attributes</summary>
   <p>
   
   <h3>metallic_color</h3>
@@ -70,7 +70,7 @@ title: MacroFlakeMaterial
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>background_material</h3>

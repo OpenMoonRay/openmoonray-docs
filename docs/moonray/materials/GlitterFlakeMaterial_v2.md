@@ -14,7 +14,7 @@ title: GlitterFlakeMaterial_v2
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
   
   <h3>approximate_glitter_for_secondary_rays</h3>
@@ -65,7 +65,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Appearance attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Appearance attributes</summary>
   <p>
   
   <h3>decouple_flake_size</h3>
@@ -177,7 +177,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Common attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
   <p>
   
   <h3>presence</h3>
@@ -193,7 +193,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Flake Generation attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Flake Generation attributes</summary>
   <p>
   
   <h3>compensate_reference_space_deformation</h3>
@@ -228,7 +228,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Glitter A Appearance attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Glitter A Appearance attributes</summary>
   <p>
   
   <h3>flake_color_A</h3>
@@ -268,7 +268,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Glitter B Appearance attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Glitter B Appearance attributes</summary>
   <p>
   
   <h3>flake_color_B</h3>
@@ -308,7 +308,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">Layering attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Layering attributes</summary>
   <p>
   
   <h3>layering_mode</h3>
@@ -335,7 +335,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>extra_aovs</h3>

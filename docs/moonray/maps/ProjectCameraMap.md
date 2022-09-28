@@ -14,7 +14,7 @@ title: ProjectCameraMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>black_outside_projection</h3>
@@ -38,7 +38,7 @@ title: ProjectCameraMap
   
   default: None
   
-  <p class="scene-class-attr-missing">No documentation available</p>
+  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
   
   
   <h3>use_custom_window_coordinates</h3>

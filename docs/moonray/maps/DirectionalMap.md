@@ -14,7 +14,7 @@ title: DirectionalMap
 ---
 
 <details open>
-  <summary class="scene-class-attr-group">Adjustment attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Adjustment attributes</summary>
   <p>
   
   <h3>bias</h3>
@@ -76,7 +76,7 @@ title: DirectionalMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">Normal attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
   <p>
   
   <h3>input_normal</h3>
@@ -100,7 +100,7 @@ title: DirectionalMap
 
 
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
   
   <h3>color_a</h3>
