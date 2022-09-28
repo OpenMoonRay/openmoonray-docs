@@ -18,7 +18,7 @@ Documentation for class CombineLightFilter
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## light_filters
 
@@ -30,7 +30,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>light_filters</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>light_filters</b> needs to be written</p>
 
 
 
@@ -55,7 +55,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>mode</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>mode</b> needs to be written</p>
 
 
 
@@ -70,7 +70,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
 

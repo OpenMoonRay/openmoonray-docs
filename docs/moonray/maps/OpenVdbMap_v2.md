@@ -18,7 +18,7 @@ Documentation for class OpenVdbMap_v2
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## show_active_field
 
@@ -39,7 +39,7 @@ When enabled active/inactive field locations will be white/black, respectively
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## default_value
 

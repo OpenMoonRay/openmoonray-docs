@@ -18,7 +18,7 @@ Documentation for class RaySwitchMaterial
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## camera_ray_material
 
@@ -30,7 +30,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>camera_ray_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>camera_ray_material</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>cutout_camera_rays</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>cutout_camera_rays</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>default_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>default_material</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>indirect_diffuse_ray_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_diffuse_ray_material</b> needs to be written</p>
 
 
 
@@ -105,7 +105,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>indirect_glossy_ray_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_glossy_ray_material</b> needs to be written</p>
 
 
 
@@ -120,7 +120,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>indirect_mirror_ray_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_mirror_ray_material</b> needs to be written</p>
 
 
 

@@ -18,7 +18,7 @@ Documentation for class ClampDisplayFilter
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## invert_mask
 
@@ -54,7 +54,7 @@ blend between output and input
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## input
 
@@ -81,7 +81,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>mask</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
 

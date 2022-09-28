@@ -18,7 +18,7 @@ Documentation for class ColorCorrectMap
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## contrast_b
 
@@ -309,7 +309,7 @@ enables separate RGB controls for saturation
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## TMI
 

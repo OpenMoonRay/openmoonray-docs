@@ -18,7 +18,7 @@ Documentation for class CurvatureMap
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## invert
 
@@ -30,7 +30,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>invert</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
 
 
 
@@ -68,7 +68,7 @@ Default value : 0.5
 
 
 
-<p style="color:red;">Documentation for the attribute <b>power</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>power</b> needs to be written</p>
 
 
 
@@ -83,7 +83,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>scale</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
 
 
 

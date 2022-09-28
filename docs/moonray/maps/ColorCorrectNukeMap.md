@@ -18,7 +18,7 @@ Documentation for class ColorCorrectNukeMap
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## TMI
 
@@ -45,7 +45,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>TMI_control_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>TMI_control_enabled</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>contrast</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>contrast_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>contrast_enabled</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gain</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gain</b> needs to be written</p>
 
 
 
@@ -105,7 +105,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gain_offset_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gain_offset_enabled</b> needs to be written</p>
 
 
 
@@ -120,7 +120,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gamma</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gamma</b> needs to be written</p>
 
 
 
@@ -135,7 +135,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gamma_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gamma_enabled</b> needs to be written</p>
 
 
 
@@ -150,7 +150,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input</b> needs to be written</p>
 
 
 
@@ -165,7 +165,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
 
 
 
@@ -180,7 +180,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>saturation</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
 
 
 
@@ -195,7 +195,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>saturation_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>saturation_enabled</b> needs to be written</p>
 
 
 

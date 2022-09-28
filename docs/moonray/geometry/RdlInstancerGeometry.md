@@ -18,7 +18,7 @@ Documentation for class RdlInstancerGeometry
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## disable_indices
 
@@ -119,7 +119,7 @@ Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
 
@@ -369,7 +369,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>velocities</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>velocities</b> needs to be written</p>
 
 
 

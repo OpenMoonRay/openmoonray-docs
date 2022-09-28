@@ -18,7 +18,7 @@ Documentation for class CookieLightFilter
 
 ---
 
-## <p style="color:blue;">Properties attributes</p>
+## <p class="scene-class-attr-group">Properties attributes</p>
 
 ## blur_far_distance
 
@@ -30,7 +30,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>blur_far_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_far_distance</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>blur_far_value</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_far_value</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>blur_mid_value</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_mid_value</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : 0.5
 
 
 
-<p style="color:red;">Documentation for the attribute <b>blur_midpoint</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_midpoint</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>blur_near_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_near_distance</b> needs to be written</p>
 
 
 
@@ -105,7 +105,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>blur_near_value</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_near_value</b> needs to be written</p>
 
 
 
@@ -124,7 +124,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>blur_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>blur_type</b> needs to be written</p>
 
 
 
@@ -139,7 +139,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>density</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>density</b> needs to be written</p>
 
 
 
@@ -154,7 +154,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>invert</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
 
 
 
@@ -175,7 +175,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>outside_projection</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>outside_projection</b> needs to be written</p>
 
 
 
@@ -190,7 +190,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>projector</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>projector</b> needs to be written</p>
 
 
 
@@ -205,7 +205,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>texture_map</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>texture_map</b> needs to be written</p>
 
 
 
@@ -214,7 +214,7 @@ Default value : None
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## node_xform
 
@@ -226,7 +226,7 @@ Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
 
@@ -241,7 +241,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
 
@@ -256,7 +256,7 @@ Default value : 24.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>projector_film_width_aperture</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>projector_film_width_aperture</b> needs to be written</p>
 
 
 
@@ -271,7 +271,7 @@ Default value : 30.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>projector_focal</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>projector_focal</b> needs to be written</p>
 
 
 
@@ -286,7 +286,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>projector_pixel_aspect_ratio</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>projector_pixel_aspect_ratio</b> needs to be written</p>
 
 
 
@@ -305,7 +305,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>projector_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>projector_type</b> needs to be written</p>
 
 
 

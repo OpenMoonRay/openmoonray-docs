@@ -18,7 +18,7 @@ Documentation for class DwaColorCorrectMaterial
 
 ---
 
-## <p style="color:blue;">Hue/Sat/Gain attributes</p>
+## <p class="scene-class-attr-group">Hue/Sat/Gain attributes</p>
 
 ## gain
 
@@ -69,7 +69,7 @@ desaturates the input below 1.0 and adds saturation above 1.0
 
 ---
 
-## <p style="color:blue;">TMI attributes</p>
+## <p class="scene-class-attr-group">TMI attributes</p>
 
 ## TMI
 
@@ -105,7 +105,7 @@ enables the TMI parameters
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## extra_aovs
 
@@ -132,7 +132,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_material</b> needs to be written</p>
 
 
 

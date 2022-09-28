@@ -18,7 +18,7 @@ Documentation for class DwaSolidDielectricMaterial
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## specular
 
@@ -54,7 +54,7 @@ Set of geometries that contribute neighboring subsurface points. By default, onl
 
 ---
 
-## <p style="color:blue;">Clearcoat attributes</p>
+## <p class="scene-class-attr-group">Clearcoat attributes</p>
 
 ## clearcoat
 
@@ -229,7 +229,7 @@ specifies whether the clearcoat lobe should use an independent normal
 
 ---
 
-## <p style="color:blue;">Common attributes</p>
+## <p class="scene-class-attr-group">Common attributes</p>
 
 ## casts_caustics
 
@@ -280,7 +280,7 @@ enables proper shading of infinitely thin geometry such as paper or leaves.
 
 ---
 
-## <p style="color:blue;">Diffuse attributes</p>
+## <p class="scene-class-attr-group">Diffuse attributes</p>
 
 ## albedo
 
@@ -461,7 +461,7 @@ enables/disables diffuse reflectance
 
 ---
 
-## <p style="color:blue;">Emission attributes</p>
+## <p class="scene-class-attr-group">Emission attributes</p>
 
 ## emission
 
@@ -497,7 +497,7 @@ enables/disable emission
 
 ---
 
-## <p style="color:blue;">Fuzz attributes</p>
+## <p class="scene-class-attr-group">Fuzz attributes</p>
 
 ## fuzz
 
@@ -608,7 +608,7 @@ Specify whether dark fuzz fibers absorb energy or transmit it to the layers belo
 
 ---
 
-## <p style="color:blue;">Glitter attributes</p>
+## <p class="scene-class-attr-group">Glitter attributes</p>
 
 ## glitter
 
@@ -1024,7 +1024,7 @@ Enables/disables glitter lobes
 
 ---
 
-## <p style="color:blue;">Iridescence attributes</p>
+## <p class="scene-class-attr-group">Iridescence attributes</p>
 
 ## iridescence
 
@@ -1254,7 +1254,7 @@ Controls how much the color spectrum is repeated
 
 ---
 
-## <p style="color:blue;">Normal attributes</p>
+## <p class="scene-class-attr-group">Normal attributes</p>
 
 ## input_normal
 
@@ -1290,7 +1290,7 @@ controls the amount of influence of the alternate normal
 
 ---
 
-## <p style="color:blue;">Normal Anti-aliasing attributes</p>
+## <p class="scene-class-attr-group">Normal Anti-aliasing attributes</p>
 
 ## normal_AA_dial
 
@@ -1330,7 +1330,7 @@ Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'tok
 
 ---
 
-## <p style="color:blue;">Specular attributes</p>
+## <p class="scene-class-attr-group">Specular attributes</p>
 
 ## anisotropy
 
@@ -1430,7 +1430,7 @@ sets the normalized distribution function for specular.  GGX is currently isotro
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## extra_aovs
 

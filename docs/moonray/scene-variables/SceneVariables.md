@@ -18,7 +18,7 @@ Documentation for class SceneVariables
 
 ---
 
-## <p style="color:blue;">Caching attributes</p>
+## <p class="scene-class-attr-group">Caching attributes</p>
 
 ## fast_geometry_update
 
@@ -30,7 +30,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>fast_geometry_update</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>fast_geometry_update</b> needs to be written</p>
 
 
 
@@ -69,7 +69,7 @@ maximum number of simultaneous open file handles
 
 ---
 
-## <p style="color:blue;">Camera and Layer attributes</p>
+## <p class="scene-class-attr-group">Camera and Layer attributes</p>
 
 ## camera
 
@@ -81,7 +81,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>camera</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>camera</b> needs to be written</p>
 
 
 
@@ -96,7 +96,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>layer</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>layer</b> needs to be written</p>
 
 
 
@@ -105,7 +105,7 @@ Default value : None
 
 ---
 
-## <p style="color:blue;">Checkpoint attributes</p>
+## <p class="scene-class-attr-group">Checkpoint attributes</p>
 
 ## checkpoint_active
 
@@ -117,7 +117,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>checkpoint_active</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>checkpoint_active</b> needs to be written</p>
 
 
 
@@ -325,7 +325,7 @@ Specify total number of checkpoint files for quality based checkpoint mode.This 
 
 ---
 
-## <p style="color:blue;">Debug attributes</p>
+## <p class="scene-class-attr-group">Debug attributes</p>
 
 ## debug_console
 
@@ -352,7 +352,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
-<p style="color:red;">Documentation for the attribute <b>debug_pixel</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>debug_pixel</b> needs to be written</p>
 
 
 
@@ -367,7 +367,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
-<p style="color:red;">Documentation for the attribute <b>debug_rays_depth_range</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>debug_rays_depth_range</b> needs to be written</p>
 
 
 
@@ -382,7 +382,7 @@ Default value :
 
 
 
-<p style="color:red;">Documentation for the attribute <b>debug_rays_file</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>debug_rays_file</b> needs to be written</p>
 
 
 
@@ -397,7 +397,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
-<p style="color:red;">Documentation for the attribute <b>debug_rays_primary_range</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>debug_rays_primary_range</b> needs to be written</p>
 
 
 
@@ -421,7 +421,7 @@ Checks geometry for bad data
 
 ---
 
-## <p style="color:blue;">Deep Images attributes</p>
+## <p class="scene-class-attr-group">Deep Images attributes</p>
 
 ## deep_curvature_tolerance
 
@@ -536,7 +536,7 @@ Maximum range of the deep surface's Z values within a pixel before it is split
 
 ---
 
-## <p style="color:blue;">Driver attributes</p>
+## <p class="scene-class-attr-group">Driver attributes</p>
 
 ## interactive_mode
 
@@ -548,7 +548,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>interactive_mode</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>interactive_mode</b> needs to be written</p>
 
 
 
@@ -563,7 +563,7 @@ Default value : -1
 
 
 
-<p style="color:red;">Documentation for the attribute <b>machine_id</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>machine_id</b> needs to be written</p>
 
 
 
@@ -578,7 +578,7 @@ Default value : -1
 
 
 
-<p style="color:red;">Documentation for the attribute <b>num_machines</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>num_machines</b> needs to be written</p>
 
 
 
@@ -593,7 +593,7 @@ Default value : scene.exr
 
 
 
-<p style="color:red;">Documentation for the attribute <b>output_file</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>output_file</b> needs to be written</p>
 
 
 
@@ -608,7 +608,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>progressive_shading</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>progressive_shading</b> needs to be written</p>
 
 
 
@@ -627,7 +627,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>task_distribution_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>task_distribution_type</b> needs to be written</p>
 
 
 
@@ -642,7 +642,7 @@ Default value : 0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>threads</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>threads</b> needs to be written</p>
 
 
 
@@ -666,7 +666,7 @@ Define temporary directory name for temporary file generation. Use $TMPDIR envir
 
 ---
 
-## <p style="color:blue;">Filtering attributes</p>
+## <p class="scene-class-attr-group">Filtering attributes</p>
 
 ## pixel_filter
 
@@ -684,7 +684,7 @@ Define temporary directory name for temporary file generation. Use $TMPDIR envir
 
 
 
-<p style="color:red;">Documentation for the attribute <b>pixel_filter</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_filter</b> needs to be written</p>
 
 
 
@@ -699,7 +699,7 @@ Default value : 3.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>pixel_filter_width</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_filter_width</b> needs to be written</p>
 
 
 
@@ -714,7 +714,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>texture_blur</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>texture_blur</b> needs to be written</p>
 
 
 
@@ -723,7 +723,7 @@ Default value : 0.0
 
 ---
 
-## <p style="color:blue;">Fireflies Removal attributes</p>
+## <p class="scene-class-attr-group">Fireflies Removal attributes</p>
 
 ## roughness_clamping_factor
 
@@ -774,7 +774,7 @@ clamp sample values to a maximum (disabled if 0.0). Warning: Using this techniqu
 
 ---
 
-## <p style="color:blue;">Frame attributes</p>
+## <p class="scene-class-attr-group">Frame attributes</p>
 
 ## frame
 
@@ -786,7 +786,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>frame</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>frame</b> needs to be written</p>
 
 
 
@@ -801,7 +801,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>max_frame</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>max_frame</b> needs to be written</p>
 
 
 
@@ -816,7 +816,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>min_frame</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>min_frame</b> needs to be written</p>
 
 
 
@@ -825,7 +825,7 @@ Default value : 0.0
 
 ---
 
-## <p style="color:blue;">Global Toggles attributes</p>
+## <p class="scene-class-attr-group">Global Toggles attributes</p>
 
 ## enable_displacement
 
@@ -837,7 +837,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>enable_displacement</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>enable_displacement</b> needs to be written</p>
 
 
 
@@ -852,7 +852,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>enable_dof</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>enable_dof</b> needs to be written</p>
 
 
 
@@ -867,7 +867,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>enable_max_geometry_resolution</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>enable_max_geometry_resolution</b> needs to be written</p>
 
 
 
@@ -882,7 +882,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>enable_motion_blur</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>enable_motion_blur</b> needs to be written</p>
 
 
 
@@ -897,7 +897,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>enable_presence_shadows</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>enable_presence_shadows</b> needs to be written</p>
 
 
 
@@ -912,7 +912,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>enable_shadowing</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>enable_shadowing</b> needs to be written</p>
 
 
 
@@ -927,7 +927,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>enable_subsurface_scattering</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>enable_subsurface_scattering</b> needs to be written</p>
 
 
 
@@ -942,7 +942,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>lights_visible_in_camera</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>lights_visible_in_camera</b> needs to be written</p>
 
 
 
@@ -957,7 +957,7 @@ Default value : 2147483647
 
 
 
-<p style="color:red;">Documentation for the attribute <b>max_geometry_resolution</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>max_geometry_resolution</b> needs to be written</p>
 
 
 
@@ -1006,7 +1006,7 @@ Attempt to soften hard shadow terminator boundaries due to shading/geometric nor
 
 ---
 
-## <p style="color:blue;">Image Size attributes</p>
+## <p class="scene-class-attr-group">Image Size attributes</p>
 
 ## aperture_window
 
@@ -1033,7 +1033,7 @@ Default value : 1080
 
 
 
-<p style="color:red;">Documentation for the attribute <b>image_height</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>image_height</b> needs to be written</p>
 
 
 
@@ -1048,7 +1048,7 @@ Default value : 1920
 
 
 
-<p style="color:red;">Documentation for the attribute <b>image_width</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>image_width</b> needs to be written</p>
 
 
 
@@ -1078,7 +1078,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>res</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>res</b> needs to be written</p>
 
 
 
@@ -1102,7 +1102,7 @@ Subviewport of region window. Coordinate (0,0) maps to left, bottom of region wi
 
 ---
 
-## <p style="color:blue;">Logging attributes</p>
+## <p class="scene-class-attr-group">Logging attributes</p>
 
 ## athena_debug
 
@@ -1114,7 +1114,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>athena_debug</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>athena_debug</b> needs to be written</p>
 
 
 
@@ -1129,7 +1129,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>debug</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>debug</b> needs to be written</p>
 
 
 
@@ -1144,7 +1144,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>error</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>error</b> needs to be written</p>
 
 
 
@@ -1159,7 +1159,7 @@ Default value : [ 1, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>fatal_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>fatal_color</b> needs to be written</p>
 
 
 
@@ -1174,7 +1174,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>info</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>info</b> needs to be written</p>
 
 
 
@@ -1189,7 +1189,7 @@ Default value :
 
 
 
-<p style="color:red;">Documentation for the attribute <b>stats_file</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>stats_file</b> needs to be written</p>
 
 
 
@@ -1204,7 +1204,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>warning</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>warning</b> needs to be written</p>
 
 
 
@@ -1213,7 +1213,7 @@ Default value : True
 
 ---
 
-## <p style="color:blue;">Metadata attributes</p>
+## <p class="scene-class-attr-group">Metadata attributes</p>
 
 ## exr_header_attributes
 
@@ -1234,7 +1234,7 @@ Metadata that is passed directly to the exr header. Format: {"name", "type", "va
 
 ---
 
-## <p style="color:blue;">Motion and Scale attributes</p>
+## <p class="scene-class-attr-group">Motion and Scale attributes</p>
 
 ## motion_steps
 
@@ -1270,7 +1270,7 @@ Default value : 0.00999999977648
 
 ---
 
-## <p style="color:blue;">Path Guide attributes</p>
+## <p class="scene-class-attr-group">Path Guide attributes</p>
 
 ## path_guide_enable
 
@@ -1291,7 +1291,7 @@ Turn on path guiding to handle difficult light transport problems (e.g. caustics
 
 ---
 
-## <p style="color:blue;">Resume Render attributes</p>
+## <p class="scene-class-attr-group">Resume Render attributes</p>
 
 ## on_resume_script
 
@@ -1342,7 +1342,7 @@ resuming render process
 
 ---
 
-## <p style="color:blue;">Sampling attributes</p>
+## <p class="scene-class-attr-group">Sampling attributes</p>
 
 ## bsdf_sampler_strategy
 
@@ -1375,7 +1375,7 @@ Default value : 2
 
 
 
-<p style="color:red;">Documentation for the attribute <b>bsdf_samples</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>bsdf_samples</b> needs to be written</p>
 
 
 
@@ -1390,7 +1390,7 @@ Default value : 2
 
 
 
-<p style="color:red;">Documentation for the attribute <b>bssrdf_samples</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>bssrdf_samples</b> needs to be written</p>
 
 
 
@@ -1420,7 +1420,7 @@ Default value : 2
 
 
 
-<p style="color:red;">Documentation for the attribute <b>light_samples</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>light_samples</b> needs to be written</p>
 
 
 
@@ -1435,7 +1435,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>lock_frame_noise</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>lock_frame_noise</b> needs to be written</p>
 
 
 
@@ -1450,7 +1450,7 @@ Default value : 5
 
 
 
-<p style="color:red;">Documentation for the attribute <b>max_depth</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>max_depth</b> needs to be written</p>
 
 
 
@@ -1465,7 +1465,7 @@ Default value : 2
 
 
 
-<p style="color:red;">Documentation for the attribute <b>max_diffuse_depth</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>max_diffuse_depth</b> needs to be written</p>
 
 
 
@@ -1480,7 +1480,7 @@ Default value : 2
 
 
 
-<p style="color:red;">Documentation for the attribute <b>max_glossy_depth</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>max_glossy_depth</b> needs to be written</p>
 
 
 
@@ -1495,7 +1495,7 @@ Default value : 5
 
 
 
-<p style="color:red;">Documentation for the attribute <b>max_hair_depth</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>max_hair_depth</b> needs to be written</p>
 
 
 
@@ -1510,7 +1510,7 @@ Default value : 3
 
 
 
-<p style="color:red;">Documentation for the attribute <b>max_mirror_depth</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>max_mirror_depth</b> needs to be written</p>
 
 
 
@@ -1525,7 +1525,7 @@ Default value : 16
 
 
 
-<p style="color:red;">Documentation for the attribute <b>max_presence_depth</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>max_presence_depth</b> needs to be written</p>
 
 
 
@@ -1540,7 +1540,7 @@ Default value : 1
 
 
 
-<p style="color:red;">Documentation for the attribute <b>max_subsurface_per_path</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>max_subsurface_per_path</b> needs to be written</p>
 
 
 
@@ -1555,7 +1555,7 @@ Default value : 8
 
 
 
-<p style="color:red;">Documentation for the attribute <b>pixel_samples</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_samples</b> needs to be written</p>
 
 
 
@@ -1585,7 +1585,7 @@ Default value : 0.0375000014901
 
 
 
-<p style="color:red;">Documentation for the attribute <b>russian_roulette_threshold</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>russian_roulette_threshold</b> needs to be written</p>
 
 
 
@@ -1609,7 +1609,7 @@ Defines at which point the accumulated opacity can be considered as opaque, skip
 
 ---
 
-## <p style="color:blue;">Volumes attributes</p>
+## <p class="scene-class-attr-group">Volumes attributes</p>
 
 ## max_volume_depth
 
@@ -1621,7 +1621,7 @@ Default value : 1
 
 
 
-<p style="color:red;">Documentation for the attribute <b>max_volume_depth</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>max_volume_depth</b> needs to be written</p>
 
 
 
@@ -1764,7 +1764,7 @@ Controls the quality of volume shadow (transmittance). The higher number gives m
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## batch_tile_order
 
@@ -1792,7 +1792,7 @@ Controls the quality of volume shadow (transmittance). The higher number gives m
 
 
 
-<p style="color:red;">Documentation for the attribute <b>batch_tile_order</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>batch_tile_order</b> needs to be written</p>
 
 
 
@@ -1823,7 +1823,7 @@ Controls the quality of volume shadow (transmittance). The higher number gives m
 
 
 
-<p style="color:red;">Documentation for the attribute <b>checkpoint_tile_order</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>checkpoint_tile_order</b> needs to be written</p>
 
 
 
@@ -1838,7 +1838,7 @@ Default value : 24.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>fps</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>fps</b> needs to be written</p>
 
 
 
@@ -1899,7 +1899,7 @@ When adaptive sampling is turned on, it's possible that a tile may be mis-classi
 
 
 
-<p style="color:red;">Documentation for the attribute <b>progressive_tile_order</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>progressive_tile_order</b> needs to be written</p>
 
 
 

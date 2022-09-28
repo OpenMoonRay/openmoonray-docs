@@ -18,7 +18,7 @@ Documentation for class VectorDisplacement
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## bound_padding
 
@@ -45,7 +45,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>factor</b> needs to be written</p>
 
 
 
@@ -98,7 +98,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>vector</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>vector</b> needs to be written</p>
 
 
 

@@ -18,7 +18,7 @@ Documentation for class DirectionalMap
 
 ---
 
-## <p style="color:blue;">Adjustment attributes</p>
+## <p class="scene-class-attr-group">Adjustment attributes</p>
 
 ## bias
 
@@ -122,7 +122,7 @@ apply smoothstep function to result
 
 ---
 
-## <p style="color:blue;">Normal attributes</p>
+## <p class="scene-class-attr-group">Normal attributes</p>
 
 ## input_normal
 
@@ -158,7 +158,7 @@ controls the amount of influence of the alternate normal
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## color_a
 

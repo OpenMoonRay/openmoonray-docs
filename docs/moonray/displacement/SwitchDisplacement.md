@@ -18,7 +18,7 @@ Documentation for class SwitchDisplacement
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## bound_padding
 
@@ -60,7 +60,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement0</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement0</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement1</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement1</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement10</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement10</b> needs to be written</p>
 
 
 
@@ -105,7 +105,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement11</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement11</b> needs to be written</p>
 
 
 
@@ -120,7 +120,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement12</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement12</b> needs to be written</p>
 
 
 
@@ -135,7 +135,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement13</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement13</b> needs to be written</p>
 
 
 
@@ -150,7 +150,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement14</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement14</b> needs to be written</p>
 
 
 
@@ -165,7 +165,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement15</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement15</b> needs to be written</p>
 
 
 
@@ -180,7 +180,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement16</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement16</b> needs to be written</p>
 
 
 
@@ -195,7 +195,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement17</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement17</b> needs to be written</p>
 
 
 
@@ -210,7 +210,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement18</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement18</b> needs to be written</p>
 
 
 
@@ -225,7 +225,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement19</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement19</b> needs to be written</p>
 
 
 
@@ -240,7 +240,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement2</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement2</b> needs to be written</p>
 
 
 
@@ -255,7 +255,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement20</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement20</b> needs to be written</p>
 
 
 
@@ -270,7 +270,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement21</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement21</b> needs to be written</p>
 
 
 
@@ -285,7 +285,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement22</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement22</b> needs to be written</p>
 
 
 
@@ -300,7 +300,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement23</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement23</b> needs to be written</p>
 
 
 
@@ -315,7 +315,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement24</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement24</b> needs to be written</p>
 
 
 
@@ -330,7 +330,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement25</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement25</b> needs to be written</p>
 
 
 
@@ -345,7 +345,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement26</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement26</b> needs to be written</p>
 
 
 
@@ -360,7 +360,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement27</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement27</b> needs to be written</p>
 
 
 
@@ -375,7 +375,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement28</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement28</b> needs to be written</p>
 
 
 
@@ -390,7 +390,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement29</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement29</b> needs to be written</p>
 
 
 
@@ -405,7 +405,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement3</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement3</b> needs to be written</p>
 
 
 
@@ -420,7 +420,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement30</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement30</b> needs to be written</p>
 
 
 
@@ -435,7 +435,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement31</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement31</b> needs to be written</p>
 
 
 
@@ -450,7 +450,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement32</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement32</b> needs to be written</p>
 
 
 
@@ -465,7 +465,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement33</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement33</b> needs to be written</p>
 
 
 
@@ -480,7 +480,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement34</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement34</b> needs to be written</p>
 
 
 
@@ -495,7 +495,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement35</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement35</b> needs to be written</p>
 
 
 
@@ -510,7 +510,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement36</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement36</b> needs to be written</p>
 
 
 
@@ -525,7 +525,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement37</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement37</b> needs to be written</p>
 
 
 
@@ -540,7 +540,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement38</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement38</b> needs to be written</p>
 
 
 
@@ -555,7 +555,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement39</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement39</b> needs to be written</p>
 
 
 
@@ -570,7 +570,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement4</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement4</b> needs to be written</p>
 
 
 
@@ -585,7 +585,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement40</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement40</b> needs to be written</p>
 
 
 
@@ -600,7 +600,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement41</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement41</b> needs to be written</p>
 
 
 
@@ -615,7 +615,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement42</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement42</b> needs to be written</p>
 
 
 
@@ -630,7 +630,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement43</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement43</b> needs to be written</p>
 
 
 
@@ -645,7 +645,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement44</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement44</b> needs to be written</p>
 
 
 
@@ -660,7 +660,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement45</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement45</b> needs to be written</p>
 
 
 
@@ -675,7 +675,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement46</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement46</b> needs to be written</p>
 
 
 
@@ -690,7 +690,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement47</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement47</b> needs to be written</p>
 
 
 
@@ -705,7 +705,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement48</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement48</b> needs to be written</p>
 
 
 
@@ -720,7 +720,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement49</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement49</b> needs to be written</p>
 
 
 
@@ -735,7 +735,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement5</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement5</b> needs to be written</p>
 
 
 
@@ -750,7 +750,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement50</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement50</b> needs to be written</p>
 
 
 
@@ -765,7 +765,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement51</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement51</b> needs to be written</p>
 
 
 
@@ -780,7 +780,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement52</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement52</b> needs to be written</p>
 
 
 
@@ -795,7 +795,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement53</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement53</b> needs to be written</p>
 
 
 
@@ -810,7 +810,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement54</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement54</b> needs to be written</p>
 
 
 
@@ -825,7 +825,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement55</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement55</b> needs to be written</p>
 
 
 
@@ -840,7 +840,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement56</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement56</b> needs to be written</p>
 
 
 
@@ -855,7 +855,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement57</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement57</b> needs to be written</p>
 
 
 
@@ -870,7 +870,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement58</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement58</b> needs to be written</p>
 
 
 
@@ -885,7 +885,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement59</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement59</b> needs to be written</p>
 
 
 
@@ -900,7 +900,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement6</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement6</b> needs to be written</p>
 
 
 
@@ -915,7 +915,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement60</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement60</b> needs to be written</p>
 
 
 
@@ -930,7 +930,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement61</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement61</b> needs to be written</p>
 
 
 
@@ -945,7 +945,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement62</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement62</b> needs to be written</p>
 
 
 
@@ -960,7 +960,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement63</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement63</b> needs to be written</p>
 
 
 
@@ -975,7 +975,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement7</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement7</b> needs to be written</p>
 
 
 
@@ -990,7 +990,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement8</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement8</b> needs to be written</p>
 
 
 
@@ -1005,7 +1005,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacement9</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacement9</b> needs to be written</p>
 
 
 

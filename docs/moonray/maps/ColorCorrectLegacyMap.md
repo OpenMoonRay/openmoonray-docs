@@ -18,7 +18,7 @@ Documentation for class ColorCorrectLegacyMap
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## brightness
 
@@ -30,7 +30,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>brightness</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>brightness</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>clamp</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>clamp</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>contrast</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>hue</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>hue</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input</b> needs to be written</p>
 
 
 
@@ -105,7 +105,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>invert</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
 
 
 
@@ -120,7 +120,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>mask</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
 
@@ -151,7 +151,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>monochrome</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>monochrome</b> needs to be written</p>
 
 
 
@@ -166,7 +166,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>multiplier</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>multiplier</b> needs to be written</p>
 
 
 
@@ -181,7 +181,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
 
@@ -196,7 +196,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>saturation</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
 
 
 

@@ -18,7 +18,7 @@ Documentation for class HairLayerMaterial
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## blend_color_space
 
@@ -64,7 +64,7 @@ If child materials disagree on the type of bssrdf, this type will be used instea
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## extra_aovs
 

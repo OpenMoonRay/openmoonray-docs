@@ -18,7 +18,7 @@ Documentation for class ImageNormalMap
 
 ---
 
-## <p style="color:blue;">UVs attributes</p>
+## <p class="scene-class-attr-group">UVs attributes</p>
 
 ## offset
 
@@ -30,7 +30,7 @@ Default value : [ 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : [ 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>scale</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>udim_files</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_files</b> needs to be written</p>
 
 
 
@@ -120,7 +120,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
-<p style="color:red;">Documentation for the attribute <b>udim_values</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_values</b> needs to be written</p>
 
 
 
@@ -129,7 +129,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## default_value
 
@@ -156,7 +156,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
 
 
 
@@ -209,7 +209,7 @@ filename that points to a tangent space normal texture .exr or .tx file (must be
 
 
 
-<p style="color:red;">Documentation for the attribute <b>texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>texture_coordinates</b> needs to be written</p>
 
 
 

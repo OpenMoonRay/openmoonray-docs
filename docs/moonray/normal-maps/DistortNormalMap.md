@@ -18,7 +18,7 @@ Documentation for class DistortNormalMap
 
 ---
 
-## <p style="color:blue;">Space attributes</p>
+## <p class="scene-class-attr-group">Space attributes</p>
 
 ## input_texture_coordinates
 
@@ -30,7 +30,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
 
 
 
@@ -68,7 +68,7 @@ The space to calculate the noise in
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## amplitude_U
 

@@ -18,7 +18,7 @@ Documentation for class ImageMap
 
 ---
 
-## <p style="color:blue;">Blur attributes</p>
+## <p class="scene-class-attr-group">Blur attributes</p>
 
 ## blur
 
@@ -69,7 +69,7 @@ This parameter is deprecated, do not use!  Number of internal samples for blur. 
 
 ---
 
-## <p style="color:blue;">Color Correction attributes</p>
+## <p class="scene-class-attr-group">Color Correction attributes</p>
 
 ## TMI
 
@@ -96,7 +96,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>TMI_control_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>TMI_control_enabled</b> needs to be written</p>
 
 
 
@@ -111,7 +111,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>contrast</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
 
 
 
@@ -126,7 +126,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>contrast_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>contrast_enabled</b> needs to be written</p>
 
 
 
@@ -141,7 +141,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gain</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gain</b> needs to be written</p>
 
 
 
@@ -156,7 +156,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gain_offset_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gain_offset_enabled</b> needs to be written</p>
 
 
 
@@ -171,7 +171,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gamma_adjust</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gamma_adjust</b> needs to be written</p>
 
 
 
@@ -186,7 +186,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gamma_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gamma_enabled</b> needs to be written</p>
 
 
 
@@ -201,7 +201,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>offset_adjust</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>offset_adjust</b> needs to be written</p>
 
 
 
@@ -216,7 +216,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>saturation</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
 
 
 
@@ -231,7 +231,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>saturation_enabled</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>saturation_enabled</b> needs to be written</p>
 
 
 
@@ -240,7 +240,7 @@ Default value : False
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## alpha_only
 
@@ -288,7 +288,7 @@ default color to be used for missing udims when 'use default color when missing'
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gamma</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gamma</b> needs to be written</p>
 
 
 
@@ -303,7 +303,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
 
 
 
@@ -318,7 +318,7 @@ Default value : [ 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
 
 
 
@@ -363,7 +363,7 @@ Default value : [ 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>scale</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
 
 
 
@@ -401,7 +401,7 @@ filename that points to a texture .exr or .tx file (must be mip-mapped and tiled
 
 
 
-<p style="color:red;">Documentation for the attribute <b>texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>texture_coordinates</b> needs to be written</p>
 
 
 
@@ -416,7 +416,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>udim_files</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_files</b> needs to be written</p>
 
 
 
@@ -446,7 +446,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
-<p style="color:red;">Documentation for the attribute <b>udim_values</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_values</b> needs to be written</p>
 
 
 
@@ -476,7 +476,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>wrap_around</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>wrap_around</b> needs to be written</p>
 
 
 

@@ -18,7 +18,7 @@ Documentation for class ColorRampLightFilter
 
 ---
 
-## <p style="color:blue;">Properties attributes</p>
+## <p class="scene-class-attr-group">Properties attributes</p>
 
 ## begin_distance
 
@@ -30,7 +30,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>begin_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>begin_distance</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : [[ 1, 1, 1 ], [ 0, 0, 0 ]]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>colors</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>colors</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>density</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>density</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >
 
 
 
-<p style="color:red;">Documentation for the attribute <b>distances</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>distances</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>end_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>end_distance</b> needs to be written</p>
 
 
 
@@ -105,7 +105,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>intensity</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>intensity</b> needs to be written</p>
 
 
 
@@ -120,7 +120,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
-<p style="color:red;">Documentation for the attribute <b>interpolation_types</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>interpolation_types</b> needs to be written</p>
 
 
 
@@ -139,7 +139,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
-<p style="color:red;">Documentation for the attribute <b>mode</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>mode</b> needs to be written</p>
 
 
 
@@ -154,7 +154,7 @@ Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
 
@@ -182,7 +182,7 @@ For directional filter mode where filter uses distance along -Z axis.  Extend: f
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## on
 
@@ -194,7 +194,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
 
@@ -209,7 +209,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>use_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>use_xform</b> needs to be written</p>
 
 
 

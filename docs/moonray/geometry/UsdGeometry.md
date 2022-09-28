@@ -18,7 +18,7 @@ Documentation for class UsdGeometry
 
 ---
 
-## <p style="color:blue;">Curve attributes</p>
+## <p class="scene-class-attr-group">Curve attributes</p>
 
 ## tessellation_rate
 
@@ -39,7 +39,7 @@ Number of segments to split curve spans into
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## adaptive_error
 
@@ -203,7 +203,7 @@ Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
 

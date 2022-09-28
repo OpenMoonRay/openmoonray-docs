@@ -18,7 +18,7 @@ Documentation for class NoiseWorleyMap_v2
 
 ---
 
-## <p style="color:blue;">Adjustment attributes</p>
+## <p class="scene-class-attr-group">Adjustment attributes</p>
 
 ## bias
 
@@ -129,7 +129,7 @@ Put the noise value through a smoothstep function defined by min/max
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## F1
 
@@ -218,7 +218,7 @@ Which of the distances determines the cell id
 
 ---
 
-## <p style="color:blue;">Output attributes</p>
+## <p class="scene-class-attr-group">Output attributes</p>
 
 ## distance_method
 
@@ -291,7 +291,7 @@ Method by which the shader outputs a color.  Distance uses F1..F4 interpolated b
 
 ---
 
-## <p style="color:blue;">Space attributes</p>
+## <p class="scene-class-attr-group">Space attributes</p>
 
 ## camera
 
@@ -318,7 +318,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
 
 
 
@@ -377,7 +377,7 @@ The space to calculate the noise in
 
 ---
 
-## <p style="color:blue;">Transform attributes</p>
+## <p class="scene-class-attr-group">Transform attributes</p>
 
 ## rotation
 
@@ -482,7 +482,7 @@ Translation of the noise in space
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## color_A
 

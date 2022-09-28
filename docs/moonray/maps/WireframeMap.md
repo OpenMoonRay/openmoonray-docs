@@ -18,7 +18,7 @@ Documentation for class WireframeMap
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## fill_color
 
@@ -30,7 +30,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>fill_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>fill_color</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>line_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>line_color</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>line_width</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>line_width</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>raster</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>raster</b> needs to be written</p>
 
 
 

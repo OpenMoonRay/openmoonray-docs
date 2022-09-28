@@ -18,7 +18,7 @@ Documentation for class UsdTransform2d
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## in
 

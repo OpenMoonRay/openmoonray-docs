@@ -18,7 +18,7 @@ Documentation for class ShadowReceiverSet
 
 ---
 
-## <p style="color:blue;">Properties attributes</p>
+## <p class="scene-class-attr-group">Properties attributes</p>
 
 ## complement
 
@@ -30,7 +30,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>complement</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>complement</b> needs to be written</p>
 
 
 
@@ -39,7 +39,7 @@ Default value : False
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## geometries
 
@@ -51,7 +51,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>geometries</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 
 
 

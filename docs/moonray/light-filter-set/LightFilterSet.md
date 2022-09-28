@@ -18,7 +18,7 @@ Documentation for class LightFilterSet
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## lightfilters
 
@@ -30,7 +30,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>lightfilters</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>lightfilters</b> needs to be written</p>
 
 
 

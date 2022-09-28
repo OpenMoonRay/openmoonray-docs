@@ -18,7 +18,7 @@ Documentation for class DwaTwoSidedMaterial
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## fallback_bssrdf
 
@@ -134,7 +134,7 @@ By default, only the geometry associated with this material contributes to subsu
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## back_material
 

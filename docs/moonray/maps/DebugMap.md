@@ -18,7 +18,7 @@ Documentation for class DebugMap
 
 ---
 
-## <p style="color:blue;">Normal attributes</p>
+## <p class="scene-class-attr-group">Normal attributes</p>
 
 ## input_normal_space
 
@@ -43,7 +43,7 @@ Specifies what space the input normal is in.  Usually this is tangent space for 
 
 ---
 
-## <p style="color:blue;">Primitive Attribute attributes</p>
+## <p class="scene-class-attr-group">Primitive Attribute attributes</p>
 
 ## primitive_attribute_name
 
@@ -87,7 +87,7 @@ the type of primitive attribute to displayed when attribute 'map type' is set to
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## checkerboard
 
@@ -99,7 +99,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>checkerboard</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>checkerboard</b> needs to be written</p>
 
 
 
@@ -114,7 +114,7 @@ Default value : [ 0, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_normal</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal</b> needs to be written</p>
 
 
 
@@ -129,7 +129,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_normal_dial</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal_dial</b> needs to be written</p>
 
 
 
@@ -158,7 +158,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>map_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>map_type</b> needs to be written</p>
 
 
 

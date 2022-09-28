@@ -18,7 +18,7 @@ Documentation for class BaseMaterial
 
 ---
 
-## <p style="color:blue;">Diffuse attributes</p>
+## <p class="scene-class-attr-group">Diffuse attributes</p>
 
 ## diffuse
 
@@ -30,7 +30,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>diffuse</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>diffuse_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_color</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>diffuse_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_factor</b> needs to be written</p>
 
 
 
@@ -69,7 +69,7 @@ Default value : 1.0
 
 ---
 
-## <p style="color:blue;">Directional Diffuse attributes</p>
+## <p class="scene-class-attr-group">Directional Diffuse attributes</p>
 
 ## directional_diffuse
 
@@ -81,7 +81,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>directional_diffuse</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>directional_diffuse</b> needs to be written</p>
 
 
 
@@ -96,7 +96,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>directional_diffuse_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>directional_diffuse_color</b> needs to be written</p>
 
 
 
@@ -111,7 +111,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>directional_diffuse_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>directional_diffuse_factor</b> needs to be written</p>
 
 
 
@@ -126,7 +126,7 @@ Default value : 0.5
 
 
 
-<p style="color:red;">Documentation for the attribute <b>directional_diffuse_roughness</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>directional_diffuse_roughness</b> needs to be written</p>
 
 
 
@@ -135,7 +135,7 @@ Default value : 0.5
 
 ---
 
-## <p style="color:blue;">Emission attributes</p>
+## <p class="scene-class-attr-group">Emission attributes</p>
 
 ## emission
 
@@ -147,7 +147,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>emission</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>emission</b> needs to be written</p>
 
 
 
@@ -162,7 +162,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>emission_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>emission_color</b> needs to be written</p>
 
 
 
@@ -177,7 +177,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>emission_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>emission_factor</b> needs to be written</p>
 
 
 
@@ -186,7 +186,7 @@ Default value : 0.0
 
 ---
 
-## <p style="color:blue;">Iridescence attributes</p>
+## <p class="scene-class-attr-group">Iridescence attributes</p>
 
 ## iridescence
 
@@ -198,7 +198,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>iridescence</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>iridescence</b> needs to be written</p>
 
 
 
@@ -258,7 +258,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>iridescence_flip_hue_direction</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>iridescence_flip_hue_direction</b> needs to be written</p>
 
 
 
@@ -312,7 +312,7 @@ Controls how much the color spectrum is repeated
 
 ---
 
-## <p style="color:blue;">Normal attributes</p>
+## <p class="scene-class-attr-group">Normal attributes</p>
 
 ## input_normal_space
 
@@ -337,7 +337,7 @@ Specifies what space the input normal is in.  Usually this is tangent space for 
 
 ---
 
-## <p style="color:blue;">Opacity attributes</p>
+## <p class="scene-class-attr-group">Opacity attributes</p>
 
 ## opacity
 
@@ -349,7 +349,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>opacity</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>opacity</b> needs to be written</p>
 
 
 
@@ -364,7 +364,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>opacity_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>opacity_factor</b> needs to be written</p>
 
 
 
@@ -373,7 +373,7 @@ Default value : 1.0
 
 ---
 
-## <p style="color:blue;">Specular attributes</p>
+## <p class="scene-class-attr-group">Specular attributes</p>
 
 ## retroreflectivity
 
@@ -385,7 +385,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>retroreflectivity</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>retroreflectivity</b> needs to be written</p>
 
 
 
@@ -400,7 +400,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular</b> needs to be written</p>
 
 
 
@@ -415,7 +415,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_color</b> needs to be written</p>
 
 
 
@@ -430,7 +430,7 @@ Default value : 0.10000000149
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_factor</b> needs to be written</p>
 
 
 
@@ -445,7 +445,7 @@ Default value : 0.300000011921
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular_roughness</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_roughness</b> needs to be written</p>
 
 
 
@@ -454,7 +454,7 @@ Default value : 0.300000011921
 
 ---
 
-## <p style="color:blue;">Translucency attributes</p>
+## <p class="scene-class-attr-group">Translucency attributes</p>
 
 ## translucency
 
@@ -466,7 +466,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>translucency</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>translucency</b> needs to be written</p>
 
 
 
@@ -481,7 +481,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>translucency_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>translucency_color</b> needs to be written</p>
 
 
 
@@ -496,7 +496,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>translucency_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>translucency_factor</b> needs to be written</p>
 
 
 
@@ -511,7 +511,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>translucency_falloff</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>translucency_falloff</b> needs to be written</p>
 
 
 
@@ -526,7 +526,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>translucency_radius</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>translucency_radius</b> needs to be written</p>
 
 
 
@@ -535,7 +535,7 @@ Default value : 1.0
 
 ---
 
-## <p style="color:blue;">Translucent Diffuse attributes</p>
+## <p class="scene-class-attr-group">Translucent Diffuse attributes</p>
 
 ## translucent_diffuse
 
@@ -547,7 +547,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>translucent_diffuse</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>translucent_diffuse</b> needs to be written</p>
 
 
 
@@ -562,7 +562,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>translucent_diffuse_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>translucent_diffuse_color</b> needs to be written</p>
 
 
 
@@ -577,7 +577,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>translucent_diffuse_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>translucent_diffuse_factor</b> needs to be written</p>
 
 
 
@@ -586,7 +586,7 @@ Default value : 1.0
 
 ---
 
-## <p style="color:blue;">Transmission attributes</p>
+## <p class="scene-class-attr-group">Transmission attributes</p>
 
 ## transmission
 
@@ -598,7 +598,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>transmission</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>transmission</b> needs to be written</p>
 
 
 
@@ -613,7 +613,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>transmission_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>transmission_color</b> needs to be written</p>
 
 
 
@@ -628,7 +628,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>transmission_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>transmission_factor</b> needs to be written</p>
 
 
 
@@ -637,7 +637,7 @@ Default value : 0.0
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## anisotropic_direction
 
@@ -649,7 +649,7 @@ Default value : [ 1, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>anisotropic_direction</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>anisotropic_direction</b> needs to be written</p>
 
 
 
@@ -664,7 +664,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>anisotropy</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>anisotropy</b> needs to be written</p>
 
 
 
@@ -679,7 +679,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>casts_caustics</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>casts_caustics</b> needs to be written</p>
 
 
 
@@ -709,7 +709,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>fresnel_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>fresnel_factor</b> needs to be written</p>
 
 
 
@@ -739,7 +739,7 @@ Default value : [ 0, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_normal</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal</b> needs to be written</p>
 
 
 
@@ -754,7 +754,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_normal_dial</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal_dial</b> needs to be written</p>
 
 
 
@@ -799,7 +799,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>use_fresnel</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>use_fresnel</b> needs to be written</p>
 
 
 

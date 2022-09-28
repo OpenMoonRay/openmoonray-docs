@@ -18,7 +18,7 @@ Documentation for class BarnDoorLightFilter
 
 ---
 
-## <p style="color:blue;">Properties attributes</p>
+## <p class="scene-class-attr-group">Properties attributes</p>
 
 ## color
 
@@ -383,7 +383,7 @@ attach to the light (in the -Z direction) and ignore node_xform
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## on
 
@@ -395,7 +395,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
 

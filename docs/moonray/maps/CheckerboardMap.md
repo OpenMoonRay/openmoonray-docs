@@ -18,7 +18,7 @@ Documentation for class CheckerboardMap
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## color_A
 
@@ -30,7 +30,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>color_A</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>color_A</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>color_B</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>color_B</b> needs to be written</p>
 
 
 

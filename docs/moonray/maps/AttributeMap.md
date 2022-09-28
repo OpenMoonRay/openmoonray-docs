@@ -18,7 +18,7 @@ Documentation for class AttributeMap
 
 ---
 
-## <p style="color:blue;">Primitive Attribute attributes</p>
+## <p class="scene-class-attr-group">Primitive Attribute attributes</p>
 
 ## primitive_attribute_name
 
@@ -64,7 +64,7 @@ the type of primitive attribute to display when attribute 'map type' is set to '
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## color
 
@@ -142,7 +142,7 @@ default value to display when the requested attribute is not available
 
 
 
-<p style="color:red;">Documentation for the attribute <b>map_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>map_type</b> needs to be written</p>
 
 
 

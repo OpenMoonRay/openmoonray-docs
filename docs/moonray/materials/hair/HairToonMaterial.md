@@ -18,7 +18,7 @@ Documentation for class HairToonMaterial
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## back_hair_color
 
@@ -84,7 +84,7 @@ Default value : False
 
 ---
 
-## <p style="color:blue;">Common attributes</p>
+## <p class="scene-class-attr-group">Common attributes</p>
 
 ## presence
 
@@ -105,7 +105,7 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 
 ---
 
-## <p style="color:blue;">Diffuse attributes</p>
+## <p class="scene-class-attr-group">Diffuse attributes</p>
 
 ## hair_color
 
@@ -117,7 +117,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>hair_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>hair_color</b> needs to be written</p>
 
 
 
@@ -156,7 +156,7 @@ Show the hair diffuse lobe
 
 ---
 
-## <p style="color:blue;">Emission attributes</p>
+## <p class="scene-class-attr-group">Emission attributes</p>
 
 ## emission
 
@@ -192,7 +192,7 @@ enables/disable emission
 
 ---
 
-## <p style="color:blue;">Specular 1 attributes</p>
+## <p class="scene-class-attr-group">Specular 1 attributes</p>
 
 ## specular_1_enable_indirect_reflections
 
@@ -450,7 +450,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular_1_tint</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_1_tint</b> needs to be written</p>
 
 
 
@@ -489,7 +489,7 @@ List of colors on the ramp
 
 ---
 
-## <p style="color:blue;">Specular 2 attributes</p>
+## <p class="scene-class-attr-group">Specular 2 attributes</p>
 
 ## specular_2_enable_indirect_reflections
 
@@ -747,7 +747,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular_2_tint</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_2_tint</b> needs to be written</p>
 
 
 
@@ -786,7 +786,7 @@ List of colors on the ramp
 
 ---
 
-## <p style="color:blue;">Specular 3 attributes</p>
+## <p class="scene-class-attr-group">Specular 3 attributes</p>
 
 ## specular_3_enable_indirect_reflections
 
@@ -1044,7 +1044,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular_3_tint</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_3_tint</b> needs to be written</p>
 
 
 
@@ -1083,7 +1083,7 @@ List of colors on the ramp
 
 ---
 
-## <p style="color:blue;">Subsurface attributes</p>
+## <p class="scene-class-attr-group">Subsurface attributes</p>
 
 ## bssrdf
 
@@ -1198,7 +1198,7 @@ Default value : 1.0
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## extra_aovs
 

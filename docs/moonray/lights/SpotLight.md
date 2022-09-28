@@ -18,7 +18,7 @@ Documentation for class SpotLight
 
 ---
 
-## <p style="color:blue;">Cone attributes</p>
+## <p class="scene-class-attr-group">Cone attributes</p>
 
 ## aspect_ratio
 
@@ -30,7 +30,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>aspect_ratio</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>aspect_ratio</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : 10000000000.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>focal_plane_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>focal_plane_distance</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : 30.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>inner_cone_angle</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>inner_cone_angle</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>lens_radius</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>lens_radius</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : 60.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>outer_cone_angle</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>outer_cone_angle</b> needs to be written</p>
 
 
 
@@ -99,7 +99,7 @@ Default value : 60.0
 
 ---
 
-## <p style="color:blue;">Falloff attributes</p>
+## <p class="scene-class-attr-group">Falloff attributes</p>
 
 ## angle_falloff_type
 
@@ -121,7 +121,7 @@ Default value : 60.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>angle_falloff_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>angle_falloff_type</b> needs to be written</p>
 
 
 
@@ -136,7 +136,7 @@ Default value : 0.0010000000475
 
 
 
-<p style="color:red;">Documentation for the attribute <b>black_level</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>black_level</b> needs to be written</p>
 
 
 
@@ -145,7 +145,7 @@ Default value : 0.0010000000475
 
 ---
 
-## <p style="color:blue;">Map attributes</p>
+## <p class="scene-class-attr-group">Map attributes</p>
 
 ## contrast
 
@@ -157,7 +157,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>contrast</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
 
 
 
@@ -172,7 +172,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gain</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gain</b> needs to be written</p>
 
 
 
@@ -187,7 +187,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gamma</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gamma</b> needs to be written</p>
 
 
 
@@ -202,7 +202,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
 
 
 
@@ -217,7 +217,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>saturation</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
 
 
 
@@ -376,7 +376,7 @@ Translations in (u,v) expressed as fractions of the unscaled texture space
 
 ---
 
-## <p style="color:blue;">Properties attributes</p>
+## <p class="scene-class-attr-group">Properties attributes</p>
 
 ## apply_scene_scale
 
@@ -456,7 +456,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>color</b> needs to be written</p>
 
 
 
@@ -471,7 +471,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>exposure</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>exposure</b> needs to be written</p>
 
 
 
@@ -486,7 +486,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>intensity</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>intensity</b> needs to be written</p>
 
 
 
@@ -516,7 +516,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>max_shadow_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>max_shadow_distance</b> needs to be written</p>
 
 
 
@@ -546,7 +546,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>normalized</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>normalized</b> needs to be written</p>
 
 
 
@@ -561,7 +561,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
 
@@ -582,7 +582,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>presence_shadows</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>presence_shadows</b> needs to be written</p>
 
 
 
@@ -620,7 +620,7 @@ Is light used for ray termination color? Ray termination color is used for filli
 
 
 
-<p style="color:red;">Documentation for the attribute <b>texture_filter</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>texture_filter</b> needs to be written</p>
 
 
 
@@ -641,7 +641,7 @@ Is light used for ray termination color? Ray termination color is used for filli
 
 
 
-<p style="color:red;">Documentation for the attribute <b>visible_in_camera</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>visible_in_camera</b> needs to be written</p>
 
 
 
@@ -650,7 +650,7 @@ Is light used for ray termination color? Ray termination color is used for filli
 
 ---
 
-## <p style="color:blue;">Visibility Flags attributes</p>
+## <p class="scene-class-attr-group">Visibility Flags attributes</p>
 
 ## visible_diffuse_reflection
 
@@ -746,7 +746,7 @@ whether the light is visible in miror transmission (refraction).
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## light_filters
 
@@ -758,7 +758,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>light_filters</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>light_filters</b> needs to be written</p>
 
 
 
@@ -773,7 +773,7 @@ Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
 

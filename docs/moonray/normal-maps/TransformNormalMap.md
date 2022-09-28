@@ -18,7 +18,7 @@ Documentation for class TransformNormalMap
 
 ---
 
-## <p style="color:blue;">Normal attributes</p>
+## <p class="scene-class-attr-group">Normal attributes</p>
 
 ## input_normal
 
@@ -39,7 +39,7 @@ input normal in either tangent or render space
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## decode_input_normal
 

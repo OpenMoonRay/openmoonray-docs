@@ -18,7 +18,7 @@ Documentation for class Metadata
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## name
 
@@ -30,7 +30,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>name</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>name</b> needs to be written</p>
 
 
 
@@ -86,7 +86,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>value</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>value</b> needs to be written</p>
 
 
 

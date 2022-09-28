@@ -18,7 +18,7 @@ Documentation for class ProjectTriplanarMap_v2
 
 ---
 
-## <p style="color:blue;">Negative X Modifiers attributes</p>
+## <p class="scene-class-attr-group">Negative X Modifiers attributes</p>
 
 ## negative_x_invert_s
 
@@ -144,7 +144,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 ---
 
-## <p style="color:blue;">Negative Y Modifiers attributes</p>
+## <p class="scene-class-attr-group">Negative Y Modifiers attributes</p>
 
 ## negative_y_invert_s
 
@@ -270,7 +270,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 ---
 
-## <p style="color:blue;">Negative Z Modifiers attributes</p>
+## <p class="scene-class-attr-group">Negative Z Modifiers attributes</p>
 
 ## negative_z_invert_s
 
@@ -396,7 +396,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 ---
 
-## <p style="color:blue;">Positive X Modifiers attributes</p>
+## <p class="scene-class-attr-group">Positive X Modifiers attributes</p>
 
 ## positive_x_invert_s
 
@@ -522,7 +522,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 ---
 
-## <p style="color:blue;">Positive Y Modifiers attributes</p>
+## <p class="scene-class-attr-group">Positive Y Modifiers attributes</p>
 
 ## positive_y_invert_s
 
@@ -648,7 +648,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 ---
 
-## <p style="color:blue;">Positive Z Modifiers attributes</p>
+## <p class="scene-class-attr-group">Positive Z Modifiers attributes</p>
 
 ## positive_z_invert_s
 
@@ -774,7 +774,7 @@ Controls whether to repeat (true) or clamp (false) the texture
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## TRS_order
 

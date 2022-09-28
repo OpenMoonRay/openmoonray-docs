@@ -18,7 +18,7 @@ Documentation for class CombineNormalMap
 
 ---
 
-## <p style="color:blue;">Normal attributes</p>
+## <p class="scene-class-attr-group">Normal attributes</p>
 
 ## input_1
 

@@ -18,7 +18,7 @@ Documentation for class RampMap
 
 ---
 
-## <p style="color:blue;">Additional properties attributes</p>
+## <p class="scene-class-attr-group">Additional properties attributes</p>
 
 ## input_texture_coordinates
 
@@ -79,7 +79,7 @@ Creates waves which perturb the ramp pattern
 
 
 
-<p style="color:red;">Documentation for the attribute <b>wrap_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>wrap_type</b> needs to be written</p>
 
 
 
@@ -88,7 +88,7 @@ Creates waves which perturb the ramp pattern
 
 ---
 
-## <p style="color:blue;">Ramp Knot attributes</p>
+## <p class="scene-class-attr-group">Ramp Knot attributes</p>
 
 ## colors
 
@@ -141,7 +141,7 @@ Color ramp
 
 ---
 
-## <p style="color:blue;">Ramp properties attributes</p>
+## <p class="scene-class-attr-group">Ramp properties attributes</p>
 
 ## camera
 
@@ -204,7 +204,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>object</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>object</b> needs to be written</p>
 
 
 
@@ -237,7 +237,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>ramp_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>ramp_type</b> needs to be written</p>
 
 
 
@@ -275,7 +275,7 @@ Only applies when 'texture coordinates' is set to 'default state coordinates'
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## texture_coordinates
 
@@ -291,7 +291,7 @@ Only applies when 'texture coordinates' is set to 'default state coordinates'
 
 
 
-<p style="color:red;">Documentation for the attribute <b>texture_coordinates</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>texture_coordinates</b> needs to be written</p>
 
 
 

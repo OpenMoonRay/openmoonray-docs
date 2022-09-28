@@ -18,7 +18,7 @@ Documentation for class ProjectCameraMap
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## black_outside_projection
 
@@ -60,7 +60,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>projector</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>projector</b> needs to be written</p>
 
 
 

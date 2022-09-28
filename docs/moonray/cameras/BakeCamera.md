@@ -18,7 +18,7 @@ Documentation for class BakeCamera
 
 ---
 
-## <p style="color:blue;">Frustum attributes</p>
+## <p class="scene-class-attr-group">Frustum attributes</p>
 
 ## far
 
@@ -30,7 +30,7 @@ Default value : 10000.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>far</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>far</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>near</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>near</b> needs to be written</p>
 
 
 
@@ -54,7 +54,7 @@ Default value : 1.0
 
 ---
 
-## <p style="color:blue;">Motion Blur attributes</p>
+## <p class="scene-class-attr-group">Motion Blur attributes</p>
 
 ## mb_shutter_bias
 
@@ -66,7 +66,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
 
 
 
@@ -81,7 +81,7 @@ Default value : 0.25
 
 
 
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
 
 
 
@@ -96,7 +96,7 @@ Default value : -0.25
 
 
 
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
 
 
 
@@ -105,7 +105,7 @@ Default value : -0.25
 
 ---
 
-## <p style="color:blue;">Render Masks attributes</p>
+## <p class="scene-class-attr-group">Render Masks attributes</p>
 
 ## pixel_sample_map
 
@@ -117,7 +117,7 @@ Default value :
 
 
 
-<p style="color:red;">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
 
 
 
@@ -126,7 +126,7 @@ Default value :
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## bias
 
@@ -206,7 +206,7 @@ Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
 

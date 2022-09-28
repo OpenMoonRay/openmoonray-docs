@@ -18,7 +18,7 @@ Documentation for class MeasuredMaterial
 
 ---
 
-## <p style="color:blue;">Diffuse attributes</p>
+## <p class="scene-class-attr-group">Diffuse attributes</p>
 
 ## diffuse
 
@@ -30,7 +30,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>diffuse</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>diffuse_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_color</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>diffuse_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_factor</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value :
 
 
 
-<p style="color:red;">Documentation for the attribute <b>diffuse_filename</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_filename</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>diffuse_hue_shift</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_hue_shift</b> needs to be written</p>
 
 
 
@@ -105,7 +105,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>diffuse_saturation</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>diffuse_saturation</b> needs to be written</p>
 
 
 
@@ -114,7 +114,7 @@ Default value : 1.0
 
 ---
 
-## <p style="color:blue;">Specular attributes</p>
+## <p class="scene-class-attr-group">Specular attributes</p>
 
 ## specular
 
@@ -126,7 +126,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular</b> needs to be written</p>
 
 
 
@@ -141,7 +141,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_color</b> needs to be written</p>
 
 
 
@@ -156,7 +156,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular_factor</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_factor</b> needs to be written</p>
 
 
 
@@ -171,7 +171,7 @@ Default value :
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular_filename</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_filename</b> needs to be written</p>
 
 
 
@@ -186,7 +186,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular_hue_shift</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_hue_shift</b> needs to be written</p>
 
 
 
@@ -201,7 +201,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>specular_saturation</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>specular_saturation</b> needs to be written</p>
 
 
 
@@ -210,7 +210,7 @@ Default value : 1.0
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## anisotropic_direction
 
@@ -222,7 +222,7 @@ Default value : [ 1, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>anisotropic_direction</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>anisotropic_direction</b> needs to be written</p>
 
 
 
@@ -237,7 +237,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>casts_caustics</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>casts_caustics</b> needs to be written</p>
 
 
 
@@ -267,7 +267,7 @@ Default value : [ 0, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_normal</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal</b> needs to be written</p>
 
 
 
@@ -282,7 +282,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_normal_dial</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal_dial</b> needs to be written</p>
 
 
 
@@ -297,7 +297,7 @@ Default value : 0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_normal_space</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal_space</b> needs to be written</p>
 
 
 

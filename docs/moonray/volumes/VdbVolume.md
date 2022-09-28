@@ -18,7 +18,7 @@ Documentation for class VdbVolume
 
 ---
 
-## <p style="color:blue;">Optical Properties attributes</p>
+## <p class="scene-class-attr-group">Optical Properties attributes</p>
 
 ## anisotropy
 
@@ -84,7 +84,7 @@ A multiplier further applied to the opacity gain.
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## bake_divisions
 

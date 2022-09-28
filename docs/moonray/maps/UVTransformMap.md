@@ -18,7 +18,7 @@ Documentation for class UVTransformMap
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## offset
 
@@ -30,7 +30,7 @@ Default value : [ 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : [ 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>scale</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
 
 
 
@@ -119,7 +119,7 @@ Default value : [ 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>space</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>space</b> needs to be written</p>
 
 
 

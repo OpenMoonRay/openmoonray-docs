@@ -18,7 +18,7 @@ Documentation for class CutoutVolume
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## bake_divisions
 
@@ -87,7 +87,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>indirect_volume</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_volume</b> needs to be written</p>
 
 
 

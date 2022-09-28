@@ -18,7 +18,7 @@ Documentation for class IntensityLightFilter
 
 ---
 
-## <p style="color:blue;">Properties attributes</p>
+## <p class="scene-class-attr-group">Properties attributes</p>
 
 ## color
 
@@ -30,7 +30,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>color</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>exposure</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>exposure</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>intensity</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>intensity</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>invert</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
 
 
 
@@ -84,7 +84,7 @@ Default value : False
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## on
 
@@ -96,7 +96,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
 

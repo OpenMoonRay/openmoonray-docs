@@ -18,7 +18,7 @@ Documentation for class SphereGeometry
 
 ---
 
-## <p style="color:blue;">Quadric attributes</p>
+## <p class="scene-class-attr-group">Quadric attributes</p>
 
 ## phi_max
 
@@ -30,7 +30,7 @@ Default value : 360.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>phi_max</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>phi_max</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>radius</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>radius</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>zmax</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>zmax</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : -1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>zmin</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>zmin</b> needs to be written</p>
 
 
 
@@ -84,7 +84,7 @@ Default value : -1.0
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## label
 
@@ -111,7 +111,7 @@ Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
 

@@ -18,7 +18,7 @@ Documentation for class NormalDisplacement
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## bound_padding
 
@@ -45,7 +45,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>height</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>height</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>zero_value</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>zero_value</b> needs to be written</p>
 
 
 

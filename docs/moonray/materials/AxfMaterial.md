@@ -18,7 +18,7 @@ Documentation for class AxfMaterial
 
 ---
 
-## <p style="color:blue;">Normal attributes</p>
+## <p class="scene-class-attr-group">Normal attributes</p>
 
 ## input_normal_dial
 
@@ -73,7 +73,7 @@ Specifies what space the normal is given in.  Usually this is tangent space for 
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## alpha
 

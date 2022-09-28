@@ -18,7 +18,7 @@ Documentation for class GeometrySet
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## geometries
 
@@ -30,7 +30,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>geometries</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 
 
 

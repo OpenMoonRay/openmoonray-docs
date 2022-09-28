@@ -18,7 +18,7 @@ Documentation for class DwaSwitchMaterial
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## fallback_bssrdf
 
@@ -60,7 +60,7 @@ By default, only the geometry associated with this material contributes to subsu
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## choice
 
@@ -117,7 +117,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material0</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material0</b> needs to be written</p>
 
 
 
@@ -132,7 +132,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material1</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material1</b> needs to be written</p>
 
 
 
@@ -147,7 +147,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material10</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material10</b> needs to be written</p>
 
 
 
@@ -162,7 +162,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material11</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material11</b> needs to be written</p>
 
 
 
@@ -177,7 +177,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material12</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material12</b> needs to be written</p>
 
 
 
@@ -192,7 +192,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material13</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material13</b> needs to be written</p>
 
 
 
@@ -207,7 +207,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material14</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material14</b> needs to be written</p>
 
 
 
@@ -222,7 +222,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material15</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material15</b> needs to be written</p>
 
 
 
@@ -237,7 +237,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material16</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material16</b> needs to be written</p>
 
 
 
@@ -252,7 +252,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material17</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material17</b> needs to be written</p>
 
 
 
@@ -267,7 +267,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material18</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material18</b> needs to be written</p>
 
 
 
@@ -282,7 +282,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material19</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material19</b> needs to be written</p>
 
 
 
@@ -297,7 +297,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material2</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material2</b> needs to be written</p>
 
 
 
@@ -312,7 +312,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material20</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material20</b> needs to be written</p>
 
 
 
@@ -327,7 +327,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material21</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material21</b> needs to be written</p>
 
 
 
@@ -342,7 +342,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material22</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material22</b> needs to be written</p>
 
 
 
@@ -357,7 +357,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material23</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material23</b> needs to be written</p>
 
 
 
@@ -372,7 +372,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material24</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material24</b> needs to be written</p>
 
 
 
@@ -387,7 +387,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material25</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material25</b> needs to be written</p>
 
 
 
@@ -402,7 +402,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material26</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material26</b> needs to be written</p>
 
 
 
@@ -417,7 +417,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material27</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material27</b> needs to be written</p>
 
 
 
@@ -432,7 +432,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material28</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material28</b> needs to be written</p>
 
 
 
@@ -447,7 +447,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material29</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material29</b> needs to be written</p>
 
 
 
@@ -462,7 +462,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material3</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material3</b> needs to be written</p>
 
 
 
@@ -477,7 +477,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material30</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material30</b> needs to be written</p>
 
 
 
@@ -492,7 +492,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material31</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material31</b> needs to be written</p>
 
 
 
@@ -507,7 +507,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material32</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material32</b> needs to be written</p>
 
 
 
@@ -522,7 +522,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material33</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material33</b> needs to be written</p>
 
 
 
@@ -537,7 +537,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material34</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material34</b> needs to be written</p>
 
 
 
@@ -552,7 +552,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material35</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material35</b> needs to be written</p>
 
 
 
@@ -567,7 +567,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material36</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material36</b> needs to be written</p>
 
 
 
@@ -582,7 +582,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material37</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material37</b> needs to be written</p>
 
 
 
@@ -597,7 +597,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material38</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material38</b> needs to be written</p>
 
 
 
@@ -612,7 +612,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material39</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material39</b> needs to be written</p>
 
 
 
@@ -627,7 +627,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material4</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material4</b> needs to be written</p>
 
 
 
@@ -642,7 +642,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material40</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material40</b> needs to be written</p>
 
 
 
@@ -657,7 +657,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material41</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material41</b> needs to be written</p>
 
 
 
@@ -672,7 +672,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material42</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material42</b> needs to be written</p>
 
 
 
@@ -687,7 +687,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material43</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material43</b> needs to be written</p>
 
 
 
@@ -702,7 +702,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material44</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material44</b> needs to be written</p>
 
 
 
@@ -717,7 +717,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material45</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material45</b> needs to be written</p>
 
 
 
@@ -732,7 +732,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material46</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material46</b> needs to be written</p>
 
 
 
@@ -747,7 +747,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material47</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material47</b> needs to be written</p>
 
 
 
@@ -762,7 +762,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material48</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material48</b> needs to be written</p>
 
 
 
@@ -777,7 +777,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material49</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material49</b> needs to be written</p>
 
 
 
@@ -792,7 +792,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material5</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material5</b> needs to be written</p>
 
 
 
@@ -807,7 +807,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material50</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material50</b> needs to be written</p>
 
 
 
@@ -822,7 +822,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material51</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material51</b> needs to be written</p>
 
 
 
@@ -837,7 +837,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material52</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material52</b> needs to be written</p>
 
 
 
@@ -852,7 +852,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material53</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material53</b> needs to be written</p>
 
 
 
@@ -867,7 +867,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material54</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material54</b> needs to be written</p>
 
 
 
@@ -882,7 +882,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material55</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material55</b> needs to be written</p>
 
 
 
@@ -897,7 +897,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material56</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material56</b> needs to be written</p>
 
 
 
@@ -912,7 +912,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material57</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material57</b> needs to be written</p>
 
 
 
@@ -927,7 +927,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material58</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material58</b> needs to be written</p>
 
 
 
@@ -942,7 +942,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material59</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material59</b> needs to be written</p>
 
 
 
@@ -957,7 +957,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material6</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material6</b> needs to be written</p>
 
 
 
@@ -972,7 +972,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material60</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material60</b> needs to be written</p>
 
 
 
@@ -987,7 +987,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material61</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material61</b> needs to be written</p>
 
 
 
@@ -1002,7 +1002,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material62</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material62</b> needs to be written</p>
 
 
 
@@ -1017,7 +1017,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material63</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material63</b> needs to be written</p>
 
 
 
@@ -1032,7 +1032,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material7</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material7</b> needs to be written</p>
 
 
 
@@ -1047,7 +1047,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material8</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material8</b> needs to be written</p>
 
 
 
@@ -1062,7 +1062,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>material9</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>material9</b> needs to be written</p>
 
 
 

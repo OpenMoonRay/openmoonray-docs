@@ -18,7 +18,7 @@ Documentation for class HairMap
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## base_color
 
@@ -30,7 +30,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>base_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>base_color</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : 0.5
 
 
 
-<p style="color:red;">Documentation for the attribute <b>bias</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>bias</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : 0.5
 
 
 
-<p style="color:red;">Documentation for the attribute <b>gain</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>gain</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>tip_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>tip_color</b> needs to be written</p>
 
 
 

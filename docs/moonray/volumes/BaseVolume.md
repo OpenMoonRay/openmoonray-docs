@@ -18,7 +18,7 @@ Documentation for class BaseVolume
 
 ---
 
-## <p style="color:blue;">Attenuation Properties attributes</p>
+## <p class="scene-class-attr-group">Attenuation Properties attributes</p>
 
 ## attenuation_color
 
@@ -54,7 +54,7 @@ the rate at which the intensity of a ray traversing a volume is lost. Technicall
 
 ---
 
-## <p style="color:blue;">Emission Properties attributes</p>
+## <p class="scene-class-attr-group">Emission Properties attributes</p>
 
 ## emission_color
 
@@ -90,7 +90,7 @@ the rate at which a volume emits light at a given point. Technically the product
 
 ---
 
-## <p style="color:blue;">Scattering Properties attributes</p>
+## <p class="scene-class-attr-group">Scattering Properties attributes</p>
 
 ## anisotropy
 
@@ -126,7 +126,7 @@ reflectance color of the volume. Technically this is called scattering albedo, w
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## bake_divisions
 

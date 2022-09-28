@@ -18,7 +18,7 @@ Documentation for class UsdUVTexture
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## bias
 
@@ -126,7 +126,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>udim_files</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_files</b> needs to be written</p>
 
 
 
@@ -156,7 +156,7 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 
 
 
-<p style="color:red;">Documentation for the attribute <b>udim_values</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>udim_values</b> needs to be written</p>
 
 
 

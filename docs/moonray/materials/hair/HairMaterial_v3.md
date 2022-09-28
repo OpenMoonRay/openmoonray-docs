@@ -18,7 +18,7 @@ Documentation for class HairMaterial_v3
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## show_multiple_scattering
 
@@ -54,7 +54,7 @@ optimized sampling of all the hair lobes, results in 2x-4x speedup on average (d
 
 ---
 
-## <p style="color:blue;">Common attributes</p>
+## <p class="scene-class-attr-group">Common attributes</p>
 
 ## casts_caustics
 
@@ -90,7 +90,7 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 
 ---
 
-## <p style="color:blue;">Emission attributes</p>
+## <p class="scene-class-attr-group">Emission attributes</p>
 
 ## emission
 
@@ -126,7 +126,7 @@ enables/disable emission
 
 ---
 
-## <p style="color:blue;">Fresnel attributes</p>
+## <p class="scene-class-attr-group">Fresnel attributes</p>
 
 ## cuticle_layer_thickness
 
@@ -138,7 +138,7 @@ Default value : 0.10000000149
 
 
 
-<p style="color:red;">Documentation for the attribute <b>cuticle_layer_thickness</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>cuticle_layer_thickness</b> needs to be written</p>
 
 
 
@@ -159,7 +159,7 @@ Default value : 0.10000000149
 
 
 
-<p style="color:red;">Documentation for the attribute <b>fresnel_type</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>fresnel_type</b> needs to be written</p>
 
 
 
@@ -183,7 +183,7 @@ keep this value between [1.3,2.0] for realistic behavior (human hair is around 1
 
 ---
 
-## <p style="color:blue;">Primary Specular attributes</p>
+## <p class="scene-class-attr-group">Primary Specular attributes</p>
 
 ## primary_specular_offset
 
@@ -249,7 +249,7 @@ show primary specular
 
 ---
 
-## <p style="color:blue;">Secondary Specular attributes</p>
+## <p class="scene-class-attr-group">Secondary Specular attributes</p>
 
 ## glint_eccentricity
 
@@ -420,7 +420,7 @@ when disabled, uses a physically correct value for secondary specular roughness 
 
 ---
 
-## <p style="color:blue;">Transmission attributes</p>
+## <p class="scene-class-attr-group">Transmission attributes</p>
 
 ## direct_transmission_saturation
 
@@ -531,7 +531,7 @@ when disabled, uses a physically correct value for Transmission roughness which 
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## extra_aovs
 
@@ -558,7 +558,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>hair_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>hair_color</b> needs to be written</p>
 
 
 

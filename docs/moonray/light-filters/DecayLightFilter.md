@@ -18,7 +18,7 @@ Documentation for class DecayLightFilter
 
 ---
 
-## <p style="color:blue;">Properties attributes</p>
+## <p class="scene-class-attr-group">Properties attributes</p>
 
 ## falloff_far
 
@@ -30,7 +30,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>falloff_far</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>falloff_far</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>falloff_near</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>falloff_near</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>far_end</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>far_end</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>far_start</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>far_start</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>near_end</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>near_end</b> needs to be written</p>
 
 
 
@@ -105,7 +105,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>near_start</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>near_start</b> needs to be written</p>
 
 
 
@@ -114,7 +114,7 @@ Default value : 0.0
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## on
 
@@ -126,7 +126,7 @@ Default value : True
 
 
 
-<p style="color:red;">Documentation for the attribute <b>on</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
 

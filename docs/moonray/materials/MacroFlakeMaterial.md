@@ -18,7 +18,7 @@ Documentation for class MacroFlakeMaterial
 
 ---
 
-## <p style="color:blue;">Normal attributes</p>
+## <p class="scene-class-attr-group">Normal attributes</p>
 
 ## input_normal
 
@@ -54,7 +54,7 @@ controls the amount of influence of the alternate normal
 
 ---
 
-## <p style="color:blue;">Specular attributes</p>
+## <p class="scene-class-attr-group">Specular attributes</p>
 
 ## metallic_color
 
@@ -105,7 +105,7 @@ the roughness of the surface (currently only affects reflection)
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## background_material
 

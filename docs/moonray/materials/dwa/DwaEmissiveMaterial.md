@@ -18,7 +18,7 @@ Documentation for class DwaEmissiveMaterial
 
 ---
 
-## <p style="color:blue;">Common attributes</p>
+## <p class="scene-class-attr-group">Common attributes</p>
 
 ## presence
 
@@ -39,7 +39,7 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 
 ---
 
-## <p style="color:blue;">Emission attributes</p>
+## <p class="scene-class-attr-group">Emission attributes</p>
 
 ## emission
 
@@ -75,7 +75,7 @@ enables/disable emission
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## extra_aovs
 

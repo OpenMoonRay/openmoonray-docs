@@ -18,7 +18,7 @@ Documentation for class DwaFabricMaterial
 
 ---
 
-## <p style="color:blue;">Common attributes</p>
+## <p class="scene-class-attr-group">Common attributes</p>
 
 ## casts_caustics
 
@@ -69,7 +69,7 @@ enables proper shading of infinitely thin geometry such as paper or leaves.
 
 ---
 
-## <p style="color:blue;">Diffuse attributes</p>
+## <p class="scene-class-attr-group">Diffuse attributes</p>
 
 ## albedo
 
@@ -184,7 +184,7 @@ enables/disables diffuse reflectance
 
 ---
 
-## <p style="color:blue;">Emission attributes</p>
+## <p class="scene-class-attr-group">Emission attributes</p>
 
 ## emission
 
@@ -220,7 +220,7 @@ enables/disable emission
 
 ---
 
-## <p style="color:blue;">Fabric attributes</p>
+## <p class="scene-class-attr-group">Fabric attributes</p>
 
 ## show_specular
 
@@ -331,7 +331,7 @@ Roughness of the fabric specular highlights from the weft threads.
 
 ---
 
-## <p style="color:blue;">Fuzz attributes</p>
+## <p class="scene-class-attr-group">Fuzz attributes</p>
 
 ## fuzz
 
@@ -442,7 +442,7 @@ Specify whether dark fuzz fibers absorb energy or transmit it to the layers belo
 
 ---
 
-## <p style="color:blue;">Glitter attributes</p>
+## <p class="scene-class-attr-group">Glitter attributes</p>
 
 ## glitter
 
@@ -858,7 +858,7 @@ Enables/disables glitter lobes
 
 ---
 
-## <p style="color:blue;">Normal attributes</p>
+## <p class="scene-class-attr-group">Normal attributes</p>
 
 ## input_normal
 
@@ -894,7 +894,7 @@ controls the amount of influence of the alternate normal
 
 ---
 
-## <p style="color:blue;">Threads attributes</p>
+## <p class="scene-class-attr-group">Threads attributes</p>
 
 ## warp_thread_coverage
 
@@ -945,7 +945,7 @@ This attribute can be used to 'elevate/rotate' the threads from their default di
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## extra_aovs
 

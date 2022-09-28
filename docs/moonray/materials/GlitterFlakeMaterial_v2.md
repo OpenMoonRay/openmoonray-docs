@@ -18,7 +18,7 @@ Documentation for class GlitterFlakeMaterial_v2
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## approximate_glitter_for_secondary_rays
 
@@ -96,7 +96,7 @@ use this to control where glitter appears
 
 ---
 
-## <p style="color:blue;">Appearance attributes</p>
+## <p class="scene-class-attr-group">Appearance attributes</p>
 
 ## decouple_flake_size
 
@@ -297,7 +297,7 @@ use textured glitter flakes
 
 ---
 
-## <p style="color:blue;">Common attributes</p>
+## <p class="scene-class-attr-group">Common attributes</p>
 
 ## presence
 
@@ -318,7 +318,7 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 
 ---
 
-## <p style="color:blue;">Flake Generation attributes</p>
+## <p class="scene-class-attr-group">Flake Generation attributes</p>
 
 ## compensate_reference_space_deformation
 
@@ -373,7 +373,7 @@ The space to calculate the noise in, defaults to reference space
 
 ---
 
-## <p style="color:blue;">Glitter A Appearance attributes</p>
+## <p class="scene-class-attr-group">Glitter A Appearance attributes</p>
 
 ## flake_color_A
 
@@ -439,7 +439,7 @@ Default value : 1.0
 
 ---
 
-## <p style="color:blue;">Glitter B Appearance attributes</p>
+## <p class="scene-class-attr-group">Glitter B Appearance attributes</p>
 
 ## flake_color_B
 
@@ -505,7 +505,7 @@ Default value : 0.0
 
 ---
 
-## <p style="color:blue;">Layering attributes</p>
+## <p class="scene-class-attr-group">Layering attributes</p>
 
 ## layering_mode
 
@@ -545,7 +545,7 @@ material that fills the gaps between glitter flakes
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## extra_aovs
 

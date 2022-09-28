@@ -18,7 +18,7 @@ Documentation for class DwaAdjustMaterial
 
 ---
 
-## <p style="color:blue;">Enable attributes</p>
+## <p class="scene-class-attr-group">Enable attributes</p>
 
 ## adjust_color
 
@@ -84,7 +84,7 @@ use specular adjustment attrs: specular_set, specular_set_blend, specular_mult
 
 ---
 
-## <p style="color:blue;">Override attributes</p>
+## <p class="scene-class-attr-group">Override attributes</p>
 
 ## casts_caustics
 
@@ -177,7 +177,7 @@ allows you to keep or set thin geometry attribute
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## emission
 
@@ -240,7 +240,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input_material</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input_material</b> needs to be written</p>
 
 
 

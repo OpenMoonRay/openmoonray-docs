@@ -18,7 +18,7 @@ Documentation for class RgbToFloatMap
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## input
 
@@ -30,7 +30,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>input</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>input</b> needs to be written</p>
 
 
 

@@ -18,7 +18,7 @@ Documentation for class CombineDisplacement
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## bound_padding
 
@@ -81,7 +81,7 @@ Displacement object 2
 
 
 
-<p style="color:red;">Documentation for the attribute <b>operation</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>operation</b> needs to be written</p>
 
 
 

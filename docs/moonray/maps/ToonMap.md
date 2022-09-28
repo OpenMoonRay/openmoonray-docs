@@ -18,7 +18,7 @@ Documentation for class ToonMap
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## crease_color
 
@@ -75,7 +75,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>fill_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>fill_color</b> needs to be written</p>
 
 
 
@@ -96,7 +96,7 @@ Default value : [ 0, 0, 0 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>mode</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>mode</b> needs to be written</p>
 
 
 

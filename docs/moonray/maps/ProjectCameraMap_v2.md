@@ -18,7 +18,7 @@ Documentation for class ProjectCameraMap_v2
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## alpha_only
 

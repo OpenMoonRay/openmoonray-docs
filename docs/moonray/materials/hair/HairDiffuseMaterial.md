@@ -18,7 +18,7 @@ Documentation for class HairDiffuseMaterial
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## back_hair_color
 
@@ -84,7 +84,7 @@ Default value : False
 
 ---
 
-## <p style="color:blue;">Common attributes</p>
+## <p class="scene-class-attr-group">Common attributes</p>
 
 ## casts_caustics
 
@@ -120,7 +120,7 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 
 ---
 
-## <p style="color:blue;">Emission attributes</p>
+## <p class="scene-class-attr-group">Emission attributes</p>
 
 ## emission
 
@@ -156,7 +156,7 @@ enables/disable emission
 
 ---
 
-## <p style="color:blue;">Subsurface attributes</p>
+## <p class="scene-class-attr-group">Subsurface attributes</p>
 
 ## bssrdf
 
@@ -271,7 +271,7 @@ Default value : 1.0
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## extra_aovs
 
@@ -298,7 +298,7 @@ Default value : [ 1, 1, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>hair_color</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>hair_color</b> needs to be written</p>
 
 
 

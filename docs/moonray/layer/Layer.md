@@ -18,7 +18,7 @@ Documentation for class Layer
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## displacements
 
@@ -30,7 +30,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>displacements</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>displacements</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : None
 
 
 
-<p style="color:red;">Documentation for the attribute <b>geometries</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>lightfiltersets</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>lightfiltersets</b> needs to be written</p>
 
 
 
@@ -75,7 +75,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>lightsets</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>lightsets</b> needs to be written</p>
 
 
 
@@ -90,7 +90,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>parts</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>parts</b> needs to be written</p>
 
 
 
@@ -105,7 +105,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>shadowreceiversets</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>shadowreceiversets</b> needs to be written</p>
 
 
 
@@ -120,7 +120,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>shadowsets</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>shadowsets</b> needs to be written</p>
 
 
 
@@ -135,7 +135,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>surface_shaders</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>surface_shaders</b> needs to be written</p>
 
 
 
@@ -150,7 +150,7 @@ Default value : []
 
 
 
-<p style="color:red;">Documentation for the attribute <b>volume_shaders</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>volume_shaders</b> needs to be written</p>
 
 
 

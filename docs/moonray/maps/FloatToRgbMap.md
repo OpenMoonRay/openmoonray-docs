@@ -18,7 +18,7 @@ Documentation for class FloatToRgbMap
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## B
 
@@ -30,7 +30,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>B</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>B</b> needs to be written</p>
 
 
 
@@ -45,7 +45,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>G</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>G</b> needs to be written</p>
 
 
 
@@ -60,7 +60,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>R</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>R</b> needs to be written</p>
 
 
 

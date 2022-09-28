@@ -18,7 +18,7 @@ Documentation for class PerspectiveCamera
 
 ---
 
-## <p style="color:blue;">Depth of Field attributes</p>
+## <p class="scene-class-attr-group">Depth of Field attributes</p>
 
 ## bokeh
 
@@ -120,7 +120,7 @@ Default value : False
 
 
 
-<p style="color:red;">Documentation for the attribute <b>dof</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>dof</b> needs to be written</p>
 
 
 
@@ -135,7 +135,7 @@ Default value : 8.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>dof_aperture</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>dof_aperture</b> needs to be written</p>
 
 
 
@@ -150,7 +150,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>dof_focus_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>dof_focus_distance</b> needs to be written</p>
 
 
 
@@ -159,7 +159,7 @@ Default value : 0.0
 
 ---
 
-## <p style="color:blue;">Frustum attributes</p>
+## <p class="scene-class-attr-group">Frustum attributes</p>
 
 ## far
 
@@ -171,7 +171,7 @@ Default value : 10000.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>far</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>far</b> needs to be written</p>
 
 
 
@@ -186,7 +186,7 @@ Default value : 24.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>film_width_aperture</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>film_width_aperture</b> needs to be written</p>
 
 
 
@@ -201,7 +201,7 @@ Default value : 30.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>focal</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>focal</b> needs to be written</p>
 
 
 
@@ -216,7 +216,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>horizontal_film_offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>horizontal_film_offset</b> needs to be written</p>
 
 
 
@@ -231,7 +231,7 @@ Default value : 1.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>near</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>near</b> needs to be written</p>
 
 
 
@@ -261,7 +261,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>vertical_film_offset</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>vertical_film_offset</b> needs to be written</p>
 
 
 
@@ -270,7 +270,7 @@ Default value : 0.0
 
 ---
 
-## <p style="color:blue;">Motion Blur attributes</p>
+## <p class="scene-class-attr-group">Motion Blur attributes</p>
 
 ## mb_shutter_bias
 
@@ -282,7 +282,7 @@ Default value : 0.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
 
 
 
@@ -297,7 +297,7 @@ Default value : 0.25
 
 
 
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
 
 
 
@@ -312,7 +312,7 @@ Default value : -0.25
 
 
 
-<p style="color:red;">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_open</b> needs to be written</p>
 
 
 
@@ -321,7 +321,7 @@ Default value : -0.25
 
 ---
 
-## <p style="color:blue;">Render Masks attributes</p>
+## <p class="scene-class-attr-group">Render Masks attributes</p>
 
 ## pixel_sample_map
 
@@ -333,7 +333,7 @@ Default value :
 
 
 
-<p style="color:red;">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_sample_map</b> needs to be written</p>
 
 
 
@@ -342,7 +342,7 @@ Default value :
 
 ---
 
-## <p style="color:blue;">Stereo attributes</p>
+## <p class="scene-class-attr-group">Stereo attributes</p>
 
 ## stereo_convergence_distance
 
@@ -354,7 +354,7 @@ Default value : 100.0
 
 
 
-<p style="color:red;">Documentation for the attribute <b>stereo_convergence_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_convergence_distance</b> needs to be written</p>
 
 
 
@@ -369,7 +369,7 @@ Default value : 6.30000019073
 
 
 
-<p style="color:red;">Documentation for the attribute <b>stereo_interocular_distance</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_interocular_distance</b> needs to be written</p>
 
 
 
@@ -390,7 +390,7 @@ Default value : 6.30000019073
 
 
 
-<p style="color:red;">Documentation for the attribute <b>stereo_view</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_view</b> needs to be written</p>
 
 
 
@@ -399,7 +399,7 @@ Default value : 6.30000019073
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## node_xform
 
@@ -411,7 +411,7 @@ Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ]
 
 
 
-<p style="color:red;">Documentation for the attribute <b>node_xform</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
 

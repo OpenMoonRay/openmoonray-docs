@@ -18,7 +18,7 @@ Documentation for class RemapMap
 
 ---
 
-## <p style="color:blue;">Channel attributes</p>
+## <p class="scene-class-attr-group">Channel attributes</p>
 
 ## clamp_max_RGB
 
@@ -129,7 +129,7 @@ the value that 'input min' is remapped to
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## clamp
 

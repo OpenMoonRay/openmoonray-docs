@@ -18,7 +18,7 @@ Documentation for class DwaLayerMaterial
 
 ---
 
-## <p style="color:blue;">Advanced attributes</p>
+## <p class="scene-class-attr-group">Advanced attributes</p>
 
 ## blend_color_space
 
@@ -170,7 +170,7 @@ By default, only the geometry associated with this material contributes to subsu
 
 ---
 
-## <p style="color:blue;">Glitter Fallback attributes</p>
+## <p class="scene-class-attr-group">Glitter Fallback attributes</p>
 
 ## fallback_glitter_LOD_quality
 
@@ -346,7 +346,7 @@ filename that points to a texture .exr or .tx file (must be mip-mapped and tiled
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## extra_aovs
 

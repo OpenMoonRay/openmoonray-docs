@@ -18,7 +18,7 @@ Documentation for class ToonDisplayFilter
 
 ---
 
-## <p style="color:blue;">General attributes</p>
+## <p class="scene-class-attr-group">General attributes</p>
 
 ## ambient
 
@@ -53,7 +53,7 @@ Adds an ambient light to the cel shading
 
 
 
-<p style="color:red;">Documentation for the attribute <b>edge_detector</b> needs to be written</p>
+<p class="scene-class-attr-missing">Documentation for the attribute <b>edge_detector</b> needs to be written</p>
 
 
 
