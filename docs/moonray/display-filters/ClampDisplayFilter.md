@@ -21,7 +21,7 @@ title: ClampDisplayFilter
   
   default: False
   
-  <p>invert value of mask<\p>
+  <p>invert value of mask</p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: ClampDisplayFilter
   
   default: 1.0
   
-  <p>blend between output and input<\p>
+  <p>blend between output and input</p>
   
   
   </p>
@@ -45,7 +45,7 @@ title: ClampDisplayFilter
   
   default: None
   
-  <p>Image buffer to clamp<\p>
+  <p>Image buffer to clamp</p>
   
   
   <h3>mask</h3>
@@ -61,7 +61,7 @@ title: ClampDisplayFilter
   
   default: [ 1, 1, 1 ]
   
-  <p>max color value<\p>
+  <p>max color value</p>
   
   
   <h3>min</h3>
@@ -69,7 +69,7 @@ title: ClampDisplayFilter
   
   default: [ 0, 0, 0 ]
   
-  <p>min color value<\p>
+  <p>min color value</p>
   
   
   </p>

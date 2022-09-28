@@ -44,7 +44,7 @@ title: RgbToFloatMap
   - luminance = 7
   
   
-  <p>specify the method to convert RGB Color to float<\p>
+  <p>specify the method to convert RGB Color to float</p>
   
   
   </p>

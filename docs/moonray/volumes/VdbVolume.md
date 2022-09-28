@@ -21,7 +21,7 @@ title: VdbVolume
   
   default: 0.0
   
-  <p>Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is. 0.0 is isotropic.<\p>
+  <p>Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is. 0.0 is isotropic.</p>
   
   
   <h3>color_mult</h3>
@@ -29,7 +29,7 @@ title: VdbVolume
   
   default: [ 1, 1, 1 ]
   
-  <p>A multiplier further applied to the color.<\p>
+  <p>A multiplier further applied to the color.</p>
   
   
   <h3>incandescence_gain_mult</h3>
@@ -37,7 +37,7 @@ title: VdbVolume
   
   default: [ 1, 1, 1 ]
   
-  <p>A multiplier further applied to the incandescence gain.<\p>
+  <p>A multiplier further applied to the incandescence gain.</p>
   
   
   <h3>opacity_gain_mult</h3>
@@ -45,7 +45,7 @@ title: VdbVolume
   
   default: [ 1, 1, 1 ]
   
-  <p>A multiplier further applied to the opacity gain.<\p>
+  <p>A multiplier further applied to the opacity gain.</p>
   
   
   </p>
@@ -61,7 +61,7 @@ title: VdbVolume
   
   default: 100
   
-  <p>Divide widest axis by this many divisions<\p>
+  <p>Divide widest axis by this many divisions</p>
   
   
   <h3>bake_resolution_mode</h3>
@@ -80,7 +80,7 @@ title: VdbVolume
 
 		divisions: specify number of divisions.
 
-		voxel size: specify voxel size.<\p>
+		voxel size: specify voxel size.</p>
   
   
   <h3>bake_voxel_size</h3>
@@ -88,7 +88,7 @@ title: VdbVolume
   
   default: 10.0
   
-  <p>Size of voxel in world space<\p>
+  <p>Size of voxel in world space</p>
   
   
   <h3>label</h3>
@@ -96,7 +96,7 @@ title: VdbVolume
   
   default: 
   
-  <p>label used in light aovs<\p>
+  <p>label used in light aovs</p>
   
   
   <h3>surface_opacity_threshold</h3>
@@ -104,7 +104,7 @@ title: VdbVolume
   
   default: 0.5
   
-  <p>Accumulated opacity that's considered the 'surface' for computing surface position and Z<\p>
+  <p>Accumulated opacity that's considered the 'surface' for computing surface position and Z</p>
   
   
   </p>

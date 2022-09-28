@@ -21,7 +21,7 @@ title: DofDisplayFilter
   
   default: False
   
-  <p>invert value of mask<\p>
+  <p>invert value of mask</p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: DofDisplayFilter
   
   default: 1.0
   
-  <p>blend between output and input<\p>
+  <p>blend between output and input</p>
   
   
   </p>
@@ -45,7 +45,7 @@ title: DofDisplayFilter
   
   default: 8.0
   
-  <p>aperture in millimeters<\p>
+  <p>aperture in millimeters</p>
   
   
   <h3>depth</h3>
@@ -53,7 +53,7 @@ title: DofDisplayFilter
   
   default: None
   
-  <p>the 'depth' result RenderOutput to sample z depth values from<\p>
+  <p>the 'depth' result RenderOutput to sample z depth values from</p>
   
   
   <h3>focal_length</h3>
@@ -61,7 +61,7 @@ title: DofDisplayFilter
   
   default: 30.0
   
-  <p>focal length in millimeters<\p>
+  <p>focal length in millimeters</p>
   
   
   <h3>focus_distance</h3>
@@ -77,7 +77,7 @@ title: DofDisplayFilter
   
   default: None
   
-  <p>RenderOutput to apply depth of field<\p>
+  <p>RenderOutput to apply depth of field</p>
   
   
   <h3>mask</h3>
@@ -93,7 +93,7 @@ title: DofDisplayFilter
   
   default: True
   
-  <p>read dof attributes from active scene camera<\p>
+  <p>read dof attributes from active scene camera</p>
   
   
   </p>

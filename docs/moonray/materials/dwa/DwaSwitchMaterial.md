@@ -26,7 +26,7 @@ title: DwaSwitchMaterial
   - random walk = 2
   
   
-  <p>If the two materials disagree on the type of bssrdf, this type will be used instead.<\p>
+  <p>If the two materials disagree on the type of bssrdf, this type will be used instead.</p>
   
   
   <h3>sss_trace_set</h3>
@@ -34,7 +34,7 @@ title: DwaSwitchMaterial
   
   default: None
   
-  <p>By default, only the geometry associated with this material contributes to subsurface. The DwaSwitchMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.<\p>
+  <p>By default, only the geometry associated with this material contributes to subsurface. The DwaSwitchMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
   
   
   </p>
@@ -50,7 +50,7 @@ title: DwaSwitchMaterial
   
   default: 0
   
-  <p>which of the 64 inputs (0 to 63) to use<\p>
+  <p>which of the 64 inputs (0 to 63) to use</p>
   
   
   <h3>extra_aovs</h3>
@@ -58,7 +58,7 @@ title: DwaSwitchMaterial
   
   default: None
   
-  <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result<\p>
+  <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
   
   
   <h3>label</h3>
@@ -66,7 +66,7 @@ title: DwaSwitchMaterial
   
   default: 
   
-  <p>label used in material and light aovs<\p>
+  <p>label used in material and light aovs</p>
   
   
   <h3>material0</h3>
@@ -586,7 +586,7 @@ title: DwaSwitchMaterial
   
   default: 0
   
-  <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.<\p>
+  <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
   
   
   </p>

@@ -21,7 +21,7 @@ title: RampMap
   
   default: [ 0, 0, 0 ]
   
-  <p>Bind custom UV coordinates<\p>
+  <p>Bind custom UV coordinates</p>
   
   
   <h3>uv_repeat</h3>
@@ -29,7 +29,7 @@ title: RampMap
   
   default: [ 1, 1 ]
   
-  <p>Number of times to repeat the ramp pattern<\p>
+  <p>Number of times to repeat the ramp pattern</p>
   
   
   <h3>uv_wave</h3>
@@ -37,7 +37,7 @@ title: RampMap
   
   default: [ 0, 0 ]
   
-  <p>Creates waves which perturb the ramp pattern<\p>
+  <p>Creates waves which perturb the ramp pattern</p>
   
   
   <h3>wrap_type</h3>
@@ -64,7 +64,7 @@ title: RampMap
   
   default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
   
-  <p>List of colors on the ramp<\p>
+  <p>List of colors on the ramp</p>
   
   
   <h3>interpolations</h3>
@@ -74,7 +74,7 @@ title: RampMap
   
   <p>None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 
-			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6<\p>
+			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
   
   
   <h3>positions</h3>
@@ -82,7 +82,7 @@ title: RampMap
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  <p>Color ramp<\p>
+  <p>Color ramp</p>
   
   
   </p>
@@ -98,7 +98,7 @@ title: RampMap
   
   default: None
   
-  <p>Camera used to define camera and screen space<\p>
+  <p>Camera used to define camera and screen space</p>
   
   
   <h3>color_space</h3>
@@ -111,7 +111,7 @@ title: RampMap
   - hsl = 2
   
   
-  <p>Color space to perform interpolation in<\p>
+  <p>Color space to perform interpolation in</p>
   
   
   <h3>input</h3>
@@ -119,7 +119,7 @@ title: RampMap
   
   default: 1.0
   
-  <p>Input signal for ramp, used when ramp type is set to input<\p>
+  <p>Input signal for ramp, used when ramp type is set to input</p>
   
   
   <h3>object</h3>
@@ -173,7 +173,7 @@ title: RampMap
   - texture = 6
   
   
-  <p>Only applies when 'texture coordinates' is set to 'default state coordinates'<\p>
+  <p>Only applies when 'texture coordinates' is set to 'default state coordinates'</p>
   
   
   </p>

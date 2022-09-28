@@ -32,7 +32,7 @@ title: ProjectPlanarNormalMap
   - Trans Rot Scale = 5
   
   
-  <p>Order in which to apply transformations<\p>
+  <p>Order in which to apply transformations</p>
   
   
   <h3>normal_encoding</h3>
@@ -43,7 +43,7 @@ title: ProjectPlanarNormalMap
   - [-1,1] = 1
   
   
-  <p>Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]<\p>
+  <p>Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
   
   
   <h3>projection_matrix</h3>
@@ -51,7 +51,7 @@ title: ProjectPlanarNormalMap
   
   default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
   
-  <p>the transform to use for projection<\p>
+  <p>the transform to use for projection</p>
   
   
   <h3>projection_mode</h3>
@@ -64,7 +64,7 @@ title: ProjectPlanarNormalMap
   - TRS = 2
   
   
-  <p>Source parameters to use for projection transform<\p>
+  <p>Source parameters to use for projection transform</p>
   
   
   <h3>projector</h3>
@@ -72,7 +72,7 @@ title: ProjectPlanarNormalMap
   
   default: None
   
-  <p>the object whose transform to use for projection<\p>
+  <p>the object whose transform to use for projection</p>
   
   
   <h3>rotate</h3>
@@ -80,7 +80,7 @@ title: ProjectPlanarNormalMap
   
   default: [ 0, 0, 0 ]
   
-  <p>Rotation of the projection transform<\p>
+  <p>Rotation of the projection transform</p>
   
   
   <h3>rotation_order</h3>
@@ -99,7 +99,7 @@ title: ProjectPlanarNormalMap
   - zyx = 5
   
   
-  <p>Order in which to apply rotation transformations<\p>
+  <p>Order in which to apply rotation transformations</p>
   
   
   <h3>scale</h3>
@@ -107,7 +107,7 @@ title: ProjectPlanarNormalMap
   
   default: [ 1, 1, 1 ]
   
-  <p>Scale of the projection transform<\p>
+  <p>Scale of the projection transform</p>
   
   
   <h3>texture</h3>
@@ -115,7 +115,7 @@ title: ProjectPlanarNormalMap
   
   default: 
   
-  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).<\p>
+  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
   
   
   <h3>translate</h3>
@@ -123,7 +123,7 @@ title: ProjectPlanarNormalMap
   
   default: [ 0, 0, 0 ]
   
-  <p>Tranlation of the projection transform<\p>
+  <p>Tranlation of the projection transform</p>
   
   
   <h3>use_reference_space</h3>
@@ -131,7 +131,7 @@ title: ProjectPlanarNormalMap
   
   default: False
   
-  <p>use reference space<\p>
+  <p>use reference space</p>
   
   
   <h3>wrap_around</h3>
@@ -139,7 +139,7 @@ title: ProjectPlanarNormalMap
   
   default: True
   
-  <p>Controls whether to repeat (true) or clamp (false) the texture<\p>
+  <p>Controls whether to repeat (true) or clamp (false) the texture</p>
   
   
   </p>

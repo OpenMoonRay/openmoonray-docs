@@ -21,7 +21,7 @@ title: UsdUVTexture
   
   default: [ 0, 0, 0 ]
   
-  <p>Bias to be applied to all components of the texture.  output = textureValue * scale + bias<\p>
+  <p>Bias to be applied to all components of the texture.  output = textureValue * scale + bias</p>
   
   
   <h3>fallback</h3>
@@ -29,7 +29,7 @@ title: UsdUVTexture
   
   default: [ 0, 0, 0 ]
   
-  <p>Fallback value used when texture can not be read.<\p>
+  <p>Fallback value used when texture can not be read.</p>
   
   
   <h3>file</h3>
@@ -37,7 +37,7 @@ title: UsdUVTexture
   
   default: 
   
-  <p>Path to the texture<\p>
+  <p>Path to the texture</p>
   
   
   <h3>scale</h3>
@@ -45,7 +45,7 @@ title: UsdUVTexture
   
   default: [ 1, 1, 1 ]
   
-  <p>Scale to be applied to all components of the texture.  output = textureValue * scale + bias<\p>
+  <p>Scale to be applied to all components of the texture.  output = textureValue * scale + bias</p>
   
   
   <h3>sourceColorSpace</h3>
@@ -58,7 +58,7 @@ title: UsdUVTexture
   - auto = 2 (default)
   
   
-  <p>Flag indicating the color space in which the source texture is encoded.<\p>
+  <p>Flag indicating the color space in which the source texture is encoded.</p>
   
   
   <h3>st</h3>
@@ -66,7 +66,7 @@ title: UsdUVTexture
   
   default: [ 1, 1 ]
   
-  <p>Texture coordinate to use to fetch this texture.<\p>
+  <p>Texture coordinate to use to fetch this texture.</p>
   
   
   <h3>udim_files</h3>
@@ -82,7 +82,7 @@ title: UsdUVTexture
   
   default: 10
   
-  <p>udim maximum v value<\p>
+  <p>udim maximum v value</p>
   
   
   <h3>udim_values</h3>
@@ -107,7 +107,7 @@ title: UsdUVTexture
   - useMetadata = 4 (default)
   
   
-  <p>Wrap mode when reading this texture.<\p>
+  <p>Wrap mode when reading this texture.</p>
   
   
   <h3>wrapT</h3>
@@ -124,7 +124,7 @@ title: UsdUVTexture
   - useMetadata = 4 (default)
   
   
-  <p>Wrap mode when reading this texture.<\p>
+  <p>Wrap mode when reading this texture.</p>
   
   
   </p>

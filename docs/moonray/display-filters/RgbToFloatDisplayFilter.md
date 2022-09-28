@@ -21,7 +21,7 @@ title: RgbToFloatDisplayFilter
   
   default: False
   
-  <p>invert value of mask<\p>
+  <p>invert value of mask</p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: RgbToFloatDisplayFilter
   
   default: 1.0
   
-  <p>blend between output and input<\p>
+  <p>blend between output and input</p>
   
   
   </p>
@@ -45,7 +45,7 @@ title: RgbToFloatDisplayFilter
   
   default: None
   
-  <p>image buffer<\p>
+  <p>image buffer</p>
   
   
   <h3>mask</h3>
@@ -76,7 +76,7 @@ title: RgbToFloatDisplayFilter
   - luminance = 7
   
   
-  <p>specify the method to convert RGB Color to float<\p>
+  <p>specify the method to convert RGB Color to float</p>
   
   
   </p>

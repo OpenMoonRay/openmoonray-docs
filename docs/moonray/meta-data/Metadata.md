@@ -55,7 +55,7 @@ title: Metadata
 
 			* v3i
 
-			* v3f<\p>
+			* v3f</p>
   
   
   <h3>value</h3>

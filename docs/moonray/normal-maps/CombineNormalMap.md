@@ -21,7 +21,7 @@ title: CombineNormalMap
   
   default: None
   
-  <p>First normal map to combine; usually a base map<\p>
+  <p>First normal map to combine; usually a base map</p>
   
   
   <h3>input_2</h3>
@@ -29,7 +29,7 @@ title: CombineNormalMap
   
   default: None
   
-  <p>Second normal map to combine; usually a base map<\p>
+  <p>Second normal map to combine; usually a base map</p>
   
   
   <h3>normal_map_1_dial</h3>
@@ -37,7 +37,7 @@ title: CombineNormalMap
   
   default: 1.0
   
-  <p>Amount of normal map 1 to blend in<\p>
+  <p>Amount of normal map 1 to blend in</p>
   
   
   <h3>normal_map_2_dial</h3>
@@ -45,7 +45,7 @@ title: CombineNormalMap
   
   default: 1.0
   
-  <p>Amount of normal map 2 to blend in<\p>
+  <p>Amount of normal map 2 to blend in</p>
   
   
   </p>

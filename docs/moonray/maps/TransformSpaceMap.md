@@ -21,7 +21,7 @@ title: TransformSpaceMap
   
   default: None
   
-  <p>an alternate camera to use when transforming to/from 'camera' space<\p>
+  <p>an alternate camera to use when transforming to/from 'camera' space</p>
   
   
   <h3>concatenate_instance_level_transforms</h3>
@@ -29,7 +29,7 @@ title: TransformSpaceMap
   
   default: True
   
-  <p>When true, instance level transforms below the specified one are concatenated otherwise only the selected level's transform is used<\p>
+  <p>When true, instance level transforms below the specified one are concatenated otherwise only the selected level's transform is used</p>
   
   
   <h3>from_space</h3>
@@ -60,7 +60,7 @@ title: TransformSpaceMap
   - instance level 4 = 11
   
   
-  <p>the space to transform from<\p>
+  <p>the space to transform from</p>
   
   
   <h3>input</h3>
@@ -68,7 +68,7 @@ title: TransformSpaceMap
   
   default: [ 1, 1, 1 ]
   
-  <p>the input value to transform<\p>
+  <p>the input value to transform</p>
   
   
   <h3>input_type</h3>
@@ -81,7 +81,7 @@ title: TransformSpaceMap
   - normal = 2
   
   
-  <p>the type of input value provided<\p>
+  <p>the type of input value provided</p>
   
   
   <h3>object</h3>
@@ -89,7 +89,7 @@ title: TransformSpaceMap
   
   default: None
   
-  <p>an alternate object to use when transforming to/from 'object' space<\p>
+  <p>an alternate object to use when transforming to/from 'object' space</p>
   
   
   <h3>to_space</h3>
@@ -120,7 +120,7 @@ title: TransformSpaceMap
   - instance object transform = 11
   
   
-  <p>the space to transform to<\p>
+  <p>the space to transform to</p>
   
   
   <h3>use_custom_window_coordinates</h3>
@@ -128,7 +128,7 @@ title: TransformSpaceMap
   
   default: False
   
-  <p>used to apply non-uniform scaling to projection<\p>
+  <p>used to apply non-uniform scaling to projection</p>
   
   
   <h3>window_x_max</h3>
@@ -136,7 +136,7 @@ title: TransformSpaceMap
   
   default: 1.0
   
-  <p>maximum projected x coordinate<\p>
+  <p>maximum projected x coordinate</p>
   
   
   <h3>window_x_min</h3>
@@ -144,7 +144,7 @@ title: TransformSpaceMap
   
   default: -1.0
   
-  <p>minimum projected x coordinate<\p>
+  <p>minimum projected x coordinate</p>
   
   
   <h3>window_y_max</h3>
@@ -152,7 +152,7 @@ title: TransformSpaceMap
   
   default: 1.0
   
-  <p>maximum projected y coordinate<\p>
+  <p>maximum projected y coordinate</p>
   
   
   <h3>window_y_min</h3>
@@ -160,7 +160,7 @@ title: TransformSpaceMap
   
   default: -1.0
   
-  <p>minimum projected y coordinate<\p>
+  <p>minimum projected y coordinate</p>
   
   
   </p>

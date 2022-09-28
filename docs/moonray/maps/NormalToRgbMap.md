@@ -21,7 +21,7 @@ title: NormalToRgbMap
   
   default: None
   
-  <p>Input normal map to convert to a color<\p>
+  <p>Input normal map to convert to a color</p>
   
   
   </p>

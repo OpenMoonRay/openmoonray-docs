@@ -21,7 +21,7 @@ title: SwitchNormalMap
   
   default: 0.0
   
-  <p>which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in [0,63]<\p>
+  <p>which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in [0,63]</p>
   
   
   <h3>input0</h3>

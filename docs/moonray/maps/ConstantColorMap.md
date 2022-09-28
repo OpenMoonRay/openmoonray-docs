@@ -21,7 +21,7 @@ title: ConstantColorMap
   
   default: [ 1, 1, 1 ]
   
-  <p>constant color value<\p>
+  <p>constant color value</p>
   
   
   </p>

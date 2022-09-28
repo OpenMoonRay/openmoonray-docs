@@ -21,7 +21,7 @@ title: RdlMeshGeometry
   
   default: []
   
-  <p>Optionally declare vertex accelerations for quadratic motion interpolation<\p>
+  <p>Optionally declare vertex accelerations for quadratic motion interpolation</p>
   
   
   <h3>adaptive_error</h3>
@@ -29,7 +29,7 @@ title: RdlMeshGeometry
   
   default: 0.0
   
-  <p>the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.<\p>
+  <p>the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
   
   
   <h3>curved_motion_blur_sample_count</h3>
@@ -37,7 +37,7 @@ title: RdlMeshGeometry
   
   default: 10
   
-  <p>Number of time samples generated along each curve when using curved motion blur<\p>
+  <p>Number of time samples generated along each curve when using curved motion blur</p>
   
   
   <h3>face_vertex_count</h3>
@@ -45,7 +45,7 @@ title: RdlMeshGeometry
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p>Ordered list of vertices per face, used in conjection with vertices by index to construct the mesh<\p>
+  <p>Ordered list of vertices per face, used in conjection with vertices by index to construct the mesh</p>
   
   
   <h3>is_subd</h3>
@@ -53,7 +53,7 @@ title: RdlMeshGeometry
   
   default: True
   
-  <p>If true, a SubdivisionMesh primitive will be created - PolygonMesh otherwise<\p>
+  <p>If true, a SubdivisionMesh primitive will be created - PolygonMesh otherwise</p>
   
   
   <h3>label</h3>
@@ -61,7 +61,7 @@ title: RdlMeshGeometry
   
   default: 
   
-  <p>label used in material aov expresssions<\p>
+  <p>label used in material aov expresssions</p>
   
   
   <h3>mesh_resolution</h3>
@@ -69,7 +69,7 @@ title: RdlMeshGeometry
   
   default: 2.0
   
-  <p>The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information<\p>
+  <p>The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information</p>
   
   
   <h3>motion_blur_type</h3>
@@ -102,7 +102,7 @@ title: RdlMeshGeometry
 
 "best" will use choose the method which provides the highest quality given the available data.
 
-<\p>
+</p>
   
   
   <h3>node_xform</h3>
@@ -118,7 +118,7 @@ title: RdlMeshGeometry
   
   default: []
   
-  <p> If the mesh is using normals, store them per-face-vertex in this list<\p>
+  <p> If the mesh is using normals, store them per-face-vertex in this list</p>
   
   
   <h3>orientation</h3>
@@ -129,7 +129,7 @@ title: RdlMeshGeometry
   - left-handed = 1
   
   
-  <p>When set to "left-handed", normals are generated using the left-handed rule. This reverses the direction of generated normals, and which side of surfaces is considered the front, without affecting supplied normals.<\p>
+  <p>When set to "left-handed", normals are generated using the left-handed rule. This reverses the direction of generated normals, and which side of surfaces is considered the front, without affecting supplied normals.</p>
   
   
   <h3>part_face_count_list</h3>
@@ -137,7 +137,7 @@ title: RdlMeshGeometry
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p>The number of faces belonging to the part with corresponding index in 'part list'.<\p>
+  <p>The number of faces belonging to the part with corresponding index in 'part list'.</p>
   
   
   <h3>part_face_indices</h3>
@@ -145,7 +145,7 @@ title: RdlMeshGeometry
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p>Ordered list of face indices. No index should have a value greater than the size of 'face vertex count'<\p>
+  <p>Ordered list of face indices. No index should have a value greater than the size of 'face vertex count'</p>
   
   
   <h3>part_list</h3>
@@ -153,7 +153,7 @@ title: RdlMeshGeometry
   
   default: []
   
-  <p>Ordered list of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials<\p>
+  <p>Ordered list of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials</p>
   
   
   <h3>primitive_attribute_frame</h3>
@@ -172,7 +172,7 @@ title: RdlMeshGeometry
 
 	1 : second motion step
 
-	2 : both motion steps<\p>
+	2 : both motion steps</p>
   
   
   <h3>primitive_attributes</h3>
@@ -180,7 +180,7 @@ title: RdlMeshGeometry
   
   default: []
   
-  <p>Vector of UserData.Each key/value pair will be added as a primitive attribute of the mesh.<\p>
+  <p>Vector of UserData.Each key/value pair will be added as a primitive attribute of the mesh.</p>
   
   
   <h3>ray_epsilon</h3>
@@ -188,7 +188,7 @@ title: RdlMeshGeometry
   
   default: 0.0
   
-  <p>When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.<\p>
+  <p>When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
   
   
   <h3>references</h3>
@@ -196,7 +196,7 @@ title: RdlMeshGeometry
   
   default: []
   
-  <p>list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.<\p>
+  <p>list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
   
   
   <h3>reverse_normals</h3>
@@ -204,7 +204,7 @@ title: RdlMeshGeometry
   
   default: False
   
-  <p>enable to reverse the normals in the geometry<\p>
+  <p>enable to reverse the normals in the geometry</p>
   
   
   <h3>shadow_exclusion_mappings</h3>
@@ -216,7 +216,7 @@ title: RdlMeshGeometry
 
 A is a list of names of parts to be mapped, or asterisk to map the whole geometry
 
-B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.<\p>
+B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
   
   
   <h3>shadow_ray_epsilon</h3>
@@ -224,7 +224,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: 0.0
   
-  <p>When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.<\p>
+  <p>When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
   
   
   <h3>shadow_receiver_label</h3>
@@ -232,7 +232,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: 
   
-  <p>Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.<\p>
+  <p>Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
   
   
   <h3>side_type</h3>
@@ -245,7 +245,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   - use mesh sidedness = 2
   
   
-  <p>set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction<\p>
+  <p>set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
   
   
   <h3>smooth_normal</h3>
@@ -253,7 +253,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  <p>generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself<\p>
+  <p>generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself</p>
   
   
   <h3>static</h3>
@@ -261,7 +261,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  <p>disable if the geometry will be updated between frames<\p>
+  <p>disable if the geometry will be updated between frames</p>
   
   
   <h3>subd_boundary</h3>
@@ -274,7 +274,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   - edge and corner = 2 (default)
   
   
-  <p>Boundary interpolation: Corners, Edges or None<\p>
+  <p>Boundary interpolation: Corners, Edges or None</p>
   
   
   <h3>subd_corner_indices</h3>
@@ -282,7 +282,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p>List of indices for each corner vertex with an assigned sharpness.<\p>
+  <p>List of indices for each corner vertex with an assigned sharpness.</p>
   
   
   <h3>subd_corner_sharpnesses</h3>
@@ -290,7 +290,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  <p>Sharpness value for each corner vertex.<\p>
+  <p>Sharpness value for each corner vertex.</p>
   
   
   <h3>subd_crease_indices</h3>
@@ -298,7 +298,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p>List of vertex index pairs for each crease edge with an assigned sharpness.<\p>
+  <p>List of vertex index pairs for each crease edge with an assigned sharpness.</p>
   
   
   <h3>subd_crease_sharpnesses</h3>
@@ -306,7 +306,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
   
-  <p>Sharpness value for each crease edge.<\p>
+  <p>Sharpness value for each crease edge.</p>
   
   
   <h3>subd_fvar_linear</h3>
@@ -325,7 +325,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   - all = 5
   
   
-  <p>Face-varying linear interpolation: None, Corners Only, Corners Plus 1 or Plus 2 (RenderMan), Boundaries, or All<\p>
+  <p>Face-varying linear interpolation: None, Corners Only, Corners Plus 1 or Plus 2 (RenderMan), Boundaries, or All</p>
   
   
   <h3>subd_scheme</h3>
@@ -336,7 +336,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   - catclark = 1 (default)
   
   
-  <p>CatClark or Bilinear<\p>
+  <p>CatClark or Bilinear</p>
   
   
   <h3>use_rotation_motion_blur</h3>
@@ -344,7 +344,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: False
   
-  <p>if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation<\p>
+  <p>if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
   
   
   <h3>uv_list</h3>
@@ -352,7 +352,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: []
   
-  <p>If the mesh is using UVs, store them per-face-vertex in this list<\p>
+  <p>If the mesh is using UVs, store them per-face-vertex in this list</p>
   
   
   <h3>velocity_list_0</h3>
@@ -360,7 +360,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: []
   
-  <p>Optionally declare vertex velocities instead of a second motion step'<\p>
+  <p>Optionally declare vertex velocities instead of a second motion step'</p>
   
   
   <h3>velocity_list_1</h3>
@@ -368,7 +368,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: []
   
-  <p>Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation<\p>
+  <p>Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
   
   
   <h3>velocity_scale</h3>
@@ -376,7 +376,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: 1.0
   
-  <p>Adjust magnitude of velocity-based motion blur<\p>
+  <p>Adjust magnitude of velocity-based motion blur</p>
   
   
   <h3>vertex_list_0</h3>
@@ -384,7 +384,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: []
   
-  <p>Stores all vertices used by the mesh at motion step 0<\p>
+  <p>Stores all vertices used by the mesh at motion step 0</p>
   
   
   <h3>vertex_list_1</h3>
@@ -392,7 +392,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: []
   
-  <p>If the mesh is in motion, the second motion step is stored in this attribute<\p>
+  <p>If the mesh is in motion, the second motion step is stored in this attribute</p>
   
   
   <h3>vertices_by_index</h3>
@@ -400,7 +400,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: <scene_rdl2.__scene_rdl2__.IntVector object at >
   
-  <p>Ordered list of vertex indices used to construct the mesh using the vertex list<\p>
+  <p>Ordered list of vertex indices used to construct the mesh using the vertex list</p>
   
   
   <h3>visible_diffuse_reflection</h3>
@@ -408,7 +408,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  <p>whether the geometry is visible in diffuse reflection<\p>
+  <p>whether the geometry is visible in diffuse reflection</p>
   
   
   <h3>visible_diffuse_transmission</h3>
@@ -416,7 +416,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  <p>whether the geometry is visible in diffuse transmission<\p>
+  <p>whether the geometry is visible in diffuse transmission</p>
   
   
   <h3>visible_glossy_reflection</h3>
@@ -424,7 +424,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  <p>whether the geometry is visible in glossy reflection.<\p>
+  <p>whether the geometry is visible in glossy reflection.</p>
   
   
   <h3>visible_glossy_transmission</h3>
@@ -432,7 +432,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  <p>whether the geometry is visible in glossy transmission (refraction).<\p>
+  <p>whether the geometry is visible in glossy transmission (refraction).</p>
   
   
   <h3>visible_in_camera</h3>
@@ -440,7 +440,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  <p>whether the geometry is visible to camera rays<\p>
+  <p>whether the geometry is visible to camera rays</p>
   
   
   <h3>visible_mirror_reflection</h3>
@@ -448,7 +448,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  <p>whether the geometry is visible in miror reflection.<\p>
+  <p>whether the geometry is visible in miror reflection.</p>
   
   
   <h3>visible_mirror_transmission</h3>
@@ -456,7 +456,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  <p>whether the geometry is visible in miror transmission (refraction).<\p>
+  <p>whether the geometry is visible in miror transmission (refraction).</p>
   
   
   <h3>visible_shadow</h3>
@@ -464,7 +464,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  <p>whether the geometry casts shadows<\p>
+  <p>whether the geometry casts shadows</p>
   
   
   <h3>visible_volume</h3>
@@ -472,7 +472,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
   
   default: True
   
-  <p>whether the geometry is visible in indirect volume rays<\p>
+  <p>whether the geometry is visible in indirect volume rays</p>
   
   
   </p>

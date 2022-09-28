@@ -21,7 +21,7 @@ title: OverDisplayFilter
   
   default: None
   
-  <p>alpha for over operation<\p>
+  <p>alpha for over operation</p>
   
   
   <h3>input_bottom</h3>
@@ -29,7 +29,7 @@ title: OverDisplayFilter
   
   default: None
   
-  <p>RenderOutput on bottom<\p>
+  <p>RenderOutput on bottom</p>
   
   
   <h3>input_top</h3>
@@ -37,7 +37,7 @@ title: OverDisplayFilter
   
   default: None
   
-  <p>RenderOutput on top<\p>
+  <p>RenderOutput on top</p>
   
   
   <h3>invert_alpha</h3>
@@ -45,7 +45,7 @@ title: OverDisplayFilter
   
   default: False
   
-  <p>invert value of alpha<\p>
+  <p>invert value of alpha</p>
   
   
   <h3>mix</h3>
@@ -53,7 +53,7 @@ title: OverDisplayFilter
   
   default: 1.0
   
-  <p>blend between output and input<\p>
+  <p>blend between output and input</p>
   
   
   </p>

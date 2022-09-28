@@ -21,7 +21,7 @@ title: VectorDisplacement
   
   default: 0.0
   
-  <p>bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.<\p>
+  <p>bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
   
   
   <h3>factor</h3>
@@ -40,7 +40,7 @@ title: VectorDisplacement
   - object = 1
   
   
-  <p>The space that the map bound to the vector parameter is in<\p>
+  <p>The space that the map bound to the vector parameter is in</p>
   
   
   <h3>tangent_space_style</h3>
@@ -51,7 +51,7 @@ title: VectorDisplacement
   - tbn = 1
   
   
-  <p>Controls how RGB maps to Tangent, Normal, and Bi-Normal<\p>
+  <p>Controls how RGB maps to Tangent, Normal, and Bi-Normal</p>
   
   
   <h3>vector</h3>

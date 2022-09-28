@@ -21,7 +21,7 @@ title: ColorCorrectSaturationMap
   
   default: [ 1, 1, 1 ]
   
-  <p>bind the input here<\p>
+  <p>bind the input here</p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: ColorCorrectSaturationMap
   
   default: 1.0
   
-  <p>how much of the overall color correct to mix in<\p>
+  <p>how much of the overall color correct to mix in</p>
   
   
   <h3>on</h3>
@@ -37,7 +37,7 @@ title: ColorCorrectSaturationMap
   
   default: True
   
-  <p>enables/disables all color correct operations<\p>
+  <p>enables/disables all color correct operations</p>
   
   
   <h3>saturation</h3>
@@ -45,7 +45,7 @@ title: ColorCorrectSaturationMap
   
   default: 1.0
   
-  <p>desaturates the input below 1.0 and adds saturation above 1.0<\p>
+  <p>desaturates the input below 1.0 and adds saturation above 1.0</p>
   
   
   <h3>saturation_b</h3>
@@ -53,7 +53,7 @@ title: ColorCorrectSaturationMap
   
   default: 1.0
   
-  <p>desaturates the blue channel input below 1.0 and adds saturation above 1.0<\p>
+  <p>desaturates the blue channel input below 1.0 and adds saturation above 1.0</p>
   
   
   <h3>saturation_g</h3>
@@ -61,7 +61,7 @@ title: ColorCorrectSaturationMap
   
   default: 1.0
   
-  <p>desaturates the green channel input below 1.0 and adds saturation above 1.0<\p>
+  <p>desaturates the green channel input below 1.0 and adds saturation above 1.0</p>
   
   
   <h3>saturation_r</h3>
@@ -69,7 +69,7 @@ title: ColorCorrectSaturationMap
   
   default: 1.0
   
-  <p>desaturates the red channel input below 1.0 and adds saturation above 1.0<\p>
+  <p>desaturates the red channel input below 1.0 and adds saturation above 1.0</p>
   
   
   <h3>use_per_channel_saturation</h3>
@@ -77,7 +77,7 @@ title: ColorCorrectSaturationMap
   
   default: False
   
-  <p>enables separate RGB controls for saturation<\p>
+  <p>enables separate RGB controls for saturation</p>
   
   
   </p>

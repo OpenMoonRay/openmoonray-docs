@@ -36,7 +36,7 @@ title: DeformationMap
 
 		    deformation_T - deformation along T 
 
-		    deformation_avg - average deformation from ref space<\p>
+		    deformation_avg - average deformation from ref space</p>
   
   
   <h3>use_warning_color</h3>
@@ -44,7 +44,7 @@ title: DeformationMap
   
   default: False
   
-  <p>If derivatives are missing or zero output the warning color erroring out<\p>
+  <p>If derivatives are missing or zero output the warning color erroring out</p>
   
   
   <h3>warning_color</h3>
@@ -52,7 +52,7 @@ title: DeformationMap
   
   default: [ 1, 1, 1 ]
   
-  <p>Warning color to output when derivatives are missing or zero<\p>
+  <p>Warning color to output when derivatives are missing or zero</p>
   
   
   </p>

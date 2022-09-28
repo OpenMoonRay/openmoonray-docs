@@ -61,7 +61,7 @@ title: MeshLight
   
   default: [ 0, 0, 0 ]
   
-  <p>color temperature using Nuke-like T/M/E settings<\p>
+  <p>color temperature using Nuke-like T/M/E settings</p>
   
   
   <h3>texture</h3>
@@ -69,7 +69,7 @@ title: MeshLight
   
   default: 
   
-  <p>filename that points to a texture (formats: .exr, .tif, .jpg, etc.)<\p>
+  <p>filename that points to a texture (formats: .exr, .tif, .jpg, etc.)</p>
   
   
   <h3>texture_border_color</h3>
@@ -77,7 +77,7 @@ title: MeshLight
   
   default: [ 1, 1, 1 ]
   
-  <p>RGB value used when a texture lookup occurs outside the texture<\p>
+  <p>RGB value used when a texture lookup occurs outside the texture</p>
   
   
   <h3>texture_coverage</h3>
@@ -85,7 +85,7 @@ title: MeshLight
   
   default: [ 1, 1 ]
   
-  <p>Scales in (u,v)<\p>
+  <p>Scales in (u,v)</p>
   
   
   <h3>texture_mirror_u</h3>
@@ -93,7 +93,7 @@ title: MeshLight
   
   default: False
   
-  <p>true => mirror in u, false => repeat in u<\p>
+  <p>true => mirror in u, false => repeat in u</p>
   
   
   <h3>texture_mirror_v</h3>
@@ -101,7 +101,7 @@ title: MeshLight
   
   default: False
   
-  <p>true => mirror in v, false => repeat in v<\p>
+  <p>true => mirror in v, false => repeat in v</p>
   
   
   <h3>texture_reps_u</h3>
@@ -109,7 +109,7 @@ title: MeshLight
   
   default: 1.0
   
-  <p>Number of times texture repeats in u over the scaled texture space<\p>
+  <p>Number of times texture repeats in u over the scaled texture space</p>
   
   
   <h3>texture_reps_v</h3>
@@ -117,7 +117,7 @@ title: MeshLight
   
   default: 1.0
   
-  <p>Number of times texture repeats in v over the scaled texture space<\p>
+  <p>Number of times texture repeats in v over the scaled texture space</p>
   
   
   <h3>texture_rotation</h3>
@@ -125,7 +125,7 @@ title: MeshLight
   
   default: 0.0
   
-  <p>Clockwise rotation angle in degrees<\p>
+  <p>Clockwise rotation angle in degrees</p>
   
   
   <h3>texture_translation</h3>
@@ -133,7 +133,7 @@ title: MeshLight
   
   default: [ 0, 0 ]
   
-  <p>Translations in (u,v) expressed as fractions of the unscaled texture space<\p>
+  <p>Translations in (u,v) expressed as fractions of the unscaled texture space</p>
   
   
   </p>
@@ -149,7 +149,7 @@ title: MeshLight
   
   default: True
   
-  <p>apply scene scale variable when normalized<\p>
+  <p>apply scene scale variable when normalized</p>
   
   
   <h3>clear_radius</h3>
@@ -157,7 +157,7 @@ title: MeshLight
   
   default: 0.0
   
-  <p>clear radius: shadows less than this distance from the light are ignored (disabled if <= 0.0)<\p>
+  <p>clear radius: shadows less than this distance from the light are ignored (disabled if <= 0.0)</p>
   
   
   <h3>clear_radius_falloff_distance</h3>
@@ -165,7 +165,7 @@ title: MeshLight
   
   default: 0.0
   
-  <p>clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius<\p>
+  <p>clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius</p>
   
   
   <h3>clear_radius_interpolation_type</h3>
@@ -180,7 +180,7 @@ title: MeshLight
   - smoothstep = 3
   
   
-  <p>clear radius interpolation: interpolation type to use for the clear radius shadow falloff<\p>
+  <p>clear radius interpolation: interpolation type to use for the clear radius shadow falloff</p>
   
   
   <h3>color</h3>
@@ -220,7 +220,7 @@ title: MeshLight
   
   default: 
   
-  <p>label used in light aov expressions<\p>
+  <p>label used in light aov expressions</p>
   
   
   <h3>map_shader</h3>
@@ -244,7 +244,7 @@ title: MeshLight
   
   default: False
   
-  <p>Does light motion affect motion-blur?<\p>
+  <p>Does light motion affect motion-blur?</p>
   
   
   <h3>normalized</h3>
@@ -289,7 +289,7 @@ title: MeshLight
   
   default: False
   
-  <p>Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.<\p>
+  <p>Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.</p>
   
   
   <h3>texture_filter</h3>
@@ -333,7 +333,7 @@ title: MeshLight
   
   default: True
   
-  <p>whether the light is visible in diffuse reflection<\p>
+  <p>whether the light is visible in diffuse reflection</p>
   
   
   <h3>visible_diffuse_transmission</h3>
@@ -341,7 +341,7 @@ title: MeshLight
   
   default: True
   
-  <p>whether the light is visible in diffuse transmission<\p>
+  <p>whether the light is visible in diffuse transmission</p>
   
   
   <h3>visible_glossy_reflection</h3>
@@ -349,7 +349,7 @@ title: MeshLight
   
   default: True
   
-  <p>whether the light is visible in glossy reflection.<\p>
+  <p>whether the light is visible in glossy reflection.</p>
   
   
   <h3>visible_glossy_transmission</h3>
@@ -357,7 +357,7 @@ title: MeshLight
   
   default: True
   
-  <p>whether the light is visible in glossy transmission (refraction).<\p>
+  <p>whether the light is visible in glossy transmission (refraction).</p>
   
   
   <h3>visible_mirror_reflection</h3>
@@ -365,7 +365,7 @@ title: MeshLight
   
   default: True
   
-  <p>whether the light is visible in miror reflection.<\p>
+  <p>whether the light is visible in miror reflection.</p>
   
   
   <h3>visible_mirror_transmission</h3>
@@ -373,7 +373,7 @@ title: MeshLight
   
   default: True
   
-  <p>whether the light is visible in miror transmission (refraction).<\p>
+  <p>whether the light is visible in miror transmission (refraction).</p>
   
   
   </p>

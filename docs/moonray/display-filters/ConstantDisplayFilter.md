@@ -21,7 +21,7 @@ title: ConstantDisplayFilter
   
   default: False
   
-  <p>invert value of mask<\p>
+  <p>invert value of mask</p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: ConstantDisplayFilter
   
   default: 1.0
   
-  <p>blend between output and input<\p>
+  <p>blend between output and input</p>
   
   
   </p>
@@ -45,7 +45,7 @@ title: ConstantDisplayFilter
   
   default: [ 0, 0, 0 ]
   
-  <p>fill color value<\p>
+  <p>fill color value</p>
   
   
   <h3>mask</h3>

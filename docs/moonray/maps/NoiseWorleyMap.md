@@ -21,7 +21,7 @@ title: NoiseWorleyMap
   
   default: 1.0
   
-  <p>Influence of F1 (the closest feature point)<\p>
+  <p>Influence of F1 (the closest feature point)</p>
   
   
   <h3>F2</h3>
@@ -29,7 +29,7 @@ title: NoiseWorleyMap
   
   default: 0.0
   
-  <p>Influence of F2 (the second closest feature point)<\p>
+  <p>Influence of F2 (the second closest feature point)</p>
   
   
   <h3>F3</h3>
@@ -37,7 +37,7 @@ title: NoiseWorleyMap
   
   default: 0.0
   
-  <p>Influence of F3 (the third closest feature point)<\p>
+  <p>Influence of F3 (the third closest feature point)</p>
   
   
   <h3>F4</h3>
@@ -45,7 +45,7 @@ title: NoiseWorleyMap
   
   default: 0.0
   
-  <p>Influence of F4 (the fourth closest feature point)<\p>
+  <p>Influence of F4 (the fourth closest feature point)</p>
   
   
   <h3>bias</h3>
@@ -53,7 +53,7 @@ title: NoiseWorleyMap
   
   default: 0.5
   
-  <p>Bias of interpolation from color A to color B<\p>
+  <p>Bias of interpolation from color A to color B</p>
   
   
   <h3>camera</h3>
@@ -61,7 +61,7 @@ title: NoiseWorleyMap
   
   default: None
   
-  <p>camera used to define camera and screen space<\p>
+  <p>camera used to define camera and screen space</p>
   
   
   <h3>cell_id</h3>
@@ -76,7 +76,7 @@ title: NoiseWorleyMap
   - f4 = 3
   
   
-  <p>Which of the distances determines the cell id<\p>
+  <p>Which of the distances determines the cell id</p>
   
   
   <h3>color_A</h3>
@@ -84,7 +84,7 @@ title: NoiseWorleyMap
   
   default: [ 0, 0, 0 ]
   
-  <p>The interpolated color value at distance equals zero<\p>
+  <p>The interpolated color value at distance equals zero</p>
   
   
   <h3>color_B</h3>
@@ -92,7 +92,7 @@ title: NoiseWorleyMap
   
   default: [ 1, 1, 1 ]
   
-  <p>The interpolated color value at distance equals one<\p>
+  <p>The interpolated color value at distance equals one</p>
   
   
   <h3>distance_method</h3>
@@ -111,7 +111,7 @@ title: NoiseWorleyMap
   - minkowski = 5
   
   
-  <p>Metric for calculating distance to feature points which controls the shape of the falloff when output mode is distance<\p>
+  <p>Metric for calculating distance to feature points which controls the shape of the falloff when output mode is distance</p>
   
   
   <h3>frequency_multiplier</h3>
@@ -119,7 +119,7 @@ title: NoiseWorleyMap
   
   default: 1.0
   
-  <p>Scalar multiplier for the frequency vector<\p>
+  <p>Scalar multiplier for the frequency vector</p>
   
   
   <h3>gain</h3>
@@ -127,7 +127,7 @@ title: NoiseWorleyMap
   
   default: 0.5
   
-  <p>Gain of interpolation from color A to color B<\p>
+  <p>Gain of interpolation from color A to color B</p>
   
   
   <h3>input_texture_coordinates</h3>
@@ -143,7 +143,7 @@ title: NoiseWorleyMap
   
   default: False
   
-  <p>Invert the final pattern<\p>
+  <p>Invert the final pattern</p>
   
   
   <h3>jitter</h3>
@@ -151,7 +151,7 @@ title: NoiseWorleyMap
   
   default: 1.0
   
-  <p>Controls the distortion of the cells<\p>
+  <p>Controls the distortion of the cells</p>
   
   
   <h3>max_level</h3>
@@ -159,7 +159,7 @@ title: NoiseWorleyMap
   
   default: 1.0
   
-  <p>Number of octaves of noise to add together for the final result<\p>
+  <p>Number of octaves of noise to add together for the final result</p>
   
   
   <h3>minkowski_number</h3>
@@ -167,7 +167,7 @@ title: NoiseWorleyMap
   
   default: 3.0
   
-  <p>Exponent on distances when distance method is set to Minkowski<\p>
+  <p>Exponent on distances when distance method is set to Minkowski</p>
   
   
   <h3>object_space</h3>
@@ -175,7 +175,7 @@ title: NoiseWorleyMap
   
   default: None
   
-  <p>Directly connect object to use that object's space.<\p>
+  <p>Directly connect object to use that object's space.</p>
   
   
   <h3>output_mode</h3>
@@ -188,7 +188,7 @@ title: NoiseWorleyMap
   - cell id = 2
   
   
-  <p>Method by which the shader outputs a color.  Distance uses F1..F4 interpolated between color A and color B, gradient outputs the gradient of the noise, and cell ID outputs a random color for each cell<\p>
+  <p>Method by which the shader outputs a color.  Distance uses F1..F4 interpolated between color A and color B, gradient outputs the gradient of the noise, and cell ID outputs a random color for each cell</p>
   
   
   <h3>remap</h3>
@@ -196,7 +196,7 @@ title: NoiseWorleyMap
   
   default: [ 0, 1 ]
   
-  <p>Allows mapping the distances from the specified min/max range into the 0..1 range<\p>
+  <p>Allows mapping the distances from the specified min/max range into the 0..1 range</p>
   
   
   <h3>rotation</h3>
@@ -204,7 +204,7 @@ title: NoiseWorleyMap
   
   default: [ 0, 0, 0 ]
   
-  <p>Rotates the noise in space based on the specified rotation order<\p>
+  <p>Rotates the noise in space based on the specified rotation order</p>
   
   
   <h3>rotation_order</h3>
@@ -223,7 +223,7 @@ title: NoiseWorleyMap
   - zyx = 5
   
   
-  <p>Order in which to apply the euler rotations<\p>
+  <p>Order in which to apply the euler rotations</p>
   
   
   <h3>scale</h3>
@@ -231,7 +231,7 @@ title: NoiseWorleyMap
   
   default: [ 1, 1, 1 ]
   
-  <p>Vector to scale the noise non-proportionally<\p>
+  <p>Vector to scale the noise non-proportionally</p>
   
   
   <h3>seed</h3>
@@ -239,7 +239,7 @@ title: NoiseWorleyMap
   
   default: 0
   
-  <p>The seed for the random number generator<\p>
+  <p>The seed for the random number generator</p>
   
   
   <h3>smoothstep</h3>
@@ -247,7 +247,7 @@ title: NoiseWorleyMap
   
   default: [ 0, 1 ]
   
-  <p>min/max values between which the smoothstep will interpolate<\p>
+  <p>min/max values between which the smoothstep will interpolate</p>
   
   
   <h3>space</h3>
@@ -270,7 +270,7 @@ title: NoiseWorleyMap
   - input texture coordinates = 7
   
   
-  <p>The space to calculate the noise in<\p>
+  <p>The space to calculate the noise in</p>
   
   
   <h3>transformation_order</h3>
@@ -289,7 +289,7 @@ title: NoiseWorleyMap
   - trs = 5
   
   
-  <p>Order in which to apply the translation, rotation, and frequency<\p>
+  <p>Order in which to apply the translation, rotation, and frequency</p>
   
   
   <h3>translation</h3>
@@ -297,7 +297,7 @@ title: NoiseWorleyMap
   
   default: [ 0, 0, 0 ]
   
-  <p>Translation of the noise in space<\p>
+  <p>Translation of the noise in space</p>
   
   
   <h3>use_smoothstep</h3>
@@ -305,7 +305,7 @@ title: NoiseWorleyMap
   
   default: False
   
-  <p>Put the noise value through a smoothstep function defined by min/max<\p>
+  <p>Put the noise value through a smoothstep function defined by min/max</p>
   
   
   </p>

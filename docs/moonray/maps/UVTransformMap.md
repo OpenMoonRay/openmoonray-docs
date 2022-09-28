@@ -29,7 +29,7 @@ title: UVTransformMap
   
   default: 0.0
   
-  <p>Rotation in degrees<\p>
+  <p>Rotation in degrees</p>
   
   
   <h3>rotation_axis</h3>
@@ -37,7 +37,7 @@ title: UVTransformMap
   
   default: [ 0, 0, 1 ]
   
-  <p>Axis in which to rotate (only for 3D spaces)<\p>
+  <p>Axis in which to rotate (only for 3D spaces)</p>
   
   
   <h3>rotation_center</h3>
@@ -45,7 +45,7 @@ title: UVTransformMap
   
   default: [ 0.5, 0.5 ]
   
-  <p>UV coordinate around which to rotate<\p>
+  <p>UV coordinate around which to rotate</p>
   
   
   <h3>scale</h3>

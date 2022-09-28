@@ -21,7 +21,7 @@ title: ConstantScalarMap
   
   default: 1.0
   
-  <p>constant scalar value<\p>
+  <p>constant scalar value</p>
   
   
   </p>

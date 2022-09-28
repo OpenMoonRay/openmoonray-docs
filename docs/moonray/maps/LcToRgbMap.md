@@ -29,7 +29,7 @@ title: LcToRgbMap
   
   default: [ 100, 0, 0 ]
   
-  <p>Target color for remapping, in LAB colorspace<\p>
+  <p>Target color for remapping, in LAB colorspace</p>
   
   
   </p>

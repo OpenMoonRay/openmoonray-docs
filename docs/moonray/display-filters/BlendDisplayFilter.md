@@ -21,7 +21,7 @@ title: BlendDisplayFilter
   
   default: False
   
-  <p>invert value of mask<\p>
+  <p>invert value of mask</p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: BlendDisplayFilter
   
   default: 1.0
   
-  <p>blend between output and input<\p>
+  <p>blend between output and input</p>
   
   
   </p>
@@ -45,7 +45,7 @@ title: BlendDisplayFilter
   
   default: 0.5
   
-  <p>float determining amount of blend<\p>
+  <p>float determining amount of blend</p>
   
   
   <h3>blendType</h3>
@@ -64,7 +64,7 @@ title: BlendDisplayFilter
   
   default: None
   
-  <p>first operand<\p>
+  <p>first operand</p>
   
   
   <h3>input2</h3>
@@ -72,7 +72,7 @@ title: BlendDisplayFilter
   
   default: None
   
-  <p>second operand<\p>
+  <p>second operand</p>
   
   
   <h3>mask</h3>

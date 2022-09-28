@@ -21,7 +21,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the s direction (horizontal)<\p>
+  <p>Flip in the s direction (horizontal)</p>
   
   
   <h3>negative_x_invert_t</h3>
@@ -29,7 +29,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the t direction (vertical)<\p>
+  <p>Flip in the t direction (vertical)</p>
   
   
   <h3>negative_x_offset</h3>
@@ -37,7 +37,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D offset<\p>
+  <p>2D offset</p>
   
   
   <h3>negative_x_rotation</h3>
@@ -45,7 +45,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 0.0
   
-  <p>2D rotation amount<\p>
+  <p>2D rotation amount</p>
   
   
   <h3>negative_x_rotation_center</h3>
@@ -53,7 +53,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D rotation center<\p>
+  <p>2D rotation center</p>
   
   
   <h3>negative_x_scale</h3>
@@ -61,7 +61,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 1, 1 ]
   
-  <p>2D scale<\p>
+  <p>2D scale</p>
   
   
   <h3>negative_x_swap_st</h3>
@@ -69,7 +69,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Swap the s and t directions.   Same as a 90 degree rotation<\p>
+  <p>Swap the s and t directions.   Same as a 90 degree rotation</p>
   
   
   <h3>negative_x_wrap_around</h3>
@@ -77,7 +77,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Controls whether to repeat (true) or clamp (false) the texture<\p>
+  <p>Controls whether to repeat (true) or clamp (false) the texture</p>
   
   
   </p>
@@ -93,7 +93,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the s direction (horizontal)<\p>
+  <p>Flip in the s direction (horizontal)</p>
   
   
   <h3>negative_y_invert_t</h3>
@@ -101,7 +101,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the t direction (vertical)<\p>
+  <p>Flip in the t direction (vertical)</p>
   
   
   <h3>negative_y_offset</h3>
@@ -109,7 +109,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D offset<\p>
+  <p>2D offset</p>
   
   
   <h3>negative_y_rotation</h3>
@@ -117,7 +117,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 0.0
   
-  <p>2D rotation amount<\p>
+  <p>2D rotation amount</p>
   
   
   <h3>negative_y_rotation_center</h3>
@@ -125,7 +125,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D rotation center<\p>
+  <p>2D rotation center</p>
   
   
   <h3>negative_y_scale</h3>
@@ -133,7 +133,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 1, 1 ]
   
-  <p>2D scale<\p>
+  <p>2D scale</p>
   
   
   <h3>negative_y_swap_st</h3>
@@ -141,7 +141,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Swap the s and t directions.   Same as a 90 degree rotation<\p>
+  <p>Swap the s and t directions.   Same as a 90 degree rotation</p>
   
   
   <h3>negative_y_wrap_around</h3>
@@ -149,7 +149,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Controls whether to repeat (true) or clamp (false) the texture<\p>
+  <p>Controls whether to repeat (true) or clamp (false) the texture</p>
   
   
   </p>
@@ -165,7 +165,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the s direction (horizontal)<\p>
+  <p>Flip in the s direction (horizontal)</p>
   
   
   <h3>negative_z_invert_t</h3>
@@ -173,7 +173,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the t direction (vertical)<\p>
+  <p>Flip in the t direction (vertical)</p>
   
   
   <h3>negative_z_offset</h3>
@@ -181,7 +181,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D offset<\p>
+  <p>2D offset</p>
   
   
   <h3>negative_z_rotation</h3>
@@ -189,7 +189,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 0.0
   
-  <p>2D rotation amount<\p>
+  <p>2D rotation amount</p>
   
   
   <h3>negative_z_rotation_center</h3>
@@ -197,7 +197,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D rotation center<\p>
+  <p>2D rotation center</p>
   
   
   <h3>negative_z_scale</h3>
@@ -205,7 +205,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 1, 1 ]
   
-  <p>2D scale<\p>
+  <p>2D scale</p>
   
   
   <h3>negative_z_swap_st</h3>
@@ -213,7 +213,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Swap the s and t directions.   Same as a 90 degree rotation<\p>
+  <p>Swap the s and t directions.   Same as a 90 degree rotation</p>
   
   
   <h3>negative_z_wrap_around</h3>
@@ -221,7 +221,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Controls whether to repeat (true) or clamp (false) the texture<\p>
+  <p>Controls whether to repeat (true) or clamp (false) the texture</p>
   
   
   </p>
@@ -237,7 +237,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the s direction (horizontal)<\p>
+  <p>Flip in the s direction (horizontal)</p>
   
   
   <h3>positive_x_invert_t</h3>
@@ -245,7 +245,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the t direction (vertical)<\p>
+  <p>Flip in the t direction (vertical)</p>
   
   
   <h3>positive_x_offset</h3>
@@ -253,7 +253,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D offset<\p>
+  <p>2D offset</p>
   
   
   <h3>positive_x_rotation</h3>
@@ -261,7 +261,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 0.0
   
-  <p>2D rotation amount<\p>
+  <p>2D rotation amount</p>
   
   
   <h3>positive_x_rotation_center</h3>
@@ -269,7 +269,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D rotation center<\p>
+  <p>2D rotation center</p>
   
   
   <h3>positive_x_scale</h3>
@@ -277,7 +277,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 1, 1 ]
   
-  <p>2D scale<\p>
+  <p>2D scale</p>
   
   
   <h3>positive_x_swap_st</h3>
@@ -285,7 +285,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Swap the s and t directions.   Same as a 90 degree rotation<\p>
+  <p>Swap the s and t directions.   Same as a 90 degree rotation</p>
   
   
   <h3>positive_x_wrap_around</h3>
@@ -293,7 +293,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Controls whether to repeat (true) or clamp (false) the texture<\p>
+  <p>Controls whether to repeat (true) or clamp (false) the texture</p>
   
   
   </p>
@@ -309,7 +309,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the s direction (horizontal)<\p>
+  <p>Flip in the s direction (horizontal)</p>
   
   
   <h3>positive_y_invert_t</h3>
@@ -317,7 +317,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the t direction (vertical)<\p>
+  <p>Flip in the t direction (vertical)</p>
   
   
   <h3>positive_y_offset</h3>
@@ -325,7 +325,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D offset<\p>
+  <p>2D offset</p>
   
   
   <h3>positive_y_rotation</h3>
@@ -333,7 +333,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 0.0
   
-  <p>2D rotation amount<\p>
+  <p>2D rotation amount</p>
   
   
   <h3>positive_y_rotation_center</h3>
@@ -341,7 +341,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D rotation center<\p>
+  <p>2D rotation center</p>
   
   
   <h3>positive_y_scale</h3>
@@ -349,7 +349,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 1, 1 ]
   
-  <p>2D scale<\p>
+  <p>2D scale</p>
   
   
   <h3>positive_y_swap_st</h3>
@@ -357,7 +357,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Swap the s and t directions.   Same as a 90 degree rotation<\p>
+  <p>Swap the s and t directions.   Same as a 90 degree rotation</p>
   
   
   <h3>positive_y_wrap_around</h3>
@@ -365,7 +365,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Controls whether to repeat (true) or clamp (false) the texture<\p>
+  <p>Controls whether to repeat (true) or clamp (false) the texture</p>
   
   
   </p>
@@ -381,7 +381,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the s direction (horizontal)<\p>
+  <p>Flip in the s direction (horizontal)</p>
   
   
   <h3>positive_z_invert_t</h3>
@@ -389,7 +389,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Flip in the t direction (vertical)<\p>
+  <p>Flip in the t direction (vertical)</p>
   
   
   <h3>positive_z_offset</h3>
@@ -397,7 +397,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D offset<\p>
+  <p>2D offset</p>
   
   
   <h3>positive_z_rotation</h3>
@@ -405,7 +405,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 0.0
   
-  <p>2D rotation amount<\p>
+  <p>2D rotation amount</p>
   
   
   <h3>positive_z_rotation_center</h3>
@@ -413,7 +413,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0 ]
   
-  <p>2D rotation center<\p>
+  <p>2D rotation center</p>
   
   
   <h3>positive_z_scale</h3>
@@ -421,7 +421,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 1, 1 ]
   
-  <p>2D scale<\p>
+  <p>2D scale</p>
   
   
   <h3>positive_z_swap_st</h3>
@@ -429,7 +429,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Swap the s and t directions.   Same as a 90 degree rotation<\p>
+  <p>Swap the s and t directions.   Same as a 90 degree rotation</p>
   
   
   <h3>positive_z_wrap_around</h3>
@@ -437,7 +437,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Controls whether to repeat (true) or clamp (false) the texture<\p>
+  <p>Controls whether to repeat (true) or clamp (false) the texture</p>
   
   
   </p>
@@ -464,7 +464,7 @@ title: ProjectTriplanarNormalMap_v2
   - Trans Rot Scale = 5
   
   
-  <p>Order in which to apply transformations<\p>
+  <p>Order in which to apply transformations</p>
   
   
   <h3>input_normal</h3>
@@ -472,7 +472,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0, 0 ]
   
-  <p>Bind normal data here<\p>
+  <p>Bind normal data here</p>
   
   
   <h3>input_position</h3>
@@ -480,7 +480,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0, 0 ]
   
-  <p>Bind position data here<\p>
+  <p>Bind position data here</p>
   
   
   <h3>input_position_source</h3>
@@ -493,7 +493,7 @@ title: ProjectTriplanarNormalMap_v2
   - input_position/input_normal = 2
   
   
-  <p>Input position to use<\p>
+  <p>Input position to use</p>
   
   
   <h3>negative_x_active</h3>
@@ -501,7 +501,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Turns this direction on/off.  Output is black if off.<\p>
+  <p>Turns this direction on/off.  Output is black if off.</p>
   
   
   <h3>negative_x_texture</h3>
@@ -509,7 +509,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 
   
-  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).<\p>
+  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
   
   
   <h3>negative_y_active</h3>
@@ -517,7 +517,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Turns this direction on/off.  Output is black if off.<\p>
+  <p>Turns this direction on/off.  Output is black if off.</p>
   
   
   <h3>negative_y_texture</h3>
@@ -525,7 +525,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 
   
-  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).<\p>
+  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
   
   
   <h3>negative_z_active</h3>
@@ -533,7 +533,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Turns this direction on/off.  Output is black if off.<\p>
+  <p>Turns this direction on/off.  Output is black if off.</p>
   
   
   <h3>negative_z_texture</h3>
@@ -541,7 +541,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 
   
-  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).<\p>
+  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
   
   
   <h3>normal_encoding</h3>
@@ -552,7 +552,7 @@ title: ProjectTriplanarNormalMap_v2
   - [-1,1] = 1
   
   
-  <p>Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]<\p>
+  <p>Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
   
   
   <h3>number_of_textures</h3>
@@ -565,7 +565,7 @@ title: ProjectTriplanarNormalMap_v2
   - six = 6
   
   
-  <p>Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.<\p>
+  <p>Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
   
   
   <h3>positive_x_active</h3>
@@ -573,7 +573,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Turns this direction on/off.  Output is black if off.<\p>
+  <p>Turns this direction on/off.  Output is black if off.</p>
   
   
   <h3>positive_x_texture</h3>
@@ -581,7 +581,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 
   
-  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).<\p>
+  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
   
   
   <h3>positive_y_active</h3>
@@ -589,7 +589,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Turns this direction on/off.  Output is black if off.<\p>
+  <p>Turns this direction on/off.  Output is black if off.</p>
   
   
   <h3>positive_y_texture</h3>
@@ -597,7 +597,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 
   
-  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).<\p>
+  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
   
   
   <h3>positive_z_active</h3>
@@ -605,7 +605,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: True
   
-  <p>Turns this direction on/off.  Output is black if off.<\p>
+  <p>Turns this direction on/off.  Output is black if off.</p>
   
   
   <h3>positive_z_texture</h3>
@@ -613,7 +613,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 
   
-  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).<\p>
+  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
   
   
   <h3>projection_matrix</h3>
@@ -621,7 +621,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
   
-  <p>the transform to use for projection<\p>
+  <p>the transform to use for projection</p>
   
   
   <h3>projection_mode</h3>
@@ -634,7 +634,7 @@ title: ProjectTriplanarNormalMap_v2
   - TRS = 2
   
   
-  <p>Source parameters to use for projection transform<\p>
+  <p>Source parameters to use for projection transform</p>
   
   
   <h3>projector</h3>
@@ -642,7 +642,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: None
   
-  <p>the object whose transform to use for projection<\p>
+  <p>the object whose transform to use for projection</p>
   
   
   <h3>random_seed</h3>
@@ -650,7 +650,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 8241
   
-  <p>Seed for randomizing orientation, offset, and flip<\p>
+  <p>Seed for randomizing orientation, offset, and flip</p>
   
   
   <h3>randomize_flip</h3>
@@ -658,7 +658,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Rnd flipping in S or T for each active texture<\p>
+  <p>Rnd flipping in S or T for each active texture</p>
   
   
   <h3>randomize_offset</h3>
@@ -666,7 +666,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Rnd offset in S or T for each active texture<\p>
+  <p>Rnd offset in S or T for each active texture</p>
   
   
   <h3>randomize_rotation</h3>
@@ -674,7 +674,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: False
   
-  <p>Rnd 2d rotation of each active texture<\p>
+  <p>Rnd 2d rotation of each active texture</p>
   
   
   <h3>rotate</h3>
@@ -682,7 +682,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0, 0 ]
   
-  <p>Rotation of the projection transform<\p>
+  <p>Rotation of the projection transform</p>
   
   
   <h3>rotation_order</h3>
@@ -701,7 +701,7 @@ title: ProjectTriplanarNormalMap_v2
   - zyx = 5
   
   
-  <p>Order in which to apply rotation transformations<\p>
+  <p>Order in which to apply rotation transformations</p>
   
   
   <h3>scale</h3>
@@ -709,7 +709,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 1, 1, 1 ]
   
-  <p>Scale of the projection transform<\p>
+  <p>Scale of the projection transform</p>
   
   
   <h3>transition_width</h3>
@@ -717,7 +717,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: 0.5
   
-  <p>Controls blending of per-axis projections.   Valid range is 0.0 (no blending) to 1.0 (max blending)<\p>
+  <p>Controls blending of per-axis projections.   Valid range is 0.0 (no blending) to 1.0 (max blending)</p>
   
   
   <h3>translate</h3>
@@ -725,7 +725,7 @@ title: ProjectTriplanarNormalMap_v2
   
   default: [ 0, 0, 0 ]
   
-  <p>Tranlation of the projection transform<\p>
+  <p>Tranlation of the projection transform</p>
   
   
   </p>

@@ -21,7 +21,7 @@ title: ImageDisplayFilter
   
   default: False
   
-  <p>invert value of mask<\p>
+  <p>invert value of mask</p>
   
   
   <h3>mix</h3>
@@ -29,7 +29,7 @@ title: ImageDisplayFilter
   
   default: 1.0
   
-  <p>blend between output and input<\p>
+  <p>blend between output and input</p>
   
   
   </p>
@@ -64,7 +64,7 @@ title: ImageDisplayFilter
   
   default: 
   
-  <p>file path to the .exr we want to fit to the plane<\p>
+  <p>file path to the .exr we want to fit to the plane</p>
   
   
   <h3>input</h3>
@@ -72,7 +72,7 @@ title: ImageDisplayFilter
   
   default: None
   
-  <p>Input buffer<\p>
+  <p>Input buffer</p>
   
   
   <h3>mask</h3>

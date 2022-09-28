@@ -21,7 +21,7 @@ title: AxisAngleMap
   
   default: 0.0
   
-  <p>the angle of rotation in degrees<\p>
+  <p>the angle of rotation in degrees</p>
   
   
   <h3>axis_space</h3>
@@ -32,7 +32,7 @@ title: AxisAngleMap
   - object = 4
   
   
-  <p>the space of the axis to rotate about<\p>
+  <p>the space of the axis to rotate about</p>
   
   
   <h3>input_space</h3>
@@ -49,7 +49,7 @@ title: AxisAngleMap
   - object = 4
   
   
-  <p>the space to transform from<\p>
+  <p>the space to transform from</p>
   
   
   <h3>input_vector</h3>
@@ -57,7 +57,7 @@ title: AxisAngleMap
   
   default: [ 0, 0, 1 ]
   
-  <p>input vector to be rotated<\p>
+  <p>input vector to be rotated</p>
   
   
   <h3>output_space</h3>
@@ -74,7 +74,7 @@ title: AxisAngleMap
   - object = 4
   
   
-  <p>the space to transform the resulting vector to<\p>
+  <p>the space to transform the resulting vector to</p>
   
   
   <h3>rotation_axis</h3>
@@ -82,7 +82,7 @@ title: AxisAngleMap
   
   default: [ 0, 1, 0 ]
   
-  <p>axis to be rotated around<\p>
+  <p>axis to be rotated around</p>
   
   
   </p>
