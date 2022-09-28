@@ -16,24 +16,24 @@ title: UsdPrimvarReader_int
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## fallback  
-**Int**  *bindable*
+<h2>fallback</h2>
+<b>Int</b>  *bindable*
 
 Default value : 0  
 
 fallback value to be returned if geometry fetch failed.
 
 
-## varname  
-**String**  
+<h2>varname</h2>
+<b>String</b>  
 
 Default value :   
 
 Name of the primvar to be read from the mesh
 
 
-## warn_when_unavailable  
-**Bool**  
+<h2>warn_when_unavailable</h2>
+<b>Bool</b>  
 
 Default value : False  
 

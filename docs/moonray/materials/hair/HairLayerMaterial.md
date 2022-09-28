@@ -16,8 +16,8 @@ title: HairLayerMaterial
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## blend_color_space  
-**Int**  *enum*
+<h2>blend_color_space</h2>
+<b>Int</b>  *enum*
 
 - RGB = 0 (default)
 
@@ -29,8 +29,8 @@ title: HairLayerMaterial
 Color space used when blending the two material's color parameters
 
 
-## fallback_bssrdf  
-**Int**  *enum*
+<h2>fallback_bssrdf</h2>
+<b>Int</b>  *enum*
 
 - normalized diffusion = 0 (default)
 
@@ -46,48 +46,48 @@ If child materials disagree on the type of bssrdf, this type will be used instea
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## extra_aovs  
-**Map**  
+<h2>extra_aovs</h2>
+<b>Map</b>  
 
 Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## hair_material_A  
-**262144**  
+<h2>hair_material_A</h2>
+<b>262144</b>  
 
 Default value : None  
 
 foreground hair material
 
 
-## hair_material_B  
-**262144**  
+<h2>hair_material_B</h2>
+<b>262144</b>  
 
 Default value : None  
 
 background hair material
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in material and light aovs
 
 
-## mask  
-**Float**  *bindable*
+<h2>mask</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 foreground hair material weight
 
 
-## priority  
-**Int**  
+<h2>priority</h2>
+<b>Int</b>  
 
 Default value : 0  
 

@@ -16,24 +16,24 @@ title: ImageMap
 <details open>
 <summary class="scene-class-attr-group">Blur attributes</summary>
 
-## blur  
-**Float**  *bindable*
+<h2>blur</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 This parameter is deprecated, do not use!   Number of pixels to blur the image
 
 
-## mip_bias  
-**Float**  *bindable*
+<h2>mip_bias</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 Amount to scale derivatives which controls mipmap selection
 
 
-## num_blur_samples  
-**Int**  
+<h2>num_blur_samples</h2>
+<b>Int</b>  
 
 Default value : 3  
 
@@ -46,88 +46,88 @@ This parameter is deprecated, do not use!  Number of internal samples for blur. 
 <details open>
 <summary class="scene-class-attr-group">Color Correction attributes</summary>
 
-## TMI  
-**Vec3f**  
+<h2>TMI</h2>
+<b>Vec3f</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy 
 
 
-## TMI_control_enabled  
-**Bool**  
+<h2>TMI_control_enabled</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>TMI_control_enabled</b> needs to be written</p>
 
 
-## contrast  
-**Rgb**  
+<h2>contrast</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
 
 
-## contrast_enabled  
-**Bool**  
+<h2>contrast_enabled</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>contrast_enabled</b> needs to be written</p>
 
 
-## gain  
-**Rgb**  
+<h2>gain</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>gain</b> needs to be written</p>
 
 
-## gain_offset_enabled  
-**Bool**  
+<h2>gain_offset_enabled</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>gain_offset_enabled</b> needs to be written</p>
 
 
-## gamma_adjust  
-**Rgb**  
+<h2>gamma_adjust</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>gamma_adjust</b> needs to be written</p>
 
 
-## gamma_enabled  
-**Bool**  
+<h2>gamma_enabled</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>gamma_enabled</b> needs to be written</p>
 
 
-## offset_adjust  
-**Rgb**  
+<h2>offset_adjust</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>offset_adjust</b> needs to be written</p>
 
 
-## saturation  
-**Rgb**  
+<h2>saturation</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
 
 
-## saturation_enabled  
-**Bool**  
+<h2>saturation_enabled</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -140,24 +140,24 @@ Default value : False
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## alpha_only  
-**Bool**  
+<h2>alpha_only</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 If true, the alpha channel of the texture will be placed in the rgb channels.  If the texture has no alpha channel, 1.0 is used, and the resulting texture lookup is then always white.
 
 
-## default_color  
-**Rgb**  
+<h2>default_color</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 1, 0 ]  
 
 default color to be used for missing udims when 'use default color when missing' is enabled
 
 
-## gamma  
-**Int**  *enum*
+<h2>gamma</h2>
+<b>Int</b>  *enum*
 
 - off = 0
 
@@ -169,56 +169,56 @@ default color to be used for missing udims when 'use default color when missing'
 <p class="scene-class-attr-missing">Documentation for the attribute <b>gamma</b> needs to be written</p>
 
 
-## input_texture_coordinates  
-**Vec3f**  *bindable*
+<h2>input_texture_coordinates</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
 
 
-## offset  
-**Vec2f**  
+<h2>offset</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
 
 
-## rotation_angle  
-**Float**  
+<h2>rotation_angle</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 Rotation in degrees
 
 
-## rotation_center  
-**Vec2f**  
+<h2>rotation_center</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0.5, 0.5 ]  
 
 UV coordinate around which to rotate
 
 
-## scale  
-**Vec2f**  
+<h2>scale</h2>
+<b>Vec2f</b>  
 
 Default value : [ 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>scale</b> needs to be written</p>
 
 
-## texture  
-**String**  *filename*
+<h2>texture</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx). If filename contains '<UDIM>', udim index substitution is performed on filename.  In the UDIM case, 'scale', 'offset', and 'wrap around' are ignored.
 
 
-## texture_coordinates  
-**Int**  *enum*
+<h2>texture_coordinates</h2>
+<b>Int</b>  *enum*
 
 - texture = 0 (default)
 
@@ -232,40 +232,40 @@ filename that points to a texture .exr or .tx file (must be mip-mapped and tiled
 <p class="scene-class-attr-missing">Documentation for the attribute <b>texture_coordinates</b> needs to be written</p>
 
 
-## udim_files  
-**StringVector**  
+<h2>udim_files</h2>
+<b>StringVector</b>  
 
 Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>udim_files</b> needs to be written</p>
 
 
-## udim_max_v  
-**Int**  
+<h2>udim_max_v</h2>
+<b>Int</b>  
 
 Default value : 10  
 
 udim maximum v value
 
 
-## udim_values  
-**IntVector**  
+<h2>udim_values</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>udim_values</b> needs to be written</p>
 
 
-## use_default_color_when_missing  
-**Bool**  
+<h2>use_default_color_when_missing</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Uses the 'default color' for missing udims and does not report error
 
 
-## wrap_around  
-**Bool**  
+<h2>wrap_around</h2>
+<b>Bool</b>  
 
 Default value : True  
 

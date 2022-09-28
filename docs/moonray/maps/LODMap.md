@@ -16,16 +16,16 @@ title: LODMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## far_value  
-**Rgb**  *bindable*
+<h2>far_value</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 value output when feature_width/camera_distance is more than or equal to stop
 
 
-## mode  
-**Int**  *enum*
+<h2>mode</h2>
+<b>Int</b>  *enum*
 
 - feature width = 0 (default)
 
@@ -35,24 +35,24 @@ value output when feature_width/camera_distance is more than or equal to stop
 Use feature_width for LOD based on average, world-space feature-width visible in a pixel, correctly changing with resolution. Use camera_distance for LOD based on distance from render cam.
 
 
-## near_value  
-**Rgb**  *bindable*
+<h2>near_value</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 value output when feature_width/camera_distance is less than or equal to start
 
 
-## start  
-**Float**  
+<h2>start</h2>
+<b>Float</b>  
 
 Default value : 0.00999999977648  
 
 feature_width/camera_distance at which to start blending near_value->far_value
 
 
-## stop  
-**Float**  
+<h2>stop</h2>
+<b>Float</b>  
 
 Default value : 0.10000000149  
 

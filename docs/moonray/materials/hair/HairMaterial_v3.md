@@ -16,16 +16,16 @@ title: HairMaterial_v3
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## show_multiple_scattering  
-**Bool**  
+<h2>show_multiple_scattering</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 show the amount of light scattered after TRT bounce, good for blonde/white hair
 
 
-## use_optimized_sampling  
-**Bool**  
+<h2>use_optimized_sampling</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -38,16 +38,16 @@ optimized sampling of all the hair lobes, results in 2x-4x speedup on average (d
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
 
-## casts_caustics  
-**Bool**  
+<h2>casts_caustics</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 allows continuation of caustic light paths.
 
 
-## presence  
-**Float**  *bindable*
+<h2>presence</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -60,16 +60,16 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
 
-## emission  
-**Rgb**  *bindable*
+<h2>emission</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the energy emitted from this material
 
 
-## show_emission  
-**Bool**  
+<h2>show_emission</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -82,16 +82,16 @@ enables/disable emission
 <details open>
 <summary class="scene-class-attr-group">Fresnel attributes</summary>
 
-## cuticle_layer_thickness  
-**Float**  *bindable*
+<h2>cuticle_layer_thickness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.10000000149  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>cuticle_layer_thickness</b> needs to be written</p>
 
 
-## fresnel_type  
-**Int**  *enum*
+<h2>fresnel_type</h2>
+<b>Int</b>  *enum*
 
 - simple longitudinal = 0
 
@@ -103,8 +103,8 @@ Default value : 0.10000000149
 <p class="scene-class-attr-missing">Documentation for the attribute <b>fresnel_type</b> needs to be written</p>
 
 
-## refractive_index  
-**Float**  
+<h2>refractive_index</h2>
+<b>Float</b>  
 
 Default value : 1.45000004768  
 
@@ -117,32 +117,32 @@ keep this value between [1.3,2.0] for realistic behavior (human hair is around 1
 <details open>
 <summary class="scene-class-attr-group">Primary Specular attributes</summary>
 
-## primary_specular_offset  
-**Float**  *bindable*
+<h2>primary_specular_offset</h2>
+<b>Float</b>  *bindable*
 
 Default value : -3.0  
 
 offset specular highlight along hair direction (in degrees) [-10,+10], around -3 for human hair
 
 
-## primary_specular_roughness  
-**Float**  *bindable*
+<h2>primary_specular_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.5  
 
 roughness of the primary specular highlight, also sets the transmission roughness to 0.5x and secondary specular roughness to 2x by default unless independent roughnesses are being used for both
 
 
-## primary_specular_tint  
-**Rgb**  *bindable*
+<h2>primary_specular_tint</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 tint the primary specular highlight with this color (leave white for physical behavior)
 
 
-## show_primary_specular  
-**Bool**  
+<h2>show_primary_specular</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -155,88 +155,88 @@ show primary specular
 <details open>
 <summary class="scene-class-attr-group">Secondary Specular attributes</summary>
 
-## glint_eccentricity  
-**Float**  *bindable*
+<h2>glint_eccentricity</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.850000023842  
 
 secondary specular glint eccentricity [0.85, 1], values that deviate from 1 make the hair fiber more elliptical and more glinty
 
 
-## glint_max_twists  
-**Float**  *bindable*
+<h2>glint_max_twists</h2>
+<b>Float</b>  *bindable*
 
 Default value : 2.5  
 
 the maximum number of twists along the hair's length. More twists means more glints. Each hair strand will be randomly assigned a twist amount between [min twists, max twists]
 
 
-## glint_min_twists  
-**Float**  *bindable*
+<h2>glint_min_twists</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.5  
 
 the minimum number of twists along the hair's length. More twists means more glints. Each hair strand will be randomly assigned a twist amount between [min twists, max twists]
 
 
-## glint_roughness  
-**Float**  *bindable*
+<h2>glint_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.5  
 
 secondary specular glint roughness
 
 
-## glint_saturation  
-**Float**  *bindable*
+<h2>glint_saturation</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.5  
 
 secondary specular glint saturation
 
 
-## independent_secondary_specular_roughness  
-**Float**  *bindable*
+<h2>independent_secondary_specular_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.40000000596  
 
 secondary specular roughness
 
 
-## secondary_specular_offset  
-**Float**  *bindable*
+<h2>secondary_specular_offset</h2>
+<b>Float</b>  *bindable*
 
 Default value : -4.5  
 
 offset secondary specular highlight along hair direction (in degrees) [-10,+10], around -4.5 for human hair
 
 
-## secondary_specular_tint  
-**Rgb**  *bindable*
+<h2>secondary_specular_tint</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 tint secondary specular with this color (leave white for physical behavior)
 
 
-## show_hair_glint  
-**Bool**  
+<h2>show_hair_glint</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 show hair glint
 
 
-## show_secondary_specular  
-**Bool**  
+<h2>show_secondary_specular</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 show secondary specular
 
 
-## use_independent_secondary_specular_roughness  
-**Bool**  
+<h2>use_independent_secondary_specular_roughness</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -249,56 +249,56 @@ when disabled, uses a physically correct value for secondary specular roughness 
 <details open>
 <summary class="scene-class-attr-group">Transmission attributes</summary>
 
-## direct_transmission_saturation  
-**Float**  *bindable*
+<h2>direct_transmission_saturation</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 (Non-Physical, Advanced) saturate/desaturate direct transmission highlights.
 
 
-## independent_transmission_roughness  
-**Float**  *bindable*
+<h2>independent_transmission_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.10000000149  
 
 transmission roughness
 
 
-## show_transmission  
-**Bool**  
+<h2>show_transmission</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 show tranmission specular
 
 
-## transmission_azimuthal_roughness  
-**Float**  *bindable*
+<h2>transmission_azimuthal_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 higher values create a softer look
 
 
-## transmission_offset  
-**Float**  *bindable*
+<h2>transmission_offset</h2>
+<b>Float</b>  *bindable*
 
 Default value : -1.5  
 
 offset transmission highlight along hair direction (in degrees) [-10,+10], around -1.5 for human hair
 
 
-## transmission_tint  
-**Rgb**  *bindable*
+<h2>transmission_tint</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 tint transmission with this color (leave white for physical behavior)
 
 
-## use_independent_transmission_roughness  
-**Bool**  
+<h2>use_independent_transmission_roughness</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -311,32 +311,32 @@ when disabled, uses a physically correct value for Transmission roughness which 
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## extra_aovs  
-**Map**  
+<h2>extra_aovs</h2>
+<b>Map</b>  
 
 Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## hair_color  
-**Rgb**  *bindable*
+<h2>hair_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>hair_color</b> needs to be written</p>
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in material and light aovs
 
 
-## priority  
-**Int**  
+<h2>priority</h2>
+<b>Int</b>  
 
 Default value : 0  
 

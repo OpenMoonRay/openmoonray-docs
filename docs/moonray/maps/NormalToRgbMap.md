@@ -16,8 +16,8 @@ title: NormalToRgbMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## input  
-**33554432**  
+<h2>input</h2>
+<b>33554432</b>  
 
 Default value : None  
 

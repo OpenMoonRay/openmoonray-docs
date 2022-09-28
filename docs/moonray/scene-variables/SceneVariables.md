@@ -16,24 +16,24 @@ title: SceneVariables
 <details open>
 <summary class="scene-class-attr-group">Caching attributes</summary>
 
-## fast_geometry_update  
-**Bool**  
+<h2>fast_geometry_update</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>fast_geometry_update</b> needs to be written</p>
 
 
-## texture_cache_size  
-**Int**  
+<h2>texture_cache_size</h2>
+<b>Int</b>  
 
 Default value : 4000  
 
 size is in Mb and this is the maximum cache size
 
 
-## texture_file_handles  
-**Int**  
+<h2>texture_file_handles</h2>
+<b>Int</b>  
 
 Default value : 24000  
 
@@ -46,16 +46,16 @@ maximum number of simultaneous open file handles
 <details open>
 <summary class="scene-class-attr-group">Camera and Layer attributes</summary>
 
-## camera  
-**Camera**  
+<h2>camera</h2>
+<b>Camera</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>camera</b> needs to be written</p>
 
 
-## layer  
-**Layer**  
+<h2>layer</h2>
+<b>Layer</b>  
 
 Default value : None  
 
@@ -68,48 +68,48 @@ Default value : None
 <details open>
 <summary class="scene-class-attr-group">Checkpoint attributes</summary>
 
-## checkpoint_active  
-**Bool**  
+<h2>checkpoint_active</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>checkpoint_active</b> needs to be written</p>
 
 
-## checkpoint_bg_write  
-**Bool**  
+<h2>checkpoint_bg_write</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Define checkpoint file write operation execution mode.Checkpoint file write is executed as background thread and run parallel with MCRT threads (= true:default). Or stop all MCRT threads and checkpoint file write is exclusively executed (= false).
 
 
-## checkpoint_interval  
-**Float**  
+<h2>checkpoint_interval</h2>
+<b>Float</b>  
 
 Default value : 15.0  
 
 Length of time, in minutes, between checkpoint file writes. Time should be equal or bigger than 0.1
 
 
-## checkpoint_max_bgcache  
-**Int**  
+<h2>checkpoint_max_bgcache</h2>
+<b>Int</b>  
 
 Default value : 2  
 
 Specify max number of internal ImageWriteCache total which defines total number of write backlog under background thread write mode. You have to specify 1 or bigger number. Background thread write mode is suspended and processed serially when internal ImageWriteCache reaches this checkpoint_max_bgcache number. Bigger max value can support background write more robustly even if checkpoint write interval is pretty short. However it requires more runtime memory. 2 is best for most of the cases.
 
 
-## checkpoint_max_snapshot_overhead  
-**Float**  
+<h2>checkpoint_max_snapshot_overhead</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 Specify max fraction of snapshot overhead threshold for extra snapshot action regarding unexpected interruption by SIGINT. This value is fraction. If this value is ZERO or negative, no extra snapshot action is executed and no checkpoint file is generated when SIGINT is received.
 
 
-## checkpoint_mode  
-**Int**  *enum*
+<h2>checkpoint_mode</h2>
+<b>Int</b>  *enum*
 
 - time = 0 (default)
 
@@ -119,64 +119,64 @@ Specify max fraction of snapshot overhead threshold for extra snapshot action re
 Select checkpoint computation internal logic based on the time interval or quality steps
 
 
-## checkpoint_overwrite  
-**Bool**  
+<h2>checkpoint_overwrite</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Checkpoint file overwrite/non-overwirte control options, If checkpoint_overwrite=true, all latest checkpoint file is overwritten to previous checkpoint file output and we only have latest checkpoint file on disk. if checkpoint_overwrite=false, checkpoint files name is modified and extend with tile based sampling total number and all checkpoint files are write out by different name. As result we can keep all checkpoint files.
 
 
-## checkpoint_post_script  
-**String**  
+<h2>checkpoint_post_script</h2>
+<b>String</b>  
 
 Default value :   
 
 Define post checkpoint lua script name. This script is loaded into renderer just after every checkpoint file write completion then executed simultaneously with MCRT threads. Renderer sets some lua global variables and lua script can access them. See details in rendering-wiki checkpoint/resume page. If empty, post checkpoint script execution is disabled.
 
 
-## checkpoint_quality_steps  
-**Int**  
+<h2>checkpoint_quality_steps</h2>
+<b>Int</b>  
 
 Default value : 2  
 
 Steps of quality, internal sampling iteration count, between checkpoint file writes. Value should be equal or bigger than 1. Uniform sampling case, this steps number is equivalent as each pixel's pixel sampling steps. If you set quality steps=2, checkpoint file is created at every timing of each pixel's sample count exceeds at 2, 4, 6, 8, 10, ... Adaptive sampling case, this steps number is equivalent as internal adaptive sampling iteration steps. Recommended number is 1~3 range. You can use more than 4 but bigger number always require longer rendering time. If you set 2, checkpoint file is created after finish every 2 adaptive sampling iteration execution.
 
 
-## checkpoint_sample_cap  
-**Int**  
+<h2>checkpoint_sample_cap</h2>
+<b>Int</b>  
 
 Default value : 0  
 
 When total pixel sample count exceeds this value at every pixel (If you set 1024, each pixel exceeds 1024, then try to finish), the render will finish after the next checkpoint write. Disabled sample cap feature when set to 0.
 
 
-## checkpoint_snapshot_interval  
-**Float**  
+<h2>checkpoint_snapshot_interval</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 Interval of time in minutes, about snapshot refreshment regarding interruption by SIGINT. Unit is minute. If this value is ZERO or negative, checkpoint_max_snapshot_overhead parameter is used instead.
 
 
-## checkpoint_start_sample  
-**Int**  
+<h2>checkpoint_start_sample</h2>
+<b>Int</b>  
 
 Default value : 1  
 
 Specify samples per pixel (SPP) number. Checkpoint file is created when all pixel's SPP are same or bigger than this number. Until then, checkpoint file is not created.
 
 
-## checkpoint_time_cap  
-**Float**  
+<h2>checkpoint_time_cap</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 When total render process time exceeds this value, in minutes, the render will finish after the next checkpoint write. Disabled time cap feature when set to 0.
 
 
-## checkpoint_total_files  
-**Int**  
+<h2>checkpoint_total_files</h2>
+<b>Int</b>  
 
 Default value : 0  
 
@@ -189,48 +189,48 @@ Specify total number of checkpoint files for quality based checkpoint mode.This 
 <details open>
 <summary class="scene-class-attr-group">Debug attributes</summary>
 
-## debug_console  
-**Int**  
+<h2>debug_console</h2>
+<b>Int</b>  
 
 Default value : -1  
 
 Specify port number for debug console. If you set -1 (=default), all debug console functionalities are disabled. If you set 0 or positive port number, debug console functionalities are enabled. If enabled, we can send commands via telnet connection and control rendering behavior for debugging purposes. If you set 0, the kernel finds the available port for you and displays the port number to the cerr. Otherwise you have to set the available port number yourself.
 
 
-## debug_pixel  
-**IntVector**  
+<h2>debug_pixel</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>debug_pixel</b> needs to be written</p>
 
 
-## debug_rays_depth_range  
-**IntVector**  
+<h2>debug_rays_depth_range</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>debug_rays_depth_range</b> needs to be written</p>
 
 
-## debug_rays_file  
-**String**  
+<h2>debug_rays_file</h2>
+<b>String</b>  
 
 Default value :   
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>debug_rays_file</b> needs to be written</p>
 
 
-## debug_rays_primary_range  
-**IntVector**  
+<h2>debug_rays_primary_range</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>debug_rays_primary_range</b> needs to be written</p>
 
 
-## validate_geometry  
-**Bool**  
+<h2>validate_geometry</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -243,16 +243,16 @@ Checks geometry for bad data
 <details open>
 <summary class="scene-class-attr-group">Deep Images attributes</summary>
 
-## deep_curvature_tolerance  
-**Float**  
+<h2>deep_curvature_tolerance</h2>
+<b>Float</b>  
 
 Default value : 45.0  
 
 Maximum curvature (in degrees) of the deep surface within a pixel before it is split
 
 
-## deep_format  
-**Int**  *enum*
+<h2>deep_format</h2>
+<b>Int</b>  *enum*
 
 - openexr2.0 = 0
 
@@ -262,40 +262,40 @@ Maximum curvature (in degrees) of the deep surface within a pixel before it is s
 Deep image format: openexr2.0: vanilla OpenEXR deep, opendcx2.0: DCX abuffer mask encoding
 
 
-## deep_id_attribute_names  
-**StringVector**  
+<h2>deep_id_attribute_names</h2>
+<b>StringVector</b>  
 
 Default value : []  
 
 Names of primitive attributes containing deep IDs
 
 
-## deep_layer_bias  
-**Float**  
+<h2>deep_layer_bias</h2>
+<b>Float</b>  
 
 Default value : 0.10000000149  
 
 Minimum distance between deep layers
 
 
-## deep_max_layers  
-**Int**  
+<h2>deep_max_layers</h2>
+<b>Int</b>  
 
 Default value : 1  
 
 Maximum number of depth layers to output
 
 
-## deep_vol_compression_res  
-**Int**  
+<h2>deep_vol_compression_res</h2>
+<b>Int</b>  
 
 Default value : 10  
 
 Volume opacity compression resolution.  Lower values gives higher compression.
 
 
-## deep_z_tolerance  
-**Float**  
+<h2>deep_z_tolerance</h2>
+<b>Float</b>  
 
 Default value : 2.0  
 
@@ -308,48 +308,48 @@ Maximum range of the deep surface's Z values within a pixel before it is split
 <details open>
 <summary class="scene-class-attr-group">Driver attributes</summary>
 
-## interactive_mode  
-**Bool**  
+<h2>interactive_mode</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>interactive_mode</b> needs to be written</p>
 
 
-## machine_id  
-**Int**  
+<h2>machine_id</h2>
+<b>Int</b>  
 
 Default value : -1  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>machine_id</b> needs to be written</p>
 
 
-## num_machines  
-**Int**  
+<h2>num_machines</h2>
+<b>Int</b>  
 
 Default value : -1  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>num_machines</b> needs to be written</p>
 
 
-## output_file  
-**String**  
+<h2>output_file</h2>
+<b>String</b>  
 
 Default value : scene.exr  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>output_file</b> needs to be written</p>
 
 
-## progressive_shading  
-**Bool**  
+<h2>progressive_shading</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>progressive_shading</b> needs to be written</p>
 
 
-## task_distribution_type  
-**Int**  *enum*
+<h2>task_distribution_type</h2>
+<b>Int</b>  *enum*
 
 - non-overlapped tile = 0
 
@@ -359,16 +359,16 @@ Default value : False
 <p class="scene-class-attr-missing">Documentation for the attribute <b>task_distribution_type</b> needs to be written</p>
 
 
-## threads  
-**Int**  
+<h2>threads</h2>
+<b>Int</b>  
 
 Default value : 0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>threads</b> needs to be written</p>
 
 
-## tmp_dir  
-**String**  
+<h2>tmp_dir</h2>
+<b>String</b>  
 
 Default value :   
 
@@ -381,8 +381,8 @@ Define temporary directory name for temporary file generation. Use $TMPDIR envir
 <details open>
 <summary class="scene-class-attr-group">Filtering attributes</summary>
 
-## pixel_filter  
-**Int**  *enum*
+<h2>pixel_filter</h2>
+<b>Int</b>  *enum*
 
 - box = 0
 
@@ -394,16 +394,16 @@ Define temporary directory name for temporary file generation. Use $TMPDIR envir
 <p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_filter</b> needs to be written</p>
 
 
-## pixel_filter_width  
-**Float**  
+<h2>pixel_filter_width</h2>
+<b>Float</b>  
 
 Default value : 3.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_filter_width</b> needs to be written</p>
 
 
-## texture_blur  
-**Float**  
+<h2>texture_blur</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
@@ -416,24 +416,24 @@ Default value : 0.0
 <details open>
 <summary class="scene-class-attr-group">Fireflies Removal attributes</summary>
 
-## roughness_clamping_factor  
-**Float**  
+<h2>roughness_clamping_factor</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 clamp material roughness along paths to some extent (set value to [0..1]), to prevent fireflies from indirect caustics. Warning: Using this technique is biased
 
 
-## sample_clamping_depth  
-**Int**  
+<h2>sample_clamping_depth</h2>
+<b>Int</b>  
 
 Default value : 1  
 
 clamp sample values only after given non-specular depth
 
 
-## sample_clamping_value  
-**Float**  
+<h2>sample_clamping_value</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
@@ -446,24 +446,24 @@ clamp sample values to a maximum (disabled if 0.0). Warning: Using this techniqu
 <details open>
 <summary class="scene-class-attr-group">Frame attributes</summary>
 
-## frame  
-**Float**  
+<h2>frame</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>frame</b> needs to be written</p>
 
 
-## max_frame  
-**Float**  
+<h2>max_frame</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_frame</b> needs to be written</p>
 
 
-## min_frame  
-**Float**  
+<h2>min_frame</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
@@ -476,88 +476,88 @@ Default value : 0.0
 <details open>
 <summary class="scene-class-attr-group">Global Toggles attributes</summary>
 
-## enable_displacement  
-**Bool**  
+<h2>enable_displacement</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>enable_displacement</b> needs to be written</p>
 
 
-## enable_dof  
-**Bool**  
+<h2>enable_dof</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>enable_dof</b> needs to be written</p>
 
 
-## enable_max_geometry_resolution  
-**Bool**  
+<h2>enable_max_geometry_resolution</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>enable_max_geometry_resolution</b> needs to be written</p>
 
 
-## enable_motion_blur  
-**Bool**  
+<h2>enable_motion_blur</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>enable_motion_blur</b> needs to be written</p>
 
 
-## enable_presence_shadows  
-**Bool**  
+<h2>enable_presence_shadows</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>enable_presence_shadows</b> needs to be written</p>
 
 
-## enable_shadowing  
-**Bool**  
+<h2>enable_shadowing</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>enable_shadowing</b> needs to be written</p>
 
 
-## enable_subsurface_scattering  
-**Bool**  
+<h2>enable_subsurface_scattering</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>enable_subsurface_scattering</b> needs to be written</p>
 
 
-## lights_visible_in_camera  
-**Bool**  
+<h2>lights_visible_in_camera</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lights_visible_in_camera</b> needs to be written</p>
 
 
-## max_geometry_resolution  
-**Int**  
+<h2>max_geometry_resolution</h2>
+<b>Int</b>  
 
 Default value : 2147483647  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_geometry_resolution</b> needs to be written</p>
 
 
-## propagate_visibility_bounce_type  
-**Bool**  
+<h2>propagate_visibility_bounce_type</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 turns on/off propagation for ray visibility masks
 
 
-## shadow_terminator_fix  
-**Int**  *enum*
+<h2>shadow_terminator_fix</h2>
+<b>Int</b>  *enum*
 
 - Off = 0 (default)
 
@@ -579,48 +579,48 @@ Attempt to soften hard shadow terminator boundaries due to shading/geometric nor
 <details open>
 <summary class="scene-class-attr-group">Image Size attributes</summary>
 
-## aperture_window  
-**IntVector**  
+<h2>aperture_window</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 Window of the camera aperture. Overrides image width / height. Order: xmin ymin xmax ymax, with origin at left bottom.
 
 
-## image_height  
-**Int**  
+<h2>image_height</h2>
+<b>Int</b>  
 
 Default value : 1080  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>image_height</b> needs to be written</p>
 
 
-## image_width  
-**Int**  
+<h2>image_width</h2>
+<b>Int</b>  
 
 Default value : 1920  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>image_width</b> needs to be written</p>
 
 
-## region_window  
-**IntVector**  
+<h2>region_window</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 Window that is rendered. Overrides image width / height (and overrides aperture window override). Order: xmin ymin xmax ymax, with origin at left bottom.
 
 
-## res  
-**Float**  
+<h2>res</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>res</b> needs to be written</p>
 
 
-## sub_viewport  
-**IntVector**  
+<h2>sub_viewport</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
@@ -633,56 +633,56 @@ Subviewport of region window. Coordinate (0,0) maps to left, bottom of region wi
 <details open>
 <summary class="scene-class-attr-group">Logging attributes</summary>
 
-## athena_debug  
-**Bool**  
+<h2>athena_debug</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>athena_debug</b> needs to be written</p>
 
 
-## debug  
-**Bool**  
+<h2>debug</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>debug</b> needs to be written</p>
 
 
-## error  
-**Bool**  
+<h2>error</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>error</b> needs to be written</p>
 
 
-## fatal_color  
-**Rgb**  
+<h2>fatal_color</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 0, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>fatal_color</b> needs to be written</p>
 
 
-## info  
-**Bool**  
+<h2>info</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>info</b> needs to be written</p>
 
 
-## stats_file  
-**String**  
+<h2>stats_file</h2>
+<b>String</b>  
 
 Default value :   
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>stats_file</b> needs to be written</p>
 
 
-## warning  
-**Bool**  
+<h2>warning</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -695,8 +695,8 @@ Default value : True
 <details open>
 <summary class="scene-class-attr-group">Metadata attributes</summary>
 
-## exr_header_attributes  
-**Metadata**  
+<h2>exr_header_attributes</h2>
+<b>Metadata</b>  
 
 Default value : None  
 
@@ -709,16 +709,16 @@ Metadata that is passed directly to the exr header. Format: {"name", "type", "va
 <details open>
 <summary class="scene-class-attr-group">Motion and Scale attributes</summary>
 
-## motion_steps  
-**FloatVector**  
+<h2>motion_steps</h2>
+<b>FloatVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 frame-relative time offsets for motion sampling
 
 
-## scene_scale  
-**Float**  
+<h2>scene_scale</h2>
+<b>Float</b>  
 
 Default value : 0.00999999977648  
 
@@ -731,8 +731,8 @@ Default value : 0.00999999977648
 <details open>
 <summary class="scene-class-attr-group">Path Guide attributes</summary>
 
-## path_guide_enable  
-**Bool**  
+<h2>path_guide_enable</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -745,24 +745,24 @@ Turn on path guiding to handle difficult light transport problems (e.g. caustics
 <details open>
 <summary class="scene-class-attr-group">Resume Render attributes</summary>
 
-## on_resume_script  
-**String**  
+<h2>on_resume_script</h2>
+<b>String</b>  
 
 Default value :   
 
 Define on-resume lua script name. This script is loaded into the renderer just after renderPrep execution under resume render mode then executed. This script is not executed if non-resume render mode even if you set script name.Renderer sets some lua global variables and lua script can access them. We can get resume render start condition (true=properly started or false=failed to start as resume render and fall back to normal rendering) via lua global variable. See details in rendering-wiki checkpoint/resume page. If empty, on-resume script execution is disabled.
 
 
-## resumable_output  
-**Bool**  
+<h2>resumable_output</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 make aov output as resumable for resume render
 
 
-## resume_render  
-**Bool**  
+<h2>resume_render</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -775,8 +775,8 @@ resuming render process
 <details open>
 <summary class="scene-class-attr-group">Sampling attributes</summary>
 
-## bsdf_sampler_strategy  
-**Int**  *enum*
+<h2>bsdf_sampler_strategy</h2>
+<b>Int</b>  *enum*
 
 - multi-sample = 0 (default)
 
@@ -788,128 +788,128 @@ resuming render process
 Indirect sampling and evaluation strategy: all lobes using one path segment per lobe (multi-sample), all lobes using one shared path segment (one-sample), or one lobe.
 
 
-## bsdf_samples  
-**Int**  
+<h2>bsdf_samples</h2>
+<b>Int</b>  
 
 Default value : 2  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>bsdf_samples</b> needs to be written</p>
 
 
-## bssrdf_samples  
-**Int**  
+<h2>bssrdf_samples</h2>
+<b>Int</b>  
 
 Default value : 2  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>bssrdf_samples</b> needs to be written</p>
 
 
-## disable_optimized_hair_sampling  
-**Bool**  
+<h2>disable_optimized_hair_sampling</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Forces all hair materials to sample each hair BSDF lobe independently. This will enable the LPE label syntax for 'hair R', 'hair TT', 'hair TRT' and 'hair TRRT ' but will result in slower rendering
 
 
-## light_samples  
-**Int**  
+<h2>light_samples</h2>
+<b>Int</b>  
 
 Default value : 2  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>light_samples</b> needs to be written</p>
 
 
-## lock_frame_noise  
-**Bool**  
+<h2>lock_frame_noise</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lock_frame_noise</b> needs to be written</p>
 
 
-## max_depth  
-**Int**  
+<h2>max_depth</h2>
+<b>Int</b>  
 
 Default value : 5  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_depth</b> needs to be written</p>
 
 
-## max_diffuse_depth  
-**Int**  
+<h2>max_diffuse_depth</h2>
+<b>Int</b>  
 
 Default value : 2  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_diffuse_depth</b> needs to be written</p>
 
 
-## max_glossy_depth  
-**Int**  
+<h2>max_glossy_depth</h2>
+<b>Int</b>  
 
 Default value : 2  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_glossy_depth</b> needs to be written</p>
 
 
-## max_hair_depth  
-**Int**  
+<h2>max_hair_depth</h2>
+<b>Int</b>  
 
 Default value : 5  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_hair_depth</b> needs to be written</p>
 
 
-## max_mirror_depth  
-**Int**  
+<h2>max_mirror_depth</h2>
+<b>Int</b>  
 
 Default value : 3  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_mirror_depth</b> needs to be written</p>
 
 
-## max_presence_depth  
-**Int**  
+<h2>max_presence_depth</h2>
+<b>Int</b>  
 
 Default value : 16  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_presence_depth</b> needs to be written</p>
 
 
-## max_subsurface_per_path  
-**Int**  
+<h2>max_subsurface_per_path</h2>
+<b>Int</b>  
 
 Default value : 1  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_subsurface_per_path</b> needs to be written</p>
 
 
-## pixel_samples  
-**Int**  
+<h2>pixel_samples</h2>
+<b>Int</b>  
 
 Default value : 8  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>pixel_samples</b> needs to be written</p>
 
 
-## presence_threshold  
-**Float**  
+<h2>presence_threshold</h2>
+<b>Float</b>  
 
 Default value : 0.999000012875  
 
 Defines at which point the accumulated presence can be considered as opaque, skipping generation of presence continuation rays.
 
 
-## russian_roulette_threshold  
-**Float**  
+<h2>russian_roulette_threshold</h2>
+<b>Float</b>  
 
 Default value : 0.0375000014901  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>russian_roulette_threshold</b> needs to be written</p>
 
 
-## transparency_threshold  
-**Float**  
+<h2>transparency_threshold</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
@@ -922,48 +922,48 @@ Defines at which point the accumulated opacity can be considered as opaque, skip
 <details open>
 <summary class="scene-class-attr-group">Volumes attributes</summary>
 
-## max_volume_depth  
-**Int**  
+<h2>max_volume_depth</h2>
+<b>Int</b>  
 
 Default value : 1  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_volume_depth</b> needs to be written</p>
 
 
-## volume_attenuation_factor  
-**Float**  
+<h2>volume_attenuation_factor</h2>
+<b>Float</b>  
 
 Default value : 0.649999976158  
 
 Controls how volume attenuation gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in more translucent look. This variable is only effective when "max volume depth" is greater than 1
 
 
-## volume_contribution_factor  
-**Float**  
+<h2>volume_contribution_factor</h2>
+<b>Float</b>  
 
 Default value : 0.649999976158  
 
 Controls how scattering contribution gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in a darker volume scattering look. This variable is only effective when "max volume depth" is greater than 1
 
 
-## volume_illumination_samples  
-**Int**  
+<h2>volume_illumination_samples</h2>
+<b>Int</b>  
 
 Default value : 4  
 
 Sample number along the ray when computing volume scattering radiance towards the eye. Set to 0 to turn off volume lighting completely.
 
 
-## volume_opacity_threshold  
-**Float**  
+<h2>volume_opacity_threshold</h2>
+<b>Float</b>  
 
 Default value : 0.995000004768  
 
 As a ray travels through volume regions, it will accumulate the amount of opacity. When the value exceeds volume opacity threshold the renderer will stop the further volume integration along this ray.
 
 
-## volume_overlap_mode  
-**Int**  *enum*
+<h2>volume_overlap_mode</h2>
+<b>Int</b>  *enum*
 
 - sum = 0 (default)
 
@@ -983,24 +983,24 @@ Selects how to handle contributions from overlapping volumes:
 		Warning: light linking does not work correctly in sum mode.
 
 
-## volume_phase_attenuation_factor  
-**Float**  
+<h2>volume_phase_attenuation_factor</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 Controls how phase function(anisotropy) gets exponentially scaled down when rendering multiple scattering volumes. This variable is only effective when "max volume depth" is greater than 1
 
 
-## volume_quality  
-**Float**  
+<h2>volume_quality</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 Controls the overall quality of volume rendering. The higher number gives better volume shape detail and more accurate scattering integration result.
 
 
-## volume_shadow_quality  
-**Float**  
+<h2>volume_shadow_quality</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
@@ -1013,8 +1013,8 @@ Controls the quality of volume shadow (transmittance). The higher number gives m
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## batch_tile_order  
-**Int**  *enum*
+<h2>batch_tile_order</h2>
+<b>Int</b>  *enum*
 
 - top = 0
 
@@ -1036,8 +1036,8 @@ Controls the quality of volume shadow (transmittance). The higher number gives m
 <p class="scene-class-attr-missing">Documentation for the attribute <b>batch_tile_order</b> needs to be written</p>
 
 
-## checkpoint_tile_order  
-**Int**  *enum*
+<h2>checkpoint_tile_order</h2>
+<b>Int</b>  *enum*
 
 - top = 0
 
@@ -1059,32 +1059,32 @@ Controls the quality of volume shadow (transmittance). The higher number gives m
 <p class="scene-class-attr-missing">Documentation for the attribute <b>checkpoint_tile_order</b> needs to be written</p>
 
 
-## fps  
-**Float**  
+<h2>fps</h2>
+<b>Float</b>  
 
 Default value : 24.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>fps</b> needs to be written</p>
 
 
-## max_adaptive_samples  
-**Int**  
+<h2>max_adaptive_samples</h2>
+<b>Int</b>  
 
 Default value : 4096  
 
 When adaptive sampling is turned on, this represents the max number of samples we can throw at a pixel. It's best to err on the high side since adaptive sampling will cull out samples where they're not needed based on the target adaptive error, in which case we should rarely hit the max samples value.
 
 
-## min_adaptive_samples  
-**Int**  
+<h2>min_adaptive_samples</h2>
+<b>Int</b>  
 
 Default value : 16  
 
 When adaptive sampling is turned on, it's possible that a tile may be mis-classified as having converged before it has actually converged. This manifests itself as square 8x8 artifacts in the final image. The higher this value, the less the chance of this happening.
 
 
-## progressive_tile_order  
-**Int**  *enum*
+<h2>progressive_tile_order</h2>
+<b>Int</b>  *enum*
 
 - top = 0
 
@@ -1106,8 +1106,8 @@ When adaptive sampling is turned on, it's possible that a tile may be mis-classi
 <p class="scene-class-attr-missing">Documentation for the attribute <b>progressive_tile_order</b> needs to be written</p>
 
 
-## sampling_mode  
-**Int**  *enum*
+<h2>sampling_mode</h2>
+<b>Int</b>  *enum*
 
 - uniform = 0 (default)
 
@@ -1117,16 +1117,16 @@ When adaptive sampling is turned on, it's possible that a tile may be mis-classi
 Controls which sampling scheme to use, defaults to uniform sampling.
 
 
-## target_adaptive_error  
-**Float**  
+<h2>target_adaptive_error</h2>
+<b>Float</b>  
 
 Default value : 10.0  
 
 When adaptive sampling is turned on, this represents the desired quality of the output images. Lower values will give higher quality but take longer to render. Higher values will give lower quality but render quicker.
 
 
-## two_stage_output  
-**Bool**  
+<h2>two_stage_output</h2>
+<b>Bool</b>  
 
 Default value : True  
 

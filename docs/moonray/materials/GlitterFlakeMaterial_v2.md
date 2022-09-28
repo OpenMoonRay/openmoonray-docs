@@ -16,16 +16,16 @@ title: GlitterFlakeMaterial_v2
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## approximate_glitter_for_secondary_rays  
-**Bool**  
+<h2>approximate_glitter_for_secondary_rays</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 use an approximation to shade glitter for non-mirror secondary rays
 
 
-## debug_mode  
-**Int**  *enum*
+<h2>debug_mode</h2>
+<b>Int</b>  *enum*
 
 - off = 0 (default)
 
@@ -43,16 +43,16 @@ use an approximation to shade glitter for non-mirror secondary rays
 developer debug visualization modes
 
 
-## dense_glitter_LOD_quality  
-**Float**  
+<h2>dense_glitter_LOD_quality</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier
 
 
-## glitter_mask  
-**Float**  *bindable*
+<h2>glitter_mask</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -65,104 +65,104 @@ use this to control where glitter appears
 <details open>
 <summary class="scene-class-attr-group">Appearance attributes</summary>
 
-## decouple_flake_size  
-**Bool**  
+<h2>decouple_flake_size</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 makes flake size independent of flake density
 
 
-## flake_color_hue_variation  
-**Float**  *bindable*
+<h2>flake_color_hue_variation</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 introduce hue variation in flake color centered at the base flake color's hue on the hue wheel
 
 
-## flake_color_saturation_variation  
-**Float**  *bindable*
+<h2>flake_color_saturation_variation</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 introduce saturation variation in flake color centered at the base flake color's saturation
 
 
-## flake_color_value_variation  
-**Float**  *bindable*
+<h2>flake_color_value_variation</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 introduce value variation in flake color centered at the base flake color's value
 
 
-## flake_density  
-**Float**  *bindable*
+<h2>flake_density</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 controls the number of flakes per unit length; larger density packs more flakes into same space
 
 
-## flake_jitter  
-**Float**  *bindable*
+<h2>flake_jitter</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 Controls how much the flakes are randomly offset from a regular grid
 
 
-## flake_orientation_randomness  
-**Float**  
+<h2>flake_orientation_randomness</h2>
+<b>Float</b>  
 
 Default value : 0.15000000596  
 
 randomly orient each texture
 
 
-## flake_randomness  
-**Float**  
+<h2>flake_randomness</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 randomness of flake orientation
 
 
-## flake_texture_1  
-**String**  *filename*
+<h2>flake_texture_1</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## flake_texture_1_frequency  
-**Float**  
+<h2>flake_texture_1_frequency</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 0 implies none of this texture, 1 implies all the flakes will get this texture
 
 
-## flake_texture_2  
-**String**  *filename*
+<h2>flake_texture_2</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## flake_texture_2_frequency  
-**Float**  
+<h2>flake_texture_2_frequency</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 0 implies none of this texture, 1 implies all the flakes will get this texture
 
 
-## use_flake_textures  
-**Bool**  
+<h2>use_flake_textures</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -175,8 +175,8 @@ use textured glitter flakes
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
 
-## presence  
-**Float**  *bindable*
+<h2>presence</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -189,24 +189,24 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 <details open>
 <summary class="scene-class-attr-group">Flake Generation attributes</summary>
 
-## compensate_reference_space_deformation  
-**Bool**  
+<h2>compensate_reference_space_deformation</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 (In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc
 
 
-## seed  
-**Int**  
+<h2>seed</h2>
+<b>Int</b>  
 
 Default value : 0  
 
 The seed for the random number generator
 
 
-## space  
-**Int**  *enum*
+<h2>space</h2>
+<b>Int</b>  *enum*
 
 - object = 4
 
@@ -222,32 +222,32 @@ The space to calculate the noise in, defaults to reference space
 <details open>
 <summary class="scene-class-attr-group">Glitter A Appearance attributes</summary>
 
-## flake_color_A  
-**Rgb**  *bindable*
+<h2>flake_color_A</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 base flake color (use physical metallic color values)
 
 
-## flake_roughness_A  
-**Float**  
+<h2>flake_roughness_A</h2>
+<b>Float</b>  
 
 Default value : 0.140000000596  
 
 specular roughness of individual flakes (0 makes flakes mirror-like)
 
 
-## flake_size_A  
-**Float**  *bindable*
+<h2>flake_size_A</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface
 
 
-## flake_style_A_frequency  
-**Float**  *bindable*
+<h2>flake_style_A_frequency</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -260,32 +260,32 @@ Default value : 1.0
 <details open>
 <summary class="scene-class-attr-group">Glitter B Appearance attributes</summary>
 
-## flake_color_B  
-**Rgb**  *bindable*
+<h2>flake_color_B</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 base flake color (use physical metallic color values)
 
 
-## flake_roughness_B  
-**Float**  
+<h2>flake_roughness_B</h2>
+<b>Float</b>  
 
 Default value : 0.140000000596  
 
 specular roughness of individual flakes (0 makes flakes mirror-like)
 
 
-## flake_size_B  
-**Float**  *bindable*
+<h2>flake_size_B</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface
 
 
-## flake_style_B_frequency  
-**Float**  *bindable*
+<h2>flake_style_B_frequency</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
@@ -298,8 +298,8 @@ Default value : 0.0
 <details open>
 <summary class="scene-class-attr-group">Layering attributes</summary>
 
-## layering_mode  
-**Int**  *enum*
+<h2>layering_mode</h2>
+<b>Int</b>  *enum*
 
 - physical = 0 (default)
 
@@ -309,8 +309,8 @@ Default value : 0.0
 layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)
 
 
-## under_material  
-**Material**  
+<h2>under_material</h2>
+<b>Material</b>  
 
 Default value : None  
 
@@ -323,24 +323,24 @@ material that fills the gaps between glitter flakes
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## extra_aovs  
-**Map**  
+<h2>extra_aovs</h2>
+<b>Map</b>  
 
 Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in material and light aovs
 
 
-## priority  
-**Int**  
+<h2>priority</h2>
+<b>Int</b>  
 
 Default value : 0  
 

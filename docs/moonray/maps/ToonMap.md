@@ -16,40 +16,40 @@ title: ToonMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## crease_color  
-**Rgb**  *bindable*
+<h2>crease_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 0, 0 ]  
 
 Creases are sharp edges like corners in the geometry.
 
 
-## crease_scale  
-**Float**  *bindable*
+<h2>crease_scale</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 This attribute controls the thickness of creases.
 
 
-## crease_threshold  
-**Float**  *bindable*
+<h2>crease_threshold</h2>
+<b>Float</b>  *bindable*
 
 Default value : 45.0  
 
 This attribute sets the threshold angle (in degree units) to draw creases. The more the threshold angle is, the less the creases are traced.
 
 
-## fill_color  
-**Rgb**  *bindable*
+<h2>fill_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>fill_color</b> needs to be written</p>
 
 
-## mode  
-**Int**  *enum*
+<h2>mode</h2>
+<b>Int</b>  *enum*
 
 - outline = 0
 
@@ -61,24 +61,24 @@ Default value : [ 0, 0, 0 ]
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mode</b> needs to be written</p>
 
 
-## outline_color  
-**Rgb**  *bindable*
+<h2>outline_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 Outlines are silhouettes of the geometry
 
 
-## outline_scale  
-**Float**  *bindable*
+<h2>outline_scale</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 This attribute controls the thickness of outlines.
 
 
-## outline_threshold  
-**Float**  *bindable*
+<h2>outline_threshold</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 

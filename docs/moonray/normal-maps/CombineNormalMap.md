@@ -16,32 +16,32 @@ title: CombineNormalMap
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
 
-## input_1  
-**33554432**  
+<h2>input_1</h2>
+<b>33554432</b>  
 
 Default value : None  
 
 First normal map to combine; usually a base map
 
 
-## input_2  
-**33554432**  
+<h2>input_2</h2>
+<b>33554432</b>  
 
 Default value : None  
 
 Second normal map to combine; usually a base map
 
 
-## normal_map_1_dial  
-**Float**  *bindable*
+<h2>normal_map_1_dial</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 Amount of normal map 1 to blend in
 
 
-## normal_map_2_dial  
-**Float**  *bindable*
+<h2>normal_map_2_dial</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 

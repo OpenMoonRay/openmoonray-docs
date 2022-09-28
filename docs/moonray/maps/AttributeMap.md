@@ -16,16 +16,16 @@ title: AttributeMap
 <details open>
 <summary class="scene-class-attr-group">Primitive Attribute attributes</summary>
 
-## primitive_attribute_name  
-**String**  
+<h2>primitive_attribute_name</h2>
+<b>String</b>  
 
 Default value : Cd  
 
 the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'
 
 
-## primitive_attribute_type  
-**Int**  *enum*
+<h2>primitive_attribute_type</h2>
+<b>Int</b>  *enum*
 
 - float = 0
 
@@ -47,24 +47,24 @@ the type of primitive attribute to display when attribute 'map type' is set to '
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## color  
-**Rgb**  *bindable*
+<h2>color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 input color - preferably a connected map
 
 
-## default_value  
-**Rgb**  *bindable*
+<h2>default_value</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 default value to display when the requested attribute is not available
 
 
-## map_type  
-**Int**  *enum*
+<h2>map_type</h2>
+<b>Int</b>  *enum*
 
 - primitive attribute = 0 (default)
 
@@ -106,8 +106,8 @@ default value to display when the requested attribute is not available
 <p class="scene-class-attr-missing">Documentation for the attribute <b>map_type</b> needs to be written</p>
 
 
-## warn_when_unavailable  
-**Bool**  
+<h2>warn_when_unavailable</h2>
+<b>Bool</b>  
 
 Default value : False  
 

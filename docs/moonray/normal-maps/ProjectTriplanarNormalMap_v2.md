@@ -16,64 +16,64 @@ title: ProjectTriplanarNormalMap_v2
 <details open>
 <summary class="scene-class-attr-group">Negative X Modifiers attributes</summary>
 
-## negative_x_invert_s  
-**Bool**  
+<h2>negative_x_invert_s</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the s direction (horizontal)
 
 
-## negative_x_invert_t  
-**Bool**  
+<h2>negative_x_invert_t</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the t direction (vertical)
 
 
-## negative_x_offset  
-**Vec2f**  
+<h2>negative_x_offset</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D offset
 
 
-## negative_x_rotation  
-**Float**  
+<h2>negative_x_rotation</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 2D rotation amount
 
 
-## negative_x_rotation_center  
-**Vec2f**  
+<h2>negative_x_rotation_center</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D rotation center
 
 
-## negative_x_scale  
-**Vec2f**  
+<h2>negative_x_scale</h2>
+<b>Vec2f</b>  
 
 Default value : [ 1, 1 ]  
 
 2D scale
 
 
-## negative_x_swap_st  
-**Bool**  
+<h2>negative_x_swap_st</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Swap the s and t directions.   Same as a 90 degree rotation
 
 
-## negative_x_wrap_around  
-**Bool**  
+<h2>negative_x_wrap_around</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -86,64 +86,64 @@ Controls whether to repeat (true) or clamp (false) the texture
 <details open>
 <summary class="scene-class-attr-group">Negative Y Modifiers attributes</summary>
 
-## negative_y_invert_s  
-**Bool**  
+<h2>negative_y_invert_s</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the s direction (horizontal)
 
 
-## negative_y_invert_t  
-**Bool**  
+<h2>negative_y_invert_t</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the t direction (vertical)
 
 
-## negative_y_offset  
-**Vec2f**  
+<h2>negative_y_offset</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D offset
 
 
-## negative_y_rotation  
-**Float**  
+<h2>negative_y_rotation</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 2D rotation amount
 
 
-## negative_y_rotation_center  
-**Vec2f**  
+<h2>negative_y_rotation_center</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D rotation center
 
 
-## negative_y_scale  
-**Vec2f**  
+<h2>negative_y_scale</h2>
+<b>Vec2f</b>  
 
 Default value : [ 1, 1 ]  
 
 2D scale
 
 
-## negative_y_swap_st  
-**Bool**  
+<h2>negative_y_swap_st</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Swap the s and t directions.   Same as a 90 degree rotation
 
 
-## negative_y_wrap_around  
-**Bool**  
+<h2>negative_y_wrap_around</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -156,64 +156,64 @@ Controls whether to repeat (true) or clamp (false) the texture
 <details open>
 <summary class="scene-class-attr-group">Negative Z Modifiers attributes</summary>
 
-## negative_z_invert_s  
-**Bool**  
+<h2>negative_z_invert_s</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the s direction (horizontal)
 
 
-## negative_z_invert_t  
-**Bool**  
+<h2>negative_z_invert_t</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the t direction (vertical)
 
 
-## negative_z_offset  
-**Vec2f**  
+<h2>negative_z_offset</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D offset
 
 
-## negative_z_rotation  
-**Float**  
+<h2>negative_z_rotation</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 2D rotation amount
 
 
-## negative_z_rotation_center  
-**Vec2f**  
+<h2>negative_z_rotation_center</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D rotation center
 
 
-## negative_z_scale  
-**Vec2f**  
+<h2>negative_z_scale</h2>
+<b>Vec2f</b>  
 
 Default value : [ 1, 1 ]  
 
 2D scale
 
 
-## negative_z_swap_st  
-**Bool**  
+<h2>negative_z_swap_st</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Swap the s and t directions.   Same as a 90 degree rotation
 
 
-## negative_z_wrap_around  
-**Bool**  
+<h2>negative_z_wrap_around</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -226,64 +226,64 @@ Controls whether to repeat (true) or clamp (false) the texture
 <details open>
 <summary class="scene-class-attr-group">Positive X Modifiers attributes</summary>
 
-## positive_x_invert_s  
-**Bool**  
+<h2>positive_x_invert_s</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the s direction (horizontal)
 
 
-## positive_x_invert_t  
-**Bool**  
+<h2>positive_x_invert_t</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the t direction (vertical)
 
 
-## positive_x_offset  
-**Vec2f**  
+<h2>positive_x_offset</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D offset
 
 
-## positive_x_rotation  
-**Float**  
+<h2>positive_x_rotation</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 2D rotation amount
 
 
-## positive_x_rotation_center  
-**Vec2f**  
+<h2>positive_x_rotation_center</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D rotation center
 
 
-## positive_x_scale  
-**Vec2f**  
+<h2>positive_x_scale</h2>
+<b>Vec2f</b>  
 
 Default value : [ 1, 1 ]  
 
 2D scale
 
 
-## positive_x_swap_st  
-**Bool**  
+<h2>positive_x_swap_st</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Swap the s and t directions.   Same as a 90 degree rotation
 
 
-## positive_x_wrap_around  
-**Bool**  
+<h2>positive_x_wrap_around</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -296,64 +296,64 @@ Controls whether to repeat (true) or clamp (false) the texture
 <details open>
 <summary class="scene-class-attr-group">Positive Y Modifiers attributes</summary>
 
-## positive_y_invert_s  
-**Bool**  
+<h2>positive_y_invert_s</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the s direction (horizontal)
 
 
-## positive_y_invert_t  
-**Bool**  
+<h2>positive_y_invert_t</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the t direction (vertical)
 
 
-## positive_y_offset  
-**Vec2f**  
+<h2>positive_y_offset</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D offset
 
 
-## positive_y_rotation  
-**Float**  
+<h2>positive_y_rotation</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 2D rotation amount
 
 
-## positive_y_rotation_center  
-**Vec2f**  
+<h2>positive_y_rotation_center</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D rotation center
 
 
-## positive_y_scale  
-**Vec2f**  
+<h2>positive_y_scale</h2>
+<b>Vec2f</b>  
 
 Default value : [ 1, 1 ]  
 
 2D scale
 
 
-## positive_y_swap_st  
-**Bool**  
+<h2>positive_y_swap_st</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Swap the s and t directions.   Same as a 90 degree rotation
 
 
-## positive_y_wrap_around  
-**Bool**  
+<h2>positive_y_wrap_around</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -366,64 +366,64 @@ Controls whether to repeat (true) or clamp (false) the texture
 <details open>
 <summary class="scene-class-attr-group">Positive Z Modifiers attributes</summary>
 
-## positive_z_invert_s  
-**Bool**  
+<h2>positive_z_invert_s</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the s direction (horizontal)
 
 
-## positive_z_invert_t  
-**Bool**  
+<h2>positive_z_invert_t</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Flip in the t direction (vertical)
 
 
-## positive_z_offset  
-**Vec2f**  
+<h2>positive_z_offset</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D offset
 
 
-## positive_z_rotation  
-**Float**  
+<h2>positive_z_rotation</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 2D rotation amount
 
 
-## positive_z_rotation_center  
-**Vec2f**  
+<h2>positive_z_rotation_center</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 2D rotation center
 
 
-## positive_z_scale  
-**Vec2f**  
+<h2>positive_z_scale</h2>
+<b>Vec2f</b>  
 
 Default value : [ 1, 1 ]  
 
 2D scale
 
 
-## positive_z_swap_st  
-**Bool**  
+<h2>positive_z_swap_st</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Swap the s and t directions.   Same as a 90 degree rotation
 
 
-## positive_z_wrap_around  
-**Bool**  
+<h2>positive_z_wrap_around</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -436,8 +436,8 @@ Controls whether to repeat (true) or clamp (false) the texture
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## TRS_order  
-**Int**  *enum*
+<h2>TRS_order</h2>
+<b>Int</b>  *enum*
 
 - Scale Rot Trans = 0 (default)
 
@@ -455,24 +455,24 @@ Controls whether to repeat (true) or clamp (false) the texture
 Order in which to apply transformations
 
 
-## input_normal  
-**Vec3f**  *bindable*
+<h2>input_normal</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 Bind normal data here
 
 
-## input_position  
-**Vec3f**  *bindable*
+<h2>input_position</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 Bind position data here
 
 
-## input_position_source  
-**Int**  *enum*
+<h2>input_position_source</h2>
+<b>Int</b>  *enum*
 
 - P/N = 0 (default)
 
@@ -484,56 +484,56 @@ Bind position data here
 Input position to use
 
 
-## negative_x_active  
-**Bool**  
+<h2>negative_x_active</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Turns this direction on/off.  Output is black if off.
 
 
-## negative_x_texture  
-**String**  *filename*
+<h2>negative_x_texture</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## negative_y_active  
-**Bool**  
+<h2>negative_y_active</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Turns this direction on/off.  Output is black if off.
 
 
-## negative_y_texture  
-**String**  *filename*
+<h2>negative_y_texture</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## negative_z_active  
-**Bool**  
+<h2>negative_z_active</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Turns this direction on/off.  Output is black if off.
 
 
-## negative_z_texture  
-**String**  *filename*
+<h2>negative_z_texture</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## normal_encoding  
-**Int**  *enum*
+<h2>normal_encoding</h2>
+<b>Int</b>  *enum*
 
 - [0,1] = 0 (default)
 
@@ -543,8 +543,8 @@ filename that points to a texture .exr or .tx file (must be mip-mapped and tiled
 Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]
 
 
-## number_of_textures  
-**Int**  *enum*
+<h2>number_of_textures</h2>
+<b>Int</b>  *enum*
 
 - one = 1
 
@@ -556,64 +556,64 @@ Most normal maps are encoded [0,1].   Only certain rare floating point normal ma
 Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.
 
 
-## positive_x_active  
-**Bool**  
+<h2>positive_x_active</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Turns this direction on/off.  Output is black if off.
 
 
-## positive_x_texture  
-**String**  *filename*
+<h2>positive_x_texture</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## positive_y_active  
-**Bool**  
+<h2>positive_y_active</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Turns this direction on/off.  Output is black if off.
 
 
-## positive_y_texture  
-**String**  *filename*
+<h2>positive_y_texture</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## positive_z_active  
-**Bool**  
+<h2>positive_z_active</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Turns this direction on/off.  Output is black if off.
 
 
-## positive_z_texture  
-**String**  *filename*
+<h2>positive_z_texture</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## projection_matrix  
-**Mat4d**  
+<h2>projection_matrix</h2>
+<b>Mat4d</b>  
 
 Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 the transform to use for projection
 
 
-## projection_mode  
-**Int**  *enum*
+<h2>projection_mode</h2>
+<b>Int</b>  *enum*
 
 - projector = 0 (default)
 
@@ -625,56 +625,56 @@ the transform to use for projection
 Source parameters to use for projection transform
 
 
-## projector  
-**Node**  
+<h2>projector</h2>
+<b>Node</b>  
 
 Default value : None  
 
 the object whose transform to use for projection
 
 
-## random_seed  
-**Int**  
+<h2>random_seed</h2>
+<b>Int</b>  
 
 Default value : 8241  
 
 Seed for randomizing orientation, offset, and flip
 
 
-## randomize_flip  
-**Bool**  
+<h2>randomize_flip</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Rnd flipping in S or T for each active texture
 
 
-## randomize_offset  
-**Bool**  
+<h2>randomize_offset</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Rnd offset in S or T for each active texture
 
 
-## randomize_rotation  
-**Bool**  
+<h2>randomize_rotation</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Rnd 2d rotation of each active texture
 
 
-## rotate  
-**Vec3d**  
+<h2>rotate</h2>
+<b>Vec3d</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 Rotation of the projection transform
 
 
-## rotation_order  
-**Int**  *enum*
+<h2>rotation_order</h2>
+<b>Int</b>  *enum*
 
 - xyz = 0 (default)
 
@@ -692,24 +692,24 @@ Rotation of the projection transform
 Order in which to apply rotation transformations
 
 
-## scale  
-**Vec3d**  
+<h2>scale</h2>
+<b>Vec3d</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 Scale of the projection transform
 
 
-## transition_width  
-**Float**  
+<h2>transition_width</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 Controls blending of per-axis projections.   Valid range is 0.0 (no blending) to 1.0 (max blending)
 
 
-## translate  
-**Vec3d**  
+<h2>translate</h2>
+<b>Vec3d</b>  
 
 Default value : [ 0, 0, 0 ]  
 

@@ -16,16 +16,16 @@ title: DirectionalMap
 <details open>
 <summary class="scene-class-attr-group">Adjustment attributes</summary>
 
-## bias  
-**Float**  *bindable*
+<h2>bias</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.5  
 
 controls the rate at which the effect increases as the shading normal approaches the prime direction
 
 
-## clamping_behavior  
-**Int**  *enum*
+<h2>clamping_behavior</h2>
+<b>Int</b>  *enum*
 
 - clamp = 0 (default)
 
@@ -35,8 +35,8 @@ controls the rate at which the effect increases as the shading normal approaches
 determines how surfaces facing opposite the prime direction are handled
 
 
-## falloff_type  
-**Int**  *enum*
+<h2>falloff_type</h2>
+<b>Int</b>  *enum*
 
 - cosine = 0 (default)
 
@@ -46,24 +46,24 @@ determines how surfaces facing opposite the prime direction are handled
 determines how the effect falls off as the difference angle increases
 
 
-## smoothstep_end  
-**Float**  *bindable*
+<h2>smoothstep_end</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.550000011921  
 
 the value at which the effect is considered 100% on
 
 
-## smoothstep_start  
-**Float**  *bindable*
+<h2>smoothstep_start</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.449999988079  
 
 the value at which the effect is considered 100% off
 
 
-## use_smoothstep  
-**Bool**  
+<h2>use_smoothstep</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -76,16 +76,16 @@ apply smoothstep function to result
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
 
-## input_normal  
-**33554432**  
+<h2>input_normal</h2>
+<b>33554432</b>  
 
 Default value : None  
 
 specifies an alternate shading normal when bound. The binding multiplier is ignored
 
 
-## input_normal_dial  
-**Float**  *bindable*
+<h2>input_normal_dial</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -98,40 +98,40 @@ controls the amount of influence of the alternate normal
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## color_a  
-**Rgb**  *bindable*
+<h2>color_a</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 the color of the effect when the difference angle is greatest
 
 
-## color_b  
-**Rgb**  *bindable*
+<h2>color_b</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the color of the effect when the difference angle is smallest
 
 
-## custom_direction  
-**Vec3f**  *bindable*
+<h2>custom_direction</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 1, 0 ]  
 
 specifies a custom direction in world space as the prime direction
 
 
-## object  
-**Node**  
+<h2>object</h2>
+<b>Node</b>  
 
 Default value : None  
 
 the object to use when 'prime direction' is set to 'axis of object' or 'look-at object'
 
 
-## object_axis  
-**Int**  *enum*
+<h2>object_axis</h2>
+<b>Int</b>  *enum*
 
 - +X axis = 0
 
@@ -149,8 +149,8 @@ the object to use when 'prime direction' is set to 'axis of object' or 'look-at 
 which axis to use when 'prime direction' is set to 'axis of object'
 
 
-## polarity  
-**Int**  *enum*
+<h2>polarity</h2>
+<b>Int</b>  *enum*
 
 - perpendicular = 0 (default)
 
@@ -160,8 +160,8 @@ which axis to use when 'prime direction' is set to 'axis of object'
 determines which directions are given color A and which are given color B. Switching this effectively swaps the colors
 
 
-## prime_direction  
-**Int**  *enum*
+<h2>prime_direction</h2>
+<b>Int</b>  *enum*
 
 - observer direction = 0 (default)
 
@@ -175,8 +175,8 @@ determines which directions are given color A and which are given color B. Switc
 which source is used for the prime direction
 
 
-## use_reference_space  
-**Bool**  
+<h2>use_reference_space</h2>
+<b>Bool</b>  
 
 Default value : False  
 

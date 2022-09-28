@@ -16,16 +16,16 @@ title: RemapDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## invert_mask  
-**Bool**  
+<h2>invert_mask</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 invert value of mask
 
 
-## mix  
-**Float**  
+<h2>mix</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
@@ -38,56 +38,56 @@ blend between output and input
 <details open>
 <summary class="scene-class-attr-group">Channel attributes</summary>
 
-## clamp_max_RGB  
-**Rgb**  
+<h2>clamp_max_RGB</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 the maximum value output by this map when 'clamp' is enabled
 
 
-## clamp_min_RGB  
-**Rgb**  
+<h2>clamp_min_RGB</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 the minimum value output by this map when 'clamp' is enabled
 
 
-## input_max_RGB  
-**Rgb**  
+<h2>input_max_RGB</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 the input value that will be remapped to the 'output max' value
 
 
-## input_min_RGB  
-**Rgb**  
+<h2>input_min_RGB</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 the input value that will be remapped to the 'output min' value
 
 
-## midpoint_bias_RGB  
-**Rgb**  
+<h2>midpoint_bias_RGB</h2>
+<b>Rgb</b>  
 
 Default value : [ 0.5, 0.5, 0.5 ]  
 
 biases the in-between values toward 'output min' or 'output max'. Default = 0.5
 
 
-## output_max_RGB  
-**Rgb**  
+<h2>output_max_RGB</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 the value that 'input max' is remapped to
 
 
-## output_min_RGB  
-**Rgb**  
+<h2>output_min_RGB</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
@@ -100,96 +100,96 @@ the value that 'input min' is remapped to
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## clamp  
-**Bool**  
+<h2>clamp</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.
 
 
-## clamp_RGB  
-**Bool**  
+<h2>clamp_RGB</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.
 
 
-## clamp_max  
-**Float**  
+<h2>clamp_max</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 the maximum value output by this map when 'clamp' is enabled
 
 
-## clamp_min  
-**Float**  
+<h2>clamp_min</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 the minimum value output by this map when 'clamp' is enabled
 
 
-## input  
-**67141632**  
+<h2>input</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 Input buffer
 
 
-## input_max  
-**Float**  
+<h2>input_max</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 the input value that will be remapped to the 'output max' value
 
 
-## input_min  
-**Float**  
+<h2>input_min</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 the input value that will be remapped to the 'output min' value
 
 
-## mask  
-**67141632**  
+<h2>mask</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-## midpoint_bias  
-**Float**  
+<h2>midpoint_bias</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 biases the in-between values toward 'output min' or 'output max'. Default = 0.5
 
 
-## output_max  
-**Float**  
+<h2>output_max</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 the value that 'input max' is remapped to
 
 
-## output_min  
-**Float**  
+<h2>output_min</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 the value that 'input min' is remapped to
 
 
-## remap_method  
-**Int**  *enum*
+<h2>remap_method</h2>
+<b>Int</b>  *enum*
 
 - uniform = 0 (default)
 

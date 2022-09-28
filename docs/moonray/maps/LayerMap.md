@@ -16,32 +16,32 @@ title: LayerMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## input_A  
-**Rgb**  *bindable*
+<h2>input_A</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_A</b> needs to be written</p>
 
 
-## input_B  
-**Rgb**  *bindable*
+<h2>input_B</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_B</b> needs to be written</p>
 
 
-## mask  
-**Float**  *bindable*
+<h2>mask</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-## mode  
-**Int**  *enum*
+<h2>mode</h2>
+<b>Int</b>  *enum*
 
 - off = 0
 

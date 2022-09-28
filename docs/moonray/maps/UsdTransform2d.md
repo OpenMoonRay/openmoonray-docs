@@ -16,32 +16,32 @@ title: UsdTransform2d
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## in  
-**Rgb**  *bindable*
+<h2>in</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.
 
 
-## rotation  
-**Float**  
+<h2>rotation</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.
 
 
-## scale  
-**Vec2f**  
+<h2>scale</h2>
+<b>Vec2f</b>  
 
 Default value : [ 1, 1 ]  
 
 Scale around the origin to be applied to all components of the data.
 
 
-## translation  
-**Vec2f**  
+<h2>translation</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 

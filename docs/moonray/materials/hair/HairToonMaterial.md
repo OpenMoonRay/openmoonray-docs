@@ -16,32 +16,32 @@ title: HairToonMaterial
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## back_hair_color  
-**Rgb**  *bindable*
+<h2>back_hair_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 (advanced only) hair color used for back-lit hair (transmission/forward reflectance)
 
 
-## front_hair_color  
-**Rgb**  *bindable*
+<h2>front_hair_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 (advanced only) hair color used for front-lit hair (backward reflectance)
 
 
-## sss_trace_set  
-**Traceset**  
+<h2>sss_trace_set</h2>
+<b>Traceset</b>  
 
 Default value : None  
 
 Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.
 
 
-## use_independent_front_and_back_hair_color  
-**Bool**  
+<h2>use_independent_front_and_back_hair_color</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -54,8 +54,8 @@ Default value : False
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
 
-## presence  
-**Float**  *bindable*
+<h2>presence</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -68,24 +68,24 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
 
-## hair_color  
-**Rgb**  *bindable*
+<h2>hair_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>hair_color</b> needs to be written</p>
 
 
-## hair_diffuse  
-**Float**  *bindable*
+<h2>hair_diffuse</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 Amount of hair diffuse
 
 
-## show_hair_diffuse  
-**Bool**  
+<h2>show_hair_diffuse</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -98,16 +98,16 @@ Show the hair diffuse lobe
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
 
-## emission  
-**Rgb**  *bindable*
+<h2>emission</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the energy emitted from this material
 
 
-## show_emission  
-**Bool**  
+<h2>show_emission</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -120,80 +120,80 @@ enables/disable emission
 <details open>
 <summary class="scene-class-attr-group">Specular 1 attributes</summary>
 
-## specular_1_enable_indirect_reflections  
-**Bool**  
+<h2>specular_1_enable_indirect_reflections</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 enables indirect GGX reflections for toon specular model
 
 
-## specular_1_enable_input_normal  
-**Bool**  
+<h2>specular_1_enable_input_normal</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 enables sampling the normal map for toon specular 1
 
 
-## specular_1_indirect_reflections_intensity  
-**Float**  *bindable*
+<h2>specular_1_indirect_reflections_intensity</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 the intensity for the indirect reflections of the toon specular model
 
 
-## specular_1_indirect_reflections_roughness  
-**Float**  *bindable*
+<h2>specular_1_indirect_reflections_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.5  
 
 the roughness for the indirect reflections of the toon specular model
 
 
-## specular_1_input_U  
-**Vec3f**  *bindable*
+<h2>specular_1_input_U</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 input U / tangent for specular stretch
 
 
-## specular_1_input_V  
-**Vec3f**  *bindable*
+<h2>specular_1_input_V</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 input V / bitangent for specular stretch
 
 
-## specular_1_input_normal  
-**33554432**  
+<h2>specular_1_input_normal</h2>
+<b>33554432</b>  
 
 Default value : None  
 
 specifies an alternate shading normal for toon specular 1
 
 
-## specular_1_input_normal_dial  
-**Float**  *bindable*
+<h2>specular_1_input_normal_dial</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 controls influence of input normal versus hair normal for toon specular 1
 
 
-## specular_1_intensity  
-**Float**  *bindable*
+<h2>specular_1_intensity</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 The overall intensity of the specular response
 
 
-## specular_1_interpolations  
-**IntVector**  
+<h2>specular_1_interpolations</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
@@ -202,8 +202,8 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
 
 
-## specular_1_model  
-**Int**  *enum*
+<h2>specular_1_model</h2>
+<b>Int</b>  *enum*
 
 - Toon_Surface = 2 (default)
 
@@ -213,64 +213,64 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 sets the normalized distribution function for specular
 
 
-## specular_1_positions  
-**FloatVector**  
+<h2>specular_1_positions</h2>
+<b>FloatVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 ramp positions, maximum 10 allowed
 
 
-## specular_1_roughness  
-**Float**  *bindable*
+<h2>specular_1_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.899999976158  
 
 The roughness of the toon specular.   Smaller values produce tighter highlights
 
 
-## specular_1_show  
-**Bool**  
+<h2>specular_1_show</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Show first toon specular lobe
 
 
-## specular_1_stretch_u  
-**Float**  *bindable*
+<h2>specular_1_stretch_u</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 Amount to stretch or compress the specular in the u direction 
 
 
-## specular_1_stretch_v  
-**Float**  *bindable*
+<h2>specular_1_stretch_v</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 Amount to stretch or compress the specular in the v direction 
 
 
-## specular_1_tint  
-**Rgb**  *bindable*
+<h2>specular_1_tint</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>specular_1_tint</b> needs to be written</p>
 
 
-## specular_1_use_input_vectors_for_stretch  
-**Bool**  
+<h2>specular_1_use_input_vectors_for_stretch</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 when checked, use input_U and V. otherwise use geometry dPds/t
 
 
-## specular_1_values  
-**FloatVector**  
+<h2>specular_1_values</h2>
+<b>FloatVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
@@ -283,80 +283,80 @@ List of colors on the ramp
 <details open>
 <summary class="scene-class-attr-group">Specular 2 attributes</summary>
 
-## specular_2_enable_indirect_reflections  
-**Bool**  
+<h2>specular_2_enable_indirect_reflections</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 enables indirect GGX reflections for toon specular model
 
 
-## specular_2_enable_input_normal  
-**Bool**  
+<h2>specular_2_enable_input_normal</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 enables sampling the normal map for toon specular 2
 
 
-## specular_2_indirect_reflections_intensity  
-**Float**  *bindable*
+<h2>specular_2_indirect_reflections_intensity</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 the intensity for the indirect reflections of the toon specular model
 
 
-## specular_2_indirect_reflections_roughness  
-**Float**  *bindable*
+<h2>specular_2_indirect_reflections_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.5  
 
 the roughness for the indirect reflections of the toon specular model
 
 
-## specular_2_input_U  
-**Vec3f**  *bindable*
+<h2>specular_2_input_U</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 input U / tangent for specular stretch
 
 
-## specular_2_input_V  
-**Vec3f**  *bindable*
+<h2>specular_2_input_V</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 input V / bitangent for specular stretch
 
 
-## specular_2_input_normal  
-**33554432**  
+<h2>specular_2_input_normal</h2>
+<b>33554432</b>  
 
 Default value : None  
 
 specifies an alternate shading normal for toon specular 2
 
 
-## specular_2_input_normal_dial  
-**Float**  *bindable*
+<h2>specular_2_input_normal_dial</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 controls influence of input normal versus hair normal for toon specular 2
 
 
-## specular_2_intensity  
-**Float**  *bindable*
+<h2>specular_2_intensity</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 The overall intensity of the specular response
 
 
-## specular_2_interpolations  
-**IntVector**  
+<h2>specular_2_interpolations</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
@@ -365,8 +365,8 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
 
 
-## specular_2_model  
-**Int**  *enum*
+<h2>specular_2_model</h2>
+<b>Int</b>  *enum*
 
 - Toon_Surface = 2 (default)
 
@@ -376,64 +376,64 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 sets the normalized distribution function for specular
 
 
-## specular_2_positions  
-**FloatVector**  
+<h2>specular_2_positions</h2>
+<b>FloatVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 ramp positions, maximum 10 allowed
 
 
-## specular_2_roughness  
-**Float**  *bindable*
+<h2>specular_2_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.899999976158  
 
 The roughness of the toon specular.   Smaller values produce tighter highlights
 
 
-## specular_2_show  
-**Bool**  
+<h2>specular_2_show</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Show second toon specular lobe
 
 
-## specular_2_stretch_u  
-**Float**  *bindable*
+<h2>specular_2_stretch_u</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 Amount to stretch or compress the specular in the u direction 
 
 
-## specular_2_stretch_v  
-**Float**  *bindable*
+<h2>specular_2_stretch_v</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 Amount to stretch or compress the specular in the v direction 
 
 
-## specular_2_tint  
-**Rgb**  *bindable*
+<h2>specular_2_tint</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>specular_2_tint</b> needs to be written</p>
 
 
-## specular_2_use_input_vectors_for_stretch  
-**Bool**  
+<h2>specular_2_use_input_vectors_for_stretch</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 when checked, use input_U and V. otherwise use geometry dPds/t
 
 
-## specular_2_values  
-**FloatVector**  
+<h2>specular_2_values</h2>
+<b>FloatVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
@@ -446,80 +446,80 @@ List of colors on the ramp
 <details open>
 <summary class="scene-class-attr-group">Specular 3 attributes</summary>
 
-## specular_3_enable_indirect_reflections  
-**Bool**  
+<h2>specular_3_enable_indirect_reflections</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 enables indirect GGX reflections for toon specular model
 
 
-## specular_3_enable_input_normal  
-**Bool**  
+<h2>specular_3_enable_input_normal</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 enables sampling the normal map for toon specular 3
 
 
-## specular_3_indirect_reflections_intensity  
-**Float**  *bindable*
+<h2>specular_3_indirect_reflections_intensity</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 the intensity for the indirect reflections of the toon specular model
 
 
-## specular_3_indirect_reflections_roughness  
-**Float**  *bindable*
+<h2>specular_3_indirect_reflections_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.5  
 
 the roughness for the indirect reflections of the toon specular model
 
 
-## specular_3_input_U  
-**Vec3f**  *bindable*
+<h2>specular_3_input_U</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 input U / tangent for specular stretch
 
 
-## specular_3_input_V  
-**Vec3f**  *bindable*
+<h2>specular_3_input_V</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 input V / bitangent for specular stretch
 
 
-## specular_3_input_normal  
-**33554432**  
+<h2>specular_3_input_normal</h2>
+<b>33554432</b>  
 
 Default value : None  
 
 specifies an alternate shading normal for toon specular 3
 
 
-## specular_3_input_normal_dial  
-**Float**  *bindable*
+<h2>specular_3_input_normal_dial</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 controls influence of input normal versus hair normal for toon specular 3
 
 
-## specular_3_intensity  
-**Float**  *bindable*
+<h2>specular_3_intensity</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 The overall intensity of the specular response
 
 
-## specular_3_interpolations  
-**IntVector**  
+<h2>specular_3_interpolations</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
@@ -528,8 +528,8 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
 
 
-## specular_3_model  
-**Int**  *enum*
+<h2>specular_3_model</h2>
+<b>Int</b>  *enum*
 
 - Toon_Surface = 2 (default)
 
@@ -539,64 +539,64 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 sets the normalized distribution function for specular
 
 
-## specular_3_positions  
-**FloatVector**  
+<h2>specular_3_positions</h2>
+<b>FloatVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 ramp positions, maximum 10 allowed
 
 
-## specular_3_roughness  
-**Float**  *bindable*
+<h2>specular_3_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.899999976158  
 
 The roughness of the toon specular.   Smaller values produce tighter highlights
 
 
-## specular_3_show  
-**Bool**  
+<h2>specular_3_show</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Show third toon specular lobe
 
 
-## specular_3_stretch_u  
-**Float**  *bindable*
+<h2>specular_3_stretch_u</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 Amount to stretch or compress the specular in the u direction 
 
 
-## specular_3_stretch_v  
-**Float**  *bindable*
+<h2>specular_3_stretch_v</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 Amount to stretch or compress the specular in the v direction 
 
 
-## specular_3_tint  
-**Rgb**  *bindable*
+<h2>specular_3_tint</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>specular_3_tint</b> needs to be written</p>
 
 
-## specular_3_use_input_vectors_for_stretch  
-**Bool**  
+<h2>specular_3_use_input_vectors_for_stretch</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 when checked, use input_U and V. otherwise use geometry dPds/t
 
 
-## specular_3_values  
-**FloatVector**  
+<h2>specular_3_values</h2>
+<b>FloatVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
@@ -609,8 +609,8 @@ List of colors on the ramp
 <details open>
 <summary class="scene-class-attr-group">Subsurface attributes</summary>
 
-## bssrdf  
-**Int**  *enum*
+<h2>bssrdf</h2>
+<b>Int</b>  *enum*
 
 - normalized diffusion = 0 (default)
 
@@ -620,48 +620,48 @@ List of colors on the ramp
 0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.
 
 
-## enable_sss_input_normal  
-**Bool**  
+<h2>enable_sss_input_normal</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 enables sampling the normal map for sss samples. More accurate but potentially expensive
 
 
-## input_normal  
-**33554432**  
+<h2>input_normal</h2>
+<b>33554432</b>  
 
 Default value : None  
 
 specifies an alternate shading normal (only for SSS lobe)
 
 
-## input_normal_dial  
-**Float**  *bindable*
+<h2>input_normal_dial</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 controls influence of input normal versus hair normal for SSS
 
 
-## scattering_color  
-**Rgb**  *bindable*
+<h2>scattering_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the subsurface scattering 'falloff' color
 
 
-## scattering_radius  
-**Float**  *bindable*
+<h2>scattering_radius</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 the distance the light scatters beneath the surface.  When 0 surface diffuse is used
 
 
-## subsurface_blend  
-**Float**  *bindable*
+<h2>subsurface_blend</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -674,24 +674,24 @@ Default value : 1.0
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## extra_aovs  
-**Map**  
+<h2>extra_aovs</h2>
+<b>Map</b>  
 
 Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in material and light aovs
 
 
-## priority  
-**Int**  
+<h2>priority</h2>
+<b>Int</b>  
 
 Default value : 0  
 

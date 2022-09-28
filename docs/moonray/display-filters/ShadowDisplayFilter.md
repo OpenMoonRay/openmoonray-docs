@@ -16,32 +16,32 @@ title: ShadowDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## density  
-**Float**  
+<h2>density</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.
 
 
-## occluded  
-**67141632**  
+<h2>occluded</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 Image Buffer representing the occluded image
 
 
-## shadow_color  
-**Rgb**  
+<h2>shadow_color</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 color of the shadow
 
 
-## unoccluded  
-**67141632**  
+<h2>unoccluded</h2>
+<b>67141632</b>  
 
 Default value : None  
 

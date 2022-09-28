@@ -16,24 +16,24 @@ title: HairColorCorrectMaterial
 <details open>
 <summary class="scene-class-attr-group">Hue/Sat/Gain attributes</summary>
 
-## gain  
-**Float**  *bindable*
+<h2>gain</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 multiplies the input channels by the specified value
 
 
-## hue_shift  
-**Float**  *bindable*
+<h2>hue_shift</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 shifts the hue of the input (spectrum range is 0-1)
 
 
-## saturation  
-**Float**  *bindable*
+<h2>saturation</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -46,16 +46,16 @@ desaturates the input below 1.0 and adds saturation above 1.0
 <details open>
 <summary class="scene-class-attr-group">TMI attributes</summary>
 
-## TMI  
-**Rgb**  
+<h2>TMI</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy 
 
 
-## TMI_enabled  
-**Bool**  
+<h2>TMI_enabled</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -68,48 +68,48 @@ enables the TMI parameters
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## extra_aovs  
-**Map**  
+<h2>extra_aovs</h2>
+<b>Map</b>  
 
 Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## input_hair_material  
-**262144**  
+<h2>input_hair_material</h2>
+<b>262144</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_hair_material</b> needs to be written</p>
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in material and light aovs
 
 
-## mix  
-**Float**  *bindable*
+<h2>mix</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 how much of the overall color correct to mix in
 
 
-## on  
-**Bool**  
+<h2>on</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Enable/disable all color corrections
 
 
-## priority  
-**Int**  
+<h2>priority</h2>
+<b>Int</b>  
 
 Default value : 0  
 

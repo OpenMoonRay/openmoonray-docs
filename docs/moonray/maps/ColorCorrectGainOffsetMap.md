@@ -16,96 +16,96 @@ title: ColorCorrectGainOffsetMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## gain  
-**Float**  *bindable*
+<h2>gain</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 multiplies the input channels by the specified values
 
 
-## gain_b  
-**Float**  *bindable*
+<h2>gain_b</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 multiplies the blue channel by the specified values
 
 
-## gain_g  
-**Float**  *bindable*
+<h2>gain_g</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 multiplies the green channel by the specified values
 
 
-## gain_r  
-**Float**  *bindable*
+<h2>gain_r</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 multiplies the red channel by the specified values
 
 
-## input  
-**Rgb**  *bindable*
+<h2>input</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 bind the input here
 
 
-## mix  
-**Float**  *bindable*
+<h2>mix</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 how much of the overall color correct to mix in
 
 
-## offset  
-**Float**  *bindable*
+<h2>offset</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 adds the specified values to the input
 
 
-## offset_b  
-**Float**  *bindable*
+<h2>offset_b</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 adds the specified values to the blue channel
 
 
-## offset_g  
-**Float**  *bindable*
+<h2>offset_g</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 adds the specified values to the green channel
 
 
-## offset_r  
-**Float**  *bindable*
+<h2>offset_r</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 adds the specified values to the red channel
 
 
-## on  
-**Bool**  
+<h2>on</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 enables/disables all color correct operations
 
 
-## use_per_channel_gain_offset  
-**Bool**  
+<h2>use_per_channel_gain_offset</h2>
+<b>Bool</b>  
 
 Default value : False  
 

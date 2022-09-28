@@ -16,16 +16,16 @@ title: ConstantDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## invert_mask  
-**Bool**  
+<h2>invert_mask</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 invert value of mask
 
 
-## mix  
-**Float**  
+<h2>mix</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
@@ -38,16 +38,16 @@ blend between output and input
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## color  
-**Rgb**  
+<h2>color</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 fill color value
 
 
-## mask  
-**67141632**  
+<h2>mask</h2>
+<b>67141632</b>  
 
 Default value : None  
 

@@ -16,8 +16,8 @@ title: ProjectPlanarNormalMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## TRS_order  
-**Int**  *enum*
+<h2>TRS_order</h2>
+<b>Int</b>  *enum*
 
 - Scale Rot Trans = 0 (default)
 
@@ -35,8 +35,8 @@ title: ProjectPlanarNormalMap
 Order in which to apply transformations
 
 
-## normal_encoding  
-**Int**  *enum*
+<h2>normal_encoding</h2>
+<b>Int</b>  *enum*
 
 - [0,1] = 0 (default)
 
@@ -46,16 +46,16 @@ Order in which to apply transformations
 Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]
 
 
-## projection_matrix  
-**Mat4d**  
+<h2>projection_matrix</h2>
+<b>Mat4d</b>  
 
 Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 the transform to use for projection
 
 
-## projection_mode  
-**Int**  *enum*
+<h2>projection_mode</h2>
+<b>Int</b>  *enum*
 
 - projector = 0 (default)
 
@@ -67,24 +67,24 @@ the transform to use for projection
 Source parameters to use for projection transform
 
 
-## projector  
-**Node**  
+<h2>projector</h2>
+<b>Node</b>  
 
 Default value : None  
 
 the object whose transform to use for projection
 
 
-## rotate  
-**Vec3d**  
+<h2>rotate</h2>
+<b>Vec3d</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 Rotation of the projection transform
 
 
-## rotation_order  
-**Int**  *enum*
+<h2>rotation_order</h2>
+<b>Int</b>  *enum*
 
 - xyz = 0 (default)
 
@@ -102,40 +102,40 @@ Rotation of the projection transform
 Order in which to apply rotation transformations
 
 
-## scale  
-**Vec3d**  
+<h2>scale</h2>
+<b>Vec3d</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 Scale of the projection transform
 
 
-## texture  
-**String**  *filename*
+<h2>texture</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## translate  
-**Vec3d**  
+<h2>translate</h2>
+<b>Vec3d</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 Tranlation of the projection transform
 
 
-## use_reference_space  
-**Bool**  
+<h2>use_reference_space</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 use reference space
 
 
-## wrap_around  
-**Bool**  
+<h2>wrap_around</h2>
+<b>Bool</b>  
 
 Default value : True  
 

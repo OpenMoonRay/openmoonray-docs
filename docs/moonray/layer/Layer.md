@@ -16,72 +16,72 @@ title: Layer
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## displacements  
-**Displacement Vector**  
+<h2>displacements</h2>
+<b>Displacement Vector</b>  
 
 Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>displacements</b> needs to be written</p>
 
 
-## geometries  
-**SceneObjectIndexable**  
+<h2>geometries</h2>
+<b>SceneObjectIndexable</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>geometries</b> needs to be written</p>
 
 
-## lightfiltersets  
-**Lightfilterset Vector**  
+<h2>lightfiltersets</h2>
+<b>Lightfilterset Vector</b>  
 
 Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lightfiltersets</b> needs to be written</p>
 
 
-## lightsets  
-**Lightset Vector**  
+<h2>lightsets</h2>
+<b>Lightset Vector</b>  
 
 Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>lightsets</b> needs to be written</p>
 
 
-## parts  
-**StringVector**  
+<h2>parts</h2>
+<b>StringVector</b>  
 
 Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>parts</b> needs to be written</p>
 
 
-## shadowreceiversets  
-**134217728 Vector**  
+<h2>shadowreceiversets</h2>
+<b>134217728 Vector</b>  
 
 Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>shadowreceiversets</b> needs to be written</p>
 
 
-## shadowsets  
-**16777216 Vector**  
+<h2>shadowsets</h2>
+<b>16777216 Vector</b>  
 
 Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>shadowsets</b> needs to be written</p>
 
 
-## surface_shaders  
-**Material Vector**  
+<h2>surface_shaders</h2>
+<b>Material Vector</b>  
 
 Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>surface_shaders</b> needs to be written</p>
 
 
-## volume_shaders  
-**Volumeshader Vector**  
+<h2>volume_shaders</h2>
+<b>Volumeshader Vector</b>  
 
 Default value : []  
 

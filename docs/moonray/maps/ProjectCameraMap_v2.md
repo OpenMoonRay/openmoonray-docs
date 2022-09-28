@@ -16,16 +16,16 @@ title: ProjectCameraMap_v2
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## alpha_only  
-**Bool**  
+<h2>alpha_only</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 When enabled, the alpha channel is returned instead of RGB
 
 
-## aspect_ratio_source  
-**Int**  *enum*
+<h2>aspect_ratio_source</h2>
+<b>Int</b>  *enum*
 
 - from texture = 0 (default)
 
@@ -35,24 +35,24 @@ When enabled, the alpha channel is returned instead of RGB
 Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio
 
 
-## black_outside_projection  
-**Bool**  
+<h2>black_outside_projection</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Toggles whether projections appear outside the 0-1 uv range of the projector
 
 
-## custom_aspect_ratio  
-**Float**  
+<h2>custom_aspect_ratio</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 a custom aspect ratio for the projected texture
 
 
-## gamma  
-**Int**  *enum*
+<h2>gamma</h2>
+<b>Int</b>  *enum*
 
 - off = 0
 
@@ -64,40 +64,40 @@ a custom aspect ratio for the projected texture
 Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images
 
 
-## project_on_back_faces  
-**Bool**  
+<h2>project_on_back_faces</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Toggles whether camera projections appear on back faces.
 
 
-## projector  
-**Camera**  
+<h2>projector</h2>
+<b>Camera</b>  
 
 Default value : None  
 
 the camera to project from
 
 
-## texture  
-**String**  *filename*
+<h2>texture</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## unpremultiply  
-**Bool**  
+<h2>unpremultiply</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 When enabled, the rgb channels are divided by the alpha channel (where non-zero)
 
 
-## use_reference_space  
-**Bool**  
+<h2>use_reference_space</h2>
+<b>Bool</b>  
 
 Default value : False  
 

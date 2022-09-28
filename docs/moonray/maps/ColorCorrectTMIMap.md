@@ -16,32 +16,32 @@ title: ColorCorrectTMIMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## TMI  
-**Rgb**  *bindable*
+<h2>TMI</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy 
 
 
-## input  
-**Rgb**  *bindable*
+<h2>input</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 bind the input here
 
 
-## mix  
-**Float**  *bindable*
+<h2>mix</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 how much of the overall color correct to mix in
 
 
-## on  
-**Bool**  
+<h2>on</h2>
+<b>Bool</b>  
 
 Default value : True  
 

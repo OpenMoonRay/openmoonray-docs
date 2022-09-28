@@ -16,72 +16,72 @@ title: RaySwitchMaterial
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## camera_ray_material  
-**Material**  
+<h2>camera_ray_material</h2>
+<b>Material</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>camera_ray_material</b> needs to be written</p>
 
 
-## cutout_camera_rays  
-**Bool**  
+<h2>cutout_camera_rays</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>cutout_camera_rays</b> needs to be written</p>
 
 
-## default_material  
-**Material**  
+<h2>default_material</h2>
+<b>Material</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>default_material</b> needs to be written</p>
 
 
-## extra_aovs  
-**Map**  
+<h2>extra_aovs</h2>
+<b>Map</b>  
 
 Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## indirect_diffuse_ray_material  
-**Material**  
+<h2>indirect_diffuse_ray_material</h2>
+<b>Material</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_diffuse_ray_material</b> needs to be written</p>
 
 
-## indirect_glossy_ray_material  
-**Material**  
+<h2>indirect_glossy_ray_material</h2>
+<b>Material</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_glossy_ray_material</b> needs to be written</p>
 
 
-## indirect_mirror_ray_material  
-**Material**  
+<h2>indirect_mirror_ray_material</h2>
+<b>Material</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_mirror_ray_material</b> needs to be written</p>
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in material and light aovs
 
 
-## priority  
-**Int**  
+<h2>priority</h2>
+<b>Int</b>  
 
 Default value : 0  
 

@@ -16,16 +16,16 @@ title: DomeMaster3DCamera
 <details open>
 <summary class="scene-class-attr-group">Frustum attributes</summary>
 
-## far  
-**Float**  
+<h2>far</h2>
+<b>Float</b>  
 
 Default value : 10000.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>far</b> needs to be written</p>
 
 
-## near  
-**Float**  
+<h2>near</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
@@ -38,24 +38,24 @@ Default value : 1.0
 <details open>
 <summary class="scene-class-attr-group">Motion Blur attributes</summary>
 
-## mb_shutter_bias  
-**Float**  
+<h2>mb_shutter_bias</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
 
 
-## mb_shutter_close  
-**Float**  
+<h2>mb_shutter_close</h2>
+<b>Float</b>  
 
 Default value : 0.25  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
 
 
-## mb_shutter_open  
-**Float**  
+<h2>mb_shutter_open</h2>
+<b>Float</b>  
 
 Default value : -0.25  
 
@@ -68,8 +68,8 @@ Default value : -0.25
 <details open>
 <summary class="scene-class-attr-group">Render Masks attributes</summary>
 
-## pixel_sample_map  
-**String**  
+<h2>pixel_sample_map</h2>
+<b>String</b>  
 
 Default value :   
 
@@ -82,40 +82,40 @@ Default value :
 <details open>
 <summary class="scene-class-attr-group">Stereo attributes</summary>
 
-## head_tilt_map  
-**Float**  
+<h2>head_tilt_map</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>head_tilt_map</b> needs to be written</p>
 
 
-## interocular_distance_map_file_name  
-**String**  *filename*
+<h2>interocular_distance_map_file_name</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>interocular_distance_map_file_name</b> needs to be written</p>
 
 
-## stereo_convergence_distance  
-**Float**  
+<h2>stereo_convergence_distance</h2>
+<b>Float</b>  
 
 Default value : 360.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_convergence_distance</b> needs to be written</p>
 
 
-## stereo_interocular_distance  
-**Float**  
+<h2>stereo_interocular_distance</h2>
+<b>Float</b>  
 
 Default value : 6.5  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_interocular_distance</b> needs to be written</p>
 
 
-## stereo_view  
-**Int**  *enum*
+<h2>stereo_view</h2>
+<b>Int</b>  *enum*
 
 - center view = 0 (default)
 
@@ -127,8 +127,8 @@ Default value : 6.5
 <p class="scene-class-attr-missing">Documentation for the attribute <b>stereo_view</b> needs to be written</p>
 
 
-## zenith_mode  
-**Bool**  
+<h2>zenith_mode</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -141,40 +141,40 @@ Default value : False
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## FOV_horizontal_angle  
-**Float**  
+<h2>FOV_horizontal_angle</h2>
+<b>Float</b>  
 
 Default value : 60.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>FOV_horizontal_angle</b> needs to be written</p>
 
 
-## FOV_vertical_angle  
-**Float**  
+<h2>FOV_vertical_angle</h2>
+<b>Float</b>  
 
 Default value : 30.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>FOV_vertical_angle</b> needs to be written</p>
 
 
-## flip_ray_x  
-**Bool**  
+<h2>flip_ray_x</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>flip_ray_x</b> needs to be written</p>
 
 
-## flip_ray_y  
-**Bool**  
+<h2>flip_ray_y</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>flip_ray_y</b> needs to be written</p>
 
 
-## node_xform  
-**Mat4d**  *blurrable*
+<h2>node_xform</h2>
+<b>Mat4d</b>  *blurrable*
 
 Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 

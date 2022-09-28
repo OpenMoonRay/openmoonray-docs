@@ -16,8 +16,8 @@ title: DwaEmissiveMaterial
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
 
-## presence  
-**Float**  *bindable*
+<h2>presence</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -30,16 +30,16 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
 
-## emission  
-**Rgb**  *bindable*
+<h2>emission</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the energy emitted from this material
 
 
-## show_emission  
-**Bool**  
+<h2>show_emission</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -52,24 +52,24 @@ enables/disable emission
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## extra_aovs  
-**Map**  
+<h2>extra_aovs</h2>
+<b>Map</b>  
 
 Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in material and light aovs
 
 
-## priority  
-**Int**  
+<h2>priority</h2>
+<b>Int</b>  
 
 Default value : 0  
 

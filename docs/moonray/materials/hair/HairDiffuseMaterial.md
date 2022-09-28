@@ -16,32 +16,32 @@ title: HairDiffuseMaterial
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## back_hair_color  
-**Rgb**  *bindable*
+<h2>back_hair_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 (advanced only) hair color used for back-lit hair (transmission/forward reflectance)
 
 
-## front_hair_color  
-**Rgb**  *bindable*
+<h2>front_hair_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 (advanced only) hair color used for front-lit hair (backward reflectance)
 
 
-## sss_trace_set  
-**Traceset**  
+<h2>sss_trace_set</h2>
+<b>Traceset</b>  
 
 Default value : None  
 
 Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.
 
 
-## use_independent_front_and_back_hair_color  
-**Bool**  
+<h2>use_independent_front_and_back_hair_color</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -54,16 +54,16 @@ Default value : False
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
 
-## casts_caustics  
-**Bool**  
+<h2>casts_caustics</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 allows continuation of caustic light paths.
 
 
-## presence  
-**Float**  *bindable*
+<h2>presence</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -76,16 +76,16 @@ controls the visibility of this object. Useful for fading an object in/out, or t
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
 
-## emission  
-**Rgb**  *bindable*
+<h2>emission</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the energy emitted from this material
 
 
-## show_emission  
-**Bool**  
+<h2>show_emission</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -98,8 +98,8 @@ enables/disable emission
 <details open>
 <summary class="scene-class-attr-group">Subsurface attributes</summary>
 
-## bssrdf  
-**Int**  *enum*
+<h2>bssrdf</h2>
+<b>Int</b>  *enum*
 
 - normalized diffusion = 0 (default)
 
@@ -109,48 +109,48 @@ enables/disable emission
 0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.
 
 
-## enable_sss_input_normal  
-**Bool**  
+<h2>enable_sss_input_normal</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 enables sampling the normal map for sss samples. More accurate but potentially expensive
 
 
-## input_normal  
-**33554432**  
+<h2>input_normal</h2>
+<b>33554432</b>  
 
 Default value : None  
 
 specifies an alternate shading normal (only for SSS lobe)
 
 
-## input_normal_dial  
-**Float**  *bindable*
+<h2>input_normal_dial</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 controls influence of input normal versus hair normal for SSS
 
 
-## scattering_color  
-**Rgb**  *bindable*
+<h2>scattering_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the subsurface scattering 'falloff' color
 
 
-## scattering_radius  
-**Float**  *bindable*
+<h2>scattering_radius</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 the distance the light scatters beneath the surface.  When 0 surface diffuse is used
 
 
-## subsurface_blend  
-**Float**  *bindable*
+<h2>subsurface_blend</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -163,32 +163,32 @@ Default value : 1.0
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## extra_aovs  
-**Map**  
+<h2>extra_aovs</h2>
+<b>Map</b>  
 
 Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## hair_color  
-**Rgb**  *bindable*
+<h2>hair_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>hair_color</b> needs to be written</p>
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in material and light aovs
 
 
-## priority  
-**Int**  
+<h2>priority</h2>
+<b>Int</b>  
 
 Default value : 0  
 

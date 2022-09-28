@@ -16,56 +16,56 @@ title: CookieLightFilter
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-## blur_far_distance  
-**Float**  
+<h2>blur_far_distance</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>blur_far_distance</b> needs to be written</p>
 
 
-## blur_far_value  
-**Float**  
+<h2>blur_far_value</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>blur_far_value</b> needs to be written</p>
 
 
-## blur_mid_value  
-**Float**  
+<h2>blur_mid_value</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>blur_mid_value</b> needs to be written</p>
 
 
-## blur_midpoint  
-**Float**  
+<h2>blur_midpoint</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>blur_midpoint</b> needs to be written</p>
 
 
-## blur_near_distance  
-**Float**  
+<h2>blur_near_distance</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>blur_near_distance</b> needs to be written</p>
 
 
-## blur_near_value  
-**Float**  
+<h2>blur_near_value</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>blur_near_value</b> needs to be written</p>
 
 
-## blur_type  
-**Int**  *enum*
+<h2>blur_type</h2>
+<b>Int</b>  *enum*
 
 - gaussian = 0 (default)
 
@@ -75,24 +75,24 @@ Default value : 0.0
 <p class="scene-class-attr-missing">Documentation for the attribute <b>blur_type</b> needs to be written</p>
 
 
-## density  
-**Float**  
+<h2>density</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>density</b> needs to be written</p>
 
 
-## invert  
-**Bool**  
+<h2>invert</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>invert</b> needs to be written</p>
 
 
-## outside_projection  
-**Int**  *enum*
+<h2>outside_projection</h2>
+<b>Int</b>  *enum*
 
 - black = 0 (default)
 
@@ -104,16 +104,16 @@ Default value : False
 <p class="scene-class-attr-missing">Documentation for the attribute <b>outside_projection</b> needs to be written</p>
 
 
-## projector  
-**Camera**  
+<h2>projector</h2>
+<b>Camera</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>projector</b> needs to be written</p>
 
 
-## texture_map  
-**Map**  
+<h2>texture_map</h2>
+<b>Map</b>  
 
 Default value : None  
 
@@ -126,48 +126,48 @@ Default value : None
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## node_xform  
-**Mat4d**  *blurrable*
+<h2>node_xform</h2>
+<b>Mat4d</b>  *blurrable*
 
 Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
-## on  
-**Bool**  
+<h2>on</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
-## projector_film_width_aperture  
-**Float**  
+<h2>projector_film_width_aperture</h2>
+<b>Float</b>  
 
 Default value : 24.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>projector_film_width_aperture</b> needs to be written</p>
 
 
-## projector_focal  
-**Float**  
+<h2>projector_focal</h2>
+<b>Float</b>  
 
 Default value : 30.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>projector_focal</b> needs to be written</p>
 
 
-## projector_pixel_aspect_ratio  
-**Float**  
+<h2>projector_pixel_aspect_ratio</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>projector_pixel_aspect_ratio</b> needs to be written</p>
 
 
-## projector_type  
-**Int**  *enum*
+<h2>projector_type</h2>
+<b>Int</b>  *enum*
 
 - perspective = 0 (default)
 

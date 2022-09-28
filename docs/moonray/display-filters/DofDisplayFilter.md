@@ -16,16 +16,16 @@ title: DofDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## invert_mask  
-**Bool**  
+<h2>invert_mask</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 invert value of mask
 
 
-## mix  
-**Float**  
+<h2>mix</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
@@ -38,56 +38,56 @@ blend between output and input
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## aperture  
-**Float**  
+<h2>aperture</h2>
+<b>Float</b>  
 
 Default value : 8.0  
 
 aperture in millimeters
 
 
-## depth  
-**67141632**  
+<h2>depth</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 the 'depth' result RenderOutput to sample z depth values from
 
 
-## focal_length  
-**Float**  
+<h2>focal_length</h2>
+<b>Float</b>  
 
 Default value : 30.0  
 
 focal length in millimeters
 
 
-## focus_distance  
-**Float**  
+<h2>focus_distance</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>focus_distance</b> needs to be written</p>
 
 
-## input  
-**67141632**  
+<h2>input</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 RenderOutput to apply depth of field
 
 
-## mask  
-**67141632**  
+<h2>mask</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mask</b> needs to be written</p>
 
 
-## use_camera_attributes  
-**Bool**  
+<h2>use_camera_attributes</h2>
+<b>Bool</b>  
 
 Default value : True  
 

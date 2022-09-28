@@ -16,24 +16,24 @@ title: VectorDisplacement
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## bound_padding  
-**Float**  
+<h2>bound_padding</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.
 
 
-## factor  
-**Float**  
+<h2>factor</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>factor</b> needs to be written</p>
 
 
-## source_space  
-**Int**  *enum*
+<h2>source_space</h2>
+<b>Int</b>  *enum*
 
 - tangent = 0 (default)
 
@@ -43,8 +43,8 @@ Default value : 1.0
 The space that the map bound to the vector parameter is in
 
 
-## tangent_space_style  
-**Int**  *enum*
+<h2>tangent_space_style</h2>
+<b>Int</b>  *enum*
 
 - tnb = 0 (default)
 
@@ -54,8 +54,8 @@ The space that the map bound to the vector parameter is in
 Controls how RGB maps to Tangent, Normal, and Bi-Normal
 
 
-## vector  
-**Vec3f**  *bindable*
+<h2>vector</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 

@@ -16,16 +16,16 @@ title: CutoutVolume
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## bake_divisions  
-**Int**  
+<h2>bake_divisions</h2>
+<b>Int</b>  
 
 Default value : 100  
 
 Divide widest axis by this many divisions
 
 
-## bake_resolution_mode  
-**Int**  *enum*
+<h2>bake_resolution_mode</h2>
+<b>Int</b>  *enum*
 
 - default = 0 (default)
 
@@ -43,32 +43,32 @@ Toggle method to specify grid resolution of baked density grid.
 		voxel size: specify voxel size.
 
 
-## bake_voxel_size  
-**Float**  
+<h2>bake_voxel_size</h2>
+<b>Float</b>  
 
 Default value : 10.0  
 
 Size of voxel in world space
 
 
-## indirect_volume  
-**Volumeshader**  
+<h2>indirect_volume</h2>
+<b>Volumeshader</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>indirect_volume</b> needs to be written</p>
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in light aovs
 
 
-## surface_opacity_threshold  
-**Float**  
+<h2>surface_opacity_threshold</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 

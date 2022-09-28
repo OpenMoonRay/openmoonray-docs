@@ -16,24 +16,24 @@ title: ExtraAovMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## color  
-**Rgb**  *bindable*
+<h2>color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 Bind the root of a map shader network that you want evaluated as an extra aov
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 Sets the LPE label that is used for the extra aov
 
 
-## post_scatter  
-**Bool**  
+<h2>post_scatter</h2>
+<b>Bool</b>  
 
 Default value : False  
 

@@ -16,16 +16,16 @@ title: BakeCamera
 <details open>
 <summary class="scene-class-attr-group">Frustum attributes</summary>
 
-## far  
-**Float**  
+<h2>far</h2>
+<b>Float</b>  
 
 Default value : 10000.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>far</b> needs to be written</p>
 
 
-## near  
-**Float**  
+<h2>near</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
@@ -38,24 +38,24 @@ Default value : 1.0
 <details open>
 <summary class="scene-class-attr-group">Motion Blur attributes</summary>
 
-## mb_shutter_bias  
-**Float**  
+<h2>mb_shutter_bias</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
 
 
-## mb_shutter_close  
-**Float**  
+<h2>mb_shutter_close</h2>
+<b>Float</b>  
 
 Default value : 0.25  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
 
 
-## mb_shutter_open  
-**Float**  
+<h2>mb_shutter_open</h2>
+<b>Float</b>  
 
 Default value : -0.25  
 
@@ -68,8 +68,8 @@ Default value : -0.25
 <details open>
 <summary class="scene-class-attr-group">Render Masks attributes</summary>
 
-## pixel_sample_map  
-**String**  
+<h2>pixel_sample_map</h2>
+<b>String</b>  
 
 Default value :   
 
@@ -82,32 +82,32 @@ Default value :
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## bias  
-**Float**  
+<h2>bias</h2>
+<b>Float</b>  
 
 Default value : 0.00300000002608  
 
 Ray-tracing offset for primary ray origin
 
 
-## geometry  
-**Geometry**  
+<h2>geometry</h2>
+<b>Geometry</b>  
 
 Default value : None  
 
 The geometry object to bake
 
 
-## map_factor  
-**Float**  
+<h2>map_factor</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 Increase or decrease the internal position map buffer resolution
 
 
-## mode  
-**Int**  *enum*
+<h2>mode</h2>
+<b>Int</b>  *enum*
 
 - from camera to surface = 0
 
@@ -121,24 +121,24 @@ Increase or decrease the internal position map buffer resolution
 How to generate primary rays
 
 
-## node_xform  
-**Mat4d**  *blurrable*
+<h2>node_xform</h2>
+<b>Mat4d</b>  *blurrable*
 
 Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>node_xform</b> needs to be written</p>
 
 
-## normal_map  
-**String**  *filename*
+<h2>normal_map</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 Use this option to supply your own normals that are used when computing ray directions.  Without this option, normals are computed from the geometry and do not take into account any material applied normal mapping.
 
 
-## normal_map_space  
-**Int**  *enum*
+<h2>normal_map_space</h2>
+<b>Int</b>  *enum*
 
 - camera space = 0 (default)
 
@@ -148,24 +148,24 @@ Use this option to supply your own normals that are used when computing ray dire
 Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.
 
 
-## udim  
-**Int**  
+<h2>udim</h2>
+<b>Int</b>  
 
 Default value : 1001  
 
 Udim tile to bake
 
 
-## use_relative_bias  
-**Bool**  
+<h2>use_relative_bias</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 If true, bias is scaled based on position magnitude
 
 
-## uv_attribute  
-**String**  
+<h2>uv_attribute</h2>
+<b>String</b>  
 
 Default value :   
 

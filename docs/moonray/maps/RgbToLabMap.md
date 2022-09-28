@@ -16,8 +16,8 @@ title: RgbToLabMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## input_color  
-**Rgb**  *bindable*
+<h2>input_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 

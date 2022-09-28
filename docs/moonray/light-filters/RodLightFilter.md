@@ -16,104 +16,104 @@ title: RodLightFilter
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-## color  
-**Rgb**  
+<h2>color</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 filter color. Scales the light within the volume. For each color channel, 0=full shadow, 1=no shadow
 
 
-## density  
-**Float**  
+<h2>density</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 fades the filter effect. 0=no effect (like having no filter), 1=full effect
 
 
-## depth  
-**Float**  
+<h2>depth</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 depth of the base box (before radius and edge)
 
 
-## edge  
-**Float**  
+<h2>edge</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 size of transition zone from the rounded box to the outside
 
 
-## height  
-**Float**  
+<h2>height</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 height of the base box (before radius and edge)
 
 
-## intensity  
-**Float**  
+<h2>intensity</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 scalar for multiplying the color. 0=black 1=color
 
 
-## invert  
-**Bool**  
+<h2>invert</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 swap application of filter from inside the volume to outside
 
 
-## node_xform  
-**Mat4d**  *blurrable*
+<h2>node_xform</h2>
+<b>Mat4d</b>  *blurrable*
 
 Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 transform of the filter
 
 
-## radius  
-**Float**  
+<h2>radius</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 radius by which to expand the base box into a rounded box
 
 
-## ramp_in_distances  
-**FloatVector**  
+<h2>ramp_in_distances</h2>
+<b>FloatVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 input distance for ramp control
 
 
-## ramp_interpolation_types  
-**IntVector**  
+<h2>ramp_interpolation_types</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 interpolation types for ramp control
 
 
-## ramp_out_distances  
-**FloatVector**  
+<h2>ramp_out_distances</h2>
+<b>FloatVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
 remapped distances for ramp control
 
 
-## width  
-**Float**  
+<h2>width</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
@@ -126,8 +126,8 @@ width of the base box (before radius and edge)
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## on  
-**Bool**  
+<h2>on</h2>
+<b>Bool</b>  
 
 Default value : True  
 

@@ -16,16 +16,16 @@ title: LcToRgbMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## input_color  
-**Rgb**  *bindable*
+<h2>input_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_color</b> needs to be written</p>
 
 
-## target_color  
-**Rgb**  *bindable*
+<h2>target_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 100, 0, 0 ]  
 

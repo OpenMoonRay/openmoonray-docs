@@ -16,40 +16,40 @@ title: UsdUVTexture
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## bias  
-**Rgb**  
+<h2>bias</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 Bias to be applied to all components of the texture.  output = textureValue * scale + bias
 
 
-## fallback  
-**Rgb**  
+<h2>fallback</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 Fallback value used when texture can not be read.
 
 
-## file  
-**String**  *filename*
+<h2>file</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 Path to the texture
 
 
-## scale  
-**Rgb**  
+<h2>scale</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 Scale to be applied to all components of the texture.  output = textureValue * scale + bias
 
 
-## sourceColorSpace  
-**Int**  *enum*
+<h2>sourceColorSpace</h2>
+<b>Int</b>  *enum*
 
 - raw = 0
 
@@ -61,40 +61,40 @@ Scale to be applied to all components of the texture.  output = textureValue * s
 Flag indicating the color space in which the source texture is encoded.
 
 
-## st  
-**Vec2f**  *bindable*
+<h2>st</h2>
+<b>Vec2f</b>  *bindable*
 
 Default value : [ 1, 1 ]  
 
 Texture coordinate to use to fetch this texture.
 
 
-## udim_files  
-**StringVector**  
+<h2>udim_files</h2>
+<b>StringVector</b>  
 
 Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>udim_files</b> needs to be written</p>
 
 
-## udim_max_v  
-**Int**  
+<h2>udim_max_v</h2>
+<b>Int</b>  
 
 Default value : 10  
 
 udim maximum v value
 
 
-## udim_values  
-**IntVector**  
+<h2>udim_values</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>udim_values</b> needs to be written</p>
 
 
-## wrapS  
-**Int**  *enum*
+<h2>wrapS</h2>
+<b>Int</b>  *enum*
 
 - black = 0
 
@@ -110,8 +110,8 @@ Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >
 Wrap mode when reading this texture.
 
 
-## wrapT  
-**Int**  *enum*
+<h2>wrapT</h2>
+<b>Int</b>  *enum*
 
 - black = 0
 

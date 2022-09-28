@@ -16,8 +16,8 @@ title: LightFilterSet
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## lightfilters  
-**Lightfilter Vector**  
+<h2>lightfilters</h2>
+<b>Lightfilter Vector</b>  
 
 Default value : []  
 

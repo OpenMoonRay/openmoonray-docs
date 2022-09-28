@@ -16,120 +16,120 @@ title: DistantLight
 <details open>
 <summary class="scene-class-attr-group">Map attributes</summary>
 
-## contrast  
-**Rgb**  
+<h2>contrast</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>contrast</b> needs to be written</p>
 
 
-## gain  
-**Rgb**  
+<h2>gain</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>gain</b> needs to be written</p>
 
 
-## gamma  
-**Rgb**  
+<h2>gamma</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>gamma</b> needs to be written</p>
 
 
-## offset  
-**Rgb**  
+<h2>offset</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>offset</b> needs to be written</p>
 
 
-## saturation  
-**Rgb**  
+<h2>saturation</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>saturation</b> needs to be written</p>
 
 
-## temperature  
-**Vec3f**  
+<h2>temperature</h2>
+<b>Vec3f</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 color temperature using Nuke-like T/M/E settings
 
 
-## texture  
-**String**  *filename*
+<h2>texture</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture (formats: .exr, .tif, .jpg, etc.)
 
 
-## texture_border_color  
-**Rgb**  
+<h2>texture_border_color</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 RGB value used when a texture lookup occurs outside the texture
 
 
-## texture_coverage  
-**Vec2f**  
+<h2>texture_coverage</h2>
+<b>Vec2f</b>  
 
 Default value : [ 1, 1 ]  
 
 Scales in (u,v)
 
 
-## texture_mirror_u  
-**Bool**  
+<h2>texture_mirror_u</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 true => mirror in u, false => repeat in u
 
 
-## texture_mirror_v  
-**Bool**  
+<h2>texture_mirror_v</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 true => mirror in v, false => repeat in v
 
 
-## texture_reps_u  
-**Float**  
+<h2>texture_reps_u</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 Number of times texture repeats in u over the scaled texture space
 
 
-## texture_reps_v  
-**Float**  
+<h2>texture_reps_v</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 Number of times texture repeats in v over the scaled texture space
 
 
-## texture_rotation  
-**Float**  
+<h2>texture_rotation</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 Clockwise rotation angle in degrees
 
 
-## texture_translation  
-**Vec2f**  
+<h2>texture_translation</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
@@ -142,80 +142,80 @@ Translations in (u,v) expressed as fractions of the unscaled texture space
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-## angular_extent  
-**Float**  
+<h2>angular_extent</h2>
+<b>Float</b>  
 
 Default value : 0.52999997139  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>angular_extent</b> needs to be written</p>
 
 
-## color  
-**Rgb**  
+<h2>color</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>color</b> needs to be written</p>
 
 
-## exposure  
-**Float**  
+<h2>exposure</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>exposure</b> needs to be written</p>
 
 
-## intensity  
-**Float**  
+<h2>intensity</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>intensity</b> needs to be written</p>
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in light aov expressions
 
 
-## max_shadow_distance  
-**Float**  
+<h2>max_shadow_distance</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>max_shadow_distance</b> needs to be written</p>
 
 
-## mb  
-**Bool**  
+<h2>mb</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Does light motion affect motion-blur?
 
 
-## normalized  
-**Bool**  
+<h2>normalized</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>normalized</b> needs to be written</p>
 
 
-## on  
-**Bool**  
+<h2>on</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>on</b> needs to be written</p>
 
 
-## presence_shadows  
-**Int**  *enum*
+<h2>presence_shadows</h2>
+<b>Int</b>  *enum*
 
 - force off = 0
 
@@ -227,16 +227,16 @@ Default value : True
 <p class="scene-class-attr-missing">Documentation for the attribute <b>presence_shadows</b> needs to be written</p>
 
 
-## ray_termination  
-**Bool**  
+<h2>ray_termination</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.
 
 
-## texture_filter  
-**Int**  *enum*
+<h2>texture_filter</h2>
+<b>Int</b>  *enum*
 
 - nearest neighbor = 0 (default)
 
@@ -250,8 +250,8 @@ Is light used for ray termination color? Ray termination color is used for filli
 <p class="scene-class-attr-missing">Documentation for the attribute <b>texture_filter</b> needs to be written</p>
 
 
-## visible_in_camera  
-**Int**  *enum*
+<h2>visible_in_camera</h2>
+<b>Int</b>  *enum*
 
 - force off = 0
 
@@ -269,48 +269,48 @@ Is light used for ray termination color? Ray termination color is used for filli
 <details open>
 <summary class="scene-class-attr-group">Visibility Flags attributes</summary>
 
-## visible_diffuse_reflection  
-**Bool**  
+<h2>visible_diffuse_reflection</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 whether the light is visible in diffuse reflection
 
 
-## visible_diffuse_transmission  
-**Bool**  
+<h2>visible_diffuse_transmission</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 whether the light is visible in diffuse transmission
 
 
-## visible_glossy_reflection  
-**Bool**  
+<h2>visible_glossy_reflection</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 whether the light is visible in glossy reflection.
 
 
-## visible_glossy_transmission  
-**Bool**  
+<h2>visible_glossy_transmission</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 whether the light is visible in glossy transmission (refraction).
 
 
-## visible_mirror_reflection  
-**Bool**  
+<h2>visible_mirror_reflection</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 whether the light is visible in miror reflection.
 
 
-## visible_mirror_transmission  
-**Bool**  
+<h2>visible_mirror_transmission</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -323,16 +323,16 @@ whether the light is visible in miror transmission (refraction).
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## light_filters  
-**Object Vector**  
+<h2>light_filters</h2>
+<b>Object Vector</b>  
 
 Default value : []  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>light_filters</b> needs to be written</p>
 
 
-## node_xform  
-**Mat4d**  *blurrable*
+<h2>node_xform</h2>
+<b>Mat4d</b>  *blurrable*
 
 Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 

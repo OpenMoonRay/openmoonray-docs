@@ -16,24 +16,24 @@ title: DwaVelvetMaterial_v2
 <details open>
 <summary class="scene-class-attr-group">Common attributes</summary>
 
-## casts_caustics  
-**Bool**  
+<h2>casts_caustics</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 allows continuation of caustic light paths.
 
 
-## presence  
-**Float**  *bindable*
+<h2>presence</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).
 
 
-## thin_geometry  
-**Bool**  
+<h2>thin_geometry</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -46,32 +46,32 @@ enables proper shading of infinitely thin geometry such as paper or leaves.
 <details open>
 <summary class="scene-class-attr-group">Diffuse attributes</summary>
 
-## albedo  
-**Rgb**  *bindable*
+<h2>albedo</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the overall surface color as seen from a distance (ie. diffuse color)
 
 
-## diffuse_roughness  
-**Float**  *bindable*
+<h2>diffuse_roughness</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 Roughness of the diffuse shading.  If the value is zero a Lambertian model is used.  If it's above zero the Oren Nayar model is used.   Not compatible with subsurface scattering.
 
 
-## diffuse_transmission  
-**Float**  *bindable*
+<h2>diffuse_transmission</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 multiplier on the amount of light that is transmitted through the surface.
 
 
-## diffuse_transmission_blending_behavior  
-**Int**  *enum*
+<h2>diffuse_transmission_blending_behavior</h2>
+<b>Int</b>  *enum*
 
 - RGB = 0
 
@@ -81,16 +81,16 @@ multiplier on the amount of light that is transmitted through the surface.
 Controls how diffuse transmission color attenuates diffuse reflection
 
 
-## diffuse_transmission_color  
-**Rgb**  *bindable*
+<h2>diffuse_transmission_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 the color/amount of light that is transmitted through the surface.
 
 
-## show_diffuse  
-**Bool**  
+<h2>show_diffuse</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -103,16 +103,16 @@ enables/disables diffuse reflectance
 <details open>
 <summary class="scene-class-attr-group">Emission attributes</summary>
 
-## emission  
-**Rgb**  *bindable*
+<h2>emission</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the energy emitted from this material
 
 
-## show_emission  
-**Bool**  
+<h2>show_emission</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -125,56 +125,56 @@ enables/disable emission
 <details open>
 <summary class="scene-class-attr-group">Fuzz attributes</summary>
 
-## fuzz  
-**Float**  *bindable*
+<h2>fuzz</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 fuzz mask
 
 
-## fuzz_albedo  
-**Rgb**  *bindable*
+<h2>fuzz_albedo</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 Color of the fuzz highlights.
 
 
-## fuzz_coverage  
-**Float**  *bindable*
+<h2>fuzz_coverage</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.25  
 
 Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage
 
 
-## fuzz_normal  
-**33554432**  
+<h2>fuzz_normal</h2>
+<b>33554432</b>  
 
 Default value : None  
 
 specifies an independent shading normal (normal map) for the fuzz lobe
 
 
-## fuzz_normal_dial  
-**Float**  *bindable*
+<h2>fuzz_normal_dial</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 controls the amount of infuence of the alternate fuzz normal
 
 
-## show_fuzz  
-**Bool**  
+<h2>show_fuzz</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Enables/disables fuzz lobe
 
 
-## use_absorbing_fuzz_fibers  
-**Bool**  
+<h2>use_absorbing_fuzz_fibers</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -187,80 +187,80 @@ Specify whether dark fuzz fibers absorb energy or transmit it to the layers belo
 <details open>
 <summary class="scene-class-attr-group">Glitter attributes</summary>
 
-## glitter  
-**Float**  *bindable*
+<h2>glitter</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 enables/disables glitter model (binary 0|1 for plausibility)
 
 
-## glitter_LOD_quality  
-**Float**  
+<h2>glitter_LOD_quality</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier
 
 
-## glitter_approximate_for_secondary_rays  
-**Bool**  
+<h2>glitter_approximate_for_secondary_rays</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 use an approximation to shade glitter for non-mirror secondary rays
 
 
-## glitter_color_A  
-**Rgb**  *bindable*
+<h2>glitter_color_A</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 base flake color (use physical metallic color values)
 
 
-## glitter_color_B  
-**Rgb**  *bindable*
+<h2>glitter_color_B</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 base flake color (use physical metallic color values)
 
 
-## glitter_color_hue_variation  
-**Float**  *bindable*
+<h2>glitter_color_hue_variation</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 introduce hue variation in flake color centered at the base flake color's hue on the hue wheel
 
 
-## glitter_color_saturation_variation  
-**Float**  *bindable*
+<h2>glitter_color_saturation_variation</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 introduce saturation variation in flake color centered at the base flake color's saturation
 
 
-## glitter_color_value_variation  
-**Float**  *bindable*
+<h2>glitter_color_value_variation</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 introduce value variation in flake color centered at the base flake color's value
 
 
-## glitter_compensate_reference_space_deformation  
-**Bool**  
+<h2>glitter_compensate_reference_space_deformation</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 (In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc
 
 
-## glitter_debug_mode  
-**Int**  *enum*
+<h2>glitter_debug_mode</h2>
+<b>Int</b>  *enum*
 
 - off = 0 (default)
 
@@ -278,24 +278,24 @@ Default value : True
 developer debug visualization modes
 
 
-## glitter_density  
-**Float**  *bindable*
+<h2>glitter_density</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 controls the number of flakes per unit length; larger density packs more flakes into same space
 
 
-## glitter_jitter  
-**Float**  *bindable*
+<h2>glitter_jitter</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 Controls how much the flakes are randomly offset from a regular grid
 
 
-## glitter_layering_mode  
-**Int**  *enum*
+<h2>glitter_layering_mode</h2>
+<b>Int</b>  *enum*
 
 - physical = 0 (default)
 
@@ -305,56 +305,56 @@ Controls how much the flakes are randomly offset from a regular grid
 layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)
 
 
-## glitter_randomness  
-**Float**  
+<h2>glitter_randomness</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 randomness of flake orientation
 
 
-## glitter_roughness_A  
-**Float**  
+<h2>glitter_roughness_A</h2>
+<b>Float</b>  
 
 Default value : 0.140000000596  
 
 specular roughness of individual flakes (0 makes flakes mirror-like)
 
 
-## glitter_roughness_B  
-**Float**  
+<h2>glitter_roughness_B</h2>
+<b>Float</b>  
 
 Default value : 0.140000000596  
 
 specular roughness of individual flakes (0 makes flakes mirror-like)
 
 
-## glitter_seed  
-**Int**  
+<h2>glitter_seed</h2>
+<b>Int</b>  
 
 Default value : 0  
 
 The seed for the glitter random number generator
 
 
-## glitter_size_A  
-**Float**  *bindable*
+<h2>glitter_size_A</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface
 
 
-## glitter_size_B  
-**Float**  *bindable*
+<h2>glitter_size_B</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface
 
 
-## glitter_space  
-**Int**  *enum*
+<h2>glitter_space</h2>
+<b>Int</b>  *enum*
 
 - object = 4
 
@@ -364,48 +364,48 @@ size of the flakes.  Apparent flake size may vary based on how much the flake sp
 The space to calculate the worley noise in, defaults to reference space
 
 
-## glitter_style_A_frequency  
-**Float**  *bindable*
+<h2>glitter_style_A_frequency</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 0 implies none of this style, 1 implies all the flakes will get this style
 
 
-## glitter_style_B_frequency  
-**Float**  *bindable*
+<h2>glitter_style_B_frequency</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 0 implies none of this style, 1 implies all the flakes will get this style
 
 
-## glitter_texture_A  
-**String**  *filename*
+<h2>glitter_texture_A</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## glitter_texture_B  
-**String**  *filename*
+<h2>glitter_texture_B</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
 
 
-## glitter_texture_orientation_randomness  
-**Float**  
+<h2>glitter_texture_orientation_randomness</h2>
+<b>Float</b>  
 
 Default value : 0.15000000596  
 
 randomly orient each texture
 
 
-## show_glitter  
-**Bool**  
+<h2>show_glitter</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -418,16 +418,16 @@ Enables/disables glitter lobes
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
 
-## input_normal  
-**33554432**  
+<h2>input_normal</h2>
+<b>33554432</b>  
 
 Default value : None  
 
 specifies an alternate shading normal in the tangent frame (normal map)
 
 
-## input_normal_dial  
-**Float**  *bindable*
+<h2>input_normal_dial</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
@@ -440,24 +440,24 @@ controls the amount of influence of the alternate normal
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## extra_aovs  
-**Map**  
+<h2>extra_aovs</h2>
+<b>Map</b>  
 
 Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in material and light aovs
 
 
-## priority  
-**Int**  
+<h2>priority</h2>
+<b>Int</b>  
 
 Default value : 0  
 

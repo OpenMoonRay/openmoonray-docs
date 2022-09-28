@@ -16,32 +16,32 @@ title: RampMap
 <details open>
 <summary class="scene-class-attr-group">Additional properties attributes</summary>
 
-## input_texture_coordinates  
-**Vec3f**  *bindable*
+<h2>input_texture_coordinates</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 Bind custom UV coordinates
 
 
-## uv_repeat  
-**Vec2f**  
+<h2>uv_repeat</h2>
+<b>Vec2f</b>  
 
 Default value : [ 1, 1 ]  
 
 Number of times to repeat the ramp pattern
 
 
-## uv_wave  
-**Vec2f**  
+<h2>uv_wave</h2>
+<b>Vec2f</b>  
 
 Default value : [ 0, 0 ]  
 
 Creates waves which perturb the ramp pattern
 
 
-## wrap_type  
-**Int**  *enum*
+<h2>wrap_type</h2>
+<b>Int</b>  *enum*
 
 - wrap = 0 (default)
 
@@ -57,16 +57,16 @@ Creates waves which perturb the ramp pattern
 <details open>
 <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
 
-## colors  
-**RgbVector**  
+<h2>colors</h2>
+<b>RgbVector</b>  
 
 Default value : [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]  
 
 List of colors on the ramp
 
 
-## interpolations  
-**IntVector**  
+<h2>interpolations</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
@@ -75,8 +75,8 @@ None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
 			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6
 
 
-## positions  
-**FloatVector**  
+<h2>positions</h2>
+<b>FloatVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
@@ -89,16 +89,16 @@ Color ramp
 <details open>
 <summary class="scene-class-attr-group">Ramp properties attributes</summary>
 
-## camera  
-**Camera**  
+<h2>camera</h2>
+<b>Camera</b>  
 
 Default value : None  
 
 Camera used to define camera and screen space
 
 
-## color_space  
-**Int**  *enum*
+<h2>color_space</h2>
+<b>Int</b>  *enum*
 
 - rgb = 0 (default)
 
@@ -110,24 +110,24 @@ Camera used to define camera and screen space
 Color space to perform interpolation in
 
 
-## input  
-**Float**  *bindable*
+<h2>input</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 Input signal for ramp, used when ramp type is set to input
 
 
-## object  
-**Geometry**  
+<h2>object</h2>
+<b>Geometry</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>object</b> needs to be written</p>
 
 
-## ramp_type  
-**Int**  *enum*
+<h2>ramp_type</h2>
+<b>Int</b>  *enum*
 
 - v = 0 (default)
 
@@ -151,8 +151,8 @@ Default value : None
 <p class="scene-class-attr-missing">Documentation for the attribute <b>ramp_type</b> needs to be written</p>
 
 
-## space  
-**Int**  *enum*
+<h2>space</h2>
+<b>Int</b>  *enum*
 
 - render = 0 (default)
 
@@ -178,8 +178,8 @@ Only applies when 'texture coordinates' is set to 'default state coordinates'
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## texture_coordinates  
-**Int**  *enum*
+<h2>texture_coordinates</h2>
+<b>Int</b>  *enum*
 
 - default state coordinates = 0 (default)
 

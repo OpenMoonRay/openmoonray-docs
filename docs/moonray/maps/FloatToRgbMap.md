@@ -16,24 +16,24 @@ title: FloatToRgbMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## B  
-**Float**  *bindable*
+<h2>B</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>B</b> needs to be written</p>
 
 
-## G  
-**Float**  *bindable*
+<h2>G</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>G</b> needs to be written</p>
 
 
-## R  
-**Float**  *bindable*
+<h2>R</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 

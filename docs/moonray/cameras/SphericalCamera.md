@@ -16,16 +16,16 @@ title: SphericalCamera
 <details open>
 <summary class="scene-class-attr-group">Frustum attributes</summary>
 
-## far  
-**Float**  
+<h2>far</h2>
+<b>Float</b>  
 
 Default value : 10000.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>far</b> needs to be written</p>
 
 
-## near  
-**Float**  
+<h2>near</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
@@ -38,24 +38,24 @@ Default value : 1.0
 <details open>
 <summary class="scene-class-attr-group">Motion Blur attributes</summary>
 
-## mb_shutter_bias  
-**Float**  
+<h2>mb_shutter_bias</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_bias</b> needs to be written</p>
 
 
-## mb_shutter_close  
-**Float**  
+<h2>mb_shutter_close</h2>
+<b>Float</b>  
 
 Default value : 0.25  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>mb_shutter_close</b> needs to be written</p>
 
 
-## mb_shutter_open  
-**Float**  
+<h2>mb_shutter_open</h2>
+<b>Float</b>  
 
 Default value : -0.25  
 
@@ -68,8 +68,8 @@ Default value : -0.25
 <details open>
 <summary class="scene-class-attr-group">Render Masks attributes</summary>
 
-## pixel_sample_map  
-**String**  
+<h2>pixel_sample_map</h2>
+<b>String</b>  
 
 Default value :   
 
@@ -82,8 +82,8 @@ Default value :
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## node_xform  
-**Mat4d**  *blurrable*
+<h2>node_xform</h2>
+<b>Mat4d</b>  *blurrable*
 
 Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 

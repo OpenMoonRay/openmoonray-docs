@@ -16,48 +16,48 @@ title: OpMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## clamp  
-**Bool**  
+<h2>clamp</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 if on, the result is clamped to 0 - 1
 
 
-## op1  
-**Rgb**  *bindable*
+<h2>op1</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the first operand
 
 
-## op1_factor  
-**Float**  *bindable*
+<h2>op1_factor</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 a scalar multiplier on op1
 
 
-## op2  
-**Rgb**  *bindable*
+<h2>op2</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the second operand
 
 
-## op2_factor  
-**Float**  *bindable*
+<h2>op2_factor</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 a scalar multiplier on op2
 
 
-## operation  
-**Int**  *enum*
+<h2>operation</h2>
+<b>Int</b>  *enum*
 
 - add = 0 (default)
 

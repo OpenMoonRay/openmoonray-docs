@@ -16,8 +16,8 @@ title: OpenVdbMap_v2
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## show_active_field  
-**Bool**  
+<h2>show_active_field</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -30,32 +30,32 @@ When enabled active/inactive field locations will be white/black, respectively
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## default_value  
-**Rgb**  
+<h2>default_value</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 A default value to use when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found
 
 
-## grid_name  
-**String**  
+<h2>grid_name</h2>
+<b>String</b>  
 
 Default value :   
 
 The name of the grid within the .vdb file from which to sample (hint: use openvdb_print to see contents of .vdb file). If no grid is specified, the first grid found in the .vdb will be used.  In cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])
 
 
-## input_texture_coordinates  
-**Vec3f**  *bindable*
+<h2>input_texture_coordinates</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 The world-space coordinate to use when 'texture coordinates' is set to 'input texture coordinates'
 
 
-## interpolation  
-**Int**  *enum*
+<h2>interpolation</h2>
+<b>Int</b>  *enum*
 
 - point = 0
 
@@ -67,32 +67,32 @@ The world-space coordinate to use when 'texture coordinates' is set to 'input te
 The type of interpolation to use when sampling the vdb
 
 
-## openvdb_geometry  
-**Geometry Vector**  
+<h2>openvdb_geometry</h2>
+<b>Geometry Vector</b>  
 
 Default value : []  
 
 The OpenVdbGeometry object(s) from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from OpenVdbGeometry'
 
 
-## show_warnings  
-**Bool**  
+<h2>show_warnings</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Enables a warning message when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found
 
 
-## texture  
-**String**  *filename*
+<h2>texture</h2>
+<b>String</b>  *filename*
 
 Default value :   
 
 
 
 
-## texture_coordinates  
-**Int**  *enum*
+<h2>texture_coordinates</h2>
+<b>Int</b>  *enum*
 
 - position = 0 (default)
 
@@ -104,8 +104,8 @@ Default value :
 Which coordinate source to use for the texture lookup
 
 
-## vdb_source  
-**Int**  *enum*
+<h2>vdb_source</h2>
+<b>Int</b>  *enum*
 
 - from texture = 0 (default)
 

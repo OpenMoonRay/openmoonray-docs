@@ -16,56 +16,56 @@ title: NoiseWorleyMap_v2
 <details open>
 <summary class="scene-class-attr-group">Adjustment attributes</summary>
 
-## bias  
-**Float**  *bindable*
+<h2>bias</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.5  
 
 Bias of interpolation from color A to color B
 
 
-## gain  
-**Float**  *bindable*
+<h2>gain</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.5  
 
 Gain of interpolation from color A to color B
 
 
-## invert  
-**Bool**  
+<h2>invert</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Invert the final pattern
 
 
-## point_size  
-**Float**  
+<h2>point_size</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 For points output mode, relative radius of points
 
 
-## remap  
-**Vec2f**  *bindable*
+<h2>remap</h2>
+<b>Vec2f</b>  *bindable*
 
 Default value : [ 0, 1 ]  
 
 Allows mapping the distances from the specified min/max range into the 0..1 range
 
 
-## smoothstep  
-**Vec2f**  *bindable*
+<h2>smoothstep</h2>
+<b>Vec2f</b>  *bindable*
 
 Default value : [ 0, 1 ]  
 
 min/max values between which the smoothstep will interpolate
 
 
-## use_smoothstep  
-**Bool**  
+<h2>use_smoothstep</h2>
+<b>Bool</b>  
 
 Default value : False  
 
@@ -78,40 +78,40 @@ Put the noise value through a smoothstep function defined by min/max
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## F1  
-**Float**  *bindable*
+<h2>F1</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 Influence of F1 (the closest feature point)
 
 
-## F2  
-**Float**  *bindable*
+<h2>F2</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 Influence of F2 (the second closest feature point)
 
 
-## F3  
-**Float**  *bindable*
+<h2>F3</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 Influence of F3 (the third closest feature point)
 
 
-## F4  
-**Float**  *bindable*
+<h2>F4</h2>
+<b>Float</b>  *bindable*
 
 Default value : 0.0  
 
 Influence of F4 (the fourth closest feature point)
 
 
-## cell_id  
-**Int**  *enum*
+<h2>cell_id</h2>
+<b>Int</b>  *enum*
 
 - f1 = 0 (default)
 
@@ -131,8 +131,8 @@ Which of the distances determines the cell id
 <details open>
 <summary class="scene-class-attr-group">Output attributes</summary>
 
-## distance_method  
-**Int**  *enum*
+<h2>distance_method</h2>
+<b>Int</b>  *enum*
 
 - linear = 0 (default)
 
@@ -150,16 +150,16 @@ Which of the distances determines the cell id
 Metric for calculating distance to feature points which controls the shape of the falloff when output mode is distance
 
 
-## minkowski_number  
-**Float**  *bindable*
+<h2>minkowski_number</h2>
+<b>Float</b>  *bindable*
 
 Default value : 3.0  
 
 Exponent on distances when distance method is set to Minkowski
 
 
-## output_mode  
-**Int**  *enum*
+<h2>output_mode</h2>
+<b>Int</b>  *enum*
 
 - distance = 0 (default)
 
@@ -181,32 +181,32 @@ Method by which the shader outputs a color.  Distance uses F1..F4 interpolated b
 <details open>
 <summary class="scene-class-attr-group">Space attributes</summary>
 
-## camera  
-**Camera**  
+<h2>camera</h2>
+<b>Camera</b>  
 
 Default value : None  
 
 camera used to define camera and screen space
 
 
-## input_texture_coordinates  
-**Vec3f**  *bindable*
+<h2>input_texture_coordinates</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_texture_coordinates</b> needs to be written</p>
 
 
-## object_space  
-**Geometry**  
+<h2>object_space</h2>
+<b>Geometry</b>  
 
 Default value : None  
 
 Directly connect object to use that object's space.
 
 
-## space  
-**Int**  *enum*
+<h2>space</h2>
+<b>Int</b>  *enum*
 
 - render = 0
 
@@ -238,16 +238,16 @@ The space to calculate the noise in
 <details open>
 <summary class="scene-class-attr-group">Transform attributes</summary>
 
-## rotation  
-**Vec3f**  *bindable*
+<h2>rotation</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 Rotates the noise in space based on the specified rotation order
 
 
-## rotation_order  
-**Int**  *enum*
+<h2>rotation_order</h2>
+<b>Int</b>  *enum*
 
 - xyz = 0 (default)
 
@@ -265,16 +265,16 @@ Rotates the noise in space based on the specified rotation order
 Order in which to apply the euler rotations
 
 
-## scale  
-**Vec3f**  *bindable*
+<h2>scale</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 Vector to scale the noise non-proportionally
 
 
-## transformation_order  
-**Int**  *enum*
+<h2>transformation_order</h2>
+<b>Int</b>  *enum*
 
 - srt = 0
 
@@ -292,8 +292,8 @@ Vector to scale the noise non-proportionally
 Order in which to apply the translation, rotation, and frequency
 
 
-## translation  
-**Vec3f**  *bindable*
+<h2>translation</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
@@ -306,48 +306,48 @@ Translation of the noise in space
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## color_A  
-**Rgb**  *bindable*
+<h2>color_A</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 0, 0, 0 ]  
 
 The interpolated color value at distance equals zero
 
 
-## color_B  
-**Rgb**  *bindable*
+<h2>color_B</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 The interpolated color value at distance equals one
 
 
-## frequency  
-**Float**  *bindable*
+<h2>frequency</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 Scalar multiplier for the frequency vector
 
 
-## jitter  
-**Float**  *bindable*
+<h2>jitter</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 Controls the distortion of the cells
 
 
-## max_level  
-**Float**  *bindable*
+<h2>max_level</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 Number of octaves of noise to add together for the final result
 
 
-## seed  
-**Int**  
+<h2>seed</h2>
+<b>Int</b>  
 
 Default value : 0  
 

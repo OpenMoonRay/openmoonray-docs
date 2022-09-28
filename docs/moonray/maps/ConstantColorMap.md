@@ -16,8 +16,8 @@ title: ConstantColorMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## color_value  
-**Rgb**  
+<h2>color_value</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 

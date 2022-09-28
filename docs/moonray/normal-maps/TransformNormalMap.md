@@ -16,8 +16,8 @@ title: TransformNormalMap
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
 
-## input_normal  
-**Vec3f**  *bindable*
+<h2>input_normal</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 1 ]  
 
@@ -30,16 +30,16 @@ input normal in either tangent or render space
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## decode_input_normal  
-**Bool**  
+<h2>decode_input_normal</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 decode the input normal if it's in tangent space [0,1] -> [-1,1]
 
 
-## transform  
-**Int**  *enum*
+<h2>transform</h2>
+<b>Int</b>  *enum*
 
 - tangent to render = 0 (default)
 

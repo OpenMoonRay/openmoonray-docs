@@ -16,32 +16,32 @@ title: DwaAdjustMaterial
 <details open>
 <summary class="scene-class-attr-group">Enable attributes</summary>
 
-## adjust_color  
-**Bool**  
+<h2>adjust_color</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 use color adjustment attrs: color_hue_shift, color_saturation, color_gain
 
 
-## adjust_presence  
-**Bool**  
+<h2>adjust_presence</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 use presence adjustment attrs: presence_set, presence_set_blend, presence_mult
 
 
-## adjust_roughness  
-**Bool**  
+<h2>adjust_roughness</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 use roughness adjustment attrs: roughness_set, roughness_set_blend, roughness_mult, roughness_remap_{in/out}_{min/max}
 
 
-## adjust_specular  
-**Bool**  
+<h2>adjust_specular</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -54,8 +54,8 @@ use specular adjustment attrs: specular_set, specular_set_blend, specular_mult
 <details open>
 <summary class="scene-class-attr-group">Override attributes</summary>
 
-## casts_caustics  
-**Int**  *enum*
+<h2>casts_caustics</h2>
+<b>Int</b>  *enum*
 
 - unmodified = 0 (default)
 
@@ -67,32 +67,32 @@ use specular adjustment attrs: specular_set, specular_set_blend, specular_mult
 allows you to keep or set casts caustics attribute
 
 
-## disable_clearcoat  
-**Bool**  
+<h2>disable_clearcoat</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 when checked, turn off clearcoat from input
 
 
-## disable_diffuse  
-**Bool**  
+<h2>disable_diffuse</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 when checked, turn off all diffuse from input
 
 
-## disable_specular  
-**Bool**  
+<h2>disable_specular</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 when checked, turn off all specular from input
 
 
-## thin_geometry  
-**Int**  *enum*
+<h2>thin_geometry</h2>
+<b>Int</b>  *enum*
 
 - unmodified = 0 (default)
 
@@ -110,16 +110,16 @@ allows you to keep or set thin geometry attribute
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## emission  
-**Rgb**  *bindable*
+<h2>emission</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 emissive map to add to material's emission
 
 
-## emission_mode  
-**Int**  *enum*
+<h2>emission_mode</h2>
+<b>Int</b>  *enum*
 
 - off = 0 (default)
 
@@ -131,48 +131,48 @@ emissive map to add to material's emission
 how to handle emission input. masked uses mix input, unmasked is mix = 1
 
 
-## extra_aovs  
-**Map**  
+<h2>extra_aovs</h2>
+<b>Map</b>  
 
 Default value : None  
 
 Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result
 
 
-## input_material  
-**Dwabaselayerable**  
+<h2>input_material</h2>
+<b>Dwabaselayerable</b>  
 
 Default value : None  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_material</b> needs to be written</p>
 
 
-## label  
-**String**  
+<h2>label</h2>
+<b>String</b>  
 
 Default value :   
 
 label used in material and light aovs
 
 
-## mix  
-**Float**  *bindable*
+<h2>mix</h2>
+<b>Float</b>  *bindable*
 
 Default value : 1.0  
 
 weight of adjustments applied to the material
 
 
-## on  
-**Bool**  
+<h2>on</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 Enable/disable all adjustments
 
 
-## priority  
-**Int**  
+<h2>priority</h2>
+<b>Int</b>  
 
 Default value : 0  
 

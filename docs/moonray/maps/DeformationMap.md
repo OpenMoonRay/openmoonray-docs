@@ -16,8 +16,8 @@ title: DeformationMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## output_mode  
-**Int**  *enum*
+<h2>output_mode</h2>
+<b>Int</b>  *enum*
 
 - RGB = 0
 
@@ -39,16 +39,16 @@ Controls output:
 		    deformation_avg - average deformation from ref space
 
 
-## use_warning_color  
-**Bool**  
+<h2>use_warning_color</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 If derivatives are missing or zero output the warning color erroring out
 
 
-## warning_color  
-**Rgb**  *bindable*
+<h2>warning_color</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 

@@ -16,16 +16,16 @@ title: ToonDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## ambient  
-**Rgb**  
+<h2>ambient</h2>
+<b>Rgb</b>  
 
 Default value : [ 0, 0, 0 ]  
 
 Adds an ambient light to the cel shading
 
 
-## edge_detector  
-**Int**  *enum*
+<h2>edge_detector</h2>
+<b>Int</b>  *enum*
 
 - None = 0 (default)
 
@@ -39,72 +39,72 @@ Adds an ambient light to the cel shading
 <p class="scene-class-attr-missing">Documentation for the attribute <b>edge_detector</b> needs to be written</p>
 
 
-## ink_depth_threshold  
-**Float**  
+<h2>ink_depth_threshold</h2>
+<b>Float</b>  
 
 Default value : 0.00999999977648  
 
 The threshold for the depth-based ink outline
 
 
-## ink_normal_scale  
-**Float**  
+<h2>ink_normal_scale</h2>
+<b>Float</b>  
 
 Default value : 0.00999999977648  
 
 Increase for a more pronounced normal-based ink outline
 
 
-## ink_normal_threshold  
-**Float**  
+<h2>ink_normal_threshold</h2>
+<b>Float</b>  
 
 Default value : 0.00999999977648  
 
 The threshold for the normal-based ink outline
 
 
-## input_albedo  
-**67141632**  
+<h2>input_albedo</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 RenderOutput that represents diffuse albedo material aov
 
 
-## input_depth  
-**67141632**  
+<h2>input_depth</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 RenderOutput with 'depth' result
 
 
-## input_diffuse  
-**67141632**  
+<h2>input_diffuse</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 RenderOutput that represents diffuse reflection LPE
 
 
-## input_glossy  
-**67141632**  
+<h2>input_glossy</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 RenderOutput that represents glossy reflection LPE
 
 
-## input_normal  
-**67141632**  
+<h2>input_normal</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 RenderOutput with 'normal' result
 
 
-## num_cels  
-**Int**  
+<h2>num_cels</h2>
+<b>Int</b>  
 
 Default value : 2  
 

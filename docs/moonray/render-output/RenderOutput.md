@@ -16,24 +16,24 @@ title: RenderOutput
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## active  
-**Bool**  
+<h2>active</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 true enables, false disables render output.
 
 
-## camera  
-**Camera**  
+<h2>camera</h2>
+<b>Camera</b>  
 
 Default value : None  
 
 Camera to use for this output.  If not specified, defaults to the primary camera.
 
 
-## channel_format  
-**Int**  *enum*
+<h2>channel_format</h2>
+<b>Int</b>  *enum*
 
 - float = 0
 
@@ -43,16 +43,16 @@ Camera to use for this output.  If not specified, defaults to the primary camera
 The pixel encoding (bit depth and type) of the output channel.
 
 
-## channel_name  
-**String**  
+<h2>channel_name</h2>
+<b>String</b>  
 
 Default value :   
 
 Name of the output channel.  In the case of an empty channel name a sensible default name is chosen.
 
 
-## channel_suffix_mode  
-**Int**  *enum*
+<h2>channel_suffix_mode</h2>
+<b>Int</b>  *enum*
 
 - auto = 0 (default)
 
@@ -74,24 +74,24 @@ When processing multi-channel outputs, how should channel names be suffixed?
 	uvw  : .U, .V, .W
 
 
-## checkpoint_file_name  
-**String**  
+<h2>checkpoint_file_name</h2>
+<b>String</b>  
 
 Default value : checkpoint.exr  
 
 Name of checkpoint output file.
 
 
-## checkpoint_multi_version_file_name  
-**String**  
+<h2>checkpoint_multi_version_file_name</h2>
+<b>String</b>  
 
 Default value :   
 
 Name of checkpoint output file under checkpoint file overwrite=off condition.
 
 
-## compression  
-**Int**  *enum*
+<h2>compression</h2>
+<b>Int</b>  *enum*
 
 - none = 0
 
@@ -117,24 +117,24 @@ Name of checkpoint output file under checkpoint file overwrite=off condition.
 Compression used for file (or file part in the multi-part case). All render outputs that target the same image must specify the same compression.
 
 
-## cryptomatte_depth  
-**Int**  
+<h2>cryptomatte_depth</h2>
+<b>Int</b>  
 
 Default value : 6  
 
 Number of cryptomatte (id,coverage) data sets to output
 
 
-## denoise  
-**Bool**  
+<h2>denoise</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 Run optix denoiser before writing to disk
 
 
-## denoiser_input  
-**Int**  *enum*
+<h2>denoiser_input</h2>
+<b>Int</b>  *enum*
 
 - not an input = 0 (default)
 
@@ -146,48 +146,48 @@ Run optix denoiser before writing to disk
 How to use this output as a denoiser input
 
 
-## display_filter  
-**67108864**  
+<h2>display_filter</h2>
+<b>67108864</b>  
 
 Default value : None  
 
 If "result" is "display filter", this attribute refers to a display filter object which is used to compute the output pixel values.
 
 
-## exr_dwa_compression_level  
-**Float**  
+<h2>exr_dwa_compression_level</h2>
+<b>Float</b>  
 
 Default value : 85.0  
 
 Compression level used for file with dwaa or dwab compression. All render outputs that target the same image must specify the same compression level.
 
 
-## exr_header_attributes  
-**Metadata**  
+<h2>exr_header_attributes</h2>
+<b>Metadata</b>  
 
 Default value : None  
 
 Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}
 
 
-## file_name  
-**String**  
+<h2>file_name</h2>
+<b>String</b>  
 
 Default value : scene.exr  
 
 Name of destination file.
 
 
-## file_part  
-**String**  
+<h2>file_part</h2>
+<b>String</b>  
 
 Default value :   
 
 Name of sub-image if using a multi-part exr file.
 
 
-## lpe  
-**String**  
+<h2>lpe</h2>
+<b>String</b>  
 
 Default value :   
 
@@ -222,8 +222,8 @@ This attribute specifies a light path expression to output. For details on light
 		'transmission' : C<TS>[DSG]+[<L.>O]
 
 
-## material_aov  
-**String**  
+<h2>material_aov</h2>
+<b>String</b>  
 
 Default value :   
 
@@ -314,8 +314,8 @@ If "result" is "material aov", this attribute specifies a material aov expressio
 		'spec'.MG.roughness : Roughness of all mirror and glossy lobes that have the 'spec' label
 
 
-## math_filter  
-**Int**  *enum*
+<h2>math_filter</h2>
+<b>Int</b>  *enum*
 
 - average = 0 (default)
 
@@ -347,24 +347,24 @@ options include:
 	closest                   : use sample with minimum z-depth
 
 
-## output_type  
-**String**  
+<h2>output_type</h2>
+<b>String</b>  
 
 Default value : flat  
 
 Specifies the type of output.  Defaults to "flat", meaning a flat exr file.  "deep" will output a deep exr file.
 
 
-## primitive_attribute  
-**String**  
+<h2>primitive_attribute</h2>
+<b>String</b>  
 
 Default value :   
 
 If "result" is "primitive attribute", this attribute specifies the particular primitive attribute to output.  Default channel name is based on primitive attribute name and type.
 
 
-## primitive_attribute_type  
-**Int**  *enum*
+<h2>primitive_attribute_type</h2>
+<b>Int</b>  *enum*
 
 - FLOAT = 0 (default)
 
@@ -378,16 +378,16 @@ If "result" is "primitive attribute", this attribute specifies the particular pr
 This attribute specifies the type of the attribute named with the "primitive attribute" setting.  This is required to uniquely specify the primitive attribute.
 
 
-## reference_render_output  
-**Renderoutput**  
+<h2>reference_render_output</h2>
+<b>Renderoutput</b>  
 
 Default value : None  
 
 If "result" is "variance aov", this attribute refers to another render output for which to calculate the pixel variance.
 
 
-## result  
-**Int**  *enum*
+<h2>result</h2>
+<b>Int</b>  *enum*
 
 - beauty = 0 (default)
 
@@ -463,16 +463,16 @@ The result to output.  Available results:
 		"wireframe" - Render as wireframe
 
 
-## resume_file_name  
-**String**  
+<h2>resume_file_name</h2>
+<b>String</b>  
 
 Default value :   
 
 Name of input file for resume render start condition
 
 
-## state_variable  
-**Int**  *enum*
+<h2>state_variable</h2>
+<b>Int</b>  *enum*
 
 - P = 0
 
@@ -530,8 +530,8 @@ If "result" is "state variable", this attribute specifies the particular state v
 	"motionvec" - 2D motion vector
 
 
-## visibility_aov  
-**String**  
+<h2>visibility_aov</h2>
+<b>String</b>  
 
 Default value : C[<T.><RS>]*[<R[DG]><TD>][LO]  
 

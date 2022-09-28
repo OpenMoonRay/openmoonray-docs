@@ -16,8 +16,8 @@ title: DebugMap
 <details open>
 <summary class="scene-class-attr-group">Normal attributes</summary>
 
-## input_normal_space  
-**Int**  *enum*
+<h2>input_normal_space</h2>
+<b>Int</b>  *enum*
 
 - tangent = 0 (default)
 
@@ -33,16 +33,16 @@ Specifies what space the input normal is in.  Usually this is tangent space for 
 <details open>
 <summary class="scene-class-attr-group">Primitive Attribute attributes</summary>
 
-## primitive_attribute_name  
-**String**  
+<h2>primitive_attribute_name</h2>
+<b>String</b>  
 
 Default value : surface_st  
 
 the name of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'
 
 
-## primitive_attribute_type  
-**Int**  *enum*
+<h2>primitive_attribute_type</h2>
+<b>Int</b>  *enum*
 
 - float = 0
 
@@ -62,32 +62,32 @@ the type of primitive attribute to displayed when attribute 'map type' is set to
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## checkerboard  
-**Bool**  
+<h2>checkerboard</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>checkerboard</b> needs to be written</p>
 
 
-## input_normal  
-**Vec3f**  *bindable*
+<h2>input_normal</h2>
+<b>Vec3f</b>  *bindable*
 
 Default value : [ 0, 0, 1 ]  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal</b> needs to be written</p>
 
 
-## input_normal_dial  
-**Float**  
+<h2>input_normal_dial</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 <p class="scene-class-attr-missing">Documentation for the attribute <b>input_normal_dial</b> needs to be written</p>
 
 
-## map_type  
-**Int**  *enum*
+<h2>map_type</h2>
+<b>Int</b>  *enum*
 
 - position = 0 (default)
 

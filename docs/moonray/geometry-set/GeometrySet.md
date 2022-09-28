@@ -16,8 +16,8 @@ title: GeometrySet
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## geometries  
-**SceneObjectIndexable**  
+<h2>geometries</h2>
+<b>SceneObjectIndexable</b>  
 
 Default value : None  
 

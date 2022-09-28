@@ -16,16 +16,16 @@ title: RampDisplayFilter
 <details open>
 <summary class="scene-class-attr-group">Advanced attributes</summary>
 
-## invert_mask  
-**Bool**  
+<h2>invert_mask</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 invert value of mask
 
 
-## mix  
-**Float**  
+<h2>mix</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
@@ -38,24 +38,24 @@ blend between output and input
 <details open>
 <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
 
-## colors  
-**RgbVector**  
+<h2>colors</h2>
+<b>RgbVector</b>  
 
 Default value : [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]  
 
 List of colors on the ramp
 
 
-## interpolations  
-**IntVector**  
+<h2>interpolations</h2>
+<b>IntVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.IntVector object at >  
 
 None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5
 
 
-## positions  
-**FloatVector**  
+<h2>positions</h2>
+<b>FloatVector</b>  
 
 Default value : <scene_rdl2.__scene_rdl2__.FloatVector object at >  
 
@@ -68,16 +68,16 @@ Color ramp
 <details open>
 <summary class="scene-class-attr-group">Ramp properties attributes</summary>
 
-## input  
-**67141632**  
+<h2>input</h2>
+<b>67141632</b>  
 
 Default value : None  
 
 input to the input ramp
 
 
-## ramp_type  
-**Int**  *enum*
+<h2>ramp_type</h2>
+<b>Int</b>  *enum*
 
 - v_ramp = 0 (default)
 
@@ -107,8 +107,8 @@ input to the input ramp
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## mask  
-**67141632**  
+<h2>mask</h2>
+<b>67141632</b>  
 
 Default value : None  
 

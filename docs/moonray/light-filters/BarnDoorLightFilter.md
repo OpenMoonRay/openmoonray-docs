@@ -16,72 +16,72 @@ title: BarnDoorLightFilter
 <details open>
 <summary class="scene-class-attr-group">Properties attributes</summary>
 
-## color  
-**Rgb**  
+<h2>color</h2>
+<b>Rgb</b>  
 
 Default value : [ 1, 1, 1 ]  
 
 Color within the Barn Door lit region. For each color channel, 0=full shadow, 1=no shadow
 
 
-## density  
-**Float**  
+<h2>density</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 fades the filter effect. 0=no effect (like having no filter), 1=full effect
 
 
-## edge  
-**Float**  
+<h2>edge</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 size of transition zone from the rounded box to the outside, as a proportion of width (or height, whichever is smaller)
 
 
-## edge_scale_bottom  
-**Float**  
+<h2>edge_scale_bottom</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 scale factor for bottom edge
 
 
-## edge_scale_left  
-**Float**  
+<h2>edge_scale_left</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 scale factor for left edge
 
 
-## edge_scale_right  
-**Float**  
+<h2>edge_scale_right</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 scale factor for right edge
 
 
-## edge_scale_top  
-**Float**  
+<h2>edge_scale_top</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 scale factor for top edge
 
 
-## invert  
-**Bool**  
+<h2>invert</h2>
+<b>Bool</b>  
 
 Default value : False  
 
 swap application of filter from inside the Barn Door to outside
 
 
-## mode  
-**Int**  *enum*
+<h2>mode</h2>
+<b>Int</b>  *enum*
 
 - analytical = 0 (default)
 
@@ -91,24 +91,24 @@ swap application of filter from inside the Barn Door to outside
 analytical mode allows light to shading points that project to the flap opening.physical mode allows light whose direction goes through the flap opening.
 
 
-## node_xform  
-**Mat4d**  *blurrable*
+<h2>node_xform</h2>
+<b>Mat4d</b>  *blurrable*
 
 Default value : [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]  
 
 transform of the filter
 
 
-## pre_barn_distance  
-**Float**  
+<h2>pre_barn_distance</h2>
+<b>Float</b>  
 
 Default value : 0.5  
 
 distance from the BarnDoorLightFilter that the pre_barn_mode control takes effect
 
 
-## pre_barn_mode  
-**Int**  *enum*
+<h2>pre_barn_mode</h2>
+<b>Int</b>  *enum*
 
 - black = 0
 
@@ -120,24 +120,24 @@ distance from the BarnDoorLightFilter that the pre_barn_mode control takes effec
 force region before the pre_barn_distance to be fully filtered (black), not filtered at all (white), or treated the same as elsewhere (default)
 
 
-## projector_focal_distance  
-**Float**  
+<h2>projector_focal_distance</h2>
+<b>Float</b>  
 
 Default value : 30.0  
 
 distance of the flap opening from the projector origin. Ignored for orthographic projection
 
 
-## projector_height  
-**Float**  
+<h2>projector_height</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 height of the frustum at distance 1.0
 
 
-## projector_type  
-**Int**  *enum*
+<h2>projector_type</h2>
+<b>Int</b>  *enum*
 
 - perspective = 0 (default)
 
@@ -147,64 +147,64 @@ height of the frustum at distance 1.0
 projection type used to map points to the flap opening. perspective has a focal point, while orthographic does not.
 
 
-## projector_width  
-**Float**  
+<h2>projector_width</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 width of the frustum at distance 1.0
 
 
-## radius  
-**Float**  
+<h2>radius</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 radius by which to convert the base box shape into a rounded box, as a proportion of half the width (or height, whichever is smaller)
 
 
-## rotation  
-**Float**  
+<h2>rotation</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 angle to rotate the Barn Door counter-clockwise as seen from the light, in degrees
 
 
-## size_bottom  
-**Float**  
+<h2>size_bottom</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 additional size on bottom edge
 
 
-## size_left  
-**Float**  
+<h2>size_left</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 additional size on left edge
 
 
-## size_right  
-**Float**  
+<h2>size_right</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 additional size on right edge
 
 
-## size_top  
-**Float**  
+<h2>size_top</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 additional size on top edge
 
 
-## use_light_xform  
-**Bool**  
+<h2>use_light_xform</h2>
+<b>Bool</b>  
 
 Default value : True  
 
@@ -217,8 +217,8 @@ attach to the light (in the -Z direction) and ignore node_xform
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## on  
-**Bool**  
+<h2>on</h2>
+<b>Bool</b>  
 
 Default value : True  
 

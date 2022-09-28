@@ -16,40 +16,40 @@ title: RandomMap
 <details open>
 <summary class="scene-class-attr-group">General attributes</summary>
 
-## input  
-**Rgb**  *bindable*
+<h2>input</h2>
+<b>Rgb</b>  *bindable*
 
 Default value : [ 1, 1, 1 ]  
 
 the input color used as a base seed to generate the random value
 
 
-## monochrome  
-**Bool**  
+<h2>monochrome</h2>
+<b>Bool</b>  
 
 Default value : True  
 
 outputs the same color for all three channels
 
 
-## output_max  
-**Float**  
+<h2>output_max</h2>
+<b>Float</b>  
 
 Default value : 1.0  
 
 the maximum output random value
 
 
-## output_min  
-**Float**  
+<h2>output_min</h2>
+<b>Float</b>  
 
 Default value : 0.0  
 
 the minimum output random value
 
 
-## seed  
-**Int**  
+<h2>seed</h2>
+<b>Int</b>  
 
 Default value : 0  
 
