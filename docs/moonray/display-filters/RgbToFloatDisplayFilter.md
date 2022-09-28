@@ -19,20 +19,20 @@ title: RgbToFloatDisplayFilter
     <h3>invert_mask</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p>invert value of mask</p>
-    
+      
+        default: False
+      
+        <p>invert value of mask</p>
+      
     
     <h3>mix</h3>
     <b>Float</b>
     
-    
-    default: 1.0
-    
-    <p>blend between output and input</p>
-    
+      
+        default: 1.0
+      
+        <p>blend between output and input</p>
+      
     
   </p>
 </details>
@@ -45,44 +45,44 @@ title: RgbToFloatDisplayFilter
     <h3>input</h3>
     <b>67141632</b>
     
-    
-    default: None
-    
-    <p>image buffer</p>
-    
+      
+        default: None
+      
+        <p>image buffer</p>
+      
     
     <h3>mask</h3>
     <b>67141632</b>
     
-    
-    default: None
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>mode</h3>
     <b>Int</b>
     <i>enum</i>
-    
-    |  r = 0 
-    
-    |  g = 1 
-    
-    |  b = 2 
-    
-    |  min = 3 
-    
-    |  max = 4 
-    
-    |  average = 5 (default) 
-    
-    |  sum = 6 
-    
-    |  luminance = 7 
-    
-    
-    <p>specify the method to convert RGB Color to float</p>
-    
+      
+          | r = 0
+        
+          | g = 1
+        
+          | b = 2
+        
+          | min = 3
+        
+          | max = 4
+        
+          | average = 5 (default)
+        
+          | sum = 6
+        
+          | luminance = 7
+        
+      
+        <p>specify the method to convert RGB Color to float</p>
+      
     
   </p>
 </details>

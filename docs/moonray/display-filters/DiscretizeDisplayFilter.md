@@ -19,20 +19,20 @@ title: DiscretizeDisplayFilter
     <h3>invert_mask</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p>invert value of mask</p>
-    
+      
+        default: False
+      
+        <p>invert value of mask</p>
+      
     
     <h3>mix</h3>
     <b>Float</b>
     
-    
-    default: 1.0
-    
-    <p>blend between output and input</p>
-    
+      
+        default: 1.0
+      
+        <p>blend between output and input</p>
+      
     
   </p>
 </details>
@@ -45,29 +45,29 @@ title: DiscretizeDisplayFilter
     <h3>input</h3>
     <b>67141632</b>
     
-    
-    default: None
-    
-    <p>Image buffer to discretize</p>
-    
+      
+        default: None
+      
+        <p>Image buffer to discretize</p>
+      
     
     <h3>mask</h3>
     <b>67141632</b>
     
-    
-    default: None
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>num_bins</h3>
     <b>Int</b>
     
-    
-    default: 8
-    
-    <p>number of discrete color bins</p>
-    
+      
+        default: 8
+      
+        <p>number of discrete color bins</p>
+      
     
   </p>
 </details>

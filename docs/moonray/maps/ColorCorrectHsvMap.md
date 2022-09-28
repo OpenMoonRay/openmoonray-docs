@@ -19,92 +19,92 @@ title: ColorCorrectHsvMap
     <h3>clamp</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p>clamps output to [0,1] range</p>
-    
+      
+        default: False
+      
+        <p>clamps output to [0,1] range</p>
+      
     
     <h3>hue_shift</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 0.0
-    
-    <p>shifts the hue of the input (360 rolls over back to 0)</p>
-    
+      
+        default: 0.0
+      
+        <p>shifts the hue of the input (360 rolls over back to 0)</p>
+      
     
     <h3>input</h3>
     <b>Rgb</b>
     <i>bindable</i>
-    
-    default: [ 1, 1, 1 ]
-    
-    <p>input color</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p>input color</p>
+      
     
     <h3>on</h3>
     <b>Bool</b>
     
-    
-    default: True
-    
-    <p>all attributes on/off</p>
-    
+      
+        default: True
+      
+        <p>all attributes on/off</p>
+      
     
     <h3>saturation_contrast</h3>
     <b>Float</b>
     
-    
-    default: 0.0
-    
-    <p>modifies the contrast of the input's saturation (-1, 1)</p>
-    
+      
+        default: 0.0
+      
+        <p>modifies the contrast of the input's saturation (-1, 1)</p>
+      
     
     <h3>saturation_factor</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 1.0
-    
-    <p>multiplies the saturation of the input</p>
-    
+      
+        default: 1.0
+      
+        <p>multiplies the saturation of the input</p>
+      
     
     <h3>saturation_shift</h3>
     <b>Float</b>
     
-    
-    default: 0.0
-    
-    <p>shifts the saturation of the input (-1, 1)</p>
-    
+      
+        default: 0.0
+      
+        <p>shifts the saturation of the input (-1, 1)</p>
+      
     
     <h3>value_contrast</h3>
     <b>Float</b>
     
-    
-    default: 0.0
-    
-    <p>modifies the contrast of the input's value (-1, 1)</p>
-    
+      
+        default: 0.0
+      
+        <p>modifies the contrast of the input's value (-1, 1)</p>
+      
     
     <h3>value_factor</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 1.0
-    
-    <p>multiplies the value of the input</p>
-    
+      
+        default: 1.0
+      
+        <p>multiplies the value of the input</p>
+      
     
     <h3>value_shift</h3>
     <b>Float</b>
     
-    
-    default: 0.0
-    
-    <p>shifts the value of the input (-1, 1)</p>
-    
+      
+        default: 0.0
+      
+        <p>shifts the value of the input (-1, 1)</p>
+      
     
   </p>
 </details>

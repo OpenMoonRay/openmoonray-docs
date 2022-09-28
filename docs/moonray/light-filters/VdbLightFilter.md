@@ -19,145 +19,145 @@ title: VdbLightFilter
     <h3>blur_type</h3>
     <b>Int</b>
     <i>enum</i>
-    
-    |  gaussian = 0 (default) 
-    
-    |  circular = 1 
-    
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+          | gaussian = 0 (default)
+        
+          | circular = 1
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>blur_value</h3>
     <b>Float</b>
     
-    
-    default: 0.0
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>color_tint</h3>
     <b>Rgb</b>
     
-    
-    default: [ 0, 0, 0 ]
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>density_grid_name</h3>
     <b>String</b>
     <i>filename</i>
-    
-    default: 
-    
-    <p>The name of the grid within the .vdb file from which to sample for density(hint: use openvdb_print to see contents of .vdb file). If no grid is specified, it will use 'density' as the defaultIn cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
-    
+      
+        default: 
+      
+        <p>The name of the grid within the .vdb file from which to sample for density(hint: use openvdb_print to see contents of .vdb file). If no grid is specified, it will use 'density' as the defaultIn cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
+      
     
     <h3>density_remap_input_max</h3>
     <b>Float</b>
     
-    
-    default: 1.0
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>density_remap_input_min</h3>
     <b>Float</b>
     
-    
-    default: 0.0
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>density_remap_inputs</h3>
     <b>FloatVector</b>
     
-    
-    default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>density_remap_interpolation_types</h3>
     <b>IntVector</b>
     
-    
-    default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>density_remap_output_max</h3>
     <b>Float</b>
     
-    
-    default: 1.0
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>density_remap_output_min</h3>
     <b>Float</b>
     
-    
-    default: 0.0
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>density_remap_outputs</h3>
     <b>FloatVector</b>
     
-    
-    default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>density_rescale_enable</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>invert_density</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>vdb_interpolation_type</h3>
     <b>Int</b>
     <i>enum</i>
-    
-    |  point = 0 (default) 
-    
-    |  box = 1 
-    
-    |  quadratic = 2 
-    
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+          | point = 0 (default)
+        
+          | box = 1
+        
+          | quadratic = 2
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>vdb_map</h3>
     <b>String</b>
     <i>filename</i>
-    
-    default: 
-    
-    <p>Supply the path to the vdb</p>
-    
+      
+        default: 
+      
+        <p>Supply the path to the vdb</p>
+      
     
   </p>
 </details>
@@ -170,20 +170,20 @@ title: VdbLightFilter
     <h3>node_xform</h3>
     <b>Mat4d</b>
     <i>blurrable</i>
-    
-    default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>on</h3>
     <b>Bool</b>
     
-    
-    default: True
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
   </p>
 </details>

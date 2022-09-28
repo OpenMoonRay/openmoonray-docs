@@ -19,20 +19,20 @@ title: BlendDisplayFilter
     <h3>invert_mask</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p>invert value of mask</p>
-    
+      
+        default: False
+      
+        <p>invert value of mask</p>
+      
     
     <h3>mix</h3>
     <b>Float</b>
     
-    
-    default: 1.0
-    
-    <p>blend between output and input</p>
-    
+      
+        default: 1.0
+      
+        <p>blend between output and input</p>
+      
     
   </p>
 </details>
@@ -45,50 +45,50 @@ title: BlendDisplayFilter
     <h3>blendAmt</h3>
     <b>Float</b>
     
-    
-    default: 0.5
-    
-    <p>float determining amount of blend</p>
-    
+      
+        default: 0.5
+      
+        <p>float determining amount of blend</p>
+      
     
     <h3>blendType</h3>
     <b>Int</b>
     <i>enum</i>
-    
-    |  linear = 0 (default) 
-    
-    |  cubic = 1 
-    
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+          | linear = 0 (default)
+        
+          | cubic = 1
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>input1</h3>
     <b>67141632</b>
     
-    
-    default: None
-    
-    <p>first operand</p>
-    
+      
+        default: None
+      
+        <p>first operand</p>
+      
     
     <h3>input2</h3>
     <b>67141632</b>
     
-    
-    default: None
-    
-    <p>second operand</p>
-    
+      
+        default: None
+      
+        <p>second operand</p>
+      
     
     <h3>mask</h3>
     <b>67141632</b>
     
-    
-    default: None
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
   </p>
 </details>

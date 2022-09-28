@@ -19,61 +19,61 @@ title: CombineDisplacement
     <h3>bound_padding</h3>
     <b>Float</b>
     
-    
-    default: 0.0
-    
-    <p>bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
-    
+      
+        default: 0.0
+      
+        <p>bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
+      
     
     <h3>input_1</h3>
     <b>Displacement</b>
     
-    
-    default: None
-    
-    <p>Displacement object 1</p>
-    
+      
+        default: None
+      
+        <p>Displacement object 1</p>
+      
     
     <h3>input_2</h3>
     <b>Displacement</b>
     
-    
-    default: None
-    
-    <p>Displacement object 2</p>
-    
+      
+        default: None
+      
+        <p>Displacement object 2</p>
+      
     
     <h3>operation</h3>
     <b>Int</b>
     <i>enum</i>
-    
-    |  add = 0 (default) 
-    
-    |  max magnitude = 1 
-    
-    |  min magnitude = 2 
-    
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+          | add = 0 (default)
+        
+          | max magnitude = 1
+        
+          | min magnitude = 2
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>scale_1</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 1.0
-    
-    <p>Scale of input 1</p>
-    
+      
+        default: 1.0
+      
+        <p>Scale of input 1</p>
+      
     
     <h3>scale_2</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 1.0
-    
-    <p>Scale of input 2</p>
-    
+      
+        default: 1.0
+      
+        <p>Scale of input 2</p>
+      
     
   </p>
 </details>

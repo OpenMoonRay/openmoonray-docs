@@ -19,11 +19,11 @@ title: ConstantColorMap
     <h3>color_value</h3>
     <b>Rgb</b>
     
-    
-    default: [ 1, 1, 1 ]
-    
-    <p>constant color value</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p>constant color value</p>
+      
     
   </p>
 </details>

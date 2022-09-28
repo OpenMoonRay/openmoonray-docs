@@ -19,19 +19,19 @@ title: Metadata
     <h3>name</h3>
     <b>StringVector</b>
     
-    
-    default: []
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>type</h3>
     <b>StringVector</b>
     
-    
-    default: []
-    
-    <p>Allowed types for exr headers:
+      
+        default: []
+      
+        <p>Allowed types for exr headers:
 
 			* box2i
 
@@ -58,16 +58,16 @@ title: Metadata
 			* v3i
 
 			* v3f</p>
-    
+      
     
     <h3>value</h3>
     <b>StringVector</b>
     
-    
-    default: []
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
   </p>
 </details>

@@ -19,29 +19,29 @@ title: FloatToRgbMap
     <h3>B</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 1.0
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>G</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 1.0
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>R</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 1.0
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
   </p>
 </details>

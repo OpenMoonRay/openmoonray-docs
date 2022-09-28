@@ -19,20 +19,20 @@ title: DofDisplayFilter
     <h3>invert_mask</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p>invert value of mask</p>
-    
+      
+        default: False
+      
+        <p>invert value of mask</p>
+      
     
     <h3>mix</h3>
     <b>Float</b>
     
-    
-    default: 1.0
-    
-    <p>blend between output and input</p>
-    
+      
+        default: 1.0
+      
+        <p>blend between output and input</p>
+      
     
   </p>
 </details>
@@ -45,65 +45,65 @@ title: DofDisplayFilter
     <h3>aperture</h3>
     <b>Float</b>
     
-    
-    default: 8.0
-    
-    <p>aperture in millimeters</p>
-    
+      
+        default: 8.0
+      
+        <p>aperture in millimeters</p>
+      
     
     <h3>depth</h3>
     <b>67141632</b>
     
-    
-    default: None
-    
-    <p>the 'depth' result RenderOutput to sample z depth values from</p>
-    
+      
+        default: None
+      
+        <p>the 'depth' result RenderOutput to sample z depth values from</p>
+      
     
     <h3>focal_length</h3>
     <b>Float</b>
     
-    
-    default: 30.0
-    
-    <p>focal length in millimeters</p>
-    
+      
+        default: 30.0
+      
+        <p>focal length in millimeters</p>
+      
     
     <h3>focus_distance</h3>
     <b>Float</b>
     
-    
-    default: 0.0
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>input</h3>
     <b>67141632</b>
     
-    
-    default: None
-    
-    <p>RenderOutput to apply depth of field</p>
-    
+      
+        default: None
+      
+        <p>RenderOutput to apply depth of field</p>
+      
     
     <h3>mask</h3>
     <b>67141632</b>
     
-    
-    default: None
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>use_camera_attributes</h3>
     <b>Bool</b>
     
-    
-    default: True
-    
-    <p>read dof attributes from active scene camera</p>
-    
+      
+        default: True
+      
+        <p>read dof attributes from active scene camera</p>
+      
     
   </p>
 </details>

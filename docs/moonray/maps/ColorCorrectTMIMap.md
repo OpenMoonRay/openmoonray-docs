@@ -19,38 +19,38 @@ title: ColorCorrectTMIMap
     <h3>TMI</h3>
     <b>Rgb</b>
     <i>bindable</i>
-    
-    default: [ 0, 0, 0 ]
-    
-    <p>T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
-    
+      
+        default: [ 0, 0, 0 ]
+      
+        <p>T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
+      
     
     <h3>input</h3>
     <b>Rgb</b>
     <i>bindable</i>
-    
-    default: [ 1, 1, 1 ]
-    
-    <p>bind the input here</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p>bind the input here</p>
+      
     
     <h3>mix</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 1.0
-    
-    <p>how much of the overall color correct to mix in</p>
-    
+      
+        default: 1.0
+      
+        <p>how much of the overall color correct to mix in</p>
+      
     
     <h3>on</h3>
     <b>Bool</b>
     
-    
-    default: True
-    
-    <p>enables/disables all color correct operations</p>
-    
+      
+        default: True
+      
+        <p>enables/disables all color correct operations</p>
+      
     
   </p>
 </details>

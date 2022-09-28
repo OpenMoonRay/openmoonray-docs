@@ -19,74 +19,74 @@ title: ColorCorrectContrastMap
     <h3>contrast</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 0.0
-    
-    <p>negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance</p>
-    
+      
+        default: 0.0
+      
+        <p>negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance</p>
+      
     
     <h3>contrast_b</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 0.0
-    
-    <p>negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the blue channel</p>
-    
+      
+        default: 0.0
+      
+        <p>negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the blue channel</p>
+      
     
     <h3>contrast_g</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 0.0
-    
-    <p>negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the green channel</p>
-    
+      
+        default: 0.0
+      
+        <p>negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the green channel</p>
+      
     
     <h3>contrast_r</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 0.0
-    
-    <p>negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the red channel</p>
-    
+      
+        default: 0.0
+      
+        <p>negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the red channel</p>
+      
     
     <h3>input</h3>
     <b>Rgb</b>
     <i>bindable</i>
-    
-    default: [ 1, 1, 1 ]
-    
-    <p>bind the input here</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p>bind the input here</p>
+      
     
     <h3>mix</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 1.0
-    
-    <p>how much of the overall color correct to mix in</p>
-    
+      
+        default: 1.0
+      
+        <p>how much of the overall color correct to mix in</p>
+      
     
     <h3>on</h3>
     <b>Bool</b>
     
-    
-    default: True
-    
-    <p>enables/disables all color correct operations</p>
-    
+      
+        default: True
+      
+        <p>enables/disables all color correct operations</p>
+      
     
     <h3>use_per_channel_contrast</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p>enables separate RGB controls for contrast</p>
-    
+      
+        default: False
+      
+        <p>enables separate RGB controls for contrast</p>
+      
     
   </p>
 </details>

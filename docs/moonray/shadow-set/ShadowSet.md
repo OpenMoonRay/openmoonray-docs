@@ -19,11 +19,11 @@ title: ShadowSet
     <h3>lights</h3>
     <b>Light Vector</b>
     
-    
-    default: []
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
   </p>
 </details>

@@ -19,38 +19,38 @@ title: UsdTransform2d
     <h3>in</h3>
     <b>Rgb</b>
     <i>bindable</i>
-    
-    default: [ 1, 1, 1 ]
-    
-    <p>This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p>This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.</p>
+      
     
     <h3>rotation</h3>
     <b>Float</b>
     
-    
-    default: 0.0
-    
-    <p>Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.</p>
-    
+      
+        default: 0.0
+      
+        <p>Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.</p>
+      
     
     <h3>scale</h3>
     <b>Vec2f</b>
     
-    
-    default: [ 1, 1 ]
-    
-    <p>Scale around the origin to be applied to all components of the data.</p>
-    
+      
+        default: [ 1, 1 ]
+      
+        <p>Scale around the origin to be applied to all components of the data.</p>
+      
     
     <h3>translation</h3>
     <b>Vec2f</b>
     
-    
-    default: [ 0, 0 ]
-    
-    <p>Translation to be applied to all components of the data.</p>
-    
+      
+        default: [ 0, 0 ]
+      
+        <p>Translation to be applied to all components of the data.</p>
+      
     
   </p>
 </details>

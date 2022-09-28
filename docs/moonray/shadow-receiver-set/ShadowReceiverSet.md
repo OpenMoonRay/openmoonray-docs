@@ -19,11 +19,11 @@ title: ShadowReceiverSet
     <h3>complement</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
   </p>
 </details>
@@ -36,11 +36,11 @@ title: ShadowReceiverSet
     <h3>geometries</h3>
     <b>SceneObjectIndexable</b>
     
-    
-    default: None
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
   </p>
 </details>

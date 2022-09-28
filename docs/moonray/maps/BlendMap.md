@@ -19,59 +19,59 @@ title: BlendMap
     <h3>blend_amount</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 0.5
-    
-    <p>The amount to blend between color A (0) and color B (1)</p>
-    
+      
+        default: 0.5
+      
+        <p>The amount to blend between color A (0) and color B (1)</p>
+      
     
     <h3>blend_type</h3>
     <b>Int</b>
     <i>enum</i>
-    
-    |  linear = 0 (default) 
-    
-    |  cubic = 1 
-    
-    
-    <p>The type of blending algorithm</p>
-    
+      
+          | linear = 0 (default)
+        
+          | cubic = 1
+        
+      
+        <p>The type of blending algorithm</p>
+      
     
     <h3>color_A</h3>
     <b>Rgb</b>
     <i>bindable</i>
-    
-    default: [ 1, 1, 1 ]
-    
-    <p>The color you get if blend amount is 0</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p>The color you get if blend amount is 0</p>
+      
     
     <h3>color_B</h3>
     <b>Rgb</b>
     <i>bindable</i>
-    
-    default: [ 1, 1, 1 ]
-    
-    <p>The color you get if blend amount is 1</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p>The color you get if blend amount is 1</p>
+      
     
     <h3>threshold_max</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 1.0
-    
-    <p>If the blend amount is greater than this amount, it will choose color B (1)</p>
-    
+      
+        default: 1.0
+      
+        <p>If the blend amount is greater than this amount, it will choose color B (1)</p>
+      
     
     <h3>threshold_min</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 0.0
-    
-    <p>If the blend amount is less than or equal to this amount, it will choose color A (0)</p>
-    
+      
+        default: 0.0
+      
+        <p>If the blend amount is less than or equal to this amount, it will choose color A (0)</p>
+      
     
   </p>
 </details>

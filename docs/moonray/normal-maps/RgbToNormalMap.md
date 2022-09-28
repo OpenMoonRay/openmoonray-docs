@@ -19,11 +19,11 @@ title: RgbToNormalMap
     <h3>input</h3>
     <b>Rgb</b>
     <i>bindable</i>
-    
-    default: [ 1, 1, 1 ]
-    
-    <p>Input color to convert to a normal map</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p>Input color to convert to a normal map</p>
+      
     
   </p>
 </details>

@@ -19,29 +19,29 @@ title: ImageMap
     <h3>blur</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 0.0
-    
-    <p>This parameter is deprecated, do not use!   Number of pixels to blur the image</p>
-    
+      
+        default: 0.0
+      
+        <p>This parameter is deprecated, do not use!   Number of pixels to blur the image</p>
+      
     
     <h3>mip_bias</h3>
     <b>Float</b>
     <i>bindable</i>
-    
-    default: 0.0
-    
-    <p>Amount to scale derivatives which controls mipmap selection</p>
-    
+      
+        default: 0.0
+      
+        <p>Amount to scale derivatives which controls mipmap selection</p>
+      
     
     <h3>num_blur_samples</h3>
     <b>Int</b>
     
-    
-    default: 3
-    
-    <p>This parameter is deprecated, do not use!  Number of internal samples for blur.   Higher values increase quality</p>
-    
+      
+        default: 3
+      
+        <p>This parameter is deprecated, do not use!  Number of internal samples for blur.   Higher values increase quality</p>
+      
     
   </p>
 </details>
@@ -54,101 +54,101 @@ title: ImageMap
     <h3>TMI</h3>
     <b>Vec3f</b>
     
-    
-    default: [ 0, 0, 0 ]
-    
-    <p>T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
-    
+      
+        default: [ 0, 0, 0 ]
+      
+        <p>T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
+      
     
     <h3>TMI_control_enabled</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>contrast</h3>
     <b>Rgb</b>
     
-    
-    default: [ 1, 1, 1 ]
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>contrast_enabled</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>gain</h3>
     <b>Rgb</b>
     
-    
-    default: [ 1, 1, 1 ]
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>gain_offset_enabled</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>gamma_adjust</h3>
     <b>Rgb</b>
     
-    
-    default: [ 1, 1, 1 ]
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>gamma_enabled</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>offset_adjust</h3>
     <b>Rgb</b>
     
-    
-    default: [ 0, 0, 0 ]
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>saturation</h3>
     <b>Rgb</b>
     
-    
-    default: [ 1, 1, 1 ]
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>saturation_enabled</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
   </p>
 </details>
@@ -161,149 +161,149 @@ title: ImageMap
     <h3>alpha_only</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p>If true, the alpha channel of the texture will be placed in the rgb channels.  If the texture has no alpha channel, 1.0 is used, and the resulting texture lookup is then always white.</p>
-    
+      
+        default: False
+      
+        <p>If true, the alpha channel of the texture will be placed in the rgb channels.  If the texture has no alpha channel, 1.0 is used, and the resulting texture lookup is then always white.</p>
+      
     
     <h3>default_color</h3>
     <b>Rgb</b>
     
-    
-    default: [ 0, 1, 0 ]
-    
-    <p>default color to be used for missing udims when 'use default color when missing' is enabled</p>
-    
+      
+        default: [ 0, 1, 0 ]
+      
+        <p>default color to be used for missing udims when 'use default color when missing' is enabled</p>
+      
     
     <h3>gamma</h3>
     <b>Int</b>
     <i>enum</i>
-    
-    |  off = 0 
-    
-    |  on = 1 
-    
-    |  auto = 2 (default) 
-    
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+          | off = 0
+        
+          | on = 1
+        
+          | auto = 2 (default)
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>input_texture_coordinates</h3>
     <b>Vec3f</b>
     <i>bindable</i>
-    
-    default: [ 0, 0, 0 ]
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>offset</h3>
     <b>Vec2f</b>
     
-    
-    default: [ 0, 0 ]
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: [ 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>rotation_angle</h3>
     <b>Float</b>
     
-    
-    default: 0.0
-    
-    <p>Rotation in degrees</p>
-    
+      
+        default: 0.0
+      
+        <p>Rotation in degrees</p>
+      
     
     <h3>rotation_center</h3>
     <b>Vec2f</b>
     
-    
-    default: [ 0.5, 0.5 ]
-    
-    <p>UV coordinate around which to rotate</p>
-    
+      
+        default: [ 0.5, 0.5 ]
+      
+        <p>UV coordinate around which to rotate</p>
+      
     
     <h3>scale</h3>
     <b>Vec2f</b>
     
-    
-    default: [ 1, 1 ]
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: [ 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>texture</h3>
     <b>String</b>
     <i>filename</i>
-    
-    default: 
-    
-    <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx). If filename contains '<UDIM>', udim index substitution is performed on filename.  In the UDIM case, 'scale', 'offset', and 'wrap around' are ignored.</p>
-    
+      
+        default: 
+      
+        <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx). If filename contains '<UDIM>', udim index substitution is performed on filename.  In the UDIM case, 'scale', 'offset', and 'wrap around' are ignored.</p>
+      
     
     <h3>texture_coordinates</h3>
     <b>Int</b>
     <i>enum</i>
-    
-    |  texture = 0 (default) 
-    
-    |  hair surface = 1 
-    
-    |  input texture coordinates = 2 
-    
-    |  hair closest surface = 3 
-    
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+          | texture = 0 (default)
+        
+          | hair surface = 1
+        
+          | input texture coordinates = 2
+        
+          | hair closest surface = 3
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>udim_files</h3>
     <b>StringVector</b>
     
-    
-    default: []
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>udim_max_v</h3>
     <b>Int</b>
     
-    
-    default: 10
-    
-    <p>udim maximum v value</p>
-    
+      
+        default: 10
+      
+        <p>udim maximum v value</p>
+      
     
     <h3>udim_values</h3>
     <b>IntVector</b>
     
-    
-    default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
     <h3>use_default_color_when_missing</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p>Uses the 'default color' for missing udims and does not report error</p>
-    
+      
+        default: False
+      
+        <p>Uses the 'default color' for missing udims and does not report error</p>
+      
     
     <h3>wrap_around</h3>
     <b>Bool</b>
     
-    
-    default: True
-    
-    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-    
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
     
   </p>
 </details>

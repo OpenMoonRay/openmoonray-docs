@@ -19,29 +19,29 @@ title: UsdPrimvarReader_normal
     <h3>fallback</h3>
     <b>Vec3f</b>
     <i>bindable</i>
-    
-    default: [ 0, 0, 0 ]
-    
-    <p>fallback value to be returned if geometry fetch failed.</p>
-    
+      
+        default: [ 0, 0, 0 ]
+      
+        <p>fallback value to be returned if geometry fetch failed.</p>
+      
     
     <h3>varname</h3>
     <b>String</b>
     
-    
-    default: 
-    
-    <p>Name of the primvar to be read from the mesh</p>
-    
+      
+        default: 
+      
+        <p>Name of the primvar to be read from the mesh</p>
+      
     
     <h3>warn_when_unavailable</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p>Whether or not to issue a warning when the requested attribute is unavailable</p>
-    
+      
+        default: False
+      
+        <p>Whether or not to issue a warning when the requested attribute is unavailable</p>
+      
     
   </p>
 </details>

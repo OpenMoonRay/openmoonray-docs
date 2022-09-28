@@ -19,11 +19,11 @@ title: HsvToRgbMap
     <h3>input</h3>
     <b>Rgb</b>
     <i>bindable</i>
-    
-    default: [ 1, 1, 1 ]
-    
-    <p>bind the input here</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p>bind the input here</p>
+      
     
   </p>
 </details>

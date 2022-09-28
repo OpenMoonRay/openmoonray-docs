@@ -19,11 +19,11 @@ title: NormalToRgbMap
     <h3>input</h3>
     <b>33554432</b>
     
-    
-    default: None
-    
-    <p>Input normal map to convert to a color</p>
-    
+      
+        default: None
+      
+        <p>Input normal map to convert to a color</p>
+      
     
   </p>
 </details>

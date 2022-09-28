@@ -19,17 +19,17 @@ title: DeformationMap
     <h3>output_mode</h3>
     <b>Int</b>
     <i>enum</i>
-    
-    |  RGB = 0 
-    
-    |  deformation_S = 1 
-    
-    |  deformation_T = 2 
-    
-    |  deformation_avg = 3 (default) 
-    
-    
-    <p>Controls output: 
+      
+          | RGB = 0
+        
+          | deformation_S = 1
+        
+          | deformation_T = 2
+        
+          | deformation_avg = 3 (default)
+        
+      
+        <p>Controls output: 
 
 		    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space 
 
@@ -38,25 +38,25 @@ title: DeformationMap
 		    deformation_T - deformation along T 
 
 		    deformation_avg - average deformation from ref space</p>
-    
+      
     
     <h3>use_warning_color</h3>
     <b>Bool</b>
     
-    
-    default: False
-    
-    <p>If derivatives are missing or zero output the warning color erroring out</p>
-    
+      
+        default: False
+      
+        <p>If derivatives are missing or zero output the warning color erroring out</p>
+      
     
     <h3>warning_color</h3>
     <b>Rgb</b>
     <i>bindable</i>
-    
-    default: [ 1, 1, 1 ]
-    
-    <p>Warning color to output when derivatives are missing or zero</p>
-    
+      
+        default: [ 1, 1, 1 ]
+      
+        <p>Warning color to output when derivatives are missing or zero</p>
+      
     
   </p>
 </details>
