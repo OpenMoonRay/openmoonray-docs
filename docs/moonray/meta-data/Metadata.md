@@ -14,23 +14,23 @@ title: Metadata
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>name</h3>
-<b>StringVector</b>  
-
-default: []
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-<h3>type</h3>
-<b>StringVector</b>  
-
-default: []
-
-Allowed types for exr headers:
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>name</h3>
+  <b>StringVector</b>  
+  
+  default: []
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  <h3>type</h3>
+  <b>StringVector</b>  
+  
+  default: []
+  
+  Allowed types for exr headers:
 
 			* box2i
 
@@ -57,16 +57,16 @@ Allowed types for exr headers:
 			* v3i
 
 			* v3f
-
-
-<h3>value</h3>
-<b>StringVector</b>  
-
-default: []
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-</p>
+  
+  
+  <h3>value</h3>
+  <b>StringVector</b>  
+  
+  default: []
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  </p>
 </details>
 

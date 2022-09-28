@@ -14,72 +14,72 @@ title: LayerMap
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>input_A</h3>
-<b>Rgb</b>  *bindable*
-
-default: [ 1, 1, 1 ]
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-<h3>input_B</h3>
-<b>Rgb</b>  *bindable*
-
-default: [ 1, 1, 1 ]
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-<h3>mask</h3>
-<b>Float</b>  *bindable*
-
-default: 1.0
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-<h3>mode</h3>
-<b>Int</b>  *enum*
-
-- off = 0
-
-- over = 1 (default)
-
-- add = 2
-
-- subtract = 3
-
-- multiply = 4
-
-- screen = 5
-
-- overlay = 6
-
-- overlay contrast = 7
-
-- darken = 8
-
-- lighten = 9
-
-- color dodge = 10
-
-- color burn = 11
-
-- hard light = 12
-
-- soft light = 13
-
-- difference = 14
-
-- exclusion = 15
-
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>input_A</h3>
+  <b>Rgb</b>  *bindable*
+  
+  default: [ 1, 1, 1 ]
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  <h3>input_B</h3>
+  <b>Rgb</b>  *bindable*
+  
+  default: [ 1, 1, 1 ]
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  <h3>mask</h3>
+  <b>Float</b>  *bindable*
+  
+  default: 1.0
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  <h3>mode</h3>
+  <b>Int</b>  *enum*
+  
+  - off = 0
+  
+  - over = 1 (default)
+  
+  - add = 2
+  
+  - subtract = 3
+  
+  - multiply = 4
+  
+  - screen = 5
+  
+  - overlay = 6
+  
+  - overlay contrast = 7
+  
+  - darken = 8
+  
+  - lighten = 9
+  
+  - color dodge = 10
+  
+  - color burn = 11
+  
+  - hard light = 12
+  
+  - soft light = 13
+  
+  - difference = 14
+  
+  - exclusion = 15
+  
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  </p>
 </details>
 

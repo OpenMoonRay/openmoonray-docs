@@ -14,114 +14,114 @@ title: RampDisplayFilter
 ---
 
 <details open>
-<summary class="scene-class-attr-group">Advanced attributes</summary>
-<p>
-
-<h3>invert_mask</h3>
-<b>Bool</b>  
-
-default: False
-
-invert value of mask
-
-
-<h3>mix</h3>
-<b>Float</b>  
-
-default: 1.0
-
-blend between output and input
-
-
-</p>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <p>
+  
+  <h3>invert_mask</h3>
+  <b>Bool</b>  
+  
+  default: False
+  
+  invert value of mask
+  
+  
+  <h3>mix</h3>
+  <b>Float</b>  
+  
+  default: 1.0
+  
+  blend between output and input
+  
+  
+  </p>
 </details>
 
 
 <details open>
-<summary class="scene-class-attr-group">Ramp Knot attributes</summary>
-<p>
-
-<h3>colors</h3>
-<b>RgbVector</b>  
-
-default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
-
-List of colors on the ramp
-
-
-<h3>interpolations</h3>
-<b>IntVector</b>  
-
-default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-
-None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5
-
-
-<h3>positions</h3>
-<b>FloatVector</b>  
-
-default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-
-Color ramp
-
-
-</p>
+  <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
+  <p>
+  
+  <h3>colors</h3>
+  <b>RgbVector</b>  
+  
+  default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
+  
+  List of colors on the ramp
+  
+  
+  <h3>interpolations</h3>
+  <b>IntVector</b>  
+  
+  default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+  
+  None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5
+  
+  
+  <h3>positions</h3>
+  <b>FloatVector</b>  
+  
+  default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+  
+  Color ramp
+  
+  
+  </p>
 </details>
 
 
 <details open>
-<summary class="scene-class-attr-group">Ramp properties attributes</summary>
-<p>
-
-<h3>input</h3>
-<b>67141632</b>  
-
-default: None
-
-input to the input ramp
-
-
-<h3>ramp_type</h3>
-<b>Int</b>  *enum*
-
-- v_ramp = 0 (default)
-
-- u_ramp = 1
-
-- diagonal_ramp = 2
-
-- radial_ramp = 3
-
-- circular_ramp = 4
-
-- box_ramp = 5
-
-- uxv_ramp = 6
-
-- four_corner_ramp = 7
-
-- input_ramp = 8
-
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-</p>
+  <summary class="scene-class-attr-group">Ramp properties attributes</summary>
+  <p>
+  
+  <h3>input</h3>
+  <b>67141632</b>  
+  
+  default: None
+  
+  input to the input ramp
+  
+  
+  <h3>ramp_type</h3>
+  <b>Int</b>  *enum*
+  
+  - v_ramp = 0 (default)
+  
+  - u_ramp = 1
+  
+  - diagonal_ramp = 2
+  
+  - radial_ramp = 3
+  
+  - circular_ramp = 4
+  
+  - box_ramp = 5
+  
+  - uxv_ramp = 6
+  
+  - four_corner_ramp = 7
+  
+  - input_ramp = 8
+  
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  </p>
 </details>
 
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>mask</h3>
-<b>67141632</b>  
-
-default: None
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>mask</h3>
+  <b>67141632</b>  
+  
+  default: None
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  </p>
 </details>
 

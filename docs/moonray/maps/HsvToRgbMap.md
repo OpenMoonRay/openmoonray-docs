@@ -14,17 +14,17 @@ title: HsvToRgbMap
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>input</h3>
-<b>Rgb</b>  *bindable*
-
-default: [ 1, 1, 1 ]
-
-bind the input here
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>input</h3>
+  <b>Rgb</b>  *bindable*
+  
+  default: [ 1, 1, 1 ]
+  
+  bind the input here
+  
+  
+  </p>
 </details>
 

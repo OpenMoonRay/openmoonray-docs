@@ -14,98 +14,98 @@ title: RdlCurveGeometry
 ---
 
 <details open>
-<summary class="scene-class-attr-group">Curve attributes</summary>
-<p>
-
-<h3>tessellation_rate</h3>
-<b>Int</b>  
-
-default: 4
-
-Number of segments to split curve spans into
-
-
-</p>
+  <summary class="scene-class-attr-group">Curve attributes</summary>
+  <p>
+  
+  <h3>tessellation_rate</h3>
+  <b>Int</b>  
+  
+  default: 4
+  
+  Number of segments to split curve spans into
+  
+  
+  </p>
 </details>
 
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>accleration_list</h3>
-<b>Vec3fVector</b>  
-
-default: []
-
-Optionally declare vertex accelerations for quadratic motion interpolation
-
-
-<h3>curve_subtype</h3>
-<b>Int</b>  *enum*
-
-- ray_facing = 0 (default)
-
-- round = 1
-
-
-Curve subtype is ray facing or round
-
-
-<h3>curve_type</h3>
-<b>Int</b>  *enum*
-
-- linear = 0
-
-- bezier = 1 (default)
-
-- bspline = 2
-
-
-Curve interpolation type is linear, bezier, or bspline
-
-
-<h3>curved_motion_blur_sample_count</h3>
-<b>Int</b>  
-
-default: 10
-
-Number of time samples generated along each curve when using curved motion blur
-
-
-<h3>curves_vertex_count</h3>
-<b>IntVector</b>  
-
-default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-
-Ordered list of vertices per curve
-
-
-<h3>label</h3>
-<b>String</b>  
-
-default: 
-
-label used in material aov expresssions
-
-
-<h3>motion_blur_type</h3>
-<b>Int</b>  *enum*
-
-- best = -1 (default)
-
-- static = 0
-
-- velocity = 1
-
-- frame delta = 2
-
-- acceleration = 3
-
-- hermite = 4
-
-
-Motion blur type for PolygonMesh/Points/Curves in alembic file.
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>accleration_list</h3>
+  <b>Vec3fVector</b>  
+  
+  default: []
+  
+  Optionally declare vertex accelerations for quadratic motion interpolation
+  
+  
+  <h3>curve_subtype</h3>
+  <b>Int</b>  *enum*
+  
+  - ray_facing = 0 (default)
+  
+  - round = 1
+  
+  
+  Curve subtype is ray facing or round
+  
+  
+  <h3>curve_type</h3>
+  <b>Int</b>  *enum*
+  
+  - linear = 0
+  
+  - bezier = 1 (default)
+  
+  - bspline = 2
+  
+  
+  Curve interpolation type is linear, bezier, or bspline
+  
+  
+  <h3>curved_motion_blur_sample_count</h3>
+  <b>Int</b>  
+  
+  default: 10
+  
+  Number of time samples generated along each curve when using curved motion blur
+  
+  
+  <h3>curves_vertex_count</h3>
+  <b>IntVector</b>  
+  
+  default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+  
+  Ordered list of vertices per curve
+  
+  
+  <h3>label</h3>
+  <b>String</b>  
+  
+  default: 
+  
+  label used in material aov expresssions
+  
+  
+  <h3>motion_blur_type</h3>
+  <b>Int</b>  *enum*
+  
+  - best = -1 (default)
+  
+  - static = 0
+  
+  - velocity = 1
+  
+  - frame delta = 2
+  
+  - acceleration = 3
+  
+  - hermite = 4
+  
+  
+  Motion blur type for PolygonMesh/Points/Curves in alembic file.
 
 "static" will treat the mesh as static.
 
@@ -120,268 +120,268 @@ Motion blur type for PolygonMesh/Points/Curves in alembic file.
 "best" will use choose the method which provides the highest quality given the available data.
 
 
-
-
-<h3>node_xform</h3>
-<b>Mat4d</b>  *blurrable*
-
-default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-<h3>part_indices</h3>
-<b>IntVector</b>  
-
-default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-
-Ordered list of part indices. 
-
-
-<h3>part_list</h3>
-<b>StringVector</b>  
-
-default: []
-
-Ordered list of part names, used in conjunction with 'part_indices' to assign per-part materials
-
-
-<h3>primitive_attribute_frame</h3>
-<b>Int</b>  *enum*
-
-- first motion step = 0
-
-- second motion step = 1
-
-- both motion steps = 2 (default)
-
-
-Which frame(s) do we take the primitive attributes from?
+  
+  
+  <h3>node_xform</h3>
+  <b>Mat4d</b>  *blurrable*
+  
+  default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  <h3>part_indices</h3>
+  <b>IntVector</b>  
+  
+  default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+  
+  Ordered list of part indices. 
+  
+  
+  <h3>part_list</h3>
+  <b>StringVector</b>  
+  
+  default: []
+  
+  Ordered list of part names, used in conjunction with 'part_indices' to assign per-part materials
+  
+  
+  <h3>primitive_attribute_frame</h3>
+  <b>Int</b>  *enum*
+  
+  - first motion step = 0
+  
+  - second motion step = 1
+  
+  - both motion steps = 2 (default)
+  
+  
+  Which frame(s) do we take the primitive attributes from?
 
 	O : first motion step
 
 	1 : second motion step
 
 	2 : both motion steps
-
-
-<h3>primitive_attributes</h3>
-<b>Object Vector</b>  
-
-default: []
-
-Vector of UserData.Each key/value pair will be added as a primitive attribute of the points.
-
-
-<h3>radius_list</h3>
-<b>FloatVector</b>  
-
-default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-
-Stores all radii
-
-
-<h3>ray_epsilon</h3>
-<b>Float</b>  
-
-default: 0.0
-
-When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.
-
-
-<h3>references</h3>
-<b>Geometry Vector</b>  
-
-default: []
-
-list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.
-
-
-<h3>reverse_normals</h3>
-<b>Bool</b>  
-
-default: False
-
-enable to reverse the normals in the geometry
-
-
-<h3>shadow_exclusion_mappings</h3>
-<b>String</b>  
-
-default: 
-
-List of mappings of the form A:B where:
+  
+  
+  <h3>primitive_attributes</h3>
+  <b>Object Vector</b>  
+  
+  default: []
+  
+  Vector of UserData.Each key/value pair will be added as a primitive attribute of the points.
+  
+  
+  <h3>radius_list</h3>
+  <b>FloatVector</b>  
+  
+  default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
+  
+  Stores all radii
+  
+  
+  <h3>ray_epsilon</h3>
+  <b>Float</b>  
+  
+  default: 0.0
+  
+  When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.
+  
+  
+  <h3>references</h3>
+  <b>Geometry Vector</b>  
+  
+  default: []
+  
+  list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.
+  
+  
+  <h3>reverse_normals</h3>
+  <b>Bool</b>  
+  
+  default: False
+  
+  enable to reverse the normals in the geometry
+  
+  
+  <h3>shadow_exclusion_mappings</h3>
+  <b>String</b>  
+  
+  default: 
+  
+  List of mappings of the form A:B where:
 
 A is a list of names of parts to be mapped, or asterisk to map the whole geometry
 
 B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.
-
-
-<h3>shadow_ray_epsilon</h3>
-<b>Float</b>  
-
-default: 0.0
-
-When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.
-
-
-<h3>shadow_receiver_label</h3>
-<b>String</b>  
-
-default: 
-
-Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.
-
-
-<h3>side_type</h3>
-<b>Int</b>  *enum*
-
-- force two-sided = 0 (default)
-
-- force single-sided = 1
-
-- use mesh sidedness = 2
-
-
-set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction
-
-
-<h3>static</h3>
-<b>Bool</b>  
-
-default: True
-
-disable if the geometry will be updated between frames
-
-
-<h3>use_rotation_motion_blur</h3>
-<b>Bool</b>  
-
-default: False
-
-if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation
-
-
-<h3>uv_list</h3>
-<b>Vec2fVector</b>  
-
-default: []
-
-If the curves are using UVs, store them per-curve in this list
-
-
-<h3>velocity_list_0</h3>
-<b>Vec3fVector</b>  
-
-default: []
-
-Optionally declare vertex velocities instead of a second motion step'
-
-
-<h3>velocity_list_1</h3>
-<b>Vec3fVector</b>  
-
-default: []
-
-Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation
-
-
-<h3>velocity_scale</h3>
-<b>Float</b>  
-
-default: 1.0
-
-Adjust magnitude of velocity-based motion blur
-
-
-<h3>vertex_list_0</h3>
-<b>Vec3fVector</b>  
-
-default: []
-
-Stores all vertices used by the points at motion step 0
-
-
-<h3>vertex_list_1</h3>
-<b>Vec3fVector</b>  
-
-default: []
-
-If the curves are in motion, the second motion step is stored in this attribute
-
-
-<h3>visible_diffuse_reflection</h3>
-<b>Bool</b>  
-
-default: True
-
-whether the geometry is visible in diffuse reflection
-
-
-<h3>visible_diffuse_transmission</h3>
-<b>Bool</b>  
-
-default: True
-
-whether the geometry is visible in diffuse transmission
-
-
-<h3>visible_glossy_reflection</h3>
-<b>Bool</b>  
-
-default: True
-
-whether the geometry is visible in glossy reflection.
-
-
-<h3>visible_glossy_transmission</h3>
-<b>Bool</b>  
-
-default: True
-
-whether the geometry is visible in glossy transmission (refraction).
-
-
-<h3>visible_in_camera</h3>
-<b>Bool</b>  
-
-default: True
-
-whether the geometry is visible to camera rays
-
-
-<h3>visible_mirror_reflection</h3>
-<b>Bool</b>  
-
-default: True
-
-whether the geometry is visible in miror reflection.
-
-
-<h3>visible_mirror_transmission</h3>
-<b>Bool</b>  
-
-default: True
-
-whether the geometry is visible in miror transmission (refraction).
-
-
-<h3>visible_shadow</h3>
-<b>Bool</b>  
-
-default: True
-
-whether the geometry casts shadows
-
-
-<h3>visible_volume</h3>
-<b>Bool</b>  
-
-default: True
-
-whether the geometry is visible in indirect volume rays
-
-
-</p>
+  
+  
+  <h3>shadow_ray_epsilon</h3>
+  <b>Float</b>  
+  
+  default: 0.0
+  
+  When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.
+  
+  
+  <h3>shadow_receiver_label</h3>
+  <b>String</b>  
+  
+  default: 
+  
+  Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.
+  
+  
+  <h3>side_type</h3>
+  <b>Int</b>  *enum*
+  
+  - force two-sided = 0 (default)
+  
+  - force single-sided = 1
+  
+  - use mesh sidedness = 2
+  
+  
+  set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction
+  
+  
+  <h3>static</h3>
+  <b>Bool</b>  
+  
+  default: True
+  
+  disable if the geometry will be updated between frames
+  
+  
+  <h3>use_rotation_motion_blur</h3>
+  <b>Bool</b>  
+  
+  default: False
+  
+  if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation
+  
+  
+  <h3>uv_list</h3>
+  <b>Vec2fVector</b>  
+  
+  default: []
+  
+  If the curves are using UVs, store them per-curve in this list
+  
+  
+  <h3>velocity_list_0</h3>
+  <b>Vec3fVector</b>  
+  
+  default: []
+  
+  Optionally declare vertex velocities instead of a second motion step'
+  
+  
+  <h3>velocity_list_1</h3>
+  <b>Vec3fVector</b>  
+  
+  default: []
+  
+  Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation
+  
+  
+  <h3>velocity_scale</h3>
+  <b>Float</b>  
+  
+  default: 1.0
+  
+  Adjust magnitude of velocity-based motion blur
+  
+  
+  <h3>vertex_list_0</h3>
+  <b>Vec3fVector</b>  
+  
+  default: []
+  
+  Stores all vertices used by the points at motion step 0
+  
+  
+  <h3>vertex_list_1</h3>
+  <b>Vec3fVector</b>  
+  
+  default: []
+  
+  If the curves are in motion, the second motion step is stored in this attribute
+  
+  
+  <h3>visible_diffuse_reflection</h3>
+  <b>Bool</b>  
+  
+  default: True
+  
+  whether the geometry is visible in diffuse reflection
+  
+  
+  <h3>visible_diffuse_transmission</h3>
+  <b>Bool</b>  
+  
+  default: True
+  
+  whether the geometry is visible in diffuse transmission
+  
+  
+  <h3>visible_glossy_reflection</h3>
+  <b>Bool</b>  
+  
+  default: True
+  
+  whether the geometry is visible in glossy reflection.
+  
+  
+  <h3>visible_glossy_transmission</h3>
+  <b>Bool</b>  
+  
+  default: True
+  
+  whether the geometry is visible in glossy transmission (refraction).
+  
+  
+  <h3>visible_in_camera</h3>
+  <b>Bool</b>  
+  
+  default: True
+  
+  whether the geometry is visible to camera rays
+  
+  
+  <h3>visible_mirror_reflection</h3>
+  <b>Bool</b>  
+  
+  default: True
+  
+  whether the geometry is visible in miror reflection.
+  
+  
+  <h3>visible_mirror_transmission</h3>
+  <b>Bool</b>  
+  
+  default: True
+  
+  whether the geometry is visible in miror transmission (refraction).
+  
+  
+  <h3>visible_shadow</h3>
+  <b>Bool</b>  
+  
+  default: True
+  
+  whether the geometry casts shadows
+  
+  
+  <h3>visible_volume</h3>
+  <b>Bool</b>  
+  
+  default: True
+  
+  whether the geometry is visible in indirect volume rays
+  
+  
+  </p>
 </details>
 

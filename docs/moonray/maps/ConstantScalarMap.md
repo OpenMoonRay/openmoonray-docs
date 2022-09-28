@@ -14,17 +14,17 @@ title: ConstantScalarMap
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>scalar_value</h3>
-<b>Float</b>  
-
-default: 1.0
-
-constant scalar value
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>scalar_value</h3>
+  <b>Float</b>  
+  
+  default: 1.0
+  
+  constant scalar value
+  
+  
+  </p>
 </details>
 

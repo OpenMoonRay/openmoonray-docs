@@ -14,17 +14,17 @@ title: NormalToRgbMap
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>input</h3>
-<b>33554432</b>  
-
-default: None
-
-Input normal map to convert to a color
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>input</h3>
+  <b>33554432</b>  
+  
+  default: None
+  
+  Input normal map to convert to a color
+  
+  
+  </p>
 </details>
 

@@ -14,57 +14,57 @@ title: DiscretizeDisplayFilter
 ---
 
 <details open>
-<summary class="scene-class-attr-group">Advanced attributes</summary>
-<p>
-
-<h3>invert_mask</h3>
-<b>Bool</b>  
-
-default: False
-
-invert value of mask
-
-
-<h3>mix</h3>
-<b>Float</b>  
-
-default: 1.0
-
-blend between output and input
-
-
-</p>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <p>
+  
+  <h3>invert_mask</h3>
+  <b>Bool</b>  
+  
+  default: False
+  
+  invert value of mask
+  
+  
+  <h3>mix</h3>
+  <b>Float</b>  
+  
+  default: 1.0
+  
+  blend between output and input
+  
+  
+  </p>
 </details>
 
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>input</h3>
-<b>67141632</b>  
-
-default: None
-
-Image buffer to discretize
-
-
-<h3>mask</h3>
-<b>67141632</b>  
-
-default: None
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-<h3>num_bins</h3>
-<b>Int</b>  
-
-default: 8
-
-number of discrete color bins
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>input</h3>
+  <b>67141632</b>  
+  
+  default: None
+  
+  Image buffer to discretize
+  
+  
+  <h3>mask</h3>
+  <b>67141632</b>  
+  
+  default: None
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  <h3>num_bins</h3>
+  <b>Int</b>  
+  
+  default: 8
+  
+  number of discrete color bins
+  
+  
+  </p>
 </details>
 

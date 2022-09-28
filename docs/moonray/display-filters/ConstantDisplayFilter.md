@@ -14,49 +14,49 @@ title: ConstantDisplayFilter
 ---
 
 <details open>
-<summary class="scene-class-attr-group">Advanced attributes</summary>
-<p>
-
-<h3>invert_mask</h3>
-<b>Bool</b>  
-
-default: False
-
-invert value of mask
-
-
-<h3>mix</h3>
-<b>Float</b>  
-
-default: 1.0
-
-blend between output and input
-
-
-</p>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <p>
+  
+  <h3>invert_mask</h3>
+  <b>Bool</b>  
+  
+  default: False
+  
+  invert value of mask
+  
+  
+  <h3>mix</h3>
+  <b>Float</b>  
+  
+  default: 1.0
+  
+  blend between output and input
+  
+  
+  </p>
 </details>
 
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>color</h3>
-<b>Rgb</b>  
-
-default: [ 0, 0, 0 ]
-
-fill color value
-
-
-<h3>mask</h3>
-<b>67141632</b>  
-
-default: None
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>color</h3>
+  <b>Rgb</b>  
+  
+  default: [ 0, 0, 0 ]
+  
+  fill color value
+  
+  
+  <h3>mask</h3>
+  <b>67141632</b>  
+  
+  default: None
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  </p>
 </details>
 

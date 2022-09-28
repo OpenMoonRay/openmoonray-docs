@@ -14,55 +14,55 @@ title: VectorDisplacement
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>bound_padding</h3>
-<b>Float</b>  
-
-default: 0.0
-
-bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.
-
-
-<h3>factor</h3>
-<b>Float</b>  
-
-default: 1.0
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-<h3>source_space</h3>
-<b>Int</b>  *enum*
-
-- tangent = 0 (default)
-
-- object = 1
-
-
-The space that the map bound to the vector parameter is in
-
-
-<h3>tangent_space_style</h3>
-<b>Int</b>  *enum*
-
-- tnb = 0 (default)
-
-- tbn = 1
-
-
-Controls how RGB maps to Tangent, Normal, and Bi-Normal
-
-
-<h3>vector</h3>
-<b>Vec3f</b>  *bindable*
-
-default: [ 0, 0, 0 ]
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>bound_padding</h3>
+  <b>Float</b>  
+  
+  default: 0.0
+  
+  bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.
+  
+  
+  <h3>factor</h3>
+  <b>Float</b>  
+  
+  default: 1.0
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  <h3>source_space</h3>
+  <b>Int</b>  *enum*
+  
+  - tangent = 0 (default)
+  
+  - object = 1
+  
+  
+  The space that the map bound to the vector parameter is in
+  
+  
+  <h3>tangent_space_style</h3>
+  <b>Int</b>  *enum*
+  
+  - tnb = 0 (default)
+  
+  - tbn = 1
+  
+  
+  Controls how RGB maps to Tangent, Normal, and Bi-Normal
+  
+  
+  <h3>vector</h3>
+  <b>Vec3f</b>  *bindable*
+  
+  default: [ 0, 0, 0 ]
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  </p>
 </details>
 

@@ -14,41 +14,41 @@ title: ClampMap
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>clamp</h3>
-<b>Bool</b>  
-
-default: True
-
-enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.
-
-
-<h3>clamp_max</h3>
-<b>Float</b>  
-
-default: 1.0
-
-the maximum value output by this map when 'clamp' is enabled
-
-
-<h3>clamp_min</h3>
-<b>Float</b>  
-
-default: 0.0
-
-the minimum value output by this map when 'clamp' is enabled
-
-
-<h3>input</h3>
-<b>Rgb</b>  *bindable*
-
-default: [ 1, 1, 1 ]
-
-the input values to be remapped
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>clamp</h3>
+  <b>Bool</b>  
+  
+  default: True
+  
+  enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.
+  
+  
+  <h3>clamp_max</h3>
+  <b>Float</b>  
+  
+  default: 1.0
+  
+  the maximum value output by this map when 'clamp' is enabled
+  
+  
+  <h3>clamp_min</h3>
+  <b>Float</b>  
+  
+  default: 0.0
+  
+  the minimum value output by this map when 'clamp' is enabled
+  
+  
+  <h3>input</h3>
+  <b>Rgb</b>  *bindable*
+  
+  default: [ 1, 1, 1 ]
+  
+  the input values to be remapped
+  
+  
+  </p>
 </details>
 

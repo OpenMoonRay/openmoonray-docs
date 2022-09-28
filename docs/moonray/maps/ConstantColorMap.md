@@ -14,17 +14,17 @@ title: ConstantColorMap
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>color_value</h3>
-<b>Rgb</b>  
-
-default: [ 1, 1, 1 ]
-
-constant color value
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>color_value</h3>
+  <b>Rgb</b>  
+  
+  default: [ 1, 1, 1 ]
+  
+  constant color value
+  
+  
+  </p>
 </details>
 

@@ -14,71 +14,71 @@ title: ProjectCameraNormalMap
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>aspect_ratio_source</h3>
-<b>Int</b>  *enum*
-
-- from texture = 0 (default)
-
-- custom = 1
-
-
-Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio
-
-
-<h3>custom_aspect_ratio</h3>
-<b>Float</b>  
-
-default: 1.0
-
-a custom aspect ratio for the projected texture
-
-
-<h3>normal_encoding</h3>
-<b>Int</b>  *enum*
-
-- [0,1] = 0 (default)
-
-- [-1,1] = 1
-
-
-Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]
-
-
-<h3>project_on_back_faces</h3>
-<b>Bool</b>  
-
-default: False
-
-Toggles whether camera projections appear on back faces.
-
-
-<h3>projector</h3>
-<b>Camera</b>  
-
-default: None
-
-the camera to project from
-
-
-<h3>texture</h3>
-<b>String</b>  *filename*
-
-default: 
-
-filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
-
-
-<h3>use_reference_space</h3>
-<b>Bool</b>  
-
-default: False
-
-use reference space
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>aspect_ratio_source</h3>
+  <b>Int</b>  *enum*
+  
+  - from texture = 0 (default)
+  
+  - custom = 1
+  
+  
+  Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio
+  
+  
+  <h3>custom_aspect_ratio</h3>
+  <b>Float</b>  
+  
+  default: 1.0
+  
+  a custom aspect ratio for the projected texture
+  
+  
+  <h3>normal_encoding</h3>
+  <b>Int</b>  *enum*
+  
+  - [0,1] = 0 (default)
+  
+  - [-1,1] = 1
+  
+  
+  Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]
+  
+  
+  <h3>project_on_back_faces</h3>
+  <b>Bool</b>  
+  
+  default: False
+  
+  Toggles whether camera projections appear on back faces.
+  
+  
+  <h3>projector</h3>
+  <b>Camera</b>  
+  
+  default: None
+  
+  the camera to project from
+  
+  
+  <h3>texture</h3>
+  <b>String</b>  *filename*
+  
+  default: 
+  
+  filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).
+  
+  
+  <h3>use_reference_space</h3>
+  <b>Bool</b>  
+  
+  default: False
+  
+  use reference space
+  
+  
+  </p>
 </details>
 

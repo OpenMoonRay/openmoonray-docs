@@ -14,120 +14,120 @@ title: UsdUVTexture
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>bias</h3>
-<b>Rgb</b>  
-
-default: [ 0, 0, 0 ]
-
-Bias to be applied to all components of the texture.  output = textureValue * scale + bias
-
-
-<h3>fallback</h3>
-<b>Rgb</b>  
-
-default: [ 0, 0, 0 ]
-
-Fallback value used when texture can not be read.
-
-
-<h3>file</h3>
-<b>String</b>  *filename*
-
-default: 
-
-Path to the texture
-
-
-<h3>scale</h3>
-<b>Rgb</b>  
-
-default: [ 1, 1, 1 ]
-
-Scale to be applied to all components of the texture.  output = textureValue * scale + bias
-
-
-<h3>sourceColorSpace</h3>
-<b>Int</b>  *enum*
-
-- raw = 0
-
-- sRGB = 1
-
-- auto = 2 (default)
-
-
-Flag indicating the color space in which the source texture is encoded.
-
-
-<h3>st</h3>
-<b>Vec2f</b>  *bindable*
-
-default: [ 1, 1 ]
-
-Texture coordinate to use to fetch this texture.
-
-
-<h3>udim_files</h3>
-<b>StringVector</b>  
-
-default: []
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-<h3>udim_max_v</h3>
-<b>Int</b>  
-
-default: 10
-
-udim maximum v value
-
-
-<h3>udim_values</h3>
-<b>IntVector</b>  
-
-default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-<h3>wrapS</h3>
-<b>Int</b>  *enum*
-
-- black = 0
-
-- clamp = 1
-
-- repeat = 2
-
-- mirror = 3
-
-- useMetadata = 4 (default)
-
-
-Wrap mode when reading this texture.
-
-
-<h3>wrapT</h3>
-<b>Int</b>  *enum*
-
-- black = 0
-
-- clamp = 1
-
-- repeat = 2
-
-- mirror = 3
-
-- useMetadata = 4 (default)
-
-
-Wrap mode when reading this texture.
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>bias</h3>
+  <b>Rgb</b>  
+  
+  default: [ 0, 0, 0 ]
+  
+  Bias to be applied to all components of the texture.  output = textureValue * scale + bias
+  
+  
+  <h3>fallback</h3>
+  <b>Rgb</b>  
+  
+  default: [ 0, 0, 0 ]
+  
+  Fallback value used when texture can not be read.
+  
+  
+  <h3>file</h3>
+  <b>String</b>  *filename*
+  
+  default: 
+  
+  Path to the texture
+  
+  
+  <h3>scale</h3>
+  <b>Rgb</b>  
+  
+  default: [ 1, 1, 1 ]
+  
+  Scale to be applied to all components of the texture.  output = textureValue * scale + bias
+  
+  
+  <h3>sourceColorSpace</h3>
+  <b>Int</b>  *enum*
+  
+  - raw = 0
+  
+  - sRGB = 1
+  
+  - auto = 2 (default)
+  
+  
+  Flag indicating the color space in which the source texture is encoded.
+  
+  
+  <h3>st</h3>
+  <b>Vec2f</b>  *bindable*
+  
+  default: [ 1, 1 ]
+  
+  Texture coordinate to use to fetch this texture.
+  
+  
+  <h3>udim_files</h3>
+  <b>StringVector</b>  
+  
+  default: []
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  <h3>udim_max_v</h3>
+  <b>Int</b>  
+  
+  default: 10
+  
+  udim maximum v value
+  
+  
+  <h3>udim_values</h3>
+  <b>IntVector</b>  
+  
+  default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  <h3>wrapS</h3>
+  <b>Int</b>  *enum*
+  
+  - black = 0
+  
+  - clamp = 1
+  
+  - repeat = 2
+  
+  - mirror = 3
+  
+  - useMetadata = 4 (default)
+  
+  
+  Wrap mode when reading this texture.
+  
+  
+  <h3>wrapT</h3>
+  <b>Int</b>  *enum*
+  
+  - black = 0
+  
+  - clamp = 1
+  
+  - repeat = 2
+  
+  - mirror = 3
+  
+  - useMetadata = 4 (default)
+  
+  
+  Wrap mode when reading this texture.
+  
+  
+  </p>
 </details>
 

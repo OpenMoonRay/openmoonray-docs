@@ -14,17 +14,17 @@ title: LightFilterSet
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>lightfilters</h3>
-<b>Lightfilter Vector</b>  
-
-default: []
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>lightfilters</h3>
+  <b>Lightfilter Vector</b>  
+  
+  default: []
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  </p>
 </details>
 

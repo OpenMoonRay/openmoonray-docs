@@ -14,17 +14,17 @@ title: LightSet
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>lights</h3>
-<b>Light Vector</b>  
-
-default: []
-
-<p class="scene-class-attr-missing">No documentation available</p>
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>lights</h3>
+  <b>Light Vector</b>  
+  
+  default: []
+  
+  <p class="scene-class-attr-missing">No documentation available</p>
+  
+  
+  </p>
 </details>
 

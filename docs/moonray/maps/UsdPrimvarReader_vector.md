@@ -14,33 +14,33 @@ title: UsdPrimvarReader_vector
 ---
 
 <details open>
-<summary class="scene-class-attr-group">General attributes</summary>
-<p>
-
-<h3>fallback</h3>
-<b>Vec3f</b>  *bindable*
-
-default: [ 0, 0, 0 ]
-
-fallback value to be returned if geometry fetch failed.
-
-
-<h3>varname</h3>
-<b>String</b>  
-
-default: 
-
-Name of the primvar to be read from the mesh
-
-
-<h3>warn_when_unavailable</h3>
-<b>Bool</b>  
-
-default: False
-
-Whether or not to issue a warning when the requested attribute is unavailable
-
-
-</p>
+  <summary class="scene-class-attr-group">General attributes</summary>
+  <p>
+  
+  <h3>fallback</h3>
+  <b>Vec3f</b>  *bindable*
+  
+  default: [ 0, 0, 0 ]
+  
+  fallback value to be returned if geometry fetch failed.
+  
+  
+  <h3>varname</h3>
+  <b>String</b>  
+  
+  default: 
+  
+  Name of the primvar to be read from the mesh
+  
+  
+  <h3>warn_when_unavailable</h3>
+  <b>Bool</b>  
+  
+  default: False
+  
+  Whether or not to issue a warning when the requested attribute is unavailable
+  
+  
+  </p>
 </details>
 
