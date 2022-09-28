@@ -15,15 +15,16 @@ title: GeometrySet
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>geometries</h3>
-  <b>SceneObjectIndexable</b>  
-  
-  default: None
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
+    
+    <h3>geometries</h3>
+    <b>SceneObjectIndexable</b>
+    
+    
+    default: None
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
   </p>
 </details>
 

@@ -15,39 +15,43 @@ title: ShadowDisplayFilter
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>density</h3>
-  <b>Float</b>  
-  
-  default: 1.0
-  
-  <p>Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.</p>
-  
-  
-  <h3>occluded</h3>
-  <b>67141632</b>  
-  
-  default: None
-  
-  <p>Image Buffer representing the occluded image</p>
-  
-  
-  <h3>shadow_color</h3>
-  <b>Rgb</b>  
-  
-  default: [ 0, 0, 0 ]
-  
-  <p>color of the shadow</p>
-  
-  
-  <h3>unoccluded</h3>
-  <b>67141632</b>  
-  
-  default: None
-  
-  <p>Image Buffer representing the unoccluded image</p>
-  
-  
+    
+    <h3>density</h3>
+    <b>Float</b>
+    
+    
+    default: 1.0
+    
+    <p>Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.</p>
+    
+    
+    <h3>occluded</h3>
+    <b>67141632</b>
+    
+    
+    default: None
+    
+    <p>Image Buffer representing the occluded image</p>
+    
+    
+    <h3>shadow_color</h3>
+    <b>Rgb</b>
+    
+    
+    default: [ 0, 0, 0 ]
+    
+    <p>color of the shadow</p>
+    
+    
+    <h3>unoccluded</h3>
+    <b>67141632</b>
+    
+    
+    default: None
+    
+    <p>Image Buffer representing the unoccluded image</p>
+    
+    
   </p>
 </details>
 

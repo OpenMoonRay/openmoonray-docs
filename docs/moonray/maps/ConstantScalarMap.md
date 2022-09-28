@@ -15,15 +15,16 @@ title: ConstantScalarMap
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>scalar_value</h3>
-  <b>Float</b>  
-  
-  default: 1.0
-  
-  <p>constant scalar value</p>
-  
-  
+    
+    <h3>scalar_value</h3>
+    <b>Float</b>
+    
+    
+    default: 1.0
+    
+    <p>constant scalar value</p>
+    
+    
   </p>
 </details>
 

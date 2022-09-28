@@ -15,15 +15,16 @@ title: RgbToNormalMap
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>input</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>Input color to convert to a normal map</p>
-  
-  
+    
+    <h3>input</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>Input color to convert to a normal map</p>
+    
+    
   </p>
 </details>
 

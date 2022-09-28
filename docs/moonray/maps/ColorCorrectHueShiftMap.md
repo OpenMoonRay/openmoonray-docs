@@ -15,39 +15,43 @@ title: ColorCorrectHueShiftMap
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>hue_shift</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>shifts the hue of the input (spectrum range is 0-1)</p>
-  
-  
-  <h3>input</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>bind the input here</p>
-  
-  
-  <h3>mix</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>how much of the overall color correct to mix in</p>
-  
-  
-  <h3>on</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>enables/disables all color correct operations</p>
-  
-  
+    
+    <h3>hue_shift</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>shifts the hue of the input (spectrum range is 0-1)</p>
+    
+    
+    <h3>input</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>bind the input here</p>
+    
+    
+    <h3>mix</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>how much of the overall color correct to mix in</p>
+    
+    
+    <h3>on</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>enables/disables all color correct operations</p>
+    
+    
   </p>
 </details>
 

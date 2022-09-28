@@ -15,58 +15,64 @@ title: BlendMap
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>blend_amount</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.5
-  
-  <p>The amount to blend between color A (0) and color B (1)</p>
-  
-  
-  <h3>blend_type</h3>
-  <b>Int</b>  *enum*
-  
-  - linear = 0 (default)
-  
-  - cubic = 1
-  
-  
-  <p>The type of blending algorithm</p>
-  
-  
-  <h3>color_A</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>The color you get if blend amount is 0</p>
-  
-  
-  <h3>color_B</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>The color you get if blend amount is 1</p>
-  
-  
-  <h3>threshold_max</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>If the blend amount is greater than this amount, it will choose color B (1)</p>
-  
-  
-  <h3>threshold_min</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>If the blend amount is less than or equal to this amount, it will choose color A (0)</p>
-  
-  
+    
+    <h3>blend_amount</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.5
+    
+    <p>The amount to blend between color A (0) and color B (1)</p>
+    
+    
+    <h3>blend_type</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - linear = 0 (default)
+    
+    - cubic = 1
+    
+    
+    <p>The type of blending algorithm</p>
+    
+    
+    <h3>color_A</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>The color you get if blend amount is 0</p>
+    
+    
+    <h3>color_B</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>The color you get if blend amount is 1</p>
+    
+    
+    <h3>threshold_max</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>If the blend amount is greater than this amount, it will choose color B (1)</p>
+    
+    
+    <h3>threshold_min</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>If the blend amount is less than or equal to this amount, it will choose color A (0)</p>
+    
+    
   </p>
 </details>
 

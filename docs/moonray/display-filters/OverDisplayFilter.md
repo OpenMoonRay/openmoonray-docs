@@ -15,47 +15,52 @@ title: OverDisplayFilter
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>alpha</h3>
-  <b>67141632</b>  
-  
-  default: None
-  
-  <p>alpha for over operation</p>
-  
-  
-  <h3>input_bottom</h3>
-  <b>67141632</b>  
-  
-  default: None
-  
-  <p>RenderOutput on bottom</p>
-  
-  
-  <h3>input_top</h3>
-  <b>67141632</b>  
-  
-  default: None
-  
-  <p>RenderOutput on top</p>
-  
-  
-  <h3>invert_alpha</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>invert value of alpha</p>
-  
-  
-  <h3>mix</h3>
-  <b>Float</b>  
-  
-  default: 1.0
-  
-  <p>blend between output and input</p>
-  
-  
+    
+    <h3>alpha</h3>
+    <b>67141632</b>
+    
+    
+    default: None
+    
+    <p>alpha for over operation</p>
+    
+    
+    <h3>input_bottom</h3>
+    <b>67141632</b>
+    
+    
+    default: None
+    
+    <p>RenderOutput on bottom</p>
+    
+    
+    <h3>input_top</h3>
+    <b>67141632</b>
+    
+    
+    default: None
+    
+    <p>RenderOutput on top</p>
+    
+    
+    <h3>invert_alpha</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>invert value of alpha</p>
+    
+    
+    <h3>mix</h3>
+    <b>Float</b>
+    
+    
+    default: 1.0
+    
+    <p>blend between output and input</p>
+    
+    
   </p>
 </details>
 

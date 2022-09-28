@@ -15,55 +15,60 @@ title: RenderOutput
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>active</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>true enables, false disables render output.</p>
-  
-  
-  <h3>camera</h3>
-  <b>Camera</b>  
-  
-  default: None
-  
-  <p>Camera to use for this output.  If not specified, defaults to the primary camera.</p>
-  
-  
-  <h3>channel_format</h3>
-  <b>Int</b>  *enum*
-  
-  - float = 0
-  
-  - half = 1 (default)
-  
-  
-  <p>The pixel encoding (bit depth and type) of the output channel.</p>
-  
-  
-  <h3>channel_name</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>Name of the output channel.  In the case of an empty channel name a sensible default name is chosen.</p>
-  
-  
-  <h3>channel_suffix_mode</h3>
-  <b>Int</b>  *enum*
-  
-  - auto = 0 (default)
-  
-  - rgb = 1
-  
-  - xyz = 2
-  
-  - uvw = 3
-  
-  
-  <p>When processing multi-channel outputs, how should channel names be suffixed?
+    
+    <h3>active</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>true enables, false disables render output.</p>
+    
+    
+    <h3>camera</h3>
+    <b>Camera</b>
+    
+    
+    default: None
+    
+    <p>Camera to use for this output.  If not specified, defaults to the primary camera.</p>
+    
+    
+    <h3>channel_format</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - float = 0
+    
+    - half = 1 (default)
+    
+    
+    <p>The pixel encoding (bit depth and type) of the output channel.</p>
+    
+    
+    <h3>channel_name</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>Name of the output channel.  In the case of an empty channel name a sensible default name is chosen.</p>
+    
+    
+    <h3>channel_suffix_mode</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - auto = 0 (default)
+    
+    - rgb = 1
+    
+    - xyz = 2
+    
+    - uvw = 3
+    
+    
+    <p>When processing multi-channel outputs, how should channel names be suffixed?
 
 	auto : a best guess suffix is chosen based on the type of output
 
@@ -72,126 +77,138 @@ title: RenderOutput
 	xyz  : .X, .Y, .Z
 
 	uvw  : .U, .V, .W</p>
-  
-  
-  <h3>checkpoint_file_name</h3>
-  <b>String</b>  
-  
-  default: checkpoint.exr
-  
-  <p>Name of checkpoint output file.</p>
-  
-  
-  <h3>checkpoint_multi_version_file_name</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>Name of checkpoint output file under checkpoint file overwrite=off condition.</p>
-  
-  
-  <h3>compression</h3>
-  <b>Int</b>  *enum*
-  
-  - none = 0
-  
-  - zip = 1 (default)
-  
-  - rle = 2
-  
-  - zips = 3
-  
-  - piz = 4
-  
-  - pxr24 = 5
-  
-  - b44 = 6
-  
-  - b44a = 7
-  
-  - dwaa = 8
-  
-  - dwab = 9
-  
-  
-  <p>Compression used for file (or file part in the multi-part case). All render outputs that target the same image must specify the same compression.</p>
-  
-  
-  <h3>cryptomatte_depth</h3>
-  <b>Int</b>  
-  
-  default: 6
-  
-  <p>Number of cryptomatte (id,coverage) data sets to output</p>
-  
-  
-  <h3>denoise</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>Run optix denoiser before writing to disk</p>
-  
-  
-  <h3>denoiser_input</h3>
-  <b>Int</b>  *enum*
-  
-  - not an input = 0 (default)
-  
-  - as albedo = 1
-  
-  - as normal = 2
-  
-  
-  <p>How to use this output as a denoiser input</p>
-  
-  
-  <h3>display_filter</h3>
-  <b>67108864</b>  
-  
-  default: None
-  
-  <p>If "result" is "display filter", this attribute refers to a display filter object which is used to compute the output pixel values.</p>
-  
-  
-  <h3>exr_dwa_compression_level</h3>
-  <b>Float</b>  
-  
-  default: 85.0
-  
-  <p>Compression level used for file with dwaa or dwab compression. All render outputs that target the same image must specify the same compression level.</p>
-  
-  
-  <h3>exr_header_attributes</h3>
-  <b>Metadata</b>  
-  
-  default: None
-  
-  <p>Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}</p>
-  
-  
-  <h3>file_name</h3>
-  <b>String</b>  
-  
-  default: scene.exr
-  
-  <p>Name of destination file.</p>
-  
-  
-  <h3>file_part</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>Name of sub-image if using a multi-part exr file.</p>
-  
-  
-  <h3>lpe</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>This attribute specifies a light path expression to output. For details on light path expression syntax see:
+    
+    
+    <h3>checkpoint_file_name</h3>
+    <b>String</b>
+    
+    
+    default: checkpoint.exr
+    
+    <p>Name of checkpoint output file.</p>
+    
+    
+    <h3>checkpoint_multi_version_file_name</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>Name of checkpoint output file under checkpoint file overwrite=off condition.</p>
+    
+    
+    <h3>compression</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - none = 0
+    
+    - zip = 1 (default)
+    
+    - rle = 2
+    
+    - zips = 3
+    
+    - piz = 4
+    
+    - pxr24 = 5
+    
+    - b44 = 6
+    
+    - b44a = 7
+    
+    - dwaa = 8
+    
+    - dwab = 9
+    
+    
+    <p>Compression used for file (or file part in the multi-part case). All render outputs that target the same image must specify the same compression.</p>
+    
+    
+    <h3>cryptomatte_depth</h3>
+    <b>Int</b>
+    
+    
+    default: 6
+    
+    <p>Number of cryptomatte (id,coverage) data sets to output</p>
+    
+    
+    <h3>denoise</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>Run optix denoiser before writing to disk</p>
+    
+    
+    <h3>denoiser_input</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - not an input = 0 (default)
+    
+    - as albedo = 1
+    
+    - as normal = 2
+    
+    
+    <p>How to use this output as a denoiser input</p>
+    
+    
+    <h3>display_filter</h3>
+    <b>67108864</b>
+    
+    
+    default: None
+    
+    <p>If "result" is "display filter", this attribute refers to a display filter object which is used to compute the output pixel values.</p>
+    
+    
+    <h3>exr_dwa_compression_level</h3>
+    <b>Float</b>
+    
+    
+    default: 85.0
+    
+    <p>Compression level used for file with dwaa or dwab compression. All render outputs that target the same image must specify the same compression level.</p>
+    
+    
+    <h3>exr_header_attributes</h3>
+    <b>Metadata</b>
+    
+    
+    default: None
+    
+    <p>Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}</p>
+    
+    
+    <h3>file_name</h3>
+    <b>String</b>
+    
+    
+    default: scene.exr
+    
+    <p>Name of destination file.</p>
+    
+    
+    <h3>file_part</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>Name of sub-image if using a multi-part exr file.</p>
+    
+    
+    <h3>lpe</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>This attribute specifies a light path expression to output. For details on light path expression syntax see:
 
 		https://github.com/imageworks/OpenShadingLanguage/wiki/OSL-Light-Path-Expressions
 
@@ -220,14 +237,15 @@ title: RenderOutput
 		'translucent'  : C<TD>[DSG]+[<L.>O]
 
 		'transmission' : C<TS>[DSG]+[<L.>O]</p>
-  
-  
-  <h3>material_aov</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>If "result" is "material aov", this attribute specifies a material aov expression to output.  The expression format is: 
+    
+    
+    <h3>material_aov</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>If "result" is "material aov", this attribute specifies a material aov expression to output.  The expression format is: 
 
 	[('<GL>')+\.][('<ML>')+\.][('<LL>')+\.][(SS|R|T|D|G|M)+\.][fresnel\.]<property>. Where:
 
@@ -312,25 +330,26 @@ title: RenderOutput
 		R.albedo            : Total reflection albedo 
 
 		'spec'.MG.roughness : Roughness of all mirror and glossy lobes that have the 'spec' label</p>
-  
-  
-  <h3>math_filter</h3>
-  <b>Int</b>  *enum*
-  
-  - average = 0 (default)
-  
-  - sum = 1
-  
-  - min = 2
-  
-  - max = 3
-  
-  - force_consistent_sampling = 4
-  
-  - closest = 5
-  
-  
-  <p>the math filter over the pixel.
+    
+    
+    <h3>math_filter</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - average = 0 (default)
+    
+    - sum = 1
+    
+    - min = 2
+    
+    - max = 3
+    
+    - force_consistent_sampling = 4
+    
+    - closest = 5
+    
+    
+    <p>the math filter over the pixel.
 
 options include:
 
@@ -345,84 +364,89 @@ options include:
 	force_consistent_sampling : average of the first "min_adaptive_samples"
 
 	closest                   : use sample with minimum z-depth</p>
-  
-  
-  <h3>output_type</h3>
-  <b>String</b>  
-  
-  default: flat
-  
-  <p>Specifies the type of output.  Defaults to "flat", meaning a flat exr file.  "deep" will output a deep exr file.</p>
-  
-  
-  <h3>primitive_attribute</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>If "result" is "primitive attribute", this attribute specifies the particular primitive attribute to output.  Default channel name is based on primitive attribute name and type.</p>
-  
-  
-  <h3>primitive_attribute_type</h3>
-  <b>Int</b>  *enum*
-  
-  - FLOAT = 0 (default)
-  
-  - VEC2F = 1
-  
-  - VEC3F = 2
-  
-  - RGB = 3
-  
-  
-  <p>This attribute specifies the type of the attribute named with the "primitive attribute" setting.  This is required to uniquely specify the primitive attribute.</p>
-  
-  
-  <h3>reference_render_output</h3>
-  <b>Renderoutput</b>  
-  
-  default: None
-  
-  <p>If "result" is "variance aov", this attribute refers to another render output for which to calculate the pixel variance.</p>
-  
-  
-  <h3>result</h3>
-  <b>Int</b>  *enum*
-  
-  - beauty = 0 (default)
-  
-  - alpha = 1
-  
-  - depth = 2
-  
-  - state variable = 3
-  
-  - primitive attribute = 4
-  
-  - time per pixel = 5
-  
-  - wireframe = 6
-  
-  - material aov = 7
-  
-  - light aov = 8
-  
-  - visibility aov = 9
-  
-  - variance aov = 10
-  
-  - weight = 11
-  
-  - beauty aux = 12
-  
-  - cryptomatte = 13
-  
-  - alpha aux = 14
-  
-  - display filter = 15
-  
-  
-  <p>The result to output.  Available results: 
+    
+    
+    <h3>output_type</h3>
+    <b>String</b>
+    
+    
+    default: flat
+    
+    <p>Specifies the type of output.  Defaults to "flat", meaning a flat exr file.  "deep" will output a deep exr file.</p>
+    
+    
+    <h3>primitive_attribute</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>If "result" is "primitive attribute", this attribute specifies the particular primitive attribute to output.  Default channel name is based on primitive attribute name and type.</p>
+    
+    
+    <h3>primitive_attribute_type</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - FLOAT = 0 (default)
+    
+    - VEC2F = 1
+    
+    - VEC3F = 2
+    
+    - RGB = 3
+    
+    
+    <p>This attribute specifies the type of the attribute named with the "primitive attribute" setting.  This is required to uniquely specify the primitive attribute.</p>
+    
+    
+    <h3>reference_render_output</h3>
+    <b>Renderoutput</b>
+    
+    
+    default: None
+    
+    <p>If "result" is "variance aov", this attribute refers to another render output for which to calculate the pixel variance.</p>
+    
+    
+    <h3>result</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - beauty = 0 (default)
+    
+    - alpha = 1
+    
+    - depth = 2
+    
+    - state variable = 3
+    
+    - primitive attribute = 4
+    
+    - time per pixel = 5
+    
+    - wireframe = 6
+    
+    - material aov = 7
+    
+    - light aov = 8
+    
+    - visibility aov = 9
+    
+    - variance aov = 10
+    
+    - weight = 11
+    
+    - beauty aux = 12
+    
+    - cryptomatte = 13
+    
+    - alpha aux = 14
+    
+    - display filter = 15
+    
+    
+    <p>The result to output.  Available results: 
 
 	general results:
 
@@ -461,47 +485,49 @@ options include:
 		"time per pixel" - Time per pixel heat map metric,
 
 		"wireframe" - Render as wireframe</p>
-  
-  
-  <h3>resume_file_name</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>Name of input file for resume render start condition</p>
-  
-  
-  <h3>state_variable</h3>
-  <b>Int</b>  *enum*
-  
-  - P = 0
-  
-  - Ng = 1
-  
-  - N = 2 (default)
-  
-  - St = 3
-  
-  - dPds = 4
-  
-  - dPdt = 5
-  
-  - dSdx = 6
-  
-  - dSdy = 7
-  
-  - dTdx = 8
-  
-  - dTdy = 9
-  
-  - Wp = 10
-  
-  - depth = 11
-  
-  - motionvec = 12
-  
-  
-  <p>If "result" is "state variable", this attribute specifies the particular state variable result. 
+    
+    
+    <h3>resume_file_name</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>Name of input file for resume render start condition</p>
+    
+    
+    <h3>state_variable</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - P = 0
+    
+    - Ng = 1
+    
+    - N = 2 (default)
+    
+    - St = 3
+    
+    - dPds = 4
+    
+    - dPdt = 5
+    
+    - dSdx = 6
+    
+    - dSdy = 7
+    
+    - dTdx = 8
+    
+    - dTdy = 9
+    
+    - Wp = 10
+    
+    - depth = 11
+    
+    - motionvec = 12
+    
+    
+    <p>If "result" is "state variable", this attribute specifies the particular state variable result. 
 
 	"P" - position (P.X, P.Y, P.Z), 
 
@@ -528,16 +554,17 @@ options include:
 	"depth" - z distance from camera (Z), 
 
 	"motionvec" - 2D motion vector</p>
-  
-  
-  <h3>visibility_aov</h3>
-  <b>String</b>  
-  
-  default: C[<T.><RS>]*[<R[DG]><TD>][LO]
-  
-  <p>If "result" is "visibility aov", this attribute specifies a light path expression that defines the set of all paths usedto compute the visibility ratio.</p>
-  
-  
+    
+    
+    <h3>visibility_aov</h3>
+    <b>String</b>
+    
+    
+    default: C[<T.><RS>]*[<R[DG]><TD>][LO]
+    
+    <p>If "result" is "visibility aov", this attribute specifies a light path expression that defines the set of all paths usedto compute the visibility ratio.</p>
+    
+    
   </p>
 </details>
 

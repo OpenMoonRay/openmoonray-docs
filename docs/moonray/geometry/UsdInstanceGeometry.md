@@ -15,75 +15,81 @@ title: UsdInstanceGeometry
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>curved_motion_blur_sample_count</h3>
-  <b>Int</b>  
-  
-  default: 10
-  
-  <p>Number of time samples generated along each curve when using curved motion blur</p>
-  
-  
-  <h3>disable_indices</h3>
-  <b>IntVector</b>  
-  
-  default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-  
-  <p>A list of index values to hide / disable. For example, with 4 instances you can supply a list of 0, 2 to disable those instances. If an index in this list is out of range, it is ignored.</p>
-  
-  
-  <h3>evaluation_frame</h3>
-  <b>Float</b>  
-  
-  default: 1.0
-  
-  <p>evaluate geometry at specified frame instead of SceneVariables frame
+    
+    <h3>curved_motion_blur_sample_count</h3>
+    <b>Int</b>
+    
+    
+    default: 10
+    
+    <p>Number of time samples generated along each curve when using curved motion blur</p>
+    
+    
+    <h3>disable_indices</h3>
+    <b>IntVector</b>
+    
+    
+    default: <scene_rdl2.__scene_rdl2__.IntVector object at >
+    
+    <p>A list of index values to hide / disable. For example, with 4 instances you can supply a list of 0, 2 to disable those instances. If an index in this list is out of range, it is ignored.</p>
+    
+    
+    <h3>evaluation_frame</h3>
+    <b>Float</b>
+    
+    
+    default: 1.0
+    
+    <p>evaluate geometry at specified frame instead of SceneVariables frame
 
 </p>
-  
-  
-  <h3>instance_level</h3>
-  <b>Int</b>  *enum*
-  
-  - instance level 0 = 0 (default)
-  
-  - instance level 1 = 1
-  
-  - instance level 2 = 2
-  
-  - instance level 3 = 3
-  
-  - instance level 4 = 4
-  
-  
-  <p>Level of this instance.  This level can be referenced in TransformSpaceMap to allow for transforming data to/from the local space of each instance this instancer produces.</p>
-  
-  
-  <h3>label</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>label used in material aov expresssions</p>
-  
-  
-  <h3>motion_blur_type</h3>
-  <b>Int</b>  *enum*
-  
-  - best = -1 (default)
-  
-  - static = 0
-  
-  - velocity = 1
-  
-  - frame delta = 2
-  
-  - acceleration = 3
-  
-  - hermite = 4
-  
-  
-  <p>Motion blur type for PolygonMesh/Points/Curves in alembic file.
+    
+    
+    <h3>instance_level</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - instance level 0 = 0 (default)
+    
+    - instance level 1 = 1
+    
+    - instance level 2 = 2
+    
+    - instance level 3 = 3
+    
+    - instance level 4 = 4
+    
+    
+    <p>Level of this instance.  This level can be referenced in TransformSpaceMap to allow for transforming data to/from the local space of each instance this instancer produces.</p>
+    
+    
+    <h3>label</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>label used in material aov expresssions</p>
+    
+    
+    <h3>motion_blur_type</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - best = -1 (default)
+    
+    - static = 0
+    
+    - velocity = 1
+    
+    - frame delta = 2
+    
+    - acceleration = 3
+    
+    - hermite = 4
+    
+    
+    <p>Motion blur type for PolygonMesh/Points/Curves in alembic file.
 
 "static" will treat the mesh as static.
 
@@ -98,256 +104,283 @@ title: UsdInstanceGeometry
 "best" will use choose the method which provides the highest quality given the available data.
 
 </p>
-  
-  
-  <h3>node_xform</h3>
-  <b>Mat4d</b>  *blurrable*
-  
-  default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
-  <h3>point_instancer_path</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>The point instancer to load from the USD Stage
+    
+    
+    <h3>node_xform</h3>
+    <b>Mat4d</b>
+    <span class="emphasized">blurrable</span>
+    
+    default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
+    <h3>point_instancer_path</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>The point instancer to load from the USD Stage
 
 </p>
-  
-  
-  <h3>primitive_attribute_frame</h3>
-  <b>Int</b>  *enum*
-  
-  - first motion step = 0
-  
-  - second motion step = 1
-  
-  - both motion steps = 2 (default)
-  
-  
-  <p>Which frame(s) do we take the primitive attributes from?
+    
+    
+    <h3>primitive_attribute_frame</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - first motion step = 0
+    
+    - second motion step = 1
+    
+    - both motion steps = 2 (default)
+    
+    
+    <p>Which frame(s) do we take the primitive attributes from?
 
 	O : first motion step
 
 	1 : second motion step
 
 	2 : both motion steps</p>
-  
-  
-  <h3>primitive_attributes</h3>
-  <b>Userdata Vector</b>  
-  
-  default: []
-  
-  <p>A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per -instance</p>
-  
-  
-  <h3>ray_epsilon</h3>
-  <b>Float</b>  
-  
-  default: 0.0
-  
-  <p>When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
-  
-  
-  <h3>references</h3>
-  <b>Geometry Vector</b>  
-  
-  default: []
-  
-  <p>list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
-  
-  
-  <h3>reverse_normals</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>enable to reverse the normals in the geometry</p>
-  
-  
-  <h3>shadow_exclusion_mappings</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>List of mappings of the form A:B where:
+    
+    
+    <h3>primitive_attributes</h3>
+    <b>Userdata Vector</b>
+    
+    
+    default: []
+    
+    <p>A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per -instance</p>
+    
+    
+    <h3>ray_epsilon</h3>
+    <b>Float</b>
+    
+    
+    default: 0.0
+    
+    <p>When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
+    
+    
+    <h3>references</h3>
+    <b>Geometry Vector</b>
+    
+    
+    default: []
+    
+    <p>list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
+    
+    
+    <h3>reverse_normals</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>enable to reverse the normals in the geometry</p>
+    
+    
+    <h3>shadow_exclusion_mappings</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>List of mappings of the form A:B where:
 
 A is a list of names of parts to be mapped, or asterisk to map the whole geometry
 
 B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
-  
-  
-  <h3>shadow_ray_epsilon</h3>
-  <b>Float</b>  
-  
-  default: 0.0
-  
-  <p>When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
-  
-  
-  <h3>shadow_receiver_label</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
-  
-  
-  <h3>side_type</h3>
-  <b>Int</b>  *enum*
-  
-  - force two-sided = 0 (default)
-  
-  - force single-sided = 1
-  
-  - use mesh sidedness = 2
-  
-  
-  <p>set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
-  
-  
-  <h3>stage</h3>
-  <b>String</b>  *filename*
-  
-  default: 
-  
-  <p>USD Stage to load
+    
+    
+    <h3>shadow_ray_epsilon</h3>
+    <b>Float</b>
+    
+    
+    default: 0.0
+    
+    <p>When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
+    
+    
+    <h3>shadow_receiver_label</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
+    
+    
+    <h3>side_type</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - force two-sided = 0 (default)
+    
+    - force single-sided = 1
+    
+    - use mesh sidedness = 2
+    
+    
+    <p>set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
+    
+    
+    <h3>stage</h3>
+    <b>String</b>
+    <span class="emphasized">filename</span>
+    
+    default: 
+    
+    <p>USD Stage to load
 
 </p>
-  
-  
-  <h3>static</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>disable if the geometry will be updated between frames</p>
-  
-  
-  <h3>use_evaluation_frame</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>uses "evaluation frame" instead of SceneVariables frame
+    
+    
+    <h3>static</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>disable if the geometry will be updated between frames</p>
+    
+    
+    <h3>use_evaluation_frame</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>uses "evaluation frame" instead of SceneVariables frame
 
 </p>
-  
-  
-  <h3>use_reference_attributes</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>Use the geometry attributes of the reference (prototype) instead of the ones on the InstanceGeometry.   Currently only works for shadow_ray_epsilon</p>
-  
-  
-  <h3>use_reference_xforms</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>Transform the reference (prototype) geometry by it's node_xform parameter before applying the instance transform</p>
-  
-  
-  <h3>use_rotation_motion_blur</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
-  
-  
-  <h3>use_stage_cache</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>Load the entire stage and use StageCache to share it among all UsdInstanceGeometry objects.
+    
+    
+    <h3>use_reference_attributes</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>Use the geometry attributes of the reference (prototype) instead of the ones on the InstanceGeometry.   Currently only works for shadow_ray_epsilon</p>
+    
+    
+    <h3>use_reference_xforms</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>Transform the reference (prototype) geometry by it's node_xform parameter before applying the instance transform</p>
+    
+    
+    <h3>use_rotation_motion_blur</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
+    
+    
+    <h3>use_stage_cache</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>Load the entire stage and use StageCache to share it among all UsdInstanceGeometry objects.
 
 If this is false, load a stage masked to the prim path just for this UsdInstanceGeometry.
 
 For large stages with thousands of unique assets, it is faster to enable the stage cache
 
 </p>
-  
-  
-  <h3>visible_diffuse_reflection</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>whether the geometry is visible in diffuse reflection</p>
-  
-  
-  <h3>visible_diffuse_transmission</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>whether the geometry is visible in diffuse transmission</p>
-  
-  
-  <h3>visible_glossy_reflection</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>whether the geometry is visible in glossy reflection.</p>
-  
-  
-  <h3>visible_glossy_transmission</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>whether the geometry is visible in glossy transmission (refraction).</p>
-  
-  
-  <h3>visible_in_camera</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>whether the geometry is visible to camera rays</p>
-  
-  
-  <h3>visible_mirror_reflection</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>whether the geometry is visible in miror reflection.</p>
-  
-  
-  <h3>visible_mirror_transmission</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>whether the geometry is visible in miror transmission (refraction).</p>
-  
-  
-  <h3>visible_shadow</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>whether the geometry casts shadows</p>
-  
-  
-  <h3>visible_volume</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>whether the geometry is visible in indirect volume rays</p>
-  
-  
+    
+    
+    <h3>visible_diffuse_reflection</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>whether the geometry is visible in diffuse reflection</p>
+    
+    
+    <h3>visible_diffuse_transmission</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>whether the geometry is visible in diffuse transmission</p>
+    
+    
+    <h3>visible_glossy_reflection</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>whether the geometry is visible in glossy reflection.</p>
+    
+    
+    <h3>visible_glossy_transmission</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>whether the geometry is visible in glossy transmission (refraction).</p>
+    
+    
+    <h3>visible_in_camera</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>whether the geometry is visible to camera rays</p>
+    
+    
+    <h3>visible_mirror_reflection</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>whether the geometry is visible in miror reflection.</p>
+    
+    
+    <h3>visible_mirror_transmission</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>whether the geometry is visible in miror transmission (refraction).</p>
+    
+    
+    <h3>visible_shadow</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>whether the geometry casts shadows</p>
+    
+    
+    <h3>visible_volume</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>whether the geometry is visible in indirect volume rays</p>
+    
+    
   </p>
 </details>
 

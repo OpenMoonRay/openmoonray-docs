@@ -15,23 +15,25 @@ title: RgbToHsvDisplayFilter
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
-  
-  <h3>invert_mask</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>invert value of mask</p>
-  
-  
-  <h3>mix</h3>
-  <b>Float</b>  
-  
-  default: 1.0
-  
-  <p>blend between output and input</p>
-  
-  
+    
+    <h3>invert_mask</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>invert value of mask</p>
+    
+    
+    <h3>mix</h3>
+    <b>Float</b>
+    
+    
+    default: 1.0
+    
+    <p>blend between output and input</p>
+    
+    
   </p>
 </details>
 
@@ -39,34 +41,37 @@ title: RgbToHsvDisplayFilter
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>input</h3>
-  <b>67141632</b>  
-  
-  default: None
-  
-  <p>image buffer</p>
-  
-  
-  <h3>mask</h3>
-  <b>67141632</b>  
-  
-  default: None
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
-  <h3>mode</h3>
-  <b>Int</b>  *enum*
-  
-  - rgb_to_hsv = 0 (default)
-  
-  - hsv_to_rgb = 1
-  
-  
-  <p>specify whether you are converting rgb->hsv or hsv->rgb</p>
-  
-  
+    
+    <h3>input</h3>
+    <b>67141632</b>
+    
+    
+    default: None
+    
+    <p>image buffer</p>
+    
+    
+    <h3>mask</h3>
+    <b>67141632</b>
+    
+    
+    default: None
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
+    <h3>mode</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - rgb_to_hsv = 0 (default)
+    
+    - hsv_to_rgb = 1
+    
+    
+    <p>specify whether you are converting rgb->hsv or hsv->rgb</p>
+    
+    
   </p>
 </details>
 

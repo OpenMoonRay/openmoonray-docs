@@ -15,31 +15,34 @@ title: DwaVelvetMaterial_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
   <p>
-  
-  <h3>casts_caustics</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>allows continuation of caustic light paths.</p>
-  
-  
-  <h3>presence</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
-  
-  
-  <h3>thin_geometry</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>enables proper shading of infinitely thin geometry such as paper or leaves.</p>
-  
-  
+    
+    <h3>casts_caustics</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>allows continuation of caustic light paths.</p>
+    
+    
+    <h3>presence</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
+    
+    
+    <h3>thin_geometry</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>enables proper shading of infinitely thin geometry such as paper or leaves.</p>
+    
+    
   </p>
 </details>
 
@@ -47,58 +50,64 @@ title: DwaVelvetMaterial_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Diffuse attributes</summary>
   <p>
-  
-  <h3>albedo</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>the overall surface color as seen from a distance (ie. diffuse color)</p>
-  
-  
-  <h3>diffuse_roughness</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>Roughness of the diffuse shading.  If the value is zero a Lambertian model is used.  If it's above zero the Oren Nayar model is used.   Not compatible with subsurface scattering.</p>
-  
-  
-  <h3>diffuse_transmission</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>multiplier on the amount of light that is transmitted through the surface.</p>
-  
-  
-  <h3>diffuse_transmission_blending_behavior</h3>
-  <b>Int</b>  *enum*
-  
-  - RGB = 0
-  
-  - Monochromatic = 1 (default)
-  
-  
-  <p>Controls how diffuse transmission color attenuates diffuse reflection</p>
-  
-  
-  <h3>diffuse_transmission_color</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 0, 0, 0 ]
-  
-  <p>the color/amount of light that is transmitted through the surface.</p>
-  
-  
-  <h3>show_diffuse</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>enables/disables diffuse reflectance</p>
-  
-  
+    
+    <h3>albedo</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>the overall surface color as seen from a distance (ie. diffuse color)</p>
+    
+    
+    <h3>diffuse_roughness</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>Roughness of the diffuse shading.  If the value is zero a Lambertian model is used.  If it's above zero the Oren Nayar model is used.   Not compatible with subsurface scattering.</p>
+    
+    
+    <h3>diffuse_transmission</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>multiplier on the amount of light that is transmitted through the surface.</p>
+    
+    
+    <h3>diffuse_transmission_blending_behavior</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - RGB = 0
+    
+    - Monochromatic = 1 (default)
+    
+    
+    <p>Controls how diffuse transmission color attenuates diffuse reflection</p>
+    
+    
+    <h3>diffuse_transmission_color</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 0, 0, 0 ]
+    
+    <p>the color/amount of light that is transmitted through the surface.</p>
+    
+    
+    <h3>show_diffuse</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>enables/disables diffuse reflectance</p>
+    
+    
   </p>
 </details>
 
@@ -106,23 +115,25 @@ title: DwaVelvetMaterial_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
   <p>
-  
-  <h3>emission</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>the energy emitted from this material</p>
-  
-  
-  <h3>show_emission</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>enables/disable emission</p>
-  
-  
+    
+    <h3>emission</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>the energy emitted from this material</p>
+    
+    
+    <h3>show_emission</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>enables/disable emission</p>
+    
+    
   </p>
 </details>
 
@@ -130,63 +141,70 @@ title: DwaVelvetMaterial_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Fuzz attributes</summary>
   <p>
-  
-  <h3>fuzz</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>fuzz mask</p>
-  
-  
-  <h3>fuzz_albedo</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>Color of the fuzz highlights.</p>
-  
-  
-  <h3>fuzz_coverage</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.25
-  
-  <p>Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage</p>
-  
-  
-  <h3>fuzz_normal</h3>
-  <b>33554432</b>  
-  
-  default: None
-  
-  <p>specifies an independent shading normal (normal map) for the fuzz lobe</p>
-  
-  
-  <h3>fuzz_normal_dial</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>controls the amount of infuence of the alternate fuzz normal</p>
-  
-  
-  <h3>show_fuzz</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>Enables/disables fuzz lobe</p>
-  
-  
-  <h3>use_absorbing_fuzz_fibers</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.</p>
-  
-  
+    
+    <h3>fuzz</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>fuzz mask</p>
+    
+    
+    <h3>fuzz_albedo</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>Color of the fuzz highlights.</p>
+    
+    
+    <h3>fuzz_coverage</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.25
+    
+    <p>Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage</p>
+    
+    
+    <h3>fuzz_normal</h3>
+    <b>33554432</b>
+    
+    
+    default: None
+    
+    <p>specifies an independent shading normal (normal map) for the fuzz lobe</p>
+    
+    
+    <h3>fuzz_normal_dial</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>controls the amount of infuence of the alternate fuzz normal</p>
+    
+    
+    <h3>show_fuzz</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>Enables/disables fuzz lobe</p>
+    
+    
+    <h3>use_absorbing_fuzz_fibers</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.</p>
+    
+    
   </p>
 </details>
 
@@ -194,232 +212,258 @@ title: DwaVelvetMaterial_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Glitter attributes</summary>
   <p>
-  
-  <h3>glitter</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>enables/disables glitter model (binary 0|1 for plausibility)</p>
-  
-  
-  <h3>glitter_LOD_quality</h3>
-  <b>Float</b>  
-  
-  default: 0.5
-  
-  <p>controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
-  
-  
-  <h3>glitter_approximate_for_secondary_rays</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>use an approximation to shade glitter for non-mirror secondary rays</p>
-  
-  
-  <h3>glitter_color_A</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>base flake color (use physical metallic color values)</p>
-  
-  
-  <h3>glitter_color_B</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>base flake color (use physical metallic color values)</p>
-  
-  
-  <h3>glitter_color_hue_variation</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
-  
-  
-  <h3>glitter_color_saturation_variation</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>introduce saturation variation in flake color centered at the base flake color's saturation</p>
-  
-  
-  <h3>glitter_color_value_variation</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>introduce value variation in flake color centered at the base flake color's value</p>
-  
-  
-  <h3>glitter_compensate_reference_space_deformation</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
-  
-  
-  <h3>glitter_debug_mode</h3>
-  <b>Int</b>  *enum*
-  
-  - off = 0 (default)
-  
-  - blend = 1
-  
-  - color = 2
-  
-  - averageColor = 3
-  
-  - footprintArea = 4
-  
-  - radius = 5
-  
-  
-  <p>developer debug visualization modes</p>
-  
-  
-  <h3>glitter_density</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>controls the number of flakes per unit length; larger density packs more flakes into same space</p>
-  
-  
-  <h3>glitter_jitter</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>Controls how much the flakes are randomly offset from a regular grid</p>
-  
-  
-  <h3>glitter_layering_mode</h3>
-  <b>Int</b>  *enum*
-  
-  - physical = 0 (default)
-  
-  - additive = 1
-  
-  
-  <p>layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
-  
-  
-  <h3>glitter_randomness</h3>
-  <b>Float</b>  
-  
-  default: 0.5
-  
-  <p>randomness of flake orientation</p>
-  
-  
-  <h3>glitter_roughness_A</h3>
-  <b>Float</b>  
-  
-  default: 0.140000000596
-  
-  <p>specular roughness of individual flakes (0 makes flakes mirror-like)</p>
-  
-  
-  <h3>glitter_roughness_B</h3>
-  <b>Float</b>  
-  
-  default: 0.140000000596
-  
-  <p>specular roughness of individual flakes (0 makes flakes mirror-like)</p>
-  
-  
-  <h3>glitter_seed</h3>
-  <b>Int</b>  
-  
-  default: 0
-  
-  <p>The seed for the glitter random number generator</p>
-  
-  
-  <h3>glitter_size_A</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
-  
-  
-  <h3>glitter_size_B</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
-  
-  
-  <h3>glitter_space</h3>
-  <b>Int</b>  *enum*
-  
-  - object = 4
-  
-  - reference = 5 (default)
-  
-  
-  <p>The space to calculate the worley noise in, defaults to reference space</p>
-  
-  
-  <h3>glitter_style_A_frequency</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>0 implies none of this style, 1 implies all the flakes will get this style</p>
-  
-  
-  <h3>glitter_style_B_frequency</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>0 implies none of this style, 1 implies all the flakes will get this style</p>
-  
-  
-  <h3>glitter_texture_A</h3>
-  <b>String</b>  *filename*
-  
-  default: 
-  
-  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-  
-  
-  <h3>glitter_texture_B</h3>
-  <b>String</b>  *filename*
-  
-  default: 
-  
-  <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-  
-  
-  <h3>glitter_texture_orientation_randomness</h3>
-  <b>Float</b>  
-  
-  default: 0.15000000596
-  
-  <p>randomly orient each texture</p>
-  
-  
-  <h3>show_glitter</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>Enables/disables glitter lobes</p>
-  
-  
+    
+    <h3>glitter</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>enables/disables glitter model (binary 0|1 for plausibility)</p>
+    
+    
+    <h3>glitter_LOD_quality</h3>
+    <b>Float</b>
+    
+    
+    default: 0.5
+    
+    <p>controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
+    
+    
+    <h3>glitter_approximate_for_secondary_rays</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>use an approximation to shade glitter for non-mirror secondary rays</p>
+    
+    
+    <h3>glitter_color_A</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>base flake color (use physical metallic color values)</p>
+    
+    
+    <h3>glitter_color_B</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>base flake color (use physical metallic color values)</p>
+    
+    
+    <h3>glitter_color_hue_variation</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
+    
+    
+    <h3>glitter_color_saturation_variation</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>introduce saturation variation in flake color centered at the base flake color's saturation</p>
+    
+    
+    <h3>glitter_color_value_variation</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>introduce value variation in flake color centered at the base flake color's value</p>
+    
+    
+    <h3>glitter_compensate_reference_space_deformation</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
+    
+    
+    <h3>glitter_debug_mode</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - off = 0 (default)
+    
+    - blend = 1
+    
+    - color = 2
+    
+    - averageColor = 3
+    
+    - footprintArea = 4
+    
+    - radius = 5
+    
+    
+    <p>developer debug visualization modes</p>
+    
+    
+    <h3>glitter_density</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>controls the number of flakes per unit length; larger density packs more flakes into same space</p>
+    
+    
+    <h3>glitter_jitter</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>Controls how much the flakes are randomly offset from a regular grid</p>
+    
+    
+    <h3>glitter_layering_mode</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - physical = 0 (default)
+    
+    - additive = 1
+    
+    
+    <p>layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
+    
+    
+    <h3>glitter_randomness</h3>
+    <b>Float</b>
+    
+    
+    default: 0.5
+    
+    <p>randomness of flake orientation</p>
+    
+    
+    <h3>glitter_roughness_A</h3>
+    <b>Float</b>
+    
+    
+    default: 0.140000000596
+    
+    <p>specular roughness of individual flakes (0 makes flakes mirror-like)</p>
+    
+    
+    <h3>glitter_roughness_B</h3>
+    <b>Float</b>
+    
+    
+    default: 0.140000000596
+    
+    <p>specular roughness of individual flakes (0 makes flakes mirror-like)</p>
+    
+    
+    <h3>glitter_seed</h3>
+    <b>Int</b>
+    
+    
+    default: 0
+    
+    <p>The seed for the glitter random number generator</p>
+    
+    
+    <h3>glitter_size_A</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
+    
+    
+    <h3>glitter_size_B</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
+    
+    
+    <h3>glitter_space</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - object = 4
+    
+    - reference = 5 (default)
+    
+    
+    <p>The space to calculate the worley noise in, defaults to reference space</p>
+    
+    
+    <h3>glitter_style_A_frequency</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>0 implies none of this style, 1 implies all the flakes will get this style</p>
+    
+    
+    <h3>glitter_style_B_frequency</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>0 implies none of this style, 1 implies all the flakes will get this style</p>
+    
+    
+    <h3>glitter_texture_A</h3>
+    <b>String</b>
+    <span class="emphasized">filename</span>
+    
+    default: 
+    
+    <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+    
+    
+    <h3>glitter_texture_B</h3>
+    <b>String</b>
+    <span class="emphasized">filename</span>
+    
+    default: 
+    
+    <p>filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+    
+    
+    <h3>glitter_texture_orientation_randomness</h3>
+    <b>Float</b>
+    
+    
+    default: 0.15000000596
+    
+    <p>randomly orient each texture</p>
+    
+    
+    <h3>show_glitter</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>Enables/disables glitter lobes</p>
+    
+    
   </p>
 </details>
 
@@ -427,23 +471,25 @@ title: DwaVelvetMaterial_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
   <p>
-  
-  <h3>input_normal</h3>
-  <b>33554432</b>  
-  
-  default: None
-  
-  <p>specifies an alternate shading normal in the tangent frame (normal map)</p>
-  
-  
-  <h3>input_normal_dial</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>controls the amount of influence of the alternate normal</p>
-  
-  
+    
+    <h3>input_normal</h3>
+    <b>33554432</b>
+    
+    
+    default: None
+    
+    <p>specifies an alternate shading normal in the tangent frame (normal map)</p>
+    
+    
+    <h3>input_normal_dial</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>controls the amount of influence of the alternate normal</p>
+    
+    
   </p>
 </details>
 
@@ -451,31 +497,34 @@ title: DwaVelvetMaterial_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>extra_aovs</h3>
-  <b>Map</b>  
-  
-  default: None
-  
-  <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
-  
-  
-  <h3>label</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>label used in material and light aovs</p>
-  
-  
-  <h3>priority</h3>
-  <b>Int</b>  
-  
-  default: 0
-  
-  <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
-  
-  
+    
+    <h3>extra_aovs</h3>
+    <b>Map</b>
+    
+    
+    default: None
+    
+    <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+    
+    
+    <h3>label</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>label used in material and light aovs</p>
+    
+    
+    <h3>priority</h3>
+    <b>Int</b>
+    
+    
+    default: 0
+    
+    <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+    
+    
   </p>
 </details>
 

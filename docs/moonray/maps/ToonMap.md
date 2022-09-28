@@ -15,76 +15,84 @@ title: ToonMap
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>crease_color</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 0, 0 ]
-  
-  <p>Creases are sharp edges like corners in the geometry.</p>
-  
-  
-  <h3>crease_scale</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>This attribute controls the thickness of creases.</p>
-  
-  
-  <h3>crease_threshold</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 45.0
-  
-  <p>This attribute sets the threshold angle (in degree units) to draw creases. The more the threshold angle is, the less the creases are traced.</p>
-  
-  
-  <h3>fill_color</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 0, 0, 0 ]
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
-  <h3>mode</h3>
-  <b>Int</b>  *enum*
-  
-  - outline = 0
-  
-  - crease = 1
-  
-  - both = 2 (default)
-  
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
-  <h3>outline_color</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>Outlines are silhouettes of the geometry</p>
-  
-  
-  <h3>outline_scale</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>This attribute controls the thickness of outlines.</p>
-  
-  
-  <h3>outline_threshold</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>In most cases, the shader would trace an outline of a model well when this threshold is zero.</p>
-  
-  
+    
+    <h3>crease_color</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 0, 0 ]
+    
+    <p>Creases are sharp edges like corners in the geometry.</p>
+    
+    
+    <h3>crease_scale</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>This attribute controls the thickness of creases.</p>
+    
+    
+    <h3>crease_threshold</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 45.0
+    
+    <p>This attribute sets the threshold angle (in degree units) to draw creases. The more the threshold angle is, the less the creases are traced.</p>
+    
+    
+    <h3>fill_color</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 0, 0, 0 ]
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
+    <h3>mode</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - outline = 0
+    
+    - crease = 1
+    
+    - both = 2 (default)
+    
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
+    <h3>outline_color</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>Outlines are silhouettes of the geometry</p>
+    
+    
+    <h3>outline_scale</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>This attribute controls the thickness of outlines.</p>
+    
+    
+    <h3>outline_threshold</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>In most cases, the shader would trace an outline of a model well when this threshold is zero.</p>
+    
+    
   </p>
 </details>
 

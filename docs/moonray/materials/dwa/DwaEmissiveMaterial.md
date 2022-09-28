@@ -15,15 +15,16 @@ title: DwaEmissiveMaterial
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
   <p>
-  
-  <h3>presence</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
-  
-  
+    
+    <h3>presence</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
+    
+    
   </p>
 </details>
 
@@ -31,23 +32,25 @@ title: DwaEmissiveMaterial
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
   <p>
-  
-  <h3>emission</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>the energy emitted from this material</p>
-  
-  
-  <h3>show_emission</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>enables/disable emission</p>
-  
-  
+    
+    <h3>emission</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>the energy emitted from this material</p>
+    
+    
+    <h3>show_emission</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>enables/disable emission</p>
+    
+    
   </p>
 </details>
 
@@ -55,31 +58,34 @@ title: DwaEmissiveMaterial
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>extra_aovs</h3>
-  <b>Map</b>  
-  
-  default: None
-  
-  <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
-  
-  
-  <h3>label</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>label used in material and light aovs</p>
-  
-  
-  <h3>priority</h3>
-  <b>Int</b>  
-  
-  default: 0
-  
-  <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
-  
-  
+    
+    <h3>extra_aovs</h3>
+    <b>Map</b>
+    
+    
+    default: None
+    
+    <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+    
+    
+    <h3>label</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>label used in material and light aovs</p>
+    
+    
+    <h3>priority</h3>
+    <b>Int</b>
+    
+    
+    default: 0
+    
+    <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+    
+    
   </p>
 </details>
 

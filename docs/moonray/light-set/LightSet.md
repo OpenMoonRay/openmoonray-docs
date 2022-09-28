@@ -15,15 +15,16 @@ title: LightSet
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>lights</h3>
-  <b>Light Vector</b>  
-  
-  default: []
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
+    
+    <h3>lights</h3>
+    <b>Light Vector</b>
+    
+    
+    default: []
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
   </p>
 </details>
 

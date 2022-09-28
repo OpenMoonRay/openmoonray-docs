@@ -15,76 +15,82 @@ title: AxisAngleMap
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>angle</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>the angle of rotation in degrees</p>
-  
-  
-  <h3>axis_space</h3>
-  <b>Int</b>  *enum*
-  
-  - world = 2 (default)
-  
-  - object = 4
-  
-  
-  <p>the space of the axis to rotate about</p>
-  
-  
-  <h3>input_space</h3>
-  <b>Int</b>  *enum*
-  
-  - render = 0 (default)
-  
-  - camera = 1
-  
-  - world = 2
-  
-  - screen = 3
-  
-  - object = 4
-  
-  
-  <p>the space to transform from</p>
-  
-  
-  <h3>input_vector</h3>
-  <b>Vec3f</b>  *bindable*
-  
-  default: [ 0, 0, 1 ]
-  
-  <p>input vector to be rotated</p>
-  
-  
-  <h3>output_space</h3>
-  <b>Int</b>  *enum*
-  
-  - render = 0 (default)
-  
-  - camera = 1
-  
-  - world = 2
-  
-  - screen = 3
-  
-  - object = 4
-  
-  
-  <p>the space to transform the resulting vector to</p>
-  
-  
-  <h3>rotation_axis</h3>
-  <b>Vec3f</b>  *bindable*
-  
-  default: [ 0, 1, 0 ]
-  
-  <p>axis to be rotated around</p>
-  
-  
+    
+    <h3>angle</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>the angle of rotation in degrees</p>
+    
+    
+    <h3>axis_space</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - world = 2 (default)
+    
+    - object = 4
+    
+    
+    <p>the space of the axis to rotate about</p>
+    
+    
+    <h3>input_space</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - render = 0 (default)
+    
+    - camera = 1
+    
+    - world = 2
+    
+    - screen = 3
+    
+    - object = 4
+    
+    
+    <p>the space to transform from</p>
+    
+    
+    <h3>input_vector</h3>
+    <b>Vec3f</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 0, 0, 1 ]
+    
+    <p>input vector to be rotated</p>
+    
+    
+    <h3>output_space</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - render = 0 (default)
+    
+    - camera = 1
+    
+    - world = 2
+    
+    - screen = 3
+    
+    - object = 4
+    
+    
+    <p>the space to transform the resulting vector to</p>
+    
+    
+    <h3>rotation_axis</h3>
+    <b>Vec3f</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 0, 1, 0 ]
+    
+    <p>axis to be rotated around</p>
+    
+    
   </p>
 </details>
 

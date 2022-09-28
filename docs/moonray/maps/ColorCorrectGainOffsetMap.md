@@ -15,103 +15,115 @@ title: ColorCorrectGainOffsetMap
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>gain</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>multiplies the input channels by the specified values</p>
-  
-  
-  <h3>gain_b</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>multiplies the blue channel by the specified values</p>
-  
-  
-  <h3>gain_g</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>multiplies the green channel by the specified values</p>
-  
-  
-  <h3>gain_r</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>multiplies the red channel by the specified values</p>
-  
-  
-  <h3>input</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>bind the input here</p>
-  
-  
-  <h3>mix</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>how much of the overall color correct to mix in</p>
-  
-  
-  <h3>offset</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>adds the specified values to the input</p>
-  
-  
-  <h3>offset_b</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>adds the specified values to the blue channel</p>
-  
-  
-  <h3>offset_g</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>adds the specified values to the green channel</p>
-  
-  
-  <h3>offset_r</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>adds the specified values to the red channel</p>
-  
-  
-  <h3>on</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>enables/disables all color correct operations</p>
-  
-  
-  <h3>use_per_channel_gain_offset</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>enables separate RGB controls for gain and offset</p>
-  
-  
+    
+    <h3>gain</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>multiplies the input channels by the specified values</p>
+    
+    
+    <h3>gain_b</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>multiplies the blue channel by the specified values</p>
+    
+    
+    <h3>gain_g</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>multiplies the green channel by the specified values</p>
+    
+    
+    <h3>gain_r</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>multiplies the red channel by the specified values</p>
+    
+    
+    <h3>input</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>bind the input here</p>
+    
+    
+    <h3>mix</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>how much of the overall color correct to mix in</p>
+    
+    
+    <h3>offset</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>adds the specified values to the input</p>
+    
+    
+    <h3>offset_b</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>adds the specified values to the blue channel</p>
+    
+    
+    <h3>offset_g</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>adds the specified values to the green channel</p>
+    
+    
+    <h3>offset_r</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>adds the specified values to the red channel</p>
+    
+    
+    <h3>on</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>enables/disables all color correct operations</p>
+    
+    
+    <h3>use_per_channel_gain_offset</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>enables separate RGB controls for gain and offset</p>
+    
+    
   </p>
 </details>
 

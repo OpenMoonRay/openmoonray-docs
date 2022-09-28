@@ -15,23 +15,25 @@ title: OpDisplayFilter
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
-  
-  <h3>invert_mask</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>invert value of mask</p>
-  
-  
-  <h3>mix</h3>
-  <b>Float</b>  
-  
-  default: 1.0
-  
-  <p>blend between output and input</p>
-  
-  
+    
+    <h3>invert_mask</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>invert value of mask</p>
+    
+    
+    <h3>mix</h3>
+    <b>Float</b>
+    
+    
+    default: 1.0
+    
+    <p>blend between output and input</p>
+    
+    
   </p>
 </details>
 
@@ -39,98 +41,102 @@ title: OpDisplayFilter
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>input1</h3>
-  <b>67141632</b>  
-  
-  default: None
-  
-  <p>first operand</p>
-  
-  
-  <h3>input2</h3>
-  <b>67141632</b>  
-  
-  default: None
-  
-  <p>second operand</p>
-  
-  
-  <h3>mask</h3>
-  <b>67141632</b>  
-  
-  default: None
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
-  <h3>operation</h3>
-  <b>Int</b>  *enum*
-  
-  - add = 0 (default)
-  
-  - subtract = 1
-  
-  - multiply = 2
-  
-  - divide = 3
-  
-  - min = 4
-  
-  - max = 5
-  
-  - power = 6
-  
-  - cross = 7
-  
-  - dot = 8
-  
-  - modulo = 9
-  
-  - greater_than = 10
-  
-  - greater_than_or_equal = 11
-  
-  - less_than = 12
-  
-  - less_than_or_equal = 13
-  
-  - equal = 14
-  
-  - not_equal = 15
-  
-  - and = 16
-  
-  - or = 17
-  
-  - xor = 18
-  
-  - invert = 19
-  
-  - normalize = 20
-  
-  - abs = 21
-  
-  - ceil = 22
-  
-  - floor = 23
-  
-  - length = 24
-  
-  - sine = 25
-  
-  - cosine = 26
-  
-  - round = 27
-  
-  - acos = 28
-  
-  - not = 29
-  
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
+    
+    <h3>input1</h3>
+    <b>67141632</b>
+    
+    
+    default: None
+    
+    <p>first operand</p>
+    
+    
+    <h3>input2</h3>
+    <b>67141632</b>
+    
+    
+    default: None
+    
+    <p>second operand</p>
+    
+    
+    <h3>mask</h3>
+    <b>67141632</b>
+    
+    
+    default: None
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
+    <h3>operation</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - add = 0 (default)
+    
+    - subtract = 1
+    
+    - multiply = 2
+    
+    - divide = 3
+    
+    - min = 4
+    
+    - max = 5
+    
+    - power = 6
+    
+    - cross = 7
+    
+    - dot = 8
+    
+    - modulo = 9
+    
+    - greater_than = 10
+    
+    - greater_than_or_equal = 11
+    
+    - less_than = 12
+    
+    - less_than_or_equal = 13
+    
+    - equal = 14
+    
+    - not_equal = 15
+    
+    - and = 16
+    
+    - or = 17
+    
+    - xor = 18
+    
+    - invert = 19
+    
+    - normalize = 20
+    
+    - abs = 21
+    
+    - ceil = 22
+    
+    - floor = 23
+    
+    - length = 24
+    
+    - sine = 25
+    
+    - cosine = 26
+    
+    - round = 27
+    
+    - acos = 28
+    
+    - not = 29
+    
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
   </p>
 </details>
 

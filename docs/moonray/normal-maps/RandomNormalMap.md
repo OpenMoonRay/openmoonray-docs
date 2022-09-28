@@ -15,23 +15,25 @@ title: RandomNormalMap
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>input</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>the input color used as a base seed to generate the random value</p>
-  
-  
-  <h3>seed</h3>
-  <b>Int</b>  
-  
-  default: 0
-  
-  <p>additional seed added to input for random number generator</p>
-  
-  
+    
+    <h3>input</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>the input color used as a base seed to generate the random value</p>
+    
+    
+    <h3>seed</h3>
+    <b>Int</b>
+    
+    
+    default: 0
+    
+    <p>additional seed added to input for random number generator</p>
+    
+    
   </p>
 </details>
 

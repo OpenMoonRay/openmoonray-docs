@@ -15,31 +15,34 @@ title: DwaColorCorrectMaterial
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Hue/Sat/Gain attributes</summary>
   <p>
-  
-  <h3>gain</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>multiplies the input channels by the specified value</p>
-  
-  
-  <h3>hue_shift</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>shifts the hue of the input (spectrum range is 0-1)</p>
-  
-  
-  <h3>saturation</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>desaturates the input below 1.0 and adds saturation above 1.0</p>
-  
-  
+    
+    <h3>gain</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>multiplies the input channels by the specified value</p>
+    
+    
+    <h3>hue_shift</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>shifts the hue of the input (spectrum range is 0-1)</p>
+    
+    
+    <h3>saturation</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>desaturates the input below 1.0 and adds saturation above 1.0</p>
+    
+    
   </p>
 </details>
 
@@ -47,23 +50,25 @@ title: DwaColorCorrectMaterial
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">TMI attributes</summary>
   <p>
-  
-  <h3>TMI</h3>
-  <b>Rgb</b>  
-  
-  default: [ 0, 0, 0 ]
-  
-  <p>T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
-  
-  
-  <h3>TMI_enabled</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>enables the TMI parameters</p>
-  
-  
+    
+    <h3>TMI</h3>
+    <b>Rgb</b>
+    
+    
+    default: [ 0, 0, 0 ]
+    
+    <p>T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
+    
+    
+    <h3>TMI_enabled</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>enables the TMI parameters</p>
+    
+    
   </p>
 </details>
 
@@ -71,55 +76,61 @@ title: DwaColorCorrectMaterial
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>extra_aovs</h3>
-  <b>Map</b>  
-  
-  default: None
-  
-  <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
-  
-  
-  <h3>input_material</h3>
-  <b>Dwabaselayerable</b>  
-  
-  default: None
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
-  <h3>label</h3>
-  <b>String</b>  
-  
-  default: 
-  
-  <p>label used in material and light aovs</p>
-  
-  
-  <h3>mix</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>how much of the overall color correct to mix in</p>
-  
-  
-  <h3>on</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p>Enable/disable all color corrections</p>
-  
-  
-  <h3>priority</h3>
-  <b>Int</b>  
-  
-  default: 0
-  
-  <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
-  
-  
+    
+    <h3>extra_aovs</h3>
+    <b>Map</b>
+    
+    
+    default: None
+    
+    <p>Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+    
+    
+    <h3>input_material</h3>
+    <b>Dwabaselayerable</b>
+    
+    
+    default: None
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
+    <h3>label</h3>
+    <b>String</b>
+    
+    
+    default: 
+    
+    <p>label used in material and light aovs</p>
+    
+    
+    <h3>mix</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>how much of the overall color correct to mix in</p>
+    
+    
+    <h3>on</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p>Enable/disable all color corrections</p>
+    
+    
+    <h3>priority</h3>
+    <b>Int</b>
+    
+    
+    default: 0
+    
+    <p>The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+    
+    
   </p>
 </details>
 

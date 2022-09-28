@@ -15,39 +15,43 @@ title: WireframeMap
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>fill_color</h3>
-  <b>Rgb</b>  
-  
-  default: [ 1, 1, 1 ]
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
-  <h3>line_color</h3>
-  <b>Rgb</b>  
-  
-  default: [ 0, 0, 0 ]
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
-  <h3>line_width</h3>
-  <b>Float</b>  
-  
-  default: 1.0
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
-  <h3>raster</h3>
-  <b>Bool</b>  
-  
-  default: True
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
+    
+    <h3>fill_color</h3>
+    <b>Rgb</b>
+    
+    
+    default: [ 1, 1, 1 ]
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
+    <h3>line_color</h3>
+    <b>Rgb</b>
+    
+    
+    default: [ 0, 0, 0 ]
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
+    <h3>line_width</h3>
+    <b>Float</b>
+    
+    
+    default: 1.0
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
+    <h3>raster</h3>
+    <b>Bool</b>
+    
+    
+    default: True
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
   </p>
 </details>
 

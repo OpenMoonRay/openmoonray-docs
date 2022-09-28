@@ -15,63 +15,70 @@ title: NoiseWorleyMap_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Adjustment attributes</summary>
   <p>
-  
-  <h3>bias</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.5
-  
-  <p>Bias of interpolation from color A to color B</p>
-  
-  
-  <h3>gain</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.5
-  
-  <p>Gain of interpolation from color A to color B</p>
-  
-  
-  <h3>invert</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>Invert the final pattern</p>
-  
-  
-  <h3>point_size</h3>
-  <b>Float</b>  
-  
-  default: 1.0
-  
-  <p>For points output mode, relative radius of points</p>
-  
-  
-  <h3>remap</h3>
-  <b>Vec2f</b>  *bindable*
-  
-  default: [ 0, 1 ]
-  
-  <p>Allows mapping the distances from the specified min/max range into the 0..1 range</p>
-  
-  
-  <h3>smoothstep</h3>
-  <b>Vec2f</b>  *bindable*
-  
-  default: [ 0, 1 ]
-  
-  <p>min/max values between which the smoothstep will interpolate</p>
-  
-  
-  <h3>use_smoothstep</h3>
-  <b>Bool</b>  
-  
-  default: False
-  
-  <p>Put the noise value through a smoothstep function defined by min/max</p>
-  
-  
+    
+    <h3>bias</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.5
+    
+    <p>Bias of interpolation from color A to color B</p>
+    
+    
+    <h3>gain</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.5
+    
+    <p>Gain of interpolation from color A to color B</p>
+    
+    
+    <h3>invert</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>Invert the final pattern</p>
+    
+    
+    <h3>point_size</h3>
+    <b>Float</b>
+    
+    
+    default: 1.0
+    
+    <p>For points output mode, relative radius of points</p>
+    
+    
+    <h3>remap</h3>
+    <b>Vec2f</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 0, 1 ]
+    
+    <p>Allows mapping the distances from the specified min/max range into the 0..1 range</p>
+    
+    
+    <h3>smoothstep</h3>
+    <b>Vec2f</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 0, 1 ]
+    
+    <p>min/max values between which the smoothstep will interpolate</p>
+    
+    
+    <h3>use_smoothstep</h3>
+    <b>Bool</b>
+    
+    
+    default: False
+    
+    <p>Put the noise value through a smoothstep function defined by min/max</p>
+    
+    
   </p>
 </details>
 
@@ -79,54 +86,59 @@ title: NoiseWorleyMap_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
   <p>
-  
-  <h3>F1</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>Influence of F1 (the closest feature point)</p>
-  
-  
-  <h3>F2</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>Influence of F2 (the second closest feature point)</p>
-  
-  
-  <h3>F3</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>Influence of F3 (the third closest feature point)</p>
-  
-  
-  <h3>F4</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 0.0
-  
-  <p>Influence of F4 (the fourth closest feature point)</p>
-  
-  
-  <h3>cell_id</h3>
-  <b>Int</b>  *enum*
-  
-  - f1 = 0 (default)
-  
-  - f2 = 1
-  
-  - f3 = 2
-  
-  - f4 = 3
-  
-  
-  <p>Which of the distances determines the cell id</p>
-  
-  
+    
+    <h3>F1</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>Influence of F1 (the closest feature point)</p>
+    
+    
+    <h3>F2</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>Influence of F2 (the second closest feature point)</p>
+    
+    
+    <h3>F3</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>Influence of F3 (the third closest feature point)</p>
+    
+    
+    <h3>F4</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 0.0
+    
+    <p>Influence of F4 (the fourth closest feature point)</p>
+    
+    
+    <h3>cell_id</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - f1 = 0 (default)
+    
+    - f2 = 1
+    
+    - f3 = 2
+    
+    - f4 = 3
+    
+    
+    <p>Which of the distances determines the cell id</p>
+    
+    
   </p>
 </details>
 
@@ -134,51 +146,54 @@ title: NoiseWorleyMap_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Output attributes</summary>
   <p>
-  
-  <h3>distance_method</h3>
-  <b>Int</b>  *enum*
-  
-  - linear = 0 (default)
-  
-  - linear squared = 1
-  
-  - manhattan = 2
-  
-  - chebyshev = 3
-  
-  - quadratic = 4
-  
-  - minkowski = 5
-  
-  
-  <p>Metric for calculating distance to feature points which controls the shape of the falloff when output mode is distance</p>
-  
-  
-  <h3>minkowski_number</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 3.0
-  
-  <p>Exponent on distances when distance method is set to Minkowski</p>
-  
-  
-  <h3>output_mode</h3>
-  <b>Int</b>  *enum*
-  
-  - distance = 0 (default)
-  
-  - gradient = 1
-  
-  - cell id = 2
-  
-  - cell edges = 3
-  
-  - points = 4
-  
-  
-  <p>Method by which the shader outputs a color.  Distance uses F1..F4 interpolated between color A and color B, gradient outputs the gradient of the noise, and cell ID outputs a random color for each cell</p>
-  
-  
+    
+    <h3>distance_method</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - linear = 0 (default)
+    
+    - linear squared = 1
+    
+    - manhattan = 2
+    
+    - chebyshev = 3
+    
+    - quadratic = 4
+    
+    - minkowski = 5
+    
+    
+    <p>Metric for calculating distance to feature points which controls the shape of the falloff when output mode is distance</p>
+    
+    
+    <h3>minkowski_number</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 3.0
+    
+    <p>Exponent on distances when distance method is set to Minkowski</p>
+    
+    
+    <h3>output_mode</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - distance = 0 (default)
+    
+    - gradient = 1
+    
+    - cell id = 2
+    
+    - cell edges = 3
+    
+    - points = 4
+    
+    
+    <p>Method by which the shader outputs a color.  Distance uses F1..F4 interpolated between color A and color B, gradient outputs the gradient of the noise, and cell ID outputs a random color for each cell</p>
+    
+    
   </p>
 </details>
 
@@ -186,58 +201,62 @@ title: NoiseWorleyMap_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Space attributes</summary>
   <p>
-  
-  <h3>camera</h3>
-  <b>Camera</b>  
-  
-  default: None
-  
-  <p>camera used to define camera and screen space</p>
-  
-  
-  <h3>input_texture_coordinates</h3>
-  <b>Vec3f</b>  *bindable*
-  
-  default: [ 0, 0, 0 ]
-  
-  <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-  
-  
-  <h3>object_space</h3>
-  <b>Geometry</b>  
-  
-  default: None
-  
-  <p>Directly connect object to use that object's space.</p>
-  
-  
-  <h3>space</h3>
-  <b>Int</b>  *enum*
-  
-  - render = 0
-  
-  - camera = 1
-  
-  - world = 2 (default)
-  
-  - screen = 3
-  
-  - object = 4
-  
-  - reference = 5
-  
-  - texture = 6
-  
-  - input texture coordinates = 7
-  
-  - hair_surface_uv = 8
-  
-  - hair_closest_surface_uv = 9
-  
-  
-  <p>The space to calculate the noise in</p>
-  
-  
+    
+    <h3>camera</h3>
+    <b>Camera</b>
+    
+    
+    default: None
+    
+    <p>camera used to define camera and screen space</p>
+    
+    
+    <h3>input_texture_coordinates</h3>
+    <b>Vec3f</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 0, 0, 0 ]
+    
+    <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+    
+    
+    <h3>object_space</h3>
+    <b>Geometry</b>
+    
+    
+    default: None
+    
+    <p>Directly connect object to use that object's space.</p>
+    
+    
+    <h3>space</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - render = 0
+    
+    - camera = 1
+    
+    - world = 2 (default)
+    
+    - screen = 3
+    
+    - object = 4
+    
+    - reference = 5
+    
+    - texture = 6
+    
+    - input texture coordinates = 7
+    
+    - hair_surface_uv = 8
+    
+    - hair_closest_surface_uv = 9
+    
+    
+    <p>The space to calculate the noise in</p>
+    
+    
   </p>
 </details>
 
@@ -245,69 +264,74 @@ title: NoiseWorleyMap_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">Transform attributes</summary>
   <p>
-  
-  <h3>rotation</h3>
-  <b>Vec3f</b>  *bindable*
-  
-  default: [ 0, 0, 0 ]
-  
-  <p>Rotates the noise in space based on the specified rotation order</p>
-  
-  
-  <h3>rotation_order</h3>
-  <b>Int</b>  *enum*
-  
-  - xyz = 0 (default)
-  
-  - xzy = 1
-  
-  - yxz = 2
-  
-  - yzx = 3
-  
-  - zxy = 4
-  
-  - zyx = 5
-  
-  
-  <p>Order in which to apply the euler rotations</p>
-  
-  
-  <h3>scale</h3>
-  <b>Vec3f</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>Vector to scale the noise non-proportionally</p>
-  
-  
-  <h3>transformation_order</h3>
-  <b>Int</b>  *enum*
-  
-  - srt = 0
-  
-  - str = 1
-  
-  - rst = 2
-  
-  - rts = 3
-  
-  - tsr = 4 (default)
-  
-  - trs = 5
-  
-  
-  <p>Order in which to apply the translation, rotation, and frequency</p>
-  
-  
-  <h3>translation</h3>
-  <b>Vec3f</b>  *bindable*
-  
-  default: [ 0, 0, 0 ]
-  
-  <p>Translation of the noise in space</p>
-  
-  
+    
+    <h3>rotation</h3>
+    <b>Vec3f</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 0, 0, 0 ]
+    
+    <p>Rotates the noise in space based on the specified rotation order</p>
+    
+    
+    <h3>rotation_order</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - xyz = 0 (default)
+    
+    - xzy = 1
+    
+    - yxz = 2
+    
+    - yzx = 3
+    
+    - zxy = 4
+    
+    - zyx = 5
+    
+    
+    <p>Order in which to apply the euler rotations</p>
+    
+    
+    <h3>scale</h3>
+    <b>Vec3f</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>Vector to scale the noise non-proportionally</p>
+    
+    
+    <h3>transformation_order</h3>
+    <b>Int</b>
+    <span class="emphasized">enum</span>
+    
+    - srt = 0
+    
+    - str = 1
+    
+    - rst = 2
+    
+    - rts = 3
+    
+    - tsr = 4 (default)
+    
+    - trs = 5
+    
+    
+    <p>Order in which to apply the translation, rotation, and frequency</p>
+    
+    
+    <h3>translation</h3>
+    <b>Vec3f</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 0, 0, 0 ]
+    
+    <p>Translation of the noise in space</p>
+    
+    
   </p>
 </details>
 
@@ -315,55 +339,61 @@ title: NoiseWorleyMap_v2
 <details open>
   <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
   <p>
-  
-  <h3>color_A</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 0, 0, 0 ]
-  
-  <p>The interpolated color value at distance equals zero</p>
-  
-  
-  <h3>color_B</h3>
-  <b>Rgb</b>  *bindable*
-  
-  default: [ 1, 1, 1 ]
-  
-  <p>The interpolated color value at distance equals one</p>
-  
-  
-  <h3>frequency</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>Scalar multiplier for the frequency vector</p>
-  
-  
-  <h3>jitter</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>Controls the distortion of the cells</p>
-  
-  
-  <h3>max_level</h3>
-  <b>Float</b>  *bindable*
-  
-  default: 1.0
-  
-  <p>Number of octaves of noise to add together for the final result</p>
-  
-  
-  <h3>seed</h3>
-  <b>Int</b>  
-  
-  default: 0
-  
-  <p>The seed for the random number generator</p>
-  
-  
+    
+    <h3>color_A</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 0, 0, 0 ]
+    
+    <p>The interpolated color value at distance equals zero</p>
+    
+    
+    <h3>color_B</h3>
+    <b>Rgb</b>
+    <span class="emphasized">bindable</span>
+    
+    default: [ 1, 1, 1 ]
+    
+    <p>The interpolated color value at distance equals one</p>
+    
+    
+    <h3>frequency</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>Scalar multiplier for the frequency vector</p>
+    
+    
+    <h3>jitter</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>Controls the distortion of the cells</p>
+    
+    
+    <h3>max_level</h3>
+    <b>Float</b>
+    <span class="emphasized">bindable</span>
+    
+    default: 1.0
+    
+    <p>Number of octaves of noise to add together for the final result</p>
+    
+    
+    <h3>seed</h3>
+    <b>Int</b>
+    
+    
+    default: 0
+    
+    <p>The seed for the random number generator</p>
+    
+    
   </p>
 </details>
 
