@@ -20,45 +20,45 @@ title: WireframeMap
     <p>
       <b>Rgb</b>
       
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>line_color</h3>
     <p>
       <b>Rgb</b>
       
-        
-          default: [ 0, 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>line_width</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>raster</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>

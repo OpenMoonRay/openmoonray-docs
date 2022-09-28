@@ -20,36 +20,36 @@ title: DistortNormalMap
     <p>
       <b>Vec3f</b>
       <i>bindable</i>
-        
-          default: [ 0, 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>noise_space</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | world = 2
         
-            | world = 2
-          
-            | object = 4 (default)
-          
-            | reference = 5
-          
-            | texture = 6
-          
-            | input texture coordinates = 7
-          
-            | hair_surface_uv = 8
-          
-            | hair_closest_surface_uv = 9
-          
+          | object = 4 (default)
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">The space to calculate the noise in</p>
+          | reference = 5
         
-      </p>
+          | texture = 6
+        
+          | input texture coordinates = 7
+        
+          | hair_surface_uv = 8
+        
+          | hair_closest_surface_uv = 9
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The space to calculate the noise in</p>
+      
+    </p>
     
   </p>
 </details>
@@ -63,100 +63,100 @@ title: DistortNormalMap
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">controls amplitude of U distortion</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">controls amplitude of U distortion</p>
+      
+    </p>
     
     <h3>amplitude_V</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">controls amplitude of V distortion</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">controls amplitude of V distortion</p>
+      
+    </p>
     
     <h3>frequency_U</h3>
     <p>
       <b>Vec3f</b>
       
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">controls noise frequency for U distortion</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">controls noise frequency for U distortion</p>
+      
+    </p>
     
     <h3>frequency_V</h3>
     <p>
       <b>Vec3f</b>
       
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">controls noise frequency for V distortion</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">controls noise frequency for V distortion</p>
+      
+    </p>
     
     <h3>input_U</h3>
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 0, 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">input U / tangent for distortion</p>
-        
-      </p>
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">input U / tangent for distortion</p>
+      
+    </p>
     
     <h3>input_V</h3>
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 0, 0, 0 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">input V / bitangent for distortion</p>
-        
-      </p>
+      
+        default: [ 0, 0, 0 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">input V / bitangent for distortion</p>
+      
+    </p>
     
     <h3>input_normals</h3>
     <p>
       <b>33554432</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">optional input to distort. if not connected, use geom normals</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">optional input to distort. if not connected, use geom normals</p>
+      
+    </p>
     
     <h3>seed</h3>
     <p>
       <b>Int</b>
       
-        
-          default: 0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">the seed for the noise generation</p>
-        
-      </p>
+      
+        default: 0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the seed for the noise generation</p>
+      
+    </p>
     
     <h3>use_input_vectors</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, use input_U and V. otherwise use geometry dPds/t</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, use input_U and V. otherwise use geometry dPds/t</p>
+      
+    </p>
     
   </p>
 </details>

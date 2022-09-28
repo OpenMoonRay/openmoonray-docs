@@ -20,45 +20,45 @@ title: CombineNormalMap
     <p>
       <b>33554432</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">First normal map to combine; usually a base map</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">First normal map to combine; usually a base map</p>
+      
+    </p>
     
     <h3>input_2</h3>
     <p>
       <b>33554432</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Second normal map to combine; usually a base map</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Second normal map to combine; usually a base map</p>
+      
+    </p>
     
     <h3>normal_map_1_dial</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Amount of normal map 1 to blend in</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount of normal map 1 to blend in</p>
+      
+    </p>
     
     <h3>normal_map_2_dial</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Amount of normal map 2 to blend in</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount of normal map 2 to blend in</p>
+      
+    </p>
     
   </p>
 </details>

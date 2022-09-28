@@ -20,23 +20,23 @@ title: TraceSet
     <p>
       <b>SceneObjectIndexable</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>parts</h3>
     <p>
       <b>StringVector</b>
       
-        
-          default: []
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: []
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>

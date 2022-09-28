@@ -20,12 +20,12 @@ title: NormalToRgbMap
     <p>
       <b>33554432</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Input normal map to convert to a color</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Input normal map to convert to a color</p>
+      
+    </p>
     
   </p>
 </details>

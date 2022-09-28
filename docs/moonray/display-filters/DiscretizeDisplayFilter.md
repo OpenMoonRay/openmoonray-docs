@@ -20,23 +20,23 @@ title: DiscretizeDisplayFilter
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+      
+    </p>
     
     <h3>mix</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+      
+    </p>
     
   </p>
 </details>
@@ -50,34 +50,34 @@ title: DiscretizeDisplayFilter
     <p>
       <b>67141632</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">Image buffer to discretize</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Image buffer to discretize</p>
+      
+    </p>
     
     <h3>mask</h3>
     <p>
       <b>67141632</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>num_bins</h3>
     <p>
       <b>Int</b>
       
-        
-          default: 8
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">number of discrete color bins</p>
-        
-      </p>
+      
+        default: 8
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">number of discrete color bins</p>
+      
+    </p>
     
   </p>
 </details>

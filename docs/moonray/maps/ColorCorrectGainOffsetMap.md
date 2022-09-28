@@ -20,133 +20,133 @@ title: ColorCorrectGainOffsetMap
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the input channels by the specified values</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the input channels by the specified values</p>
+      
+    </p>
     
     <h3>gain_b</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the blue channel by the specified values</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the blue channel by the specified values</p>
+      
+    </p>
     
     <h3>gain_g</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the green channel by the specified values</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the green channel by the specified values</p>
+      
+    </p>
     
     <h3>gain_r</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the red channel by the specified values</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the red channel by the specified values</p>
+      
+    </p>
     
     <h3>input</h3>
     <p>
       <b>Rgb</b>
       <i>bindable</i>
-        
-          default: [ 1, 1, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
-        
-      </p>
+      
+        default: [ 1, 1, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+      
+    </p>
     
     <h3>mix</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
+      
+    </p>
     
     <h3>offset</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the input</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the input</p>
+      
+    </p>
     
     <h3>offset_b</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the blue channel</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the blue channel</p>
+      
+    </p>
     
     <h3>offset_g</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the green channel</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the green channel</p>
+      
+    </p>
     
     <h3>offset_r</h3>
     <p>
       <b>Float</b>
       <i>bindable</i>
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the red channel</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the red channel</p>
+      
+    </p>
     
     <h3>on</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables all color correct operations</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables all color correct operations</p>
+      
+    </p>
     
     <h3>use_per_channel_gain_offset</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">enables separate RGB controls for gain and offset</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">enables separate RGB controls for gain and offset</p>
+      
+    </p>
     
   </p>
 </details>

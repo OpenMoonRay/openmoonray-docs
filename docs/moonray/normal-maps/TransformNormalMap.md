@@ -20,12 +20,12 @@ title: TransformNormalMap
     <p>
       <b>Vec3f</b>
       <i>bindable</i>
-        
-          default: [ 0, 0, 1 ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">input normal in either tangent or render space</p>
-        
-      </p>
+      
+        default: [ 0, 0, 1 ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">input normal in either tangent or render space</p>
+      
+    </p>
     
   </p>
 </details>
@@ -39,26 +39,26 @@ title: TransformNormalMap
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">decode the input normal if it's in tangent space [0,1] -> [-1,1]</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">decode the input normal if it's in tangent space [0,1] -> [-1,1]</p>
+      
+    </p>
     
     <h3>transform</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | tangent to render = 0 (default)
         
-            | tangent to render = 0 (default)
-          
-            | render to tangent = 1
-          
+          | render to tangent = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">transform to apply to the normals</p>
-        
-      </p>
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">transform to apply to the normals</p>
+      
+    </p>
     
   </p>
 </details>

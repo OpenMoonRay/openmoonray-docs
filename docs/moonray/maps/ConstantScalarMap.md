@@ -20,12 +20,12 @@ title: ConstantScalarMap
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-comment">constant scalar value</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">constant scalar value</p>
+      
+    </p>
     
   </p>
 </details>

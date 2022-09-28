@@ -20,52 +20,52 @@ title: CurvatureMap
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>mode</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | convex = 0
         
-            | convex = 0
-          
-            | concave = 1
-          
-            | composite = 2
-          
-            | all = 3 (default)
-          
+          | concave = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
+          | composite = 2
         
-      </p>
+          | all = 3 (default)
+        
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
+      
+    </p>
     
     <h3>power</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 0.5
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 0.5
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>scale</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>

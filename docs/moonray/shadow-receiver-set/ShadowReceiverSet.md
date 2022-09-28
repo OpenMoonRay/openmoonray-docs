@@ -20,12 +20,12 @@ title: ShadowReceiverSet
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>
@@ -39,12 +39,12 @@ title: ShadowReceiverSet
     <p>
       <b>SceneObjectIndexable</b>
       
-        
-          default: None
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: None
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>

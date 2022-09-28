@@ -20,117 +20,117 @@ title: ColorRampLightFilter
     <p>
       <b>Float</b>
       
-        
-          default: 0.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 0.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>colors</h3>
     <p>
       <b>RgbVector</b>
       
-        
-          default: [[ 1, 1, 1 ], [ 0, 0, 0 ]]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: [[ 1, 1, 1 ], [ 0, 0, 0 ]]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>density</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>distances</h3>
     <p>
       <b>FloatVector</b>
       
-        
-          default: <scene_rdl2.__scene_rdl2__.FloatVector object at >
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>end_distance</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>intensity</h3>
     <p>
       <b>Float</b>
       
-        
-          default: 1.0
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: 1.0
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>interpolation_types</h3>
     <p>
       <b>IntVector</b>
       
-        
-          default: <scene_rdl2.__scene_rdl2__.IntVector object at >
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>mode</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | radial = 0 (default)
         
-            | radial = 0 (default)
-          
-            | directional = 1
-          
+          | directional = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>node_xform</h3>
     <p>
       <b>Mat4d</b>
       <i>blurrable</i>
-        
-          default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>wrap_mode</h3>
     <p>
       <b>Int</b>
       <i>enum</i>
+      
+          | extend = 0 (default)
         
-            | extend = 0 (default)
-          
-            | mirror = 1
-          
+          | mirror = 1
         
-          <p class="jekyll-theme-minimal scene-class-attr-comment">For directional filter mode where filter uses distance along -Z axis.  Extend: f(z) = f(0) for z > 0.  Mirror: f(z) = f(-z).</p>
-        
-      </p>
+      
+        <p class="jekyll-theme-minimal scene-class-attr-comment">For directional filter mode where filter uses distance along -Z axis.  Extend: f(z) = f(0) for z > 0.  Mirror: f(z) = f(-z).</p>
+      
+    </p>
     
   </p>
 </details>
@@ -144,23 +144,23 @@ title: ColorRampLightFilter
     <p>
       <b>Bool</b>
       
-        
-          default: True
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: True
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
     <h3>use_xform</h3>
     <p>
       <b>Bool</b>
       
-        
-          default: False
-        
-          <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-        
-      </p>
+      
+        default: False
+      
+        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+      
+    </p>
     
   </p>
 </details>
