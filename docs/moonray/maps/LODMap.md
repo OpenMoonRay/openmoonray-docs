@@ -59,7 +59,7 @@ title: LODMap
       
         default: 0.00999999977648
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">feature_width/camera_distance at which to start blending near_value->far_value</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">feature_width/camera_distance at which to start blending near_value-&gt;far_value</p>
       
     </p>
     
@@ -70,7 +70,7 @@ title: LODMap
       
         default: 0.10000000149
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">feature_width/camera_distance at which to stop blending near_value->far_value</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">feature_width/camera_distance at which to stop blending near_value-&gt;far_value</p>
       
     </p>
     

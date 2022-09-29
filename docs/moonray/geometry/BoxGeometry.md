@@ -97,11 +97,7 @@ title: BoxGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:
-
-A is a list of names of parts to be mapped, or asterisk to map the whole geometry
-
-B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       
     </p>
     

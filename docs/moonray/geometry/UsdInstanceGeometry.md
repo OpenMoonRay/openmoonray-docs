@@ -45,9 +45,7 @@ title: UsdInstanceGeometry
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">evaluate geometry at specified frame instead of SceneVariables frame
-
-</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">evaluate geometry at specified frame instead of SceneVariables frame<br></p>
       
     </p>
     
@@ -100,21 +98,7 @@ title: UsdInstanceGeometry
           | hermite = 4
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.
-
-"static" will treat the mesh as static.
-
-"velocity" will blur using the supplied vertex positions and velocities.
-
-"frame delta" will interpolate between the two supplied vertex positions.
-
-"acceleration" will blur using the supplied vertex positions, velocities and accelerations.
-
-"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.
-
-"best" will use choose the method which provides the highest quality given the available data.
-
-</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       
     </p>
     
@@ -136,9 +120,7 @@ title: UsdInstanceGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The point instancer to load from the USD Stage
-
-</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The point instancer to load from the USD Stage<br></p>
       
     </p>
     
@@ -154,13 +136,7 @@ title: UsdInstanceGeometry
           | both motion steps = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?
-
-	O : first motion step
-
-	1 : second motion step
-
-	2 : both motion steps</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       
     </p>
     
@@ -215,11 +191,7 @@ title: UsdInstanceGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:
-
-A is a list of names of parts to be mapped, or asterisk to map the whole geometry
-
-B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       
     </p>
     
@@ -268,9 +240,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">USD Stage to load
-
-</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">USD Stage to load<br></p>
       
     </p>
     
@@ -292,9 +262,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">uses "evaluation frame" instead of SceneVariables frame
-
-</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">uses "evaluation frame" instead of SceneVariables frame<br></p>
       
     </p>
     
@@ -338,13 +306,7 @@ B is a list of labels corresponding to the sets corresponding to distinct values
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Load the entire stage and use StageCache to share it among all UsdInstanceGeometry objects.
-
-If this is false, load a stage masked to the prim path just for this UsdInstanceGeometry.
-
-For large stages with thousands of unique assets, it is faster to enable the stage cache
-
-</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Load the entire stage and use StageCache to share it among all UsdInstanceGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdInstanceGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache<br></p>
       
     </p>
     

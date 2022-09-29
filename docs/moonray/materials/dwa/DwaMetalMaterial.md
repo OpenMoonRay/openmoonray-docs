@@ -53,7 +53,7 @@ title: DwaMetalMaterial
       
         default: [ 0.5, 0.5, 0.5 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the attenuation color of the clearcoat when 'cleacoat thickness' > 0</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the attenuation color of the clearcoat when 'cleacoat thickness' &gt; 0</p>
       
     </p>
     
@@ -122,7 +122,7 @@ title: DwaMetalMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the thickness of the virtual clearcoat layer. Values > 0 enable absorption</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the thickness of the virtual clearcoat layer. Values &gt; 0 enable absorption</p>
       
     </p>
     
@@ -735,9 +735,7 @@ title: DwaMetalMaterial
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |
-
-			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       
     </p>
     

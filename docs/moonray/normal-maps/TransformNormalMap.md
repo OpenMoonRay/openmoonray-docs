@@ -42,7 +42,7 @@ title: TransformNormalMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">decode the input normal if it's in tangent space [0,1] -> [-1,1]</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">decode the input normal if it's in tangent space [0,1] -&gt; [-1,1]</p>
       
     </p>
     

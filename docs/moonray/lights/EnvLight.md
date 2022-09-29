@@ -133,7 +133,7 @@ title: EnvLight
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">true => mirror in u, false => repeat in u</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">true =&gt; mirror in u, false =&gt; repeat in u</p>
       
     </p>
     
@@ -144,7 +144,7 @@ title: EnvLight
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">true => mirror in v, false => repeat in v</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">true =&gt; mirror in v, false =&gt; repeat in v</p>
       
     </p>
     

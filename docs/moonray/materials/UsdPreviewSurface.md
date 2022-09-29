@@ -89,7 +89,7 @@ title: UsdPreviewSurface
       
         default: 1.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Index of Refraction to be used for translucent objects and objects with specular components, including the clearcoat if clearcoat > 0.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Index of Refraction to be used for translucent objects and objects with specular components, including the clearcoat if clearcoat &gt; 0.</p>
       
     </p>
     

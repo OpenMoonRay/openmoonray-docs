@@ -78,7 +78,7 @@ title: RgbToHsvDisplayFilter
           | hsv_to_rgb = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specify whether you are converting rgb->hsv or hsv->rgb</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">specify whether you are converting rgb-&gt;hsv or hsv-&gt;rgb</p>
       
     </p>
     

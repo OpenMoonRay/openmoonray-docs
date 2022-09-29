@@ -77,15 +77,7 @@ title: RenderOutput
           | uvw = 3
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When processing multi-channel outputs, how should channel names be suffixed?
-
-	auto : a best guess suffix is chosen based on the type of output
-
-	rgb  : .R, .G, .B
-
-	xyz  : .X, .Y, .Z
-
-	uvw  : .U, .V, .W</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">When processing multi-channel outputs, how should channel names be suffixed?<br>&emsp;auto : a best guess suffix is chosen based on the type of output<br>&emsp;rgb  : .R, .G, .B<br>&emsp;xyz  : .X, .Y, .Z<br>&emsp;uvw  : .U, .V, .W</p>
       
     </p>
     
@@ -241,35 +233,7 @@ title: RenderOutput
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">This attribute specifies a light path expression to output. For details on light path expression syntax see:
-
-		https://github.com/imageworks/OpenShadingLanguage/wiki/OSL-Light-Path-Expressions
-
-	Labels on scattering events are constructed from two parts: [ML.]LL Where:
-
-		<ML> is the label attribute value of the material (if non-empty)
-
-		<LL> is the lobe label assigned in the shader by the shader writer
-
-	Labels on light events are set from the label attribute of the light.
-
-	Additionally, a small set of pre-defined expressions are available:
-
-		'caustic'      : CD[S]+[<L.>O]
-
-		'diffuse'      : CD[<L.>O]
-
-		'emission'     : CO
-
-		'glossy'       : CG[<L.>O]
-
-		'mirror'       : CS[<L.>O]
-
-		'reflection'   : C<RS>[DSG]+[<L.>O]
-
-		'translucent'  : C<TD>[DSG]+[<L.>O]
-
-		'transmission' : C<TS>[DSG]+[<L.>O]</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">This attribute specifies a light path expression to output. For details on light path expression syntax see:<br>&emsp;&emsp;https://github.com/imageworks/OpenShadingLanguage/wiki/OSL-Light-Path-Expressions<br>&emsp;Labels on scattering events are constructed from two parts: [ML.]LL Where:<br>&emsp;&emsp;&lt;ML&gt; is the label attribute value of the material (if non-empty)<br>&emsp;&emsp;&lt;LL&gt; is the lobe label assigned in the shader by the shader writer<br>&emsp;Labels on light events are set from the label attribute of the light.<br>&emsp;Additionally, a small set of pre-defined expressions are available:<br>&emsp;&emsp;'caustic'      : CD[S]+[&lt;L.&gt;O]<br>&emsp;&emsp;'diffuse'      : CD[&lt;L.&gt;O]<br>&emsp;&emsp;'emission'     : CO<br>&emsp;&emsp;'glossy'       : CG[&lt;L.&gt;O]<br>&emsp;&emsp;'mirror'       : CS[&lt;L.&gt;O]<br>&emsp;&emsp;'reflection'   : C&lt;RS&gt;[DSG]+[&lt;L.&gt;O]<br>&emsp;&emsp;'translucent'  : C&lt;TD&gt;[DSG]+[&lt;L.&gt;O]<br>&emsp;&emsp;'transmission' : C&lt;TS&gt;[DSG]+[&lt;L.&gt;O]</p>
       
     </p>
     
@@ -280,91 +244,7 @@ title: RenderOutput
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "material aov", this attribute specifies a material aov expression to output.  The expression format is: 
-
-	[('<GL>')+\.][('<ML>')+\.][('<LL>')+\.][(SS|R|T|D|G|M)+\.][fresnel\.]<property>. Where:
-
-		<GL> is a label associated with the geometry 
-
-		<ML> is a label associated with the material 
-
-		<LL> is a lobe label 
-
-		R means reflection side lobe 
-
-		T means transmission side lobe 
-
-		D means diffuse lobe category 
-
-		G means glossy lobe category 
-
-		M means mirror lobe category 
-
-		SS means sub-surface component of the material 
-
-		fresnel means to select the lobe's or sub-surface's fresnel 
-
-		<property> can be one of: 
-
-			'albedo'       (bsdf lobe | subsurface)           (RGB),
-
-			'color'        (bsdf lobe | subsurface | fresnel) (RGB),
-
-			'depth'        (state variable)                   (FLOAT),
-
-			'dPds'         (state variable)                   (VEC3F),
-
-			'dPdt'         (state variable)                   (VEC3F),
-
-			'dSdx'         (state variable)                   (FLOAT),
-
-			'dSdy'         (state variable)                   (FLOAT),
-
-			'dTdx'         (state variable)                   (FLOAT),
-
-			'dTdy'         (state variable)                   (FLOAT),
-
-			'emission'     (bsdf)                             (RGB),
-
-			'factor'       (fresnel)                          (FLOAT),
-
-			'float:<attr>' (primitive attribute)              (FLOAT),
-
-			'matte'        (bsdf lobe | subsurface)           (FLOAT),
-
-			'motionvec'    (state variable)                   (VEC2F),
-
-			'N'            (state variable)                   (VEC3F),
-
-			'Ng'           (state variable)                   (VEC3F),
-
-			'normal'       (bsdf lobe | subsurface)           (VEC3F),
-
-			'P'            (state variable)                   (VEC3F),
-
-			'pbr_validity' (bsdf lobe | subsurface)           (RGB),
-
-			'radius'       (subsurface)                       (RGB),
-
-			'rgb:<attr>'   (primitive attribute)              (RGB),
-
-			'roughness'    (bsdf lobe) (fresnel)              (VEC2F),
-
-			'St'           (state variable)                   (VEC2F),
-
-			'vec2:<attr>'  (primitive attribute)              (VEC2F),
-
-			'vec3:<attr>'  (primitive attribute)              (VEC3F),
-
-			'Wp'           (state variable)                   (VEC3F)
-
-	Examples:
-
-		albedo              : Albedo of all rendered materials 
-
-		R.albedo            : Total reflection albedo 
-
-		'spec'.MG.roughness : Roughness of all mirror and glossy lobes that have the 'spec' label</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "material aov", this attribute specifies a material aov expression to output.  The expression format is: <br>&emsp;[('&lt;GL&gt;')+\.][('&lt;ML&gt;')+\.][('&lt;LL&gt;')+\.][(SS|R|T|D|G|M)+\.][fresnel\.]&lt;property&gt;. Where:<br>&emsp;&emsp;&lt;GL&gt; is a label associated with the geometry <br>&emsp;&emsp;&lt;ML&gt; is a label associated with the material <br>&emsp;&emsp;&lt;LL&gt; is a lobe label <br>&emsp;&emsp;R means reflection side lobe <br>&emsp;&emsp;T means transmission side lobe <br>&emsp;&emsp;D means diffuse lobe category <br>&emsp;&emsp;G means glossy lobe category <br>&emsp;&emsp;M means mirror lobe category <br>&emsp;&emsp;SS means sub-surface component of the material <br>&emsp;&emsp;fresnel means to select the lobe's or sub-surface's fresnel <br>&emsp;&emsp;&lt;property&gt; can be one of: <br>&emsp;&emsp;&emsp;'albedo'       (bsdf lobe | subsurface)           (RGB),<br>&emsp;&emsp;&emsp;'color'        (bsdf lobe | subsurface | fresnel) (RGB),<br>&emsp;&emsp;&emsp;'depth'        (state variable)                   (FLOAT),<br>&emsp;&emsp;&emsp;'dPds'         (state variable)                   (VEC3F),<br>&emsp;&emsp;&emsp;'dPdt'         (state variable)                   (VEC3F),<br>&emsp;&emsp;&emsp;'dSdx'         (state variable)                   (FLOAT),<br>&emsp;&emsp;&emsp;'dSdy'         (state variable)                   (FLOAT),<br>&emsp;&emsp;&emsp;'dTdx'         (state variable)                   (FLOAT),<br>&emsp;&emsp;&emsp;'dTdy'         (state variable)                   (FLOAT),<br>&emsp;&emsp;&emsp;'emission'     (bsdf)                             (RGB),<br>&emsp;&emsp;&emsp;'factor'       (fresnel)                          (FLOAT),<br>&emsp;&emsp;&emsp;'float:&lt;attr&gt;' (primitive attribute)              (FLOAT),<br>&emsp;&emsp;&emsp;'matte'        (bsdf lobe | subsurface)           (FLOAT),<br>&emsp;&emsp;&emsp;'motionvec'    (state variable)                   (VEC2F),<br>&emsp;&emsp;&emsp;'N'            (state variable)                   (VEC3F),<br>&emsp;&emsp;&emsp;'Ng'           (state variable)                   (VEC3F),<br>&emsp;&emsp;&emsp;'normal'       (bsdf lobe | subsurface)           (VEC3F),<br>&emsp;&emsp;&emsp;'P'            (state variable)                   (VEC3F),<br>&emsp;&emsp;&emsp;'pbr_validity' (bsdf lobe | subsurface)           (RGB),<br>&emsp;&emsp;&emsp;'radius'       (subsurface)                       (RGB),<br>&emsp;&emsp;&emsp;'rgb:&lt;attr&gt;'   (primitive attribute)              (RGB),<br>&emsp;&emsp;&emsp;'roughness'    (bsdf lobe) (fresnel)              (VEC2F),<br>&emsp;&emsp;&emsp;'St'           (state variable)                   (VEC2F),<br>&emsp;&emsp;&emsp;'vec2:&lt;attr&gt;'  (primitive attribute)              (VEC2F),<br>&emsp;&emsp;&emsp;'vec3:&lt;attr&gt;'  (primitive attribute)              (VEC3F),<br>&emsp;&emsp;&emsp;'Wp'           (state variable)                   (VEC3F)<br>&emsp;Examples:<br>&emsp;&emsp;albedo              : Albedo of all rendered materials <br>&emsp;&emsp;R.albedo            : Total reflection albedo <br>&emsp;&emsp;'spec'.MG.roughness : Roughness of all mirror and glossy lobes that have the 'spec' label</p>
       
     </p>
     
@@ -386,21 +266,7 @@ title: RenderOutput
           | closest = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the math filter over the pixel.
-
-options include:
-
-	average
-
-	sum
-
-	min
-
-	max
-
-	force_consistent_sampling : average of the first "min_adaptive_samples"
-
-	closest                   : use sample with minimum z-depth</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the math filter over the pixel.<br>options include:<br>&emsp;average<br>&emsp;sum<br>&emsp;min<br>&emsp;max<br>&emsp;force_consistent_sampling : average of the first "min_adaptive_samples"<br>&emsp;closest                   : use sample with minimum z-depth</p>
       
     </p>
     
@@ -493,45 +359,7 @@ options include:
           | display filter = 15
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The result to output.  Available results: 
-
-	general results:
-
-		"beauty" - full render (R, G, B), 
-
-		"alpha" - full render alpha channel (A), 
-
-		"depth" - z distance from camera (Z), 
-
-		"display filter" - output results from a display filter, 
-
-	aov results:
-
-		"state variable" - Built-in state variable, 
-
-		"primitive attribute" - Procedural provided attributes, 
-
-		"material aov" - Aovs provided via material expressions 
-
-		"light aov" - Aovs provided via light path expressions 
-
-		"visibility aov" - Fraction of light samples that hit light source
-
-		"variance aov" - Aovs calculated from the pixel variance of other aovs
-
-		"weight" - weight,
-
-		"beauty aux" - renderBuffer auxiliary sample data for adaptive sampling,
-
-		"cryptomatte" - cryptomatte,
-
-		"alpha aux" - alpha auxiliary sample data for adaptive sampling,
-
-	diagnostic results:
-
-		"time per pixel" - Time per pixel heat map metric,
-
-		"wireframe" - Render as wireframe</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">The result to output.  Available results: <br>&emsp;general results:<br>&emsp;&emsp;"beauty" - full render (R, G, B), <br>&emsp;&emsp;"alpha" - full render alpha channel (A), <br>&emsp;&emsp;"depth" - z distance from camera (Z), <br>&emsp;&emsp;"display filter" - output results from a display filter, <br>&emsp;aov results:<br>&emsp;&emsp;"state variable" - Built-in state variable, <br>&emsp;&emsp;"primitive attribute" - Procedural provided attributes, <br>&emsp;&emsp;"material aov" - Aovs provided via material expressions <br>&emsp;&emsp;"light aov" - Aovs provided via light path expressions <br>&emsp;&emsp;"visibility aov" - Fraction of light samples that hit light source<br>&emsp;&emsp;"variance aov" - Aovs calculated from the pixel variance of other aovs<br>&emsp;&emsp;"weight" - weight,<br>&emsp;&emsp;"beauty aux" - renderBuffer auxiliary sample data for adaptive sampling,<br>&emsp;&emsp;"cryptomatte" - cryptomatte,<br>&emsp;&emsp;"alpha aux" - alpha auxiliary sample data for adaptive sampling,<br>&emsp;diagnostic results:<br>&emsp;&emsp;"time per pixel" - Time per pixel heat map metric,<br>&emsp;&emsp;"wireframe" - Render as wireframe</p>
       
     </p>
     
@@ -578,33 +406,7 @@ options include:
           | motionvec = 12
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "state variable", this attribute specifies the particular state variable result. 
-
-	"P" - position (P.X, P.Y, P.Z), 
-
-	"Ng" - geometric normal (Ng.X, Ng.Y, Ng.Z), 
-
-	"N" - normal (N.X, N.Y, N.Z), 
-
-	"St" - texture coordinates (St.X, St.Y), 
-
-	"dPds" - derivative of P w.r.t S (dPds.X, dPds.Y, dPds.Z), 
-
-	"dPdt" - derivative of P w.r.t T (dPdt.X, dPdt.Y, dPdt.Z), 
-
-	"dSdx" - s derivative w.r.t. x (dSdx), 
-
-	"dSdy" - s derivative w.r.t. y (dSdy), 
-
-	"dTdx" - t derivative w.r.t. x (dTdx), 
-
-	"dTdy" - t derivative w.r.t. y (dTdy), 
-
-	"Wp" - world position (Wp.X, Wp.Y, Wp.Z), 
-
-	"depth" - z distance from camera (Z), 
-
-	"motionvec" - 2D motion vector</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "state variable", this attribute specifies the particular state variable result. <br>&emsp;"P" - position (P.X, P.Y, P.Z), <br>&emsp;"Ng" - geometric normal (Ng.X, Ng.Y, Ng.Z), <br>&emsp;"N" - normal (N.X, N.Y, N.Z), <br>&emsp;"St" - texture coordinates (St.X, St.Y), <br>&emsp;"dPds" - derivative of P w.r.t S (dPds.X, dPds.Y, dPds.Z), <br>&emsp;"dPdt" - derivative of P w.r.t T (dPdt.X, dPdt.Y, dPdt.Z), <br>&emsp;"dSdx" - s derivative w.r.t. x (dSdx), <br>&emsp;"dSdy" - s derivative w.r.t. y (dSdy), <br>&emsp;"dTdx" - t derivative w.r.t. x (dTdx), <br>&emsp;"dTdy" - t derivative w.r.t. y (dTdy), <br>&emsp;"Wp" - world position (Wp.X, Wp.Y, Wp.Z), <br>&emsp;"depth" - z distance from camera (Z), <br>&emsp;"motionvec" - 2D motion vector</p>
       
     </p>
     
@@ -613,7 +415,7 @@ options include:
       <b>String</b>
       
       
-        default: C[<T.><RS>]*[<R[DG]><TD>][LO]
+        default: C[&lt;T.&gt;&lt;RS&gt;]*[&lt;R[DG]&gt;&lt;TD&gt;][LO]
       
         <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "visibility aov", this attribute specifies a light path expression that defines the set of all paths usedto compute the visibility ratio.</p>
       
