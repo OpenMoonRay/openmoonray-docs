@@ -247,29 +247,29 @@ title: RenderOutput
 
 	Labels on scattering events are constructed from two parts: [ML.]LL Where:
 
-		<ML> is the label attribute value of the material (if non-empty)
+		&lt;ML&gt; is the label attribute value of the material (if non-empty)
 
-		<LL> is the lobe label assigned in the shader by the shader writer
+		&lt;LL&gt; is the lobe label assigned in the shader by the shader writer
 
 	Labels on light events are set from the label attribute of the light.
 
 	Additionally, a small set of pre-defined expressions are available:
 
-		'caustic'      : CD[S]+[<L.>O]
+		'caustic'      : CD[S]+[&lt;L.&gt;O]
 
-		'diffuse'      : CD[<L.>O]
+		'diffuse'      : CD[&lt;L.&gt;O]
 
 		'emission'     : CO
 
-		'glossy'       : CG[<L.>O]
+		'glossy'       : CG[&lt;L.&gt;O]
 
-		'mirror'       : CS[<L.>O]
+		'mirror'       : CS[&lt;L.&gt;O]
 
-		'reflection'   : C<RS>[DSG]+[<L.>O]
+		'reflection'   : C&lt;RS&gt;[DSG]+[&lt;L.&gt;O]
 
-		'translucent'  : C<TD>[DSG]+[<L.>O]
+		'translucent'  : C&lt;TD&gt;[DSG]+[&lt;L.&gt;O]
 
-		'transmission' : C<TS>[DSG]+[<L.>O]</p>
+		'transmission' : C&lt;TS&gt;[DSG]+[&lt;L.&gt;O]</p>
       
     </p>
     
@@ -282,13 +282,13 @@ title: RenderOutput
       
         <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "material aov", this attribute specifies a material aov expression to output.  The expression format is: 
 
-	[('<GL>')+\.][('<ML>')+\.][('<LL>')+\.][(SS|R|T|D|G|M)+\.][fresnel\.]<property>. Where:
+	[('&lt;GL&gt;')+\.][('&lt;ML&gt;')+\.][('&lt;LL&gt;')+\.][(SS|R|T|D|G|M)+\.][fresnel\.]&lt;property&gt;. Where:
 
-		<GL> is a label associated with the geometry 
+		&lt;GL&gt; is a label associated with the geometry 
 
-		<ML> is a label associated with the material 
+		&lt;ML&gt; is a label associated with the material 
 
-		<LL> is a lobe label 
+		&lt;LL&gt; is a lobe label 
 
 		R means reflection side lobe 
 
@@ -304,7 +304,7 @@ title: RenderOutput
 
 		fresnel means to select the lobe's or sub-surface's fresnel 
 
-		<property> can be one of: 
+		&lt;property&gt; can be one of: 
 
 			'albedo'       (bsdf lobe | subsurface)           (RGB),
 
@@ -328,7 +328,7 @@ title: RenderOutput
 
 			'factor'       (fresnel)                          (FLOAT),
 
-			'float:<attr>' (primitive attribute)              (FLOAT),
+			'float:&lt;attr&gt;' (primitive attribute)              (FLOAT),
 
 			'matte'        (bsdf lobe | subsurface)           (FLOAT),
 
@@ -346,15 +346,15 @@ title: RenderOutput
 
 			'radius'       (subsurface)                       (RGB),
 
-			'rgb:<attr>'   (primitive attribute)              (RGB),
+			'rgb:&lt;attr&gt;'   (primitive attribute)              (RGB),
 
 			'roughness'    (bsdf lobe) (fresnel)              (VEC2F),
 
 			'St'           (state variable)                   (VEC2F),
 
-			'vec2:<attr>'  (primitive attribute)              (VEC2F),
+			'vec2:&lt;attr&gt;'  (primitive attribute)              (VEC2F),
 
-			'vec3:<attr>'  (primitive attribute)              (VEC3F),
+			'vec3:&lt;attr&gt;'  (primitive attribute)              (VEC3F),
 
 			'Wp'           (state variable)                   (VEC3F)
 
@@ -613,7 +613,7 @@ options include:
       <b>String</b>
       
       
-        default: C[<T.><RS>]*[<R[DG]><TD>][LO]
+        default: C[&lt;T.&gt;&lt;RS&gt;]*[&lt;R[DG]&gt;&lt;TD&gt;][LO]
       
         <p class="jekyll-theme-minimal scene-class-attr-comment">If "result" is "visibility aov", this attribute specifies a light path expression that defines the set of all paths usedto compute the visibility ratio.</p>
       

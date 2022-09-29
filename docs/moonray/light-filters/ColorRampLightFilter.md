@@ -128,7 +128,7 @@ title: ColorRampLightFilter
           | mirror = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">For directional filter mode where filter uses distance along -Z axis.  Extend: f(z) = f(0) for z > 0.  Mirror: f(z) = f(-z).</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">For directional filter mode where filter uses distance along -Z axis.  Extend: f(z) = f(0) for z &gt; 0.  Mirror: f(z) = f(-z).</p>
       
     </p>
     

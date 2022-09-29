@@ -75,7 +75,7 @@ title: DwaToonMaterial
       
         default: [ 0.5, 0.5, 0.5 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the attenuation color of the clearcoat when 'cleacoat thickness' > 0</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the attenuation color of the clearcoat when 'cleacoat thickness' &gt; 0</p>
       
     </p>
     
@@ -144,7 +144,7 @@ title: DwaToonMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the thickness of the virtual clearcoat layer. Values > 0 enable absorption</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">the thickness of the virtual clearcoat layer. Values &gt; 0 enable absorption</p>
       
     </p>
     
