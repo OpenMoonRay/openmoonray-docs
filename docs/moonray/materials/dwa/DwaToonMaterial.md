@@ -380,7 +380,7 @@ title: DwaToonMaterial
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       
     </p>
     
@@ -1205,7 +1205,7 @@ title: DwaToonMaterial
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       
     </p>
     
@@ -1548,7 +1548,7 @@ title: DwaToonMaterial
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>			Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       
     </p>
     

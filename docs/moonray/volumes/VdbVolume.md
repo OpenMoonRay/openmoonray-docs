@@ -91,7 +91,7 @@ title: VdbVolume
           | voxel size = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggle method to specify grid resolution of baked density grid.<br>		default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions<br>		divisions: specify number of divisions.<br>		voxel size: specify voxel size.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggle method to specify grid resolution of baked density grid.<br>&emsp;&emsp;default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions<br>&emsp;&emsp;divisions: specify number of divisions.<br>&emsp;&emsp;voxel size: specify voxel size.</p>
       
     </p>
     

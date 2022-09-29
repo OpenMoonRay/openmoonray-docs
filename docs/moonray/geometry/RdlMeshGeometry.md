@@ -196,7 +196,7 @@ title: RdlMeshGeometry
           | both motion steps = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?<br>	O : first motion step<br>	1 : second motion step<br>	2 : both motion steps</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       
     </p>
     

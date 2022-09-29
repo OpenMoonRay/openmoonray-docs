@@ -1314,7 +1314,7 @@ title: SceneVariables
           | rnd = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Selects how to handle contributions from overlapping volumes:<br>		sum: add contributions from all volumes<br>		max: only consider maximum volume based on extinction<br>		rnd: randomly choose one value weighted by extinction<br>		Warning: light linking does not work correctly in sum mode.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Selects how to handle contributions from overlapping volumes:<br>&emsp;&emsp;sum: add contributions from all volumes<br>&emsp;&emsp;max: only consider maximum volume based on extinction<br>&emsp;&emsp;rnd: randomly choose one value weighted by extinction<br>&emsp;&emsp;Warning: light linking does not work correctly in sum mode.</p>
       
     </p>
     

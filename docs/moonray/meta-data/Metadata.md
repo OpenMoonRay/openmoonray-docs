@@ -34,7 +34,7 @@ title: Metadata
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Allowed types for exr headers:<br>			* box2i<br>			* box2f<br>			* chromaticities<br>			* double<br>			* float<br>			* int<br>			* m33f<br>			* m44f<br>			* string<br>			* v2i<br>			* v2f<br>			* v3i<br>			* v3f</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Allowed types for exr headers:<br>&emsp;&emsp;&emsp;* box2i<br>&emsp;&emsp;&emsp;* box2f<br>&emsp;&emsp;&emsp;* chromaticities<br>&emsp;&emsp;&emsp;* double<br>&emsp;&emsp;&emsp;* float<br>&emsp;&emsp;&emsp;* int<br>&emsp;&emsp;&emsp;* m33f<br>&emsp;&emsp;&emsp;* m44f<br>&emsp;&emsp;&emsp;* string<br>&emsp;&emsp;&emsp;* v2i<br>&emsp;&emsp;&emsp;* v2f<br>&emsp;&emsp;&emsp;* v3i<br>&emsp;&emsp;&emsp;* v3f</p>
       
     </p>
     
