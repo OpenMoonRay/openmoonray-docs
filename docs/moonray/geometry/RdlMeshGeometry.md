@@ -111,21 +111,7 @@ title: RdlMeshGeometry
           | hermite = 4
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.
-
-"static" will treat the mesh as static.
-
-"velocity" will blur using the supplied vertex positions and velocities.
-
-"frame delta" will interpolate between the two supplied vertex positions.
-
-"acceleration" will blur using the supplied vertex positions, velocities and accelerations.
-
-"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.
-
-"best" will use choose the method which provides the highest quality given the available data.
-
-</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       
     </p>
     
@@ -210,13 +196,7 @@ title: RdlMeshGeometry
           | both motion steps = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?
-
-	O : first motion step
-
-	1 : second motion step
-
-	2 : both motion steps</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?<br>	O : first motion step<br>	1 : second motion step<br>	2 : both motion steps</p>
       
     </p>
     
@@ -271,11 +251,7 @@ title: RdlMeshGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:
-
-A is a list of names of parts to be mapped, or asterisk to map the whole geometry
-
-B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       
     </p>
     

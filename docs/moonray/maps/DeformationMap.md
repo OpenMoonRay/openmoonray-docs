@@ -30,15 +30,7 @@ title: DeformationMap
           | deformation_avg = 3 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls output: 
-
-		    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space 
-
-		    deformation_S - deformation along S 
-
-		    deformation_T - deformation along T 
-
-		    deformation_avg - average deformation from ref space</p>
+        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls output: <br>		    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space <br>		    deformation_S - deformation along S <br>		    deformation_T - deformation along T <br>		    deformation_avg - average deformation from ref space</p>
       
     </p>
     
