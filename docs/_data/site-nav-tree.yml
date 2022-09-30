@@ -5,6 +5,8 @@ toc:
     subitems:
         - item: Arras Intro
           path: /beta/arras-intro
+        - item: Building
+          path: /beta/building
         - item: Dependencies
           path: /beta/dependencies
         - item: Distributed Arras
@@ -21,9 +23,6 @@ toc:
       - item: Community
       - item: What's included
       - item: Beginner's Guide
-  - item: Building/Installation
-    subitems:
-      - item: Building
   - item: Moonray
     path: /moonray
     subitems:
