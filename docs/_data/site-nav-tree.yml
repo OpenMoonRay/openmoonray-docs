@@ -406,6 +406,7 @@ toc:
         path: /moonray/execution-modes
   - item: Arras
   - item: Developer's Guide
+    path: /developers-guide
   - item: Release Notes
   - item: Examples
     path: /examples/
